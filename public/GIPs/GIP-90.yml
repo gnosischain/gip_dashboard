@@ -1,0 +1,85 @@
+id: '0x7fd56c5eb290393598d2b601913ab74f196f154bd1f6ef0261c2a7c34e096dd9'
+ipfs: bafkreial6geikjltksksp6nvnmpufvtzaq2whigscztmeygvc5joxf6vva
+title: Should Gnosis.eth update its ENS resolver to resolve .GNO domains on Gnosis
+  Chain?
+body: "### Executive Summary ###\n\n.GNO domains is launching on Gnosis Chain, with\
+  \ one of the key features being a CCIP resolver that resolves .GNO domains on ENS.\
+  \ For this to be implemented gnosis.eth is required to update its resolver to the\
+  \ new CCIP resolver being developed.\n\n### Introduction ###\nWe at Gnosis have\
+  \ been working with SpaceID, and DM3 protocol to bring .GNO domains to Gnosis. We\
+  \ call it Genome.\n\nGenome’s mission is to create a digital-ID product centered\
+  \ around .GNO domains, integrating the communities, dApps, and utilities native\
+  \ to Gnosis chain as well as linking .GNO domains with ENS.\n\n### Product Features:\
+  \ ###\n\n- .GNO domains integrated with the Gnosis ecosystem\n- Genome .GNO NFT\
+  \ collection native to Gnosis\n- Developing a CCIP resolver enabling .GNO domains\
+  \ to be resolved on Ethereum via ENS\n- .GNO Integration with current and future\
+  \ JV (Space-ID) partners\n\nGenome is live on testnet! https://test.genomedomains.com/\
+  \ \n\nENS Resolver Features:\n\nENS defines this standard where an example.eth address\
+  \ can issue text.example.eth on Layer 2 (or another Layer 1 like Gnosis Chain).\
+  \ With no or minimal trust assumptions. \n\nENS’ explainer on CCIP: https://docs.ens.domains/dapp-developer-guide/ens-l2-offchain\n\
+  Our CCIP resolver in this case: https://github.com/dm3-org/genome-ccip-resolver\
+  \ (only deployed on Gnosis testnet so far)\n\nNow, each example.gnosis.eth subdomain\
+  \ will also have an example.gno domain. Those are centrally managed by Space-ID.\n\
+  \nBoth are linked.\n\n.gno is resolved via https://www.npmjs.com/package/@web3-name-sdk/core\n\
+  \n.gnosis.eth is resolved via an up-to-date version of ethersjs for example.\n\n\
+  When I enter example.gnosis.eth in metamask - for example - the CCIP resolver contract\
+  \ returns a URL to a CCIP-Read client like ethers.js. This URL can be used to perform\
+  \ an off-chain lookup instead of fetching the records from the contract directly.\n\
+  \nWhen calling the URL, the Gateway resolves the request by using the Gnosis RPC\
+  \ provider to query the data from the SpaceId contract on the Gnosis Chain. The\
+  \ data returned is signed by the gateway and then returned to the Read Client. To\
+  \ add additional security, the gateway signs the response before, so only “trusted”\
+  \ gateways can be used\n\n### Impact and Benefits ###\nThe main goal of Genome and\
+  \ .GNO domains is increasing ease of access to new and existing users alike. With\
+  \ the increasing costs of building on Ethereum, allowing .GNO domains to resolve\
+  \ on ENS not only lowers costs for owning a domain but also opens up a new set of\
+  \ possibilities for experimentation.\n\n### Proposed Changes / Implementation Plan\
+  \ ###\nENS records for gnosis.eth need to be updated to set the resolver to Genome’s\
+  \ resolver address 0xc9bf092673b3a066df088a2a911e23e9b69b82f2\n( https://github.com/dm3-org/genome-ccip-resolver\
+  \ )\n\n### Team/ Organization/References ###\nRalph X., Gnosis BD\nPhilipp S., Gnosis\
+  \ BD\nAlex Plutta, DM3 Protocol/Corpus Ventures\nEduardo Vega-Patiño, DM3 Protocol/Corpus\
+  \ Ventures"
+start: 1712913062
+end: 1713517862
+state: closed
+author: '0x9dC3f992637976aB1ebADBcb3FC3e6fE94a5c8f5'
+created: 1712913062
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 77114.27589930757
+scores:
+  - 77114.15159384944
+  - 0.004974602282557618
+  - 0.11933085584175256
+votes: 126
+quorum: 75000
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '90'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

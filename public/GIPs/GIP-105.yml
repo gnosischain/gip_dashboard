@@ -1,0 +1,167 @@
+id: '0x54f2e2519c44ed728148dbe3dbef29c5c91d5ab8fdbade1c909b9a6d16bcdec5'
+ipfs: bafkreictst4f7e4mikj3dy6hkzjcucrg4ytttjakavajco2tyfrfewu3gy
+title: Should GnosisDAO support v2 Gnosischa.in Explorer hosted by beaconcha.in?
+body: 'https://forum.gnosis.io/t/gip-105-should-gnosisdao-support-v2-gnosischa-in-explorer-hosted-by-beaconcha-in/8713
+
+
+
+
+  ```
+
+  GIP: 105
+
+  title: Should GnosisDAO support v2 Gnosischa.in Explorer hosted by beaconcha.in?
+
+  author: butta
+
+  status: Proposed
+
+  type: Funding
+
+  created: 2024-06-19
+
+  duration:1 year
+
+  funding: $300,000 annually + $100,000 one-time integration fee
+
+  ```
+
+
+  ## Category
+
+
+  Infrastructure projects
+
+
+  ## Executive Summary
+
+
+  As some of you have seen on [X](https://x.com/beaconcha_in/status/1801223159334539776),
+  beaconcha.in has launched a beta for the [v2 explorer](https://v2-beta-holesky.beaconcha.in/).
+  It introduces several new features, including real-time monitoring of up to 100,000
+  validators, the ability to group validators, and options to share custom dashboards.
+
+
+  Our next steps are to rework the notification system, introduce an account dashboard
+  for transactions, new APIs, new mobile App and more.
+
+
+  Due to these upcoming changes, we stopped contributing to the v1 explorer codebase
+  a few months ago. We expect to fully migrate to the v2 explorer sometime next year.
+  Because of this, we would love to have Gnosischain on our v2 [open source](https://github.com/gobitfly/beaconchain)
+  explorer.
+
+
+  Voting in favor of this proposal will ensure a smooth transition from v1 to v2 for
+  gnosischain.
+
+
+  ## Specification
+
+
+  One major criticism from the Gnosis community was the cap of 280 validators in the
+  dashboard and app. This limit was due to technical constraints, not our unwillingness
+  to increase it. Additionally, our old pricing did not differentiate between networks.
+
+
+  We have listened to your feedback and propose the following for the v2 explorer:
+
+
+  - Free users can monitor up to 20 validators, [which matches the average number
+  for most Gnosis users](https://docs.google.com/presentation/d/1IEPVvOE3T6B-a3NJVt3ws4LXXqc_h-QG-lw8wVoLgH8/edit#slide=id.g27a35603b14_0_1314)
+
+
+  - Subscribed users can monitor up to 100,000 validators.
+
+
+  - All features mentioned here: https://v2-beta-holesky.beaconcha.in/pricing will
+  also be available for Gnosis.
+
+
+  - Premium plans will offer a significantly higher validator limit for Gnosis compared
+  to Ethereum, integrated within the existing pricing tiers.
+
+  For example, if Pricing Tier “[Guppy](https://v2-beta-holesky.beaconcha.in/pricing)”
+  supports 100 Ethereum validators, it will support a higher number of Gnosis validators,
+  may support up to 500.
+
+  This means users will only need one subscription to increase their limits on Ethereum
+  and gnosis.
+
+
+  The exact number for the Gnosis validator limit will be determined when we start
+  integrating Gnosis.
+
+  ![|170x508](https://forum.gnosis.io/uploads/default/optimized/2X/9/9a84595530f108da0687aa5c1e95f1e9f7a31291_2_250x750.png)
+
+
+  ## Budget
+
+
+  $300,000 annually
+
+  60% in USD/USDC - $180k USDC/USDT
+
+  40% in GNO - $120k in GNO (2 Year lockup)
+
+  +one-time v2 integration fee $100,000
+
+  100% in USDC/USDT
+
+
+  Our address `0x9d4E94dB689Bc471E45b0a18B7BdA36FcCeC9c3b` (beaconchain.eth)
+
+
+  ## Timeline, Implementations and Deliverable
+
+
+  Since [gnosischa.in ](http://gnosischa.in)is already up and running, there are no
+  milestones necessary for v1. (See [GIP-74](https://forum.gnosis.io/t/gip-74-should-gnosisdao-support-gnosischa-in-explorer-hosted-by-beaconcha-in/6228?u=butta))
+
+
+  Voting in favor of this proposal will ensure a smooth transition from v1 to v2 for
+  gnosischain and will cover the costs of v1-gnosischa.in for 1 year.'
+start: 1719496255
+end: 1720101055
+state: closed
+author: '0xD67952D9a8F27003De7C94D4A76191831165C01C'
+created: 1719496256
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 79562.13359555315
+scores:
+  - 78176.66390498745
+  - 1238.3172390059644
+  - 147.15245155972278
+votes: 103
+quorum: 75000
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '105'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

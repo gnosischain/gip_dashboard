@@ -1,0 +1,142 @@
+id: '0x9b12a093e17e92b56d070ed876883d8c2331678ca3945e44f66dd416cfd47a64'
+ipfs: QmbuYN2vdbmKy1pDT9b3JrkBbwS18K963p3gDeDwZxdBoa
+title: 'Should Gnosis DAO proceed and deploy CowDAO and vCOW token? '
+body: 'The proposal is available [here](https://forum.gnosis.io/t/gip-13-phase-2-cowdao-and-cow-token/2735/1).
+  It is recommended to read it in the forum where proper formatting is available. 
+
+
+  The proposed deployment code for this proposal is available [here](https://github.com/gnosis/cow-token/)
+  and an audit is available [here](https://github.com/gnosis/cow-token/blob/main/audits/2021-12_G0-group.pdf).
+
+
+  # What is CowDAO envisioned to be? 
+
+
+  CowDAO is an open organization of developers, traders, market makers and many more
+  community members aligned with its vision. CowDAO is focused on fair and decentralized
+  trading systems - in particular, building, maintaining and advancing the Cow Protocol.
+  Cow Protocol technology powers a network of traders and solvers, enabling trustless
+  and efficient peer-to-peer trading. Leveraging batch auctions as a key concept uniquely
+  positions Cow Protocol as native trading infrastructure for discrete-time settlement
+  layers like Ethereum and enables fair and accessible trading to its users.
+
+
+  # Vision
+
+
+  We foresee a future where increasingly all kinds of assets will be tokenized on
+  Ethereum and other decentralized blockchains, where everyone - individuals and collectives
+  - can have full custody of their tokenized assets. CowDAO''s vision is a decentralized
+  future where digital assets can be traded in a fair, efficient and reliable manner
+  among people and communities around the world. Our mission is to build a protocol
+  that becomes the most user friendly and price effective way to exchange digital
+  assets, enabling all users to trade securely and know their trades are protected.
+
+
+  We are determined to make Cow Protocol the foundational liquidity hub for trading
+  digital assets by applying continuous innovation, cultivating intellectual bravery
+  and by expanding the CoW Protocol ecosystem - inviting the brightest minds to join
+  the community.
+
+
+  # Values and Principles
+
+
+  This section should not limit the scope of what CowDAO can pursue or achieve. The
+  community should keep iterating on its values and principles to best reflect each
+  and every member individually and the DAO as a whole.
+
+
+  Below are work in progress principles that we propose should guide the way we behave
+  as a community and help shape the decision process for CowDAO.
+
+
+  # Universal Simplicity
+
+
+  The goal of Cowswap is to allow easy access to the decentralized economy across
+  all levels of experience, the Cowswap community will focus on simplicity and high
+  quality user experience across DeFi and Web3.
+
+
+  # Decentralization and Access to everybody
+
+
+  Cow Protocol is permissionless for anyone to access with no discrimination. The
+  Cowswap community will reward alternative UIs and gateways to the protocol in order
+  to ensure easy worldwide access and usability in accordance with applicable laws.
+
+
+  # Open Collaboration
+
+
+  CowSwap should be a core part of Ethereum and Web3, we believe this can be achieved
+  by openly collaborating with other teams, protocols and communities in the decentralized
+  ecosystem. Education, information sharing and aligned partnerships are key drivers
+  to build out the CowSwap ecosystem.
+
+
+  # Proposed Governance Parameters for CowDAO Launch 
+
+
+  -   CowDAO proposals will be discussed on CowDAO''s dedicated Forum, consisting
+  of two phases: forum discussion and snapshot voting.
+
+
+  -   Final approval of proposals will be made through vCOW token voting on the cow.eth
+  snapshot space that will be deployed upon GIP-13 successfully passing.
+
+
+  -   A maximum amount of 560M vCOW tokens will become available, out of which it 
+  is estimated that up to 350m vCOW tokens might  be used  for voting initially. A
+  quorum is proposed that would require roughly 10%  of this supply for approving
+  CowDAO Improvement Proposals (CIP). This is defined by a set limit of  35m COW tokens
+  required to vote YES in order for a proposal to pass.
+
+
+  -   Additionally, in order for a proposal to be approved, YES votes should account
+  for >50% of total participating votes. (simple majority)'
+start: 1643387400
+end: 1643992200
+state: closed
+author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
+created: 1643387084
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 138550.10534506236
+scores:
+  - 138540.8447214393
+  - 9.25333281416444
+  - 0.007290808895256196
+votes: 545
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '13'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

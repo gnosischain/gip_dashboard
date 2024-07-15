@@ -1,0 +1,50 @@
+id: '0x1bced50847e2983ae4ba9ae00fd08e92a26059449c30c1dfd49bc077ecc3ee22'
+ipfs: QmYwaNBWquME1JFQGu8HfKS1kiqkXAScVqDLymGHfcjX3N
+title: Partner with Tornado Cash to increase GNO:TORN liquidity in Uniswap V3
+body: 'Should GnosisDAO partner with Tornado Cash to increase GNO:TORN liquidity as
+  detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-25-partner-with-tornado-cash-to-increase-gno-torn-liquidity-in-uniswap-v3/3418'
+start: 1644318000
+end: 1644922800
+state: closed
+author: '0x78602290159C7A4bDf9529fcfF1243534d3A6Cb9'
+created: 1644320143
+choices:
+  - 'Yes'
+  - 'No'
+scores_state: final
+scores_total: 79476.92150540843
+scores:
+  - 78488.99146802588
+  - 987.930037382559
+votes: 93
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '25'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

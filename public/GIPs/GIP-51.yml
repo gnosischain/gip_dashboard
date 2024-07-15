@@ -1,0 +1,58 @@
+id: '0x75bd61f48bb1cc4c9e2dd4938036095d581a99f2c186cb0a0c83914253f45634'
+ipfs: QmdH45ZsBqPbf2jtHoNiuxHvXggDHntQTLgMitX5gDdvo6
+title: Should GnosisDAO fund the LabDAO project?
+body: "Decentralised Science is a movement exploring new ways to 1) fund, 2) do and\
+  \ 3) distribute science using web3 tools. LabDAO is building online laboratories\
+  \ for scientist to come together and do research. To enable this, we develop three\
+  \ tools:\n\n1.  An exchange for laboratory services\n2.  An onboarding and team-formation\
+  \ process for scientists new to web3\n3.  An endowment for funding scientific open-source\
+  \ developers and inventors\n\nTo support the development of the LabDAO project,\
+  \ we ask the GnosisDAO community for 250,000 USD worth of funding in return for\
+  \ 1,000,000 LAB future governance and utility tokens.\n\nYou can learn more about\
+  \ this proposal in the [governance forum](https://forum.gnosis.io/t/gip-51-should-gnosisdao-fund-the-labdao-project/5288)\
+  \ and our [memo](memo.labdao.xyz). \n\nThis governance vote includes a transaction:\n\
+  250,000 FRAX to labdao.eth (eth:0xcaf6A0c4468087d76e6B2917cea10F0E1aA2f9D4)\n"
+start: 1655654561
+end: 1656259361
+state: closed
+author: '0x64BC15E0A5A12dDbe321EEDD832d057775D11F56'
+created: 1655654597
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 165599.17729734717
+scores:
+  - 90047.70561374047
+  - 75535.94601599932
+  - 15.525667607435452
+votes: 363
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '51'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

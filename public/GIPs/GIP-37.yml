@@ -1,0 +1,53 @@
+id: '0xc259665ade2a09959d0978d31708537d42ade4c1fc9b9c459cf08611188f76de'
+ipfs: QmPXfBfsWhsL6cyV75zokqQG9kuV5SzBjiGsJCeqMdFACr
+title: Should GnosisDAO pass a Grant Proposal to partner with Erigon?
+body: Gnosis has been a long-term supporter of Erigon’s development believing in the
+  significance of improving L1 clients. Every improvement on L1 is an upside for everyone
+  operating on top. Given the importance of strong L1 clients for Gnosis Chain and
+  the unique value proposition of Erigon, the Erigon team should be supported with
+  a significant grant of 2m DAI upfront and 24k GNO vested over 3 years allowing us
+  to focus on Gnosis Chain.
+start: 1650645478
+end: 1651250278
+state: closed
+author: '0x74b926358f43a06665C9733Ff4f1A79d1dceC49E'
+created: 1650645493
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 182019.8233142736
+scores:
+  - 181686.93848145075
+  - 291.7462475437427
+  - 41.13858527913516
+votes: 647
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '37'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

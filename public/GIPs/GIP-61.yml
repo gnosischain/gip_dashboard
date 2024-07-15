@@ -1,0 +1,223 @@
+id: '0x70c0fa32438a38508fa4e011422e8955fad41fc246d569772faaedf9cfbfa876'
+ipfs: bafkreicvni3wbj5c23c2egoqqxbpkwyxtqjgtc42swx3enydspotxyzy5a
+title: Shall GnosisDAO fund BootNode as a Core Contributor Team?
+body: "## Simple Summary\n\nBootNode proposes to contribute engineering and development\
+  \ services to the Gnosis DAO ecosystem by building a hands-on autonomous team with\
+  \ relevant experience in multiple disciplines that will focus on growing the GC\
+  \ ecosystem adoption, starting with the following priorities:\n\n* Further strengthening\
+  \ and decentralizing the DAO development by incorporating an additional specialized\
+  \ Contributor Team working towards a shared goal.\n* Bridges operation: product\
+  \ discovery, development, coordination, and engineering to count with an up-to-date\
+  \ and sustainable Bridges operation: present infrastructure and future initiatives.\n\
+  * Circles: build the required infrastructure so many teams ideally can bring a wave\
+  \ of new users to the gnosis chain.\n* Gnosis Chain decentralization and security:\
+  \ running chain, beacon chain, and bridges nodes.\n* Other initiatives the DAO might\
+  \ need.\n\nThe team will commit long-term by starting with a 6-month engagement.\n\
+  \n## Motivation\n\nSince the early days, many BootNode (BN) team members have contributed\
+  \ to the Gnosis ecosystem by being exposed to different projects:\n\n* POA Network:\
+  \ creating the required infrastructure used later to build xDAI.\n* Gnosis Chain\
+  \ (formerly xDAI): from bootstrapping the network and being core contributors to\
+  \ different bridges and dApps, to educating, onboarding new projects, and consulting.\n\
+  * Core contributors to the Circles infrastructure.\n* Core contributors to the Gnosis\
+  \ Safe (BN became a Safe Guardian) and other projects such as Auctions, COW Protocol,\
+  \ Omen, and dxDAO.\n\nWe believe that the Gnosis DAO will benefit from the value\
+  \ BootNode can add due to its outstanding team and relevant experience. BootNode\
+  \ accelerates the building and growth of protocols, dApps, and networks through\
+  \ engineering, development, and governance.\n\nWe are confident we can work productively\
+  \ alongside the Gnosis DAO on different projects. We will push growth forward of\
+  \ the Circles, the Gnosis Chain, and other initiatives.\n\nAt BootNode, we share\
+  \ a vision to build a decentralized organization and network with a decentralized\
+  \ ecosystem of contributors. We strongly believe in a positive sum game for Gnosis\
+  \ DAO, where many protocol developers, web2 and web3 builders, infrastructure participants,\
+  \ researchers, and community members can work together.\n\n## Specification\n\n\
+  The following items are the initial areas of contribution. However, they might change\
+  \ if they are no longer needed or if there are other initiatives where BootNode\
+  \ can provide higher value.\n\n### 1: Bridges\n\nThe team will work closely with\
+  \ all the involved parties to maintain and improve the bridge solutions that empower\
+  \ the Gnosis Chain (the native bridges [OmniBridge](https://omni.gnosischain.com/bridge)\
+  \ and [xDAI Bridge](https://bridge.gnosischain.com/) as well as other solutions\
+  \ such as [Connext Bridge](https://bridge.connext.network/) and [Hop Exchange](https://hopapp.exchange/)).\
+  \ Also, it will work on a new bridge that will consolidate existing options in one\
+  \ place. Last but not lease, we will contribute to the research and development\
+  \ of the trustless bridge already in progress.\n\nMilestones can change once the\
+  \ revised roadmap is discovered and created.\n\nMilestone #0\n\n* Goal: create a\
+  \ comprehensive roadmap and kick-off onboarding\n* Tasks\n  * Refine scope of work\
+  \ and iterate over a roadmap\n  * Define communication processes (roles, channels,\
+  \ etc.)\n  * Defile roles, assign responsibilities and allocate resources and team.\n\
+  \  * Define specific milestones, timelines, and deliverables.\n* Deliverables\n\
+  \  * A detailed roadmap with milestones, timelines, and action items.\n  * A document\
+  \ that defines the processes, workflows, and methodologies.\n* Outcomes\n  * Stakeholders\
+  \ agree on the roadmap.\n  * The team has a refined execution plan.\n  * A team\
+  \ with the required skills is allocated to deliver the results according to the\
+  \ roadmap.\n  * Kick-off date for starting executing the roadmap.\n\nMilestone #1\n\
+  \n* Goal: Maintenance and operational management\n* Tasks\n  * Improve financial\
+  \ operations of the bridges.\n    * Native Bridges (Omni + xDAI).\n    * Non-native\
+  \ bridges (Connext + Hop).\n  * Identify liquidity management needs on other bridging\
+  \ solutions such as Hop and Connext.\n  * Develop monitoring tools and dashboards\
+  \ to measure financial performance easily. (this one can be used as a starting point:\
+  \ https://dune.com/maxaleks/Compounding-in-xDai-bridges )\n  * Improve observability\
+  \ and monitoring of the bridge's infrastructure.\n  * Live Monitoring application\
+  \ that shows transaction status for each validator and can monitor transactions\
+  \ in both directions. (this can be used as a starting point: https://docs.tokenbridge.net/about-tokenbridge/components/amb-live-monitoring-application\
+  \ )\n  * Increase decentralization and scalability of both native and non-native\
+  \ bridges.\n  * Identify routers’ and validators’ maintenance needs.\n  * Communicate\
+  \ and coordinate with involved stakeholders.\n  * Identify and document technical\
+  \ debt.\n  * Identify governance issues if any and create a plan to solve them.\n\
+  * Deliverables\n  * Documented process of bridge operations.\n  * Control dashboard\
+  \ for measuring bridge's financial performance.\n  * Documented architecture of\
+  \ infrastructure, pipelines, and technical workflows.\n  * Reporting about bridge\
+  \ usage, costs, and revenues associated with bridges.\n  * Communicate additional\
+  \ capabilities of Omnibridge to developers.\n  * List of financial KPI to keep track\
+  \ of.\n  * P&L reporting.\n* Outcomes\n  * Better financial control, visibility,\
+  \ and transparency of bridge operations.\n  * Operation improvements reduce manual\
+  \ and reactive work that leads to slow, unproductive, and error-prone issues.\n\n\
+  Milestone #2\n\n* Goal: Consolidate Omni + xDAI UIs\n* Tasks\n  * Create UX wireframes\
+  \ for a consolidated UI.\n  * Create the front-end and UIs.\n  * If needed, refactor\
+  \ Omni bridges and xDAI bridge backends and infrastructure to easily make the UI\
+  \ merge.\n* Deliverables\n  * A repository with the new consolidated UI.\n  * New\
+  \ UI is deployed.\n* Outcomes\n  * UX is improved, aiming for fewer dropouts.\n\
+  \  * Facilitate bridging operations into Gnosis Chain by a fairly simple process.\n\
+  \nMilestone #3\n\n* Goal: Security assessment plan and evaluation of bridges operation\
+  \ and infrastructure.\n* Tasks\n  * Evaluate the current security (web2 and web3).\n\
+  \  * Define a security plan and action items to improve the security of the bridges.\n\
+  * Deliverables\n  * A document that describes the security assessment.\n  * A detailed\
+  \ security roadmap and best practices to follow.\n* Outcomes\n  * Improved awareness\
+  \ of the current security.\n  * Increased security of the operation and infrastructure.\n\
+  \  * Reduced risks associated with possible security breaches (web2 and web3).\n\
+  \nMilestone #4\n\n* Goal: Evaluate options for native bridges to bridge to other\
+  \ networks (today, only mainnet is supported).\n* Tasks\n  * Analyze and research\
+  \ the needs and motivations to do it natively versus using/integrating with 3rd\
+  \ party solutions.\n  * Research and evaluate technical improvements and enhancements\
+  \ according to the research.\n* Deliverables\n  * A technical plan for enabling\
+  \ users to easily bridge to as many networks as possible.\n  * Submit GIPs according\
+  \ to research.\n* Outcomes\n  * The needs of assets bridging of users and protocols\
+  \ are clearly defined.\n  * Everyone can provide feedback on the future steps.\n\
+  \nMilestone #5 (might change the priority to be done sooner)\n\n* Goal: discovery\
+  \ phase to build a Bridge Aggregator.\n* Tasks\n  * Evaluate building a consolidated\
+  \ app that helps users to bridge assets from all kinds of chains to GC using any\
+  \ supported solution (could be a combination of Li.finance, xDAI, Omnibridge, Connext,\
+  \ Hop, and other options).\n  * Identify technical and business requirements.\n\
+  \  * Create a Product Specifications Document.\n  * Create a roadmap with milestones,\
+  \ timelines, effort estimates, etc.\n* Deliverables\n  * Evaluation result: Go /\
+  \ No Go.\n  * Product Specifications Document.\n  * Product Development Plan.\n\
+  * Outcomes\n  * Stakeholders understand if such a product is needed and its value\
+  \ to the ecosystem.\n  * The team has complete visibility on what needs to be built.\n\
+  \nMilestones #6 and beyond: TBD\n\n### 2: Circles infrastructure\n\nWhen referring\
+  \ to Circles Infrastructure, the Circle UBI project has been lacking continuity\
+  \ of a development team, therefore, making the product roadmap hard to plan as every\
+  \ milestone relies on software development. As a result, the enormous potential\
+  \ of this ecosystem is not being fully realized. However, we could envision a possible\
+  \ roadmap:\n\n* Contribution to user-friendly frontends, including Circles.Land\
+  \ and Gnosis Safe.\n* Backends / Subgraphs\n* Monitoring\n* Dashboards\n* SDKs\n\
+  * Tech support to other teams building on Circles infrastructure\n* Contribute onboarding\
+  \ DAOs to benefit from Circles features.\n\nRoadmap: it is currently under development\
+  \ being built by several parties. To be published soon.\n\nScope of Work: Bootnode's\
+  \ team has already been working on this initiative as an ongoing project since May\
+  \ 2022, contributing with: back-end, front-end, QA, UI, and Project Management.\n\
+  \nAs an outcome of this proposal, we expect to maximize the overall Circles UBI\
+  \ growth.\n\nThe ecosystem will initially benefit as follows:\n\n* Circles users\
+  \ (individuals and DAOs): will enjoy new features, improved reliability, and great\
+  \ UX.\n* Gnosis DAO: additional level of certainty in fulfilling the Circles UBI\
+  \ vision.\n* Projects building on top of Circles; core infrastructure:\n  * Public\
+  \ roadmap with the features the team will implement in the future.\n  * Access to\
+  \ propose and prioritize feature requests.\n* Gnosis Chain: higher block utilization\
+  \ due to the expected growth of the Circles protocol.\n\n### 3: Gnosis Beacon Chain\
+  \ decentralization and security\n\nBootNode will setup and run the Gnosis Chain\
+  \ full-stack (validator nodes and bridges) focusing on the Gnosis Beacon Chain and\
+  \ its path to the merge contributing to making it happen before Main net.\n\nRoadmap:\
+  \ [https://evening-lake-61d.notion.site/Gnosis-beacon-chain-merge-ca7e8759e5094b18accdc077e4959315](https://evening-lake-61d.notion.site/Gnosis-beacon-chain-merge-ca7e8759e5094b18accdc07)\n\
+  \n### 4: Gnosis DAO growth\n\nWe believe that by relying on a long-term committed\
+  \ engineering team, GnosisDAO ecosystem will be able to work on a more sound, clear,\
+  \ and executable vision, considerably increasing the probability of hitting every\
+  \ milestone in the roadmap. Therefore, many other Gnosis ecosystem’s efforts can\
+  \ count on the outcomes produced by this team:\n\n* Support community development\
+  \ and education about Gnosis Chain, Bridges, and Circle UBI.\n* Be available for\
+  \ different potential needs of the DAO and the community.\n* Support research, create,\
+  \ and deliver new proposals within GIPs and expand Gnosis Chain to other ecosystems\
+  \ (protocols, networks, infrastructures, etc.).\n* Protocol smart contracts development\
+  \ and GIP support.\n* Attend technical conferences and Gnosis DAO events to support\
+  \ growth.\n* Support pair programming sessions and education with dApp teams to\
+  \ share best practices and one-on-one support.\n* Bootstrap, run, and manage Gnosis\
+  \ Beacon Chan and Gnosis Chain validators aligning long-term via GNO incentives.\n\
+  \n### Team\n\nBootNode excellence in delivering an outstanding contribution and\
+  \ thinking outside the box is leveraged by already existing characteristics that\
+  \ have been poolish as a result of a team with an average of 10+ years of experience\
+  \ building and shipping software for many industries and 5+ years for the EVM ecosystem\
+  \ in particular.\n\nWe have identified the right candidates to build a **6 to 8\
+  \ members cross-functional and autonomous team (a Squad)** with all the required\
+  \ skills to work on the proposed scope of work, contribute to the network roadmap,\
+  \ and other potential work valuable to the chain.\n\nSome team members have participated\
+  \ in designing and developing the two existing native bridges (OmniBridge and xDai\
+  \ Bridge) and have worked with other cross-chain projects contributing to the core\
+  \ protocol and integrations, such as Connext Network. Also, part of the team has\
+  \ been contributing to building the Circle infrastructure developing a “Group Currency”\
+  \ layer on top of Circles for a couple of months and is fully knowledgeable about\
+  \ it.\n\nBootNode’s track record of experience in the field provides a competitive\
+  \ advantage to the GC that could speed the solution, derisk the DAO, and meet expectations.\n\
+  \n### Progress status\n\n* Bi-monthly progress reports in the forum.\n* Participation\
+  \ in the community calls.\n* Discord channels.\n* Roadmap, backlog, prioritization\
+  \ discussions, etc. are transparent and visible in notion, GitHub, and any other\
+  \ tool consistent with the other teams.\n\n### Terms of the Agreement\n\n* Time\
+  \ horizon: 6 months (closer to the end, a follow-on proposal will be created).\n\
+  * Amount: $580k in DAI or USDC.\n* GNO: 580 GNO (exclusively for running GBC validators\
+  \ for at least 12 months).\n* Safe address in main net: eth:0x3bCba50Ec74d18c583e0A832DD19AE37E9348790\n\
+  \n### Duration and Termination\n\n* This proposal shall come into force and be binding\
+  \ upon the Parties from the date the proposal is approved by the GnosisDAO governance\
+  \ mechanism.\n* The GnosisDAO may terminate BootNode’s engagement under this agreement\
+  \ for any reason by Governance Mechanism upon a 30-day notice as a new discussion\
+  \ thread in the GnosisDAO forum.\n* BootNode may terminate this agreement upon a\
+  \ 30-day notice as a new discussion thread in the GnosisDAO forum.\n* Without previous\
+  \ notification, BN will be entitled to terminate this agreement if GnosisDAO fails\
+  \ to make payments for more than 2 consecutive periods.\n\n# About BootNode\n\n\
+  **[BootNode](http://bootnode.dev/)** is a long-term dev & engineering partner focused\
+  \ on the Ethereum ecosystem that accelerates the development and adoption of decentralized\
+  \ infrastructure, protocols, applications, and ecosystems through engineering and\
+  \ investment.\n\nFounded by a team of engineers with an average of 10+ years of\
+  \ experience building and shipping highly available, highly scalable software for\
+  \ many industries and 3+ years for the blockchain ecosystem in particular.\n\nBoot\
+  \ Node contributes in different phases as an interdisciplinary team, from ideation\
+  \ to massive adoption. \n\n> more details in the forum."
+start: 1660142102
+end: 1660746902
+state: closed
+author: '0x2036CAfe136F1Ba6201ca6Da6fcf461bD4c5e635'
+created: 1660142277
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 429470.563016967
+scores:
+  - 342051.18372301076
+  - 84235.43701159944
+  - 3183.942282356569
+votes: 588
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '61'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,13 +1,70 @@
+/* Global styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #faf9f4;  Set background color for the entire application */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#app {
+  margin-top: 60px;
 }
+
+.container {
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 2em; /* Font size for h1 elements inside container class */
+}
+
+.container p {
+  font-size: 1em; /* Font size for p elements inside container class */
+}
+
+.table {
+  background-color: white; /* Set the background color for the table */
+  border: 1px solid #000; /* Add border to the table */
+  border-collapse: separate; /* Ensure borders are not collapsed to allow border-radius */
+  border-radius: 10px; /* Add rounded corners to the table */
+  table-layout: fixed; /* Ensure fixed table layout */
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #000; /* Add border to table headers and data cells */
+  font-size: 0.9em; /* Font size for table headers and data cells */
+  /* text-align: left;  Ensure text is always left-aligned */
+  overflow: hidden; /* Ensure content does not overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow content */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.table th {
+  cursor: pointer; /* Indicate that table headers are clickable for sorting */
+}
+
+.sort-icon {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+/* Additional specific styles */
+.search-input {
+  font-size: 1em;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.left-align {
+  text-align: left; /* Ensure text is always left-aligned */
+}
+
+.col-number { width: 50px; }
+.col-title { width: 400px; }
+.col-created { width: 150px; }
+.col-state { width: 50px; }
+.col-type { width: 50px; }
+.col-details { width: 50px; }

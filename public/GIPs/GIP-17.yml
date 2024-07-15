@@ -1,0 +1,49 @@
+id: '0x06feee3d2c9bc68ae0fccc8f2ada05c8323f0a71d2bcdfbc5556e8336cf5d71f'
+ipfs: QmUe1AyV114tSrSBgfJD62gFGbqngZm3nb4PrQBKJM28dY
+title: GIP-17 Gnosis DAO Safe update AND new treasury management Safe
+body: "Should Gnosis DAO upgrade the Gnosis DAO Safe AND create a separate Safe for\
+  \ Active Treasury Management as detailed in [this forum post](https://forum.gnosis.io/t/gip-17-should-gnosis-dao-upgrade-the-gnosis-dao-safe-and-create-a-separate-safe-for-active-treasury-management/2237)?\
+  \ \n\nTransaction batch 1 upgrades the Gnosis DAO Safe and creates the new daughter\
+  \ Safe.\nTransaction batch 2 sends the tokens to the daughter Safe."
+start: 1639515600
+end: 1640124000
+state: closed
+author: '0xf19d3e30392359440597ffE1d783ab77aebb2b4D'
+created: 1639514979
+choices:
+  - 'yes'
+  - 'no'
+scores_state: final
+scores_total: 119028.46543965576
+scores:
+  - 119028.46543965576
+  - 0
+votes: 140
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '17'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

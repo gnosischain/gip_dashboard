@@ -1,0 +1,57 @@
+id: '0x2dabb9a7bdf9d4a964579dc3ad15af771261a42f4efc74a7f847e7860a651170'
+ipfs: QmThmHA9GEFkEp9hQNRYkfvGdG8B7rQ76CEwypWEjeGJZP
+title: Allow GNO holders to vote with invested/staked/locked positions in mainnet/gc
+body: 'Following from GIP-28, this proposal enables those holding and using GNO in
+  a greater number of places to retain their vote in the GnosisDAO.
+
+
+  Currently, the GnosisDAO’s Snapshot strategy counts GNO on mainnet and Gnosis Chain,
+  along with LGNO, mGNO, and some GBC staking deposits on Gnosis Chain.
+
+
+  If approved, this proposal will allow users providing liquidity on various AMMs
+  to retain their voting power, along with counting all GBC staking deposits.'
+start: 1652796837
+end: 1653401637
+state: closed
+author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
+created: 1652796993
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 134098.8930439684
+scores:
+  - 134047.5221251944
+  - 40.31806902839211
+  - 11.052849745595813
+votes: 852
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '44'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

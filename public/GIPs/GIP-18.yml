@@ -1,0 +1,58 @@
+id: '0x23d8ac4c853b6b9d9e7972ae64fb94637f141a9e11bdafb0f24c528f43dea27b'
+ipfs: QmW9b1AAtzWP1Cvbpu3VtwC1Ruy7RLwhXK8QoX72imZX4q
+title: TickDAO Investment
+body: 'Should GnosisDAO implement GIP-18, investing 120.7085 WETH in exchange for
+  12,500,000 TICK, as detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-18-should-gnosisdao-invest-at-tickdao/2262/6
+
+
+  There are one transaction attached to this proposal:
+
+
+  Transfer 120.7085 WETH to tickdao.eth
+
+  '
+start: 1640358000
+end: 1640962800
+state: closed
+author: '0xef364e390fF3f326e3153d0B9c4B944dB42155e5'
+created: 1640294701
+choices:
+  - 'Yes'
+  - 'No'
+scores_state: final
+scores_total: 85151.52459133675
+scores:
+  - 85134.96447914814
+  - 16.56011218860319
+votes: 180
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '18'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

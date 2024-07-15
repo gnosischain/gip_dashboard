@@ -1,0 +1,79 @@
+id: '0x0bed9b763f14d5374817c31a696cc8b4e03e1d157744c1ae3ed3ea81a1ec28a9'
+ipfs: bafkreiafheo7dhgvdvlrdspxm5vaxwotftxvdg4bpnp5wxgh2lopgu5m5u
+title: Should the GnosisDAO commit to additional rETH usage in treasury operations?
+body: 'Executive Summary
+
+
+  Gnosis DAO / Chain has decentralization as its core ethos, focusing on a distributed
+  validator set for the chain and an open DAO structure run by GNO holders. Despite
+  this, our Treasury has nearly all of its staked ETH assets sitting with LIDO as
+  stETH. Given the success of RocketPool Protocol in creating a massively decentralized
+  validator set through rETH and RPL, this proposal recommends that Gnosis DAO commit
+  to moving at least 50% of their stETH holdings to rETH holdings over time in order
+  to support Ethereum decentralization and reduce single protocol and “bad actor”
+  risk that comes from Lido’s limited node set (29 nodes vs Rocket Pool’s 2550 and
+  growing nodes).
+
+  Introduction
+
+
+  As of last notice, the Gnosis Treasury (managed by Karpatkey) holds 64,124 wstETH
+  (~$130mm) and 5,725 stETH (~$10mm), 712 rETH (~$1.4mm), and 18,622 ETH. Full report
+  here: 20230424 - karpatkey’s Weekly Report on GnosisDAO Farms.pdf - Google Drive
+  1 This concentrated holding of a centralized staking provider token is a risk to
+  Gnosis DAO and against the DAO’s core ethos of decentralization. This GIP is intended
+  to direct Karpatkey to move to reduce stETH dependency and introduce additional
+  rETH into their DeFi strategies in order to reduce risk to the DAO and provide support
+  to decentralized ethereum staking.
+
+  Proposed Changes
+
+
+  The Gnosis DAO will instruct Karpatkey to reduce stETH dependency and increase staked
+  ETH diversity, but WILL NOT dictate how this is best accomplished. Karpatkey, once
+  instructed, will move forward with whatever strategies are in the best interest
+  of the DAO to reduce stETH exposure and provide additional usage of rETH / RocketPool'
+start: 1684777713
+end: 1685382513
+state: closed
+author: '0x756e9a772F87cC1B3c56E0b88f941BB3AeF0A81a'
+created: 1684777734
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 13654.690640959303
+scores:
+  - 13470.11920794947
+  - 57.00257238971315
+  - 127.5688606201184
+votes: 305
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '86'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,0 +1,178 @@
+id: '0x68d88244f7f1f10d15441a4894ff77ba595dbbed645b2ce0718604b14b96526a'
+ipfs: bafkreidm3ad4y6joov43nywq22rnxowcevnbhnl6i2ilgehlwf2jclkxwu
+title: Should GnosisDAO support an annual renewal for Blockscout SLA and hosting services?
+body: 'Blockscout continues to serve the Gnosis ecosystem with an open-source explorer
+  for both the Gnosis mainnet and Chiado testnet instances. Blockscout hosting was
+  originally funded in GIP 54 for mainnet and GIP 71 for the Chiado testnet.
+
+
+  Over the past year, Blockscout has attracted and retained Gnosis users and developers,
+  providing a valuable explorer option and needed redundancy for chain exploration.
+  While Gnosis mainnet users can choose Gnosisscan or Blockscout for their exploration,
+  contract verification, and API needs, Blockscout is currently the only full-featured
+  explorer serving the Chiado execution layer.
+
+
+  While Blockscout usage is down somewhat from its peak when it was the only explorer
+  option for the chain, many users still prefer Blockscout. A few high level statistics
+  from GA & Mixpanel:
+
+
+  ~45K monthly views, 9.5K MAU for Gnosis Mainnet Blockscout instance.
+
+  ~100 contracts verified in the previous month using Blockscout.
+
+  ~1,000 signups to myAccount since the feature was introduced.
+
+  ~550 Marketplace views over the previous month.
+
+  ~7K monthly views for Chiado.
+
+  Additional chain stats (not instance specific) are available at Gnosis chain statistics
+  | Blockscout.
+
+
+  Over the past year Blockscout has focused on optimizations and improvements which
+  have been upstreamed to the Gnosis instances on a priority basis. These include
+  a complete UI overhaul, multiple indexer upgrades, advanced statistics and the new
+  MyAccount and Dapp Marketplace features.
+
+
+  Updates scheduled for the upcoming year include:
+
+
+  Advanced filtering and sorting options
+
+  Human readable transactions
+
+  NFT views and explorer improvements
+
+  Smart search with AI
+
+  More Rust-based microservices
+
+  Support for ENS and ENS forks
+
+
+  Project Deliverables
+
+
+  Continue to maintain Blockscout instances for Gnosis Chain and Chiado testnet on
+  Blockscout’s premises
+
+  Hosting services for the Gnosis Chain and Chiado testnet (for a period of 1 year
+  with an option to extend)
+
+  Hosting at blockscout.com (for a period of 1 year with an option to extend)
+
+  Premium feature updates
+
+  Priority SLA to ensure uptime and troubleshoot any issues with Gnosis development
+  team
+
+  Support for end-users of the explorer managed via Discord
+
+
+  Execution Timeline
+
+
+  Start time
+
+
+  Proposed start time for the renewal is October 1, 2023.
+
+
+  Previous services for the hosted mainnet instance began on July 17, 2022 and officially
+  expired on July 18, 2023 (per GIP 54) . Since that time we have hosted the mainnet
+  instance at our own cost. We propose crediting 2 weeks (July 18-July 31) and receiving
+  back payments for 2 months (August and September) of hosting services in addition
+  to the new annual engagement cost.
+
+  Previous payment for the Chiado testnet was received on November 29, 2022 and scheduled
+  to extend through Nov 29, 2023. We propose reducing the time for this support by
+  2 months, so that the new engagement can begin and end at the same time as mainnet.
+
+  New proposed timeline: Gnosis Mainnet and Chiado testnet will be supported from
+  October 1, 2023 - October 1, 2024.
+
+  If the proposal is still in consideration on Oct 1 but no final decision has been
+  made, hosting and support will continue without interruption until the governance
+  process is completed, and the timeline will be amended accordingly.
+
+
+  Funding & Disbursement
+
+
+  Hosting costs cover high-capacity bandwidth, infrastructure upgrades, data storage
+  (2000GiB and growing), and devops for the networks. Feature enhancements and priority
+  support are also included as part of the package.
+
+
+  Over the past year we have analyzed instance usage and optimized our backend infrastructure
+  and processes, and are happy to offer a discount on pricing for the instances ($500
+  less per month relative to 2022 pricing). Chiado testnet pricing is scoped as a
+  2nd instance, resulting in a lower cost.
+
+
+  Gnosis Chain Mainnet: $112,000.00
+
+
+  $8,000 per month for 14 months (August and September 2023 + 1 year of service 1
+  October, 2023 - 1 October, 2024)
+
+  Chiado Testnet: $40,000
+
+
+  $4,000 per month for 10 months (credit of October and November 2023 + 1 year of
+  service 1 October, 2023 - 1 October, 2024)
+
+  Total cost: $152,000.00 due 1 October, 2023
+
+
+  Amount is requested up front for the year. Payment can be made to Blockscout’s SAFE
+  0xAddress on Ethereum mainnet (0x242ba6d68FfEb4a098B591B32d370F973FF882B7) with
+  USDC or USDT.'
+start: 1695121888
+end: 1695726688
+state: closed
+author: '0x88a98e77B61397DFb4386c81A4997e7F2079F2A9'
+created: 1695121888
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 79417.69397070853
+scores:
+  - 79344.22448151269
+  - 1.3987814300711263
+  - 72.07070776573612
+votes: 361
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '89'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,0 +1,49 @@
+id: '0x34c8c299df663957c4ccde826cf56cc798c2590f62ec2e400d635ffae506d901'
+ipfs: QmaW7pji2vNZHvEGgAxxxG8DAfzNqKig5mFocNFFR1sN8S
+title: Should Gnosis DAO burn 715k GNO?
+body: 'Should GnosisDAO burn 715k GNO as detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-19-should-gnosis-dao-burn-715k-gno/2312'
+start: 1644944400
+end: 1645549200
+state: closed
+author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
+created: 1644957818
+choices:
+  - 'Yes'
+  - 'No'
+scores_state: final
+scores_total: 687.7040123613141
+scores:
+  - 674.2140123613141
+  - 13.49
+votes: 70
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '19'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

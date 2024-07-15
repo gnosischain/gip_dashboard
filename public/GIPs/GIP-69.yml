@@ -1,0 +1,113 @@
+id: '0x6514a687509c3d974f91ccd602ee9c10f778bd7e855d5e2c154bb8635d3b8860'
+ipfs: bafkreigl7xtzrdvkfpzylw72prjdzv3y6jhwgctqzif4ri5sy4yvzvbuka
+title: Should Gnosis Partner with DAOhaus to Support DAO tooling on Gnosis Chain?
+body: "https://forum.gnosis.io/t/gip-69-should-gnosis-partner-with-daohaus-to-support-dao-tooling-on-gnosis-chain/5970\n\
+  \nSummary\nDAOhaus wants to deepen its partnership with GnosisDAO and is requesting\
+  \ $300k USD equivalent in stablecoins or GNO to the DAOhaus Core Contributor DAO,\
+  \ WarCamp.\n\nAbstract/Description\nDAOhaus provides purpose driven communities\
+  \ on Gnosis Chain with an open and free to use no-code platform for launching and\
+  \ managing their Moloch DAOs.\n\nBased on our activity on Gnosis Chain and previous\
+  \ collaborations with Gnosis, DAOhaus is interested in deepening the partnership\
+  \ between GnosisDAO and DAOhaus by supporting initiatives to drive more activity\
+  \ and communities to the Gnosis Chain ecosystem.\n\nOur goals around making DAO\
+  \ tooling more accessible and composable for both users and developers aligns with\
+  \ Gnosis’ goals to attract more users and developers to the Gnosis Chain ecosystem.\n\
+  \nWe believe Gnosis Chain enhances the cultural relevance of the Ethereum ecosystem\
+  \ and is comparable in cultural legitimacy to Mainnet. DAOhaus is thrilled to support\
+  \ and be supported by Gnosis Chain.\n\nMotivation/Rationale\nWe have been referring\
+  \ to Gnosis Chain as the “DAO Chain” for the better part of a year, and it is safe\
+  \ to say that DAOhaus calls Gnosis Chain home.\n\nWe are proud contributors to the\
+  \ Gnosis Chain Weekly newsletter, producing a DAO of the Week 1 piece each week\
+  \ and the Zodiac DAO wiki as early and ongoing contributors of DAO success patterns.\n\
+  \nAll of our core operations take place on Gnosis Chain and DAOhaus has provided\
+  \ DAOs on Gnosis Chain with excellent tooling, bug maintenance, support and a seamless\
+  \ UX - thanks to Gnosis’ high tx throughput & low costs.\n\nDAOhaus provides pertinent\
+  \ subgraph infrastructure to the Gnosis Chain ecosystem, where the daohaus-xdai\
+  \ subgraphs [1] [2] [3] have around ~700k queries per day with no server or IP querying\
+  \ more than ~40k on a given day, resulting in a fairly wide distribution of DAOhaus\
+  \ subgraph queries!\n\nSince 2020, DAOhaus users have created 1k+ DAOs on Gnosis\
+  \ Chain, onboarded 10k+ unique DAO members, submitted 40k+ proposals, and launched\
+  \ 700+ Gnosis Safes through the DAOhaus app. [1] [2] [3]\n\nAs of 2021, DAOhaus\
+  \ DAOs have had approximately $400M in total value flow through the platform.\n\n\
+  A stablecoin or GNO grant from Gnosis DAO would increase our capacity to build more\
+  \ valuable tools for DAOs and ultimately bring more DAOs, users, devs, and talent\
+  \ into the Gnosis Chain ecosystem.\n\nIf passed, DAOhaus and Gnosis will enter into\
+  \ a positive and mutually reinforcing collaboration that will sustain growth across\
+  \ the Gnosis Chain ecosystem for years to come.\n\nSpecification\nGrant funds will\
+  \ be allocated to three primary areas of focus, each of which supports our larger\
+  \ objective to bring community-first coordination tools to more human networks.\n\
+  \nDeliverables and Activities\n1. New DAO deployment tools\nDevelopment of a Safe\
+  \ Summoner App - enabling multisigs to easily level up into DAOhaus v3 DAOs\nDevelopment\
+  \ of apps/tools for migrating from DAOhaus v2 to DAOhaus v3\n2. Educational content\
+  \ for DAO users & operators\nCreate docs, explainers, and tutorials for new and\
+  \ experienced DAO users & operators\nFocus on common governance patterns, best practices,\
+  \ migration paths and more.\n3. Developer advocacy, outreach, and support\nTo be\
+  \ executed by the DAOhaus developer relations (DevRel) working group\n\nEncourage\
+  \ use of the DAOhaus v3 libraries by external development teams\nProvide active\
+  \ integration support & guidance to Gnosis ecosystem developers\nInform and execute\
+  \ further development of DAOhaus v3 libraries based on developer community needs\n\
+  Fund developer grants, bounties, and/or hackathon prizes\nOverview\nEach of the\
+  \ above initiatives will support our goal of onboarding 100 new DAOs to Gnosis Chain\
+  \ by Q2 2023. Additionally, these activities will have the following positive impact\
+  \ for Gnosis:\n\nProvide Gnosis Safe users additional community-oriented options\
+  \ for governing their assets and network\nProvide additional paths for developers\
+  \ to build on Gnosis Chain and Zodiac\nIncrease support for developers on Gnosis\
+  \ Chain\nTeam\nThis work will be conducted by Warcamp, the DAO of core contributors\
+  \ to DAOhaus.\n\nThis table represents the current team assembled for executing\
+  \ on the deliverables outlined above. Personnel changes are quick on our team and\
+  \ can be expected in the coming months. We offer this as a soft guideline for how\
+  \ we are thinking about work distribution.\n\nContributor\tPrimary Role\n01000011\
+  \ 2\tContent / UX\nadrienne 1\tDesigner\nAmos 1\tDevRel\nAvi 1\tDesigner / UX\n\
+  Bau 1\tContent\nBrian 1\tDeveloper\nChristina 1\tContent\nearth2travis 1\tProject\
+  \ Manager\nDekan Brown 1\tDeveloper\nJord 1\tDeveloper\nJP 1\tProject Manager\n\
+  Jeremy 2\tTester\nKeating 1\tDeveloper\nPlor 1\tProject Manager\nSantiago 1\tDeveloper\n\
+  Sam Kuhlmann 1\tDeveloper\nScott 2\tDeveloper\nSpencer 2\tProduct Manager / PR\n\
+  TW 1\tDocumenter\nUI369 1\tDevRel\nFund Dispersal\nTo fund the development of the\
+  \ above, DAOhaus is requesting stablecoins or GNO directly to it’s core contributor\
+  \ compensation vault (a Safe Minion): gno:0x9Fa12b5507B43229cB5bf96A056fE77E50aA99c9.\n\
+  \nWe appreciate any feedback or support you can provide on our proposal, please\
+  \ feel free to leave comments in the doc or drop your feedback below!"
+start: 1665780018
+end: 1666384818
+state: closed
+author: '0x0feF92A34ecF1F742B01c9e3cB2732A83C6067b6'
+created: 1665780213
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 1844.8804481285142
+scores:
+  - 1587.9889034172556
+  - 186.54563994146977
+  - 70.3459047697886
+votes: 782
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '69'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

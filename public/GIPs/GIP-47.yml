@@ -1,0 +1,51 @@
+id: '0x495858ef8aef07fc20662023f1690d60150339a09c620d25d76cbf49061bc0bf'
+ipfs: Qma5mFmVaFznrgErVMk3u5pxV4qe5PtcMHCCYNVLCfE6S3
+title: Should GnosisDAO pass a Grant Proposal to form a long-term partnership with
+  Nethermind, Gnosis Chain’s primary node?
+body: Nethermind is a vital part of Gnosis Chain. The Nethermind team should be supported
+  with a significant grant of 3m DAI upfront and 20k GNO vested over 3 years allowing
+  us to focus on Gnosis Chain.
+start: 1653927394
+end: 1654532194
+state: closed
+author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
+created: 1653927399
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 174397.1513691828
+scores:
+  - 174191.0082820708
+  - 57.66245134048024
+  - 148.4806357715174
+votes: 571
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '47'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

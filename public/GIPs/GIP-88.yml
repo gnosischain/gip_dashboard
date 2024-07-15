@@ -1,0 +1,228 @@
+id: '0xe1cc4813e19f2f62ee80cf337642b40617ce68e27582ba8c00ee5c9f96025146'
+ipfs: bafkreicngckbl4axemwbp3xh5w6ltfhhi5ejjqnpofb3c4qqimuncyfvpa
+title: Should Gnosis Chain provide liquidity for Circles Group Currencies in collaboration
+  w/Proof of Humanity?
+body: "http://forum.gnosis.io/t/gip-88-should-gnosis-chain-provide-liquidity-for-circles-group-currencies-in-collaboration-w-proof-of-humanity/6983\n\
+  \nauthor: Julio Linares, Clément Lesaege \n\n\nExecutive Summary:\n\nCirclesUBI\
+  \ is a dapp running on Gnosis Chain which distributes a Universal Basic Income (UBI)\
+  \ via a P2P mesh credit protocol. Recently, a secondary issuance mechanism has been\
+  \ developed, called Group Currencies, as a way to bridge Circles to state money\
+  \ systems and crypto-assets. We propose that Gnosis Chain provides liquidity to\
+  \ two specific group currencies: the BER group currency administered by the Circles\
+  \ Coop e.G. and the Proof of Humanity (POH) group currency administered by the POH\
+  \ Origin team. By partnering with projects like Monerium, the goal is to pave the\
+  \ way to position Circles as a leading real world payment application that provides\
+  \ a UBI to people worldwide, strengthening the Gnosis ecosystem. The total costs\
+  \ of the project are 1,700,000 EUR for a period of one year from the moment the\
+  \ proposal gets accepted by the Gnosis DAO.\n\nSpecification\n\nCircles (CRC) are\
+  \ minted as personal currencies at a rate of roughly 1 CRC per 1 hour or 24 CRC\
+  \ per day, with a yearly 7% demurrage on the money supply to incentivise circulation.\
+  \ The current socially agreed exchange rate of CRC to e.g. Euros is roughly 10:1.\
+  \ Group currencies are minted on a 1:1 basis, so that for each group currency minted,\
+  \ one personal currency gets deposited and locked into a specific treasury. Group\
+  \ currencies have three modes of issuance or minting:\n\n1. Only the owner can mint.\n\
+  2. Only the group can mint.\n3. Everyone can mint.\n\nIn order to test group currencies\
+  \ at a larger scale, the following proposal seeks to grant the ability to exchange\
+  \ Circles group currencies for the following groups:\n\n1. Proof of Humanity (Origin):\
+  \ in order to establish a clear collaboration and integration between POH-Origin\
+  \ and CirclesUBI, we propose a group currency that is used by POH-Origin users who\
+  \ join the Circles POH group currency as part of their basic income distribution\
+  \ system. POH is a sybil resistance registry that wants to use Circles group currency\
+  \ for UBI distribution. We propose that Gnosis Chain commits to fund a total of\
+  \ 500.000 EUR to bring liquidity onto their group currency (the liquidity will stay\
+  \ owned by the Gnosis DAO). More information about POH's recent fork can be found\
+  \ [here](https://gov.proofofhumanity.id/t/phase-3-binding-hip-74-a-peaceful-fork/2487).\
+  \ Technically, the PoH system would have a group currency manager for the creation\
+  \ of its Circles group currency. More details of that can be found [here](https://gist.github.com/AndreiMVP/63fe2376400ebb89ece633646aa8c625).\
+  \ For more technical information you can find a GitHub repository for the POH GC,\
+  \ which includes a README, [here](https://github.com/Proof-Of-Humanity/group-currency)\
+  \ Additionally, [here](https://hackmd.io/@andreimvp/pohgct-guide) you can read a\
+  \ more in-depth presentation/ testing guide for the PoH Group Currency. We believe\
+  \ strong synergies can come from this collaboration between Circles and Proof of\
+  \ Humanity (Origin) in the space, both powered by Gnosis chain.\n\n2. [Circles Coop](http://circles.coop/)\
+  \ eG: as part of the ongoing Berlin Open Pilot, the Circles Coop provides Euros\
+  \ in exchange for CRC that businesses accept in return for goods and services as\
+  \ a way of increasing fungibility of CRC and incentivising local trade, enabling\
+  \ a people-powered, bottom-up basic income. You can see more about the work of the\
+  \ Circles Coop [here](https://vimeo.com/769402776). An analysis of the Berlin network\
+  \ (December 2022) by the NetFi team at [Freiburg Institute of Basic Income Studies](https://www.fribis.uni-freiburg.de/en/fribis/)\
+  \ can be accessed [here](https://docs.google.com/document/d/1husreoJz3HQq9_C0LXRMiGRoC_hL5Uvxds9UwzTeeoI/edit?usp=sharing)\
+  \ (using novel network science methods).\n\nBER Exchange\n\nNow that we have established\
+  \ an active economic network in Berlin with over 2000 individual participants and\
+  \ 20 merchant partners, the goal of the Circles Coop for the next year is to leverage\
+  \ BER to create a sustainable community-driven investment environment for small\
+  \ and medium businesses within the circles network in order to expand the basic\
+  \ income economy. The group currency administered by the Circles Coop will be called\
+  \ \"BER'', after Berlin. The BER will be backed by production of goods and services\
+  \ coming from business sales in CRC. For the first years, we envision BER will be\
+  \ issued as a service by the Circles Coop based on the CRC that businesses in the\
+  \ network send to the Coop on a 1:1 basis. The Circles Coop will maintain a list\
+  \ of trustees or people who commit to give labour, capital or land to the network\
+  \ for the issuance of BER and other trade partners of the B2B network. After more\
+  \ knowledge and experience is gathered from the workings of BER on the Circles'\
+  \ web of trust, the Coop will begin to experiment with distributing group issuance\
+  \ rules to the wider economic network.\n\n* BER will be sold for Euro-e to community\
+  \ investors at a discount.\n* Euro-e will be given to the businesses in the Berlin\
+  \ network either as direct zero/low interest loans or as part of the ongoing pilot\
+  \ program.\n* Community investors can use BER to buy goods and services or sell\
+  \ BER back for Euro-e at a fixed rate. This means that for the first year businesses\
+  \ can only access BER through their own sales or by buying/selling BER with Euro-e\
+  \ from other businesses or community investors.\n\nCo-payment API & Multi-Token\
+  \ Display:\n\nIn order to do this, our aim is to make it easier for people and businesses\
+  \ to co-pay with their CRC & BER by enabling Euros-e payments and multi-token display\
+  \ of balances. The Circles Coop will leverage [Monerium](https://monerium.com/)’s\
+  \ Euro-e stable coin, running on Gnosis, to develop a product that allows businesses\
+  \ to withdraw and deposit Euro-e tokens to and from their [circles.garden](https://circles.garden/)\
+  \ safe wallet. Monerium is a SEPA authorised and regulated Euro stable coin. Users\
+  \ of Circles will be able to open a Monerium account with an IBAN to deposit Euro-e\
+  \ tokens to their Circles safe in order to use the open co-payment API functionality\
+  \ that we will develop. Businesses can sell things at a discount in Euros and benefit\
+  \ from higher sales experienced from participating in the Circles network. The Euro-e\
+  \ fee revenues generated are transparent and can be split as distributed equity\
+  \ for Circles users within the web of trust, for the pilot business costs and to\
+  \ cover the Coop's operational costs in order to break even. The end result is fully\
+  \ distributed credit issuance and internal liquidity provision made possible by\
+  \ the Circles mesh credit p2p protocol and distributed equity through the revenues\
+  \ generated from trade and investments to real production in the form of co-payment\
+  \ fees & community investment in BER.\n\nThe proposal would be to fund the Circles\
+  \ Coop with 1.2 million EUR from the moment this proposal becomes effective for\
+  \ a period of 12 months to:\n\n* develop the co-payment API functionality in the\
+  \ [circles.garden](https://circles.garden/) client and [marketplace](https://market.joincircles.net/en)\
+  \ with Euro-e and BER\n* Enable Euro-e, BER & CRC multi-token displays.\n* develop\
+  \ the BER/Euro-e exchange functionality for the Berlin pilot (500k EUR)\n* Research\
+  \ & Development (see below)\n\nPart of this budget will be assigned by the Circles\
+  \ Coop to the [Bitspossessed](https://bitspossessed.org/) developer collective (600k).\
+  \ The Bitspossessed have been responsible for maintaining and developing the core\
+  \ Circles UBI infrastructure and client (circles.garden) since [Sarah Friend](https://isthisa.com/)\
+  \ and [Andreas Dzialocha](https://adz.garden/) co-founded the Bitspossessed after\
+  \ technicaly launching CirclesUBI in October 2020, with the unconditional support\
+  \ from [Martin Koppelmann](https://twitter.com/koeppelmann). As the Circles Protocol\
+  \ is non-for-profit and meant to be a commons, the project relies on grants and\
+  \ public/private donations for its operations at scale. Having a budget for core\
+  \ development secured by the GnosisDAO will ensure the continued success of the\
+  \ project and group currencies as a whole. The Circles Coop's operational non-development\
+  \ costs will be secured by external private donations while the revenues generated\
+  \ from BER and co-payments are established, tested and proven to work. The Circles\
+  \ Coop aims to develop an open reproducible revenue model that allows other organised\
+  \ cooperatives, businesses and groups doing Circles to earn a revenue and break-even\
+  \ from fees in Euro-e/fiat co-payments, fiat withdrawals and deposits and group\
+  \ currency exchange fees.\n\nOur end goal and vision for the future is to develop\
+  \ a multi-currency p2p privacy-preserving payment app that brings investment for\
+  \ local economies to thrive everywhere via CirclesUBI.\n\nThe Circles Coop eG commits\
+  \ to sharing the progress, main learnings and achievements in Q3 of 2024 before\
+  \ applying to further funding from the GnosisDAO community.\n\nFrom mid 2024 to\
+  \ 2025, our aim is to develop with others in the ecosystem a Community Currency\
+  \ Exchange as a stand-alone product to decentralise and incentivise investment in\
+  \ group currencies in a privacy-preserving way. You can read more about the Circles\
+  \ Coop [here](https://circles.coop/) and about our recent work on anonymous circles\
+  \ or the Circles [Entropy Black Paper](https://circlesentropy.github.io/blackpaper/).\n\
+  \nResearch\n\nIn order to understand better what the different risk profiles and\
+  \ trade-offs of group currencies will be, we would like to include a budget to fund\
+  \ the research work of BlockScience and Circles Coop Research team, who will work\
+  \ in understanding and modelling what effects will the introduction of group currencies\
+  \ have on the Circles web of trust network as a whole, providing a \"digital twin\"\
+  \ of Circles with the capacity to perform deterministic backtesting and to perform\
+  \ extrapolation under stylized scenarios. One of the product outcomes of research\
+  \ is to determine, using network science, when an account is a real person or not\
+  \ and create the necessary metrics and detection mechanisms for sybil resistance.\
+  \ To that end, we request a total of 100k EUR to fund the great work of [Blockscience](https://block.science/)\
+  \ and the Circles Coop research team for a period of six months.\n\nTimeline for\
+  \ Circles Coop:\n\nResearch and Design (3 months): includes market research, design\
+  \ research, design work on ideation, mock-ups for new features, user stories, risk\
+  \ management on legal and economic fronts, network science and agent based modelling\
+  \ research, fine tuning business model, ongoing maintenance, stabilisation and improvement\
+  \ of technical infrastructure. Additionally, here we will review and do an audit\
+  \ of the group currency contracts to make sure everything is secure before deployment.\n\
+  \nDecision-Making and Planning Implementation (1 month): Systematize and cross-analyze\
+  \ all the information gathered. Establish a common roadmap in all domains to implement\
+  \ agreed features, prepare campaigns for general users, improve Coop's BER minting\
+  \ and EUR redeeming procedures, start with design research for [marketplace](http://www.market.joincircles.net)\
+  \ integration, ongoing maintenance and stabilisation of technological infrastructure.\n\
+  \nFeatures Development and Implementation Phase 1 (3-4 months): Launch campaign\
+  \ to prepare users for new features. Work on the feature of multi-token display\
+  \ to start users getting used to this possibility, preparing circles.garden backend\
+  \ and marketplace for co-payment API. Test, adjust and launch first features. Design\
+  \ processes and platforms for community investment. Prepare a communication campaign\
+  \ to reach out to community investors. Ongoing maintenance and stabilisation of\
+  \ technological infrastructure. \n\nFeatures Development and Implementation Phase\
+  \ 2 (3-4 months): Developing, testing and launching co-payment API features both\
+  \ on circles.garden and the marketplace. Campaign to introduce co-payment and start\
+  \ introducing economic justice/social investment narrative. Ongoing maintenance\
+  \ and stabilisation of technological infrastructure. Lastly, work will go into research\
+  \ and design of a currency exchange platform for Q3 2024.\n\nMilestones: \n\nQ1:\
+  \ first stage of Group Currency research completed, GC contract audits fully done.\
+  \ \n\nQ2: Design of features and workflows of GC \n partially completed.  Architecture\
+  \ & spec for payment API defined. \n\nQ3: Design of features and workflows of GC\
+  \ completed. Testnet goes live to begin testing features and assumptions. Second\
+  \ stage of research completed. \n\nQ4: Group Currency and co-payments implemented\
+  \ on the circles.garden wallet and marketplace \n\n\n Budget\n\nTo summarise, the\
+  \ breakdown of the total budget of this proposal will be assigned as follows:\n\n\
+  To Proof of Humanity Origin Team:\n\n* 500k EUR for POH group currency. This liquidity\
+  \ belongs to GnosisDAO and will go to the users of POH directly. The idea is to\
+  \ provide liquidity on PHC (Proof of Humanity Circles). The money will be used to\
+  \ build a liquidity position of DAI-PHC.\nSince there wouldn't be any liquidity\
+  \ initially, the POH team will need to buy it overtime to avoid slippage, for around\
+  \ 50k€ of PHC over 5 months.\nThe POH team can handle those operations and then\
+  \ send the liquidity tokens to the GnosisDAO.\nGiving the exact operations may be\
+  \ hard as price of PHC may vary.\n\nProof of Humanity's Gnosis Chain Safe: 0x636a9f58182B8132A08777A8De0Ca0f63bc0C3aa\n\
+  \nTo Circles Coop e.G.:\n\n- 100k EUR for Research collaboration with Blockscience\
+  \ and the Circles Coop Research team (July 2023 to June 2024). Paid in DAI or USDC.\n\
+  \n- 600k EUR for the Bitspossessed CirclesUBI Dev Team (July 2023 to June 2024).\
+  \ Paid in DAI or USDC.\n\nBerlin CirclesUBI Pilot:\n\n* 500k EUR for BER Pilot -\
+  \ as a commitment to exchange the Group currency (BER) for DAI or USDC. This liquidity\
+  \ belongs to GnosisDAO and will go to the businesses in the pilot directly. The\
+  \ BER minted will be sent to the Gnosis Treasury team in exchange for the stable\
+  \ coin at a fixed rate of ~10 BER to 1 Euro with a small discounted exchange fee\
+  \ as incentives for merchants. In the future proposals to GnosisDAO, we plan to\
+  \ create a social dex (community currency exchange) to allow for different forms\
+  \ of mutual staking, direct loans to the B2B network and more, in order to make\
+  \ the operation economically sustainable.\n\nCircles Coop's Gnosis Chain Safe: 0xd9B58990cef69c2d222fD8f8CAf53477C5B79E28\n\
+  \nTotal:\n\n1.7 million EUR for a period of one year.\n\nA more detailed cost breakdown\
+  \ is given [here](https://docs.google.com/spreadsheets/d/1ORy9d2pw7IJoub05s5MuVLBD3kRyUqpQmJnMG1KhdR4/edit#gid=1813060761).\
+  \ \n\nFunding should be given for the respective team public addresses present in\
+  \ this proposal.\n\nWe look forward to our collaboration.\n\nCircles Coop e.G &\
+  \ Proof of Humanity Origin"
+start: 1688964263
+end: 1689569063
+state: closed
+author: '0x04B86C77271B97EF30AEc9eFB5d4cbC805144a7A'
+created: 1688964263
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 56025.21448664428
+scores:
+  - 29007.3067727236
+  - 27001.41504120799
+  - 16.492672712679905
+votes: 338
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '88'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,0 +1,62 @@
+id: '0x8f8d2118ef3a8fa9f8b1814ce2ae34ae8776548716a45ce69082f3e266465f48'
+ipfs: QmS4tye1dfgEdciTzbzUBvwA8wPbpDiJWvkzdwKdvZMz81
+title: GIP-16 Gnosis Chain
+body: 'Should GnosisDAO implement GIP-16, as detailed in this [forum post]() (also
+  available on [IPFS](https://gateway.pinata.cloud/ipfs/Qmd83zavdSrUDNZEsSdixt7aRoBeEo6pVHSwZhMmyKygjX))?
+
+
+  There are four transactions attached to this proposal:
+
+  1. Withdraw 285,398 GNO from the vesting contract
+
+  2. Wrap 20,000 ETH to WETH
+
+  3. Approve 20,000 WETH to the Gnosis Auction contract
+
+  4. Initiate an Auction on Gnosis Auction
+
+
+  Please see the [transaction simulation](https://dashboard.tenderly.co/giacomolicari/xdaignomergetest/simulator/4ba7a377-c418-44a6-a70c-9ce7d984c765)
+  for the expected result.'
+start: 1638291600
+end: 1638896400
+state: closed
+author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
+created: 1638293013
+choices:
+  - 'Yes'
+  - 'No'
+scores_state: final
+scores_total: 98984.43493373533
+scores:
+  - 96601.99358039466
+  - 2382.441353340679
+votes: 264
+quorum: 0
+quorumType: default
+symbol: ''
+flagged: false
+gip_number: '16'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

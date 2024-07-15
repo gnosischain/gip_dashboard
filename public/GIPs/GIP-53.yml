@@ -1,0 +1,91 @@
+id: '0x397b3b0891a1874b34ae60bc95e83293c5599efb3783c602a39939f7754ad6a5'
+ipfs: QmNhj4iKJ5e3VB4EjX1dGRj3Z9QE3br9igEzJX4hwf7o7j
+title: Should GnosisDAO sponsor Necromorfo’s Cryptorock Tour 2022?
+body: 'The Cryptorock Tour proposal aims to execute a web3 onboarding tour in 14 different
+  cities in Mexico with presentations from the band [Necromorfo](https://instagram.com/necro_morfo)
+  supported by projects like [Rockoboy](https://www.instagram.com/rockoboyoff/), [Pajaros
+  Vampiro](https://www.instagram.com/pajarosvampiro/) and [The Froys](https://www.instagram.com/thefroysmx/),
+  as well as local bands from each city.
+
+
+  The Gnosis Chain ecosystem will provide the infrastructure for the onboardings,
+  using tools such as:
+
+  * Chainlist.org
+
+  * Tip Party (by Moonshot Collective)
+
+  * POAP
+
+  * Honeyswap
+
+  * Giveth
+
+  * Agave
+
+  * [Suarmi](https://suarmi.com) and [Connext](https://bridge.connext.network) bridges
+
+
+  A deep insight into the planning and logistics can be found in the [Gnosis discussion
+  forum](https://forum.gnosis.io/t/gip-53-should-gnosisdao-sponsor-necromorfos-cryptorock-tour-2022/5314),
+  as well as supporting media and documents.
+
+
+  * GnosisDAO will provide **$15,000.00 xDAI** to Necromorfo, in exchange for onboardings,
+  live shows and brand placement in 14 cities across Mexico.
+
+  * The tour aims to reach at least 1,200 show attendees, of which our goal is to
+  onboard a 10% to Gnosis Chain.
+
+  * A follow-up with local communities in the next months after the tour will encourage
+  further local onboardings using Gnosis Chain.
+
+  * The funds provided by GnosisDAO will be transparent at all moment. A detailed,
+  updated pre-production expense report can be found [here](https://docs.google.com/spreadsheets/d/1vea48si-0ueNRanP6YlQjOxXuXs4B4e3qydpENm0K4Q/edit?usp=sharing).
+
+  * Necromorfo will include a feature documentary film executive-produced by GnosisDAO
+  around the tour in their deliveries.'
+start: 1655759864
+end: 1656364664
+state: closed
+author: '0xB22981bA3FE1De2325935c91a3B717168fB86714'
+created: 1655760004
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 106450.0558508804
+scores:
+  - 106193.18269779914
+  - 234.1713301786316
+  - 22.70182290261135
+votes: 337
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '53'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

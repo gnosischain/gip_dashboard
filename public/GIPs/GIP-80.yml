@@ -1,0 +1,198 @@
+id: '0xf89c08d03b294e6e891f1f3d74d903e77f364002fde64e9dd463e280c60189a9'
+ipfs: bafkreicojlyt3rxhk4mns6vk5gdebxur6kfkxvd4dhnsl3dic5nqf6xf4e
+title: Should GnosisDAO fund p2panda's off-chain solution for secure group encryption?
+body: "Forum URL: https://forum.gnosis.io/t/gip-80-should-gnosisdao-fund-p2pandas-off-chain-solution-for-secure-group-encryption/6541\n\
+  \n## Category\n\nFunding - Rewards\n\n## Executive Summary\n\nHello Gnosis community!\n\
+  \nWe would like to realize a prototype for a decentralized, off-chain, encrypted\
+  \ group chat where Ethereum addresses can serve as the receiver's identifiers.\n\
+  \nTo achieve this we want to improve and build on top of the [Messaging Layer Security\
+  \ Protocol](https://messaginglayersecurity.rocks) (MLS) and the [p2panda](https://p2panda.org/)\
+  \ protocol. This technology fills a need in the Gnosis community for a generic and\
+  \ encrypted off-chain data layer.\n\nThis technology fills a need in the Gnosis\
+  \ community for a generic and encrypted off-chain data layer. The group chat will\
+  \ also be a proof of concept and template for future applications serving the Gnosis\
+  \ community using the same infrastructure.\n\n## Specification\n\n[p2panda](https://p2panda.org/)\
+  \ is a new protocol and ecosystem for building decentralised applications with authenticated\
+  \ and encrypted data which is automatically stored and synced between computers.\n\
+  \nSome of the building blocks of p2panda are a permission system, conflict-free\
+  \ replicated data types, multi-key identities, data schemas, multi-writer documents,\
+  \ local deletion, sparse replication, dynamic GraphQL queries, hybrid network topologies\
+  \ and more.\n\nWhile p2panda aims at being a low-barrier framework to enter the\
+  \ p2p space without worrying too much about the technical challenges coming with\
+  \ it, we also want to offer a toolbox to build radical applications which work locally,\
+  \ offline and both in the browser and on low-energy devices like a smartphone or\
+  \ embedded computer.\n\nData is encrypted with the help of the MLS protocol providing\
+  \ Double-Ratchet-based group encryption. MLS assures Post-Compromise Security (PCS)\
+  \ and Forward Secrecy (FS) and still stays performant for large groups. While MLS\
+  \ is capable of working in a decentralised environment it hasn't been explicitly\
+  \ specified for it. With p2panda we have all the building blocks to realize MLS\
+  \ in a fully decentralised setting.\n\nFor all of this to play nicely together,\
+  \ the following implementation steps are planned:\n\n### Secret Groups\n\n_Secret\
+  \ Groups_ is the data schema that p2panda uses to handle data encryption for groups\
+  \ in a decentralised setting and it builds on MLS as its underlying layer.\n\np2panda\
+  \ already contains a low-level API for MLS that we implemented as a precursor for\
+  \ the more high-level _Secret Groups_. This low-level API supports two basic usage\
+  \ scenarios: Double-Ratchet-based encryption (the MLS default) and a so called \"\
+  Long Term Secret\" encryption on top of that. The latter allows group members to\
+  \ still decrypt past data after entering the group, which is practical for building\
+  \ applications like Wikis. Double-Ratchet-based encryption offers Forward Secrecy\
+  \ instead (FS), which can be used for secure chat applications and other use cases\
+  \ where new group members should not access past data.\n\nThe next step will be\
+  \ building an elegant high-level API that makes this system easily accessible for\
+  \ developers that want to integrate _Secret Groups_ in their applications. This\
+  \ involves additions to our GraphQL API, p2panda's built-in data schemas and replication\
+  \ data format, which are all part of our core protocol specification.\n\n**Further\
+  \ Links**\n\n- \"OpenMLS\" MLS implementation in Rust which is used by p2panda:\
+  \ https://github.com/openmls/openmls\n- MLS integration in p2panda: https://github.com/p2panda/p2panda/tree/main/p2panda-rs/src/secret_group\n\
+  - Draft \"Secret Group\" specification in p2panda: https://p2panda.org/specification/encryption\n\
+  \n### Rust and TypeScript libraries\n\nDevelopers will use our Rust and TypeScript\
+  \ libraries to integrate p2panda in their applications.\n\nTo persist MLS group\
+  \ state we will implement interfaces for some known storage backends developers\
+  \ can choose from (SQL, IndexedDB, LocalStorage). To account for forks of diverging\
+  \ group state (due to network fragmentation) we need to extend our persistence system\
+  \ with an additional layer. This layer keeps past group states for a while to be\
+  \ able to decrypt messages from \"forked\" group states. This temporarily weakens\
+  \ Forward Secrecy the more fragmented the group state gets.\n\n**Further Links**\n\
+  \n- MLS specification (Version 9 February 2023) addressing forked group states:\
+  \ https://messaginglayersecurity.rocks/mls-protocol/draft-ietf-mls-protocol.html#section-14\n\
+  - OpenMLS Rust crate allowing handling past group epochs w. `max_past_epochs` option:\
+  \ https://openmls.tech/book/user_manual/group_config.html\n- Diagram: Handling concurrent\
+  \ updates in Secret Groups: https://whimsical.com/concurrent-updates-in-secret-groups-MZdGMKmMJ25zxrDAzuoXGG\n\
+  - `p2panda-rs` Rust crate: https://crates.io/crates/p2panda-rs\n- `p2panda-js` npm\
+  \ package: https://www.npmjs.com/package/p2panda-js\n\n### Key Groups\n\nThe MLS\
+  \ specification does not have a concept of \"moderators\" or \"administrators\"\
+  \ in a group. Theoretically all members of the group can mutate its state. p2panda\
+  \ _Key Groups_ are a permission layer on top of MLS which allows for decentralised\
+  \ permission handling of multi-writer data. Next to permissions they also enable\
+  \ multi-device identities.\n\nAs part of this effort we will create an implementation\
+  \ of our specification of the _Key Groups_ system, which will be able to model a\
+  \ permission system on top of any encrypted group.\n\n**Further Links**\n\n- Draft\
+  \ \"Key Group\" specification: https://p2panda.org/specification/authorisation\n\
+  \n### External Keys\n\np2panda uses Ed25519 as the Digital Signature Algorithm.\
+  \ To allow other DSAs we need to implement a _handshake_ process where external\
+  \ identity systems such as an Ethereum key can authorise an MLS group member. This\
+  \ will involve adding another data schema to p2panda.\n\n**Further Links**\n\n-\
+  \ Diagram: External keys in p2panda: https://whimsical.com/digital-signature-algorithms-EgAkzR7mVDj4BQb7xySahh\n\
+  - Schema specification: https://p2panda.org/specification/data-types/schemas#system-and-application-schemas\n\
+  \n### POC: Group chat in Circles client\n\nAs a proof-of-concept (POC) we will integrate\
+  \ p2panda with MLS into an existing Ethereum application in the Gnosis community.\
+  \ Since our team partly consists of the original developers of the Circles ecosystem\
+  \ we want to use the current Circles web client to show how Ethereum addresses (Gnosis\
+  \ Safe contracts) can be used as receiver addresses for an encrypted MLS chat group.\n\
+  \n* Users can associate their Gnosis Safe address (\"Circles profile\") with a p2panda\
+  \ key\n* Users can create and manage groups to communicate with a set of other Safe\
+  \ addresses\n* Users can access their chats from all of their devices simultaneously\n\
+  \n**Further Links**\n\n- Circles website: https://joincircles.net/\n- Circles client:\
+  \ https://circles.garden/\n\n### Security Audit\n\nThe OpenMLS team which partly\
+  \ consists of the IETF standard editors consulted us already with the correct integration\
+  \ of MLS into p2panda. We will continue with this collaboration. To verify our work\
+  \ and gather feedback we want to work with Least Authority for a security audit.\
+  \ \n\n- OpenMLS: https://openmls.tech/\n- Least Authority: https://leastauthority.com/\n\
+  \n## Rationale\n\nScaleable data encryption for large groups in a decentralised\
+  \ network is hard and has always involved a trade-off between UX and security. We\
+  \ believe that MLS is the first [Internet Engineering Task Force (IETF) standard](https://datatracker.ietf.org/wg/mls/about/)\
+  \ to tackle some of these challenges. p2p applications of all kinds, for example\
+  \ the Gnosis Safe Apps, will benefit from an off-chain protocol that gives them\
+  \ a distributed, strongly encrypted database stack.\n\nOne goal of p2panda's protocol\
+  \ design has been enabling both usage from native apps, independent of a stable\
+  \ connection to the internet, and immediate access from a plain web browser, without\
+  \ having to install any additional software. Additionally, p2panda keeps data portable\
+  \ instead of locking it to a specific application or server. Our design works in\
+  \ both federated network topologies and fully decentralised systems, both of which\
+  \ can be configured depending on the needs of the software and the communities that\
+  \ are operating it.\n\nEthereum addresses (EOA and Contract account, for example\
+  \ of a Gnosis Safe) are ideal identifiers for applications like a distributed messaging\
+  \ platform. They are already established in the community, simplify onboarding and\
+  \ enable cross-validation of identities through previous usage of those keys. Protocols\
+  \ with centralised registries like PGP/GPG failed here and we believe that Ethereum\
+  \ addresses that are native to decentralised networks are much more suitable for\
+  \ this task. We want to enable any holder of an Ethereum key to bring their identity\
+  \ and access additional tools for the community.\n\n## Budget\n\n- 172.800 DAI -\
+  \ Salary for 3x half-time developers over ~12 months (8h / day, 3 days / week, 48\
+  \ weeks, 50 DAI / hour)\n- 10.000 DAI - Security Audit Fee\n- 5.000 DAI - Administration\n\
+  - 12.200 DAI - Contingency\n\nTotal: 200.000 DAI\n\n## Milestones\n\n**Proposed\
+  \ timeline:** 12 months\n\n**Final goal:** Implementation and realisation of specified\
+  \ items (see \"Specification\" above)\n\n**Timeline and Success metrics**\n\n- Phase\
+  \ 1 - Research & Specification\n  Success Metrics - Publicly published Secret Group,\
+  \ Key Group and External Keys specification on p2panda.org website and GitHub repository\n\
+  \  Time and Price Estimate - 2 month, 28.800 DAI\n- Phase 2 - Implementation Secret\
+  \ Groups\n  Success Metrics - `p2panda-js` package release on npm with Secret Group\
+  \ encryption API and storage provider API\n  Time and Price Estimate - 3 months,\
+  \ 43.200 DAI\n- Phase 3 - Implementation Key Groups\n  Success Metrics - `p2panda-rs`\
+  \ crate release on crates.io with Key Group data types. `aquadoggo` node implementation\
+  \ release on crates.io handling key groups in materialization logic\n  Time and\
+  \ Price Estimate - 3 months, 43.200 DAI\n- Phase 4 - Implementation External Keys\n\
+  \  Success Metrics - Package release on npm (either `p2panda-js` or external package)\
+  \ with External Keys feature\n  Time and Price Estimate - 1 month 14.400 DAI\n-\
+  \ Phase 5 - POC: Circles Chat\n  Success Metrics - Release of encrypted Group-Chat\
+  \ in Circles Wallet (either in official circles.garden Website or fork)\n  Time\
+  \ and Price Estimate - 1 month 14.400 DAI\n- Phase 6 - Security Audit\n  Success\
+  \ Metrics - Shared results of audit in p2panda GitHub repository, report on required\
+  \ refactorings / changes in codebase\n  Time and Price Estimate - 1 month 10.000\
+  \ DAI (audit) + 14.400 DAI (development)\n- Phase 7 - Documentation + Tutorials\n\
+  \  Success Metrics - Published tutorials on how to use Secret Groups, Key Groups\
+  \ and External Keys feature on p2panda.org website\n  Time and Price Estimate -\
+  \ 1 month 14.400 DAI\n\n## Evaluation\n\nA security audit and implementation of\
+  \ a POC in a widely-used context like Circles will evaluate the success of this\
+  \ undertaking.\n\n## Team & Organisation \n\np2panda is a not-for-profit organisation\
+  \ founded in 2021 with the mission to bring an easy to use but radical p2p stack\
+  \ to app developers. We received the NGI Pointer grant in 2021/22 and NGI Assure\
+  \ in 2022/23.\n\nThe team behind p2panda are experts in p2p, Rust and TypeScript\
+  \ development. The founding members are:\n- [adz](https://github.com/adzialocha/)\
+  \ has been the core developer next to [isthisa](https://isthisa.com/) developing\
+  \ the first version of the Circles UBI community currency, both of them founded\
+  \ later the [bitspossessed](https://github.com/bitspossessed/) developer collective\
+  \ which still maintains the Circles project\n- [sandreae](https://github.com/sandreae)\
+  \ is a Rust developer with experience across the landscape of offline-first protocols\n\
+  - [cafca](https://github.com/cafca) is part of the [Decent Patterns](https://decentpatterns.com/)\
+  \ library team, currently working on the JavaScript SDK of ditto\n\n## Conclusion\n\
+  \nSecure encryption for large groups is a complex problem which gets even harder\
+  \ in a decentralised setting. With the new [Messaging Layer Security Protocol](https://messaginglayersecurity.rocks)\
+  \ (MLS) and [p2panda](https://p2panda.org) as the decentralisation layer we want\
+  \ to introduce a solution that can account for a range of community-, threat- and\
+  \ networking models. At the same time we want to provide accessible and well-documented\
+  \ APIs for developers to easily build their solutions on top."
+start: 1680256800
+end: 1680861600
+state: closed
+author: '0xe661830067591344F10E165Fd75bCDa8D041bdD0'
+created: 1680256834
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 1192.985292607802
+scores:
+  - 200.25708236414337
+  - 675.314024711218
+  - 317.414185532441
+votes: 655
+quorum: 0
+quorumType: default
+symbol: GNO
+flagged: false
+gip_number: '80'
+space:
+  id: gnosis.eth
+  name: GnosisDAO
+  members: []
+  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
+  symbol: GNO
+  verified: true
+  turbo: false
+  plugins:
+    quorum:
+      total: 75000
+      strategy: static
+      basicCount:
+        - 0
+        - 2
+    safeSnap:
+      safes:
+        - network: '1'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
+        - network: '100'
+          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
+          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'
