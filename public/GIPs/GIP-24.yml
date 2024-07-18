@@ -1,5 +1,5 @@
 id: '0x9c53b972174d6947627b37ffa332bd9301b9f5d8328e8de62b63a601b71d0656'
-ipfs: Qmds5c4bxoDCzRyBWGCinbua8aUnf6RxRa2ayhSSaUjbzC
+gip_number: '24'
 title: 1st phase 50K GNO Incentives Program for Gnosis Chain as proposed in GIP-16
 body: 'Should GnosisDAO execute the 1st phase 50K GNO Incentives Program for Gnosis
   Chain as detailed in this forum post?
@@ -10,41 +10,15 @@ start: 1647429755
 end: 1648047600
 state: closed
 author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
-created: 1647434178
 choices:
-  - 'Yes'
-  - 'No'
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 78881.31252895085
 scores:
   - 78881.31252895085
   - 0
+  - 0
 votes: 95
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '24'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

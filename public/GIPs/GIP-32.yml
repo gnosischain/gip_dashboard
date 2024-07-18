@@ -1,5 +1,5 @@
 id: '0x34b39da3317f217bf414feb781042a6f255982f4a0c2aad4f2945866e74bf95d'
-ipfs: QmZp2njkraNRigZyp8Kdftkaq83Wrw5T2AsNbH5aFn6UFy
+gip_number: '32'
 title: Reimburse expenditures to the Gnosis Chain Core Development Unit (formerly
   xDai Chain team)
 body: 'Summary
@@ -33,7 +33,6 @@ start: 1649239154
 end: 1649843954
 state: closed
 author: '0x7D7DcEf3bB919347F5031127799ee2679A9111A0'
-created: 1649241092
 choices:
   - For
   - Against
@@ -46,30 +45,3 @@ scores:
   - 0.15529720523870943
 votes: 566
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '32'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

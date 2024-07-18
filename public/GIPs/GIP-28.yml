@@ -1,5 +1,5 @@
 id: '0x521efc4aaa8e2d2e2405ae91207d07d872286257044dfca5aa7764c7f66dd3d8'
-ipfs: QmZb2JjkfviERFQ81cUp9wdLk9PGo8715Wq9AtpbHKZVCQ
+gip_number: '28'
 title: Allow locked and staked GNO to vote
 body: 'The proposal is [detail on the Gnosis forum](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357),
   with the specification detailed in [this reply](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18?u=auryn_macmillan).
@@ -18,7 +18,6 @@ start: 1647531387
 end: 1648137600
 state: closed
 author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
-created: 1647531451
 choices:
   - For
   - Against
@@ -31,30 +30,3 @@ scores:
   - 0.4300272170417151
 votes: 114
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '28'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

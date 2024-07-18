@@ -1,5 +1,5 @@
 id: '0x1229020e53e1b973192e8c274e5109970ab58cc9127ae4d438aad7943d451ae9'
-ipfs: QmTdmBUinpaLbwxB7iYi6M5bUNjGbUXk89atc8r8TwACdN
+gip_number: '40'
 title: 'Should Gnosis DAO support a reimbursement plan to the Hundred Finance Community
   in the following manner? '
 body: 'On March 15th, 2022, the Gnosis Chain deployment of the Hundred Finance lending
@@ -19,7 +19,6 @@ start: 1651594975
 end: 1652199775
 state: closed
 author: '0x74b926358f43a06665C9733Ff4f1A79d1dceC49E'
-created: 1651595310
 choices:
   - For
   - Against
@@ -32,30 +31,3 @@ scores:
   - 67.54476870199478
 votes: 734
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '40'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

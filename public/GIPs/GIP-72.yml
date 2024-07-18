@@ -1,5 +1,5 @@
 id: '0x4c2453deefd3b5de955ecde254f55b31a52dcff1b220a48343dffa7e1af4f788'
-ipfs: bafkreifgbzpoldjcuhhlsb5cuzds4ygm6e2t7oxz7prpixshsd33q62aqm
+gip_number: '72'
 title: Should GnosisDAO fund Common Ground to support onboarding DAOs to the Gnosis
   Chain Ecosystem?
 body: "## Simple Summary\nThis proposal would fund [Common Ground](https://www.commonground.cg/),\
@@ -113,7 +113,6 @@ start: 1671196366
 end: 1671801166
 state: closed
 author: '0x37F1fE0C626Ab737db7B816bBA4Be91C838f88c2'
-created: 1671196407
 choices:
   - For
   - Against
@@ -126,30 +125,3 @@ scores:
   - 4048.262427210716
 votes: 556
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '72'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

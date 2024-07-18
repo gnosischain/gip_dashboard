@@ -12,8 +12,8 @@ const GIPTable = () => {
     const [details, setDetails] = useState([]);
     const [gips, setGips] = useState([]);
     const [sortState, setSortState] = useState({
-        column: 'number',
-        state: 'asc'
+        column: 'gip_number',
+        state: 'desc'
     });
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 25;
@@ -21,9 +21,9 @@ const GIPTable = () => {
     const columns = useMemo(() => ([
         { key: "gip_number", label: "No.", className: "col-number", sortable: true },
         { key: "title", label: "Title", className: "col-title", sortable: true },
-        { key: "created", label: "Created", className: "col-created", sortable: true },
+        { key: "start", label: "Started", className: "col-started", sortable: true },
         { key: "state", label: "State", className: "col-state", sortable: true },
-        { key: "type", label: "Type", className: "col-type", sortable: true },
+        { key: "status", label: "Status", className: "col-status", sortable: true },
         { key: "show_details", label: "", className: "col-details", filter: false, sorter: false },
     ]), []);
 
@@ -35,8 +35,17 @@ const GIPTable = () => {
         ).sort((a, b) => {
             const column = sortState.column;
             const order = sortState.state === 'asc' ? 1 : -1;
-            if (a[column] < b[column]) return -order;
-            if (a[column] > b[column]) return order;
+            let valA = a[column];
+            let valB = b[column];
+    
+            // If sorting by gip_number, convert the values to integers
+            if (column === 'gip_number') {
+                valA = parseInt(valA, 10);
+                valB = parseInt(valB, 10);
+            }
+    
+            if (valA < valB) return -order;
+            if (valA > valB) return order;
             return 0;
         });
     }, [gips, searchTerm, sortState]);
@@ -65,12 +74,21 @@ const GIPTable = () => {
         return stateMap[state] || 'primary';
     };
 
-    const getBadge = (status) => {
+    const computeState = (scores, quorum, scores_state) => {
+        if (scores_state !== 'final') return '';
+        if (!scores || scores.length < 3) return 'invalid'; 
+
+        const [firstScore, ...otherScores] = scores;
+        const isHighest = otherScores.every(score => firstScore > score);
+        const meetsQuorum = firstScore > quorum;
+        return isHighest && meetsQuorum ? 'passed' : 'failed';
+    };
+
+    const getBadge_status = (status) => {
         const statusMap = {
-            "Accepted": "success",
-            "Rejected": "danger",
-            "Pending": "warning",
-            "In Review": "info"
+            "passed": "success",
+            "failed": "danger",
+            "pending": "warning"
         };
         return statusMap[status] || 'primary';
     };
@@ -83,12 +101,17 @@ const GIPTable = () => {
     };
 
     const toggleDetails = (id) => {
-        setDetails(prevDetails => 
-            prevDetails.includes(id) 
+        setDetails(prevDetails => {
+            console.log("Current details:", prevDetails);
+            console.log("Toggling ID:", id);
+            const newDetails = prevDetails.includes(id) 
                 ? prevDetails.filter(detailId => detailId !== id) 
-                : [...prevDetails, id]
-        );
+                : [...prevDetails, id];
+            console.log("New details:", newDetails);
+            return newDetails;
+        });
     };
+    
 
     const loadGIPs = async () => {
         try {
@@ -150,7 +173,9 @@ const GIPTable = () => {
         return pages;
     };
 
-    const renderBarChart = (choices, scores) => {
+    const renderBarChart = (choices, scores, scores_state) => {
+        if (scores_state !== 'final') return '';
+
         const data = {
             labels: choices,
             datasets: [
@@ -218,10 +243,12 @@ const GIPTable = () => {
                                             >
                                                 {details.includes(gip.id) ? 'Hide' : 'Show'}
                                             </Button>
-                                        ) : col.key === 'created' ? (
-                                            formatDate(gip.created)
+                                        ) : col.key === 'start' ? (
+                                            formatDate(gip.start)
                                         ) : col.key === 'state' ? (
                                             <span className={`badge bg-${getBadge_state(gip.state)}`}>{gip.state}</span>
+                                        ) : col.key === 'status' ? (
+                                            <span className={`badge bg-${getBadge_status(computeState(gip.scores, gip.quorum, gip.scores_state))}`}>{computeState(gip.scores, gip.quorum, gip.scores_state)}</span>
                                         ) : (
                                             gip[col.key]
                                         )}
@@ -234,9 +261,14 @@ const GIPTable = () => {
                                         <Card.Body>
                                             <p className="text-muted">No.: {parseInt(gip.gip_number, 10) || 0}</p>
                                             <h4>{gip.title}</h4>
-                                            <p className="text-muted">Created: {formatDate(gip.created)}</p>
-                                            <p className="text-muted">State: <span className={`badge bg-${getBadge_state(gip.state)}`}>{gip.state}</span></p>
-                                            {gip.choices && gip.scores && renderBarChart(gip.choices, gip.scores)}
+                                            <p className="text-muted">Started: {formatDate(gip.start)}</p>
+                                            <p className="text-muted">{gip.scores_state !== 'final' ? 'Ending' : 'Ended'}: {formatDate(gip.end)}</p>
+                                            <p className="text-muted">
+                                                State: <span className={`badge bg-${getBadge_state(gip.state)}`}>{gip.state}</span>  
+                                                <span style={{ display: 'inline-block', width: '20px' }}></span>
+                                                Status: <span className={`badge bg-${getBadge_status(computeState(gip.scores, gip.quorum, gip.scores_state))}`}>{computeState(gip.scores, gip.quorum, gip.scores_state)}</span> 
+                                            </p>
+                                            {gip.choices && gip.scores && renderBarChart(gip.choices, gip.scores, gip.scores_state)}
                                             <ReactMarkdown className="text-body left-align">{gip.body}</ReactMarkdown>
                                         </Card.Body>
                                     </td>

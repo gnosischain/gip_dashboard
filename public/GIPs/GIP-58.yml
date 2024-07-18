@@ -1,5 +1,5 @@
 id: '0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8'
-ipfs: bafkreifapqqfmvppkcinamniaxmi3miymzomlftbzmfvjzjejnsox2nmlm
+gip_number: '58'
 title: Karpatkey DAO Service Extension
 body: 'Should GnosisDAO implement GIP-58, as detailed in the following forum post?:
   https://forum.gnosis.io/t/gip-58-karpatkey-dao-service-extension/5417
@@ -26,7 +26,6 @@ start: 1657726231
 end: 1658331031
 state: closed
 author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
-created: 1657726279
 choices:
   - For
   - Against
@@ -39,30 +38,3 @@ scores:
   - 21.196890694632515
 votes: 718
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '58'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

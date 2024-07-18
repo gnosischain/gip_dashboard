@@ -1,5 +1,5 @@
 id: '0x481ff5ef01d75eb1798c651351c2a9e6c0d7d991a063399eb255e676c92b9bad'
-ipfs: bafkreib4k2dkt4n34zkovv6yzoxlt3zgo7smuullzj73zbmf66fsbficw4
+gip_number: '71'
 title: 'Should GnosisDAO support hosted Blockscout explorer for Chiado testnet? '
 body: 'Chiado testnet is an important new part of the Gnosis ecosystem as a developer
   testnet. A reliable explorer is required for developers to be productive on Gnosis.
@@ -29,7 +29,6 @@ start: 1668054110
 end: 1668658910
 state: closed
 author: '0xf8C9e2C80036B3e7730De575e3053f3c6539A345'
-created: 1668054500
 choices:
   - For
   - Against
@@ -42,30 +41,3 @@ scores:
   - 65.0975402862002
 votes: 1196
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '71'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

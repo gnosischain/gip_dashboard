@@ -1,5 +1,5 @@
 id: '0x70c0fa32438a38508fa4e011422e8955fad41fc246d569772faaedf9cfbfa876'
-ipfs: bafkreicvni3wbj5c23c2egoqqxbpkwyxtqjgtc42swx3enydspotxyzy5a
+gip_number: '61'
 title: Shall GnosisDAO fund BootNode as a Core Contributor Team?
 body: "## Simple Summary\n\nBootNode proposes to contribute engineering and development\
   \ services to the Gnosis DAO ecosystem by building a hands-on autonomous team with\
@@ -181,7 +181,6 @@ start: 1660142102
 end: 1660746902
 state: closed
 author: '0x2036CAfe136F1Ba6201ca6Da6fcf461bD4c5e635'
-created: 1660142277
 choices:
   - For
   - Against
@@ -194,30 +193,3 @@ scores:
   - 3183.942282356569
 votes: 588
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '61'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

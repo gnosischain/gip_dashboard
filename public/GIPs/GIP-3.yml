@@ -1,5 +1,5 @@
 id: QmdjWuBnBnPUafW9jBNNsJJvaeQAVExGcFZ7zB38VtNuu4
-ipfs: QmdjWuBnBnPUafW9jBNNsJJvaeQAVExGcFZ7zB38VtNuu4
+gip_number: '3'
 title: Set the quorum for "yes" votes to 4% of the circulating supply of GNO
 body: '# Simple Summary
 
@@ -16,41 +16,15 @@ start: 1607922000
 end: 1608613140
 state: closed
 author: '0xd714Dd60e22BbB1cbAFD0e40dE5Cfa7bBDD3F3C8'
-created: 1607956187
 choices:
-  - 'Yes'
-  - Make no change
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 200807.89506428977
 scores:
   - 200807.89506428977
   - 0
+  - 0
 votes: 59
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '3'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

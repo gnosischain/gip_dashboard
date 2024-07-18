@@ -1,5 +1,5 @@
 id: '0xa89b17e380e7c4f177366988fe456a515ec47e00f1e795f33f6178f82aa36bd3'
-ipfs: bafkreiaosgxn462b3kseckue3vzrfgodeccgfdsquf56melm675ykw3rxu
+gip_number: '94'
 title: Should the GnosisDAO approve the “Gnosis Assets Holding I Foundation” for onboarding
   into Centrifuge Prime?
 body: 'oted on, provide an overview of the foundation structure, and share next steps.
@@ -171,7 +171,6 @@ start: 1712162198
 end: 1712766998
 state: closed
 author: '0xa9D7713e49d2931f12019D3179ccCf7F60F02BC7'
-created: 1712162198
 choices:
   - For
   - Against
@@ -184,30 +183,3 @@ scores:
   - 3.071148183380795
 votes: 180
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '94'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

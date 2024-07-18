@@ -1,5 +1,5 @@
 id: '0x38b7f446554911d6e0dc261b4ad4bca2ea41b83be47b1c97ce274df811ce14cd'
-ipfs: QmTJrYdVzmLzBeKMTPcFKRLJBJc5ePK1JeHygNN8EtP4LV
+gip_number: '15'
 title: Governauts Rewards Systems Research Initiative
 body: "```\nGIP: 15\ntitle: Governauts Rewards Systems Research Initiative\nauthor:\
   \ Angela Kreitenweis (angela@tokenengineering.net) (@akrtws (TE Academy)#4246)\n\
@@ -61,41 +61,15 @@ start: 1636650000
 end: 1637168400
 state: closed
 author: '0x3b067Af83F540cB827825a6Ee5480441a4237E77'
-created: 1636645037
 choices:
-  - 'YES'
-  - 'NO'
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 65641.1028885959
 scores:
   - 65640.89288859589
   - 0.21
+  - 0
 votes: 186
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '15'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

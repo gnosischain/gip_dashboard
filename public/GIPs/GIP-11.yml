@@ -1,5 +1,5 @@
 id: QmNMRBnipvRfos9ze1MrKpFAsHqxhNrmxjrXzxJnhFif9b
-ipfs: QmNMRBnipvRfos9ze1MrKpFAsHqxhNrmxjrXzxJnhFif9b
+gip_number: '11'
 title: Enable SafeSnap
 body: '## Simple Summary
 
@@ -112,41 +112,15 @@ start: 1624033800
 end: 1624638600
 state: closed
 author: '0xd714Dd60e22BbB1cbAFD0e40dE5Cfa7bBDD3F3C8'
-created: 1624033800
 choices:
-  - Let's do this!
-  - Make no change
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 91615.3018922983
 scores:
   - 91615.3018922983
   - 0
+  - 0
 votes: 112
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '11'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

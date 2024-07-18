@@ -1,5 +1,5 @@
 id: '0x1a0a2187520c70a0c37ab1aedccdda97c12453a709dd217b5456d610cbaaaa10'
-ipfs: QmYEqw1xF9ZMnNcy5oSjbF7UW8vnRQy8htkrECGC7Xo7PR
+gip_number: '42'
 title: Should $10M in GNO be used to foster the usage of Uniswap v3 on Gnosis Chain?
 body: 'A large directive for the Gnosis Chain is to increase the user base and on-chain
   activity by strategically allocating funds from the GnosisDAO treasury to promote
@@ -26,7 +26,6 @@ start: 1652362561
 end: 1652967361
 state: closed
 author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
-created: 1652362565
 choices:
   - For
   - Against
@@ -39,30 +38,3 @@ scores:
   - 73.19461847474483
 votes: 912
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '42'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

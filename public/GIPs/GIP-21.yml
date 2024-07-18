@@ -1,5 +1,5 @@
 id: '0xfae50f95e3ae8f7dbd70e062cba35b0dcbe8261b2aaa874822b7d046e97367b6'
-ipfs: QmeE2uwgcZaXfsRMadk5Uj86YrDDQC3nhWH1pC3wLaSdRH
+gip_number: '21'
 title: Amendment to GIP-17. Send additional funds to daughter Safe
 body: 'Should GnosisDAO implement GIP-21 as detailed in this forum post?
 
@@ -14,41 +14,15 @@ start: 1641553200
 end: 1642158000
 state: closed
 author: '0x2408F8a0475D3823A1F4A4bfD86B2a4B80E6eDB6'
-created: 1641553338
 choices:
-  - 'Yes'
-  - 'No'
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 141170.3171749477
 scores:
   - 141141.1531327937
   - 29.164042153983424
+  - 0
 votes: 131
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '21'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,5 +1,5 @@
 id: '0x64c44314dd99f084a3267bd6c82c1c29d7bdcd6c3a105bf1cfd3e6cd4717ce61'
-ipfs: QmVbNW94nBa8DdEDCytrgSRudLk8eGwJ6MHTUKewB4edW6
+gip_number: '27'
 title: Gnosis Guild 🪐 Treasury Allocation to Gnosis Ltd
 body: 'The proposal would fund Gnosis Ltd. to support the Gnosis Guild team’s operations
   and startup costs for one year. The Gnosis Guild Treasury Allocation would foster
@@ -13,7 +13,6 @@ start: 1648557747
 end: 1649162547
 state: closed
 author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
-created: 1648557762
 choices:
   - For
   - Against
@@ -26,30 +25,3 @@ scores:
   - 78.70281323376906
 votes: 309
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '27'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

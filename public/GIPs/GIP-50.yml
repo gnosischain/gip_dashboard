@@ -1,5 +1,5 @@
 id: '0x29999cc9fc63fcf386bcbb8bd86d676a6736b0786305d564a642808dacd84611'
-ipfs: QmQbrKcbfHsApwfGsdoxe4TdPXY5av2DsqUFjdbyPzcENK
+gip_number: '50'
 title: Should TrustSwap deploy smart contract utilities on Gnosis Chain?
 body: "https://forum.gnosis.io/t/gip-50-should-trustswap-deploy-smart-contract-utilities-on-gnosis-chain/5282?u=trustswap\n\
   \n[TrustSwap](https://trustswap.com/) is requesting a grant of $50,000 from the\
@@ -23,7 +23,6 @@ start: 1655244000
 end: 1655848800
 state: closed
 author: '0x3Fb8410a19137715b430d515996F5D902deC7dD7'
-created: 1655238667
 choices:
   - For
   - Against
@@ -36,30 +35,3 @@ scores:
   - 1213.4819271593726
 votes: 622
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '50'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

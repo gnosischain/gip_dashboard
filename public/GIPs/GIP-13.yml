@@ -1,5 +1,5 @@
 id: '0x9b12a093e17e92b56d070ed876883d8c2331678ca3945e44f66dd416cfd47a64'
-ipfs: QmbuYN2vdbmKy1pDT9b3JrkBbwS18K963p3gDeDwZxdBoa
+gip_number: '13'
 title: 'Should Gnosis DAO proceed and deploy CowDAO and vCOW token? '
 body: 'The proposal is available [here](https://forum.gnosis.io/t/gip-13-phase-2-cowdao-and-cow-token/2735/1).
   It is recommended to read it in the forum where proper formatting is available. 
@@ -100,7 +100,6 @@ start: 1643387400
 end: 1643992200
 state: closed
 author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
-created: 1643387084
 choices:
   - For
   - Against
@@ -113,30 +112,3 @@ scores:
   - 0.007290808895256196
 votes: 545
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '13'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

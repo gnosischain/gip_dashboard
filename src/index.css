@@ -40,6 +40,7 @@ body {
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
+
 .table th {
   cursor: pointer; /* Indicate that table headers are clickable for sorting */
 }
@@ -62,9 +63,22 @@ body {
   text-align: left; /* Ensure text is always left-aligned */
 }
 
+.text-body.left-align {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px; 
+  overflow: hidden; /* Ensures content that overflows the bound of the element is hidden */
+  text-overflow: ellipsis; /* Displays an ellipsis ('...') to indicate text has been cut */
+  white-space: nowrap;
+}
+
+
 .col-number { width: 50px; }
 .col-title { width: 400px; }
-.col-created { width: 150px; }
+.col-started { width: 150px; }
 .col-state { width: 50px; }
+.col-status { width: 50px; }
 .col-type { width: 50px; }
 .col-details { width: 50px; }
+

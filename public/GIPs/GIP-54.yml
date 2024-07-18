@@ -1,5 +1,5 @@
 id: '0x911c480edc98a5aba0d07b32ae3b893721619c8fb22413daf5775f6702a319a9'
-ipfs: bafkreiavzchfczwqh5bhfp665wq3pncaw5nsv3umr5t7pjws3sd4fmrny4
+gip_number: '54'
 title: Should GnosisDAO support hosting and feature updates for Blockscout Explorer?
 body: 'Blockscout
 
@@ -114,7 +114,6 @@ start: 1656783460
 end: 1657388260
 state: closed
 author: '0x7D7DcEf3bB919347F5031127799ee2679A9111A0'
-created: 1656783469
 choices:
   - For
   - Against
@@ -127,30 +126,3 @@ scores:
   - 0.04698533577303192
 votes: 563
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '54'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

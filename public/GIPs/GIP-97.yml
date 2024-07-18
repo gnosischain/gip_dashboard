@@ -1,5 +1,5 @@
 id: '0x242016595b38af98c3297271ab75c530ebc3dd1c1ec6264bf9b4483003be4bce'
-ipfs: bafkreigtomrlcmpr4irz2pmz4gny3mc4zgrzd4esoxpnxroaphbgq2a3f4
+gip_number: '97'
 title: GIP-97 - karpatkey SafeDAO <> GnosisDAO Joint Treasury Delegation
 body: "## Abstract\n\nWith the SafeDAO having achieved all milestones laid out in\
   \ [SEP #3](https://snapshot.org/#/safe.eth/proposal/0xdcd7f8cb197c7132296d802e538df2a565fbe4f8af400f1afbed06b54a808060)\
@@ -49,7 +49,6 @@ start: 1712433300
 end: 1713038100
 state: closed
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
-created: 1712432819
 choices:
   - For
   - Against
@@ -62,30 +61,3 @@ scores:
   - 3.010887386638278
 votes: 216
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '97'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

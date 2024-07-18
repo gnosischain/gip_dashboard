@@ -1,5 +1,5 @@
 id: '0x86cb89a974a075451f8bfae1892d08136fae8c4321ada07025ff8b2b5edddadc'
-ipfs: QmSL1HqVENcf8UGmLfPPn1jP1XE9YzJEi9efay1LTbfjPg
+gip_number: '20'
 title: Karpatkey DAO Treasury Management
 body: "Should GnosisDAO implement GIP-20, as detailed in the following forum post?:\
   \ https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233\n\nTransactions\
@@ -11,41 +11,15 @@ start: 1641481200
 end: 1642086000
 state: closed
 author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
-created: 1641478824
 choices:
-  - 'yes'
-  - 'no'
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 146970.63419005522
 scores:
   - 146924.34160450587
   - 46.29258554934886
+  - 0
 votes: 188
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '20'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

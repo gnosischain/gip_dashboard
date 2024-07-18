@@ -1,5 +1,5 @@
 id: '0x668ad502b088d88e55aef4de530437d6ba227fb855d72ee13044d17ce6c362a7'
-ipfs: bafkreicwxnczas5s4vlozvcoze2puwta5odqmvma7ky5xtnyr6lgsldipu
+gip_number: '74'
 title: Should GnosisDAO support Gnosischa.in Explorer hosted by beaconcha.in?
 body: "**Gnosischa.in** by beaconcha.in\n\nhttps://forum.gnosis.io/t/gip-74-should-gnosisdao-support-gnosischa-in-explorer-hosted-by-beaconcha-in/6228/2\n\
   \n**Description**\n\nGnosischa.in is an open source explorer that provides users\
@@ -46,7 +46,6 @@ start: 1672916217
 end: 1673521017
 state: closed
 author: '0xD67952D9a8F27003De7C94D4A76191831165C01C'
-created: 1672916302
 choices:
   - For
   - Against
@@ -59,30 +58,3 @@ scores:
   - 54.12474743958712
 votes: 620
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '74'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

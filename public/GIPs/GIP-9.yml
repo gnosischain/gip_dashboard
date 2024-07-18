@@ -1,5 +1,5 @@
 id: QmcQjdevt8Ue2P4XSKFY8PehLBRbPmambJRgeugYeC31zV
-ipfs: QmcQjdevt8Ue2P4XSKFY8PehLBRbPmambJRgeugYeC31zV
+gip_number: '9'
 title: Launch Liquidity Mining program for Prediction Markets using Gnosis Conditional
   Tokens
 body: "\n# Summary\n\nGnosisDAO will launch a Liquidity Mining program for prediction\
@@ -86,41 +86,15 @@ start: 1619085600
 end: 1619690400
 state: closed
 author: '0x4a9A2F31E2009045950DF5aAb36950609DE93c78'
-created: 1619020062
 choices:
-  - Yes, launch this program
-  - No, make no changes
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 35455.90099854775
 scores:
   - 29132.271626810987
   - 6323.629371736783
+  - 0
 votes: 56
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '9'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

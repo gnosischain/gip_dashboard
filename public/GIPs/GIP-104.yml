@@ -1,5 +1,5 @@
 id: '0x61846fd39613dc0858b1df2d52155e01211ba17f6ad7b7f689e4f287124805bd'
-ipfs: bafkreidg7lfcnhdeztwzrizwbqbk5csc7gj33t4lpuxd6ewahlwjhdywba
+gip_number: '104'
 title: Should the GnosisDAO Enhance Awareness and Adoption of the Shutterized Gnosis
   Chain by Providing a Grant for Marketing Activities?
 body: 'Link to forum post: https://forum.gnosis.io/t/gip-104-should-the-gnosisdao-enhance-awareness-and-adoption-of-the-shutterized-gnosis-chain-by-providng-a-grant-for-marketing-activities/8700/1
@@ -282,7 +282,6 @@ start: 1719394436
 end: 1719999236
 state: closed
 author: '0xD31e0eEC136353bc77b49d1FEE27292A8b5bdc93'
-created: 1719394437
 choices:
   - For
   - Against
@@ -295,30 +294,3 @@ scores:
   - 309.5291383963267
 votes: 100
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '104'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

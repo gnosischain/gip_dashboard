@@ -1,5 +1,5 @@
 id: '0xbdc138180bec423df7b1d84c3ff4a85f3d1b62efba5db8f88a29bee2c4e515bb'
-ipfs: bafkreihx2yxs5flzv26ceyaufawc27jqegqhhnvdh32l2fdidaj4dsea3a
+gip_number: '70'
 title: Should GnosisDAO pass a Grant Proposal to partner with Gateway.fm?
 body: "Gateway.fm is a distributed blockchain infrastructure company. Our mission\
   \ is to provide enterprise-grade blockchain infrastructure at scale, distributed\
@@ -17,7 +17,6 @@ start: 1666805533
 end: 1667410333
 state: closed
 author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
-created: 1666805543
 choices:
   - For
   - Against
@@ -30,30 +29,3 @@ scores:
   - 101.31625460378928
 votes: 776
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '70'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

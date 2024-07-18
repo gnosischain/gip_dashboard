@@ -1,5 +1,5 @@
 id: '0xd15dc7f0fbc00d6c6c07e18f41c1a5dd54adad77b3dae6cb0d0111503f7fa0c7'
-ipfs: bafkreic5tavfmkvx4qcv24wu4avlm4vdph42yutq5hkyhflmrwynmt5yoq
+gip_number: '87'
 title: '[Redo]Should GnosisDAO claim its vested GEL allocation and delegate it along
   with COW to governance Safe managed by...'
 body: "# Summary\nThis is a redo of the proposal for [GIP-87](https://snapshot.org/#/gnosis.eth/proposal/0xff4bc12a163ba195f74708aa0fedab200ba8f4f4be64d1d7685b1796cd40785f)\
@@ -12,7 +12,6 @@ start: 1699531200
 end: 1700136000
 state: closed
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
-created: 1699479160
 choices:
   - For
   - Against
@@ -25,30 +24,3 @@ scores:
   - 743188.1620119056
 votes: 276
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '87'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

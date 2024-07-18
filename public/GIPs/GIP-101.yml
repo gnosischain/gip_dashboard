@@ -1,5 +1,5 @@
 id: '0xcdee441c9d501b9ec2127b62ca846d6ead68165163d537cc5c36d93002c17b11'
-ipfs: bafkreiexn4h2ygpbxmcigyne3grx2wtklhpmgvykbwiuldo4nk6odqbl3a
+gip_number: '101'
 title: Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?
 body: "## Executive Summary\nThis proposal aims to prevent the GnosisDAO from encountering\
   \ challenges related to reaching a quorum on its proposals, preventing the hindrance\
@@ -122,7 +122,6 @@ start: 1717779600
 end: 1718384400
 state: closed
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
-created: 1717777150
 choices:
   - For
   - Against
@@ -135,30 +134,3 @@ scores:
   - 528.431132033523
 votes: 123
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '101'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

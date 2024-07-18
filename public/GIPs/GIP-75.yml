@@ -1,5 +1,5 @@
 id: '0xe051f12c56d14985f6851e179feae8c8c40f7c7702df3f58affbb2a67641eebf'
-ipfs: bafkreict3h5zffazo23omtszpa26d3afq2d2boxs2eddk36prqryinq5jy
+gip_number: '75'
 title: Should GnosisDAO retroactively fund POKT-powered Public RPC endpoints for Gnosis
   Chain pruned and Gnosis Chain archival?
 body: "https://forum.gnosis.io/t/gip-75-should-gnosisdao-retroactively-fund-pokt-powered-public-rpc-endpoints-for-gnosis-chain-pruned-and-gnosis-chain-archival/6363\n\
@@ -67,7 +67,6 @@ start: 1677108324
 end: 1677713124
 state: closed
 author: '0xa48168C3D73De7B4Fed96383E2BeF8e53443A263'
-created: 1677108504
 choices:
   - For
   - Against
@@ -80,30 +79,3 @@ scores:
   - 126.25705030245084
 votes: 694
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '75'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

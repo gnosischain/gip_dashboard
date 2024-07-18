@@ -1,5 +1,5 @@
 id: '0x41af607ec45f147b6f0196353f29c5e25951097c64c3a0a703bc519bd1883578'
-ipfs: QmPdwgjZiFHhsPm6VWqphEVj6ccJTmCkbF4X19XxCJSYDY
+gip_number: '46'
 title: Should GNO from the GnosisDAO Safe be transferred to the treasury management
   safe operated by Karpatkey?
 body: All GNO from the GnosisDAO Safe should be transferred to the treasury management
@@ -9,7 +9,6 @@ start: 1653058160
 end: 1653662960
 state: closed
 author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
-created: 1653058580
 choices:
   - For
   - Against
@@ -22,30 +21,3 @@ scores:
   - 18.215063707291183
 votes: 774
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '46'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

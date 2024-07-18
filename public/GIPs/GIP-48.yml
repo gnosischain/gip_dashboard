@@ -1,5 +1,5 @@
 id: '0x012d04c8351991da79e92f4088527c76b6139b9aa0b71772b704b587d2c9c0e3'
-ipfs: QmeRz8tnY1HMubAjoNymvKcZsvXgtMvoGcAJ2m22q4cijQ
+gip_number: '48'
 title: Should GnosisDAO implement the Praise reward system around the Gnosis Chain
   Validator program?
 body: 'The Praise system can benefit and grow the Gnosis Chain validator community.
@@ -10,7 +10,6 @@ start: 1654223456
 end: 1654828256
 state: closed
 author: '0xEf0391ccbebf15fc84334D9630255093754cDAAB'
-created: 1654223478
 choices:
   - For
   - Against
@@ -23,30 +22,3 @@ scores:
   - 2.451679109461167
 votes: 707
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '48'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

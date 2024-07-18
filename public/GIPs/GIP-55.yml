@@ -1,5 +1,5 @@
 id: '0xf747a5ba90329f9ea406d2f8ba96c28ea4aef091c524a1f3e1f70ab91e8f2524'
-ipfs: bafkreieyr3ozjvahk4ufedvezorgskfdfzqptbusdgugypijry3hkl3bdu
+gip_number: '55'
 title: Should GnosisDAO fund Dark Forest DAO for Arena game mode on Gnosis Optimism?
 body: 'Dark Forest DAO (dfdao) is a team of developers and players that have been
   building on top of Dark Forest, an open-source, web3 game.
@@ -24,7 +24,6 @@ start: 1657734954
 end: 1658339754
 state: closed
 author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
-created: 1657734963
 choices:
   - For
   - Against
@@ -37,30 +36,3 @@ scores:
   - 7.022228953889795
 votes: 757
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '55'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

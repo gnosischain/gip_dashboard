@@ -1,5 +1,5 @@
 id: '0x17e22a4292b52a638fb956447d7ca9a0adbd51d36dc6fc7dd10ae97dff6f878a'
-ipfs: bafkreicrysmvemrp45alovmx7azicvgkc4tdfurzta2hrw77fkcu43ssce
+gip_number: null
 title: Should Gnosis DAO conduct a $30 million buyback program?
 body: 'We suggest allocating approximately 5% of the Gnosis DAO assets, primarily
   SAFE, ETH, and stablecoins, to fund a $30 million buyback program. This proposal
@@ -44,7 +44,6 @@ start: 1717437942
 end: 1718042742
 state: closed
 author: '0xFB014896319E1650FD1426A6A4f070e9286f46F1'
-created: 1717437943
 choices:
   - For
   - Against
@@ -57,30 +56,3 @@ scores:
   - 18912.564861836232
 votes: 193
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: null
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

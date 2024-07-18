@@ -1,5 +1,5 @@
 id: '0x84380477f05620ec1e27be75833b90cdda44b1a1ecb905d4a42b68c25640961b'
-ipfs: QmcjbDPSNtkNFQUL9WijRJRgd2WHgULKNcoBwYwC1zfYd4
+gip_number: '41'
 title: GIP-41 Should GnosisDAO Partner with Giveth to Increased Sustainable Liquidity?
 body: Mutually beneficial token swap to create a 1M USD equivalent shared liquidity
   pool of $500k GIV <> $500k GNO on Honeyswap (Gnosis Chain).
@@ -7,7 +7,6 @@ start: 1652754648
 end: 1653359448
 state: closed
 author: '0xbc42dD78EE35D8F165440749F98C7Ec93F0c4033'
-created: 1652754737
 choices:
   - For
   - Against
@@ -20,30 +19,3 @@ scores:
   - 37.29019372586643
 votes: 610
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '41'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

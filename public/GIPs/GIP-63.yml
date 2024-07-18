@@ -1,5 +1,5 @@
 id: bafkreiftomumwvja4bjhkl4oqdwn24v7weuqa3embasjb36wrpu4tf67zi
-ipfs: bafkreiftomumwvja4bjhkl4oqdwn24v7weuqa3embasjb36wrpu4tf67zi
+gip_number: '63'
 title: Should GnosisDAO award a Grant to Algovera to develop a DAO framework for Decentralized
   AI Teams?
 body: 'Simple Summary
@@ -152,7 +152,6 @@ start: 1663357776
 end: 1663962576
 state: closed
 author: '0x823351c03A99b4820793675760f4A64F5ccA9089'
-created: 1663357893
 choices:
   - For
   - Against
@@ -165,30 +164,3 @@ scores:
   - 24.19683352335034
 votes: 406
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '63'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

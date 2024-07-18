@@ -1,5 +1,5 @@
 id: '0x8d79d7db03736acf31af752efa45ef49106afbf7b7ecc174d839811fa5281b57'
-ipfs: bafkreihn65yzj4qhs2iwxpcgi2e377l6toh4u5mu4dbazczb5ga2fi5byi
+gip_number: '67'
 title: Should GnosisDAO fund Gnosis (chain) Ecosystem Analysis and Dashboard?
 body: 'Simple Summary
 
@@ -150,7 +150,6 @@ start: 1664965333
 end: 1665570133
 state: closed
 author: '0x5C89C420A9E82Ea9AEDBaAab03302e39982919b9'
-created: 1664965481
 choices:
   - For
   - Against
@@ -163,30 +162,3 @@ scores:
   - 2.6939214458942824
 votes: 641
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '67'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

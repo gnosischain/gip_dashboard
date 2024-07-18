@@ -1,5 +1,5 @@
 id: '0x5525ab62fffc1102f46fca9ed629ba9a5cd111b1663bd6bb2cb984472325d191'
-ipfs: QmTLq4wDFryT8UGWJpRyKwMhBhVHvyX9SKhKqZf6sqd5dt
+gip_number: '52'
 title: Should former xDai team be involved in future Gnosis Chain development?
 body: 'The former xDAI team has been instrumental in the operations and the success
   of Gnosis Chain. We see big value in continuing with the team, which has accumulated
@@ -16,7 +16,6 @@ start: 1655292875
 end: 1655897675
 state: closed
 author: '0x6d9ABa400a2a487a5Fb76c6d56518835553CD284'
-created: 1655292892
 choices:
   - For
   - Against
@@ -29,30 +28,3 @@ scores:
   - 4.772433153425544
 votes: 679
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '52'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

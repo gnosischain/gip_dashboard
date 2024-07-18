@@ -1,5 +1,5 @@
 id: '0xf89c08d03b294e6e891f1f3d74d903e77f364002fde64e9dd463e280c60189a9'
-ipfs: bafkreicojlyt3rxhk4mns6vk5gdebxur6kfkxvd4dhnsl3dic5nqf6xf4e
+gip_number: '80'
 title: Should GnosisDAO fund p2panda's off-chain solution for secure group encryption?
 body: "Forum URL: https://forum.gnosis.io/t/gip-80-should-gnosisdao-fund-p2pandas-off-chain-solution-for-secure-group-encryption/6541\n\
   \n## Category\n\nFunding - Rewards\n\n## Executive Summary\n\nHello Gnosis community!\n\
@@ -156,7 +156,6 @@ start: 1680256800
 end: 1680861600
 state: closed
 author: '0xe661830067591344F10E165Fd75bCDa8D041bdD0'
-created: 1680256834
 choices:
   - For
   - Against
@@ -169,30 +168,3 @@ scores:
   - 317.414185532441
 votes: 655
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '80'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

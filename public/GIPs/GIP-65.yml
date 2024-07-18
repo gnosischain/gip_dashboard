@@ -1,5 +1,5 @@
 id: '0x717248745aaf87378361c76f59bbb417c350eaff2cffe2b0e708f95090fa7069'
-ipfs: bafkreieze4tzpoqzopi3fxtdpuozk4svh4sdhiw3uvyxxuhtnznp3kwgxm
+gip_number: '65'
 title: Should GnosisDAO fund Yubiai?
 body: 'https://forum.gnosis.io/t/gip-65-should-gnosisdao-fund-yubiai/5901
 
@@ -206,7 +206,6 @@ start: 1663356357
 end: 1663961157
 state: closed
 author: '0x245Bd6B5D8f494df8256Ae44737A1e5D59769aB4'
-created: 1663356454
 choices:
   - For
   - Against
@@ -219,30 +218,3 @@ scores:
   - 170.5429599072328
 votes: 410
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '65'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

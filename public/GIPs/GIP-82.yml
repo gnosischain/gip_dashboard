@@ -1,5 +1,5 @@
 id: '0x753224fa15a96ccd14044906e67270e49076e7b2282eb57fe816648426f26e93'
-ipfs: bafkreifqyoovjgrxtn6zzh6l5vvre5avmyehbvr2mnma4f5zbmprkuxftm
+gip_number: '82'
 title: Should GnosisDAO co-fund a community owned forest / land art project (terra0)?
 body: "## Summary\nThis proposal seeks Gnosis DAO to become a sponsor and partner\
   \ that would partially fund terra0 to support the development of a novel large-scale\
@@ -153,7 +153,6 @@ start: 1681464600
 end: 1682069400
 state: closed
 author: '0x70e095FB47e10e696bf40d759B3656d273C76DDC'
-created: 1681462513
 choices:
   - For
   - Against
@@ -166,30 +165,3 @@ scores:
   - 6.3981598535326984
 votes: 329
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '82'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

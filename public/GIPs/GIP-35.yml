@@ -1,5 +1,5 @@
 id: '0xdeadb69e1c18ea78e6592664d2be34f7705ebb040c0b1788514b39bd9a2e2096'
-ipfs: QmYxYoYrAkHZGSrj5ApzCXVbrFVV7j13cgQMfwEbL4stAm
+gip_number: '35'
 title: The target total supply should be 3M GNO?
 body: 'This GIP would improve economics and clarity of GNO rules by targeting 3M GNO
   total supply. It would also formally veto the GnosisDAO treasury for voting, giving
@@ -11,7 +11,6 @@ start: 1650993954
 end: 1651598754
 state: closed
 author: '0x74b926358f43a06665C9733Ff4f1A79d1dceC49E'
-created: 1650994517
 choices:
   - For
   - Against
@@ -24,30 +23,3 @@ scores:
   - 10.634116913854475
 votes: 881
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '35'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

@@ -1,5 +1,5 @@
 id: '0xd9dbc0cebba7b9a27f6fa3f30987b89b4dd50140ee3e21624ebc9bdb16049654'
-ipfs: bafkreibfnpgjhwzddrdbhkofusxjmn6mlhvgmd7clqda4ikadm4drfu5hy
+gip_number: '64'
 title: Should GnosisDAO distribute SAFE tokens to incentivize decentralizing Gnosis
   Chain?
 body: 'As decided in GIP-29, GnosisDAO is receiving 15% of the total SAFE token supply
@@ -41,7 +41,6 @@ start: 1663748765
 end: 1664353565
 state: closed
 author: '0x6d9ABa400a2a487a5Fb76c6d56518835553CD284'
-created: 1663748783
 choices:
   - For
   - Against
@@ -54,30 +53,3 @@ scores:
   - 1.2936530627426663
 votes: 671
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '64'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

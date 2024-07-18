@@ -1,5 +1,5 @@
 id: '0x5187694133abfb3d140acce3b9ac2ecf033c657c816a18dc25d2e0c1a2a29ec7'
-ipfs: QmZJBU5ByQYJwp6MchmdMHZ5z3mqgPNbikotp8KugwRimW
+gip_number: '29'
 title: Spin-off SafeDAO and Launch Safe Token
 body: 'This proposal ratifies:
 
@@ -21,7 +21,6 @@ start: 1649415518
 end: 1650020318
 state: closed
 author: '0x88673F0ed0280cBd33C29f070DeE0a09948FAea9'
-created: 1649415619
 choices:
   - For
   - Against
@@ -34,30 +33,3 @@ scores:
   - 4.8255506787302425
 votes: 928
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '29'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

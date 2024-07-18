@@ -1,5 +1,5 @@
 id: '0x701e81c3876b0dec446af578ef588c3463d2eeb077ad0afa9c03babf2bc6f435'
-ipfs: QmTcGZjBTxUm4ZCFCjtcYEksvCcWfZ86CzQF6x1gmXjx6w
+gip_number: '73'
 title: Should GnosisDAO give a grant to Pluser?
 body: 'Website: https://www.pluser.io/
 
@@ -30,7 +30,6 @@ start: 1670341885
 end: 1670946685
 state: closed
 author: '0x000f4ae7700afDE47C3b14D22883b4e7808F0e58'
-created: 1670341890
 choices:
   - For
   - Against
@@ -43,30 +42,3 @@ scores:
   - 3728.5552750130432
 votes: 895
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '73'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

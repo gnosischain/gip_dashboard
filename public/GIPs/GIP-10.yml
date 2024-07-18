@@ -1,5 +1,5 @@
 id: QmVdpMzXaXxWS4htWRxtux9VcaTY4zfr27xPjkoQSSEgAc
-ipfs: QmVdpMzXaXxWS4htWRxtux9VcaTY4zfr27xPjkoQSSEgAc
+gip_number: '10'
 title: Adopt Participation Agreement
 body: "### SIMPLE SUMMARY\n\nThis is a proposal to implement a private ordering agreement\
   \ (a so-called “Participation Agreement”) among all GnosisDAO participants to provide\
@@ -40,41 +40,15 @@ start: 1624017540
 end: 1624622400
 state: closed
 author: '0xC42d7E776cB079C3C3b205BD307D0CdbB2431Dd3'
-created: 1624016614
 choices:
-  - Let's do this!
-  - Make no change.
+  - For
+  - Against
+  - Abstain
 scores_state: final
 scores_total: 97082.13067806746
 scores:
   - 97082.13067806746
   - 0
+  - 0
 votes: 116
 quorum: 0
-quorumType: default
-symbol: ''
-flagged: false
-gip_number: '10'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

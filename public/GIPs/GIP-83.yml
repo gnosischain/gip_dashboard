@@ -1,5 +1,5 @@
 id: '0x9ddbd422d2bf3aee2ff225a62e7576843b26118ffa9de2f1cf08dc7da0ee0203'
-ipfs: bafkreidovbrb2oaaflxawc6jwk7vvlwizyzsuotn25haqnuclwpgejdjki
+gip_number: '83'
 title: Should GnosisDAO fund decentralized alternatives of Gnosis Chain pruned and
   archival RPC endpoints from Pocket Network f
 body: "https://forum.gnosis.io/t/gip-83-should-gnosisdao-fund-decentralized-alternatives-of-gnosis-chain-pruned-and-archival-rpc-endpoints-from-pocket-network-for-18-months\
@@ -89,7 +89,6 @@ start: 1679946726
 end: 1680551526
 state: closed
 author: '0xa48168C3D73De7B4Fed96383E2BeF8e53443A263'
-created: 1679946874
 choices:
   - For
   - Against
@@ -102,30 +101,3 @@ scores:
   - 142.1196220544605
 votes: 585
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '83'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

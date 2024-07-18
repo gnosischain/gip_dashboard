@@ -1,5 +1,5 @@
 id: '0x68d88244f7f1f10d15441a4894ff77ba595dbbed645b2ce0718604b14b96526a'
-ipfs: bafkreidm3ad4y6joov43nywq22rnxowcevnbhnl6i2ilgehlwf2jclkxwu
+gip_number: '89'
 title: Should GnosisDAO support an annual renewal for Blockscout SLA and hosting services?
 body: 'Blockscout continues to serve the Gnosis ecosystem with an open-source explorer
   for both the Gnosis mainnet and Chiado testnet instances. Blockscout hosting was
@@ -136,7 +136,6 @@ start: 1695121888
 end: 1695726688
 state: closed
 author: '0x88a98e77B61397DFb4386c81A4997e7F2079F2A9'
-created: 1695121888
 choices:
   - For
   - Against
@@ -149,30 +148,3 @@ scores:
   - 72.07070776573612
 votes: 361
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '89'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

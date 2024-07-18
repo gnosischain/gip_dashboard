@@ -1,5 +1,5 @@
 id: '0xa8adcb035b23a8e3f301ecfc2e87571279691fc28b0661c186ac380e08182b5b'
-ipfs: bafkreibbjr27ngvzq272l3bngzkdrhy4nb2lklag72673s34hxckbslvfm
+gip_number: '60'
 title: Should Gnosis pilot a DAOcast?
 body: "# [Gnosis DAOcast](https://docs.google.com/presentation/d/e/2PACX-1vR2xKzpdKsLaua3ShSSERnAu3a9xqd19oAsl-mGUrn5vDUFah0LNx9kjpeAtaKOZTj0D60Bj-uI8Z2E/pub?start=false&loop=false&delayms=5000)\n\
   ## Proposal Summary\nPilot a weekly live broadcast to communicate the latest developments\
@@ -50,7 +50,6 @@ start: 1660065149
 end: 1660669949
 state: closed
 author: '0x9638530aA558c81253625d42f3018BC1544D9Dd3'
-created: 1660065812
 choices:
   - For
   - Against
@@ -63,30 +62,3 @@ scores:
   - 7.1023657323537295
 votes: 406
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '60'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

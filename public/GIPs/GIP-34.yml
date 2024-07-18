@@ -1,5 +1,5 @@
 id: '0xd8d2657cb3d7c711978b58de7cdd956541f72832809e73fbd2c122b6a5fd6e1e'
-ipfs: QmS2vzZMd4K5Nf8bJxUv7PZGupc766GQ3kG3kvi853CwPV
+gip_number: '34'
 title: Should Gnosis DAO support in a reimbursement plan to the Agave Community?
 body: The motivation for this proposal is to make sure the Agave community and affected
   GC users are reimbursed at the end of this operation and that the community and
@@ -10,7 +10,6 @@ start: 1649688035
 end: 1650292835
 state: closed
 author: '0xc44caeb7F0724A156806664d2361fD6f32a2d2C8'
-created: 1649688107
 choices:
   - For
   - Against
@@ -23,30 +22,3 @@ scores:
   - 276.58682325448115
 votes: 630
 quorum: 0
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '34'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'

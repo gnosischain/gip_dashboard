@@ -1,5 +1,5 @@
 id: '0x9297cc7f6a1c8d973199bb215c071cc93c99003b6231b3953edeb1e1a2f2f408'
-ipfs: bafkreihjbu5cbeqa7ggjt3aca3a4twyawxqtikzqhkjtsceujeogebsovy
+gip_number: '95'
 title: karpatkey DAO Service Extension
 body: 'After the approval of GIP-20 4 and GIP-58 5, at karpatkey DAO we have been
   working steadily on the management of GnosisDAO’s treasury. Similar to other treasuries
@@ -14,7 +14,6 @@ start: 1712163822
 end: 1712768622
 state: closed
 author: '0x14D92832265eeAFDEF9e526356FEfc90105966c3'
-created: 1712163823
 choices:
   - For
   - Against
@@ -27,30 +26,3 @@ scores:
   - 3.193251193528392
 votes: 180
 quorum: 75000
-quorumType: default
-symbol: GNO
-flagged: false
-gip_number: '95'
-space:
-  id: gnosis.eth
-  name: GnosisDAO
-  members: []
-  avatar: ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42
-  symbol: GNO
-  verified: true
-  turbo: false
-  plugins:
-    quorum:
-      total: 75000
-      strategy: static
-      basicCount:
-        - 0
-        - 2
-    safeSnap:
-      safes:
-        - network: '1'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0x0d70332CEB7F3C94b061cda48327891E3449A9E1'
-        - network: '100'
-          multisend: '0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761'
-          realityAddress: '0xf1C276217e305D701484fa510A2efaf8A31573fd'
