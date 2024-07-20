@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { Table, Button, Collapse, Card, Form } from 'react-bootstrap';
-import yaml from 'js-yaml';
+import React, { useState, useMemo } from 'react';
+import { Table, Button, Card, Form } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'; // Import the CSS file
 
-const GIPTable = () => {
-    const [searchTerm, setSearchTerm] = useState("");
+const GIPTable = ({ gips }) => {
+    const [searchTermNo, setSearchTermNo] = useState("");
+    const [searchTermTitle, setSearchTermTitle] = useState("");
     const [details, setDetails] = useState([]);
-    const [gips, setGips] = useState([]);
+    //const [gips, setGips] = useState([]);
     const [sortState, setSortState] = useState({
         column: 'gip_number',
         state: 'desc'
@@ -28,27 +28,22 @@ const GIPTable = () => {
     ]), []);
 
     const filteredGips = useMemo(() => {
-        return gips.filter(gip =>
-            Object.values(gip).some(val =>
-                String(val).toLowerCase().includes(searchTerm.toLowerCase())
-            )
-        ).sort((a, b) => {
+        return gips.filter(gip => {
+            const matchesNo = gip.gip_number.toString().toLowerCase().includes(searchTermNo.toLowerCase());
+            const matchesTitle = gip.title.toLowerCase().includes(searchTermTitle.toLowerCase());
+            return matchesNo && matchesTitle;
+        }).sort((a, b) => {
             const column = sortState.column;
             const order = sortState.state === 'asc' ? 1 : -1;
             let valA = a[column];
             let valB = b[column];
-    
-            // If sorting by gip_number, convert the values to integers
             if (column === 'gip_number') {
                 valA = parseInt(valA, 10);
                 valB = parseInt(valB, 10);
             }
-    
-            if (valA < valB) return -order;
-            if (valA > valB) return order;
-            return 0;
+            return (valA < valB ? -order : valA > valB ? order : 0);
         });
-    }, [gips, searchTerm, sortState]);
+    }, [gips, searchTermNo, searchTermTitle, sortState]);
 
     const currentGips = useMemo(() => {
         const startIndex = (currentPage - 1) * itemsPerPage;
@@ -113,36 +108,6 @@ const GIPTable = () => {
     };
     
 
-    const loadGIPs = async () => {
-        try {
-            const gipFiles = Array.from({ length: 1000 }, (_, i) => `GIP-${i + 1}.yml`);
-            const fetchPromises = gipFiles.map(file =>
-                fetch(`/GIPs/${file}`)
-                    .then(response => response.ok ? response.text() : null)
-                    .catch(() => null)
-            );
-            const fileContents = await Promise.all(fetchPromises);
-            const parsedGips = fileContents
-                .filter(content => content !== null)
-                .map(content => {
-                    try {
-                        return yaml.load(content);
-                    } catch (e) {
-                        console.error("Error parsing YAML:", e);
-                        return null;
-                    }
-                })
-                .filter(gip => gip !== null && typeof gip === 'object');
-            setGips(parsedGips);
-        } catch (error) {
-            console.error("Error loading GIPs:", error);
-        }
-    };
-
-    useEffect(() => {
-        loadGIPs();
-    }, []);
-
     const renderSortIcon = (column) => {
         if (sortState.column !== column) {
             return null;
@@ -174,46 +139,113 @@ const GIPTable = () => {
     };
 
     const renderBarChart = (choices, scores, scores_state) => {
-        if (scores_state !== 'final') return '';
-
+        if (scores_state !== 'final') return null;  // It's better to return `null` for React components when not rendering.
+    
         const data = {
-            labels: choices,
+            labels: [''],  // Assuming you want a single group of votes labeled.
             datasets: [
                 {
-                    label: 'Votes',
-                    data: scores,
-                    backgroundColor: ['#4caf50', '#f44336', '#ff9800', '#2196f3'],
+                    label: 'For',
+                    data: [scores[0]],  // First score for "For"
+                    backgroundColor: '#4caf50',
+                    borderColor: 'black',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Against',
+                    data: [scores[1]],  // Second score for "Against"
+                    backgroundColor: '#f44336',
+                    borderColor: 'black',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Abstain',
+                    data: [scores[2]],  // Corrected index for "Abstain"
+                    backgroundColor: '#ff9800',
+                    borderColor: 'black',
+                    borderWidth: 2
                 },
             ],
         };
-
+    
         const options = {
             indexAxis: 'y',
             scales: {
                 x: {
                     beginAtZero: true,
+                    grid: {
+                        display: false, // Hide the grid lines for the x-axis
+                        drawBorder: true, // Ensure the border is still drawn
+                        color: 'black', // Color of the x-axis grid lines (also affects the axis line)
+                        borderWidth: 3, // Thickness of the x-axis line
+                        borderColor: 'black' // Color of the x-axis line
+                    },
+                    ticks: {
+                        color: 'black',  
+                    },
+                    title: {
+                        display: true,
+                        text: 'Amount',  
+                        color: 'black'
+                    }
                 },
+                y: {
+                    grid: {
+                        display: true, // Hide the grid lines for the x-axis
+                        drawBorder: true, // Ensure the border is still drawn
+                        color: 'black',
+                        borderColor: 'black', // Color of the y-axis grid lines (also affects the axis line)
+                        borderWidth: 3, // Thickness of the y-axis line
+                    },
+                    ticks: {
+                        color: 'black', 
+                    },
+                    title: {
+                        display: true,
+                        text: 'Vote Type',  // More descriptive title for what the y-axis represents
+                        color: 'black'
+                    }
+                }
             },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: 'black'
+                    }
+                }
+            }
         };
-
+    
         return (
             <div style={{ width: '600px', height: '400px' }}>
                 <Bar data={data} options={options} />
             </div>
         );
     };
+    
+    
 
       
     return (
         <div className="container">
-            <h1>Gnosis Improvement Proposals</h1>
-            <Form.Control 
-                type="text" 
-                value={searchTerm} 
-                placeholder="Search GIPs..." 
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="search-input left-align"
-            />
+            <h3>GIPs: Gnosis Improvement Proposals</h3>
+            <div className="search-inputs">
+                <Form.Control 
+                    type="text" 
+                    value={searchTermNo} 
+                    placeholder="Search by No..."
+                    onChange={(e) => setSearchTermNo(e.target.value)}
+                    className="search-input search-number"
+                />
+                <Form.Control 
+                    type="text" 
+                    value={searchTermTitle} 
+                    placeholder="Search by Title..."
+                    onChange={(e) => setSearchTermTitle(e.target.value)}
+                    className="search-input search-title"
+                />
+            </div>
             <Table striped hover className="table">
                 <thead>
                     <tr>
@@ -260,7 +292,8 @@ const GIPTable = () => {
                                     <td colSpan={columns.length}>
                                         <Card.Body>
                                             <p className="text-muted">No.: {parseInt(gip.gip_number, 10) || 0}</p>
-                                            <h4>{gip.title}</h4>
+                                            <p className="text-muted">Author: {gip.author}</p>
+                                            <h4  style={{ display: 'inline-block', whiteSpace: 'normal', width: '100%'  }}>{gip.title}</h4>
                                             <p className="text-muted">Started: {formatDate(gip.start)}</p>
                                             <p className="text-muted">{gip.scores_state !== 'final' ? 'Ending' : 'Ended'}: {formatDate(gip.end)}</p>
                                             <p className="text-muted">

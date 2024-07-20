@@ -1,21 +1,36 @@
 /* Global styles */
-body {
-  /* background-color: #faf9f4;  Set background color for the entire application */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 #app {
+  width: 100%;
   margin-top: 60px;
 }
 
-.container {
-  padding: 20px;
+@font-face {
+  font-family: 'ABCMaxiRound';
+  src: url('./fonts/ABCMaxiRoundVariable.ttf') format('truetype'); /* Adjust the path as necessary */
+  font-weight: normal;
+  font-style: normal;
 }
 
-.container h1 {
-  font-size: 2em; /* Font size for h1 elements inside container class */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ABCMaxiRound', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
 }
+
+.container {
+  width: calc(100% - 40px); /* Consider padding */
+  max-width: 100%; /* Prevent any overflow */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
 
 .container p {
   font-size: 1em; /* Font size for p elements inside container class */
@@ -68,9 +83,8 @@ body {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px; 
-  overflow: hidden; /* Ensures content that overflows the bound of the element is hidden */
-  text-overflow: ellipsis; /* Displays an ellipsis ('...') to indicate text has been cut */
-  white-space: nowrap;
+  white-space: normal;
+  width: 100%;
 }
 
 
@@ -82,3 +96,71 @@ body {
 .col-type { width: 50px; }
 .col-details { width: 50px; }
 
+
+
+
+.chart-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Align items in a line */
+  flex-wrap: nowrap;
+  width: 100%; /* Ensure flex container takes full width */
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1; /* Allow flex items to grow and fill the space */
+  min-width: 50%; /* Override minimum width restrictions */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px; /* Fixed height */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    flex-basis: 100%; /* Each item takes full width on smaller screens */
+  }
+}
+
+.pie-chart-container {
+  width: 400px;  /* Set the width as needed */
+  height: 400px; /* Set the height to maintain aspect ratio */
+  margin: auto;  /* Center the chart if desired */
+}
+
+
+.search-inputs {
+  display: flex;
+  align-items: flex-start; /* Aligns items inside the container to the start of the cross axis */
+  margin-bottom: 20px;
+}
+
+.search-input {
+  margin-right: 10px; /* Adds spacing between inputs */
+  height: auto; /* Adjust height as necessary */
+}
+
+.search-number {
+  flex: 0 1 10%; 
+}
+
+.search-title {
+  flex: 0 1 45%; 
+  align-self: stretch; 
+}
