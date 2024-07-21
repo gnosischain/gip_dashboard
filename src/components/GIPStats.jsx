@@ -101,7 +101,7 @@ const GIPStats = ({ gips }) => {
         plugins: {
             legend: {
                 display: true,
-                position: 'top'
+                position: 'left'
             }
         }
     };
@@ -166,14 +166,69 @@ const GIPStats = ({ gips }) => {
             }
         }
     };
+
+
+    const authorChartData = useMemo(() => {
+        const counts = {};
+
+        // Count each author's GIPs
+        gips.forEach(gip => {
+            counts[gip.author] = (counts[gip.author] || 0) + 1;
+        });
+
+        // Convert to array and sort by count
+        const sortedAuthors = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+        // Slice to get top 10
+        const topAuthors = sortedAuthors.slice(0, 10);
+
+        // Separate into labels (authors) and data (counts)
+        const labels = topAuthors.map(item => item[0]);
+        const data = topAuthors.map(item => item[1]);
+
+        return {
+            labels,
+            datasets: [{
+                label: 'Number of GIPs',
+                data,
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        };
+    }, [gips]);
+
+    const optionsAuthor = {
+        indexAxis: 'y', // Set y-axis as the index axis to create a horizontal bar chart
+        scales: {
+            x: {
+                beginAtZero: true
+            }
+        },
+        plugins: {
+            legend: {
+                display: false // Set to true if you want to display the dataset label
+            }
+        }
+    };
     
 
     return (
         <div className="container">
             <h3>GIP Stats</h3>
-            <div className="flex-container pie-chart-container">
-                <Pie data={statusGIP} options={options} />
+           
+            <div className="flex-container">
+                <div className="chart-container flex-ite pie-chart-container ">
+                    <h3>GIPs Status</h3>
+                    <Pie data={statusGIP} options={options} />
+                </div>
+                <div className="chart-container flex-item">
+                    <h3>Top-10 GIPs Proposers</h3>
+                    <Bar data={authorChartData} options={optionsAuthor} />
+                </div>
             </div>
+
+
 
             <div className="flex-container">
                 <div className="chart-container flex-item">
