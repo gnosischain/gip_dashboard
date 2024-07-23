@@ -1,10 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import { Table, Button, Card, Form } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Pie } from 'react-chartjs-2';
+import { Chart, registerables } from 'chart.js';
 import 'chart.js/auto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'; // Import the CSS file
+import annotationPlugin from 'chartjs-plugin-annotation';
+
+Chart.register(...registerables, annotationPlugin);
 
 const GIPTable = ({ gips }) => {
     const [searchTermNo, setSearchTermNo] = useState("");
@@ -138,11 +142,11 @@ const GIPTable = ({ gips }) => {
         return pages;
     };
 
-    const renderBarChart = (choices, scores, scores_state) => {
+    const renderBarChart = (scores, scores_state, quorum) => {
         if (scores_state !== 'final') return null;  // It's better to return `null` for React components when not rendering.
     
         const data = {
-            labels: [''],  // Assuming you want a single group of votes labeled.
+            labels: [''],  
             datasets: [
                 {
                     label: 'For',
@@ -213,6 +217,18 @@ const GIPTable = ({ gips }) => {
                     labels: {
                         color: 'black'
                     }
+                },
+                annotation: {
+                    annotations: {
+                        quorumLine: {
+                            type: 'line',
+                            xMin: quorum,
+                            xMax: quorum,
+                            borderColor: 'black',
+                            borderWidth: 2,
+                            borderDash: [6, 6]
+                        }
+                    }
                 }
             }
         };
@@ -220,6 +236,56 @@ const GIPTable = ({ gips }) => {
         return (
             <div style={{ width: '600px', height: '400px' }}>
                 <Bar data={data} options={options} />
+            </div>
+        );
+    };
+
+
+    const renderPieChart = (scores, scores_total, scores_state) => {
+        if (scores_state !== 'final') return null;
+        const data = {
+            labels: ['For', 'Against', 'Abstain'],
+            datasets: [
+                {
+                    data: scores,  // Assuming scores is an array [forVotes, againstVotes, abstainVotes]
+                    backgroundColor: ['#4caf50', '#f44336', '#ff9800'],
+                    borderColor: ['black', 'black', 'black'],
+                    borderWidth: 2
+                }
+            ]
+        };
+    
+        const options = {
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            let label = data.labels[tooltipItem.dataIndex] || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            const sum = tooltipItem.raw;
+                            const percent = (sum / scores_total * 100).toFixed(2);
+                            label += `${percent}%`;
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+    
+        return (
+            <div style={{ display: 'flex', alignItems: 'center', width: '500px', height: '300px' }}>
+                <div style={{ flex: 1 }}>
+                    <Pie data={data} options={options} />
+                </div>
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}>
+                    <h3>Total Amount</h3>
+                    <h3>{scores_total.toFixed(2)}</h3>
+                </div>
             </div>
         );
     };
@@ -301,7 +367,10 @@ const GIPTable = ({ gips }) => {
                                                 <span style={{ display: 'inline-block', width: '20px' }}></span>
                                                 Status: <span className={`badge bg-${getBadge_status(computeState(gip.scores, gip.quorum, gip.scores_state))}`}>{computeState(gip.scores, gip.quorum, gip.scores_state)}</span> 
                                             </p>
-                                            {gip.choices && gip.scores && renderBarChart(gip.choices, gip.scores, gip.scores_state)}
+                                            <div style={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}>
+                                                {gip.choices && gip.scores && renderBarChart(gip.scores, gip.scores_state, gip.quorum)}
+                                                {gip.choices && gip.scores && renderPieChart(gip.scores, gip.scores_total, gip.scores_state)}
+                                            </div>
                                             <ReactMarkdown className="text-body left-align">{gip.body}</ReactMarkdown>
                                         </Card.Body>
                                     </td>

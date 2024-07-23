@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import GIPTable from './components/GIPTable';
-import GIPStats from './components/GIPStats';
+import GIPTable from './components/GIPTable.jsx';
+import GIPStats from './components/GIPStats.jsx';
 import { Tabs, Tab, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import yaml from 'js-yaml';
