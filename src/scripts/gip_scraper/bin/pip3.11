@@ -1,4 +1,4 @@
-#!/Users/hugser/Documents/Gnosis/repos/gip_dashboard/src/scripts/gip_scraper/bin/python
+#!/Users/hugser/Documents/Gnosis/repos/gip_dashboard/src/scripts/gip_scraper/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

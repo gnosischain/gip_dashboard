@@ -1,0 +1,66 @@
+id: gip-30-should-gnosisdao-reward-2300-gno-to-prysmatic-labs
+gip_number: '30'
+title: should gnosisdao reward 2300 gno to prysmatic labs
+body: "[ Gnosis ](/)\n\n#  [GIP-30: Should GnosisDAO reward 2300 GNO to Prysmatic\
+  \ Labs?](/t/gip-30-should-gnosisdao-reward-2300-gno-to-prysmatic-labs/4070)\n\n\
+  [ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[GnosisDAO](https://forum.gnosis.io/u/GnosisDAO)\
+  \ March 10, 2022, 7:16pm  1\n\n#  GIP-30: Should GnosisDAO reward 2300 GNO to Prysmatic\
+  \ Labs\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n\
+  \    GIP: 30\n    title: Should GnosisDAO reward 2300 GNO to Prysmatic Labs?\n \
+  \   author: GnosisDAO, Stefan George\n    status: Draft\n    type: Funding\n   \
+  \ created: <date created on, in ISO 8601 (2022-03-10) format>\n    \n\n##  Summary\n\
+  \nShould GnosisDAO reward 2300 GNO to Prysmatic Labs?\n\nSince the launch of the\
+  \ [Gnosis Beacon Chain](https://beacon.gnosischain.com/) over 60000 validators were\
+  \ launched. Those validators almost exclusively run either Prysm or Lighthouse clients.\n\
+  \nGiven the importance of Prysm for Gnosis Chain, we suggest rewarding the Prysmatic\
+  \ Labs team with 2300 GNO for their work aligning incentives with their team.\n\n\
+  In return the Prysmatic Labs team will support Gnosis Chain in the following ways:\n\
+  \n  * A direct communication channel with the Gnosis Chain Team.\n  * Acceptance\
+  \ and maintenance of minor changes to Prysm codebase to support Gnosis Chain.\n\
+  \  * Acknowledgment and timely review of any performance, regression, or general\
+  \ reports from Gnosis regarding Prysm software.\n  * General feedback on gnosis\
+  \ chain and tooling.\n\n\n\n5 Likes\n\n[boonjue.eth](https://forum.gnosis.io/u/boonjue.eth)\
+  \ March 11, 2022, 10:41pm  2\n\nI support this proposal.\n\nAs [@StefanGeorge](/u/stefangeorge)\
+  \ mentioned, giving 2300 GNO (currently $690,000) to the Prysm team will help align\
+  \ their incentives with those of Gnosis. In addition to GBC validators running almost\
+  \ exclusively on Prysm, the most commonly used client on the ETH consensus layer\
+  \ is Prysm (currently around 66%). As such, Prysm having a vested interest in the\
+  \ well-being of Gnosis seems like a good move.\n\nIIRC, the GnosisDAO treasury currently\
+  \ holds +150K ETH. Therefore, the success of Gnosis heavily depends on the success\
+  \ of Ethereum. Similarly, because so many ETH validators rely on Prysm (almost exclusively\
+  \ with GBC validators), the success of ETH - and therefore GNO - is at least partly\
+  \ tied to the success of Prysm. Gnosis should nurture a mutually beneficial relationship\
+  \ with the Prysm team as it would benefit all stakeholders in the Gnosis ecosystem.\
+  \ Also, the shared cultural values between and among ETH, Prysm, and GNO align well\
+  \ (at least, that is my sense of it).\n\nI think this is win-win all around.\n\n\
+  5 Likes\n\n[poolpitako](https://forum.gnosis.io/u/poolpitako) March 14, 2022, 2:32pm\
+  \  3\n\nWhat about client diversification?  \nIs there a way to see how the pie\
+  \ is distributed?\n\n1 Like\n\n[active01](https://forum.gnosis.io/u/active01) March\
+  \ 15, 2022, 3:29pm  4\n\nI like this project very much. I love you and I wish you\
+  \ a successful project and meet many successes in the near future\n\n1 Like\n\n\
+  [refri](https://forum.gnosis.io/u/refri) March 17, 2022, 5:12pm  5\n\nI run my gbc\
+  \ validators on prysm since beginning of the year, fully support this ![:+1:](https://forum.gnosis.io/images/emoji/twitter/+1.png?v=10)\n\
+  \n2 Likes\n\n[Havenmeester19](https://forum.gnosis.io/u/Havenmeester19) March 22,\
+  \ 2022, 9:11pm  6\n\nGood proposal, would be nice to get this proposal and the one\
+  \ of erigon more in line with eachother so we can set clear goals for client teams\
+  \ that help Gnosis chain (and maybe proactively go to the other teams)\n\n2 Likes\n\
+  \n  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n\
+  \  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by\
+  \ [Discourse](https://www.discourse.org), best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: GnosisDAO
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

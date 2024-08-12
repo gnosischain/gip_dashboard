@@ -1,0 +1,198 @@
+id: gip-6-deploy-gnosis-auction
+gip_number: '6'
+title: deploy gnosis auction
+body: "[ Gnosis ](/)\n\n#  [GIP-6: Deploy Gnosis Auction](/t/gip-6-deploy-gnosis-auction/1078)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[closed](https://forum.gnosis.io/tag/closed)\n\n[auction_master](https://forum.gnosis.io/u/auction_master)\
+  \ February 11, 2021, 2:33pm  1\n\n#  GIP-6: Deploy Gnosis Auction\n\n  * Let’s do\
+  \ this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 6\n    title:\
+  \ Deploy Gnosis Auction\n    author: auction_master\n    status: Phase 3\n    type:\
+  \ Meta\n    created: 2021-02-11\n    \n\n##  Update (19/02/2021)\n\nAccording to\
+  \ [GnosisDAO’s governance process](https://forum.gnosis.io/t/readme-gnosisdao-governance-process/736)\
+  \ I promote this proposal to the consensus phase (Phase 3).  \nVoting is available\
+  \ [here](https://snapshot.page/#/gnosis/proposal/QmUA5aYzD7nRdPQhqMTH3GWus4Bj62SGcSfjPEb6QcDdnM)\
+  \  \nA link to the audit report for Gnosis Auction smart contracts was added to\
+  \ the Implementation section of this proposal.\n\n##  Simple Summary\n\nThis GIP\
+  \ intends to answer the question: Should GnosisDAO deploy GnosisAuction?\n\n## \
+  \ Abstract\n\nThis is the phase-II continuation to [Should GnosisDAO build an IDO\
+  \ specific Dapp?](https://forum.gnosis.io/t/should-gnosisdao-build-an-ido-specific-dapp/895)\n\
+  \nGnosisAuction would build on the proven success with token sales that Gnosis Protocol\
+  \ (GP) v1 (Mesa) had. It will provide a sturdy mechanism that supports fair price\
+  \ finding in token sales. It will also aim to be modular enough to work in other\
+  \ scenarios where auctions are needed.\n\n##  Motivation\n\nGnosis Protocol v1 was\
+  \ successful with multiple token sales, including some high profile ones such as\
+  \ mStable and API3. Nonetheless, the protocol was not developed with this specific\
+  \ use-case in mind. Additionally, after hitting the market, many users suggested\
+  \ multiple improvements.\n\nSome of the suggested improvements included:\n\n  *\
+  \ Making the UX more simple\n  * Reducing the number of transactions required to\
+  \ trade\n  * Improve gas efficiency\n  * Reduce attack vectors\n\n\n\nThough these\
+  \ improvements are being addressed in the development of Gnosis Protocol v2 (GPv2),\
+  \ it still plans to be a DEX that is not aimed at token sales and other kinds of\
+  \ auctions. Thus, it is important to address this segment of the market that has\
+  \ proven demand.\n\nGnosisAuction still takes some of the most important benefits\
+  \ from GPv1, out of which the following two stand out:\n\n  * Single closing price\
+  \ per auction, which is the fairest price-finding mechanism\n  * MEV resistance,\
+  \ which prevents miners and frontrunners from extracting value\n\n\n\nFinally, it\
+  \ is important to note that there is no general auction smart contract ready to\
+  \ use in the market. Some of the use-cases that the contract could also be used\
+  \ for include:\n\n  * Auctions to repay debt on shortfall events of lending protocols\
+  \ like AAVE\n  * Liquidations\n  * Token buy backs\n  * Price discovery for all\
+  \ sorts of assets\n\n\n\n##  Specification\n\nGnosisAuction may be used as a tool\
+  \ by anyone hoping to auction off a predefined amount of tokens. Anyone can bid\
+  \ to buy these tokens by placing a buy-order with a specified limit price during\
+  \ the whole bidding time, subject to any potential customisations/restrictions placed\
+  \ by the auctioneer. At the end of the predefined auction time, the final price\
+  \ is calculated by the following method: The buy volumes from the highest bids are\
+  \ getting added up until this sum reaches the initial sell volume. The limit price\
+  \ of the bid that increases the overall buy volume to the initial sell volume is\
+  \ setting the uniform clearing price. All bids with a higher price will be settled\
+  \ and traded against the initial sell volume with the clearing price. All bids with\
+  \ a lower price will not be considered for the settlement and users will be able\
+  \ to withdraw their committed funds.\n\nGnosis auction will initially have a simple\
+  \ UI so buyers can place their bids. A draft of the interface can be seen below,\
+  \ which will aim to use the gnosis-auction.eth domain.\n\n[![](//forum.gnosis.io/uploads/default/optimized/1X/01ff03ffac18dc194e0aa4a8cfc46f387fa30daa_2_438x325.png)\
+  \ 1596×1184 127 KB ](//forum.gnosis.io/uploads/default/original/1X/01ff03ffac18dc194e0aa4a8cfc46f387fa30daa.png)\n\
+  \nAt first, auctioneers (sellers) will have to interact directly with the code in\
+  \ order to run an auction. Nonetheless, simple, yet comprehensive documentation\
+  \ will be written to make this easy for sellers to set up. Subject to legal considerations,\
+  \ eventually an auctioneer interface may be built.\n\n##  Rationale\n\nAs stated\
+  \ above, GnosisAuction is a software tool to cater primarily to those hoping to\
+  \ conduct IDOs, which are currently an underserved market. GPv1 was not aimed at\
+  \ fulfilling this market, and GPv2 is geared towards being a DEX-aggregator/general\
+  \ purpose DEX.\n\nRegarding other models considered, batch auctions were preferred\
+  \ over Dutch Auctions mainly because:\n\n  * Dutch Auctions have high activity near\
+  \ the end, high gas prices or other infrastructure issues could be fatal on a critical\
+  \ event as a token sale or shortfall event\n  * DutchAuctions calculate their price\
+  \ based on blocktime, which makes it hard to predict\n  * Dutch Auctions cause a\
+  \ gas war near the end of the auction, causing competition based on gas bidding\
+  \ instead of the limit price set buy buyers of the auction\n  * On Dutch Auctions,\
+  \ bidders need to wait until the auction price reaches the maximum amount that they\
+  \ are willing to pay, or else they risk paying more than they wanted. With this\
+  \ implementation, users can set their limit price (maximum amount they are willing\
+  \ to pay) from the start, and never pay more than what they determine.\n\n\n\n##\
+  \  Implementation\n\nThe specific information on the contract can be followed up\
+  \ in [this repository](https://github.com/gnosis/ido-contracts).  \nThe audit report\
+  \ can be found [here](https://github.com/gnosis/ido-contracts/blob/main/audit-report.md)\n\
+  \n4 Likes\n\n[tschubotz](https://forum.gnosis.io/u/tschubotz) February 11, 2021,\
+  \ 4:37pm  2\n\nI’m generally supportive of this proposal. I think it makes down\
+  \ to extend something that has some product market fit and was used in the past.\
+  \ I have 2 questions:\n\n(1) I’m wondering, about the reasons that new contracts\
+  \ are used. Couldn’t GPv1 contracts be used? I know, they aren’t optimized for this\
+  \ specific use case, however they are audited and they seem to work. New contracts\
+  \ would add the overhead of developing them, including security audits. It’s a tradeoff,\
+  \ as always. In the Motivation you write:\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/49beb7/48.png)\
+  \ auction_master:\n\n>   * Reducing the number of transactions required to trade\n\
+  >   * Improve gas efficiency\n>   * Reduce attack vectors\n> \n\n\nCould you please\
+  \ elaborate on that a bit more on these, i.e. how many tx were required in GPv1\
+  \ vs. EasyAuction, how much gas can be saved, and perhaps an example of an attack\
+  \ vector which can be removed without opening up a new one? I’m trying to understand\
+  \ the tradeoffs more.\n\n(2) Is there a fee token involved? GPv1 had OWL as fee\
+  \ token. I’m wondering if there is a connection to the value/demand of GNO. Was\
+  \ there a final decision on this already?\n\n4 Likes\n\n[Richard](https://forum.gnosis.io/u/Richard)\
+  \ February 12, 2021, 9:22am  3\n\nI am also generally supportive of this proposal.\n\
+  \nI would also very much like to know if there is a fee involved (see question from\
+  \ [@tschubotz](/u/tschubotz)).\n\nAlso maybe a quick mention if there is any government\
+  \ logic involved (e.g. are there parameters on the IDO contracts that could be adjusted\
+  \ by some entity).\n\nAnother question is what are we exactly deploying and what\
+  \ is involved in the deployment process:\n\n  * Are the contracts already audited\
+  \ or is it part of this proposal to decide if we should get them audited?\n  * Are\
+  \ we only talking about the contracts? What about the mentioned interface?\n\n\n\
+  \nHow is the deployment of the contracts going to happen? Does the DAO execute the\
+  \ deployment transaction or is there a designated deployer?\n\nI am not 100% how\
+  \ detailed this should be defined here. This probably also depends on how the deployment\
+  \ process is structured.\n\n1 Like\n\n[Rafa](https://forum.gnosis.io/u/Rafa) February\
+  \ 12, 2021, 2:21pm  4\n\nRegarding number of transactions required to trade, GPv1\
+  \ required 5 tx’s to complete a single trade to go from token A in your wallet to\
+  \ token B. Flow would be something as follows:\n\n`Approve > Deposit > Place Order\
+  \ > Claim > Withdraw`\n\nThis would often take more than 10 minutes and many times\
+  \ resulted in orders not being filled.\n\nRegarding attack vectors, there are a\
+  \ few listed here: [Gnosis Chain | Gnosis Chain](https://docs.gnosis.io/protocol/docs/devguide03/#known-issues)\n\
+  \nI believe auction_master is referring mainly to the fake-token utility vulnerability,\
+  \ where a user trades fake tokens with himself in order to create a high utility\
+  \ and trick the solver into matching the final leg of his fake token trades against\
+  \ a real token at a very favorable price for the attacker. This already happened\
+  \ in the API3 token sale.\n\nI myself can’t asses exactly how much gas is saved\
+  \ by looking at the repo that was shared with the proposal. What I can tell is that\
+  \ bidders will only have to do one tx for bidding, and require no deposits (apart\
+  \ from the balance committed for that bid).\n\nThere also doesn’t seem to be any\
+  \ token specific fee at all on the shared repo (which I find to be good) + the fee\
+  \ seems yet to be set. I think a small fee for the DAO would be worth considering\
+  \ so the DAO can have an economic interest in deploying Gnosis Auction.\n\n[alex](https://forum.gnosis.io/u/alex)\
+  \ February 13, 2021, 3:07pm  5\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/tschubotz/48/279_2.png)\
+  \ tschubotz:\n\n> Couldn’t GPv1 contracts be used?\n\nThe main reason is that gp_v1\
+  \ had some attack vectors, as mentioned by Rafa, and a batch could only contain\
+  \ 30 orders. But generally, auctions could have many more participants. On gp-v1\
+  \ many participants were not getting the same price as others because they would\
+  \ be traded in a different batch.  \nThe new contracts can settle an arbitrary amount\
+  \ of orders in one batch-auction.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/tschubotz/48/279_2.png)\
+  \ tschubotz:\n\n> (2) Is there a fee token involved? GPv1 had OWL as fee token\n\
+  \nNo fee token is involved. The contracts could charge the auctioneer on a small\
+  \ fee for running the auction.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/richard/48/281_2.png)\
+  \ Richard:\n\n> Also maybe a quick mention if there is any government logic involved\
+  \ (e.g. are there parameters on the IDO contracts that could be adjusted by some\
+  \ entity)\n\nOnly the fee parameter.\n\n1 Like\n\n[auction_master](https://forum.gnosis.io/u/auction_master)\
+  \ February 25, 2021, 11:30am  6\n\nThe proposal has passed ![:dizzy:](//forum.gnosis.io/images/emoji/twitter/dizzy.png?v=12)\
+  \  \nThanks for everyone who participated\n\n<https://snapshot.page/#/gnosis/proposal/QmUA5aYzD7nRdPQhqMTH3GWus4Bj62SGcSfjPEb6QcDdnM>\n\
+  \n[0x2e173510024d480d19](https://forum.gnosis.io/u/0x2e173510024d480d19) March 29,\
+  \ 2021, 2:32pm  7\n\nThe audits of the contracts are ready. ![:slight_smile:](//forum.gnosis.io/images/emoji/twitter/slight_smile.png?v=12)\
+  \ We did the [first audit](https://github.com/g0-group/Audits/blob/master/GnosisAuctionFeb2021.pdf)\
+  \ in Feb and [a second audit](https://github.com/g0-group/Audits/blob/master/GnosisAuctionMar2021.pdf)\
+  \ on slightly modified code just finished today. ![:partying_face:](//forum.gnosis.io/images/emoji/twitter/partying_face.png?v=12)\
+  \ ![:partying_face:](//forum.gnosis.io/images/emoji/twitter/partying_face.png?v=12)\
+  \ ![:partying_face:](//forum.gnosis.io/images/emoji/twitter/partying_face.png?v=12)\n\
+  \n1 Like\n\n[auction_master](https://forum.gnosis.io/u/auction_master) March 30,\
+  \ 2021, 8:39am  8\n\nThat’s really cool!  \nLet’s push this out as quickly as possible\
+  \ (:  \nI deployed the contracts, you can find all details here:\n\n> \n>     Compilation\
+  \ finished successfully\n>     deploying \"EasyAuction\" (tx: 0xa7ad659a9762720bd86a30b49a3e139928cc2a27d0863ab78110e19d2bef8a51)...:\
+  \ deployed at 0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101 with 5135197 gas\n>   \
+  \  deploying \"DepositAndPlaceOrder\" (tx: 0x8a88034c1d1729c3a72e2d9d0f05056d5e4155f6f1368882e6f743f0fe3d6966)...:\
+  \ deployed at 0x10D15DEA67f7C95e2F9Fe4eCC245a8862b9B5B96 with 439841 gas\n>    \
+  \ Done in 393.33s.ListOffChainManaged\" (tx: 0x0de81ba1d40ca65e635198fbc57b0aac52950152e7ec6e4b1e27537b0cc6c9ef)...:\
+  \ deployed at 0x0F4648d997e486cE06577d6Ee2FecBcA84b834F4 with 383192 gas\n>    \
+  \ \n\n2 Likes\n\n[auction_master](https://forum.gnosis.io/u/auction_master) March\
+  \ 30, 2021, 8:55am  9\n\nI have also deployed the contracts on xDAI here:\n    \n\
+  \    \n    deploying \"EasyAuction\" (tx: 0x5af5443ba9add113a42b0219ac8f398c383dc5a3684a221fd24c5655b8316931)...:\
+  \ deployed at 0x0b7fFc1f4AD541A4Ed16b40D8c37f0929158D101 with 5135197 gas\n    deploying\
+  \ \"DepositAndPlaceOrder\" (tx: 0x7d239d8ab763f396739d7988c2bd909851067bf94007b6321d2ef69602104ce6)...:\
+  \ deployed at 0x845AbED0734e39614FEC4245F3F3C88E2da98157 with 439874 gas\n    deploying\
+  \ \"AllowListOffChainManaged\" (tx: 0x9be0d0f472e3a41c1fb314624965fefbdeb0c5ebe3671c59191a794b68265f10)...:\
+  \ deployed at 0x0F4648d997e486cE06577d6Ee2FecBcA84b834F4 with 383192 gas\n    Done\
+  \ in 41.89s.\n\n2 Likes\n\n[auction_master](https://forum.gnosis.io/u/auction_master)\
+  \ March 30, 2021, 3:11pm  10\n\nAttaching also the deployment files so they are\
+  \ available for everyone\n\nMainnet:  \n[EasyAuction.json](https://justpaste.it/6tkud)\
+  \  \n[DepositAndPlaceOrder.json](https://justpaste.it/5ruo1)  \n[AllowListOffChainManaged.json](https://justpaste.it/72go9)\n\
+  \nxDAI:  \n[EasyAuction.json](https://justpaste.it/8xeqq)  \n[DepositAndPlaceOrder.json](https://justpaste.it/4ed0k)\
+  \  \n[AllowListOffChainManaged.json](https://justpaste.it/4eqcu)\n\nPolygon  \n\
+  [EasyAuction.json](https://justpaste.it/8erwv)  \n[DepositAndPlaceOrder.json](https://justpaste.it/9cgvz)\
+  \  \n[AllowListOffChainManaged.json](https://justpaste.it/8j951)\n\n1 Like\n\n \
+  \ * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n\
+  \  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by\
+  \ [Discourse](https://www.discourse.org), best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: 'auction_master
+
+  status: Phase 3
+
+  type: Meta
+
+  created: 2021-02-11
+
+
+
+  Update (19/02/2021)
+
+  According to GnosisDAO’s governance process I promote thi&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

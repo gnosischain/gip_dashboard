@@ -1,0 +1,88 @@
+id: gip-79-should-pluser-integrate-gnosis-chain-in-mvp
+gip_number: '79'
+title: should pluser integrate gnosis chain in mvp
+body: "[ Gnosis ](/)\n\n#  [GIP-79: Should Pluser integrate Gnosis Chain in MVP?](/t/gip-79-should-pluser-integrate-gnosis-chain-in-mvp/6552)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[elshan.eth](https://forum.gnosis.io/u/elshan.eth)\
+  \ February 16, 2023, 1:00pm  1\n\n#  GIP-79: Should Pluser integrate Gnosis Chain\
+  \ in MVP?\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n   \
+  \ \n    GIP: 79\n    title: Should Pluser integrate Gnosis Chain in MVP?\n    author:\
+  \ elshan.eth\n    status: phase-2\n    type: Funding\n    created: 2023-02-16\n\
+  \    \n\n#  Summary\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0_2_690x388.jpeg)\
+  \ Problems1600×900 101 KB ](https://forum.gnosis.io/uploads/default/original/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0.jpeg\
+  \ \"Problems\")\n\nAbout $2 billion were stolen from wallets in 2022 due to hacker\
+  \ attacks and the loss of access. Current wallets as accounts are complex and insecure.\n\
+  \n#  Problems\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/4/4ceceebb59511130eb022b419714757be957d8d0_2_690x388.png)\
+  \ Problems1600×900 19.8 KB ](https://forum.gnosis.io/uploads/default/original/2X/4/4ceceebb59511130eb022b419714757be957d8d0.png\
+  \ \"Problems\")\n\n##  Authorization via Seed\n\nTo manage your wallet, you need\
+  \ to store your seed phrase securely. The seed phrase is a complex way of authorization.\
+  \ If a user loses their seed, they lose their account and assets.\n\n##  One seed\
+  \ for all devices\n\nUsers can’t control access between devices. If a user has lost\
+  \ their device, they can not block it from the account. Whoever gains access to\
+  \ the device can access the user’s account. Therefore, the only option is to create\
+  \ a new wallet and withdraw all assets there as soon as possible.\n\n##  Weak Security\n\
+  \nCurrently, security is the responsibility of the user. If the user encounters\
+  \ an insecure application, he may lose all his assets.\n\n##  No 2FA\n\nIf a user\
+  \ encounters a hacker attack, there is no two-factor authentication for defending\
+  \ the user’s account.\n\n#  Solution\n\n[![Solution](https://forum.gnosis.io/uploads/default/optimized/2X/c/cb407790c61959524e899ba727ef3fded266ac6f_2_690x388.png)\
+  \ Solution1600×900 18.3 KB ](https://forum.gnosis.io/uploads/default/original/2X/c/cb407790c61959524e899ba727ef3fded266ac6f.png\
+  \ \"Solution\")\n\nPluser is a single account for all web3 apps with authorization\
+  \ via email, decentralized 2FA, device manager, and hack protection.\n\nThe user\
+  \ can use any web3 application and not worry about security. We thought of everything\
+  \ for them. Now they never lose their crypto, NFT, etc. Our solution is entirely\
+  \ decentralized, convenient, and secure. It consists of several parts.\n\n##  Authorization\
+  \ via email\n\nUsers create an account and recover access to an account using email\
+  \ and password. It’s simple, and users will never lose access to their accounts.\n\
+  \n##  Device manager\n\nUsers can manage access for each device. If a user loses\
+  \ their device, they can revoke access.\n\n##  Hack Protection\n\nIf a user uses\
+  \ an unsafe web3 app, Pluser will notify the user about it and block this app.\n\
+  \n##  Decentralized 2FA\n\nIf hackers attack a user’s account, 2FA will protect\
+  \ it.\n\n#  Web2/Web3\n\nPluser is a simple and secure way to use web3 applications.\
+  \ It’s like **Google Account/Apple ID** but in web3.\n\n[![Web2/Web3](https://forum.gnosis.io/uploads/default/optimized/2X/7/7a0b24043224dc6bcb64eea67157a03b6ee7a057_2_690x388.png)\
+  \ Web2/Web31600×900 36.1 KB ](https://forum.gnosis.io/uploads/default/original/2X/7/7a0b24043224dc6bcb64eea67157a03b6ee7a057.png\
+  \ \"Web2/Web3\")\n\n#  Easy to use\n\n[![1. Create an account via email](https://forum.gnosis.io/uploads/default/optimized/2X/1/1b13a325655d7d2193cfc3c0d48304d13abe1540_2_690x388.png)\
+  \ 1\\. Create an account via email1600×900 41.8 KB ](https://forum.gnosis.io/uploads/default/original/2X/1/1b13a325655d7d2193cfc3c0d48304d13abe1540.png\
+  \ \"1. Create an account via email\")\n\n[![2. Choose an application in dAppStore](https://forum.gnosis.io/uploads/default/optimized/2X/1/1536ea14556de9279acdcfb86192e2413dbb3245_2_690x388.jpeg)\
+  \ 2\\. Choose an application in dAppStore1600×900 165 KB ](https://forum.gnosis.io/uploads/default/original/2X/1/1536ea14556de9279acdcfb86192e2413dbb3245.jpeg\
+  \ \"2. Choose an application in dAppStore\")\n\n[![3. Don't worry about security.\
+  \ Pluser will protect you.](https://forum.gnosis.io/uploads/default/optimized/2X/f/f9038e184063b037b45c783ec8a709d2be04942d_2_690x388.png)\
+  \ 3\\. Don&#39;t worry about security. Pluser will protect you.1600×900 195 KB ](https://forum.gnosis.io/uploads/default/original/2X/f/f9038e184063b037b45c783ec8a709d2be04942d.png\
+  \ \"3. Don&#39;t worry about security. Pluser will protect you.\")\n\n#  Market\
+  \ Validation\n\n[![Market Validation](https://forum.gnosis.io/uploads/default/optimized/2X/7/7edb9196612ea2c6d0feb842ed907c62f462d928_2_690x388.png)\
+  \ Market Validation1600×900 36.3 KB ](https://forum.gnosis.io/uploads/default/original/2X/7/7edb9196612ea2c6d0feb842ed907c62f462d928.png\
+  \ \"Market Validation\")\n\n#  Comparison\n\n###  Terminology:\n\n  * **Easy/Complicated**\
+  \ \\- Degree of difficulty for a user to create an account and gain access.\n\n\
+  \  * **Safe/Unsafe** \\- How much a user needs to think about security and keeping\
+  \ access to the wallet.\n\n\n\n\n[![Comparison](https://forum.gnosis.io/uploads/default/optimized/2X/1/15bc77d52364c7e8704ebe05a0439b5adce86aaf_2_690x388.png)\
+  \ Comparison1600×900 65.9 KB ](https://forum.gnosis.io/uploads/default/original/2X/1/15bc77d52364c7e8704ebe05a0439b5adce86aaf.png\
+  \ \"Comparison\")\n\n#  Roadmap\n\n[![Comparison](https://forum.gnosis.io/uploads/default/optimized/2X/0/0140a43e5807c50cdbb2d4df09be0458721c6c5b_2_690x388.jpeg)\
+  \ Comparison1600×900 139 KB ](https://forum.gnosis.io/uploads/default/original/2X/0/0140a43e5807c50cdbb2d4df09be0458721c6c5b.jpeg\
+  \ \"Comparison\")\n\n#  Team\n\n[![Comparison](https://forum.gnosis.io/uploads/default/optimized/2X/6/69eeb8f65f6938f67ec4dadba15e7b33a373e201_2_690x429.jpeg)\
+  \ Comparison2386×1486 409 KB ](https://forum.gnosis.io/uploads/default/original/2X/6/69eeb8f65f6938f67ec4dadba15e7b33a373e201.jpeg\
+  \ \"Comparison\")\n\n#  Grant\n\nWe want to get a $50,000 grant or SAFE investments\
+  \ from GnosisDAO. This money will be spent on maintaining the team and developing\
+  \ the MVP. Pluser can make the experience of using Gnosis Chain easier and safer.\
+  \ It will also help onboarding users from web2.\n\n##  GnosisDAO Snapshot\n\n_Phase\
+  \ 2 Proposals: Please ignore this section, and leave as is. It is used for Phase\
+  \ 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot\
+  \ poll you’ve created._\n\n2 Likes\n\n  * [Home ](/)\n  * [Categories ](/categories)\n\
+  \  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy\
+  \ Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org), best\
+  \ viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: "elshan.eth\nstatus: phase-2\ntype: Funding\ncreated: 2023-02-16\n\n\nSummary\n\
+  \  \nAbout $2 billion we&hellip;"
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

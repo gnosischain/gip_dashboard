@@ -1,0 +1,58 @@
+id: gip-12-treasury-swaps-program-1-gno-x-bal
+gip_number: '12'
+title: treasury swaps program 1 gno x bal
+body: "[ Gnosis ](/)\n\n#  [GIP-12: Treasury Swaps Program #1 GNO x BAL](/t/gip-12-treasury-swaps-program-1-gno-x-bal/1500)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[claberus](https://forum.gnosis.io/u/claberus)\
+  \ September 6, 2021, 1:10pm  1\n\n#  GIP-12: Treasury Swaps Program #1 GNO x BAL\n\
+  \n  * Do Treasury Swaps Program #1 GNO x BAL\n  * Make no changes\n\n\n\n0 voters\n\
+  \    \n    \n    GIP: 12\n    title: Treasury Swaps Pilot Program #1 GNO x BAL\n\
+  \    author: @claberus, Marcelo Ruiz de Olano\n    status: Phase 2\n    type: Meta\n\
+  \    created: 2021-08-05\n    \n    \n\n##  Simple Summary\n\nCreate periodic OTC\
+  \ trades GNO X BAL between GnosisDAO and Balancer’s treasuries. The program #1 will\
+  \ consist of 4000 ETH-equivalent GNO (BAL) distributed across 8 months.\n\n##  Motivation\n\
+  \nIn April 2021, [Gnosis and Balancer launched a partnership integration](https://blog.gnosis.pm/introducing-gnosis-protocol-v2-and-balancer-gnosis-protocol-f693b2938ae4),\
+  \ the Balancer-Gnosis-Protocol (BGP). This proposal looks forward to strengthening\
+  \ the partnership and aligning the DAOs financially.\n\nHow?  \n-Financial incentives\
+  \ alignment: It will promote the Balancer-Gnosis-Protocol outcome in the best interest\
+  \ of both Gnosis and Balancer\n\n  * Treasury diversification\n  * Improved token\
+  \ distribution within long term players\n  * Voting power for DAO proposals\n\n\n\
+  \n##  Specification\n\nStart a pilot program #1 of 4000 ETH-equivalent GNO (BAL)\
+  \ distributed across 8 months. After the program #1, make a lookback, evaluate the\
+  \ results and define next steps.\n\nEvery first Monday of the month Gnosis (Balancer)\
+  \ sends 500 ETH-equivalent GNO (BAL) to Balancer (Gnosis) treasury wallet.\n\nThe\
+  \ price will be defined by the last 30 days of open-price historical data average\
+  \ on Coingecko:  \nGNO: [https://www.coingecko.com/en/coins/gnosis/historical_data/eth\
+  \ ](https://www.coingecko.com/en/coins/gnosis/historical_data/eth)  \nBAL: [Balancer\
+  \ Price: BAL Live Price Chart & News | CoinGecko](https://www.coingecko.com/en/coins/balancer/historical_data/eth)\n\
+  \n[Link to discussion on Balancer forum](https://forum.balancer.fi/t/rfc-treasury-swaps-program-gno-x-bal/2110)\n\
+  \n[Link to phase1 post](https://forum.gnosis.io/t/treasury-swaps-program-gno-x-bal/1440)\n\
+  \n2 Likes\n\n[claberus](https://forum.gnosis.io/u/claberus) September 6, 2021, 1:13pm\
+  \  2\n\nBalancer’s proposal:\n\n![](//forum.gnosis.io/uploads/default/original/1X/36858bb2dbb628e360fac8482f88eb889e4ca6ea.png)\
+  \ [Balancer – 6 Sep 21](https://forum.balancer.fi/t/proposal-treasury-swaps-program-1-gno-x-bal/2207\
+  \ \"01:11PM - 06 September 2021\") ![](//forum.gnosis.io/uploads/default/original/1X/b8eecada134f8d6dacd1b118d27b04ed831186b2.png)\n\
+  \n### [[Proposal] Treasury Swaps Program #1 GNO x BAL](https://forum.balancer.fi/t/proposal-treasury-swaps-program-1-gno-x-bal/2207)\n\
+  \nGovernance Ecosystem Fund [deprecated]\n\nContinuing the discussion from [RFC]\
+  \ Treasury Swaps Program GNO x BAL: Simple Summary Create periodic OTC trades GNO\
+  \ X BAL between GnosisDAO and Balancer’s treasuries. The program #1 will consist\
+  \ of 4000 ETH-equivalent GNO (BAL) distributed...\n\nReading time: 1 mins \U0001F551\
+  \ Likes: 2 ❤\n\n  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines\
+  \ ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\
+  \n\n\nPowered by [Discourse](https://www.discourse.org), best viewed with JavaScript\
+  \ enabled\n"
+start: null
+end: null
+state: null
+author: '@claberus'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

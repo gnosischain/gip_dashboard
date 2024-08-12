@@ -1,0 +1,151 @@
+id: gip-108-should-gnosisdao-honor-the-original-rewards-for-gnosisvip-before-the-distribution-schedule-was-modified-this-proposal-does-not-reward-additional-nodes-with-the-same-withdrawal-address
+gip_number: '108'
+title: Sho&hellip;
+body: "[ Gnosis ](/)\n\n#  [GIP-108: Should GnosisDAO honor the original rewards for\
+  \ GnosisVIP before the distribution schedule was modified (this proposal does not\
+  \ reward additional nodes with the same withdrawal address)?](/t/gip-108-should-gnosisdao-honor-the-original-rewards-for-gnosisvip-before-the-distribution-schedule-was-modified-this-proposal-does-not-reward-additional-nodes-with-the-same-withdrawal-address/8808)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[SpecEnforcer](https://forum.gnosis.io/u/SpecEnforcer)\
+  \ July 10, 2024, 5:55am  1\n\n# GIP-108: Should GnosisDAO honor the original rewards\
+  \ for GnosisVIP before the distribution schedule was modified (this proposal does\
+  \ not reward additional nodes with the same withdrawal address)?\n\n  * In Favour\n\
+  \  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 108\n    title: Should GnosisDAO\
+  \ honor the original rewards for GnosisVIP before the distribution schedule was\
+  \ modified (this proposal does not reward additional nodes with the same withdrawal\
+  \ address)?\n    author: @specenforcer\n    status: Draft\n    type: Funding\n \
+  \   created: 2024-07-10\n    duration: Once\n    funding: 139.625 GNO\n    \n\n\
+  ## Category\n\nFunding - Rewards\n\n## Executive Summary\n\nWhile GIP-106 aims to\
+  \ reinstate GnosisVIP rewards for nodes with the same withdrawal address, this proposal\
+  \ is different and **aims to honor the higher rewards as originally announced**.\
+  \ Due to challenges, the Builders Team delayed the distribution of rewards, to be\
+  \ after 6 months of validation. The Builders Team also reduced the rewards for the\
+  \ initial months. The original rewards can be reviewed [here](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip).\
+  \ The original rewards should be maintained because they were heavily promoted by\
+  \ Gnosis social media and PR, and induced validators to join in reliance on this\
+  \ announcement. This would maintain fairness and trust about the Gnosis brand.\n\
+  \n## Background\n\nA co-founder of Flashbots [advocated for geographical decentralization](https://collective.flashbots.net/t/decentralized-crypto-needs-you-to-be-a-geographical-decentralization-maxi/1385)\
+  \ (might not have motivated GnosisVIP but explains the importance of the program).\
+  \ Shortly after, Gnosis Builders (whose funding was approved in GIP-38) allocated\
+  \ 5 million USD for GnosisVIP, a program aimed at increasing the number and diversity\
+  \ of validators. There was no term reserving the right to modify the rewards at\
+  \ any time. **The announcement, referring to 388 mGNO for 6 months, was promoted\
+  \ by Gnosis social media and PR including on[Cointelegraph](https://cointelegraph.com/news/gnosis-chain-spends-5m-on-validator-incentive-program-for-decentralization).**\n\
+  \nIn the original post, payments were expected within 90 days of each month of validation.\
+  \ Due to technical or logistical challenges, the Builders Team delayed the distribution\
+  \ of rewards, to be after 6 months of validation. The Builders Team also reduced\
+  \ the rewards for the initial months.\n\n## Specification\n\nThis proposal aims\
+  \ to restore the original rewards for GnosisVIP before the distribution schedule\
+  \ was modified. [Originally](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip),\
+  \ the monthly breakdown added up to 388 mGNO (38+48+58+68+78+98). The cumulative\
+  \ reward for 6 months amounted to 12.125 GNO (388/32).\n\nIn June 2024, validators\
+  \ for 6 months received 3 GNO, and validators for 9 months received a total of 7\
+  \ GNO. **This proposal would disburse the difference with 12.125 GNO.** This approach\
+  \ would maintain trust and predictability in contractual relations with the Gnosis\
+  \ brand.\n\nAccording to the [Google Sheet](https://docs.google.com/spreadsheets/d/1Ix4Cu2aiNr0XzwILqWSZqY3dcPiwQhMEMSF50QVvDrQ/edit?usp=sharing)\
+  \ in the [sunsetting announcement](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8),\
+  \ around 29* validators are affected by the reduced rewards. As calculated in the\
+  \ Budget, this would amount to 139.625 GNO to 29 validators.\n\n*Nodes whose rewards\
+  \ were reduced due to having the same withdrawal address are not included in this\
+  \ GIP for simplicity and for avoidance of a conflict with GIP-106. These operators\
+  \ can advocate for rewards outside my proposal.\n\n## Rationale\n\nChanging the\
+  \ reward amounts retroactively would undermine trust, discourage future relations\
+  \ with Gnosis entities, and breach the offered contract.\n\n### Honoring the contract:\n\
+  \nAs [LegalVision UK puts it](https://legalvision.co.uk/commercial-contracts/unilateral-contract/),\
+  \ “In a unilateral contract, **legal relations between the offeror and offeree form\
+  \ when the offeree begins to try to complete the specified act as part of the contract.**\
+  \ As a result, if you are the offeror, you will have a binding contract and will\
+  \ not be able to rescind your offer.” The offer of 388 mGNO was seen by over 4000\
+  \ on Cointelegraph, and the bulk of interactions was with Gnosis Builders’ first\
+  \ announcement. It would be unfair to rescind this offer after operators began getting\
+  \ hardware / setting up validators.\n\n### Not all validators were given the chance\
+  \ to validate for 12 months for full rewards:\n\nThe program was closed without\
+  \ equal opportunity to complete 12 months of validation. April 19, 2024 [was set](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/7)\
+  \ as the final deadline of Gnosis VIP. That means all validators would have needed\
+  \ to join as soon as the announcement came out in 2023 to validate for 12 months.\
+  \ This is contrary to the [blog post](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip)\
+  \ allowing nodes to be “starting **after** April 19, 2023” and the announced intention\
+  \ “to further diversify the network to have validators in at least 100 countries\
+  \ **by the end of the year** ”. It suggests that nodes had at least until the end\
+  \ of 2023 to start validating as long as they were within the first 10 in an eligible\
+  \ country. It implies it would take until late 2024 to give operators a fair opportunity\
+  \ for performance that the offer called for. **Since the modified reward schedule\
+  \ calling for 12 months of validation was made practically impossible to perform\
+  \ on time for nodes not joining quickly but still joining in 2023 as intended by\
+  \ Gnosis Builders, at least the original 12.125 GNO that were announced for 6 months\
+  \ of validation should be honored.**\n\nPersonally, I’ve also been asking for clarity\
+  \ on the reward plans since November 2023 when my hardware broke, but was never\
+  \ told I needed to find a way to continue from 6 to 12 months (read my Personal\
+  \ Story below). Neither did I receive the rewards that were promised month-to-month\
+  \ when I joined on May 6, 2023, that could have been reinvested in new hardware.\n\
+  \n### The DAO had indirectly approved the initial program and now directly holds\
+  \ GnosisVIP participant funds:\n\n**The Builders initiative was approved in GIP-38\
+  \ and[Builders returned their funds](https://forum.gnosis.io/t/gnosis-builders-2023/7814);\
+  \ there is a portion of these funds that had been promised to GnosisVIP participants\
+  \ when announcing GnosisVIP.** Luckily, 139.625 GNO is small compared to the 5 million\
+  \ USD that Gnosis Builders had allocated to the program.\n\n## Budget\n\nMy methodology\
+  \ was forking the reward sheet as of July 9, 2024, adding an “Affected Reward” column\
+  \ calculating the difference between 12.125 GNO and the amount for those nodes paid\
+  \ for 6 or 9 months. [The total sum of this column is 139.625 GNO](https://1drv.ms/x/c/0f6fd8b64fab0138/EfO34nlrw-pPplD3CodJTawByDiZTWzXD_PvVmpm5dK6KA?e=HB5Fg1).\n\
+  \nNodes having already received 14 GNO are not impacted. Nodes whose rewards were\
+  \ reduced due to having the same withdrawal address are not in the scope of this\
+  \ GIP.\n\nThe following would need to be distributed:\n\n![GIP-108 Sheet](https://forum.gnosis.io/uploads/default/original/2X/d/d9157b016d02ea851864ae759274a16b958b224c.png)\n\
+  \n## Personal Story\n\nAs I’ve [posted on Discord](https://discord.com/channels/502416149343109121/1124140637428666368/1178659200109387826)\
+  \ in November 2023, I experienced a hardware failure after 6 months in the program\
+  \ after joining on May 6, 2023. Although [I advocated](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/2)\
+  \ to harmonize the initial announcement with the reward change to not make something\
+  \ akin to a “rug” of the initial announcement, I have not received a response. I\
+  \ was never told that the original program that I relied on would not be honored\
+  \ unless I repaired my hardware and came back. Anyway, if this proposal passes,\
+  \ I will purchase new hardware and add a LatAm node again.\n\n## Conclusion\n\n\
+  By honoring the original rewards, we can ensure that all participants are treated\
+  \ equitably and avoid reputational risk for the Gnosis ecosystem.\n\n[Staworth /\
+  \ jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)\n\
+  \n[armog](https://forum.gnosis.io/u/armog) July 10, 2024, 10:42am  2\n\nThe reward\
+  \ distribution is as follows:\n\nMonth 6: 3 GNO  \nMonth 9: 4 GNO  \nMonth 12: 7\
+  \ GNO\n\nAdditionally, those who have reached 11 months in this programme, are also\
+  \ included in the full reward distribution list.\n\n[![image](https://forum.gnosis.io/uploads/default/optimized/2X/e/eb6c8d7055d27a71c15bf9701061275751a5862e_2_500x500.jpeg)image1920×1920\
+  \ 234 KB](https://forum.gnosis.io/uploads/default/original/2X/e/eb6c8d7055d27a71c15bf9701061275751a5862e.jpeg\
+  \ \"image\")\n\n[SpecEnforcer](https://forum.gnosis.io/u/SpecEnforcer) July 10,\
+  \ 2024, 12:52pm  3\n\nEven with this modified reward distribution, Gnosis Builders\
+  \ was still inviting nodes at least on [June 19, 2023](https://x.com/gnosisbuilders/status/1670808322478587904)\
+  \ saying “learn how you can get involved and earn 14 GNO”. This further offered\
+  \ that nodes would have had until late 2024 to perform, not until April 19, 2024.\n\
+  \nSimply stating the modification does not justify why the original reward promoted\
+  \ heavily (even with [@mkoeppelmann](/u/mkoeppelmann) commenting on the [Cointelegraph\
+  \ announcement](https://cointelegraph.com/news/gnosis-chain-spends-5m-on-validator-incentive-program-for-decentralization))\
+  \ should not be upheld.\n\n[refri](https://forum.gnosis.io/u/refri) July 10, 2024,\
+  \ 10:00pm  4\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/s/7c8e57/48.png)\
+  \ SpecEnforcer:\n\n> Nodes whose rewards were reduced due to having the same withdrawal\
+  \ address are not in the scope of this GIP\n\ncause these ones would be the ones\
+  \ I would see the best reasoning to give them additional payouts I have to vote\
+  \ no\n\n[staworth](https://forum.gnosis.io/u/staworth) July 16, 2024, 8:06pm  5\n\
+  \nFor reference, we found [@armog](/u/armog)’s [explanation](https://forum.gnosis.io/t/gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes/8783/4)\
+  \ on GIP-106 helpful for background to the changes that were made to the distribution\
+  \ after this was taken over by the Gnosis core team.\n\n> After the Builders team\
+  \ retired and handed over the program to the Gnosis Core team, we reviewed the program’s\
+  \ scheme and database and found that they were poorly designed. The rules for rewarding\
+  \ were not clearly established, allowing individuals running multiple nodes or having\
+  \ multiple withdrawal addresses to harm the program. These gaps did not align with\
+  \ the program’s objectives, necessitating the implementation of additional rules.\n\
+  \nThis is a difficult issue, where problematic design choices in the initial program\
+  \ needed to be resolved to avoid being gamed. However, we have sympathy for those\
+  \ who entered into the program in reliance on the initial offering.\n\n  * [Home\
+  \ ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  *\
+  \ [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
+  \ best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

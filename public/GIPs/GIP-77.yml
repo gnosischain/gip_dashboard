@@ -1,0 +1,198 @@
+id: gip-77-should-the-gnosisdao-add-delegation-spam-reduction
+gip_number: '77'
+title: should the gnosisdao add delegation spam reduction
+body: "[ Gnosis ](/)\n\n#  [GIP-77: Should the GnosisDAO add delegation & spam reduction?](/t/gip-77-should-the-gnosisdao-add-delegation-spam-reduction/6362)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
+  \ January 19, 2023, 9:06pm  1\n    \n    \n    GIP: 77\n    title: Should the GnosisDAO\
+  \ add delegation & spam reduction?\n    author: Gnosis Guild\n    status: Draft\n\
+  \    type: Meta\n    created: 2023-01-20\n    \n\n  * Let’s do this!\n  * Make no\
+  \ change\n\n\n\n0 voters\n\n##  Simple Summary\n\nThis proposal aims to introduce\
+  \ a number of changes to GnosisDAO’s governance setup which will:\n\n  1. Reduce\
+  \ low-quality and spam proposals created in the GnosisDAO’s snapshot space.\n  2.\
+  \ Make GnosisDAO’s influence distribution less opaque.\n  3. Improve vote-weight\
+  \ utilization.\n\n\n\n##  Abstract\n\nBroadly, this proposal aims to introduce two\
+  \ changes:\n\n  1. Modify the criteria for users to post proposals to the GnosisDAO’s\
+  \ snapshot space. \n    1. Accounts holding ≥ 1 GNO can create a proposal (current).\n\
+  \    2. Add some trusted moderators that have the ability to remove posts that they\
+  \ deem to be low-quality. (new)\n    3. Proposals with less than < 1,000 GNO of\
+  \ vote-weight cast `for` or `abstain` are filtered from the main view. (new)\n \
+  \ 2. Improve delegation \n    1. Improve the delegation UI inside of snapshot to\
+  \ make delegation much simpler and to give an overview of the current delegated\
+  \ vote-weight distribution.\n    2. Add a two-year term limit to delegation, to\
+  \ avoid stagnation in the vote-weight distribution; GNO holders must periodically\
+  \ set their delegation, all delegations expire after two-years.\n    3. Allow delegates\
+  \ to decline being delegated to / resign from delegation, negating any vote weight\
+  \ delegated to them.\n    4. Allow GNO holders to delegate portions of their vote\
+  \ weight to multiple accounts.\n    5. Allow for transitive delegation; If A delegates\
+  \ to B and B delegates to C, C inherits A’s vote weight.\n    6. Allow delegates\
+  \ to optionally set a cap on the amount of vote weight delegated to them.\n\n\n\n\
+  ##  Motivation\n\nPopularized by Compound Governor, delegation has proven to be\
+  \ an effective strategy for improving the vote-weight utilization in many DAOs;\
+  \ consolidating vote-weight in the hands of those who have the time and inclination\
+  \ to actively participate in governance by allowing users to delegate their vote\
+  \ weight to others.\n\nLargely due to the constraints of calculating vote-weight\
+  \ on-chain, Compound and OZ Governor’s delegation is somewhat limited. GnosisDAO’s\
+  \ existing delegation strategy on Snapshot already improves on one of these limitations\
+  \ by allowing users to delegate their vote weight and also directly participate\
+  \ in any vote. If a user does not cast a vote, their vote weight will be applied\
+  \ to the vote cast by their delegate. If a user does cast a vote, their vote weight\
+  \ will not count towards their delegates vote weight in that proposal.\n\nHowever,\
+  \ there is significant design-space to further improve on GnosisDAO’s delegation.\n\
+  \nSpecifically, we would like to introduce changes that:\n\n  1. Reduce low-quality\
+  \ and spam proposals created in the GnosisDAO’s snapshot space.\n  2. Make GnosisDAO’s\
+  \ influence distribution less opaque.\n  3. Improve vote-weight utilization.\n\n\
+  \n\n[Another recent forum](https://forum.gnosis.io/t/enhancing-transparency-and-efficiency-an-idea-for-the-implementation-of-a-governance-structure-based-on-delegates-in-the-gnosis-ecosystem/6334)\
+  \ post also argues for delegation, along with suggesting compensation for delegates.\
+  \ To constrain scope, this proposal does not include delegate compensation. However,\
+  \ if this proposal is successful, and after observing the delegation setup in production,\
+  \ we will likely write a followup proposal to implement some form of delegate compensation.\n\
+  \n##  Specification\n\nTODO\n\n##  Rationale\n\nTODO\n\n##  Implementation\n\nTODO\n\
+  \n8 Likes\n\n[GIP-109: Should the GnosisDAO introduce Snapshot moderators to reduce\
+  \ spam?](https://forum.gnosis.io/t/gip-109-should-the-gnosisdao-introduce-snapshot-moderators-to-reduce-spam/8812)\n\
+  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/8)\n\
+  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/9)\n\
+  \n[GnosisDAO proposal spam on Snapshot](https://forum.gnosis.io/t/gnosisdao-proposal-spam-on-snapshot/8042/3)\n\
+  \n[GIP-101: Should karpatkey and StableLab Establish a Delegate Program v0 for the\
+  \ GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
+  \n[Karpatkey Delegate Platform](https://forum.gnosis.io/t/karpatkey-delegate-platform/7252)\n\
+  \n[cmagan](https://forum.gnosis.io/u/cmagan) January 20, 2023, 8:46am  2\n\n[@auryn_macmillan](/u/auryn_macmillan)\
+  \ This is an amazing proposal that addresses many issues and adds great improvements\
+  \ to delegate voting!  \nI’m in support and ofc will vote for the proposal\n\nIt\
+  \ is also in line with many improvements that we were considering for CoW DAO. We\
+  \ will definitely be looking to use these new tooling to introduce a delegation\
+  \ program for the CoW DAO, piggy backing on your work.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n> Proposals with less than < 1,000 GNO of vote-weight cast\
+  \ `for` or `abstain` are filtered from the main view. (new)\n\nFor this feature,\
+  \ I assume the exact configuration will be exposed in the space settings?  \nWhere\
+  \ users would be able to find the low quality proposals?\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n> Allow delegates to decline being delegated to / resign from\
+  \ delegation, negating any vote weight delegated to them.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n> Allow delegates to optionally set a cap on the amount of\
+  \ vote weight delegated to them.\n\nWhere those settings will be exposed? I assume\
+  \ in the profile section? Or would there be a user-specific settings section for\
+  \ each space?\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n> Improve the delegation UI inside of snapshot to make delegation\
+  \ much simpler and to give an overview of the current delegated vote-weight distribution.\n\
+  \nThis should ideally also include information about the term expiration for each\
+  \ delegate, so delegates and users are aware of upcoming expirations.\n\nFew additional\
+  \ ideas I had:\n\n  * Improve the profile page to include a space-specific bio field.\
+  \ This bio will be used if the user was chosen to be displayed as delegate in the\
+  \ “[delegate](https://snapshot.org/#/delegate/cow.eth)” page\n  * Improve the “delegate”\
+  \ page - Add a space defined delegate-list strategy. This will define which profiles\
+  \ are eligible to be displayed to users when they go to the “delegate” page and\
+  \ look for delegates. In addition the strategy will define the order in which the\
+  \ delegate list is displayed. Either top delegates like it is today, or randomly\
+  \ ordered, or any other arbitrary sorting. (I assume this will have a significant\
+  \ bias effect on delegate choice, so at least space owners can control WHO is being\
+  \ displayed and in WHAT order)\n\n\n\n2 Likes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
+  \ January 20, 2023, 9:17am  3\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/cmagan/48/629_2.png)\
+  \ cmagan:\n\n> For this feature, I assume the exact configuration will be exposed\
+  \ in the space settings?\n\nYeah, I think that’s a safe assumption. The value should\
+  \ be configurable.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/cmagan/48/629_2.png)\
+  \ cmagan:\n\n> Where users would be able to find the low quality proposals?\n\n\
+  Not sure about this yet. Admins in Snapshot are currently able to archive proposals,\
+  \ so I’d imagine that low quality proposals are also put in this same state.\n\n\
+  ![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/cmagan/48/629_2.png) cmagan:\n\
+  \n> Where those settings will be exposed?\n\nI’m honestly not sure yet. I think\
+  \ we’ll probably modify the delegate tab on Snapshot, so perhaps this is the natural\
+  \ place for these settings to live.\n\n1 Like\n\n[Sisyphos](https://forum.gnosis.io/u/Sisyphos)\
+  \ January 23, 2023, 4:47am  4\n\nThanks for posting this [@auryn_macmillan](/u/auryn_macmillan),\
+  \ and to the team that worked on it!\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n> Add some trusted moderators that have the ability to remove\
+  \ posts that they deem to be low-quality. (new)\n\nThis could be clear for most\
+  \ of all who have been looking at the snapshot space recently, but some examples\
+  \ or general guidelines may help interpret it. E.g. low quality means the GIP is\
+  \ not following the GIP template [GIP-0: Template](https://forum.gnosis.io/t/gip-0-template/734).\n\
+  \nAre moderators going to be known, e.g. information added to the space bio, for\
+  \ people to reach out if they are looking for feedback?\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n>   * Allow delegates to optionally set a cap on the amount\
+  \ of vote weight delegated to them.\n> \n\n\nI was wondering if a cap on max delegation\
+  \ would help in:\n\n  * Create some additional friction for people that have enough\
+  \ vote power to guarantee quorum\n  * Avoid the perception that participating in\
+  \ snapshot voting may be pointless when one wallet is seen to provide quorum and\
+  \ make a decision.\n\n\n\nIt is granted that such a user could still delegate to\
+  \ more than one wallet in their control. But I thought it may be worth the time\
+  \ considering those two bullets if the effort to implement it is reasonable.\n\n\
+  Cheers!\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan) January\
+  \ 23, 2023, 9:54am  5\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/sisyphos/48/1152_2.png)\
+  \ Sisyphos:\n\n> E.g. low quality means the GIP is not following the GIP template\
+  \ [GIP-0: Template](https://forum.gnosis.io/t/gip-0-template/734).\n\nAgreed. The\
+  \ rules around moderation will need to be explicit.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/sisyphos/48/1152_2.png)\
+  \ Sisyphos:\n\n> Are moderators going to be known, e.g. information added to the\
+  \ space bio, for people to reach out if they are looking for feedback?\n\nI assume\
+  \ the moderators will be a subset of the forum moderators. Likely it would be [@john_szczepaniak](/u/john_szczepaniak)\
+  \ and perhaps a small handful of others.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/sisyphos/48/1152_2.png)\
+  \ Sisyphos:\n\n> I was wondering if a cap on max delegation would help\n\nAs you\
+  \ said, such a user could trivially delegate to more than one wallet, so I think\
+  \ this is probably a moot point. If we want to make it more challenging for a single\
+  \ entity to reach quorum, we would need to explore different ways to weighting votes;\
+  \ quadratic voting, for example.\n\n3 Likes\n\n[srv](https://forum.gnosis.io/u/srv)\
+  \ January 25, 2023, 1:49pm  6\n\nThank you [@auryn_macmillan](/u/auryn_macmillan)\
+  \ for posting this!\n\nI would suggest some alternatives to this point : `Allow\
+  \ for transitive delegation; If A delegates to B and B delegates to C, C inherits\
+  \ A’s vote weight.`\n\nAs a GNO holder, I’d like to avoid delegated accounts to\
+  \ sub-delegate my vote power indefinitely, I think it’s everyone’s right to decide\
+  \ on whether or not transitive delegation should be enabled, probably we can have\
+  \ an option to allow/block that behaviour.\n\nWhat do you think?\n\n2 Likes\n\n\
+  [auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan) January 25, 2023, 9:51pm\
+  \  7\n\nIt’s certainly an option we can explore, but my knee-jerk objections to\
+  \ this are:\n\n  1. It likely adds some complexity to the implementation.\n  2.\
+  \ It would likely reduce vote-weight utilization, since A’s vote would not end up\
+  \ being used if B delegates to C, and neither A nor B vote directly.\n  3. It feels\
+  \ somewhat redundant. Practically, there is very little difference between B delegating\
+  \ to C and B mirroring Cs vote. In either case, A’s vote ends up being cast in the\
+  \ same way as C. However, the latter required B’s active participation in each proposal,\
+  \ which probably reduces vote-weight utilization (as in 2).\n  4. This seems like\
+  \ an issue between A and B. If A does not want their vote weight delegated further,\
+  \ they should pick a delegate who promises not to delegate further. If B delegates\
+  \ to C, then A can always vote directly to override that vote weight and/or change\
+  \ their delegation.\n\n\n\n1 Like\n\n[coltron.eth](https://forum.gnosis.io/u/coltron.eth)\
+  \ June 21, 2023, 5:12pm  8\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
+  \ auryn_macmillan:\n\n>   * Reduce low-quality and spam proposals created in the\
+  \ GnosisDAO’s snapshot space.\n>   * Make GnosisDAO’s influence distribution less\
+  \ opaque.\n>   * Improve vote-weight utilization.\n> \n\n\nI’m aware that I am bumping\
+  \ and older post, but these are great initiatives.\n\nIs there a place I can look\
+  \ for status updates on this?\n\n2 Likes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
+  \ June 22, 2023, 5:34am  9\n\nThis took a little longer to implement than we had\
+  \ initially expected. We’re hopefully wrapping up work on it in the next ~month,\
+  \ at which point we’ll make a proposal on Snapshot to update the DAO settings.\n\
+  \nYou can keep an eye on the [delegate registry repo](https://github.com/gnosis/delegate-registry/tree/v2)\
+  \ to track progress.\n\n5 Likes\n\n[rspa](https://forum.gnosis.io/u/rspa) November\
+  \ 24, 2023, 11:46am  10\n\nHey [@auryn_macmillan](/u/auryn_macmillan), StableLab\
+  \ is here to support this initiative if you are open for support.  \nWe have a wide\
+  \ range of experience with delegation from both sides. Happy to make your life easier.\n\
+  \nThanks to [@coltron.eth](/u/coltron.eth) for making us aware of this GIP.\n\n\
+  1 Like\n\n  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n\
+  \  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by\
+  \ [Discourse](https://www.discourse.org), best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: 'Gnosis Guild
+
+  status: Draft
+
+  type: Meta
+
+  created: 2023-01-20
+
+
+  poll
+
+
+  Simple Summary
+
+  This proposal aims to introduce a number of changes to GnosisDA&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

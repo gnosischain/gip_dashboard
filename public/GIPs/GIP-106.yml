@@ -1,0 +1,272 @@
+id: gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes
+gip_number: '106'
+title: should gnosisdao reinstate full rewards for eligible gnosisvip validator nodes
+body: "[ Gnosis ](/)\n\n#  [GIP-106: Should GnosisDAO Reinstate Full Rewards for Eligible\
+  \ GnosisVIP Validator Nodes?](/t/gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes/8783)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-1](https://forum.gnosis.io/tag/phase-1)\n\n[dao](https://forum.gnosis.io/u/dao)\
+  \ July 5, 2024, 2:51pm  1\n\n# GIP-106: Should GnosisDAO Reinstate Full Rewards\
+  \ for Eligible GnosisVIP Validator Nodes?\n\n  * In Favour\n  * Against\n\n\n\n\
+  0 voters\n    \n    \n    GIP: 106\n    title: Should GnosisDAO Reinstate Full Rewards\
+  \ for eligible GnosisVIP Validator Nodes?\n    author: @dao\n    status: Draft\n\
+  \    type: Funding\n    created: 2024-07-05\n    duration: Once\n    funding: up\
+  \ to 116.2 GNO (*updated)\n    \n\n#### Category\n\nFunding - Rewards\n\n#### Executive\
+  \ Summary:\n\nThis proposal aims to revisit and restore the original reward policy\
+  \ for the GnosisVIP event. The event’s initial rules allowed participants to set\
+  \ up validator nodes across 104 countries, with the first 10 nodes in each country\
+  \ being eligible for rewards. The original rules can be reviewed [here](https://web.archive.org/web/20230922135332/https://www.gnosis.builders/post/introducing-gnosisvip).\n\
+  \nGnosisVIP is getting concluded due to the retirement of Builders Team which launched\
+  \ this event. However, the team that took over the reward distribution decided to\
+  \ cut down the rewards for participants who run more than one validators, citing\
+  \ concerns about farming. The announcement can be found [here](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8).\n\
+  \nSince there is no restriction in the rules against multiple validator nodes with\
+  \ unique IP addresses, and all those eligible validators contribute equally to geo-diversity\
+  \ in this event, this proposal seeks to ensure participants receive the full rewards\
+  \ as originally promised. This will maintain fairness and trust within the Gnosis\
+  \ community.\n\n#### Specification\n\nThe proposed reward program aims to restore\
+  \ the original terms of the GnosisVIP event:\n\n  * Full Rewards for Eligible Nodes:\
+  \ All validator nodes that meet the criteria (first 10 in their respective countries)\
+  \ should receive their promised rewards according to their validating duration,\
+  \ irrespective of whether they are run by the same entity.\n\n\n\nThis approach\
+  \ will help the broader Gnosis ecosystem by maintaining predictability and trust\
+  \ within the Gnosis community.\n\n#### Rationale\n\nThe motivation behind this proposal\
+  \ is to uphold fairness and trust within the Gnosis community. The original rules\
+  \ did not prohibit running multiple nodes from different IP addresses, and participants\
+  \ should be rewarded based on those terms. Changing the reward policy retroactively\
+  \ undermines trust and can discourage future participation.\n\n#### Budget\n\nAccording\
+  \ to the [google sheet](https://docs.google.com/spreadsheets/d/1Ix4Cu2aiNr0XzwILqWSZqY3dcPiwQhMEMSF50QVvDrQ/edit?usp=sharing)\
+  \ in the [sunsetting announcement](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8),\
+  \ a total of 16 validators from 10 participants are affected by the reduced rewards.\n\
+  \nThe expected amount of rewards to make up is as follows:\n\nWithdrawal Address\
+  \ | Affected Validators | Duration | Affected Rewards | Notes  \n---|---|---|---|---\
+  \  \n…6b20 | 1 | 9 Mo | 5.25 GNO |   \n…4cd8 | 1 | 12 Mo | 10.5 GNO |   \n…bc0c\
+  \ | 1 | 12 Mo | 10.5 GNO |   \n…02fc | 1 | 12 Mo | 10.5 GNO |   \n…9bc1 | 2 | 6\
+  \ Mo | 4.8 GNO |   \n…20a0 | 3 | 12 Mo | 35.7 GNO |   \n…db02 | 1 | 9 Mo | 5.25\
+  \ GNO |   \n…ab14 | 2 | 12 Mo | 23.8 GNO |   \n…4765 | 1 | 6 Mo | 2.25 GNO |   \n\
+  …a88a | 3 | 6 Mo | 7.65 GNO | *Newly Added  \n**Total** | **16** |  | **116.2 GNO**\
+  \ |   \n  \nEdit: The google sheet seems updated after initially drafting this post,\
+  \ updated the numbers to match that.\n\n#### Conclusion\n\nRestoring the original\
+  \ GnosisVIP rewards policy is essential for maintaining fairness and trust within\
+  \ the community. By honoring the original rules, we can ensure that all participants\
+  \ are treated equitably and avoid reputational risk for the Gnosis ecosystem. This\
+  \ proposal seeks the support of the GnosisDAO community to uphold the integrity\
+  \ of our events and promote a decentralized and robust network.\n\n2 Likes\n\n[Staworth\
+  \ / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)\n\
+  \n[refri](https://forum.gnosis.io/u/refri) July 5, 2024, 9:10pm  2\n\nHaven’t followed\
+  \ the details, but more than one node with the same IP address seems to me like\
+  \ playing the game and I wouldn’t give them more as it they had put all their validators\
+  \ in one node cause this doesn’t increase decentralization.\n\nBut having more than\
+  \ one node at different locations (and different IP addresses), although they are\
+  \ using the same withdraw address, seems fine for me.\n\nUnfortunately I can’t see\
+  \ these details in the google sheet cause it only mention the withdrawl addresses.\
+  \ Do you have some data regarding the locations of these nodes?\n\nedit: have looked\
+  \ a little deeper in the google sheet and saw some withdrawl addresses are served\
+  \ from different countries, so for these I would favor a full payout (as long as\
+  \ there isn’t a valid reason to assume the location data can also be played).\n\n\
+  1 Like\n\n[armog](https://forum.gnosis.io/u/armog) July 6, 2024, 9:03am  4\n\nI\
+  \ would like to provide information about this program. GnosisVIP was initiated\
+  \ and defined by the Builders team with the aim of encouraging those who run nodes\
+  \ at home, increasing geographical distribution, and, as one of our valued node\
+  \ operators participating in the program stated, “The aim of the program was to\
+  \ help people from developing countries with the initial hardware costs and to keep\
+  \ the node running sustainably for a long time, rather than renting a VM and shutting\
+  \ it down as soon as the rewards dried up.”\n\nAfter the Builders team retired and\
+  \ handed over the program to the Gnosis Core team, we reviewed the program’s scheme\
+  \ and database and found that they were poorly designed. The rules for rewarding\
+  \ were not clearly established, allowing individuals running multiple nodes or having\
+  \ multiple withdrawal addresses to harm the program. These gaps did not align with\
+  \ the program’s objectives, necessitating the implementation of additional rules.\n\
+  \nIf we look at what individuals can do in this program:\n\n• One person can run\
+  \ multiple nodes in the same geographic area using different withdrawal addresses.\
+  \  \n• One person can run multiple nodes in the same geographic area using the same\
+  \ withdrawal address.  \n• One person can run multiple nodes in different geographic\
+  \ areas using the same withdrawal address.  \n• One person can run multiple nodes\
+  \ in different geographic areas using different withdrawal addresses.  \n• One person\
+  \ can run a single node using their own withdrawal address.\n\nAlso, the duration\
+  \ of the program is factored into these strategies. The program’s rewards are calculated\
+  \ based on participation periods of 6 months, 9 months, and 12 months.\n\nAfter\
+  \ this review, we identified gaps in the program’s initial design that allowed for\
+  \ potential harmful activities, such as running multiple nodes or using multiple\
+  \ withdrawal addresses. Addressing these issues is crucial to ensure fairness and\
+  \ adherence to the program’s objectives.\n\nThe new rules aim to curb abuse by limiting\
+  \ the reward allocation for individuals running multiple nodes or using the same\
+  \ IP address. This approach is fair as it prevents disproportionate rewards while\
+  \ still compensating for incurred expenses.\n\nThe additional rule we implemented\
+  \ is as follows: considering the objectives of the program, the reward entitlements\
+  \ for individuals running multiple nodes in the same or different countries using\
+  \ the same or different withdrawal addresses, or running multiple nodes but using\
+  \ the same IP address, do not align with the overall rules of the program. However,\
+  \ these individuals have continued their operations and incurred expenses. Our rule\
+  \ is to cover these expenses by providing 25% of the reward for the second node,\
+  \ 15% for the third node, and 5% for the fourth node. Considering the average cloud\
+  \ cost is around $125, we believe this reward compensates their costs. However,\
+  \ full reward allocation is not appropriate given the program’s objectives and out\
+  \ of fairness to participants who run a single node with a single withdrawal address.\n\
+  \nAdditionally, no restrictions have been placed on individuals with different IP\
+  \ addresses and different withdrawal addresses in terms of rewards, because it is\
+  \ difficult to determine their intentions.\n\nThis tiered compensation ensures that\
+  \ individuals do not profit excessively from running multiple nodes, aligning with\
+  \ the program’s intent to support sustainable node operation rather than short-term\
+  \ gains. Also, full reward allocation to multi-node operators would be unfair to\
+  \ those adhering to the program’s original intent.\n\nIn summary, by closing loopholes\
+  \ and ensuring fair compensation, the program maintains its integrity and continues\
+  \ to support its primary goal of sustainable and geographically distributed node\
+  \ operation.\n\n5 Likes\n\n[Staworth / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)\n\
+  \n[GIP-108: Should GnosisDAO honor the original rewards for GnosisVIP before the\
+  \ distribution schedule was modified (this proposal does not reward additional nodes\
+  \ with the same withdrawal address)?](https://forum.gnosis.io/t/gip-108-should-gnosisdao-honor-the-original-rewards-for-gnosisvip-before-the-distribution-schedule-was-modified-this-proposal-does-not-reward-additional-nodes-with-the-same-withdrawal-address/8808/5)\n\
+  \n[dao](https://forum.gnosis.io/u/dao) July 6, 2024, 9:04am  5\n\nThere are 4 participants\
+  \ (out of 10) with 7 validators (out of 16) have duplicate location from same withdrawal\
+  \ address (exclude the first node of each location)\n\nWithdrawal Address | Validators\
+  \ | Location | Afftected Rewards  \n---|---|---|---  \n…9bc1 | 2 | Argentina | 4.8\
+  \ GNO  \n…db02 | 1 | Slovakia | 5.25 GNO  \n…ab14 | 1 | Estonia | 13.3 GNO  \n…a88a\
+  \ | 3 | Romania | 7.65 GNO  \nTotal | 7 |  | 31 GNO  \n  \nEdit: the forum throws\
+  \ out error codes when trying to update the numbers so I deleted the old post and\
+  \ reply again.\n\nI agree with your opinion that extra nodes with the same IP address\
+  \ should not get paid but nodes at different locations (and different IP addresses)\
+  \ should be paid in full.\n\nThe main problem is the team that took over the reward\
+  \ distribution put these two kind of participants together and cut down the rewards\
+  \ for them all. Maybe [@armog](/u/armog) can share more details about if they have\
+  \ different IP address for each node.\n\n3 Likes\n\n[Jaf](https://forum.gnosis.io/u/Jaf)\
+  \ July 6, 2024, 9:19am  6\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/dao/48/2913_2.png)\
+  \ dao:\n\n> I agree with your opinion that extra nodes with the same IP address\
+  \ should not get paid but nodes at different locations (and different IP addresses)\
+  \ should be paid in full.\n\nI also support this idea.\n\n2 Likes\n\n[dao](https://forum.gnosis.io/u/dao)\
+  \ July 6, 2024, 9:24am  7\n\nThank you for providing further context on the GnosisVIP\
+  \ program and its objectives. I appreciate the effort to review and improve the\
+  \ program. However, there are several points that I believe need to be addressed\
+  \ to ensure fairness and maintain trust within the Gnosis community.\n\n#### Original\
+  \ Rules and Trust:\n\nThe GnosisVIP program was initiated with specific rules that\
+  \ participants adhered to in good faith. These rules did not restrict individuals\
+  \ from running multiple nodes with different IP addresses or using different withdrawal\
+  \ addresses. Retroactively changing these rules undermines the trust that participants\
+  \ have in Gnosis initiatives. If the goal is to maintain integrity and fairness,\
+  \ it is crucial to honor the original terms under which participants joined the\
+  \ program.\n\n#### Contribution to Geographical Distribution:\n\nThe argument that\
+  \ running multiple nodes does not align with the program’s objectives overlooks\
+  \ the fact that participants, regardless of the number of nodes, contribute to geographical\
+  \ distribution. Each node, even if run by the same entity, adds to the network’s\
+  \ decentralization and resilience. Penalizing participants for operating multiple\
+  \ nodes contradicts the aim of increasing geographical diversity.\n\n#### Encouraging\
+  \ Participation:\n\nBy adhering to the original rules, we encourage more participants\
+  \ to engage in future Gnosis programs. If participants see that the rules can be\
+  \ changed retroactively, it may deter them from participating in future initiatives.\
+  \ Ensuring that all participants receive the full rewards they were promised fosters\
+  \ a sense of fairness and encourages long-term involvement.\n\n#### Economic Considerations:\n\
+  \nThe new tiered compensation system does not take into account that some participants\
+  \ may have invested in multiple sets of hardware to run these nodes, not just rented\
+  \ cloud services. These participants should not be penalized for making a more significant\
+  \ investment based on the original promise of full rewards.\n\n#### Fairness to\
+  \ All Participants:\n\nThe fairness argument should extend to all participants who\
+  \ followed the initial guidelines. While it’s important to prevent abuse, the majority\
+  \ of participants acted in good faith. Implementing retroactive changes punishes\
+  \ these participants unfairly. A fair approach would be to enforce any new rules\
+  \ on future programs while maintaining the original terms for the current one.\n\
+  \n#### Transparency and Predictability:\n\nFor the integrity of the Gnosis ecosystem,\
+  \ transparency and predictability are crucial. Participants should be able to rely\
+  \ on the rules set at the start of any program. Retroactively changing the reward\
+  \ structure creates uncertainty and damages the credibility of Gnosis programs.\n\
+  \nIn conclusion, while I understand the need to address potential abuses, it is\
+  \ imperative to do so without undermining the trust and fairness that participants\
+  \ expect from Gnosis programs. By restoring the original rewards for eligible GnosisVIP\
+  \ validator nodes, we uphold the integrity of our commitments and foster a community\
+  \ built on trust and fairness. I suggest the GnosisDAO to consider the long-term\
+  \ benefits of maintaining these principles and support this proposal to reinstate\
+  \ the full rewards.\n\n[armog](https://forum.gnosis.io/u/armog) July 6, 2024, 9:52am\
+  \  8\n\nThe reward distribution was as follows:\n    \n    \n    1.\tSingle IP,\
+  \ single withdrawal address, and one geographic location: Received full reward.\n\
+  \    2.\tDifferent IP, different geographic locations, and  different withdrawal\
+  \ addresses: Received full reward.\n    3.\tDifferent IP, same geographic locations,\
+  \ different withdrawal addresses: Received full reward.\n    4.\tDifferent IP, different\
+  \ geographic locations, same withdrawal address: Received proportional reward.\n\
+  \    5.\tDifferent IP, same geographic location, same withdrawal address: Received\
+  \ proportional reward.\n    6.\tSame IP, different geographic locations, same withdrawal\
+  \ address: Received proportional reward.\n    7.\tSame IP, same geographic location,\
+  \ different withdrawal addresses: Received proportional reward.\n    \n\n1 Like\n\
+  \n[dao](https://forum.gnosis.io/u/dao) July 6, 2024, 10:21am  9\n\nThank you for\
+  \ the detailed explanation. However, there are significant inconsistencies in the\
+  \ reward distribution criteria:\n\n#### Geographical Diversity vs. Withdrawal Address:\n\
+  \nNodes with different IP addresses and different geographic locations should not\
+  \ be penalized for using the same withdrawal address. These participants have genuinely\
+  \ set up nodes in diverse locations, contributing to the network’s geographical\
+  \ diversity. In contrast, nodes with the same IP address and geographic location\
+  \ simply run multiple validators on the same machine, offering no benefit to geographical\
+  \ diversity. Penalizing both scenarios equally is unfair and contradicts the program’s\
+  \ goals.\n\n#### Technical Feasibility:\n\nThe mention of “Same IP, different geographic\
+  \ locations” is technically infeasible, indicating a misunderstanding in the reward\
+  \ assessment process. This raises concerns about the accuracy and fairness of the\
+  \ revised reward rules.\n\nTo uphold fairness and trust, GnosisDAO should restore\
+  \ full rewards for nodes that genuinely contribute to geographical diversity, regardless\
+  \ of the withdrawal address used. This approach ensures participants who adhered\
+  \ to the original rules and made significant contributions are justly compensated.\n\
+  \n[refri](https://forum.gnosis.io/u/refri) July 7, 2024, 1:05am  10\n\nImo, if anything\
+  \ shall be changed it is:\n    \n    \n    Different IP, different geographic locations,\
+  \ same withdrawal address: Received proportional reward.\n    \n\nespecially if\
+  \ these nodes are still online. I didn’t participated in the program at all, but\
+  \ if someone has two residential places in different countries I would appreciate\
+  \ if a node is run on both locations and wouldn’t mind the same withdrawal address.\n\
+  \n3 Likes\n\n[refri](https://forum.gnosis.io/u/refri) July 7, 2024, 1:20am  11\n\
+  \n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/armog/48/2779_2.png) armog:\n\
+  \n> `Same IP, different geographic locations`\n\nhow is this possible?\n\n[armog](https://forum.gnosis.io/u/armog)\
+  \ July 7, 2024, 10:27am  12\n\nThis situation is possible with the use of dynamic\
+  \ IP and VPN/proxy server at the same time. [@refri](/u/refri)\n\n1 Like\n\n[dao](https://forum.gnosis.io/u/dao)\
+  \ July 7, 2024, 11:19am  13\n\nHowever, even with dynamic IPs or VPN/proxy servers,\
+  \ the IP address remains tied to a specific geographic location. IP addresses, whether\
+  \ dynamic or through a VPN, correspond to particular regions. It is not feasible\
+  \ for the same IP to represent different geographic locations simultaneously.\n\n\
+  Furthermore, the builders team’s initial reward claim system effectively prevented\
+  \ such masking behaviors. Participants only needed to provide their validator’s\
+  \ pubkey, while the system backend identified the IP address, geographic location,\
+  \ and any repeated IP addresses using pre-snapshot data. This system ensured accurate\
+  \ and fair reward distribution based on actual geographic diversity.\n\nThis highlights\
+  \ the need to ensure fair compensation for genuine contributions to geographical\
+  \ diversity, rather than penalizing participants unfairly based on assumptions.\
+  \ [@armog](/u/armog)\n\n[gno-investor](https://forum.gnosis.io/u/gno-investor) July\
+  \ 10, 2024, 11:07am  14\n\nI have never participated in this program, even though\
+  \ I operate many GNO validators in various countries. I run a large number of validators\
+  \ through VPNs from different countries than where they are actually located. I\
+  \ don’t understand what prevents those who want to benefit from this program from\
+  \ simply pretending to validate from a specific country. It’s not difficult at all.\
+  \ What am I missing?\n\n[ACI](https://forum.gnosis.io/u/ACI) July 17, 2024, 8:30am\
+  \  15\n\nHey friends,\n\nJoining the conversation here, As someone in Luxembourg\
+  \ (there’s not many of us, Moien!) felt a bit of a shame not to be included in this\
+  \ program as a large gnosis staker.\n\nIf someone squatted my smol country with\
+  \ a VPN I feel that someone is less relevant to the spirit of the program than an\
+  \ actual local actor.\n\nBonk them up and give the rewards where they belong.\n\n\
+  [dao](https://forum.gnosis.io/u/dao) July 17, 2024, 3:56pm  16\n\nThe only reason\
+  \ you are not included in this program (yet) is just because you haven’t claimed\
+  \ your seat, but it’s still not too late.  \nYou can get your reward by submitting\
+  \ [this form](https://tally.so/r/3xpVVd)  \nThere are still 8 out of 10 empty seats\
+  \ for your country, and if you are validating on different nodes with different\
+  \ IP addresses, you should get full rewards for each of your nodes according to\
+  \ the original rules if this proposal can get passed.  \nI didn’t know that possibility\
+  \ for people to run validators behind VPNs before, but since there isn’t any indication\
+  \ of that cheating, we should not presume guilty for those who did not intend to\
+  \ hide their validators with different wallet addresses.\n\n[ACI](https://forum.gnosis.io/u/ACI)\
+  \ July 17, 2024, 4:12pm  17\n\nNice!\n\nOur country is very smol and quite traditional,\
+  \ the biggest local bank present Google pay support as a “huge innovation”, would\
+  \ be quite surprised there’s anybody else validating blocks in here ![:smiley:](https://forum.gnosis.io/images/emoji/twitter/smiley.png?v=12)\n\
+  \nIf that person is around, I’ll pay them a beer!\n\n  * [Home ](/)\n  * [Categories\
+  \ ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n\
+  \  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
+  \ best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: '@dao
+
+  status: Draft
+
+  typ&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

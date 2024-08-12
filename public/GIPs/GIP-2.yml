@@ -1,0 +1,437 @@
+id: gip-2-safe-token-model
+gip_number: '2'
+title: safe token model
+body: "[ Gnosis ](/)\n\n#  [GIP-2: SAFE Token Model](/t/gip-2-safe-token-model/691)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[pending](https://forum.gnosis.io/tag/pending), [phase-2](https://forum.gnosis.io/tag/phase-2)\n\
+  \n[lukas_gnosis](https://forum.gnosis.io/u/lukas_gnosis) November 4, 2020, 9:24am\
+  \  1\n\n# Should Gnosis aim to establish a governance token for Gnosis Safe?\n \
+  \   \n    \n    GIP: 2\n    title: Implement SAFE Token Model\n    author: Anna\
+  \ George, Lukas Schor\n    status: Pending\n    type: Meta\n    created: 2020-11-16\n\
+  \    \n\n  * Yes: Implement SAFE Token\n  * No: Make no change\n\n\n\n0 voters\n\
+  \n[![image](https://forum.gnosis.io/uploads/default/optimized/1X/327dbd6c392c65c069f16def0f6ac50799db47bc_2_690x382.jpeg)image1578×874\
+  \ 247 KB](https://forum.gnosis.io/uploads/default/original/1X/327dbd6c392c65c069f16def0f6ac50799db47bc.jpeg\
+  \ \"image\")\n\n> ## Abstract\n> \n> Gnosis Safe is a new account standard and open\
+  \ gateway to the Internet of Value. In order to establish the Safe as a community-owned\
+  \ public good, we plan to distribute the SAFE governance token. The SAFE Token will\
+  \ be used for voting, curation and rewards for ecosystem contributions.\n> \n> Even\
+  \ though governance over parts of the Safe ecosystem and product offering will be\
+  \ community-driven, Gnosis Safe will always remain a fully self-custodial asset\
+  \ management solution, in which the user is in full control.\n> \n> This proposal\
+  \ is about whether the Gnosis team should go ahead working out a Safe Token Model.\n\
+  \n## Motivation\n\nThough we are building Gnosis Safe as an open system that can\
+  \ be re-used and extended by anyone, we recognize that Gnosis still holds a dominant\
+  \ position in the Safe ecosystem. The main reason for this is that Gnosis currently\
+  \ holds the “trust monopoly” for the curation and promotion of all core components\
+  \ of Gnosis Safe. Here are a few examples:\n\n  * **Interfaces:** Gnosis hosts the\
+  \ interfaces most commonly used to interact with Gnosis Safes.\n  * **Smart contracts:**\
+  \ Gnosis is the main contributor and publisher of smart contract updates.\n  * **Safe\
+  \ Apps:** Gnosis curates the list of Safe Apps displayed to the users through our\
+  \ interfaces.\n\n\n\n## SAFE Token\n\nIn order to enshrine Gnosis Safe as an end-to-end\
+  \ community project, we are proposing to launch the SAFE governance token. We consider\
+  \ the SAFE Token as an essential tool to decentralize the trust monopoly held by\
+  \ Gnosis. We believe this will firmly establish Gnosis Safe as a public good and\
+  \ community-owned infrastructure. SAFE Tokens are not an investment product. Instead,\
+  \ SAFE Token will be distributed to stakeholders of the Gnosis Safe ecosystem that\
+  \ are interested in shaping the future of Gnosis Safe.\n\n[![Screenshot 2020-11-20\
+  \ at 10.25.36](https://forum.gnosis.io/uploads/default/optimized/1X/f0342808e1849f58ef03c13aca61fd8b008638eb_2_690x385.png)Screenshot\
+  \ 2020-11-20 at 10.25.361118×624 409 KB](https://forum.gnosis.io/uploads/default/original/1X/f0342808e1849f58ef03c13aca61fd8b008638eb.png\
+  \ \"Screenshot 2020-11-20 at 10.25.36\")\n\n## SAFE Governance\n\nWe envision the\
+  \ SAFE Token will be used to govern and curate essential infrastructure components\
+  \ of the Gnosis Safe ecosystem, including:\n\n* * *\n\n#### Assets\n\n  * **SAFE\
+  \ Treasury:** SAFE holders will be able to reward important ecosystem developments\
+  \ via the SAFE Treasury.\n  * **ENS domain “safe.eth”:** The ENS domain “safe.eth”\
+  \ will be used in the future to point to a Safe Multisig interface deployed on IPFS,\
+  \ but it might be used for other purposes as well.\n\n\n\n#### Curation\n\n  * **Safe\
+  \ Apps:** SAFE Token holders will curate the list of trusted Safe Apps that appear\
+  \ by default in the Gnosis Safe web interface and update existing ones to newer\
+  \ versions.\n  * **Safe Contracts:** After successful audits and bug bounty periods,\
+  \ the community should be vetting updates to the Safe Contracts and define which\
+  \ is the recommended contract version at any point in time.\n  * **Safe Modules:**\
+  \ Gnosis Safe smart contracts can be extended with modules to enable custom access/control\
+  \ schemes. SAFE holders will be able to curate and validate community-built Safe\
+  \ Modules.\n\n\n\n#### Signaling\n\n  * **Safe Apps:** Show interest in a specific\
+  \ Safe App idea to educate developers about user preference and demand.\n\n  * **Infrastructure:**\
+  \ Help prioritize tasks in Safe-related Github repositories ([see example](https://tokenlog.xyz/gnosis/safe-react)).\n\
+  \n\n\n\n* * *\n\nThere is no immediate need to have all activities described above\
+  \ to be community-governed from day one. Rather, Gnosis will take a cautious and\
+  \ progressive approach, decentralizing governance over different components successively\
+  \ over time to prevent any disruptions to users. The governance process would likely\
+  \ be conducted using a SAFE Treasury app that allows SAFE holders to vote on proposals.\
+  \ **The transition to open governance is a long term goal, and we aim to establish\
+  \ a sustainable governance system that lasts for decades.**\n\nGnosis Safe will\
+  \ always remain a fully self-custodial asset management solution, in which the user\
+  \ is in full control. The governance enabled through the SAFE Token is limited to\
+  \ curation activities and building initiatives that drive the Gnosis Safe ecosystem\
+  \ forward.\n\n## SAFE Token Distribution\n\n> Though the proposal is about whether\
+  \ a Gnosis SAFE token should be investigated, in the following we outline specification\
+  \ ideas as to how such tokens could be distributed, assuming the proposal to issue\
+  \ Gnosis SAFE tokens finds your support and will end up being implemented.\n\nWhen\
+  \ designing the SAFE Token distribution model, we followed this principle:\n\n*\
+  \ * *\n\n**Distribute the SAFE Token fairly and sustainably across a wide range\
+  \ of relevant stakeholders to foster active governance of the Gnosis Safe ecosystem.**\n\
+  \n* * *\n\nAt genesis, 1 billion SAFE Tokens are proposed to be minted with the\
+  \ following distribution:\n\n  * **10% Early Adopters (Users)**\n    * Early adopters\
+  \ are retrospectively awarded for funds stored and transactions made in the past\
+  \ according to a predetermined formula. Additionally, there will be an initial “liquidity\
+  \ mining” launch program for users.\n  * **2.5% Early Ecosystem Contributors**\n\
+  \    * Early contributors are retrospectively awarded for ecosystem contributions\
+  \ according to a list of contributions consolidated by Gnosis.\n  * **25% GnosisDAO**\n\
+  \    * To be decided (see options in “Benefits for GnosisDAO Holders” section)\n\
+  \  * **50% SAFE Treasury**\n    * SAFE Treasury is a vehicle for rewarding future\
+  \ ecosystem contributions initially controlled by Gnosis, but over time, it will\
+  \ be governed by SAFE Holders. The SAFE Treasury would have a 10 years vesting period.\
+  \ It might also be an option to introduce a yearly inflation rate of 1-3%, which\
+  \ would be granted to the SAFE Treasury to sustain its ability to reward contributions\
+  \ beyond the vesting period.\n  * **12.5% Gnosis Share**\n    * Gnosis Share is\
+  \ incentivising Gnosis and its staff as core maintainers to have aligned incentives\
+  \ and long term commitment to the SAFE Token and the Safe ecosystem. Gnosis Share\
+  \ would have a 5 years vesting period.\n\n\n\n[![image](https://forum.gnosis.io/uploads/default/optimized/1X/21a6da3cd57feede46970646e10c5305ffd8284d_2_690x379.jpeg)image1550×852\
+  \ 181 KB](https://forum.gnosis.io/uploads/default/original/1X/21a6da3cd57feede46970646e10c5305ffd8284d.jpeg\
+  \ \"image\")\n\n## Relationship between SAFE Tokens and GNO Tokens\n\nTo recognise\
+  \ the importance of GNO Tokens in the development of Gnosis Safe, we propose that\
+  \ 25% of the total SAFE Token supply shall accrue to GNO Tokens. This can be achieved\
+  \ through various ways, including a combination of:\n\n  1. **Direct vesting to\
+  \ GnosisDAO:** SAFE Tokens are vested into the GnosisDAO Treasury over a period\
+  \ of time via a vesting smart contract.\n  2. **Uniswap Pool Liquidity Shares:**\
+  \ SAFE Tokens are locked in a Uniswap liquidity pool and are matched by GnosisDAO\
+  \ with GNO Tokens. The resulting liquidity shares are then split between GnosisDAO\
+  \ and the SAFE Treasury to assure mutual incentive alignment.\n  3. **Bonding curve:**\
+  \ A bonding curve is set up, issuing SAFE Tokens for GNO Tokens at an increasing\
+  \ exchange rate. If demand for SAFE Tokens increases, this results in an increased\
+  \ demand for GNO Tokens.\n  4. **Initial price finding and aligning interest:**\
+  \ To find a fair initial price, we propose to conduct an initial price finding for\
+  \ GnosisDAO’s SAFE Token share on [Mesa](https://mesa.eth.link/). The GNO Tokens\
+  \ received through this are given to the SAFE Treasury to ensure their aligned interest\
+  \ with GnosisDAO.\n\n\n\n## Which options do you approve?\n\n  * Direct Vesting\n\
+  \  * Uniswap LP Shares\n  * Bonding Curve\n  * Initial Price Finding\n\n\n\n0 voters\n\
+  \n> ## Disclaimer\n> \n> The plans outlined in this proposal are subject to discussion\
+  \ and change. They may also need to be (re)structured to take account of legal,\
+  \ regulatory, or technical developments as well as governance considerations. This\
+  \ document should not be taken as the basis for making investment decisions, nor\
+  \ be construed as a recommendation to engage in any transactions. You are solely\
+  \ responsible for your own investment decisions and transactions.\n\n3 Likes\n\n\
+  [GIP 16 - Gnosis Chain - xDAI/Gnosis merge](http://forum.gnosis.io/t/gip-16-gnosis-chain-xdai-gnosis-merge/1904/8)\n\
+  \n[Discrepancy between SAFE token polls - what does it reveal?](http://forum.gnosis.io/t/discrepancy-between-safe-token-polls-what-does-it-reveal/844)\n\
+  \n[Tokens for Gnosis Auction and Cowswap](http://forum.gnosis.io/t/tokens-for-gnosis-auction-and-cowswap/1314/2)\n\
+  \n[GNO Utility and Value Proposition](http://forum.gnosis.io/t/gno-utility-and-value-proposition/2344)\n\
+  \n[How do we fix the GNO distribution problem?](http://forum.gnosis.io/t/how-do-we-fix-the-gno-distribution-problem/821/16)\n\
+  \n[GnosisDAO Manifest](http://forum.gnosis.io/t/gnosisdao-manifest/866)\n\n[GIP-1:\
+  \ One-time 5% GNO merkledrop to active GnosisDAO participants](https://forum.gnosis.io/t/gip-1-one-time-5-gno-merkledrop-to-active-gnosisdao-participants/690/8)\n\
+  \n[lukas_gnosis](https://forum.gnosis.io/u/lukas_gnosis) Listed  November 4, 2020,\
+  \ 1:37pm  3\n\nJust adding another simple view on what has been posted regarding\
+  \ the proposed circulating supply. Again, this is based on the example lukas_gnosis\
+  \ has provided, and will be subject to change given the forum’s discussion and agreement.\
+  \ Very much welcome the forum’s additional thoughts on a fair community distribution.\n\
+  \nIf we do want to proceed with a Safe token, balancing the allocation to GnosisDAO\
+  \ will be a key component. I think once GnosisDAO comes to a consensus on its [manifest](https://forum.gnosis.io/t/gnosisdao-manifest/866)\
+  \ \\- we can then accurately align the DAO’s vision with SAFE’s distribution. Personally,\
+  \ I also feel that long-term it is more valuable to GNO holders if GnosisDAO is\
+  \ a major stakeholder of ecosystems rather than an owner of products i.e. the Safe.\n\
+  \n**Initial token distribution:**\n\n  * 125M for various community programs (early\
+  \ adopters / contributions / wider launch)\n  * 100m SafeDAO allocation\n  * 50m\
+  \ allocation to GnosisDAO (this yearly allocation will continue for 5 years)\n\n\
+  \n\n[![Screen Shot 2020-11-30 at 14.23.39](//forum.gnosis.io/uploads/default/optimized/1X/5c924717cec7e8bd96c240cec5878ab20d3b5337_2_517x317.png)\
+  \ Screen Shot 2020-11-30 at 14.23.391182×726 34.9 KB ](//forum.gnosis.io/uploads/default/original/1X/5c924717cec7e8bd96c240cec5878ab20d3b5337.png\
+  \ \"Screen Shot 2020-11-30 at 14.23.39\")\n\n**Example Token Distribution After\
+  \ 5 Years:**\n\n  * 250m in total allocated to GnosisDAO\n  * 125M for Gnosis team\
+  \ to incentivise core Safe maintainers and long term commitment\n  * 500M allocated\
+  \ to SafeDAO for management and distribution\n  * 125M Adopters / Contributors /\
+  \ Launch programs\n\n\n\n[![Screen Shot 2020-11-30 at 14.28.52](//forum.gnosis.io/uploads/default/optimized/1X/8384ca532fdd743cf0f57cfac8808e69e3492f28_2_517x320.png)\
+  \ Screen Shot 2020-11-30 at 14.28.521186×734 29.1 KB ](//forum.gnosis.io/uploads/default/original/1X/8384ca532fdd743cf0f57cfac8808e69e3492f28.png\
+  \ \"Screen Shot 2020-11-30 at 14.28.52\")\n\n[cmagan](https://forum.gnosis.io/u/cmagan)\
+  \ November 13, 2020, 7:45am  4\n\nWill the SAFE token holders have governance rights\
+  \ over the SAFE token and the bonding curve?  \nJust as a reference to a recent\
+  \ case in the Aragon community where the ANT governance made a contentious decision\
+  \ to pause the ANJ token bonding curve.\n\nWith the benefit of having a community\
+  \ specifically engaged with the Gnosis Safe, there comes also the question of the\
+  \ sovereignty of this community.  \nWill the SAFE community be under GNODAO control\
+  \ in terms of the power to change or cancel the SAFE token or any other established\
+  \ token economics?\n\n2 Likes\n\n[Anna](https://forum.gnosis.io/u/Anna) November\
+  \ 13, 2020, 12:44pm  5\n\nYes, the SAFE token holders will have governance over\
+  \ the SAFE Treasury as well as the bonding curve.  \nThe Gnosis DAO only has as\
+  \ much influence on SAFE governance as they are holding shares of SAFE tokens.\n\
+  \nHow the proposal is currently written, no SAFE tokens are directly given to the\
+  \ GnosisDAO. However, some of the Gnosis Share could be handed to the Gnosis DAO.\
+  \ With this proposal the main upside for GNO token holders is the bonding curve.\
+  \ There are, however, alternatives to the bonding curve:\n\n  1. Simple vesting\
+  \ to the GnosisDAO: SAFE Tokens are vested into the GnosisDAO Treasury over a period\
+  \ of time.\n\n  2. Uniswap Pool Liquidity Shares: SAFE Tokens are locked in a Uniswap\
+  \ liquidity pool and are matched by the GnosisDAO with GNO Tokens. The resulting\
+  \ Liquidity shares are then split between the GnosisDAO and the SAFE Treasury to\
+  \ assure mutual incentives. (This could be combined with vesting of SAFE tokens\
+  \ to the Gnosis DAO)\n\n  3. Bonding curve: A bonding curve is set up, issuing SAFE\
+  \ Tokens for locking GNO Tokens at an increasing exchange rate. If demand for SAFE\
+  \ increases, this results in an increased demand for GNO Tokens.\n\n\n\n\n2 Likes\n\
+  \n[0xb97d9350f32c136601](https://forum.gnosis.io/u/0xb97d9350f32c136601) November\
+  \ 23, 2020, 4:49pm  6\n\nBeautiful. Will there be profit sharing?  \nI recommend\
+  \ going for a simple distribution model, that requires little effort from the user\
+  \ side and distributes widely.  \nSo more like uniswap, less than dxdao ![:wink:](https://forum.gnosis.io/images/emoji/twitter/wink.png?v=9)\n\
+  \n4 Likes\n\n[Luuk](https://forum.gnosis.io/u/Luuk) November 23, 2020, 8:07pm  7\n\
+  \nBig fan of Gnosis Safe and an active user myself - just came here to signal my\
+  \ support for this initiative. Removing any gatekeeper will make Gnosis Safe more\
+  \ resilient and hopefully lead to more innovation.\n\nLooking forward to contributing\
+  \ to the development of Safe ![:slight_smile:](https://forum.gnosis.io/images/emoji/twitter/slight_smile.png?v=9)\n\
+  \n6 Likes\n\n[lukas_gnosis](https://forum.gnosis.io/u/lukas_gnosis) November 24,\
+  \ 2020, 11:01am  8\n\nThere is not currently a fee mechanism built into the Gnosis\
+  \ Safe and there are also no concrete plans for this. Of course, this might be an\
+  \ option at some point in the future, and then SAFE Token Holders may or may not\
+  \ be beneficiaries of this. After all, SAFE Token holders will, under this proposal,\
+  \ have effective control over the safe.eth ENS name and could have it point to a\
+  \ version of the Gnosis Safe interface that has a fee mechanism (e.g. related to\
+  \ additional features).\n\nDefinitely agree with keeping the distribution simple\
+  \ and easy to understand. This also contributes to transparency and the distribution\
+  \ being considered “fair”.\n\n[GraemeB](https://forum.gnosis.io/u/GraemeB) November\
+  \ 24, 2020, 4:59pm  9\n\nI’m against this proposal.\n\nNot because I don’t agree\
+  \ with it, I do, but because I don’t think the outlined strategy will achieve the\
+  \ desired goal.\n\nI understand that the purpose of the SAFE token is to remove\
+  \ Gnosis as the central “gatekeeper” of Safe and I don’t think this proposal solves\
+  \ that problem.\n\nThe issue I see is that for the Safe to be usable, it requires\
+  \ servers which run services, like this one [GitHub - safe-global/safe-transaction-service:\
+  \ Keeps track of transactions sent via Gnosis Safe contacts and confirmed transactions.\
+  \ It also keeps track of Ether and ERC20 token transfers to Safe contracts.](https://github.com/gnosis/safe-transaction-service),\
+  \ which lets you know the balances of all your assets amongst other things.\n\n\
+  Someone has to ensure that the servers keep running so that service is available\
+  \ so people may use the Gnosis Safe product. Right now that someone is Gnosis. If\
+  \ the community is using their tokens to decide things like curation and signalling,\
+  \ it’s not enough to remove Gnosis as the gatekeeper.\n\nIf something happens to\
+  \ Gnosis as a company that pays bills to host servers which run Safe services, then\
+  \ the whole product goes down and having Safe tokens means nothing because there\
+  \ will be nothing to curate and nobody to signal to.\n\nI believe for this proposal\
+  \ to achieve its goal, the intention should be to remove the reliance on a single\
+  \ entity to run servers so that the product and the user experience can survive\
+  \ independent of Gnosis. As long as there is that reliance, the Safe product and\
+  \ the value of the token will rely directly on Gnosis.\n\n1 Like\n\n[lukas_gnosis](https://forum.gnosis.io/u/lukas_gnosis)\
+  \ November 24, 2020, 5:22pm  10\n\nI agree. This aspect is not covered in the proposal.\
+  \ But even related to this centralization aspect, could a SAFE Token not be a potential\
+  \ solution? As you could imagine there being a network of transaction-services that\
+  \ is curated by SAFE Tokens and/or the SAFE Token being a means to access the “service”\
+  \ provided by these indexers?\n\n2 Likes\n\n[Jrag](https://forum.gnosis.io/u/Jrag)\
+  \ November 24, 2020, 6:57pm  11\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/lukas_gnosis/48/278_2.png)\
+  \ lukas_gnosis:\n\n> #### Curation\n> \n>   * **Safe Apps:** SAFE Token holders\
+  \ will curate the list of trusted Safe Apps that appear by default in the Gnosis\
+  \ Safe web interface and update existing ones to newer versions.\n>   * **Safe Contracts:**\
+  \ After successful audits and bug bounty periods, the community should be vetting\
+  \ updates to the Safe Contracts and define which is the recommended contract version\
+  \ at any point in time.\n>   * **Safe Modules:** Gnosis Safe smart contracts can\
+  \ be extended with modules to enable custom access/control schemes. SAFE holders\
+  \ will be able to curate and validate community-built Safe Modules.\n> \n\n\nAbout\
+  \ the Curation of Apps/Contracts/Modules, if the community uses the SAFE governance\
+  \ token to have a new token vote on every entry, it will require a massive duplication\
+  \ of effort and might be plagued by low response rates creating security issues\
+  \ and vectors of entry for unsafe apps.\n\nYou might consider using a dedicated\
+  \ Curation tool such as [Kleros Curate](https://kleros.io/curate/) in order not\
+  \ to have to reinvent the wheel and take the risk that the culture around the SAFE\
+  \ token do not develop appropriately so that people reliably vote so that the curation\
+  \ system can have good resistance to attacks.\n\nThe SAFE token can still have its\
+  \ use in such a schema by being either locked as a deposit to get a new entry into\
+  \ the list of authorized apps or also could be used as a lever to modify the display\
+  \ order of the apps in the Gnosis Safe (Projects display order would be ranked by\
+  \ the number of SAFE tokens locked/burned).\n\n5 Likes\n\n[fleupold](https://forum.gnosis.io/u/fleupold)\
+  \ November 25, 2020, 8:11am  12\n\nWhat is the advantage of creating a new token\
+  \ over giving control to the Gnosis DAO (and maybe still rewarding developers/early\
+  \ adopters with GNO)? After all the Safe has been built using the resources provided\
+  \ by the GNO holders (and its value is likely priced in to the current GNO price).\n\
+  \nTo me, creating a new token and only assigning 25% to the Gnosis DAO is a big\
+  \ give-away from GNO holders’ perspective that deserves further justification.\n\
+  \n7 Likes\n\n[GraemeB](https://forum.gnosis.io/u/GraemeB) November 25, 2020, 10:43am\
+  \  13\n\nA SAFE token is definitely a solution, but I’d like to see this aspect\
+  \ directly addressed in the proposal to feel comfortable voting for it. In your\
+  \ example we have a network of competing services, its one thing to use the SAFE\
+  \ token to curate or decide which service is used by the Safe product, but that\
+  \ service provider still needs to be paid. If that service provider is paid with\
+  \ SAFE tokens, who pays those tokens? If no one pays. no services, no product.\n\
+  \nIt would be an interesting exercise to work out what the costs are to “run” the\
+  \ safe, how much does a single Safe wallet cost in services? What are the flat vs\
+  \ variable costs? Perhaps this could lead to a model that requires users to or hold\
+  \ X amount of SAFE tokens in a Safe to earn interest via lending protocol to pay\
+  \ service providers.\n\nKinda reminds me of the initial GNO/OWL token economics\
+  \ for the Gnosis Safe whereby fees where paid in OWL in order to incentive the holding\
+  \ of GNO to mint OWL, to pay for fees for the SAFE.\n\n[sborg](https://forum.gnosis.io/u/sborg)\
+  \ November 25, 2020, 11:22am  14\n\nI agree with this comment. The creation of a\
+  \ Safe token is not removing Gnosis as the gatekeeper and decentralizing governance\
+  \ as this has already been achieved with the creation of the GnosisDAO. Instead\
+  \ it is transferring influence from GNO token holders to Safe token holders and\
+  \ only receiving 25% for doing so.\n\n4 Likes\n\n[0x7](https://forum.gnosis.io/u/0x7)\
+  \ November 26, 2020, 10:57am  15\n\nI’m not convinced the SAFE Token could more\
+  \ reliably align incentives with Safe development than GNO would. I hear you saying\
+  \ the stakeholders should be wider than GNO holders, because the Safe has become\
+  \ a critical piece of infrastructure for the community. I don’t, however, hear an\
+  \ explicit discussion of the misalignment.\n\nWhat do you see as the specific conflicts\
+  \ of interest for using GNO as the governance mechanism, and why do you think mechanisms\
+  \ can’t be introduced to circumvent those?\n\n3 Likes\n\n[lukas_gnosis](https://forum.gnosis.io/u/lukas_gnosis)\
+  \ November 26, 2020, 8:03pm  16\n\nI think the discussion boils down to what the\
+  \ Gnosis Safe is perceived to be in the long run.\n\n  1. Is it a product, developed\
+  \ and maintained by Gnosis and funded through resources provided by GNO holders?\n\
+  \n  2. Is it a platform kickstarted by Gnosis and with Gnosis / GnosisDAO being\
+  \ a critical provider of infrastructure, but where the value of the platform is\
+  \ driven strongly by other stakeholders.\n\n\n\n\nIf we aim for the former, then\
+  \ I agree, the value created should be exclusively captured by the GNO token and\
+  \ the GNO token also would be a good fit for governing centralized aspects of the\
+  \ system.\n\nHowever, we have written this proposal with the second assumption in\
+  \ mind. We want to have the Gnosis Safe become the new “account standard” on Ethereum,\
+  \ effectively replacing EOAs as the primary accounts. EOAs will therefore take the\
+  \ role of simple signer keys but not as accounts. The Gnosis Safe is not to be seen\
+  \ as just the Safe Multisig web interface, but as a collection of components some\
+  \ being built by Gnosis and some by third-parties, including interfaces, Dapps,\
+  \ modules, backend infrastructure, SDKs etc.\n\nIf we want to have a chance to achieve\
+  \ this ambitious vision, Gnosis Safe cannot be seen as a purely “Gnosis product”\
+  \ and also the token economics, value capture & distribution, as well as governance\
+  \ over the system, should not be tied 1:1 to the GNO token. Here are a few reasons.\n\
+  \n###  Value creators are not necessarily stakeholders\n\nEven looking at the Gnosis\
+  \ Safe situation today, who actually brought value to the Safe ecosystem? Yes, one\
+  \ part was the GNO holders funding the project and Gnosis executing on the project\
+  \ (thus both being represented with a major stake in the SAFE Token Model). But\
+  \ Gnosis Safe, as a project, would hold no value without its user, especially early\
+  \ users bringing trust to the solution and making it an easier decision for later\
+  \ adopters to start using Gnosis Safe. Also, value was brought to the Gnosis Safe\
+  \ through external contributors creating Safe Apps, third-party interfaces, transaction\
+  \ relayers, and other extensions. Especially those external contributors will become\
+  \ even more critical value drivers in the future. As in order to achieve the vision\
+  \ of the Gnosis Safe of becoming the new account standard, we rely on a vibrant\
+  \ ecosystem being built around it. Saying GNO holders should capture 100% of the\
+  \ Gnosis Safe value will not allow to build up this ecosystem. If we build an ecosystem\
+  \ yet capture all value using GNO, wouldn’t the value drivers (i.e. ecosystem participants\
+  \ that are not GNO holders) just want to fork away, establishing their own SAFE\
+  \ Token using a fairer distribution and set up their own core maintainer team for\
+  \ the Safe infrastructure?\n\n###  GNO Distribution issues\n\nGNO currently is facing\
+  \ some significant distribution issues ([outlined here](https://forum.gnosis.io/t/how-do-we-fix-the-gno-distribution-problem/821/9)).\
+  \ Any Gnosis Safe components being governed by the GNO Token would inevitably suffer\
+  \ from those. While they might be fixed at some point, this could very well take\
+  \ 1-2 years to achieve.\n\n###  GNO can’t effectively be used in multiple token\
+  \ economics / (protocol) governance schemes simultaneously\n\nImagine if at some\
+  \ point Gnosis would have multiple protocols with each one needing to have some\
+  \ decentralized governance in place. How can be guaranteed that the protocol is\
+  \ governed by “relevant stakeholders” given that it might differ for each protocol\
+  \ who the relevant stakeholders are? Does it make sense to have the token economics\
+  \ of one protocol be impacted by things not related to the protocol itself? Should\
+  \ relevant stakeholders of those additional protocols become GNO holders by diluting\
+  \ existing GNO holders?\n\n###  Misaligned incentives\n\nThe SAFE Token is essentially\
+  \ a separation of concerns, GNO Tokens are used to govern initiatives that increase\
+  \ the value of the GNO Token and the SAFE Token is used to bring value to the Safe\
+  \ ecosystem. In case GNO is used as a governance token in the Safe ecosystem, there\
+  \ might be cases where what’s best for the GNO Token is not best for the Safe ecosystem.\
+  \ This proposal makes sure incentives are aligned in those cases, because the value\
+  \ captured by the GNO Token is directly related to bringing value to the Safe ecosystem.\n\
+  \n###  Final thoughts: My personal vision for the GnosisDAO / GNO token\n\nI see\
+  \ GnosisDAO as a vehicle to fund/kickstart initiatives that ultimately capture more\
+  \ value for the GNO token. Whereas the most obvious two categories of initiatives\
+  \ are:\n\n  * **Treasury management:** Effective deployment of assets in a way that\
+  \ they increase the value of the treasury\n  * **Kickstarting new protocols with\
+  \ their own native token:** GnosisDAO is building infrastructure with their own\
+  \ ecosystems and establishes native tokens that capture the value of those ecosystems\
+  \ (not just the own interfaces/products built on top of the protocol). As a result,\
+  \ GnosisDAO receives a significant stake to be further incentivized to help grow\
+  \ the ecosystem. This should also be in the interest of the new “spun-out” ecosystem\
+  \ as they can rely on Gnosis continuing to be core maintainer and ecosystem developer.\
+  \ Therefore, Gnosis does not build products, it builds open-source infrastructure\
+  \ and establishes token economics / decentralized governance around those.\n\n\n\
+  \nI think long-term it brings more value to GNO holders if GnosisDAO is a major\
+  \ stakeholder of ecosystems rather than an owner of products. At least wherever\
+  \ there is a chance to capture the ecosystem value vs. the product value. 25% value\
+  \ capture of a platform play can be a vastly better return than 100% value capture\
+  \ of a product play. However, both are valid options, of course, so I would not\
+  \ dismiss the latter.\n\nThis is definitely an important discussion to have because\
+  \ it also very much affects our product strategy. We have aimed to become a platform\
+  \ and have started to direct our focus towards this. If the GnosisDAO would prefer\
+  \ to see Gnosis Safe as a product, we have to adapt some assumptions and re-adjust\
+  \ our product focus.\n\n9 Likes\n\n[sky](https://forum.gnosis.io/u/sky) November\
+  \ 27, 2020, 7:13pm  17\n\n[@lukas_gnosis](/u/lukas_gnosis) you provide a really\
+  \ great detailed perspective. It is interesting to think about a future where each\
+  \ product has its own token versus a community token that can govern many products.\n\
+  \nYou can see a parallel situation like that happening in the NFT/Art space. Is\
+  \ it better for every artist to have their own token, or for artists to join a collective/community\
+  \ token system and be a part of that?  \nAlready, many people are having trouble\
+  \ handling so many tokens.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/lukas_gnosis/48/278_2.png)\
+  \ lukas_gnosis:\n\n> If we want to have a chance to achieve this ambitious vision,\
+  \ Gnosis Safe cannot be seen as a purely “Gnosis product” and also the token economics,\
+  \ value capture & distribution, as well as governance over the system, should not\
+  \ be tied 1:1 to the GNO token. Here are a few reasons.\n\nIn order to detach the\
+  \ association, one step here might be to change the name of Gnosis Safe to something\
+  \ like “ETH Safe”???\n\n1 Like\n\n[VirtuousCycle](https://forum.gnosis.io/u/VirtuousCycle)\
+  \ November 28, 2020, 5:38am  18\n\nI’ll throw in my 2c:\n\nFrom a theoretical perspective,\
+  \ I get it: It’s probably slightly better to separate the SAFE token from the GNO\
+  \ token.\n\nBut we’re here gathered around this wonderful GnosisDAO table, representing\
+  \ the GnosisDAO. We are only interested in the Gnosis Safe as it pertains to the\
+  \ GnosisDAO!\n\nFrom a GnosisDAO perspective, I think giving away the SAFE is deadly,\
+  \ and I would much rather distribute GNO tokens to the relevant Safe ecosystem users\
+  \ to distribute GNO wider, and retain control of the Gnosis Safe product (the only\
+  \ product we have).\n\nOne way helps solve the issues around distributing GNO, and\
+  \ retains value in the GNO ecosystem (users actually now have an incentive to own\
+  \ GNO (to govern the Safe).\n\nThe other way only increases the problems around\
+  \ _GNO Distribution Issues_ , making them much harder to solve…\n\nIt’s very hard\
+  \ to answer “What is the purpose of GNO?” without products, but community owned\
+  \ Software is a thing!\n\n  * “Well, GNO governs the Gnosis Safe” is at least the\
+  \ roots of a purpose.\n\n\n\nOtherwise, is GNO a hedge fund? Like what is GNO supposed\
+  \ to govern then?\n\nSurprised by the approval in this proposal, to me it stifles\
+  \ the very best chance to distribute GNO wider and make it valuable.\n\nFor the\
+  \ GnosisDAO to want to get 25% of the SAFE, it effectively means that at the very\
+  \ least we believe that separating the SAFE token would create >4x the value, for\
+  \ us, as compared to just keeping it in GNO (making our 25% share worth more than\
+  \ 100%).\n\n  * Do we really believe this?\n\n\n\nEDIT: Since Gnosis DAO also controls\
+  \ 50% of the treasury, it would be more like >2x SAFE appreciation vs keeping it\
+  \ in GNO to make sense. That seems more reasonable to achieve, although still doesn’t\
+  \ help and rather takes away utility from the GNO token.\n\nOtherwise, we could\
+  \ also think that Gnosis Safe is a toxic asset for the DAO to hold. That it costs\
+  \ us more to control it, that would lower the calculation (meaning we would need\
+  \ the price to be worth less than 4x).\n\nSeems to me like it’s a great asset for\
+  \ the GnosisDAO to govern. Why give it away? Is it ready to be given away?\n\nWhile\
+  \ it may or may not be maximizing the value for the Gnosis Safe, I just don’t think\
+  \ it’s maximizing the value for the GnosisDAO.\n\n1 Like\n\n[VirtuousCycle](https://forum.gnosis.io/u/VirtuousCycle)\
+  \ November 28, 2020, 9:32am  19\n\nWell, this is kind of a complex topic. I’m just\
+  \ informed enough to be dangerous.\n\nThe SAFE token way is probably more in-line\
+  \ with Gnosis vision.\n\nSeems like a good proposal.\n\nGNO makes more sense in\
+  \ this way, to take smaller peices of platforms.\n\n[TomFrench](https://forum.gnosis.io/u/TomFrench)\
+  \ November 28, 2020, 12:37pm  20\n\nI’m not sure that the existence of the safe-transaction-service\
+  \ necessitates that Gnosis remains as a gatekeeper for the Safe into the future.\
+  \ Certainly it’s reliant for the near-mid future but much of that functionality\
+  \ looks like it could be moved out to a subgraph given a v2 Safe which exposes more\
+  \ information via events (possibly for the existing contracts given call handlers\
+  \ as well). Incentivisation for others to run provide this service would then be\
+  \ provided through the Graph’s economics.\n\nObviously this can’t satisfy the offchain\
+  \ components of the service such as storing confirmation signatures before a transaction\
+  \ is executed but this could be handled by a non Safe-specific service also.\n\n\
+  2 Likes\n\n[TomFrench](https://forum.gnosis.io/u/TomFrench) November 28, 2020, 1:45pm\
+  \  21\n\nAs a non-GNO-holding Safe user, I’m cautiously in favour of this.\n\nI\
+  \ see the planned GnosisDAO governance process as potentially being too unwieldy\
+  \ for many of the decisions which are to be taken related to the Safe. GnosisDAO\
+  \ is more direction setting as seen by how futarchy plays a key role whereas many\
+  \ of the decisions taken by SafeDAO are technical and have a much shorter time horizon.\
+  \ A separate governance mechanism makes sense to avoid endless prediction markets\
+  \ on whether the GNO price will improve if we update the Balancer Safe app from\
+  \ v1.2.0 to v1.2.1.\n\nClearly there needs to be a parallel governance mechanism\
+  \ for the Safe ecosystem and a separate token goes some way to codifying it while\
+  \ also allowing decision making to be weighted differently to account for the distinct\
+  \ set of stakeholders for the ecosystem.\n\nOne issue I’m concerned about is that\
+  \ while the proposal goes in detail on the expenses of the SAFE treasury (i.e. rewarding\
+  \ individuals for developing/auditing new Safe contracts/apps) it doesn’t address\
+  \ how it may replenish this treasury. I’d be more comfortable if there were proposals\
+  \ on how the SafeDAO could be self-sustaining.\n\nWhile I’m sure that it could make\
+  \ do with relying on periodic grants from GnosisDAO for the mid-term however I don’t\
+  \ expect this to be sustainable in the long-term. Should this distribution of GNO\
+  \ and SAFE holders diverge too strongly I’m sure that GnosisDAO members will feel\
+  \ reluctant to fund the SafeDAO (already seen in this thread) and SafeDAO may feel\
+  \ overly constrained by GnosisDAO’s power of the purse.\n\nShould this be desired\
+  \ to become more than a specialised governance route within GnosisDAO itself I think\
+  \ that forming an independent revenue stream would be a priority.\n\n5 Likes\n\n\
+  [GnosisDAO Manifest](http://forum.gnosis.io/t/gnosisdao-manifest/866/5)\n\n**[next\
+  \ page →](/t/gip-2-safe-token-model/691?page=2)**\n\n  * [Home ](/)\n  * [Categories\
+  \ ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n\
+  \  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
+  \ best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: Anna George
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

@@ -1,0 +1,122 @@
+id: gip-26-partner-with-1inch-to-increase-gno-1inch-liquidity
+gip_number: '26'
+title: partner with 1inch to increase gno 1inch liquidity
+body: "[ Gnosis ](/)\n\n#  [GIP-26: Partner with 1inch to increase GNO:1INCH liquidity](/t/gip-26-partner-with-1inch-to-increase-gno-1inch-liquidity/3419)\n\
+  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
+  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey)\
+  \ February 1, 2022, 3:55pm  1\n\n#  GIP-26: Partner with 1inch to increase GNO:1INCH\
+  \ liquidity\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n \
+  \   \n    GIP: 26\n    title: Partner with 1inch to increase GNO:1INCH liquidity\
+  \ \n    author: Karpatkey\n    status: phase 2\n    type: Meta\n    created: 2022-02-01\n\
+  \    \n\n##  Simple Summary\n\nThis is a continuation of [F117’s post](https://forum.gnosis.io/t/should-gnosisdao-partner-with-1inch-to-increase-gno-1inch-liquidity/3284).\
+  \  \nAs part of the growth of GnosisDAO’s strategic partnerships, increasing the\
+  \ liquidity of pairs with our GNO token and our partners’ is in our DAO’s best interest.\
+  \ This creates synergy between us and our partners, strengthening both our token\
+  \ and theirs in terms of potential price increase and reduced volatility.\n\n##\
+  \  Abstract\n\nWe would partner with 1inch and create a GNO:1inch liquidity pool\
+  \ that could be deposited on 1Inch protocol, running on Gnosis Chain. In this particular\
+  \ case, there’s the positive side effect that increasing overall liquidity in the\
+  \ Gnosis Chain also makes it more appealing for investors in the DeFi ecosystem\
+  \ as both tokens would support each other’s prices, creating long term economic\
+  \ alignment.\n\n##  Motivation\n\n1inch is one of the most popular DEX Aggregators\
+  \ in the DeFi ecosystem, and it lacks liquidity of the GNO:1INCH pair. We believe\
+  \ that creating this liquidity pool will be beneficial for both tokens, contributing\
+  \ to their long term price stability and providing users with sufficient liquid\
+  \ funds to exchange their tokens.\n\n##  Specification\n\nWe’d work jointly with\
+  \ the 1inch team to create the liquidity pool in several batches to minimize slippage,\
+  \ aiming for 0.1%, to prevent arbitration that would result in loss of funds for\
+  \ 1inch and GnosisDAO.\n\n##  Rationale\n\nThe iterative pool creation process is\
+  \ a best practice which results in slippage minimization and reduced arbitrage opportunities\
+  \ which lead to loss of funds from both parties, causing an evitable unwanted side\
+  \ effect.  \nThe 1inch team will lead the process, since the pool will most likely\
+  \ be created in their platform.\n\n[Karpatkey: 2022 Year in Review for Gnosis](http://forum.gnosis.io/t/karpatkey-2022-year-in-review-for-gnosis/6431)\n\
+  \n[PhiMarHal](https://forum.gnosis.io/u/PhiMarHal) February 2, 2022, 7:23pm  2\n\
+  \nWhat is the rationale behind a GNO:1INCH pair? Wouldn’t a GNO:ETH pair on one\
+  \ of the existing Gnosischain AMM be more liquid? For example, Swapr has already\
+  \ this pair. Gnosis could add their own protocol-owned liquidity to the Swapr pair.\n\
+  \n2 Likes\n\n[Cryptoanalyst](https://forum.gnosis.io/u/Cryptoanalyst) February 7,\
+  \ 2022, 9:17am  3\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
+  \ Karpatkey:\n\n> GNO:1INCH pair. We believe that creating this liquidity pool will\
+  \ be beneficial for both tokens, contributing to their long term price stability\
+  \ and providing users with sufficient liquid funds to exchange their tokens.\n\n\
+  who trades GNO:1inch? if liquidity is low (below few millions), no trasanctions\
+  \ will be routed via the pool. can expect this pool to not generate any added at\
+  \ this stage. although I’m a big fan of 1inch.\n\n[MakerMan](https://forum.gnosis.io/u/MakerMan)\
+  \ February 8, 2022, 2:30pm  4\n\nI am going to urge this community NOT to fall into\
+  \ the 1Hive HNY trap of trying to foster LP via GNO and every TOM, DICK and HARRY\
+  \ token.\n\nThe best way for communities to cross support each other are to do token\
+  \ swaps and then pair their tokens in something like a single TOKEN-STABLECOIN v2\
+  \ LP.\n\nWhy?\n\n  1. Because almost every community token doesn’t have sufficient\
+  \ value to back other communities\n  2. Liquidity fragmentation just creates a lot\
+  \ of high slippage pairs which won’t generate trading volume.\n  3. Increases vs.\
+  \ decreased crypto Token price correlation\n  4. Less fees in Token1-Token2 LP pairs\
+  \ than Token1-Stable and Token2-Stable\n  5. Because DAO owned Token-Stable LP is\
+  \ actually a better investment in a community than Token1-Token2 LP\n  6. Over time\
+  \ with sufficient trading and DAO owned liquidity these Token-Stablecoin contracts\
+  \ will hoover up the remaining Token liquidity via fees which DCA’s the tokens and\
+  \ stablecoins over time.\n\n\n\nAs seen from 1Hive and Honeyswap trying to focus\
+  \ on HNY-Token pairs vs. trying to build strong liquidity in the Token-wxDAI pairs.\
+  \ What 1Hive ended up with is pretty fragmented HNY liquidity that also has strong\
+  \ price correlations and lower fee generation. It has done nothing for the HNY price\
+  \ (at all) and in fact has been a strong drain on the key Honeyswap HNY-wxDAI liquidity\
+  \ over time causing pricing pressure not just on HNY but every token coupled with\
+  \ HNY.\n\nI can’t urge this statement strong enough:\n\n“DAOs need to resist the\
+  \ urge to pair their tokens with other communities as this does not increase trading,\
+  \ or liquidity but in the end fragments and decreases it leaving each community\
+  \ built value vulnerable to various forms of parasitic value drains via inflation\
+  \ of other community tokens”\n\nInstead if two communities want to support each\
+  \ other they should do a DAO token swap and then take Stablecoin cash to add to\
+  \ the communities primary v2 TOKEN-STABLECOIN LP helping bolster each communities\
+  \ value (via the size of the LP trading pool and cash it contains) and decorrelating\
+  \ token prices from each other as much as possible.\n\n2 Likes\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey)\
+  \ February 9, 2022, 12:11pm  5\n\nHi [@PhiMarHal](/u/phimarhal). The rationale behind\
+  \ is to allow 1INCH traders use 1INCH with the deepest liquidity asset on Gnosis\
+  \ Chain, GNO. We will build liquidity with all kind of tokens with GNO on Gnosis\
+  \ Chain. We’ve already added GNO:ETH on Swapr, Elk, Honeyswap, Sushiswap and will\
+  \ continue to do so.\n\n2 Likes\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey)\
+  \ February 9, 2022, 12:13pm  6\n\nHi [@Cryptoanalyst](/u/cryptoanalyst). Right now\
+  \ nobody trades GNO-1INCH but this will change with 1inch joining Gnosis Chain and\
+  \ routing all kinds of tokens against 1inch, like ETH, BTC and xDAI.\n\n1 Like\n\
+  \n[Cryptoanalyst](https://forum.gnosis.io/u/Cryptoanalyst) February 11, 2022, 12:49pm\
+  \  7\n\nI would love to see that happening!  \nAs I said, it would be useful if\
+  \ the liqudity would be deep enough and the proposal is lacking that infromation.\n\
+  \n[claberus](https://forum.gnosis.io/u/claberus) February 12, 2022, 11:04pm  8\n\
+  \nI agree with you if we consider cases like HNY on Gnosis Chain and GNO on mainnet.\
+  \  \nThe most effective way to create liquidity is with pairs that are the most\
+  \ liquid ones in the networks. HNY and GNO are not very liquid on these networks\
+  \ so all of your points are valid.\n\nThis is not the case for GNO on Gnosis Chain.\
+  \ We are working to make GNO the most liquid token on Gnosis Chain. If we can achieve\
+  \ this, it makes sense to pair most tokens on Gnosis Chain to GNO.\n\n[lavande](https://forum.gnosis.io/u/lavande)\
+  \ February 16, 2022, 9:38pm  9\n\nAre there any details as to the size of this program?\
+  \ Is there a point at which the treasury liquidity would be withdrawn?\n\n  * [Home\
+  \ ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  *\
+  \ [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
+  \ best viewed with JavaScript enabled\n"
+start: null
+end: null
+state: null
+author: 'Karpatkey
+
+  status: phase 2
+
+  type: Meta
+
+  created: 2022-02-01
+
+
+
+  Simple Summary
+
+  This i&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null

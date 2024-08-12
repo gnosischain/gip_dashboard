@@ -26,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate-yaml": "node ./src/generateYmal.js"
+    "generate-yaml": "node ./src/generateYmal.js",
+    "setup-env": "bash ./src/scripts/setup_environment.sh"
   },
   "eslintConfig": {
     "extends": [

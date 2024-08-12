@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/scripts/gip_scraper/*
 
 # testing
 /coverage
