@@ -22,17 +22,17 @@ body: "The GnosisDAO (the “DAO”) approved, with the successful passage of GI
   \ MLRO/DMLO services."
 start: 1721149815
 end: 1721754615
-state: active
+state: closed
 author: '0x5E34844E32A34a50C599f3A443B4054312896c12'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 96482.04155173256
+scores_state: final
+scores_total: 96652.48401856198
 scores:
-  - 96477.01223763972
+  - 96647.45470446914
   - 3.0250914956826676
   - 2.004222597151167
-votes: 100
+votes: 103
 quorum: 75000

@@ -62,10 +62,10 @@ proposals = response.json()['data']['proposals']
 
 # Function to extract and remove GIP number from title
 def extract_and_clean_gip_number(title):
-    match = re.search(r'GIP-?(\d+)', title, re.IGNORECASE)
+    match = re.search(r'GIP[- ]?(\d+)', title, re.IGNORECASE)
     if match:
         # Remove the GIP number and any trailing colon and space
-        clean_title = re.sub(r'\s*GIP-?\d+:\s*', '', title, flags=re.IGNORECASE)
+        clean_title = re.sub(r'\s*GIP[- ]?\d+:\s*', '', title, flags=re.IGNORECASE)
         return match.group(1), clean_title
     return None, title
 

@@ -1,0 +1,32 @@
+id: '0x00a840e823e75f4c722db046312fca39e02f3cc75ccf235ed436bec4328d39dc'
+gip_number: '109'
+title: 'Should the GnosisDAO introduce Snapshot moderators to reduce spam? '
+body: "The Gnosis DevOps team is currently performing a review and overhaul of the\
+  \ GnosisDAO’s Snapshot space. We would like to add trusted moderators that have\
+  \ the ability to remove posts that they deem to be low-quality with the goal of\
+  \ reducing spam proposals created in the GnosisDAO’s snapshot space.\n\nFor security\
+  \ reasons, the GnosisDAO Snapshot space does not have Admins. In order to introduce\
+  \ moderation, the GnosisDAO needs to grant the DevOps team permission to modify\
+  \ the Snapshot settings.\n\nAdding trusted moderators was originally proposed in\
+  \ GIP-77, which never went to Snapshot for onchain voting.\n\nThis GIP proposes\
+  \ to elect the following moderators: Manuel Bondy, Armagan Ercan, and John Szczepaniak\
+  \ who are trusted contributors of the GnosisDAO.\n\nhttps://forum.gnosis.io/t/gip-77-should-the-gnosisdao-add-delegation-spam-reduction/6362\n\
+  \nModeration guidelines are taken from A Code of Conduct for Open Source Communities,\
+  \ a widely recognized code of conduct that empowers groups to facilitate healthy,\
+  \ constructive community behavior. \n\nhttps://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md"
+start: 1722285323
+end: 1722890123
+state: closed
+author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 3942.0559244190677
+scores:
+  - 3933.78661298226
+  - 0.004055107606205518
+  - 8.265256329200938
+votes: 72
+quorum: 75000

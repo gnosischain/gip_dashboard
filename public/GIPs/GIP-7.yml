@@ -1,0 +1,109 @@
+id: QmdbLM9oRMZcKeK7AXR2xkLvSwV6mvCy9y5xP5BDYKEcEW
+gip_number: '7'
+title: Pay GNO Reward for GNO<>ETH Sushi LP
+body: 'Summary:
+
+
+  Paying out a GNO reward on top of the SUSHI reward that the GNO<>ETH Onsen pool
+  pays
+
+
+  Abstract:
+
+
+  The objective of this proposal is to kick off a crossDAO collaboration attempting
+  to create stakeholders for both communities (Sushi and GnosisDAO).
+
+
+  GNO<>ETH is a part of Onsen and already accrues Sushi rewards.
+
+
+  Through a liquidity incentivisation campaign, both teams can distribute voting power
+  to the members of both communities.
+
+
+  Motivation
+
+
+  Both Sushi and Gnosis are DAO’s and teams committed to building decentralized products
+  enabling the future of open finance.
+
+
+  It has been quite impressive to see the strong community that has formed around
+  Sushi, and the GnosisDAO would benefit from feedback and participation from the
+  Sushi community in order to explore future synergies between our products.
+
+
+  As a precedent for this and future collabs, we are currently running this joint
+  grant program -> https://blog.gnosis.pm/introducing-the-gnosis-safe-sushiswap-grant-f2e597c6d6cb
+
+
+  A grant has already been accepted to build a Sushiswap interface inside the Gnosis
+  Safe’s app store.
+
+
+  Specification
+
+
+  Pay 700 GNO to liquidity providers on the Sushiswap GNO<>ETH pool with address 0x41328fdba556c8c969418ccccb077b7b8d932aa5
+  throughout one month after the proposal has been passed.
+
+
+  With the above, we can achieve:
+
+
+  - Creating stakeholders for both communities
+
+  - Foment cross-DAO collaborations in the future
+
+  - Increase GNO liquidity
+
+
+  Implementation
+
+
+  Members of the Gnosis team will develop a DuneQuery that can help track the addresses
+  that staked GNO<>ETH LP tokens on the MasterChefSushi contact.
+
+
+  This will enable the DAO to distribute the GNO reward via the SafeAirdrop app, and
+  avoid using the “deposit directly to LP contract” method. This will avoid:
+
+
+  - Price depreciation for GNO on the LP pair
+
+  - Eliminate people that only deposit to frontrun before the reward is distributed
+  (not real LPs)
+
+
+  Details of the reward
+
+
+  - 700 GNO will be distributed to GNO<>SUSHI LP providers that stake their token
+  on the MasterChef LP Staking Pool (0xc2edad668740f1aa35e4d8f227fb8e17dca888cd) for
+  one month
+
+  - The eligible period for the reward will start on 0:00 (GMT) of the day after the
+  phase 3 proposal passes on Snapshot, and will end 30 days later
+
+  After the period has concluded, the Gnosis DAO will use the SafeAirdropApp to distribute
+  the tokens to all eligible addresses
+
+  - A retrospective post on forum will show the impacts of this proposal and start
+  a discussion regarding possible repetitions in the future'
+start: 1614337200
+end: 1614855600
+state: closed
+author: '0xE5243348383f38a44DF70dD8140A4f44F942236e'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 53635.42061785053
+scores:
+  - 33434.33557352095
+  - 20201.08504432958
+  - 0
+votes: 42
+quorum: 0
