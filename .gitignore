@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /src/scripts/gip_scraper
+/src/logs
 
 # testing
 /coverage
