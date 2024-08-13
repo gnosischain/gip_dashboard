@@ -276,13 +276,30 @@ def create_yaml_content(proposal):
 # Save each proposal as a YAML file
 for proposal in processed_proposals:
     gip_number = proposal['gip_number']
+    start = proposal.get('start', 0)  # Ensure there's a default value for start
+    
     if gip_number:
-        file_id = gip_tracker.get(gip_number, 0)
-        gip_tracker[gip_number] = file_id + 1
-        file_suffix = f"-redo{file_id}" if file_id else ""
+        # Check if there's already an entry and if the current start is greater
+        if gip_number in gip_tracker:
+            max_start, file_id = gip_tracker[gip_number]
+            if start > max_start:
+                # Current proposal has a later start, update the record
+                gip_tracker[gip_number] = (start, file_id + 1)
+                file_suffix = ""  # Current file gets the original name
+                # Rename the older file since it no longer has the latest start date
+                old_file_name = f"./public/GIPs/GIP-{gip_number}.yml"
+                new_file_name = f"./public/GIPs/GIP-{gip_number}-redo{file_id}.yml"
+                if os.path.exists(old_file_name):
+                    os.rename(old_file_name, new_file_name)
+            else:
+                # Not the latest start, create a redo version
+                file_suffix = f"-redo{file_id + 1}"
+        else:
+            # First entry for this GIP number
+            gip_tracker[gip_number] = (start, 0)
+            file_suffix = ""
     else:
         file_suffix = "-unknown"
-
 
     yaml_content = create_yaml_content(proposal)
     file_name = f"./public/GIPs/GIP-{gip_number}{file_suffix}.yml"

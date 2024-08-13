@@ -1,4 +1,4 @@
-id: '0x1e3d1b82263ea10863e88f605d2b10f90c3002df0a8b3e27db3a7e1525dcf49a'
+id: '0x700338be6de83b533516bfed95f51a96dd6680cfae9751366b69a592e2d8386a'
 gip_number: '23'
 title: 2nd amendment to GIP-17. Add authority of Instadapp SCW to daughter Safe
 body: 'Should GnosisDAO add authority of the Instadapp DSA to the Daughter Safe as
@@ -8,8 +8,8 @@ body: 'Should GnosisDAO add authority of the Instadapp DSA to the Daughter Safe 
   https://forum.gnosis.io/t/gip-23-2nd-amendment-to-gip-17-add-authority-of-instadapp-scw-to-daughter-safe/3239
 
   '
-start: 1643371200
-end: 1643976000
+start: 1644235200
+end: 1644858000
 state: closed
 author: '0xe965484BA4250c446779D4703f1598DC2EA00d12'
 choices:
@@ -17,10 +17,10 @@ choices:
   - Against
   - Abstain
 scores_state: final
-scores_total: 38364.92486571324
+scores_total: 86335.16306629642
 scores:
-  - 38364.92486571324
+  - 82864.64677082036
+  - 3470.5162954760644
   - 0
-  - 0
-votes: 111
+votes: 91
 quorum: 0
