@@ -1,71 +1,68 @@
 id: gip-14-gnosis-vault-on-hats-finance
 gip_number: '14'
-title: gnosis vault on hats finance
-body: "[ Gnosis ](/)\n\n#  [GIP- 14: Gnosis vault on Hats.finance](/t/gip-14-gnosis-vault-on-hats-finance/1696)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[Sombrero](https://forum.gnosis.io/u/Sombrero)\
-  \ September 24, 2021, 12:57am  1\n\n#  GIP- 14: Gnosis vault on Hats.finance\n\n\
-  \  * Create vault on Hats.finance\n  * Make no changes\n\n\n\n0 voters\n    \n \
-  \   \n    GIP: 14\n    title: Hats.finance vault creation\n    author: Ofir Perez\
-  \ <sombrero@hats.finance>\n    status: Phase 2\n    type: Meta\n    created: 2021-9-23\n\
-  \    \n    \n\n##  Simple Summary\n\nFollowing the previous forum post, a proposal\
-  \ is to create a Gnosis security vault on Hats.finance. Security Vaults on Hats\
-  \ incentivizes hackers, auditors, and the community to protect the projects and\
-  \ protocols contracts by promoting responsible disclosure.\n\n  * A committee composed\
-  \ of Gnosis dev leadership & security auditors is assigned as reviewers for security\
-  \ disclosures.\n\n  * A Gnosis vault is initialized on Hats.finance protocol, with\
-  \ defined severities, covered smart contracts list.\n\n  * Community members, Gnosis\
-  \ Treasury, and the broad ecosystem are incentivized to deposit GNO into the vault.\n\
-  \n  * The goal of the vault is to incentivize responsible disclosure in the case\
-  \ of a detected hack or exploit.\n\n  * The dApp is live **app.hats.finance**\n\n\
-  \n\n\n##  Abstract\n\nHats.finance is a proactive bounty protocol for white hat\
-  \ hackers and auditors, where projects, community members, and stakeholders incentivize\
-  \ protocol security and responsible disclosure.\n\nHats create scalable vaults using\
-  \ the project’s own token. The value of the bounty increases with the success of\
-  \ the token and project. In addition, NFT artists will create numerous unique NFTs\
-  \ specially minted for hackers and auditors that will responsibly disclose vulnerabilities.\n\
-  \nWe offer every participant in the Ethereum ecosystem skin in the game to ensure\
-  \ a more secure future for the users of #Ethereum and smart contracts in general.\n\
-  \n##  Motivation\n\nGnosis project:\n\n  * 24/7 audit on your protocol with a proactive\
-  \ approach that incentivizes the hacker to disclose the vulnerability instead of\
-  \ exploiting it.\n\n  * A disclosed vulnerability means no TVL/ TOKEN and, most\
-  \ of all, no reputation loss.\n\n  * PR of disclosure and fix becomes a strength\
-  \ to the project and its development team.\n\n  * Attract more users to the “strong\
-  \ and secure protocol.”\n\n  * Permissionless vault - token holders and the gnosis\
-  \ community can deposit or withdraw in the same permissionless nature.\n\n\n\n\n\
-  GNO value:\n\n  * GNO staked in Hats vault increases Gnosis security guarantees\n\
-  \n  * Staking GNO in the hat vaults reduces circulating token supply\n\n  * One-sided\
-  \ yield farming based on your GNO\n\n  * Participating in Hats pull at this initial\
-  \ phase will be rewarded with extra allocation points(Extra token incentive for\
-  \ the first 20 projects to join). This way, the gnosis community will have extra\
-  \ voting power in what could become a significant security layer of the ecosystem.\n\
-  \n\n\n\nGnosis community / GNO holders:\n\n  * Join the effort to secure the ecosystem.\n\
-  \n  * Financial incentive in the form of Yield farming (Protocol protection mining)\n\
-  \n  * Protect their own project token by sacrificing a portion of their token to\
-  \ make their holding more secure. By doing that, get $HAT and become influential\
-  \ in the Hats governance process.\n\n\n\n\n##  Specification\n\nThe hats protocol\
-  \ is permissionless, meaning anyone can participate and lock GNO in the Hats GNO\
-  \ vault. The GNO vault protects the Gnosis protocol from hacks by incentivizing\
-  \ responsible disclosure through the Hats protocol.\n\nIf a hacker responsibly discloses\
-  \ an exploit through the Hats mechanism, a portion (depending on severity) of the\
-  \ locked GNO tokens will go to the hacker as a reward, some vested, and some immediately.\n\
-  \nThis is a win-win situation for Hackers, the Gnosis community, and the core team.\n\
-  \nAs a GNO holder: Statistically when a protocol suffers a hack or exploit its token\
-  \ value will drop between 35-50% at the 24 hours following the hack (Messari). It\
-  \ is rational to lock part of a user’s holdings to protect the rest of his holdings\
-  \ from a potential hack.\n\nHacker gets a substantial amount of _FUNGIBLE_ money,\
-  \ become famous for disclosing a critical vulnerability instead of rekt’ing the\
-  \ protocol and its stakeholders, and receive funds without becoming a worldwide\
-  \ criminal.\n\nWe found out that a crucial element that can help black hat hackers\
-  \ to participate in protocol protection is privacy and permissionless.\n\nThe decentralization\
-  \ of the protocol is critical in order to incentivize anyone involved in the protocols\
-  \ to protect it: community, artist, investors, team members, & developers.\n\n##\
-  \  Rationale\n\nSecurity underlies the technology of smart contracts, there isn’t\
-  \ such a thing as too much security. We think Ethereum dapps should include both\
-  \ our solution and others. The beauty of Hats being a fully permissionless protocol\
-  \ is that DAOs, treasuries, and individuals can deposit or withdraw funds from the\
-  \ vault at any point. Utilize Idle funds for active protection with full depositor\
-  \ control for treasuries and users alike.\n\nThe Hats contracts are [public](https://github.com/hats-finance/hats-contracts)\
+title: ' Gnosis vault on Hats.finance '
+body: "#  GIP- 14: Gnosis vault on Hats.finance\n\n  * Create vault on Hats.finance\n\
+  \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 14\n    title: Hats.finance\
+  \ vault creation\n    author: Ofir Perez <sombrero@hats.finance>\n    status: Phase\
+  \ 2\n    type: Meta\n    created: 2021-9-23\n    \n    \n\n##  Simple Summary\n\n\
+  Following the previous forum post, a proposal is to create a Gnosis security vault\
+  \ on Hats.finance. Security Vaults on Hats incentivizes hackers, auditors, and the\
+  \ community to protect the projects and protocols contracts by promoting responsible\
+  \ disclosure.\n\n  * A committee composed of Gnosis dev leadership & security auditors\
+  \ is assigned as reviewers for security disclosures.\n\n  * A Gnosis vault is initialized\
+  \ on Hats.finance protocol, with defined severities, covered smart contracts list.\n\
+  \n  * Community members, Gnosis Treasury, and the broad ecosystem are incentivized\
+  \ to deposit GNO into the vault.\n\n  * The goal of the vault is to incentivize\
+  \ responsible disclosure in the case of a detected hack or exploit.\n\n  * The dApp\
+  \ is live **app.hats.finance**\n\n\n\n\n##  Abstract\n\nHats.finance is a proactive\
+  \ bounty protocol for white hat hackers and auditors, where projects, community\
+  \ members, and stakeholders incentivize protocol security and responsible disclosure.\n\
+  \nHats create scalable vaults using the project’s own token. The value of the bounty\
+  \ increases with the success of the token and project. In addition, NFT artists\
+  \ will create numerous unique NFTs specially minted for hackers and auditors that\
+  \ will responsibly disclose vulnerabilities.\n\nWe offer every participant in the\
+  \ Ethereum ecosystem skin in the game to ensure a more secure future for the users\
+  \ of #Ethereum and smart contracts in general.\n\n##  Motivation\n\nGnosis project:\n\
+  \n  * 24/7 audit on your protocol with a proactive approach that incentivizes the\
+  \ hacker to disclose the vulnerability instead of exploiting it.\n\n  * A disclosed\
+  \ vulnerability means no TVL/ TOKEN and, most of all, no reputation loss.\n\n  *\
+  \ PR of disclosure and fix becomes a strength to the project and its development\
+  \ team.\n\n  * Attract more users to the “strong and secure protocol.”\n\n  * Permissionless\
+  \ vault - token holders and the gnosis community can deposit or withdraw in the\
+  \ same permissionless nature.\n\n\n\n\nGNO value:\n\n  * GNO staked in Hats vault\
+  \ increases Gnosis security guarantees\n\n  * Staking GNO in the hat vaults reduces\
+  \ circulating token supply\n\n  * One-sided yield farming based on your GNO\n\n\
+  \  * Participating in Hats pull at this initial phase will be rewarded with extra\
+  \ allocation points(Extra token incentive for the first 20 projects to join). This\
+  \ way, the gnosis community will have extra voting power in what could become a\
+  \ significant security layer of the ecosystem.\n\n\n\n\nGnosis community / GNO holders:\n\
+  \n  * Join the effort to secure the ecosystem.\n\n  * Financial incentive in the\
+  \ form of Yield farming (Protocol protection mining)\n\n  * Protect their own project\
+  \ token by sacrificing a portion of their token to make their holding more secure.\
+  \ By doing that, get $HAT and become influential in the Hats governance process.\n\
+  \n\n\n\n##  Specification\n\nThe hats protocol is permissionless, meaning anyone\
+  \ can participate and lock GNO in the Hats GNO vault. The GNO vault protects the\
+  \ Gnosis protocol from hacks by incentivizing responsible disclosure through the\
+  \ Hats protocol.\n\nIf a hacker responsibly discloses an exploit through the Hats\
+  \ mechanism, a portion (depending on severity) of the locked GNO tokens will go\
+  \ to the hacker as a reward, some vested, and some immediately.\n\nThis is a win-win\
+  \ situation for Hackers, the Gnosis community, and the core team.\n\nAs a GNO holder:\
+  \ Statistically when a protocol suffers a hack or exploit its token value will drop\
+  \ between 35-50% at the 24 hours following the hack (Messari). It is rational to\
+  \ lock part of a user’s holdings to protect the rest of his holdings from a potential\
+  \ hack.\n\nHacker gets a substantial amount of _FUNGIBLE_ money, become famous for\
+  \ disclosing a critical vulnerability instead of rekt’ing the protocol and its stakeholders,\
+  \ and receive funds without becoming a worldwide criminal.\n\nWe found out that\
+  \ a crucial element that can help black hat hackers to participate in protocol protection\
+  \ is privacy and permissionless.\n\nThe decentralization of the protocol is critical\
+  \ in order to incentivize anyone involved in the protocols to protect it: community,\
+  \ artist, investors, team members, & developers.\n\n##  Rationale\n\nSecurity underlies\
+  \ the technology of smart contracts, there isn’t such a thing as too much security.\
+  \ We think Ethereum dapps should include both our solution and others. The beauty\
+  \ of Hats being a fully permissionless protocol is that DAOs, treasuries, and individuals\
+  \ can deposit or withdraw funds from the vault at any point. Utilize Idle funds\
+  \ for active protection with full depositor control for treasuries and users alike.\n\
+  \nThe Hats contracts are [public](https://github.com/hats-finance/hats-contracts)\
   \ verified on Etherscan and can be found by clicking the “View Contracts Covered”\
   \ under Hats vault in app.hats.finance and we are ready to onboard Gnosis GNO.\n\
   \nAudit and safety measures:\n\n[Audit reports](https://github.com/hats-finance/hats-contracts/tree/develop/audit)\n\
@@ -88,44 +85,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP- 14: Gnosis vault on Hats.finance](/t/gip-14-gno
   \ with a forum moderator._\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please\
   \ ignore this section, and leave as is. It is used for Phase 3 proposals.  \nPhase\
   \ 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\
-  \n6 Likes\n\n[StefanGeorge](https://forum.gnosis.io/u/StefanGeorge) September 29,\
-  \ 2021, 3:29pm  2\n\nThank you for this proposal [@Sombrero](/u/sombrero)!\n\nI\
-  \ support the proposal. Our code will get more attention from auditors and bugs\
-  \ are more likely to be discovered early on.\n\nA few questions though:\n\n  * In\
-  \ case a vulnerability is found, how is the bounty amount determined?\n  * We have\
-  \ in addition our own bug bounty. I assume the first submission across bounty programs\
-  \ counts for the payout. Payouts should be structured the same across bounty programs.\n\
-  \  * I would suggest we start with one Gnosis project to be listed before we add\
-  \ all of them.\n\n\n\n[Sombrero](https://forum.gnosis.io/u/Sombrero) September 29,\
-  \ 2021, 7:43pm  3\n\nHey [@StefanGeorge](/u/stefangeorge) , thank you for the support\
-  \ and your important questions.  \nI will try to answer them:\n\n**In case a vulnerability\
-  \ is found, how is the bounty amount determined?**\n\nThe bounty amount is being\
-  \ determined by the committee following the vulnerability descriptions and severities\
-  \ that have been pre-defined by the committee. We suggest using human-readable language\
-  \ for vulnerability descriptions.  \nIn general, the committee is in charge of selecting\
-  \ the relevant severity when approving the claim on-chain.\n\n**We have in addition\
-  \ our own bug bounty. I assume the first submission across bounty programs counts\
-  \ for the payout. Payouts should be structured the same across bounty programs.**\n\
-  \nThat’s right.  \nAs we wrote, there isn’t such a thing as too much security. \
-  \ \nWe are aware of the internal bug bounty program of Gnosis and also the other\
-  \ programs you have.\n\nWe believe that the reward on Hats will be bigger than your\
-  \ internal bug bounty. That should give enough incentive for an auditor to initially\
-  \ report via Hats protocol.\n\n**In general, the gnosis team will be able to choose\
-  \ to compensate the hacker through their preferred way in case it was submitted\
-  \ through multiple channels.**  \n**I would suggest we start with one Gnosis project\
-  \ to be listed before we add all of them.**\n\nSounds great.  \nThe covered contracts\
-  \ and severity descriptions are configurable.  \nWe would love to start with covering\
-  \ Gnosis safe as we and many others in the ecosystem use it extensively.\n\n1 Like\n\
-  \n[StefanGeorge](https://forum.gnosis.io/u/StefanGeorge) September 30, 2021, 10:40am\
-  \  4\n\nThank you for the clarifications. As there is no action required from GnosisDAO,\
-  \ I don’t think this proposal has to be voted on by GNO token holders. Eventually,\
-  \ a separate proposal can be made to ask GnosisDAO to add GNO to the vault.\n\n\
-  \  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n\
-  \  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by\
-  \ [Discourse](https://www.discourse.org), best viewed with JavaScript enabled\n"
-start: null
+  \n6 Likes\n"
+start: 1632437826
 end: null
-state: null
+state:
+  - phase-2
 author: 'Ofir Perez &lt;sombrero@hats.finance&gt;
 
   status: Phase 2

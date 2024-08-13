@@ -1,37 +1,33 @@
 id: gip-78-gnosis-guild-treasury-allocation-proposal-2
 gip_number: '78'
-title: gnosis guild treasury allocation proposal 2
-body: "[ Gnosis ](/)\n\n#  [GIP-78: Gnosis Guild Treasury Allocation (Proposal#2)](/t/gip-78-gnosis-guild-treasury-allocation-proposal-2/6413)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ January 30, 2023, 12:11am  1\n    \n    \n    GIP: 78\n    title: Gnosis Guild\
-  \ Treasury Allocation (Proposal#2)\n    author: Gnosis Guild\n    status: Draft\n\
-  \    type: Funding\n    created: 2023-01-30\n    \n\n  * Let’s do this!\n  * Make\
-  \ no change\n\n\n\n0 voters\n\n##  Simple Summary\n\nThe proposal will fund the\
-  \ Gnosis Guild’s operations for one year. The Gnosis Guild treasury allocation would\
-  \ continue to foster needs-driven development for the GnosisDAO and of the Zodiac\
-  \ ecosystem at a total of $3,823,575 paid in 56% DAI and 44% GNO for our contributor\
-  \ compensation plan, administered by Gnosis Guild following the vesting schedule\
-  \ laid out in the Gnosis token plan.\n\n##  Abstract\n\nGnosis Guild is a society\
-  \ dedicated to interdependent software and the growth of the Zodiac Standard. In\
-  \ 2022, Gnosis Guild completed a year of needs-driven development for the GnosisDAO\
-  \ and continued to grow the Zodiac ecosystem. With this proposal, Gnosis Guild requests\
-  \ funding to continue its development of GnosisDAO’s infrastructure, expand the\
-  \ Zodiac collection of tools, and further establish Gnosis Chain as an ideal ecosystem\
-  \ for DAOs. The budget allocation includes funds for key personnel, operations,\
-  \ grants programs, and other areas as needed to sustain this commitment.\n\n## \
-  \ Motivation\n\nWe are a small, but growing, team rooted in conviviality, mutualistic\
-  \ ownership, and experimentation. Since our last proposal, a year ago, we have completed\
-  \ many projects focused in 4 main areas: supporting GnosisDAO, developing novel\
-  \ treasury management tools, developing the Zodiac ecosystem, and convivial software\
-  \ experiments.\n\nAn effective and productive DAO implicitly spreads the technology\
-  \ on which it’s built; this is the core of our symbiotic relationship with GnosisDAO,\
-  \ and by extension, Gnosis Chain. In these early days of our organization, it is\
-  \ important to demonstrate the effectiveness of Zodiac by supporting Gnosis’s efforts\
-  \ to promote decentralized infrastructure. In the past year we have completed:\n\
-  \n  * [GnosisDAO SAFE Distribution Tooling](https://claim-safe.gnosis.io/)—a system\
-  \ to transparently calculate, distribute, and claim the portion of SAFE tokens vested\
-  \ to GNO holders.\n  * [GIP 28 & 44: Allow GNO holders to vote with invested/staked/locked\
+title: ' Gnosis Guild Treasury Allocation (Proposal#2) '
+body: "\n    GIP: 78\n    title: Gnosis Guild Treasury Allocation (Proposal#2)\n \
+  \   author: Gnosis Guild\n    status: Draft\n    type: Funding\n    created: 2023-01-30\n\
+  \    \n\n  * Let’s do this!\n  * Make no change\n\n\n\n0 voters\n\n##  Simple Summary\n\
+  \nThe proposal will fund the Gnosis Guild’s operations for one year. The Gnosis\
+  \ Guild treasury allocation would continue to foster needs-driven development for\
+  \ the GnosisDAO and of the Zodiac ecosystem at a total of $3,823,575 paid in 56%\
+  \ DAI and 44% GNO for our contributor compensation plan, administered by Gnosis\
+  \ Guild following the vesting schedule laid out in the Gnosis token plan.\n\n##\
+  \  Abstract\n\nGnosis Guild is a society dedicated to interdependent software and\
+  \ the growth of the Zodiac Standard. In 2022, Gnosis Guild completed a year of needs-driven\
+  \ development for the GnosisDAO and continued to grow the Zodiac ecosystem. With\
+  \ this proposal, Gnosis Guild requests funding to continue its development of GnosisDAO’s\
+  \ infrastructure, expand the Zodiac collection of tools, and further establish Gnosis\
+  \ Chain as an ideal ecosystem for DAOs. The budget allocation includes funds for\
+  \ key personnel, operations, grants programs, and other areas as needed to sustain\
+  \ this commitment.\n\n##  Motivation\n\nWe are a small, but growing, team rooted\
+  \ in conviviality, mutualistic ownership, and experimentation. Since our last proposal,\
+  \ a year ago, we have completed many projects focused in 4 main areas: supporting\
+  \ GnosisDAO, developing novel treasury management tools, developing the Zodiac ecosystem,\
+  \ and convivial software experiments.\n\nAn effective and productive DAO implicitly\
+  \ spreads the technology on which it’s built; this is the core of our symbiotic\
+  \ relationship with GnosisDAO, and by extension, Gnosis Chain. In these early days\
+  \ of our organization, it is important to demonstrate the effectiveness of Zodiac\
+  \ by supporting Gnosis’s efforts to promote decentralized infrastructure. In the\
+  \ past year we have completed:\n\n  * [GnosisDAO SAFE Distribution Tooling](https://claim-safe.gnosis.io/)—a\
+  \ system to transparently calculate, distribute, and claim the portion of SAFE tokens\
+  \ vested to GNO holders.\n  * [GIP 28 & 44: Allow GNO holders to vote with invested/staked/locked\
   \ positions in Mainnet/GC](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18)—We\
   \ deployed a significant upgrade to the GnosisDAO’s governance structure, allowing\
   \ GNO, LGNO, and MGNO on Mainnet and Gnosis Chain to participate in voting.\n  *\
@@ -103,340 +99,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP-78: Gnosis Guild Treasury Allocation (Proposal#2
   \nCultural Program: This budget category refers to what would traditionally be construed\
   \ as a marketing campaign. The cultural program is intended to further establish\
   \ Gnosis Guild’s reputation as a creative, editorial, and experimental team, while\
-  \ seeking to meaningfully broaden discourse.\n\n16 Likes\n\n[samepant](https://forum.gnosis.io/u/samepant)\
-  \ February 3, 2023, 7:12pm  2\n\nAs a member of the Gnosis Guild team, I support\
-  \ this proposal.\n\n3 Likes\n\n[Adam_tosz](https://forum.gnosis.io/u/Adam_tosz)\
-  \ February 6, 2023, 7:39am  3\n\nI wanted to take this opportunity for a shout out\
-  \ to the Zodiac team. In the past year, great tools were developed and services\
-  \ rendered by the Zodiac team. Thus, sorry to hear the Zodiac team leaving Gnosis\
-  \ this / next year.\n\nWith regards to the proposal:\n\n**1\\. On the proposed budget**\
-  \  \nI think it is fairly similar to the 2022 Budget, however 1.000 GNO / employee\
-  \ compensation on top of a >$115k average compensation appears too high, especially\
-  \ for non-senior technical personnel (operations role, communications, BD, junior\
-  \ developer). Imho it is not unrealistic that GNO might be at $200- $250 at the\
-  \ end of the year. Therefore I suggest to cap the GNO compensation at $100k p.a.\
-  \ on the date of payout. GnosisDAO can transfer the equivalent amount of GNO in\
-  \ the month of payout once known.\n\n**2\\. Funding**  \nThe Zodiac team did great\
-  \ contributions to Karpatkey, leading to several wins recently. However all the\
-  \ funding is coming from GnosisDAO. Doesn’t it makes sense to ask Karpatkey DAO\
-  \ for partial funding or a grant? Alternative, Karpatkey could grant a discount\
-  \ on their services for the tools / services rendered by GnosisDAO via Zodiac.\n\
-  \n**3\\. Zodiac spin-off**  \nFinally, can you specify the current plans for the\
-  \ Zodiac spin out? For example,\n\n  * does it makes sense to have a Zodiac token?\
-  \ (if yes, why (utility)?)\n  * will the funding for the Zodiac spin out come from\
-  \ GnosisDAO, Gnosis Ltd or externals?\n  * etc.\n\n\n\n3 Likes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ February 6, 2023, 9:46pm  4\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> I wanted to take this opportunity for a shout out to the Zodiac\
-  \ team. In the past year, great tools were developed and services rendered by the\
-  \ Zodiac team.\n\nReally appreciate this! ![:heart:](https://forum.gnosis.io/images/emoji/twitter/heart.png?v=12)\n\
-  \n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png) Adam_tosz:\n\
-  \n> sorry to hear the Zodiac team leaving Gnosis this / next year.\n\nWe’re certainly\
-  \ not planning to leaving the Gnosis ecosystem. But, similar to Safe, CoW, and Karpatkey,\
-  \ there is a point where makes sense from the GnosisDAO’s perspective for Gnosis\
-  \ Guild to become a distinct entity, rather than a team of contractors for Gnosis\
-  \ Ltd / Employees of Gnosis GmbH. I definitely wouldn’t view it as a negative or\
-  \ as if the GnosisDAO is losing anything in this scenario. It would be yet-another\
-  \ instance of GnosisDAO successfully incubating a team, in which GnosisDAO would\
-  \ obviously remain a key stakeholder.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> 1.000 GNO / employee compensation on top of a >$115k average compensation\
-  \ appears too high\n\nThis is in-line with the compensation packages that we’ve\
-  \ had from Gnosis over the past few years. However the Gnosis Guild team has taken\
-  \ steps to both flatten and globally standardize our compensation structure, we’re\
-  \ planning to publish some content on the rationale for this later in the year.\n\
-  \n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png) Adam_tosz:\n\
-  \n> Imho it is not unrealistic that GNO might be at $200- $250 at the end of the\
-  \ year. Therefore I suggest to cap the GNO compensation at $100k p.a. on the date\
-  \ of payout.\n\nThere is certainly a speculative aspect to this, but we think this\
-  \ is an important part of the incentive alignment for our team; we should be incentivized\
-  \ to contribute to the long-term success of the Gnosis ecosystem. Again, this is\
-  \ similar to how Gnosis’ token allocations have functioned in the past. For what\
-  \ it’s worth, we’ve also taken the down-side of this in the past. For example, the\
-  \ value of GNO granted in Gnosis Guild’s previous proposal was significantly lower\
-  \ when it was allocated to team members at the end of last year than when the proposal\
-  \ was put through at the start of the year.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> The Zodiac team did great contributions to Karpatkey, leading\
-  \ to several wins recently. However all the funding is coming from GnosisDAO. Doesn’t\
-  \ it makes sense to ask Karpatkey DAO for partial funding or a grant? Alternative,\
-  \ Karpatkey could grant a discount on their services for the tools / services rendered\
-  \ by GnosisDAO via Zodiac.\n\nWe do have a very symbiotic relationship with Karpatkey,\
-  \ primarily in service of the GnosisDAO, either directly to help make their treasury\
-  \ management activities more efficient and more secure, or indirectly to help them\
-  \ provide similar solutions for other clients. In both cases the GnosisDAO is a\
-  \ benefactor as the GnosisDAO is a significant stakeholder in Karpatkey. Karpatkey’s\
-  \ success is GnosisDAO’s success.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> Finally, can you specify the current plans for the Zodiac spin\
-  \ out? For example,\n\nWe’re still working through this, but the current thinking\
-  \ is that Zodiac is a standard and would likely benefit from a kind of dedicated\
-  \ standards alliance to help steward and promote the standard, along with maintaining\
-  \ credible neutrality between the different users of the standard.\n\nWe’ve been\
-  \ working on a membership NFT token model for some time, this would be distributed\
-  \ to individuals and organizations who have made significant contributions to the\
-  \ DAO space and the Zodiac standard. Exactly what this is used to govern is a little\
-  \ murky still, but it would likely be responsible for properties like the [zodiac.wiki](https://zodiac.wiki),\
-  \ ratifying updates to the standard, and potentially curation of modules and other\
-  \ tooling.\n\nWe don’t predict this organization having a great deal of overhead,\
-  \ the funding for establishing this organisation is baked into this and last year’s\
-  \ proposals.\n\n4 Likes\n\n[Adam_tosz](https://forum.gnosis.io/u/Adam_tosz) February\
-  \ 8, 2023, 5:45pm  5\n\nThank you for your responses.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> We’re certainly not planning to leaving the Gnosis ecosystem\n\
-  \nGreat! ![:slight_smile:](https://forum.gnosis.io/images/emoji/twitter/slight_smile.png?v=12)\n\
-  \nSince it is in GNO holders best interest to use the DAO’s limited funds efficiently,\
-  \ here a few additional thoughts as response to your remarks. Eventually it is up\
-  \ to the GNO community whether they feel comfortable with the financial ask and\
-  \ services offered.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> This is in-line with the compensation packages that we’ve\
-  \ had from Gnosis over the past few years.\n\nI see this proposal as some sort of\
-  \ suggested budget subject to negotiation.\n\n  * Does GnosisDAO wants Gnosis Guilds\
-  \ services? I think so!\n  * Should GnosisDAO pay “junior” positions an above market\
-  \ average salary + huge bonus? I don’t think so!\n\n\n\nImho the argument that Gnosis\
-  \ (Ltd?) paid these amounts in the past, should not constitute a basis for overspending\
-  \ in the future.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> we’re planning to publish some content on the rationale\
-  \ for this later in the year.\n\nThat’s fantastic. However, the proposal will be\
-  \ decided within the next days, i.e. there will not be further details available\
-  \ for a GNO holder to make any decisions on the budget other than on what has been\
-  \ shared above. It would be great, if you could add more details to the staff budget,\
-  \ i.e. salary and GNO bonus by role.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> we should be incentivized to contribute to the long-term\
-  \ success of the Gnosis ecosystem\n\nCouldn’t agree more. However, a period of one\
-  \ year is not long-term to me. My suggestion was to grant $100k GNO on the day of\
-  \ payout, which may be worth $500k in 5-10 years (long-term).\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> In both cases the GnosisDAO is a benefactor as the GnosisDAO\
-  \ is a significant stakeholder in Karpatkey. Karpatkey’s success is GnosisDAO’s\
-  \ success.\n\nI think it is just a different perspective (financial vs. product\
-  \ development). From a product development side it is great that we have a companion\
-  \ that tries new tools and provides feedback. From the financial side, GnosisDAO\
-  \ pays an independent Treasury Management team at a fair market price to mange its\
-  \ funds. On top, Gnosis provides software and development work to Karpatkey (for\
-  \ free). This may have been fine for the incubation phase but I think the Gnosis\
-  \ Guild team has proven that it can ship great products and is now asking for an\
-  \ extended contract. All I’m saying is that the team may want to ask its biggest\
-  \ “customers” to also support its work financially to some extent. Just my two cents.\n\
-  \n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> We’ve been working on a membership NFT token model for some\
-  \ time\n\nDoes that mean, the Gnosis Guild team is currently not envisioning a ERC-20\
-  \ Token but rather an NFT distributed to contributors? Like that idea.\n\n1 Like\n\
-  \n[srv](https://forum.gnosis.io/u/srv) February 8, 2023, 9:38pm  6\n\nI agree with\
-  \ [@Adam_tosz](/u/adam_tosz) on the proposed budget, for GnosisDAO participants\
-  \ it would be crucial to understand more on the role that every employee/contractor\
-  \ will play into the team, how many of them are already working for Gnosis Guild\
-  \ and how many would be new hires.\n\n[srv](https://forum.gnosis.io/u/srv) February\
-  \ 8, 2023, 9:46pm  7\n\nNot sure if it was mentioned in the GIP’s proposal, I understand\
-  \ the request is for an upfront payment.  \nI would propose to consider the option\
-  \ to stream payments as it’s being discussed in [Introducing more accountability\
-  \ to the GnosisDAO](https://forum.gnosis.io/t/introducing-more-accountability-to-the-gnosisdao/6331)\
-  \ or at least, tie part of the budget to the tangible progress the team is making.\n\
-  \nThank you!\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan) February\
-  \ 9, 2023, 3:24am  8\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n>   * Should GnosisDAO pay “junior” positions an above market average\
-  \ salary + huge bonus? I don’t think so!\n> \n\n\nWorth noting that we don’t really\
-  \ have anyone on the team that we would consider “junior”, which is why the averages\
-  \ are skewed higher. Most of the team are what we’d refer to as either “senior”\
-  \ or “staff” level. Everyone on the team is well beyond junior / entry-level in\
-  \ their given roles.\n\nFor reference, here is a breakdown of our compensation levels.\n\
-  \nLevel | Modifier | Compensation  \n---|---|---  \nJunior | -15% | $85k  \nBase\
-  \ | 0% | $100k  \nStaff | +15% | $115k  \nSenior | +30% | $130k  \nLeadership |\
-  \ +35% | $135k  \n  \nThis is currently uniform across all roles and locations,\
-  \ which we recognize is different to how most teams approach compensation. We’ve\
-  \ left open the possibility for compensation for different roles to diverge in the\
-  \ future, but wanted an equitable starting point. We don’t believe that compensation\
-  \ should differ based on location, especially given our entire team is remote.\n\
-  \n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png) Adam_tosz:\n\
-  \n> However, a period of one year is not long-term to me.\n\nAlong with the time\
-  \ between when the grant is approved and when team members receive their allocation\
-  \ (6-12 months), there is also a two-year cliff (from the recipient’s start date)\
-  \ and one-year holding period (from the time of allocation), so it’s more like 1.5\
-  \ to 3.5 years from the date of this grant application, depending on how long the\
-  \ recipient has been a member of Gnosis / Gnosis Guild. This has proven to be sufficiently\
-  \ long-term incentive alignment, along with being a fantastic retention mechanism,\
-  \ for Gnosis / Gnosis Guild in the past.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> My suggestion was to grant $100k GNO on the day of payout,\n\n\
-  Because of price uncertainty, GnosisDAO has typically shown a preference for allocating\
-  \ a fixed number of tokens up-front, rather than promising a certain USD amount\
-  \ at some point in future. It’s operationally much simpler, gives teams autonomy\
-  \ over how they handle compensation and token allocations, and allows teams to use\
-  \ the tokens productively in the mean time.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> All I’m saying is that the team may want to ask its biggest “customers”\
-  \ to also support its work financially to some extent.\n\nAgreed. We have ongoing\
-  \ discussions with Karpatkey about incentive alignment between the two teams.\n\n\
-  ![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png) Adam_tosz:\n\
-  \n> Does that mean, the Gnosis Guild team is currently not envisioning a ERC-20\
-  \ Token but rather an NFT distributed to contributors? Like that idea.\n\nExactly!\
-  \ We’re really excited about this.\n\n2 Likes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ February 9, 2023, 3:41am  9\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/s/ecccb3/48.png)\
-  \ srv:\n\n> how many of them are already working for Gnosis Guild and how many would\
-  \ be new hires\n\nWe have 12 team members currently: 7 engineers, 2 designers, 1\
-  \ comms, 1 BD, 1 ops.  \nEveryone wears multiple hats.  \nWe’re planning to hire\
-  \ another designer and two more engineers this year.\n\nMy [reply above](https://forum.gnosis.io/t/gip-78-gnosis-guild-treasury-allocation-proposal-2/6413/8)\
-  \ gives a breakdown of compensation levels.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/s/ecccb3/48.png)\
-  \ srv:\n\n> I would propose to consider the option to stream payments as it’s being\
-  \ discussed in [Introducing more accountability to the GnosisDAO ](https://forum.gnosis.io/t/introducing-more-accountability-to-the-gnosisdao/6331)\n\
-  \nI generally like the idea of streaming payments, my only major concern with it\
-  \ is that it would likely introduce additional overhead and decrease the productive\
-  \ use of the assets on either side, simply because Karpatkey would need to either\
-  \ stop using these assets productively or consistently top up the streaming accounts\
-  \ to ensure they don’t default. Nevertheless, I’m open to exploring this for future\
-  \ grants. [@espina](/u/espina), perhaps we can start thinking about what processes\
-  \ might need to change on each of the GnosisDAO, Karpatkey, and Gnosis Guild sides\
-  \ of this equation to make something like streaming viable.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/s/ecccb3/48.png)\
-  \ srv:\n\n> or at least, tie part of the budget to the tangible progress the team\
-  \ is making.\n\nGiven that the proposal is to fund a team that has quite a broad\
-  \ and varied mandate, I’m not sure that it necessarily makes sense to find some\
-  \ specific metrics to tie the grant proposal to, unlike project-based grants where\
-  \ there are well-defined milestones up-front.\n\nThat said, I do think the push\
-  \ towards greater accountability is really important, so I think we should make\
-  \ a commitment to posting regular updates (perhaps quarterly) on our work, to our\
-  \ contributions to the Gnosis and Ethereum ecosystem a little more clearly visible.\
-  \ cc @marvln, [@espina](/u/espina), and [@hamza](/u/hamza).\n\nObviously our ability\
-  \ to make successful follow-up grant proposals is entirely dependent on the GnosisDAO\
-  \ being satisfied with our work to-date and its assessment of our ability and commitment\
-  \ to continue providing that standard of work. Which is part of the reason we are\
-  \ limiting these proposals to one year of funding.\n\n3 Likes\n\n[Adam_tosz](https://forum.gnosis.io/u/Adam_tosz)\
-  \ February 9, 2023, 7:25am  10\n\nThank you for the transparency! These details\
-  \ are great for context.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> |Level|Modifier|Compensation|\n> \n> |Junior|-15%|$85k|\
-  \  \n>  |Base|0%|$100k|  \n>  |Staff|+15%|$115k|  \n>  |Senior|+30%|$130k|  \n>\
-  \  |Leadership|+35%|$135k|\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> Along with the time between when the grant is approved and\
-  \ when team members receive their allocation (6-12 months), there is also a two-year\
-  \ cliff (from the recipient’s start date) and one-year holding period (from the\
-  \ time of allocation), so it’s more like 1.5 to 3.5 years from the date of this\
-  \ grant application, depending on how long the recipient has been a member of Gnosis\
-  \ / Gnosis Guild.\n\nThat sounds reasonable. However, if the retention rate is high,\
-  \ I would assume that the cliff period will be met for most employees this year\
-  \ already, i.e. the next allocation might be payable at year-end for most of the\
-  \ employees. Added the GNO compensation (“**comp.** ”) at different GNO prices (including\
-  \ todays price $119 / GNO) for full disclosure.\n\n![Zodiac Comp](https://forum.gnosis.io/uploads/default/original/2X/7/77725b5e4fac272a336291e95e0e68c10287c562.png)\n\
-  \n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> Worth noting that we don’t really have anyone on the team\
-  \ that we would consider “junior”, which is why the averages are skewed higher.\
-  \ Most of the team are what we’d refer to as either “senior” or “staff” level. Everyone\
-  \ on the team is well beyond junior / entry-level in their given roles.\n\nGood\
-  \ to know. I was also including roles such as BD, ops, comms to my definition of\
-  \ junior non-technical positions. These seem to be very well paid.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> Agreed. We have ongoing discussions with Karpatkey about\
-  \ incentive alignment between the two teams.\n\nGreat!\n\nUltimately, I’m in favor\
-  \ of this proposal.\n\n2 Likes\n\n[m3rlin5ky](https://forum.gnosis.io/u/m3rlin5ky)\
-  \ February 9, 2023, 9:16am  11\n\n[@auryn_macmillan](/u/auryn_macmillan) I really\
-  \ appreciate the hard work of Gnosis Guild and dedication that the Gnosis Guild\
-  \ team has put into their proposal.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> This is in-line with the compensation packages that we’ve\
-  \ had from Gnosis over the past few years. However the Gnosis Guild team has taken\
-  \ steps to both flatten and globally standardize our compensation structure, we’re\
-  \ planning to publish some content on the rationale for this later in the year.\n\
-  \nHowever, I think the GNO compensation is too high and the past cannot be easily\
-  \ transferred to the future. 2021 was the foundation for the previous year. The\
-  \ new foundation includes a Gnosis ecosystem that has 15%+ of SAFE, lots of other\
-  \ projects and its own Beacon Chain. Therefore, I believe that the GNO compensation\
-  \ should definitely be revised. In my opinion, 30% of the previous GNO would be\
-  \ justified as a bonus (one year cliff, linear vesting over three years).\n\nAn\
-  \ idea I would like to bring up is that the remaining 70% should be staked by GnosisDAO.\
-  \ The staking rewards can then be paid out as a bonus to Gnosis Guild on a monthly\
-  \ basis as long as they support the Gnosis Beacon Chain (~1700 GNO per year). In\
-  \ my opinion, this would be a more strategic plan that can be reviewed by GnosisDAO\
-  \ on a yearly basis.\n\n2 Likes\n\n[ernst](https://forum.gnosis.io/u/ernst) February\
-  \ 9, 2023, 9:24am  12\n\n> This is in-line with the compensation packages that we’ve\
-  \ had from Gnosis over the past few years. However the Gnosis Guild team has taken\
-  \ steps to both flatten and globally standardize our compensation structure, we’re\
-  \ planning to publish some content on the rationale for this later in the year.\n\
-  \nHey, I can weigh in on this: Yes, until the end of 2021, the team (both Ltd and\
-  \ GmbH) received a rather large GNO incentive. At the time when the total was allocated,\
-  \ GNO was worth significantly less and went up 10-20x in the meantime. We decided\
-  \ to honor these allocations but overhauled the token plan for the subsequent year,\
-  \ adjusting to much lower GNO numbers (since the token valuation had ballooned).\
-  \ The highest token components we have had since are 500 GNO/ yr. A senior token\
-  \ allocation is 300GNO, with many juniors ‘only’ receiving 50GNO/ yr.\n\n2 Likes\n\
-  \n[ernst](https://forum.gnosis.io/u/ernst) February 9, 2023, 9:29am  13\n\nAuryn,\
-  \ can you talk about the adoption of Zodiac a bit? Maybe I don’t have the full picture,\
-  \ but what I see is the following: Zodiac has built outstanding technology, but\
-  \ adoption is lagging. I would like to understand which DAOs (besides Gnosis) are\
-  \ using which modules and how you expect these numbers to develop/ which measures\
-  \ you’re taking to make that happen. 12 engineers but only 1BD person for a project\
-  \ that has not yet found PMF seems a misallocation of resources.\n\n4 Likes\n\n\
-  [auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan) February 9, 2023, 10:16pm\
-  \  14\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/ernst/48/284_2.png)\
-  \ ernst:\n\n> adjusting to  \n>  much lower GNO numbers (since the token valuation\
-  \ had ballooned)\n\nDefinitely agree that periodic adjustment is necessary given\
-  \ the volatility of GNO. The GNO allocation in this proposal is an example of this.\n\
-  \nOur [previous budget proposal](https://forum.gnosis.io/t/gip-27-gnosis-guild-treasury-allocation-to-gnosis-ltd/3429)\
-  \ included a GNO allocation targeted at $100k per team member (denominated in USD\
-  \ rather than GNO, I wonder if keeping this denomination would have made a difference\
-  \ to how this proposal has been perceived?), at the time of the proposal the GNO\
-  \ price was hovering between $350 and $450. Our allocations from the previous year,\
-  \ denominated in GNO, are in line with the levels you mentioned. However, by the\
-  \ time team members received the allocations, the price had dropped significantly\
-  \ below the target USD rate.\n\nGiven that this was a new budget proposal, it felt\
-  \ natural to make that periodic adjustment to the amount of GNO to accommodate the\
-  \ price movement and bring the GNO compensation back in line with the target.\n\n\
-  2 Likes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan) February\
-  \ 10, 2023, 12:40am  15\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/ernst/48/284_2.png)\
-  \ ernst:\n\n> Auryn, can you talk about the adoption of Zodiac a bit?\n\nI’ll put\
-  \ together some more thorough information on this and post it here some time next\
-  \ week. But can talk about it briefly now.\n\nFirst thing worth mentioning is that\
-  \ I think it’s important to disambiguate Gnosis Guild and Zodiac. Zodiac is a [standard\
-  \ for composable tooling for programmable accounts](https://eips.ethereum.org/EIPS/eip-5005),\
-  \ and while Zodiac is a big part of what the Gnosis Guild team spends its time working\
-  \ on, it’s certainly not the only thing. We also spend a considerable amount of\
-  \ time working on other needs-driven development for the Gnosis DAO (things like\
-  \ the GNO locking contract, the COW vesting contracts and interface, the safe token\
-  \ allocation contracts, tooling, and interface, and various governance process updates\
-  \ for the Gnosis DAO), along with other tooling (e.g. [ethersmultisend](https://github.com/gnosis/ethers-multisend/),\
-  \ apps (e.g. [tabula.gg](https://tabula.gg), currently getting an update to make\
-  \ it much more functional after taking on a bunch of feedback since launch), and\
-  \ touchpoints (talks, workshops, essays, etc) for the broader DAO community.\n\n\
-  ![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/ernst/48/284_2.png) ernst:\n\
-  \n> I would like to understand which DAOs (besides Gnosis) are using which modules\
-  \ and how you expect these numbers to develop/ which measures you’re taking to make\
-  \ that happen\n\nBeing a standard, I actually think that the more important adoption\
-  \ measure is quantity and quality of the tooling/infrastructure/platforms that are\
-  \ leveraging Zodiac, either by building on top of the Zodiac mods that we’ve built\
-  \ or by building their own.\n\nI actually agree that this is still lagging behind\
-  \ where we’d like it to be, it’s been more challenging and required more hands on\
-  \ dev work in other people’s code-bases than we expected, but it perhaps gives more\
-  \ insight to the balance of personnel.\n\nHere’s a short list of some of the projects\
-  \ that have integrated/built, or are currently integrating/building, Zodiac tooling\
-  \ into their product:\n\n  * Snapshot (SafeSnap, Reality and UMA module)\n  * DAOhaus\
-  \ (Moloch safe minion)\n  * Railgun (upcoming) (super secret module)\n  * Moloch\
-  \ v3 (Built as Zodiac mods around a safe)\n  * Tally (Open Zeppelin Governor Mod)\n\
-  \  * UMA (zodiac module, similar to our Reality module)\n  * Tellor (zodiac module,\
-  \ similar to our Reality module)\n  * SZNS (NFT product based around our Reality\
-  \ module)\n  * DxDAO’s DxGov / DAVI (upcoming) (built as Zodiac modules around a\
-  \ safe)\n  * Cardstack (metaguard)\n  * SekerDAO / Usul (build as Zodiac modules\
-  \ around a safe)\n  * Bulla Banking (Zodiac module for accounting)\n\n\n\nTo answer\
-  \ your initial question, we have somewhat limited insight into who is using Zodiac\
-  \ modules and for what, currently. This is something we need to improve on. However,\
-  \ it looks like there are currently about [170 Snapshot spaces using the reality\
-  \ module](https://docs.google.com/spreadsheets/d/1P4N_17zWy_O3xXjAGyMHChOuYpTkXz86hmWgBFPljJ4/edit?usp=sharing).\
-  \ Several appear to be tests, but some notable spaces in this list are 1Inch, Agave,\
-  \ Dappradar, Deversifi, mStable Governance, Safe, ShapeShift, and Stakewise, and\
-  \ of course Gnosis.\n\nThe Roles module has been critical in Karpatkey’s non-custodial\
-  \ treasury management, allowing it to take to clients like ENS and Balancer, and\
-  \ presumably with many more to come.\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/a/a698b9/48.png)\
-  \ Adam_tosz:\n\n> However, the proposal will be decided within the next days, i.e.\
-  \ there will not be further details available for a GNO holder to make any decisions\
-  \ on the budget other than on what has been shared above.\n\nJust wanted to quickly\
-  \ touch on this point from a previous reply. We’re not in a rush to push this through,\
-  \ we very much want to take our time on this proposal to make sure it aligns with\
-  \ stakeholder expectations. Everything in the proposal is most definitely still\
-  \ up for discussion.\n\n4 Likes\n\n[Adam_tosz](https://forum.gnosis.io/u/Adam_tosz)\
-  \ February 10, 2023, 7:30am  16\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> Our [previous budget proposal](https://forum.gnosis.io/t/gip-27-gnosis-guild-treasury-allocation-to-gnosis-ltd/3429)\
-  \ included a GNO allocation targeted at $100k per team member (denominated in USD\
-  \ rather than GNO, I wonder if keeping this denomination would have made a difference\
-  \ to how this proposal has been perceived?)\n\nBased on my own view but also the\
-  \ echo from the other community members, yes $100k / team member (on average) would\
-  \ be much more reasonable than 1000 GNO. I further also suggested to make tiers\
-  \ for GNO allocations based on the position, similar to the salary levels. Don’t\
-  \ want to pick on the BD, comms, ops. guys but it makes a difference whether you\
-  \ are a senior lead developer or operations manager and this should be compensated\
-  \ differently (e.g. Senior Dev / Leadership receiving $120k worth of GNO on the\
-  \ day of payout, and Ops / BD / Comms. receiving $60k of GNO on the day of payout).\n\
-  \n  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n\
-  \  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by\
-  \ [Discourse](https://www.discourse.org), best viewed with JavaScript enabled\n"
-start: null
+  \ seeking to meaningfully broaden discourse.\n\n16 Likes\n"
+start: 1675033877
 end: null
-state: null
+state:
+  - phase-2
 author: 'Gnosis Guild
 
   status: Draft

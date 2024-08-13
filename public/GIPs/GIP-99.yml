@@ -1,33 +1,30 @@
 id: gip-99-should-gnosis-guild-steward-gnosisdao-governance
 gip_number: '99'
-title: should gnosis guild steward gnosisdao governance
-body: "[ Gnosis ](/)\n\n#  [GIP-99: Should Gnosis Guild steward GnosisDAO Governance?](/t/gip-99-should-gnosis-guild-steward-gnosisdao-governance/8393)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-1](https://forum.gnosis.io/tag/phase-1)\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ April 9, 2024, 2:03am  1\n\n# GIP-99: Should Gnosis Guild steward GnosisDAO Governance?\n\
-  \n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 99\n    title:\
-  \ Should Gnosis Guild steward GnosisDAO Governance\n    author: Alex (alex@gnosisguild.org),\
-  \ Pandy (pandy@gnosisguild.org), and Auryn (auryn@gnosisguild.org)\n    status:\
-  \ Draft\n    type: Funding\n    created: 2024-04-08\n    \n\n## Category\n\nService\
-  \ Agreements\n\n## Executive Summary\n\nGnosis Guild proposes to steward GnosisDAO\
-  \ governance, guiding a new phase of innovation, experimentation, and growth. As\
-  \ GnosisDAO continues allocating resources to Gnosis Chain, Gnosis Pay, and other\
-  \ mission-aligned ventures, our team will drive the DAO’s governance strategy and\
-  \ operations through dedicated R&D, technical implementation, and ongoing stewardship.\n\
-  \nWhile Gnosis Guild has been actively contributing to the maintenance and improvement\
-  \ of GnosisDAO governance since its inception, this proposal will formalize a long-term\
-  \ partnership that prioritizes the following objectives:\n\n  * Improve, maintain,\
-  \ and secure GnosisDAO governance infrastructure.\n  * Foster the growth and further\
-  \ decentralization of the Gnosis Ecosystem.\n  * Position GnosisDAO as leading innovators\
-  \ of DAO governance.\n\n\n\nThrough these guiding stars, Gnosis Guild will also\
-  \ address the challenges currently faced by GnosisDAO’s governance. Initiatives\
-  \ includes: (1) designing a new governance architecture and roadmap to tackle the\
-  \ operational inefficiency of its monolithic governance patterns, (2) introducing\
-  \ novel funding mechanisms to address its inefficient capital allocation and lackluster\
-  \ ecosystem development, and (3) progressively decentralizing DAO processes to increase\
-  \ governance activity, transparency, and participation.\n\nOur annual funding request\
-  \ is 0.3% of AUM, 50% in USDC and 50% in GNO (at the 200-day moving average at the\
-  \ time of allocation and locked for one year), paid monthly to Gnosis Guild coinciding\
+title: ' Should Gnosis Guild steward GnosisDAO Governance? '
+body: "# GIP-99: Should Gnosis Guild steward GnosisDAO Governance?\n\n  * In Favour\n\
+  \  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 99\n    title: Should Gnosis\
+  \ Guild steward GnosisDAO Governance\n    author: Alex (alex@gnosisguild.org), Pandy\
+  \ (pandy@gnosisguild.org), and Auryn (auryn@gnosisguild.org)\n    status: Draft\n\
+  \    type: Funding\n    created: 2024-04-08\n    \n\n## Category\n\nService Agreements\n\
+  \n## Executive Summary\n\nGnosis Guild proposes to steward GnosisDAO governance,\
+  \ guiding a new phase of innovation, experimentation, and growth. As GnosisDAO continues\
+  \ allocating resources to Gnosis Chain, Gnosis Pay, and other mission-aligned ventures,\
+  \ our team will drive the DAO’s governance strategy and operations through dedicated\
+  \ R&D, technical implementation, and ongoing stewardship.\n\nWhile Gnosis Guild\
+  \ has been actively contributing to the maintenance and improvement of GnosisDAO\
+  \ governance since its inception, this proposal will formalize a long-term partnership\
+  \ that prioritizes the following objectives:\n\n  * Improve, maintain, and secure\
+  \ GnosisDAO governance infrastructure.\n  * Foster the growth and further decentralization\
+  \ of the Gnosis Ecosystem.\n  * Position GnosisDAO as leading innovators of DAO\
+  \ governance.\n\n\n\nThrough these guiding stars, Gnosis Guild will also address\
+  \ the challenges currently faced by GnosisDAO’s governance. Initiatives includes:\
+  \ (1) designing a new governance architecture and roadmap to tackle the operational\
+  \ inefficiency of its monolithic governance patterns, (2) introducing novel funding\
+  \ mechanisms to address its inefficient capital allocation and lackluster ecosystem\
+  \ development, and (3) progressively decentralizing DAO processes to increase governance\
+  \ activity, transparency, and participation.\n\nOur annual funding request is 0.3%\
+  \ of AUM, 50% in USDC and 50% in GNO (at the 200-day moving average at the time\
+  \ of allocation and locked for one year), paid monthly to Gnosis Guild coinciding\
   \ with karpatkey’s monthly treasury report.\n\n**About Gnosis Guild:** _Gnosis Guild\
   \ is a web3-native venture studio with the values of conviviality, co-ownership,\
   \ and experimentation at its heart. For over three years, our team’s modular tooling\
@@ -153,182 +150,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP-99: Should Gnosis Guild steward GnosisDAO Govern
   \ wasn’t mentioned yet and is important to understand the GIP.\n\n6 Likes\n\n[GIP-101:\
   \ Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
   \n[V2 - Should Gnosis DAO fund the continuation of the validator Monitoring Telegram\
-  \ bot?](https://forum.gnosis.io/t/v2-should-gnosis-dao-fund-the-continuation-of-the-validator-monitoring-telegram-bot/8415/9)\n\
-  \n[armog](https://forum.gnosis.io/u/armog) April 9, 2024, 8:19am  2\n\nI believe\
-  \ that GnosisDAO needs a new and updated DAO working framework. Additionally, utilizing\
-  \ novel funding mechanisms to increase community contribution while distributing\
-  \ GNO to different communities/groups and holders will enhance the DAO’s diversity\
-  \ and facilitate governance participation. What I’m curious about is the modeling\
-  \ of the payment section with examples, in an ELI5 manner. Considering GNO’s high\
-  \ performance, I wonder about the monthly and annual fees for this service.\n\n\
-  6 Likes\n\n[espina](https://forum.gnosis.io/u/espina) April 9, 2024, 5:53pm  3\n\
-  \n[@armog](/u/armog) thanks for your positive feedback. I can speak to more specifics\
-  \ on the payment section.\n\nFirst, we structured this more as a budgetary question\
-  \ rather than determining a specific workload. Our approach is: how much of the\
-  \ DAO treasury should be allocated to the continuous improvement and expansion of\
-  \ its infrastructure? From this perspective, a budget that scales with treasury\
-  \ size makes the most sense. A 0.3% annual budget would be on the conservative side\
-  \ of spending, given the central importance of the DAO’s governance and ops.\n\n\
-  In practice, for the past 9 months the payment would have looked like this:\n\n\
-  Month | Treasury AUM ($USD) | 200-day GNO Average ($USD) | Payment Date | Allocation\
-  \ |   \n---|---|---|---|---|---  \n|  |  |  | USDC | GNO  \nJuly 2023 | 264,864,823\
-  \ | 111.79 | August 1 | 33108 | 296  \nAugust 2023 | 232,957,031 | 111.21 | September\
-  \ 1 | 29120 | 262  \nSeptember 2023 | 235,127,268 | 110.31 | October 1 | 29391 |\
-  \ 266  \nOctober 2023 | 253,102,816 | 108.27 | November 1 | 31638 | 292  \nNovember\
-  \ 2023 | 386,254,913 | 116.16 | December 1 | 48282 | 416  \nDecember 2023 | 405,196,952\
-  \ | 130.89 | January 1 | 50650 | 387  \nJanuary 2024 | 420,866,830 | 144.91 | February\
-  \ 1 | 52608 | 363  \nFebruary 2024 | 732,336,883 | 168.38 | March 1 | 91542 | 544\
-  \  \nMarch 2024 | 730,243,922 | 212.47 | April 1 | 91280 | 430  \n  \n1 Like\n\n\
-  [refri](https://forum.gnosis.io/u/refri) April 9, 2024, 9:02pm  4\n\nAs an outsider\
-  \ still trying to figure out how decisions are made right now and what’s the relations\
-  \ (and possibly personal overlap) between Gnosis DAO, Gnosis Ltd, Karpatkey, Gnosis\
-  \ Builders, Gnosis Guild and maybe other involved parties, imho first step should\
-  \ be to outline a clear structure of what we have right now.  \nOnly after that\
-  \ I might feel able to judge if and how it might be worthwhile to spend DAO funds\
-  \ to optimize these structures which also require the willingness of all involved\
-  \ parties to go this way.  \nTherefore I hope to see some statements from these\
-  \ here.\n\nedit: voting on this closed already not even 24h after the post? Again\
-  \ a decision I would like to understand.\n\n6 Likes\n\n[espina](https://forum.gnosis.io/u/espina)\
-  \ April 10, 2024, 4:19am  6\n\nFor sure, creating more transparency and public decision-making\
-  \ is definitely needed and something we’re hoping to address with this proposal.\n\
-  \nGnosis Guild is an independent entity with GnosisDAO as the largest stakeholder\
-  \ (20%). Karpatkey, Gnosis Guild, along with Safe and CoW, are all spinouts of GnosisDAO.\
-  \ There is certainly overlap, but each of these entities has its own governance\
-  \ and decision process. [@ernst](/u/ernst)’s [Gnosis 3.0](https://forum.gnosis.io/t/introducing-gnosis-3-0/)\
-  \ post gives a good overview of the current structure of Gnosis. Our proposal is\
-  \ focused on GnosisDAO, which is governed solely by GNO holders and allocates the\
-  \ Gnosis treasury.\n\n(The voting closure was an error and is now back open)\n\n\
-  3 Likes\n\n[mkoeppelmann](https://forum.gnosis.io/u/mkoeppelmann) April 10, 2024,\
-  \ 10:47am  7\n\nThanks for this proposal!\n\nI do agree with the need to improve\
-  \ governance and I also think such a proposal of a long term service provider with\
-  \ a pay structure as suggested does make sense.  \nHowever - as a step to get there\
-  \ I would prefer to go a route where there are first 1-2 concrete projects with\
-  \ specified goals and budget that should already improve the status quo.\n\nIf those\
-  \ are delivered successfully I would be very open to voting for such a long-term\
-  \ “service agreement”.\n\n4 Likes\n\n[thomasrush](https://forum.gnosis.io/u/thomasrush)\
-  \ April 10, 2024, 4:00pm  8\n\nAgreed with [@mkoeppelmann](/u/mkoeppelmann) 's suggestion\
-  \ to start with 1-2 concrete projects.\n\nTo that end, as a first step I’d suggest\
-  \ that the specific problems outlined in this proposal (quoted below) ought to be\
-  \ more concretely defined and measured.\n\nFor example, the proposal states that\
-  \ one of the initiatives is to “introduc[e] novel funding mechanisms to address\
-  \ its **inefficient capital allocation** ”\n\nIf addressing “inefficient capital\
-  \ allocation” is the goal, then measuring the current capital efficiency is a logical\
-  \ first step in the process, so that a baseline can be established and any improvements\
-  \ from that baseline can be measured as well… which somewhat ironically/recursively\
-  \ will ensure that the funding of this proposal is also an efficient use of capital.\
-  \ Therefore, perhaps the first 1-2 concrete projects that were mentioned could simply\
-  \ be **the establishment of baseline metrics** for each of the proposed longer-term\
-  \ initiatives.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> Initiatives includes: (1) designing a new governance architecture\
-  \ and roadmap to tackle the operational inefficiency of its monolithic governance\
-  \ patterns, (2) introducing novel funding mechanisms to address its inefficient\
-  \ capital allocation and lackluster ecosystem development, and (3) progressively\
-  \ decentralizing DAO processes to increase governance activity, transparency, and\
-  \ participation.\n\n2 Likes\n\n[john_szczepaniak](https://forum.gnosis.io/u/john_szczepaniak)\
-  \ April 11, 2024, 12:38am  9\n\nThere’s a lot of great replies already so I’ll refrain\
-  \ from echoing them. A proposal of this nature coming from the Gnosis Guild, initially\
-  \ a DAO tooling project incubated by Gnosis, makes a lot of intuitive sense. The\
-  \ team has meaningfully contributed to GnosisDAO governance and [@auryn_macmillan](/u/auryn_macmillan)\
-  \ is uniquely positioned to implement what’s being proposed.\n\nGnosis is also uniquely\
-  \ positioned to become a leading innovator of DAO governance given its history and\
-  \ deep associations with other major DAOs in the Ethereum ecosystem. It’s no secret\
-  \ that DAO governance is difficult. Voter apathy is a behavioral feature of all\
-  \ governance frameworks. Coordinating across a distributed team and listening to\
-  \ your community is hard.\n\nNow is the time to double down on DAO governance. The\
-  \ coordination mechanisms being iterated on now in web3 present a stark contrast\
-  \ to the way that proprietary technology is built, often behind closed doors with\
-  \ private interest having the final say. It gets even more existential if we digress\
-  \ into the AI rabbit hole!\n\nMy point is that our DAO governance is a major feature\
-  \ and strength of Gnosis. Our DAO governance could be a lot stronger. We don’t have\
-  \ the capacity currently to iterate on novel funding mechanisms or, for example,\
-  \ experiment with delegating votes to an AI agent that you’ve trained to perfectly\
-  \ represent your personal set of politics. If you believe in a future with co-owned,\
-  \ collectively governed technology, then please vote for this proposal.\n\nI can’t\
-  \ think of another team that is more equipped and better suited to steward GnosisDAO\
-  \ governance than the Gnosis Guild team.\n\n5 Likes\n\n[espina](https://forum.gnosis.io/u/espina)\
-  \ April 11, 2024, 3:30am  10\n\nThanks [@mkoeppelmann](/u/mkoeppelmann), glad we\
-  \ are in agreement around the long-term service provider need and pay structure.\n\
-  \nWe’re definitely open to completing 1-2 concrete projects to start. That said,\
-  \ Gnosis Guild has been contributing to the DAO’s governance for the past several\
-  \ years in this format. These one-off projects, while successful in their piecemeal\
-  \ implementation, have failed to have the more comprehensive impact we seek here.\
-  \ There is also considerable governance overhead for drafting 1-2 short-term proposals,\
-  \ which can often take months to materialize.\n\nOur preferred approach in this\
-  \ case, would be to absorb that modification into this proposal. We would add an\
-  \ initial “trial-period” with 1-2 concrete projects + budget, which upon successful\
-  \ completion would transition to the current proposed model. This could also include\
-  \ establishing baseline metrics like [@thomasrush](/u/thomasrush) suggested. How\
-  \ does that sound?\n\n3 Likes\n\n[CryptosNF](https://forum.gnosis.io/u/CryptosNF)\
-  \ April 11, 2024, 3:51am  11\n\nI’m just a GNO holder, but I want to get more and\
-  \ more involved in the Gnosis Chain ecosystem.\n\nHaving read this proposal and\
-  \ this discussion,\n\nI think the idea of doing 1 or 2 projects as a trial period\
-  \ to let the community judge and vote on the interest and effectiveness of the Gnosis\
-  \ Guild proposal is a good alternative.\n\nNow I totally agree that we need to modernize\
-  \ the DAO governance system, maximize its efficiency and interest for holders\n\n\
-  So I’d like to thank gnosis guild for this proposal, and for being able to encourage\
-  \ discussion and debate!\n\n5 Likes\n\n[SEEDLatam](https://forum.gnosis.io/u/SEEDLatam)\
-  \ April 17, 2024, 6:04pm  12\n\n**Hey everyone!**\n\nThanks Gnosis Guild for bringing\
-  \ governance to the table. We think this is a well-crafted and well-thought-out\
-  \ proposal. The mentioned problems are known, and the solutions proposed are necessary.\
-  \ Therefore, we are in favor of an initiative like this, as it undoubtedly represents\
-  \ a step in the right direction.\n\n# Discussion\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/auryn_macmillan/48/97_2.png)\
-  \ auryn_macmillan:\n\n> ### 3\\. Service delivery\n> \n> **Immediate Improvements**\n\
-  > \n>   * Modernize the GnosisDAO’s Snapshot strategy to correctly account for a\
-  \ greater diversity of GNO holders.\n>   * Enable key delegation features for the\
-  \ DAO: split delegation, transitive delegation, and delegation term limits.\n> \
-  \  * Implement spam proposal filtration\n> \n\n\n  * We think these are excellent\
-  \ items to research and implement. Gnosis Guild’s expertise in DAO infra/tooling\
-  \ is best-in class, particularly evident in the development of the Zodiac module/roles\
-  \ among others, so we believe you are the best ones for the job.\n\n\n\nWhile the\
-  \ proposal outlines governance infrastructure improvements, which is fundamental,\
-  \ it overlooks some of the **critical aspects of onboarding and community participation**.\
-  \ Proper strategy, onboarding processes and incentives are essential for driving\
-  \ engagement, ensuring better **DAO Health** and the success of governance initiatives.\n\
-  \nWithout clear initiatives in these areas (Community onboarding, incentives, transparency,\
-  \ defined scope for participants), there may be challenges in increasing voter turnout,\
-  \ GNO token engagement in governance and basically having real/significant impact.\n\
-  \n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/refri/48/1291_2.png) refri:\n\
-  \n> Only after that I might feel able to judge if and how it might be worthwhile\
-  \ to spend DAO funds to optimize these structures which also require the willingness\
-  \ of all involved parties to go this way. Therefore I hope to see some statements\
-  \ from these here. \n\n  * **Agreed**. As mentioned, establishing a defined scope\
-  \ for each entity and articulating clear DAO objectives to understand what’s at\
-  \ stake and who decides what, is necessary to craft an efficient roadmap and begin\
-  \ working toward these goals.\n\n\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/mkoeppelmann/48/16_2.png)\
-  \ mkoeppelmann:\n\n> However - as a step to get there I would prefer to go a route\
-  \ where there are first 1-2 concrete projects with specified goals and budget that\
-  \ should already improve the status quo.\n> \n> If those are delivered successfully\
-  \ I would be very open to voting for such a long-term “service agreement”.\n\n \
-  \ * This makes sense and can be implemented with short-term funding disbursed upon\
-  \ milestone completion (contingent upon proper KPI/metrics improvement) followed\
-  \ by larger scopes responsibilities. These can be separate proposals or part of\
-  \ a bigger and structured proposal that takes into account these nuances.\n\n\n\n\
-  Having said that, we would like to support this initiative by acting as a **working\
-  \ group and core collaborator** to Gnosis Guild’s mission in shaping the future\
-  \ of GnosisDAO governance. [With our experience in hands-on governance across various\
-  \ ecosystems](https://seedorg.super.site/seedgov), we are looking forward to **filling\
-  \ that gap,** to lending our expertise and contributing to the development of a\
-  \ more resilient, decentralized and mature governance for GnosisDAO.\n\n## Conclusion\n\
-  \nWe strongly believe that this proposal addresses critical issues and offers necessary\
-  \ solutions. Regardless of the outcome of this initial vote, it’s crucial to emphasize\
-  \ that community members and stakeholders are now starting to align towards the\
-  \ long-term success of Gnosis DAO.\n\nHats off to Gnosis Guild for taking the lead\
-  \ and initiating discussions on this critical matter!\n\n8 Likes\n\n[espina](https://forum.gnosis.io/u/espina)\
-  \ April 19, 2024, 7:24pm  13\n\nWe appreciate your support and useful feedback [@SEEDLatam](/u/seedlatam)!\n\
-  \n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/seedlatam/48/2659_2.png)\
-  \ SEEDLatam:\n\n> Having said that, we would like to support this initiative by\
-  \ acting as a **working group and core collaborator** to Gnosis Guild’s mission\
-  \ in shaping the future of GnosisDAO governance.\n\nI agree that additional support\
-  \ in onboarding and community participation would be beneficial — SEED’s expertise\
-  \ and experience with similar initiatives could certainly fill that role. Collaborating\
-  \ with partners, working groups, and DAO contributors will be critical to the decentralization\
-  \ and growth of the Gnosis ecosystem.\n\n3 Likes\n\n  * [Home ](/)\n  * [Categories\
-  \ ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n\
-  \  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
-  \ best viewed with JavaScript enabled\n"
-start: null
+  \ bot?](https://forum.gnosis.io/t/v2-should-gnosis-dao-fund-the-continuation-of-the-validator-monitoring-telegram-bot/8415/9)\n"
+start: 1712620982
 end: null
-state: null
+state:
+  - phase-1
 author: Alex (alex@gnosisguild.org)
 choices:
   - For

@@ -4,6 +4,8 @@ import re
 import os
 from bs4 import BeautifulSoup
 import html2text
+from datetime import datetime
+import time
 
 print("Current working directory:", os.getcwd())
 
@@ -14,25 +16,78 @@ class CustomDumper(yaml.SafeDumper):
 
 def fetch_html_meta_content(url):
     header = {'User-Agent': 'Mozilla/5.0'}
-    res = requests.get(url,headers=header)
+    res = requests.get(url, headers=header)
     if res.status_code == 200:
         soup = BeautifulSoup(res.text, 'html.parser')
-        meta_content = soup.find('meta', attrs={'name': 'description'})['content']
 
-        # Convert the entire HTML to Markdown
+        # Find the first <time> with class 'post-time' and get the 'datetime' attribute
+        time_element = soup.find('time',  class_='post-time')
+        datetime_value = time_element['datetime'] if time_element else ""
+
+        # Convert datetime_value to Unix timestamp if it exists
+        unix_timestamp = ""
+        if datetime_value:
+            # Convert the datetime string to a datetime object
+            dt_obj = datetime.strptime(datetime_value, "%Y-%m-%dT%H:%M:%SZ")
+            # Convert the datetime object to a Unix timestamp
+            unix_timestamp = int(time.mktime(dt_obj.timetuple()))
+
+        # Extract the content of all <a> tags with class 'discourse-tag'
+        discourse_tags = [tag.text for tag in soup.find_all('a', class_='discourse-tag')]
+
+
+        # Remove all div elements with itemprop="comment"
+        for comment_div in soup.find_all('div', attrs={'itemprop': 'comment'}):
+            comment_div.decompose()
+
+         # Remove the header tag
+        if soup.header:
+            soup.header.decompose()
+
+        # Remove the footer tag
+        if soup.footer:
+            soup.footer.decompose()
+
+        # Remove the specific divs that contain the content you want to exclude
+        div_ids_to_remove = ['topic-title']
+        for div_id in div_ids_to_remove:
+            div = soup.find('div', id=div_id)
+            if div:
+                div.decompose()
+
+        # Remove the specific spans that contain the content you want to exclude
+        span_ids_to_remove = ['creator','crawler-post-infos']
+        for span_id in span_ids_to_remove:
+            span = soup.find('span', class_=span_id)
+            if span:
+                span.decompose()
+
+        # Extract meta content
+        meta_content = ""
+        if soup.find('meta', attrs={'name': 'description'}):
+            meta_content = soup.find('meta', attrs={'name': 'description'})['content']
+
+        # Extract title content
+        title_content = soup.title.string.split(':')[-1].replace('- GIPs - Gnosis','') if soup.title else ""
+
+       
+        body_content = soup.body
+
+        # Convert the cleaned HTML to Markdown
         converter = html2text.HTML2Text()
         converter.ignore_links = False  # Convert links to Markdown format
         converter.body_width = 0  # Prevents line-wrapping which can disrupt tables and code blocks
-        markdown_text = converter.handle(str(soup))
+        markdown_text = converter.handle(str(body_content))
 
-        return markdown_text, meta_content
-    return "", ""
+        return markdown_text, meta_content, title_content, unix_timestamp, discourse_tags
+    
+    return "", "", "", "",  ""
 
 def extract_info_from_meta(content):
     info = {}
     patterns = {
         'gip_number': r'GIP: (\d+)',
-        'title': r'title: (.*?)(?:, [a-z]+:|$)',
+       # 'title': r'title: (.*?)(?:, [a-z]+:|$)',
         'author': r'author: ([^,]+)',
         'state': r'status: (.*?)(?:, [a-z]+:|$)',
         'type': r'type: ([^,]+)',
@@ -55,20 +110,20 @@ def integrate_missing_proposals(missing_gips, forum_topics):
             gip_number = int(match.group(1))
             if gip_number in missing_gips:
                 url = f'https://forum.gnosis.io/t/{slug}'
-                full_content, meta_content = fetch_html_meta_content(url)
+                full_content, meta_content, title_content, unix_timestamp, discourse_tags = fetch_html_meta_content(url)
                 proposal_info = extract_info_from_meta(meta_content)
                 if proposal_info:
                     gip =  proposal_info['gip_number']
-                    title = proposal_info['title'] if proposal_info['title'] else slug.split(f'gip-{gip}-')[-1].replace('-',' ')  # Use slug if title is None
+                    title = title_content #proposal_info['title'] if proposal_info['title'] else title_content
                     # Add logic here to create the proposal dictionary based on the extracted info
                     proposal = {
                         'id': slug,
                         'gip_number': gip,
                         'title': title,
                         'body': f'{full_content}',
-                        'start': None,
+                        'start': unix_timestamp,
                         'end': None,
-                        'state': proposal_info['state'],
+                        'state': discourse_tags,
                         'author': proposal_info['author'],
                         'choices': ['For', 'Against', 'Abstain'],
                         'scores_state': None,

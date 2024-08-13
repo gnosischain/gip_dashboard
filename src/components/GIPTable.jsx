@@ -55,6 +55,9 @@ const GIPTable = ({ gips }) => {
     }, [filteredGips, currentPage, itemsPerPage]);
 
     const formatDate = (timestamp) => {
+        if (!timestamp) {
+            return ''; 
+        }
         const date = new Date(timestamp * 1000); // Convert UNIX timestamp to JS Date
         return date.toLocaleDateString("en-US", {
             year: 'numeric',
@@ -68,7 +71,9 @@ const GIPTable = ({ gips }) => {
     const getBadge_state = (state) => {
         const stateMap = {
             "closed": 'black',
-            "open": "info"
+            "open": "info",
+            "phase-1": 'info',
+            "phase-2": 'info'
         };
         return stateMap[state] || 'primary';
     };

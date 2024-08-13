@@ -1,11 +1,7 @@
 id: gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token
 gip_number: '92'
-title: should gnosis dao spin off karpatkey dao and deploy the kpk token
-body: "[ Gnosis ](/)\n\n#  [GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy\
-  \ the KPK Token?](/t/gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token/8115)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[Karpatkey](https://forum.gnosis.io/u/Karpatkey) February 15, 2024, 8:00pm  1\n\
-  \n# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token?\n\
+title: ' Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token? '
+body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token?\n\
   \n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 92\n    title:\
   \ karpatkey DAO spin-off and KPK token launch\n    author: <karpatkey>, info@karpatkey.com,\
   \ https://github.com/karpatkey\n    created: 2024-02-15\n    \n\n## Abstract\n\n\
@@ -130,94 +126,10 @@ body: "[ Gnosis ](/)\n\n#  [GIP-92: Should Gnosis DAO spin-off karpatkey DAO and
   \ decisions and transactions.\n\nThe decision to spin out karpatkey and to launch\
   \ a KPK token lies solely with the Gnosis DAO. Consequently, this document only\
   \ describes the token launch process and its technical implementation as currently\
-  \ envisaged.\n\n35 Likes\n\n[TripleD](https://forum.gnosis.io/u/TripleD) February\
-  \ 15, 2024, 10:13pm  2\n\nSpinning off would create increased visibility for a focused\
-  \ team to grow the karpatkey value, let other developers identify synergies and\
-  \ hence increase a more vibrant ecosystem. Good products with good teams should\
-  \ definitily spin-off after certain time for scaling.\n\n5 Likes\n\n[jackgale.eth](https://forum.gnosis.io/u/jackgale.eth)\
-  \ February 16, 2024, 8:30am  3\n\nThis is super interesting/exciting. Has Karpatkey\
-  \ considered launching through a MiCA-style ICO?\n\n3 Likes\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey)\
-  \ February 16, 2024, 10:04am  4\n\nThe proposal doesn’t intend to offer tokens to\
-  \ the general public. Instead, it is a spin-off from GnosisDAO, with governance\
-  \ tokens allocated to past funders and contributors. As we indicate, there will\
-  \ be fundraising in the future, but we expect this would be of a type that does\
-  \ not fall under the MiCA rules (e.g. private sale, accredited investors).\n\n6\
-  \ Likes\n\n[nylon](https://forum.gnosis.io/u/nylon) February 16, 2024, 11:45am \
-  \ 5\n\nBig congrats on getting this proposal to the DAO, excited to see this happening.\n\
-  \nPersonally I’m extremely bullish on what you guys are buildin, and this incubation\
-  \ + spin out model of GnosisDAO.\n\nGood luck!\n\n6 Likes\n\n[SixtyKeys](https://forum.gnosis.io/u/SixtyKeys)\
-  \ February 16, 2024, 1:51pm  6\n\nIt’s really cool to see [@Karpatkey](/u/karpatkey)\
-  \ evolving in the way it is, I just learned about you guys recently, and I’m a big\
-  \ fan of your work! Wishing the team all the best, and hoping to work with you in\
-  \ the near future.\n\n8 Likes\n\n[tommaso](https://forum.gnosis.io/u/tommaso) February\
-  \ 16, 2024, 6:23pm  7\n\n![image](https://forum.gnosis.io/uploads/default/original/2X/d/de939020a438a78d35413e1fd2f7cff576db7ce2.png)\n\
-  \nRegarding the “future airdrop proportional to the GIP-20 & GIP-58 expenditures”,\
-  \ is this stating that a $KPK airdrop would go towards the $GNO holders, solely\
-  \ for holding $GNO, or is there additional criteria? Thanks!\n\n3 Likes\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey)\
-  \ February 19, 2024, 4:14pm  8\n\nThe airdrop will benefit the long-term holders\
-  \ of GNO. The Gnosisdao treasury will receive KPK and define its distribution.\n\
-  \n2 Likes\n\n[tommaso](https://forum.gnosis.io/u/tommaso) February 20, 2024, 6:59pm\
-  \  9\n\nGot it, thank you & congrats on the proposal!\n\n1 Like\n\n[refri](https://forum.gnosis.io/u/refri)\
-  \ February 20, 2024, 10:44pm  10\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> **Partners** : Organisations contributing to our vision.\n\nany\
-  \ details about this? Cause there is twice the amount allocated to these entities\
-  \ as to the gnosis DAO imho this should be specified.\n\n2 Likes\n\n[Fei](https://forum.gnosis.io/u/Fei)\
-  \ February 22, 2024, 11:46am  11\n\nHey everyone, Fei here from SEED,\n\n[@SEEDLatam](/u/seedlatam)\
-  \ is excited for this new chapter, we support this proposal and look forward to\
-  \ Karpatkey DAO’s development!\n\nWe celebrate every step taken towards decentralization,\
-  \ especially when it concerns the Gnosis treasury. And we are glad to hear that\
-  \ the community will be recognized through an airdrop.\n\nOn the other hand, we\
-  \ would be interested in knowing some more details:\n\n**Regarding the token.**\n\
-  \nDo you have a TGE estimated date?\n\nWhen will the Airdrop occur?\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> The full supply will be 1 million KPK and non-transferable for\
-  \ the foreseeable future.\n\nWhat does this mean? What does it depend on? Whats\
-  \ the rationale behind it, and when do you estimate it can be transferable?\n\n\
-  ![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> The Gnosisdao treasury will receive KPK and define its distribution.\n\
-  \nSo token holders will not be airdropped, but GnosisDAO will be? If they are non-transferable,\
-  \ how will they be distributed?\n\n**On the DAO:**\n\nAre you already working on\
-  \ DAO foundations?\n\nWhat will be the scope of the DAO?\n\n**Lastly, and for reflection:**\
-  \  \nIs a DAO necessary for a treasury manager? How will you approach the expertise\
-  \ of token holders? Will they be able to better decide on treasury movements than\
-  \ you?\n\n4 Likes\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey) March 8, 2024,\
-  \ 3:27pm  12\n\nMost of this budget has not been allocated yet. As of today, the\
-  \ only qualifying partner is Gnosis Guild. We’re actively looking for partners.\n\
-  \n1 Like\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey) March 8, 2024, 3:33pm\
-  \  13\n\nThank you Fei!  \nThe TGE will be the script deployment with this GIP in\
-  \ phase 3.  \nThe aidrop will be distributed in an expected timeframe of 18 months.\
-  \  \nThe tokens will be assigned and claimed in a similar way to SAFE.  \nThe scope\
-  \ of the DAO is all of our financial services and products.\n\nA DAO is necessary\
-  \ to work with other DAOs. KPK tokenholders will decide on strategic decisions and\
-  \ be able to enforce onchain actions over our products and treasury.\n\n1 Like\n\
-  \n[Karpatkey](https://forum.gnosis.io/u/Karpatkey) March 22, 2024, 5:03pm  14\n\n\
-  Additions made to the proposal today:\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> We also put forward a $2.5 million investment proposal to GnosisDAO.\
-  \ In exchange for this investment, GnosisDAO would receive 1.25% of KPK full supply,\
-  \ valued at $200 million. A 1.25% GNO-KPK token swap would also be arranged at the\
-  \ same $200 million valuation, with a 5-year vesting period for the tokens.\n> \n\
-  > […]\n> \n> # GnosisDAO’s Investment and Token Swap\n> \n> GnosisDAO acquired 2.5%\
-  \ of karpatkey in January 2022 with the passing of [GIP-20 ](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
-  \ at a $50 million valuation. We propose to increment +2.5% ownership through:\n\
-  > \n>   * A $2.5 million investment for 1.25% ownership at a $200 million valuation;\
-  \ and\n>   * A $2.5 million GNO-KPK token swap for 1.25% ownership at a $200 million\
-  \ valuation, with a 5-year vesting period.\n> \n\n> \n> GNO token holders benefit\
-  \ from substantial ownership in karpatkey thanks to GnosisDAO’s investment, a future\
-  \ airdrop proportional to the [GIP-20 ](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
-  \ and [GIP-58 ](https://forum.gnosis.io/t/gip-58-karpatkey-dao-service-extension/5417)\
-  \ expenditures, and by being a leader in the DeFi treasury network we’re building.\n\
-  \n1 Like\n\n[Karpatkey](https://forum.gnosis.io/u/Karpatkey) March 25, 2024, 1:14pm\
-  \  15\n\nAdded KPK airdrop details to the proposal:\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> karpatkey will allocate 5% of its airdrop to GnosisDAO, bringing\
-  \ GnosisDAO’s total stake in KPK to 10% of the fully diluted supply.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/karpatkey/48/1484_2.png)\
-  \ Karpatkey:\n\n> Additionally, GnosisDAO will be allocated 5% of KPK tokens through\
-  \ the karpatkey airdrop. Bringing GnosisDAO’s total KPK stake to 10% of the fully\
-  \ diluted supply.\n\n5 Likes\n\n  * [Home ](/)\n  * [Categories ](/categories)\n\
-  \  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy\
-  \ Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org), best\
-  \ viewed with JavaScript enabled\n"
-start: null
+  \ envisaged.\n\n35 Likes\n"
+start: 1708023648
 end: null
-state: null
+state: []
 author: '&lt;karpatkey&gt;'
 choices:
   - For

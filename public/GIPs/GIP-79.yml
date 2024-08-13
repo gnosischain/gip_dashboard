@@ -1,14 +1,10 @@
 id: gip-79-should-pluser-integrate-gnosis-chain-in-mvp
 gip_number: '79'
-title: should pluser integrate gnosis chain in mvp
-body: "[ Gnosis ](/)\n\n#  [GIP-79: Should Pluser integrate Gnosis Chain in MVP?](/t/gip-79-should-pluser-integrate-gnosis-chain-in-mvp/6552)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[elshan.eth](https://forum.gnosis.io/u/elshan.eth)\
-  \ February 16, 2023, 1:00pm  1\n\n#  GIP-79: Should Pluser integrate Gnosis Chain\
-  \ in MVP?\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n   \
-  \ \n    GIP: 79\n    title: Should Pluser integrate Gnosis Chain in MVP?\n    author:\
-  \ elshan.eth\n    status: phase-2\n    type: Funding\n    created: 2023-02-16\n\
-  \    \n\n#  Summary\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0_2_690x388.jpeg)\
+title: ' Should Pluser integrate Gnosis Chain in MVP? '
+body: "#  GIP-79: Should Pluser integrate Gnosis Chain in MVP?\n\n  * Let’s do this!\n\
+  \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 79\n    title: Should\
+  \ Pluser integrate Gnosis Chain in MVP?\n    author: elshan.eth\n    status: phase-2\n\
+  \    type: Funding\n    created: 2023-02-16\n    \n\n#  Summary\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0_2_690x388.jpeg)\
   \ Problems1600×900 101 KB ](https://forum.gnosis.io/uploads/default/original/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0.jpeg\
   \ \"Problems\")\n\nAbout $2 billion were stolen from wallets in 2022 due to hacker\
   \ attacks and the loss of access. Current wallets as accounts are complex and insecure.\n\
@@ -65,13 +61,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP-79: Should Pluser integrate Gnosis Chain in MVP?
   \ It will also help onboarding users from web2.\n\n##  GnosisDAO Snapshot\n\n_Phase\
   \ 2 Proposals: Please ignore this section, and leave as is. It is used for Phase\
   \ 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot\
-  \ poll you’ve created._\n\n2 Likes\n\n  * [Home ](/)\n  * [Categories ](/categories)\n\
-  \  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy\
-  \ Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org), best\
-  \ viewed with JavaScript enabled\n"
-start: null
+  \ poll you’ve created._\n\n2 Likes\n"
+start: 1676548840
 end: null
-state: null
+state:
+  - phase-2
 author: "elshan.eth\nstatus: phase-2\ntype: Funding\ncreated: 2023-02-16\n\n\nSummary\n\
   \  \nAbout $2 billion we&hellip;"
 choices:

@@ -1,16 +1,13 @@
 id: gip-8-enable-lp-token-voting-on-snapshot
 gip_number: '8'
-title: enable lp token voting on snapshot
-body: "[ Gnosis ](/)\n\n#  [GIP-8: Enable LP token voting on Snapshot](/t/gip-8-enable-lp-token-voting-on-snapshot/1116)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[Anna](https://forum.gnosis.io/u/Anna)\
-  \ March 10, 2021, 12:49pm  1\n\n#  **Should LP token voting strategies be added\
-  \ to Snapshot?**\n\n  * Add one LP token voting strategy\n  * Add two LP token voting\
-  \ strategies\n  * Add no LP token voting strategy\n\n\n\n0 voters\n\n#  **Which\
-  \ LP token voting strategy should be added to Snapshot?**\n\n  * Balancer\n  * Uniswap\n\
-  \  * SushiSwap\n\n\n\n0 voters\n    \n    \n    GIP: 8\n    title: Enable LP token\
-  \ voting on Snapshot \n    author: Anna George\n    status: Draft\n    type: Meta\n\
-  \    created: 2021-03-10\n    \n\nThis is a continuation of the [original post](https://forum.gnosis.io/t/should-gnosisdao-allow-to-use-gno-locked-in-balancer-pools-for-voting-in-snapshot-proposals/902)\
+title: ' Enable LP token voting on Snapshot '
+body: "#  **Should LP token voting strategies be added to Snapshot?**\n\n  * Add one\
+  \ LP token voting strategy\n  * Add two LP token voting strategies\n  * Add no LP\
+  \ token voting strategy\n\n\n\n0 voters\n\n#  **Which LP token voting strategy should\
+  \ be added to Snapshot?**\n\n  * Balancer\n  * Uniswap\n  * SushiSwap\n\n\n\n0 voters\n\
+  \    \n    \n    GIP: 8\n    title: Enable LP token voting on Snapshot \n    author:\
+  \ Anna George\n    status: Draft\n    type: Meta\n    created: 2021-03-10\n    \n\
+  \nThis is a continuation of the [original post](https://forum.gnosis.io/t/should-gnosisdao-allow-to-use-gno-locked-in-balancer-pools-for-voting-in-snapshot-proposals/902)\
   \ by [@StefanGeorge](/u/stefangeorge), moving it to phase 2 as the proposal was\
   \ well perceived in the Forum discussion and the technical requirements for implementation\
   \ have been set up in the meantime.\n\n**Tl;dr:**\n\nCurrently, the GnosisDAO Snapshot\
@@ -51,119 +48,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP-8: Enable LP token voting on Snapshot](/t/gip-8-
   \n[GIP-28: Allow GNO holders to vote even if their GNO are invested/staked/locked\
   \ in Smart Contracts in different protocols/networks](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/9)\n\
   \n[GIP-28: Allow GNO holders to vote even if their GNO are invested/staked/locked\
-  \ in Smart Contracts in different protocols/networks](http://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/2)\n\
-  \n[Rafa](https://forum.gnosis.io/u/Rafa) March 10, 2021, 1:40pm  2\n\nThanks for\
-  \ setting this up. I think at some point, all LPs should be able to vote.\n\nLPs\
-  \ already take the risk of IL and inventory risk by providing liquidity. In general,\
-  \ liquidity is always a positive thing for tokens, given that it makes them more\
-  \ accesible to new adopters, determines price more efficiently, and reduces volatility\
-  \ related to low liquidity. I think LPs do enough already for the both GNO token\
-  \ and the GnosisDAO and should be offered a voice in the decision making process.\n\
-  \n1 Like\n\n[Anna](https://forum.gnosis.io/u/Anna) March 10, 2021, 2:18pm  3\n\n\
-  ![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/rafa/48/434_2.png) Rafa:\n\
-  \n> I think at some point, all LPs should be able to vote.\n\nFully agree, unfortunately\
-  \ Snapshot currently only allows for 4 strategies but hopefully that will change\
-  \ in the future.\n\n1 Like\n\n[tschubotz](https://forum.gnosis.io/u/tschubotz) March\
-  \ 15, 2021, 8:35am  4\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/anna/48/326_2.png)\
-  \ Anna:\n\n> Fully agree, unfortunately Snapshot currently only allows for 4 strategies\
-  \ but hopefully that will change in the future.\n\nIs this a technical restriction\
-  \ or is there another reason for this? Do you know by any chance?\n\n[Anna](https://forum.gnosis.io/u/Anna)\
-  \ March 15, 2021, 11:06am  5\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/tschubotz/48/279_2.png)\
-  \ tschubotz:\n\n> Is this a technical restriction or is there another reason for\
-  \ this?\n\nThe limit of 4 strategies is set by the Snapshot UI. The reason being\
-  \ that the results are computed on the users’ browsers - having too many strategies\
-  \ would take too long for results to resolve because it requires sending more requests.\n\
-  \n1 Like\n\n[LucaTripsCommunity](https://forum.gnosis.io/u/LucaTripsCommunity) March\
-  \ 16, 2021, 3:38pm  6\n\nI can’t seem to have the permissions to vote.  \nWhat shall\
-  \ I do?\n\n[Anna](https://forum.gnosis.io/u/Anna) March 16, 2021, 5:15pm  7\n\n\
-  ![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/lucatripscommunity/48/460_2.png)\
-  \ LucaTripsCommunity:\n\n> I can’t seem to have the permissions to vote.  \n>  What\
-  \ shall I do?\n\nThe poll only allows users with trust level 1 or higher to participate\
-  \ in voting.  \nTrust levels are set by Discourse, here’s an [article](https://blog.discourse.org/2018/06/understanding-discourse-trust-levels/)\
-  \ on the topic.  \nYou can fairly easily move up to trust level 1 by:\n\n  * Entering\
-  \ at least **5** topics\n  * Reading at least **30** posts\n  * Spend a total of\
-  \ **10** minutes reading posts\n\n\n\n[Anna](https://forum.gnosis.io/u/Anna) March\
-  \ 16, 2021, 5:22pm  8\n\nIdeally I would like to keep several options open when\
-  \ moving this proposal to Snapshot, as the vote here only received 19 participants\
-  \ so far and the result of a token-weighted voting could be different to this forum\
-  \ vote.  \nThe options I ideally would like to include:\n\n  * Make no change\n\
-  \  * Add Balancer and Uniswap LP Voting Strategies\n  * Add Balancer and Sushiswap\
-  \ LP Voting Strategies\n  * Add Balancer LP Voting Strategy\n\n\n\nHowever, I am\
-  \ concerned that giving too many answer options will cause the vote to fail as the\
-  \ threshold won’t be reached. (The threshold is 4% of total GNO circulating supply\
-  \ voted on the WINNING result).  \nHence, my suggestion is to only vote on two options:\n\
-  \n  * Make no change\n  * Add Balancer and Uniswap LP Voting Strategies\n\n\n\n\
-  Any thoughts on this?\n\n[gnostik](https://forum.gnosis.io/u/gnostik) March 16,\
-  \ 2021, 8:29pm  9\n\nI might be wrong, but my impression is that a single custom\
-  \ strategy can be developed to aggregate voting power from multiple sources, e.g.\
-  \ by querying multiple subgraphs. The concern of having to wait for all requests\
-  \ to complete is still valid, though proper use of `await` should help with that.\n\
-  \n[Richard](https://forum.gnosis.io/u/Richard) March 17, 2021, 10:54am  10\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/g/da6949/48.png)\
-  \ gnostik:\n\n> single custom strategy can be developed to aggregate voting power\
-  \ from multiple sources\n\nThis should be possible, but it would require that someone\
-  \ develops this strategy. The mentioned options would reuse existing strategies.\
-  \ But maybe this option should be added to the voting ![:thinking:](https://forum.gnosis.io/images/emoji/twitter/thinking.png?v=12)\n\
-  \n[Anna](https://forum.gnosis.io/u/Anna) March 17, 2021, 12:08pm  11\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/richard/48/281_2.png)\
-  \ Richard:\n\n> But maybe this option should be added to the voting ![:thinking:](https://forum.gnosis.io/images/emoji/twitter/thinking.png?v=12)\n\
-  \nI would only add strategies to the voting that exist already / we know they will\
-  \ be developed in the very near future. I reached out to the Snapshot team to get\
-  \ their opinion on this / find out if they have it on their roadmap.\n\n[@gnostik](/u/gnostik)\
-  \ thanks for bringing this up!\n\n[LucaTripsCommunity](https://forum.gnosis.io/u/LucaTripsCommunity)\
-  \ March 17, 2021, 1:52pm  12\n\nperfect I’ll do that thanks!\n\n1 Like\n\n[Anna](https://forum.gnosis.io/u/Anna)\
-  \ March 17, 2021, 9:51pm  13\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/g/da6949/48.png)\
-  \ gnostik:\n\n> my impression is that a single custom strategy can be developed\
-  \ to aggregate voting power from multiple sources, e.g. by querying multiple subgraphs.\
-  \ The concern of having to wait for all requests to complete is still valid, though\
-  \ proper use of `await` should help with that.\n\n[@gnostik](/u/gnostik) [@Richard](/u/richard)\
-  \ I briefly spoke to Fabien from snapshot and relayed your idea to him but they\
-  \ don’t have it on their roadmap for now. If we wanted to move ahead with that we\
-  \ would need a GnosisDAO vote to fund the development of this feature and set up\
-  \ a bounty.  \nI would recommend for now to vote on implementing one/two already\
-  \ existing strategies and actually see how much they are being used. Then we can\
-  \ pick up the discussion when we see LP token voting is highly being leveraged.\
-  \ Anyways, there are currently only 3 protocols for which GNO LP token voting would\
-  \ be relevant, two of them we can already accommodate.\n\n1 Like\n\n[Creampp](https://forum.gnosis.io/u/Creampp)\
-  \ March 19, 2021, 5:21pm  14\n\nwhy i can not vote? confused me\n\n[Anna](https://forum.gnosis.io/u/Anna)\
-  \ March 19, 2021, 9:44pm  15\n\n[@Creampp](/u/creampp) \\- probably same reason\
-  \ as above:\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/anna/48/326_2.png)\
-  \ Anna:\n\n> The poll only allows users with trust level 1 or higher to participate\
-  \ in voting.  \n>  Trust levels are set by Discourse, here’s an [article](https://blog.discourse.org/2018/06/understanding-discourse-trust-levels/)\
-  \ on the topic.  \n>  You can fairly easily move up to trust level 1 by:\n> \n>\
-  \   * Entering at least **5** topics\n>   * Reading at least **30** posts\n>   *\
-  \ Spend a total of **10** minutes reading posts\n> \n\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ March 24, 2021, 12:44pm  16\n\nBefore this goes live in Phase 3, I wanted to share\
-  \ [this voting power contract](https://github.com/banteg/guest-list/pull/10) that\
-  \ Banteg from Yearn put together.  \nEssentially, it creates a getter function that\
-  \ returns a “voting power” number, your governance token balance across a variety\
-  \ of pools.  \nThis way, we could track more than two additional pools without overloading\
-  \ the Snapshot UI.\n\nI think it’s worth exploring a version of this as an option\
-  \ before proceeding to phase 3.\n\n3 Likes\n\n[clesaege](https://forum.gnosis.io/u/clesaege)\
-  \ April 27, 2021, 5:13pm  17\n\nI think it’s best to allow as much GNO as possible\
-  \ to vote, so using the contract would be better than restricting to 2 strategies.\n\
-  \n1 Like\n\n[Anna](https://forum.gnosis.io/u/Anna) April 28, 2021, 12:44pm  18\n\
-  \nYes, 100%, this would be the best solution in my view. The only open question\
-  \ is about resource allocation to implement it. Will touch base on this with some\
-  \ devs this week. If it’s feasible, then we can simply have a vote on “Let’s implement\
-  \ the voting power contract to enable LP token voting” “make no change”.\n\n2 Likes\n\
-  \n[bh2smith](https://forum.gnosis.io/u/bh2smith) December 14, 2021, 9:00pm  19\n\
-  \nThere is a new proposal requesting the very same suggestions laid out here. Just\
-  \ cross posting for visibility.\n\n![](https://forum.gnosis.io/user_avatar/forum.gnosis.io/elbagococina/48/1635_2.png)\
-  \ [GIP-28: Allow GNO holders to vote even if their GNO are invested/staked/locked\
-  \ in Smart Contracts in different protocols/networks](https://forum.gnosis.io/t/should-gno-holders-be-able-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357)\
-  \ [GIPs](/c/dao/gips/21)\n\n> [poll](/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/1)\
-  \ GIP: 28 title: Allow GNO holders to vote even if their GNO are invested/staked/locked\
-  \ in Smart Contracts in different protocols/networks author: alear status: phase-3\
-  \ type: Meta created: 2022-01-31 Simple Summary Currently, GNO holders can only\
-  \ vote on a proposal if they’re holding GNO in their wallets on Mainnet. This implies\
-  \ a significant opportunity cost, since instead of just holding them, they could\
-  \ obtain a return by using them as collateral to take loans, provide liquidity to\
-  \ pools… \n\n1 Like\n\n  * [Home ](/)\n  * [Categories ](/categories)\n  * [FAQ/Guidelines\
-  \ ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\
-  \n\n\nPowered by [Discourse](https://www.discourse.org), best viewed with JavaScript\
-  \ enabled\n"
-start: null
+  \ in Smart Contracts in different protocols/networks](http://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/2)\n"
+start: 1615376966
 end: null
-state: null
+state:
+  - phase-2
 author: 'Anna George
 
   status: Draft

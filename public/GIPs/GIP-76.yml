@@ -1,252 +1,45 @@
 id: gip-76-set-up-a-legal-entity-controlled-and-owned-by-the-dao
 gip_number: '76'
-title: set up a legal entity controlled and owned by the dao
-body: "[ Gnosis ](/)\n\n#  [GIP-76: Set up a legal entity controlled and owned by\
-  \ the DAO?](/t/gip-76-set-up-a-legal-entity-controlled-and-owned-by-the-dao/6369)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-2](https://forum.gnosis.io/tag/phase-2)\n\n[monika](https://forum.gnosis.io/u/monika)\
-  \ January 20, 2023, 10:31am  1\n\n#  GIP-76: **Set up a legal entity controlled\
-  \ and owned by the DAO?**\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n\
-  \    \n    \n    GIP: 76\n    Set up a legal entity controlled and owned by the\
-  \ DAO?\n    author: Monika \n    status: Draft\n    type: Meta\n    created: 2023-01-20\n\
-  \    \n\n##  **Simple Summary**\n\nThis is a proposal to set up a legal entity (in\
-  \ the form of an LLC) owned by a Gnosis DAO wallet that enables the GnosisDAO to\
-  \ interact with business partners with an incorporated entity.\n\n##  **Abstract**\n\
-  \nThis new legal entity:  \n● Can enter into contractual arrangements on behalf\
-  \ of the GnosisDAO  \n● Can make payments to different service providers that are\
-  \ undertaking  \nservices on behalf of the GnosisDAO  \n● Can hold assets/digital\
-  \ property such as patents, copyrights or trademarks  \n● Is not owned by a physical\
-  \ person nor an official representing the company,  \ninstead the legal entity is\
-  \ owned by a smart contract address that is  \ncontrolled by the GnosisDAO\n\n##\
-  \  **Motivation**\n\nThe GnosisDAO is the decentralized collective steward of the\
-  \ Gnosis ecosystem. It is participant managed, and does not have any director or\
-  \ manager. No single party is in control. As the GnosisDAO exists entirely on-chain,\
-  \ it is not always recognised as an entity with legal personality or limited liability.\
-  \ Some maintain that an unincorporated DAO cannot enter into contracts with outside\
-  \ entities, hold bank accounts or assets, or make cash payments. In order to be\
-  \ able to function in the web2 world, we can create an associated legal entity owned\
-  \ by a smart contract address that is controlled by the GnosisDAO.\n\n##  **Specification**\n\
-  \nTogether with OtoCo (see OtoCo - Automated Company Assembly on Blockchain) it\
-  \ is possible to create an LLC in Wyoming with a member that is neither a physical\
-  \ person nor an official representing a company. Instead, the member can be a smart\
-  \ contract address.  \nThis is achieved through a so-called Series LLC. A Series\
-  \ has a Master and individual Series. Each Series is considered an LLC in its own\
-  \ right, with its own name and its own Member(s) independent from the Members of\
-  \ the Master LLC and other Series’ Members. Individual Series need a first Member.\
-  \ The first Member of a Series LLC can be a smart contract address, using the OtoCo\
-  \ company assembly smart contract.  \nEach Series LLC is represented by an NFT minted\
-  \ by the OtoCo Master contract. Company information, such as the name, is contained\
-  \ within the metadata of the NFT, which can be looked up on Etherscan.\n\nTransactions\
-  \ can be encoded via payload for a snapshot vote, therefore, transactions do not\
-  \ have to be approved manually.\n\nFor further details on the specification, see:\
-  \ Part II. The OtoCo Ethereum smart contracts - OtoCo Documentation ([gitbook.io](http://gitbook.io)).\n\
-  \n1 Like\n\n[m3rlin5ky](https://forum.gnosis.io/u/m3rlin5ky) January 20, 2023, 12:02pm\
-  \  2\n\nMakerDAO also had this kind of discussion quite a while ago:\n\n![](//forum.gnosis.io/uploads/default/original/2X/e/e33058580738e361098c7246b489966428dc3bbe.png)\
-  \ [The Maker Forum – 12 May 21](https://forum.makerdao.com/t/should-makerdao-be-registered-in-wyoming/8009\
-  \ \"04:37AM - 12 May 2021\")\n\n![](//forum.gnosis.io/uploads/default/optimized/2X/c/cd84389e1077f3aec4963d711c75801dd3a25ba0_2_690x388.jpeg)\n\
-  \n### [Should MakerDAO be registered in Wyoming?](https://forum.makerdao.com/t/should-makerdao-be-registered-in-wyoming/8009)\n\
-  \nIf DAOs can be recognized as LLCs in Wyoming, what would be the downside/upside\
-  \ to that?\n\nReading time: 1 mins \U0001F551 Likes: 9 ❤\n\nPros of establishing\
-  \ a DAO LLC in the United States:\n\n  1. **Legal recognition:** The organization\
-  \ would be legally recognized by the government, which may increase trust and participation\
-  \ from users.\n  2. **Liability protection:** Liability protection for the organization\
-  \ and its members.\n  3. **Clarity:** Legal clarity for the organization and its\
-  \ members, making it easier to navigate any legal issues that may arise.\n  4. **Compliance:**\
-  \ Make it easier for the organization to comply with local regulations and laws,\
-  \ which could be beneficial in the long term.\n\n\n\nCons of establishing a DAO\
-  \ LLC in the United States:\n\n  1. **Decentralization:** Such a step would go against\
-  \ the decentralized nature of DAOs and could limit the autonomy of the organization.\n\
-  \  2. **Jurisdiction:** Establishing GnosisDAO LLC in the US would subject the organization\
-  \ to the jurisdiction of US laws, which may not be ideal for a DAO as a global organization.\n\
-  \  3. **Complexity:** Could be a complex process and may require specialized legal\
-  \ expertise.\n  4. **Costs:** Likely be costly and may require ongoing expenses\
-  \ for compliance and legal fees.\n  5. **Security classification:** This could raise\
-  \ the issue of whether GNO/mGNO would be considered a security by the SEC. This\
-  \ could have significant legal and financial implications for the organization and\
-  \ its members. It could also limit the potential users and investors, who would\
-  \ be restricted by the regulations.\n\n\n\n3 Likes\n\n[john_szczepaniak](https://forum.gnosis.io/u/john_szczepaniak)\
-  \ January 20, 2023, 9:31pm  3\n\nHello - [@monika](/u/monika), in order for this\
-  \ to be a valid GIP in phase-2 you’ll need to include a yes/no poll. Please refer\
-  \ to the [Governance Tutorial](https://blog.gnosis.pm/gnosisdao-governance-tutorial-8257f5a1adb4).\
-  \ If you have any questions feel free to ping me.\n\n1 Like\n\n[tomiwa1a](https://forum.gnosis.io/u/tomiwa1a)\
-  \ January 21, 2023, 1:02pm  4\n\nIn my opinion, no one should start a DAO incorporated\
-  \ in the US.\n\nAll these workarounds just add more complexity that can be avoided\
-  \ if you just incorporate in e.g. Switzerland (See Safe Foundation and Ethereum\
-  \ Foundation).\n\nIf you do this method in the US, even with all these legal gymnastics,\
-  \ you will still be restricted by SEC and federal laws.\n\nFor example, if you setup\
-  \ a DAO using this method, you likely still can’t even issue tokens because of the\
-  \ Howey test.\n\n1 Like\n\n[m3rlin5ky](https://forum.gnosis.io/u/m3rlin5ky) January\
-  \ 23, 2023, 10:36am  5\n\nGnosisDAO could think about to setup a foundation in Switzerland.\
-  \ This would make more sense imo.\n\nWhy Switzerland:\n\n  * Switzerland has supportive\
-  \ and crypto-friendly regulations\n  * Swiss government has established a clear\
-  \ regulatory framework for cryptocurrencies\n  * Switzerland is a stable and secure\
-  \ location for financial services companies\n  * Switzerland has a strong tradition\
-  \ of banking secrecy, which can provide a level of privacy and security for the\
-  \ foundation’s operations.\n\n\n\nThe Ethereum Foundation is also there:\n\nThe\
-  \ Ethereum Foundation is a non-profit organization that was also established in\
-  \ Switzerland, specifically in the canton of Zug, which is known as the “Crypto\
-  \ Valley” due to the presence of many blockchain and cryptocurrency companies in\
-  \ the region. The foundation was established to support the development and adoption\
-  \ of the Ethereum blockchain and its associated technologies. The Ethereum Foundation\
-  \ is responsible for managing the Ethereum project’s assets, funding development\
-  \ and research, and promoting the use of the Ethereum technology. The foundation\
-  \ works closely with the Ethereum community to ensure the continued development\
-  \ of the Ethereum ecosystem.\n\n1 Like\n\n[monika](https://forum.gnosis.io/u/monika)\
-  \ January 23, 2023, 3:11pm  6\n\nThank you for your feedback on this important discussion.\
-  \ One key clarification: The intention is not to incorporate the DAO as a US LLC\
-  \ or to establish a form of “legal wrapper” for the DAO. Instead, the purpose behind\
-  \ this proposal is to incorporate a subsidiary entity that is wholly owned/controlled\
-  \ by the DAO, and has separate personality to enter into legally binding obligations\
-  \ with third parties. The role of the LLC will be to perform certain defined activities,\
-  \ as approved by the DAO and delegated to the LLC from time to time. One typical\
-  \ example could be entering into legal agreements with service providers. The issuance\
-  \ of tokens is a complex legal issue in many jurisdictions, and we do not envisage\
-  \ that the LLC would be used for this purpose. The Otoco protocol enables a fast\
-  \ and cost-efficient way to establish an LLC that is owned by a DAO controlled address,\
-  \ and has relatively limited ongoing maintenance requirements compared to other\
-  \ structures used by DAOs across different jurisdictions.\n\n[tomiwa1a](https://forum.gnosis.io/u/tomiwa1a)\
-  \ January 23, 2023, 6:54pm  7\n\nA distinction without a difference, I still wouldn’t\
-  \ recommend doing it in Wyoming.\n\nAlso from my understanding, it can’t be turtles\
-  \ all the way down. At some point, ownership has to be tied to a a corporation or\
-  \ an individual.\n\nIf the DAO tries to say that actually the LLC is owned by a\
-  \ smart contract, the legal authorities will say, who are the signers for this smart\
-  \ contract?\n\nI’m not a lawyer btw, but from what I know about governments they\
-  \ usually require that no matter what form is taken someone can be held responsible.\n\
-  \nI recommend just doing what the Ethereum Foundation has done and then tweaking\
-  \ to suit Gnosis’ needs as necessary. Ethereum Foundation is the best example of\
-  \ a DAO in the blockchain space. It makes sense to follow their example.\n\nMihail\
-  \ wrote a great blog post that talks about this. Search the article for the words\
-  \ “Switzerland” and “DFCA” to see some actionable advice: [Mihai’s Ethereum Project\
-  \ Update. The First Year. | Ethereum Foundation Blog](https://blog.ethereum.org/2015/03/14/ethereum-the-first-year)\n\
-  \n3 Likes\n\n[mrtdlgc](https://forum.gnosis.io/u/mrtdlgc) January 23, 2023, 11:41pm\
-  \  8\n\nStrongly against this.\n\nFirst and first of all, legal entity owned by\
-  \ a DAO is an oxymoron.\n\nWould it be decentralized? No.\n\nWould it be autonomous?\
-  \ No.\n\n[Blockchainbreakdown](https://forum.gnosis.io/u/Blockchainbreakdown) January\
-  \ 24, 2023, 4:44am  9\n\nWhile I love the general idea of this proposal as it would\
-  \ be a huge bump in helping with clarity and compliance which is important for long\
-  \ term growth, I worry that it may open up a pandoras box of “unknown unknowns”\
-  \ and put us in the crosshairs of 3 letter agents that the DAO is not ready to take\
-  \ on.\n\nIf the situation with Gemini and Genesis lending vs SEC this past week\
-  \ shows us anything, the SEC will give you just enough rope to (pardon the expression)\
-  \ hang yourself with, and come after you while the chips are down to collect a payday.\n\
-  \nThis is a great idea and path, and I think could benefit everyone if there right\
-  \ combo of preparation, due diligence and regulatory clarity… But I don’t think\
-  \ it is something we need to rush into at this time given the all out spectacle\
-  \ of US crypto regulatory discussions. Let other DAOs dive head first into this\
-  \ situation…and let us learn from those mistakes as regulatory clarity surfaces…\n\
-  \nJust my 2 satoshis.,\n\n1 Like\n\n[DigitalConsultants](https://forum.gnosis.io/u/DigitalConsultants)\
-  \ January 24, 2023, 4:46am  10\n\nProbably best to save this discussion for a point\
-  \ in time where there is a specific limitation that the DAO is encountering, which\
-  \ a DAO LLC would solve. Then, GNO holders can weigh the specific benefits/risks\
-  \ to considering such a move.\n\n3 Likes\n\n[monika](https://forum.gnosis.io/u/monika)\
-  \ January 24, 2023, 6:31pm  12\n\nHi mrtdlgc, I appreciate your concern here. Establishing\
-  \ a legal entity owned by the DAO would not necessarily compromise on decentralization\
-  \ since any activity that the entity engages in will ultimately be subject to the\
-  \ DAO’s decision making process and governance framework, which remains decentralized\
-  \ and autonomous. Accordingly, one could view this proposal as a way of preserving\
-  \ the DAO’s autonomy and decentralized governance, but which enables execution through\
-  \ an established legal entity.\n\n[monika](https://forum.gnosis.io/u/monika) January\
-  \ 24, 2023, 6:32pm  13\n\nHi Blockchainbreakdown\n\nThese are valid points that\
-  \ you raise, and obviously there are still many grey areas when it comes to the\
-  \ issues affecting DAOs, as the legal / regulatory position continues to evolve.\n\
-  \nThis is why it will be important to remain vigilant of developments in this area\
-  \ and what activities the entity engages in from time to time, so that we can try\
-  \ to mitigate any potential legal/regulatory risks going forwards.\n\nThe example\
-  \ you refer to with Gemini and Genesis is quite different in my view, as those actions\
-  \ relate to trading/lending products offered to customers by a centralised exchange,\
-  \ which is definitely not the case here and the LLC should not be used for purposes\
-  \ which would bring it within the scope of a regulated activity in the US.\n\nThe\
-  \ main purpose of the LLC would be to enable the DAO to execute governance decisions\
-  \ through a real world entity, that is able to establish legally binding and enforceable\
-  \ obligations with third parties, who may require an established legal counterparty\
-  \ for whatever reason. The purpose of this proposal is simply to incorporate the\
-  \ entity, but any activity of that entity in the future would be subject to further\
-  \ approval by the DAO. This way, the DAO has full control over the activities of\
-  \ the LLC. So each activity of the LLC would go through a due diligence process,\
-  \ further discussions among the community and a governance vote.\n\n[monika](https://forum.gnosis.io/u/monika)\
-  \ January 24, 2023, 6:33pm  14\n\nHi DigitalConsultants The idea for proposing to\
-  \ set up an entity arose from the specific limitations the DAO faces today, namely\
-  \ entering into agreements with third parties who require a legally established\
-  \ counterparty.\n\n[refri](https://forum.gnosis.io/u/refri) January 24, 2023, 7:11pm\
-  \  15\n\nFor sure we might get a different view if we know more about the details\
-  \ it should be used for. Otherwise I also would prefer a swiss based foundation,\
-  \ but ofc there might be drawbacks like higher costs.\n\n1 Like\n\n[Majico](https://forum.gnosis.io/u/Majico)\
-  \ January 25, 2023, 2:23pm  16\n\nHI! I perfectly understand the necessity to sign\
-  \ a contract IRW, hold bank accounts or assets, or make cash payments.  \nThe main\
-  \ problem that I see with GNOSISDAO owning a DAO LLC in the United States, is that\
-  \ the DAO LLC must comply with the USA regulation. I understand that technically\
-  \ the company will be owned by a smart contract, but in reality the owners will\
-  \ be the GNO holders. So, in this way, GNO holders will be part of that “SubDAO”,\
-  \ Is that correct? All parties should comply with USA regulation. Is that possible?\
-  \  \nAnother point to analyse is the possibility that GNO would be considered a\
-  \ security by the SEC, despite the fact that GNOSISDAO is not going to incorporate\
-  \ as an American LLC.  \nRegarding taxes, OtoCo doc mentions that “Unless a multi-member\
-  \ LLC has no revenue or expenses/credits to claim, a Form 1065 will need to be filed\
-  \ with the IRS and each member will be required to fill out and attach a Schedule\
-  \ K-1. This does not mean you are liable to pay taxes, it is just a reporting requirement”.\
-  \ A report is an obligation that should be complied with.  \nIn some cases, multi-member\
-  \ LLCs may be required to file a Form 8804 and 8805. Does it apply to GNO holders?\
-  \  \nNote: non-resident members of the LLC are still supposed to submit a personal\
-  \ 1040-NR for any income sourced from the U.S. and would need an ITIN”. How do you\
-  \ plan to comply with this regulation?\n\n2 Likes\n\n[Silk](https://forum.gnosis.io/u/Silk)\
-  \ January 25, 2023, 11:01pm  18\n\nIf you want to anchor the GnosisDAO in a US jurisdiction,\
-  \ so that it may be considered a US person (including for sanction compliance, tax\
-  \ payments of income etc), then this may be a solution. If this is not the case,\
-  \ passing this proposal may undo GnosisDAO painstaking daofication, in which Otoco\
-  \ was considered as a possible avenue and not chosen. Even if this is via a “subDAO”,\
-  \ I think the risk is rather large for GnosisDAO to be drawn into the US facing\
-  \ an increasingly hostile regulatory environment, especially in relation to sanctions.\
-  \ Right now, I see not much clarity as to the legal distinctions in wrapping a DAO\
-  \ and setting up an “assisting” subDAOs, if the DAO is the one initiating the LLC.\
-  \ If a specific team wishes to have a US LLC, I would suggest for GnosisDAO to spin\
-  \ the team off first and the team then deciding themselves to set up this entity\
-  \ - so that there is a clear separation between the unincorporated GnosisDAO and\
-  \ that team’s LLC. In my opinion, you will not create the level of separation necessariy\
-  \ having the DAO initiate the Otoco LLC. The risks are high. If GnosisDAO hopes\
-  \ to have a jurisdiction anchor, I believe there are better options that are less\
-  \ prejudicial and may allow for greater long term neutrality of the GnosisDAO.\n\
-  \n5 Likes\n\n[tomiwa1a](https://forum.gnosis.io/u/tomiwa1a) January 26, 2023, 3:05pm\
-  \  19\n\n[@monika](/u/monika) Can you please elaborate on why Wyoming was chosen?\n\
-  \nI actually think that having some legal entity to deal with off-chain activities\
-  \ is necessary and a good idea. Thank you for taking the time to do this. What I\
-  \ think is most helpful is more details on why Wyoming was selected relative to\
-  \ all other jurisdictions?\n\nA suggestion to make this proposal better:\n\n  1.\
-  \ A list of different possible jurisdictions for incorporating (for example, US,\
-  \ Switzerland, Singapore, Dubai)\n  2. Positives and negatives of each jurisdiction.\n\
-  \  3. A summary saying, “based on comparing all these countries, we recommend forming\
-  \ the legal entity in X country because of Y reasons.”\n\n\n\n1 Like\n\n[DigitalConsultants](https://forum.gnosis.io/u/DigitalConsultants)\
-  \ January 26, 2023, 11:50pm  21\n\nI believe Fidelity Digital is working towards\
-  \ being able to offer an account registration type specifically for DAOs (we probably\
-  \ won’t see anything until crypto regulation is passed in the US).\n\nRegarding\
-  \ ownership disclosure requirements for LLCs, there’s some good info here:\n\n![](//forum.gnosis.io/uploads/default/original/2X/0/03b90f3d1baa86e79ee4546f5503aad91a360230.png)\
-  \ [LLC University®](https://www.llcuniversity.com/banking/beneficial-ownership-rule-llc-bank-account/#the-2-step-approach-to-llc-beneficial-owners)\n\
-  \n![](//forum.gnosis.io/uploads/default/optimized/2X/3/3301248c1796d36ba27e3726e3d5ec663eb28a83_2_690x362.png)\n\
-  \n### [Beneficial Ownership Rule and LLC Bank Accounts | LLCU®](https://www.llcuniversity.com/banking/beneficial-ownership-rule-llc-bank-account/#the-2-step-approach-to-llc-beneficial-owners)\n\
-  \nUS banks are required to verify the identity of the individuals who own or control\
-  \ an LLC when opening an LLC bank account.\n\nEst. reading time: 6 minutes\n\n[auryn_macmillan](https://forum.gnosis.io/u/auryn_macmillan)\
-  \ January 27, 2023, 1:39am  22\n\n![](https://forum.gnosis.io/letter_avatar_proxy/v4/letter/m/f05b48/48.png)\
-  \ monika:\n\n> Instead, the purpose behind this proposal is to incorporate a subsidiary\
-  \ entity that is wholly owned/controlled by the DAO, and has separate personality\
-  \ to enter into legally binding obligations with third parties. The role of the\
-  \ LLC will be to perform certain defined activities, as approved by the DAO and\
-  \ delegated to the LLC from time to time.\n\nTwo questions here:\n\n  1. Is there\
-  \ a reason to prefer the US over other jurisdictions for this?\n  2. Does the DAO\
-  \ actually need to wholly own/control this entity for it fulfill the functions you\
-  \ described? Or could it suffice to have a distinct organisation with a mandate\
-  \ to perform these duties written into its by-laws/constitution/articles of incorptation/etc?\n\
-  \n\n\n1 Like\n\n[monika](https://forum.gnosis.io/u/monika) January 27, 2023, 11:37am\
-  \  23\n\nThe discussion shows clear and valid concerns from the community.\n\nAlthough\
-  \ there is always a certain element of risk, when looking for new ways to enable\
-  \ transactions IRW, the comments have shown that any touchpoint to the US is a risk,\
-  \ the community does not want to test.\n\nThis proposal will be tabled and alternative\
-  \ routes will be considered.\n\nThank you for participating in the discussion and\
-  \ for voicing your opinion, it is very much valued.\n\n5 Likes\n\n  * [Home ](/)\n\
-  \  * [Categories ](/categories)\n  * [FAQ/Guidelines ](/guidelines)\n  * [Terms\
-  \ of Service ](/tos)\n  * [Privacy Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org),\
-  \ best viewed with JavaScript enabled\n"
-start: null
+title: ' Set up a legal entity controlled and owned by the DAO? '
+body: "#  GIP-76: **Set up a legal entity controlled and owned by the DAO?**\n\n \
+  \ * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 76\n\
+  \    Set up a legal entity controlled and owned by the DAO?\n    author: Monika\
+  \ \n    status: Draft\n    type: Meta\n    created: 2023-01-20\n    \n\n##  **Simple\
+  \ Summary**\n\nThis is a proposal to set up a legal entity (in the form of an LLC)\
+  \ owned by a Gnosis DAO wallet that enables the GnosisDAO to interact with business\
+  \ partners with an incorporated entity.\n\n##  **Abstract**\n\nThis new legal entity:\
+  \  \n● Can enter into contractual arrangements on behalf of the GnosisDAO  \n● Can\
+  \ make payments to different service providers that are undertaking  \nservices\
+  \ on behalf of the GnosisDAO  \n● Can hold assets/digital property such as patents,\
+  \ copyrights or trademarks  \n● Is not owned by a physical person nor an official\
+  \ representing the company,  \ninstead the legal entity is owned by a smart contract\
+  \ address that is  \ncontrolled by the GnosisDAO\n\n##  **Motivation**\n\nThe GnosisDAO\
+  \ is the decentralized collective steward of the Gnosis ecosystem. It is participant\
+  \ managed, and does not have any director or manager. No single party is in control.\
+  \ As the GnosisDAO exists entirely on-chain, it is not always recognised as an entity\
+  \ with legal personality or limited liability. Some maintain that an unincorporated\
+  \ DAO cannot enter into contracts with outside entities, hold bank accounts or assets,\
+  \ or make cash payments. In order to be able to function in the web2 world, we can\
+  \ create an associated legal entity owned by a smart contract address that is controlled\
+  \ by the GnosisDAO.\n\n##  **Specification**\n\nTogether with OtoCo (see OtoCo -\
+  \ Automated Company Assembly on Blockchain) it is possible to create an LLC in Wyoming\
+  \ with a member that is neither a physical person nor an official representing a\
+  \ company. Instead, the member can be a smart contract address.  \nThis is achieved\
+  \ through a so-called Series LLC. A Series has a Master and individual Series. Each\
+  \ Series is considered an LLC in its own right, with its own name and its own Member(s)\
+  \ independent from the Members of the Master LLC and other Series’ Members. Individual\
+  \ Series need a first Member. The first Member of a Series LLC can be a smart contract\
+  \ address, using the OtoCo company assembly smart contract.  \nEach Series LLC is\
+  \ represented by an NFT minted by the OtoCo Master contract. Company information,\
+  \ such as the name, is contained within the metadata of the NFT, which can be looked\
+  \ up on Etherscan.\n\nTransactions can be encoded via payload for a snapshot vote,\
+  \ therefore, transactions do not have to be approved manually.\n\nFor further details\
+  \ on the specification, see: Part II. The OtoCo Ethereum smart contracts - OtoCo\
+  \ Documentation ([gitbook.io](http://gitbook.io)).\n\n1 Like\n"
+start: 1674207116
 end: null
-state: null
+state:
+  - phase-2
 author: "Monika \nstatus: Draft\ntype: Meta\ncreated: 2023-01-20\n\n\nSimple Summary\n\
   \nThis is &hellip;"
 choices:

@@ -1,33 +1,29 @@
 id: gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
 gip_number: '85'
-title: gnosisdao to support covalent as initially mentioned in gip 16
-body: "[ Gnosis ](/)\n\n#  [GIP-85: GnosisDAO to support Covalent as initially mentioned\
-  \ in GIP 16](/t/gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16/6768)\n\
-  \n[ Governance ](https://forum.gnosis.io/c/dao/20) [ GIPs ](https://forum.gnosis.io/c/dao/gips/21)\n\
-  \n[phase-1](https://forum.gnosis.io/tag/phase-1)\n\n[RyanCovalent](https://forum.gnosis.io/u/RyanCovalent)\
-  \ April 19, 2023, 6:36pm  1\n\n#  GnosisDAO to support Covalent as initially mentioned\
-  \ in GIP-16\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP:\
-  \ 85\n    title: GnosisDAO to support Covalent as initially mentioned in GIP 16\n\
-  \    author: Ryan Coree @coreeryan & David Tso @davidtsocy \n    status: Draft\n\
-  \    type: Funding\n    created: 2023-04-19\n    funding: 50,000 USD\n    \n\nDear\
-  \ GnosisDAO,\n\n[Covalent](https://www.covalenthq.com/docs/) is a hosted blockchain\
-  \ data solution providing access to full historical and current onchain data for\
-  \ 100+ supported chains, including Ethereum, Polygon, Arbitrum, Optimism, Base,\
-  \ Linea, Scroll, Avalanche, Fantom, and more.\n\nCovalent Offers 2 Products\n\n\
-  \  1. Unified API: Covalent’s industry-leading Unified API is the most robust set\
-  \ of API services available on the market today. Our Unified API returns enriched\
-  \ blockchain data applicable to all blockchain networks, e.g. token balances, transactions,\
-  \ log events, etc., enabling developers to build wallet applications like Rainbow\
-  \ Wallet, NFT galleries like NFTX, investor dashboards like CoinGecko, and taxation\
-  \ tools like Rotki. Over 3,000 applications and 35,000 active developers today rely\
-  \ on our Unified API, powering half a billion monthly API calls.\n  2. Increment:\
-  \ Increment is a Business Intelligence (BI) platform that empowers blockchain-based\
-  \ projects to understand their business metrics. Built on our Unified API, Increment\
-  \ has the full historical data set for over 100 chains. Increment is imbued with\
-  \ a standardized analytics framework – Reach (for growing a user base), Retention\
-  \ (for retaining a user base), and Revenue (for monetizing a user base). Increment\
-  \ also contains many more label tables for NFTs and DeFi.\n\n\n\nProposal\n\n  *\
-  \ As previously proposed in [GIP 16 - Gnosis Chain - xDAI/Gnosis merge](https://forum.gnosis.io/t/gip-16-gnosis-chain-xdai-gnosis-merge/1904)\
+title: ' GnosisDAO to support Covalent as initially mentioned in GIP 16 '
+body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * In\
+  \ Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 85\n    title: GnosisDAO\
+  \ to support Covalent as initially mentioned in GIP 16\n    author: Ryan Coree @coreeryan\
+  \ & David Tso @davidtsocy \n    status: Draft\n    type: Funding\n    created: 2023-04-19\n\
+  \    funding: 50,000 USD\n    \n\nDear GnosisDAO,\n\n[Covalent](https://www.covalenthq.com/docs/)\
+  \ is a hosted blockchain data solution providing access to full historical and current\
+  \ onchain data for 100+ supported chains, including Ethereum, Polygon, Arbitrum,\
+  \ Optimism, Base, Linea, Scroll, Avalanche, Fantom, and more.\n\nCovalent Offers\
+  \ 2 Products\n\n  1. Unified API: Covalent’s industry-leading Unified API is the\
+  \ most robust set of API services available on the market today. Our Unified API\
+  \ returns enriched blockchain data applicable to all blockchain networks, e.g. token\
+  \ balances, transactions, log events, etc., enabling developers to build wallet\
+  \ applications like Rainbow Wallet, NFT galleries like NFTX, investor dashboards\
+  \ like CoinGecko, and taxation tools like Rotki. Over 3,000 applications and 35,000\
+  \ active developers today rely on our Unified API, powering half a billion monthly\
+  \ API calls.\n  2. Increment: Increment is a Business Intelligence (BI) platform\
+  \ that empowers blockchain-based projects to understand their business metrics.\
+  \ Built on our Unified API, Increment has the full historical data set for over\
+  \ 100 chains. Increment is imbued with a standardized analytics framework – Reach\
+  \ (for growing a user base), Retention (for retaining a user base), and Revenue\
+  \ (for monetizing a user base). Increment also contains many more label tables for\
+  \ NFTs and DeFi.\n\n\n\nProposal\n\n  * As previously proposed in [GIP 16 - Gnosis\
+  \ Chain - xDAI/Gnosis merge](https://forum.gnosis.io/t/gip-16-gnosis-chain-xdai-gnosis-merge/1904)\
   \ by Martin Köppelmann, the Co-Founder of Gnosis: “Gnosis Chain will look to attract\
   \ core Ethereum infrastructure projects that are currently unavailable on the xDai\
   \ chain. Gnosis Chain will cover the costs associated with such deployments. Examples\
@@ -63,17 +59,11 @@ body: "[ Gnosis ](/)\n\n#  [GIP-85: GnosisDAO to support Covalent as initially m
   \ via their Unified API. It’s a great fit for Moonbeam developers looking to create\
   \ next-generation multi-chain applications.”\n\n– Derek Yoo, CEO at Moonbeam\n\n\
   Conclusion\n\nThe Covalent team hopes that the GnosisDAO can see the value of this\
-  \ partnership and pledge their support. Thank you!\n\n[john_szczepaniak](https://forum.gnosis.io/u/john_szczepaniak)\
-  \ April 25, 2023, 8:51pm  2\n\nHi Ryan - my name is John and I help to moderate\
-  \ the forum here. Thank you for authoring a GIP. I changed your GIP # to 85 as everything\
-  \ is sequential - the last GIP was 84. Take care and if you have any questions,\
-  \ please don’t hesitate to ask.\n\n  * [Home ](/)\n  * [Categories ](/categories)\n\
-  \  * [FAQ/Guidelines ](/guidelines)\n  * [Terms of Service ](/tos)\n  * [Privacy\
-  \ Policy ](/privacy)\n\n\n\nPowered by [Discourse](https://www.discourse.org), best\
-  \ viewed with JavaScript enabled\n"
-start: null
+  \ partnership and pledge their support. Thank you!\n"
+start: 1681922193
 end: null
-state: null
+state:
+  - phase-1
 author: "Ryan Coree @coreeryan &amp; David Tso @davidtsocy \nstatus: Draft\ntype&hellip;"
 choices:
   - For

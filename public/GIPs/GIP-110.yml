@@ -67,10 +67,10 @@ choices:
   - Against
   - Abstain
 scores_state: pending
-scores_total: 1619.6748424360628
+scores_total: 1687.4123614923524
 scores:
-  - 1248.3438825528565
+  - 1316.0814016091465
   - 93.8166241630919
   - 277.5143357201144
-votes: 44
+votes: 51
 quorum: 75000
