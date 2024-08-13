@@ -1,5 +1,5 @@
 id: gip-108-should-gnosisdao-honor-the-original-rewards-for-gnosisvip-before-the-distribution-schedule-was-modified-this-proposal-does-not-reward-additional-nodes-with-the-same-withdrawal-address
-gip_number: '108'
+gip_number: 108
 title: ' Should GnosisDAO honor the original rewards for GnosisVIP before the distribution
   schedule was modified (this proposal does not reward additional nodes with the same
   withdrawal address)? '

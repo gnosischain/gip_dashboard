@@ -1,5 +1,5 @@
 id: gip-8-enable-lp-token-voting-on-snapshot
-gip_number: '8'
+gip_number: 8
 title: ' Enable LP token voting on Snapshot '
 body: "#  **Should LP token voting strategies be added to Snapshot?**\n\n  * Add one\
   \ LP token voting strategy\n  * Add two LP token voting strategies\n  * Add no LP\

@@ -106,33 +106,33 @@ def integrate_missing_proposals(missing_gips, forum_topics):
     for topic in forum_topics:
         slug = topic['slug']
         match = re.search(r'GIP-?(\d+)', slug, re.IGNORECASE)
+
         if match:
             gip_number = int(match.group(1))
             if gip_number in missing_gips:
+
                 url = f'https://forum.gnosis.io/t/{slug}'
                 full_content, meta_content, title_content, unix_timestamp, discourse_tags = fetch_html_meta_content(url)
                 proposal_info = extract_info_from_meta(meta_content)
-                if proposal_info:
-                    gip =  proposal_info['gip_number']
-                    title = title_content #proposal_info['title'] if proposal_info['title'] else title_content
-                    # Add logic here to create the proposal dictionary based on the extracted info
-                    proposal = {
-                        'id': slug,
-                        'gip_number': gip,
-                        'title': title,
-                        'body': f'{full_content}',
-                        'start': unix_timestamp,
-                        'end': None,
-                        'state': discourse_tags,
-                        'author': proposal_info['author'],
-                        'choices': ['For', 'Against', 'Abstain'],
-                        'scores_state': None,
-                        'scores_total': None,
-                        'scores': [0,0,0],
-                        'votes': None,
-                        'quorum': None,
-                    }
-                    missing_proposals.append(proposal)
+                title = title_content #proposal_info['title'] if proposal_info['title'] else title_content
+                # Add logic here to create the proposal dictionary based on the extracted info
+                proposal = {
+                    'id': slug,
+                    'gip_number': gip_number,
+                    'title': title,
+                    'body': f'{full_content}',
+                    'start': unix_timestamp,
+                    'end': None,
+                    'state': discourse_tags,
+                    'author': proposal_info['author'],
+                    'choices': ['For', 'Against', 'Abstain'],
+                    'scores_state': None,
+                    'scores_total': None,
+                    'scores': [0,0,0],
+                    'votes': None,
+                    'quorum': None,
+                }
+                missing_proposals.append(proposal)
     return missing_proposals
 
 # Helper function to fetch maximum GIP number and topics from Gnosis Forum
@@ -161,7 +161,7 @@ def fetch_forum_gips(base_url):
     return max_gip, topics
 
 # Fetch maximum GIP number and topics
-base_url = 'https://forum.gnosis.io/c/dao/gips/21.json'
+base_url = 'https://forum.gnosis.io/c/dao/gips/20.json'
 max_gip, forum_topics = fetch_forum_gips(base_url)
 
 
