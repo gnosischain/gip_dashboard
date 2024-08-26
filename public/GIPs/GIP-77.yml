@@ -1,6 +1,6 @@
 id: gip-77-should-the-gnosisdao-add-delegation-spam-reduction
 gip_number: 77
-title: ' Should the GnosisDAO add delegation & spam reduction? '
+title: Should the GnosisDAO add delegation & spam reduction?
 body: "\n    GIP: 77\n    title: Should the GnosisDAO add delegation & spam reduction?\n\
   \    author: Gnosis Guild\n    status: Draft\n    type: Meta\n    created: 2023-01-20\n\
   \    \n\n  * Let’s do this!\n  * Make no change\n\n\n\n0 voters\n\n##  Simple Summary\n\
@@ -83,3 +83,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

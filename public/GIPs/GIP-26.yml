@@ -1,6 +1,6 @@
 id: gip-26-partner-with-1inch-to-increase-gno-1inch-liquidity
 gip_number: 26
-title: '1INCH liquidity '
+title: 1INCH liquidity
 body: "#  GIP-26: Partner with 1inch to increase GNO:1INCH liquidity\n\n  * Let’s\
   \ do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 26\n    title:\
   \ Partner with 1inch to increase GNO:1INCH liquidity \n    author: Karpatkey\n \
@@ -56,3 +56,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

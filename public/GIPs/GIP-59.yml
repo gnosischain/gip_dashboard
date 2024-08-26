@@ -1,6 +1,6 @@
 id: gip-59-should-gnosisdao-fund-circles-ubi-r-d-work
 gip_number: 59
-title: ' Should GnosisDAO fund Circles UBI R&D work? '
+title: Should GnosisDAO fund Circles UBI R&D work?
 body: "#  GIP-59 : Should GnosisDAO fund Circles UBI R&D work?\n\n  * Let’s do this!!\
   \ Go Circles!\n  * Make no changes\n\n\n\n0 voters\n\n###  Simple Summary\n\nThis\
   \ proposal would fund the [Circles Coop eG](http://circles.coop) and the[ Bitsposessed](https://join.bitspossessed.org/)\
@@ -173,3 +173,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 3.571 Million
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

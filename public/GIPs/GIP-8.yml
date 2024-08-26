@@ -1,6 +1,6 @@
 id: gip-8-enable-lp-token-voting-on-snapshot
 gip_number: 8
-title: ' Enable LP token voting on Snapshot '
+title: Enable LP token voting on Snapshot
 body: "#  **Should LP token voting strategies be added to Snapshot?**\n\n  * Add one\
   \ LP token voting strategy\n  * Add two LP token voting strategies\n  * Add no LP\
   \ token voting strategy\n\n\n\n0 voters\n\n#  **Which LP token voting strategy should\
@@ -70,3 +70,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

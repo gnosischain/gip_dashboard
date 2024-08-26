@@ -28,3 +28,8 @@ scores:
   - 2092.2806938709086
 votes: 831
 quorum: 0
+funding:
+  amount: 59.36M
+  currency: USD (assuming stablecoins are pegged to USD)
+  confidence: High
+  model_used: gemini-1.5-flash

@@ -1,6 +1,6 @@
 id: gip-56-should-gnosisdao-fund-student-web3-education
 gip_number: 56
-title: ' Should GnosisDAO fund student web3 education? '
+title: Should GnosisDAO fund student web3 education?
 body: "#  {Should GnosisDAO fund student web3 education?}\n\n  * Let’s do this!\n\
   \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 56\n    author: Louis,\
   \ Talam, Shaïna\n    status: Phase-2\n    type: Funding\n    created: 2022-06-30\n\
@@ -89,3 +89,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

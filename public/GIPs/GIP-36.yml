@@ -26,3 +26,8 @@ scores:
   - 40.06460356342636
 votes: 738
 quorum: 0
+funding:
+  amount: '3'
+  currency: ETH
+  confidence: 'High '
+  model_used: gemini-1.5-flash

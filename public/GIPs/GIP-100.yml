@@ -1,6 +1,6 @@
 id: gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program
 gip_number: 100
-title: ' Should Gnosis DAO conduct a large-scale buyback program? '
+title: Should Gnosis DAO conduct a large-scale buyback program?
 body: "# GIP-100: Should Gnosis DAO conduct a large-scale buyback program?\n\n  *\
   \ In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 100\n    title: <Should\
   \ Gnosis DAO conduct a large-scale buyback program?>\n    author: <Nay, Thanefield\
@@ -119,3 +119,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 30 million
+  currency: $
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -98,3 +98,8 @@ scores:
   - 0
 votes: 56
 quorum: 0
+funding:
+  amount: 120,000
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash

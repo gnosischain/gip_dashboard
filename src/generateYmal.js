@@ -19,7 +19,7 @@ const runPythonScript = () => {
   fs.mkdirSync(path.join(__dirname, 'logs'), { recursive: true });
 
   // Spawn the Python process using the virtual environment's Python executable
-  const pythonProcess = spawn(pythonExecutable, ['src/scripts/snapshot_crawler.py']);
+  const pythonProcess = spawn(pythonExecutable, ['src/scripts/snapshot_crawler_new.py']);
 
   // Handle standard output
   pythonProcess.stdout.on('data', (data) => {

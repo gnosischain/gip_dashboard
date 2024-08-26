@@ -1,7 +1,6 @@
 id: gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
 gip_number: 68
-title: ' Should GnosisDAO fund RnDAO''s Community Health analytics and benchmarking
-  tool? '
+title: Should GnosisDAO fund RnDAO's Community Health analytics and benchmarking tool?
 body: "#  GIP-68: Should GnosisDAO fund RnDAO’s Community Health analytics and benchmarking\
   \ tool?\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n\
   \    GIP: 68\n    title: Community Health analytics and benchmarking\n    author:\
@@ -145,3 +144,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 30,000
+  currency: $ (USD)
+  confidence: 'High '
+  model_used: gemini-1.5-flash

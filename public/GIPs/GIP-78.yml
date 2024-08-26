@@ -1,6 +1,6 @@
 id: gip-78-gnosis-guild-treasury-allocation-proposal-2
 gip_number: 78
-title: ' Gnosis Guild Treasury Allocation (Proposal#2) '
+title: Gnosis Guild Treasury Allocation (Proposal#2)
 body: "\n    GIP: 78\n    title: Gnosis Guild Treasury Allocation (Proposal#2)\n \
   \   author: Gnosis Guild\n    status: Draft\n    type: Funding\n    created: 2023-01-30\n\
   \    \n\n  * Let’s do this!\n  * Make no change\n\n\n\n0 voters\n\n##  Simple Summary\n\
@@ -131,3 +131,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 3,823,575
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

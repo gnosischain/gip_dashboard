@@ -1,6 +1,6 @@
 id: gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
 gip_number: 85
-title: ' GnosisDAO to support Covalent as initially mentioned in GIP 16 '
+title: GnosisDAO to support Covalent as initially mentioned in GIP 16
 body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * In\
   \ Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 85\n    title: GnosisDAO\
   \ to support Covalent as initially mentioned in GIP 16\n    author: Ryan Coree @coreeryan\
@@ -77,3 +77,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 50,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

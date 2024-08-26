@@ -21,3 +21,8 @@ scores:
   - 148.4806357715174
 votes: 571
 quorum: 0
+funding:
+  amount: 3,000,000
+  currency: DAI
+  confidence: 'High '
+  model_used: gemini-1.5-flash

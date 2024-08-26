@@ -1,7 +1,7 @@
 id: gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
 gip_number: 103
-title: ' Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program? - Governance
-  - Gnosis'
+title: Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program? - Governance
+  - Gnosis
 body: "# Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program?\n\n\
   \  * In favour\n  * Against\n\n\n\n0 voters\n\n## Executive Summary\n\nThe USDC\
   \ token on Gnosis Chain (currently available by bridging from Ethereum through the\
@@ -61,3 +61,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 8k
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash

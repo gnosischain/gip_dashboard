@@ -22,3 +22,8 @@ scores:
   - 276.58682325448115
 votes: 630
 quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

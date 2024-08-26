@@ -1,6 +1,6 @@
 id: gip-2-safe-token-model
 gip_number: 2
-title: ' SAFE Token Model '
+title: SAFE Token Model
 body: "# Should Gnosis aim to establish a governance token for Gnosis Safe?\n    \n\
   \    \n    GIP: 2\n    title: Implement SAFE Token Model\n    author: Anna George,\
   \ Lukas Schor\n    status: Pending\n    type: Meta\n    created: 2020-11-16\n  \
@@ -133,3 +133,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

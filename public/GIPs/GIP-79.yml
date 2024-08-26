@@ -1,6 +1,6 @@
 id: gip-79-should-pluser-integrate-gnosis-chain-in-mvp
 gip_number: 79
-title: ' Should Pluser integrate Gnosis Chain in MVP? '
+title: Should Pluser integrate Gnosis Chain in MVP?
 body: "#  GIP-79: Should Pluser integrate Gnosis Chain in MVP?\n\n  * Let’s do this!\n\
   \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 79\n    title: Should\
   \ Pluser integrate Gnosis Chain in MVP?\n    author: elshan.eth\n    status: phase-2\n\
@@ -80,3 +80,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: 2,000,000,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

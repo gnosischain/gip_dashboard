@@ -1,6 +1,6 @@
 id: gip-14-gnosis-vault-on-hats-finance
 gip_number: 14
-title: ' Gnosis vault on Hats.finance '
+title: Gnosis vault on Hats.finance
 body: "#  GIP- 14: Gnosis vault on Hats.finance\n\n  * Create vault on Hats.finance\n\
   \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 14\n    title: Hats.finance\
   \ vault creation\n    author: Ofir Perez <sombrero@hats.finance>\n    status: Phase\
@@ -116,3 +116,8 @@ scores:
   - 0
 votes: null
 quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash
