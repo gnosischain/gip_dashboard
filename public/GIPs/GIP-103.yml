@@ -62,8 +62,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: null
-  currency: null
-  confidence: null
-  error: 429 Resource has been exhausted (e.g. check quota).
-  model_used: none
+  amount: 8k
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash
