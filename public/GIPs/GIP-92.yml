@@ -136,7 +136,7 @@ body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Tok
   \ will be made at our discretion and included in monthly reports to maintain transparency.\n\
   \nThe final GIP-92 structure consists of a $5M investment for 2.5% ownership at\
   \ a $200M valuation, with an additional 5% ownership through an airdrop, totalling\
-  \ 7.5%. The total ownership of the Gnosisdao will amount to 10%.\n\n41 Likes\n"
+  \ 7.5%. The total ownership of the Gnosisdao will amount to 10%.\n\n42 Likes\n"
 start: 1708027248
 end: null
 state: []
@@ -156,5 +156,5 @@ quorum: null
 funding:
   amount: 2.5 million
   currency: USD (assumed)
-  confidence: 'Medium '
+  confidence: 'High '
   model_used: gemini-1.5-flash
