@@ -70,7 +70,7 @@ body: "#  GIP-6: Deploy Gnosis Auction\n\n  * Let’s do this!\n  * Make no chan
   \ in [this repository](https://github.com/gnosis/ido-contracts).  \nThe audit report\
   \ can be found [here](https://github.com/gnosis/ido-contracts/blob/main/audit-report.md)\n\
   \n4 Likes\n"
-start: 1613050383
+start: 1613053983
 end: null
 state:
   - closed

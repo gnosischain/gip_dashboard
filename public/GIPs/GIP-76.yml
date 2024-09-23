@@ -36,7 +36,7 @@ body: "#  GIP-76: **Set up a legal entity controlled and owned by the DAO?**\n\n
   \ therefore, transactions do not have to be approved manually.\n\nFor further details\
   \ on the specification, see: Part II. The OtoCo Ethereum smart contracts - OtoCo\
   \ Documentation ([gitbook.io](http://gitbook.io)).\n\n1 Like\n"
-start: 1674207116
+start: 1674210716
 end: null
 state:
   - phase-2

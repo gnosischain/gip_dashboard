@@ -86,7 +86,7 @@ body: "#  GIP- 14: Gnosis vault on Hats.finance\n\n  * Create vault on Hats.fina
   \ ignore this section, and leave as is. It is used for Phase 3 proposals.  \nPhase\
   \ 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\
   \n6 Likes\n"
-start: 1632437826
+start: 1632445026
 end: null
 state:
   - phase-2

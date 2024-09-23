@@ -62,7 +62,7 @@ body: "#  GIP-79: Should Pluser integrate Gnosis Chain in MVP?\n\n  * Let’s do
   \ 2 Proposals: Please ignore this section, and leave as is. It is used for Phase\
   \ 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot\
   \ poll you’ve created._\n\n2 Likes\n"
-start: 1676548840
+start: 1676552440
 end: null
 state:
   - phase-2
@@ -81,7 +81,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: null
-  currency: null
+  amount: 2 billion
+  currency: USD
   confidence: 'High '
   model_used: gemini-1.5-flash

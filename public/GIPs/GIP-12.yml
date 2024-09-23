@@ -25,7 +25,7 @@ body: "#  GIP-12: Treasury Swaps Program #1 GNO x BAL\n\n  * Do Treasury Swaps P
   \n[Link to discussion on Balancer forum](https://forum.balancer.fi/t/rfc-treasury-swaps-program-gno-x-bal/2110)\n\
   \n[Link to phase1 post](https://forum.gnosis.io/t/treasury-swaps-program-gno-x-bal/1440)\n\
   \n2 Likes\n"
-start: 1630926634
+start: 1630933834
 end: null
 state:
   - phase-2
@@ -44,6 +44,6 @@ votes: null
 quorum: null
 funding:
   amount: '4000'
-  currency: ETH-equivalent
+  currency: ETH
   confidence: 'High '
   model_used: gemini-1.5-flash

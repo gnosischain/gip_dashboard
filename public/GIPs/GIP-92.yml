@@ -13,7 +13,7 @@ body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Tok
   \ karpatkey will launch a DAO spin-off and a governance token (KPK) from the GnosisDAO.\n\
   \nWe also put forward a $2.5 million investment proposal to GnosisDAO. In exchange\
   \ for this investment, GnosisDAO would receive 1.25% of KPK full supply, valued\
-  \ at $200 million. A 1.25% GNO-KPK token swap would also be arranged at the same\
+  \ at $200 million. *A 1.25% GNO-KPK token swap would also be arranged at the same\
   \ $200 million valuation, with a 5-year vesting period for the tokens.\n\nkarpatkey\
   \ will allocate 5% of its airdrop to GnosisDAO, bringing GnosisDAO’s total stake\
   \ in KPK to 10% of the fully diluted supply.\n\n# Introduction\n\nWe’re ending the\
@@ -109,7 +109,7 @@ body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Tok
   \ in January 2022 with the passing of [GIP-20](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
   \ at a $50 million valuation. We propose to increment +2.5% ownership through:\n\
   \n  * A $2.5 million investment for 1.25% ownership at a $200 million valuation;\
-  \ and\n  * A $2.5 million GNO-KPK token swap for 1.25% ownership at a $200 million\
+  \ and\n  * *A $2.5 million GNO-KPK token swap for 1.25% ownership at a $200 million\
   \ valuation, with a 5-year vesting period.\n\n\n\nGNO token holders benefit from\
   \ substantial ownership in karpatkey thanks to GnosisDAO’s investment, a future\
   \ airdrop proportional to the [GIP-20](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
@@ -126,8 +126,18 @@ body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Tok
   \ decisions and transactions.\n\nThe decision to spin out karpatkey and to launch\
   \ a KPK token lies solely with the Gnosis DAO. Consequently, this document only\
   \ describes the token launch process and its technical implementation as currently\
-  \ envisaged.\n\n35 Likes\n"
-start: 1708023648
+  \ envisaged.\n\n## *Update September 2024 - Modifications to GIP-92 phase-2\n\n\
+  The initial proposal called for GnosisDAO to invest $5M in karpatkey through a $2.5M\
+  \ stablecoin investment and a $2.5M GNO-KPK token swap.\n\nHowever, given the current\
+  \ market conditions and the undervaluation of GNO, we propose replacing the token\
+  \ swap with a $2.5M USDC investment. To reinforce our commitment to GNO, karpatkey\
+  \ will allocate 10% of its total revenue over the next 12 months to purchasing GNO\
+  \ in the open market, which we estimate will add +$2M GNO to our treasury. Purchases\
+  \ will be made at our discretion and included in monthly reports to maintain transparency.\n\
+  \nThe final GIP-92 structure consists of a $5M investment for 2.5% ownership at\
+  \ a $200M valuation, with an additional 5% ownership through an airdrop, totalling\
+  \ 7.5%. The total ownership of the Gnosisdao will amount to 10%.\n\n35 Likes\n"
+start: 1708027248
 end: null
 state: []
 author: '&lt;karpatkey&gt;'
@@ -145,6 +155,6 @@ votes: null
 quorum: null
 funding:
   amount: 2.5 million
-  currency: USD (assumed based on common usage)
+  currency: USD (implied)
   confidence: 'High '
   model_used: gemini-1.5-flash
