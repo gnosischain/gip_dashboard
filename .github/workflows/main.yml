@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 * * * *" 
 
+permissions:
+  contents: write 
+
 jobs:
   scrape_data:
     runs-on: ubuntu-latest
@@ -24,10 +27,19 @@ jobs:
         source .venv/bin/activate
         pip install -r src/scripts/requirements.txt  # Assumes you have a requirements.txt file
 
-    # Step 4: Run the Python scraping script
     - name: Run scraping script
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
       run: |
         source .venv/bin/activate
         python src/scripts/snapshot_crawler.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Add generated YAML files"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
