@@ -3,7 +3,7 @@ name: Daily Scrape
 # Run the workflow daily
 on:
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 * * * *" 
 
 jobs:
   scrape_data:
@@ -26,6 +26,8 @@ jobs:
 
     # Step 4: Run the Python scraping script
     - name: Run scraping script
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
       run: |
         source .venv/bin/activate
         python src/scripts/snapshot_crawler.py
