@@ -22,7 +22,7 @@ scores:
 votes: 70
 quorum: 0
 funding:
-  amount: 715,000
-  currency: GNO
+  amount: null
+  currency: null
   confidence: 'High '
   model_used: gemini-1.5-flash

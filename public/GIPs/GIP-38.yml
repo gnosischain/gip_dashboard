@@ -30,6 +30,6 @@ votes: 831
 quorum: 0
 funding:
   amount: 59.36M
-  currency: USD (assumed based on the use of "stablecoins")
+  currency: USD (assuming stablecoins are pegged to USD)
   confidence: High
   model_used: gemini-1.5-flash

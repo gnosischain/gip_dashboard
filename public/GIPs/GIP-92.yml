@@ -155,6 +155,6 @@ votes: null
 quorum: null
 funding:
   amount: 2.5 million
-  currency: USD (assumed)
+  currency: $ (USD)
   confidence: 'High '
   model_used: gemini-1.5-flash
