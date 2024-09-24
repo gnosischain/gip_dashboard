@@ -1,9 +1,9 @@
-name: Daily Scrape
+name: Weekly Scrape
 
-# Run the workflow daily
+# Run the workflow weekly
 on:
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 0 * * 1"
 
 permissions:
   contents: write 
