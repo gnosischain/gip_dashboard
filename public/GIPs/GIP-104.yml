@@ -297,5 +297,5 @@ quorum: 75000
 funding:
   amount: 40,000
   currency: xDAI
-  confidence: High
+  confidence: 'High '
   model_used: gemini-1.5-flash

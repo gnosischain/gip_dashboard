@@ -1,0 +1,135 @@
+id: gip-113-should-gnosis-dao-provide-grants-for-omen-2-0-initiative
+gip_number: 113
+title: Should Gnosis DAO provide grants for Omen 2.0 initiative?
+body: "# GIP-113: Should Gnosis DAO fund Omen 2.0 initiative?\n\n  * In Favour\n \
+  \ * Against\n\n\n\n0 voters\n    \n    \n    GIP: 113\n    title: Grants for Presagio\
+  \ (Omen 2.0)\n    author: <Venky (@0xVenky) <venky@swaprhq.io>, Leonardo (@berteotti)\
+  \ <leo@swaprhq.io>, Diogo (@diogomf) <diogo@swaprhq.io>>\n    status: Draft\n  \
+  \  type: Funding\n    created: 2024-09-26\n    requires (*optional): <GIP number(s)>\n\
+  \    replaces (*optional): <GIP number(s)>\n    duration: 14 months (March 2024\
+  \ to May 2025)\n    funding: 400K USD + 600 GNO + transfer of Omen.eth\n    \n\n\
+  ## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Rewards and\
+  \ Reimbursement\n\n#### Executive Summary:\n\nThis proposal seeks a grant to develop\
+  \ a frontend for the Omen prediction market, that leverages AI agents to both create\
+  \ and predict market outcomes. The platform will offer users insights into real-world\
+  \ event predictions while enhancing the overall user experience. The requested grant\
+  \ of 400K WXDAI and 600 GNO will be used to fund the development and maintenance\
+  \ of the Omen frontend.\n\n#### Specification\n\nThe proposed reward and reimbursement\
+  \ program includes 400K WXDAI and 600 GNO for the development and maintenance of\
+  \ the Omen 2.0 frontend, along with the transfer of the Omen.eth ENS for branding\
+  \ and platform management. These funds will be allocated as follows: 70% for product\
+  \ development, testing, and maintenance; 15% for marketing; 3% for infrastructure;\
+  \ and 12% for project management. This program aims to drive user growth on Gnosis\
+  \ Chain, augment the Gnosis AI team and its prediction market agents, and support\
+  \ new initiatives and experiments across the broader Gnosis network.\n\n##### Technical\
+  \ Specifications\n\nThe Presagio frontend is being developed on React with Next.js,\
+  \ building upon the original OMEN conditional tokens contracts written by Gnosis.\n\
+  \nKey integrations include Gnosis AI APIs, The Graph and Dune. Gnosis AI API is\
+  \ used to fetch real-time market insights. We seek to use Gnosis AI API for new\
+  \ functionalities (e.g. market creation, agent insights). Future enhancements will\
+  \ involve building a back-end solution to improve data fetching efficiency, improving\
+  \ users experience and new functionalities (e.g. database to store data for user\
+  \ favorite markets for example).\n\nA comments section is also planned, with an\
+  \ integration of a partner-provided solution (preferably in web3 space), to allow\
+  \ user discussions within the platform.\n\n#### Rationale\n\nThe past couple of\
+  \ months, there has been a great amount of traction in prediction market area with\
+  \ Polymarket raising 70M in investment and there has been considerable user growth\
+  \ in Polymarket, limitless.exchange and manifold.markets. At Dappcon, there has\
+  \ been plenty of talks and discussions around AI, the kind of risks it poses, the\
+  \ challenges it has and how AI and blockchain could become an unstoppable force\
+  \ that needs to be kept a close watch. Gnosis has also been ahead of its time in\
+  \ terms of all the products they launch and this vision aligns well with the Gnosis\
+  \ AI and the investment they have made on AI agents.\n\nDuring Dappcon 2024, we\
+  \ showcased the new UI we had started building for prediction markets and asked\
+  \ for feedback from Martin. We explored a few possibilities around how we could\
+  \ build a frontend for Omen, where we see the predictions that AI makes and the\
+  \ research that it does when making a prediction. We will also be able to see how\
+  \ each AI agent is performing, comparing them against each other.\n\n#### Budget\n\
+  \nAs part of the proposal, we would also be looking forward to receive a grant of\
+  \ 400K in WXDAI and 600 GNO (will be used as a validator for 1 year)\n\nThe funding\
+  \ will be used for the following:\n\n  * Development, testing and maintenance of\
+  \ the product - 70%\n  * Marketing - 15%\n  * Infrastructure costs - 3%\n  * Project\
+  \ / Product management - 12%\n\n\n\nTransfer omen.eth ENS to a new multisig for\
+  \ branding, frontend deployment and management.  \nWe would also like to work closely\
+  \ with the Gnosis AI team to understand and explore the possibility to make the\
+  \ agents get better at creating markets and predicting them.\n\n**Milestones:**\n\
+  \n## Milestones: Timeline, Implementations and Deliverable\n\n### Milestone 1 -\
+  \ Support Omen 2.0 (Completed)\n\n**Deliverables:**\n\n  * Base features: \n   \
+  \ * The dapp should be able to show all the binary markets and the spread for each\
+  \ market.\n    * In the markets page, any user should be able to buy and sell the\
+  \ outcome tokens with the wallet connected.\n    * Searching and filtering of markets.\n\
+  \    * There should be a way to see the activity history and a graph depicting the\
+  \ fluctuations in the outcome of a market.\n    * Show markets that are based on\
+  \ different collateral tokens.\n    * Redemption of outcome tokens once the market\
+  \ is resolved.\n    * “My bets” page with a list of all the markets that the user\
+  \ has predicted.\n\n\n\n**Time and Price Estimate:** We are completed with this\
+  \ milestone and we worked on it for close to 4 months from March to June 2024. We\
+  \ estimate 100K for this.\n\n### Milestone 2 - Support for AI agents\n\n**Deliverables:**\n\
+  \n  * A filter for all the markets created by the AI agents. (Completed)\n  * Visualize\
+  \ whether a particular transaction is created by one of the AI agents. (Completed)\n\
+  \  * Display the resolution status and oracle, based on reality.eth oracle answering\
+  \ process (Completed)\n  * Connect with Gnosis AI APIs to show relevant articles\
+  \ related to the market. (Completed)\n  * Profile view (Completed)\n  * Wallet Prediction\
+  \ metrics (Completed)\n  * Support for Devconflict (In Progress)\n\n\n\n**Time and\
+  \ Price Estimate:** We estimate this will be done by Oct 2024 and we estimate 100K\
+  \ for this.\n\n### Milestone 3 - Support for AI agents, more market types, redesign\n\
+  \n**Deliverables:**\n\n  * AI research - If the transaction is from an AI agent,\
+  \ link the research article, the model used and the confidence rating that had been\
+  \ used to arrive at the decision. This is done by integrating with Autonolas mechs\
+  \ and Gnosis AI.\n  * AI agents overview - Display AI agents performance across\
+  \ various markets.\n  * AI agents’ leaderboard - most success, most active, category\
+  \ based info.\n  * Expand to categorical markets.\n  * Support for adding liquidity\n\
+  \  * Support for market creation.\n  * Redesign of the dapp\n  * Featured markets\n\
+  \  * Work on marketing towards building a brand for Omen in the socials.\n  * Work\
+  \ on documentation on how markets are created, bet on and resolved.\n\n\n\n**Time\
+  \ and Price Estimate:** We estimate this will be done by Mar 2025 and we estimate\
+  \ 120K for this.\n\n### Milestone 4 - More use cases\n\n**Deliverables:**\n\n  *\
+  \ Add support to have a comment section within each market.\n  * Show Related markets\n\
+  \  * Shareable market iframe\n  * Watchlist\n  * Add support for limit orders and\
+  \ stop loss orders. This will need a lot of activity to wrap the ERC1155 to a ERC20,\
+  \ update the liquidity management by the AI agent market creator to add liquidity\
+  \ on Swapr V3 and then get help from solvers to tap into these pools for adding\
+  \ support.\n\n\n\n**Time and Price Estimate:** We estimate this will be done by\
+  \ June 2025 and we estimate 80K for this.\n\nAlso, we would like to be a bit elastic\
+  \ in our milestones based on the inputs from users and community.\n\n## Evaluation\n\
+  \n**Technical performance:**\n\n  * Ensure that the frontend performs seamlessly\
+  \ and smoothly without any severe issues.\n  * Gnosis AI integration: Evaluate new\
+  \ integration possibilities with Gnosis AI APIs for market insights, prediction\
+  \ research and accuracy.\n\n\n\n**User engagement and experience:**\n\n  * Grow\
+  \ the amount of transactions using Omen by at least 500%. We will have a separate\
+  \ dune dashboard for overall TVL, transactions and the volume.\n\n\n\n**Milestone\
+  \ based progress:**\n\n  * Successful shipping of features described in each of\
+  \ the milestones.\n\n\n\n**Community involvement:**\n\n  * Regular updates to the\
+  \ community, GnosisDAO\n  * New branding for Omen and reflect the new direction\
+  \ and vision\n\n\n\n## Team/ Organization\n\nThe Presagio team comprises Leo, Diogo,\
+  \ Rorry, Nicki, Akash, and Venky. As a cohesive unit, we have collaborated for over\
+  \ a year to deliver notable projects such as Swapr’s CLAMM (<https://v3.swapr.eth.limo>)\
+  \ on Gnosis chain and Stackly (<https://stackly.app>) deployed on Mainnet, Gnosis\
+  \ chain and Arbitrum, all built atop CoW protocol infrastructure.\n\n## Conclusion\n\
+  \nPresagio (Omen 2.0) represents a significant step in the evolution of prediction\
+  \ markets, blending the AI infrastructure within the Gnosis ecosystem. The requested\
+  \ funding will enable the development, maintenance and the growth of the platform\
+  \ bringing Omen to a position of leading AI agent driven prediction market space.\n\
+  \n4 Likes\n"
+start: 1727334351
+end: null
+state:
+  - phase-2
+author: '&lt;Venky (@0xVenky) &lt;venky@swaprhq.io&gt;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 400,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

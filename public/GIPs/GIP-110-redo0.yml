@@ -75,7 +75,7 @@ scores:
 votes: 93
 quorum: 75000
 funding:
-  amount: null
-  currency: null
+  amount: 20,000
+  currency: EUR
   confidence: 'High '
   model_used: gemini-1.5-flash
