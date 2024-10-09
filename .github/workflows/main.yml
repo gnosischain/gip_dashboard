@@ -2,8 +2,9 @@ name: Weekly Scrape
 
 # Run the workflow weekly
 on:
-  schedule:
-    - cron: "0 0 * * 1"
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 0 * * 1"
 
 permissions:
   contents: write 
