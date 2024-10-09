@@ -156,6 +156,6 @@ votes: null
 quorum: null
 funding:
   amount: 2.5 million
-  currency: USD (assumed)
-  confidence: 'High '
+  currency: USD (assumed, as it's the most common currency for large investments)
+  confidence: 'Medium '
   model_used: gemini-1.5-flash

@@ -99,7 +99,7 @@ body: "# GIP-100: Should Gnosis DAO conduct a large-scale buyback program?\n\n  
   \n\n  * Allocates $15 million;\n  * Provides Karpatkey with full discretion to capitalize\
   \ on the best opportunities.\n\n\n\n#### Assessment\n\nAfter the conclusion of the\
   \ program, we should assess its results and consider whether to continue, modify,\
-  \ or end the buyback strategy going forward.\n\n5 Likes\n\n[Curia Delegate Platform](https://forum.gnosis.io/t/curia-delegate-platform/8279/3)\n\
+  \ or end the buyback strategy going forward.\n\n6 Likes\n\n[Curia Delegate Platform](https://forum.gnosis.io/t/curia-delegate-platform/8279/3)\n\
   \n[Staworth / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/2)\n\
   \n**[next page →](/t/gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program/8556?page=2)**\n"
 start: 1715950894
@@ -120,7 +120,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 30,000,000
-  currency: USD
+  amount: 30 million
+  currency: $
   confidence: 'High '
   model_used: gemini-1.5-flash
