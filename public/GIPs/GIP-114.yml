@@ -1,108 +1,83 @@
-id: gip-114-should-gnosisdao-support-an-annual-renewal-for-blockscout-sla-and-hosting-services-october-2024-october-2025
-gip_number: 114
+id: '0x0e39baff8db3a93dccdbe404fd006d881dda318c4c2bf4772dbf61552d5d52b8'
+gip_number: '114'
 title: Should GnosisDAO support an annual renewal for Blockscout SLA and hosting services
   - October 2024 - October 2025?
-body: "# GIP-114: Should GnosisDAO support an annual renewal for Blockscout SLA and\
-  \ hosting services: October 2024 - October 2025?\n\n  * In Favour\n  * Against\n\
-  \n\n\n0 voters\n    \n    \n    GIP: 114\n    title: Should GnosisDAO support an\
-  \ annual renewal for Blockscout SLA and hosting services: October 2024 - October\
-  \ 2025?\n    author: Andrew Gross <andrew.gross@blockscout.com>\n    status: Draft\n\
-  \    type: Funding\n    created: 2024-10-14\n    duration: 1 year\n    funding:\
-  \ $115,200\n    \n\n### Executive Summary\n\nBlockscout continues to be an integral\
-  \ part of the Gnosis ecosystem, providing critical blockchain explorer services\
-  \ for both the Gnosis mainnet and Chiado testnet. The open-source explorer has not\
-  \ only attracted and retained users but has also become an indispensable tool for\
-  \ Gnosis developers. We propose to continue our partnership, offering enhanced services\
-  \ and cutting-edge features to further elevate the Gnosis user experience.\n\n###\
-  \ Demonstrated Value\n\nOver the previous year (since our last update in [GIP 89](https://forum.gnosis.io/t/gip-89-should-gnosisdao-support-an-annual-renewal-for-blockscout-sla-and-hosting-services/7269)),\
+body: "### Executive Summary\nBlockscout continues to be an integral part of the Gnosis\
+  \ ecosystem, providing critical blockchain explorer services for both the Gnosis\
+  \ mainnet and Chiado testnet. The open-source explorer has not only attracted and\
+  \ retained users but has also become an indispensable tool for Gnosis developers.\
+  \ We propose to continue our partnership, offering enhanced services and cutting-edge\
+  \ features to further elevate the Gnosis user experience.\n\n### Demonstrated Value\n\
+  \nOver the previous year (since our last update in [GIP 89](https://forum.gnosis.io/t/gip-89-should-gnosisdao-support-an-annual-renewal-for-blockscout-sla-and-hosting-services/7269)),\
   \ Blockscout has delivered significant value and seen steady usage by the community.\
   \ The high-level numbers included here come from Mixpanel and directly from the\
   \ [Gnosis Blockscout instance](https://gnosis.blockscout.com/) covering stats from\
-  \ September 1, 2023 through September 1, 2024 :\n\nRobust User Base:\n\n  * Monthly\
+  \ September 1, 2023 through September 1, 2024 :\n\n Robust User Base:\n  * Monthly\
   \ active users increased from 11.2K in September 2023 to 28.4K in August 2024. High\
   \ traffic months included December 2023 with 45,069 MAU and June 2024 with 41,113\
-  \ MAU.\n  * 115K average monthly page views over the previous year\n\n\n\nDeveloper\
-  \ Support:\n\n  * 42K verified contracts (all time)\n\n\n\nUser Engagement:\n\n\
-  \  * ~4.2K signups to myAccount (since Oct 1, 2023)\n\n\n\n[![Monthly-average-users](https://forum.gnosis.io/uploads/default/optimized/2X/0/0b6a3222e103f7cdfab0b0d44368d8c71822dc76_2_690x292.png)Monthly-average-users2730×1158\
-  \ 299 KB](https://forum.gnosis.io/uploads/default/original/2X/0/0b6a3222e103f7cdfab0b0d44368d8c71822dc76.png\
-  \ \"Monthly-average-users\")\n\n  \n_Monthly Active Users Sept 2023 vs August 2024_\n\
-  \n[![gnosis-MAU](https://forum.gnosis.io/uploads/default/optimized/2X/d/d6f7b332569790d90bdc66b85186e74f90f74255_2_604x499.png)gnosis-MAU1052×870\
-  \ 46.9 KB](https://forum.gnosis.io/uploads/default/original/2X/d/d6f7b332569790d90bdc66b85186e74f90f74255.png\
-  \ \"gnosis-MAU\")\n\n  \n_Monthly average usage spiked in December 2023 and again\
-  \ in June 2024._\n\n[![Monthly-page-views-Gnosis](https://forum.gnosis.io/uploads/default/optimized/2X/a/ae1a2ca0fbfaf485b4da7d8980d278ef255567d8_2_578x500.png)Monthly-page-views-Gnosis1352×1168\
-  \ 50.4 KB](https://forum.gnosis.io/uploads/default/original/2X/a/ae1a2ca0fbfaf485b4da7d8980d278ef255567d8.png\
-  \ \"Monthly-page-views-Gnosis\")\n\n  \n_Monthly Page views averaging 115K/mo for\
-  \ Gnosis instances_\n\n### Features and Improvements\n\nOver the past year, we’ve\
-  \ implemented major features through standalone upgrades and significant backend\
-  \ (V6+) and frontend improvements (v1.2+) including:\n\n  * User Operations Support\
-  \ - [User operations on Gnosis chain - Gnosis chain explorer | Blockscout](https://gnosis.blockscout.com/ops)\n\
-  \  * Human-readable transactions\n  * Public tagging and tags submission\n  * Name\
-  \ Service support\n  * API and CSV export improvements\n  * SolidityScan security\
-  \ scores\n  * DAppscout improvements including star rating, DeFi menu and tooling,\
-  \ additional sorting features and more.\n\n\n\n[![blockscout v etherscan](https://forum.gnosis.io/uploads/default/optimized/2X/2/2d66a3d4ab740f7356dab0d633c7f46b306af0f9_2_690x245.jpeg)blockscout\
-  \ v etherscan1920×683 90.4 KB](https://forum.gnosis.io/uploads/default/original/2X/2/2d66a3d4ab740f7356dab0d633c7f46b306af0f9.jpeg\
-  \ \"blockscout v etherscan\")\n\n  \n_Top accounts page shows some additional features\
-  \ compared to Gnosisscan including tags, Genome/contract naming and more_\n\n[![dapp-marketplace](https://forum.gnosis.io/uploads/default/optimized/2X/0/0ea36d7fad7162b382f670f93c545bea6a4f4aab_2_689x413.png)dapp-marketplace2296×1376\
-  \ 390 KB](https://forum.gnosis.io/uploads/default/original/2X/0/0ea36d7fad7162b382f670f93c545bea6a4f4aab.png\
-  \ \"dapp-marketplace\")\n\n  \n_DAppscout marketplace featuring security scores\
-  \ and star ratings_\n\n### Roadmap for the upcoming year\n\n  * Advanced filtering\
-  \ and sorting options\n  * Account Abstraction improvements\n  * NFT explorer enhancements\n\
-  \  * Additional DeFi integrations\n  * Statistics and Analytics improvements (additional\
-  \ views, ability to zoom)\n  * Multichain search\n  * User engagement and retention\
-  \ mechanisms\n\n\n\n### Bridged Transactions\n\nIn addition to the roadmap items\
-  \ above, we will create a custom view for xDai bridge transactions providing similar\
-  \ functionality to the current Bridged Deposit Transactions view in Gnosisscan (<https://gnosisscan.io/txnbridge>).\
+  \ MAU.\n  * 115K average monthly page views over the previous year\n\nDeveloper\
+  \ Support: \n* 42K verified contracts (all time)\n\nUser Engagement: \n* ~4.2K signups\
+  \ to myAccount (since Oct 1, 2023)\n\n### Features and Improvements\n\nOver the\
+  \ past year, we've implemented major features through standalone upgrades and significant\
+  \ backend (V6+) and frontend improvements (v1.2+) including:\n\n* User Operations\
+  \ Support - https://gnosis.blockscout.com/ops\n* Human-readable transactions\n*\
+  \ Public tagging and tags submission\n* Name Service support\n* API and CSV export\
+  \ improvements\n* SolidityScan security scores\n* DAppscout improvements including\
+  \ star rating, DeFi menu and tooling, additional sorting features and more.\n\n\
+  ### Roadmap for the upcoming year\n\n* Advanced filtering and sorting options\n\
+  * Account Abstraction improvements\n* NFT explorer enhancements\n* Additional DeFi\
+  \ integrations\n* Statistics and Analytics improvements (additional views, ability\
+  \ to zoom)\n* Multichain search\n* User engagement and retention mechanisms\n\n\
+  ### Bridged Transactions\n\nIn addition to the roadmap items above, we will create\
+  \ a custom view for xDai bridge transactions providing similar functionality to\
+  \ the current Bridged Deposit Transactions view in Gnosisscan (https://gnosisscan.io/txnbridge).\
   \ This view provides insights into xDai origination and allows for better tracking\
   \ and transparency.\n\n### Our Commitment\n\nGnosis is one of the original Blockscout\
   \ instances and will continue to receive priority updates, services and new features\
   \ as they are developed. Blockscout will continue to provide superior service for\
-  \ the Gnosis ecosystem.\n\n  1. Maintain and host Blockscout instances for Gnosis\
-  \ Chain and Chiado testnet.\n  2. Provide premium feature updates.\n  3. Offer an\
-  \ SLA that prioritizes maximum uptime, speed, and db optimizations.\n  4. Deliver\
-  \ dedicated support via Discord.\n\n\n\n### Timeline and Financial Proposition\n\
-  \nWe propose a renewal of our 12-month engagement backdated to begin on 1 October\
-  \ 2024 and continuing through 1 October 2025. Over the past year we have optimized\
-  \ our hosting operations and on-premise infrastructure and are pleased to offer\
-  \ a 20% discount on our hosting services for 2024-25.\n\n  * Gnosis Chain Mainnet\
-  \ and archive node: $6,400/month (was $8000 per month) for a total 12 month cost\
-  \ of $76,800\n  * Chiado Testnet and archive node: $3,200/month (was $4,000/month)\
-  \ for a total 12 month cost of $38,400\n\n\n\n**Total Investment:** $115,200\n\n\
-  _This represents a $28,800 per year reduction from our 2023 pricing, reflecting\
-  \ our commitment to value and support for the Gnosis ecosystem._\n\nAmount is requested\
-  \ up front for the year. Payment can be made to Blockscout’s SAFE 0xAddress on Ethereum\
-  \ mainnet (0x242ba6d68FfEb4a098B591B32d370F973FF882B7) with USDC or USDT.\n\n###\
-  \ Ongoing Support & Continued Growth\n\nBlockscout has a proven track record of\
-  \ providing high-quality, reliable and affordable explorer services. We’ve worked\
-  \ hard over the past year to optimize our offerings and close the gap between features\
-  \ provided by closed source explorers and our open-source explorer. We’ve provided\
-  \ resilience and redundancy over the past year during numerous Gnosisscan outages.\
-  \ Above and beyond our parity with other scanners, we are dedicated to developing\
-  \ new and innovative features to support Gnosis as a standalone ecosystem as well\
-  \ as its role in the multichain future.\n\nBy renewing our partnership, you’re not\
-  \ just getting a blockchain explorer – you’re investing in the continued growth\
-  \ and success of the Gnosis ecosystem. Let’s continue building the future of blockchain\
-  \ exploration together!\n\n## Gnosis Snapshot\n\n_Phase 2 Proposals: Please ignore\
-  \ this section, and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals:\
-  \ Add a link to the corresponding Gnosis Snapshot poll you’ve created._\n\n2 Likes\n"
-start: 1728933908
-end: null
-state:
-  - phase-2
-author: null
+  \ the Gnosis ecosystem.\n\n1. Maintain and host Blockscout instances for Gnosis\
+  \ Chain and Chiado testnet.\n2. Provide premium feature updates.\n3. Offer an SLA\
+  \ that prioritizes maximum uptime, speed, and db optimizations.\n4. Deliver dedicated\
+  \ support via Discord.\n\n### Timeline and Financial Proposition\n\nWe propose a\
+  \ renewal of our 12-month engagement backdated to begin on 1 October 2024 and continuing\
+  \ through 1 October 2025. Over the past year we have optimized our hosting operations\
+  \ and on-premise infrastructure and are pleased to offer a 20% discount on our hosting\
+  \ services for 2024-25.\n\n* Gnosis Chain Mainnet and archive node: $6,400/month\
+  \ (was $8000 per month) for a total 12 month cost of $76,800\n* Chiado Testnet and\
+  \ archive node: $3,200/month (was $4,000/month) for a total 12 month cost of $38,400\n\
+  \n**Total Investment:** $115,200\n\n*This represents a $28,800 per year reduction\
+  \ from our 2023 pricing, reflecting our commitment to value and support for the\
+  \ Gnosis ecosystem.*\n\nAmount is requested up front for the year. Payment can be\
+  \ made to Blockscout’s SAFE 0xAddress on Ethereum mainnet (0x242ba6d68FfEb4a098B591B32d370F973FF882B7)\
+  \ with USDC or USDT.\n\n### Ongoing Support & Continued Growth\n\nBlockscout has\
+  \ a proven track record of providing high-quality, reliable and affordable explorer\
+  \ services. We’ve worked hard over the past year to optimize our offerings and close\
+  \ the gap between features provided by closed source explorers and our open-source\
+  \ explorer. We’ve provided resilience and redundancy over the past year during numerous\
+  \ Gnosisscan outages. Above and beyond our parity with other scanners, we are dedicated\
+  \ to developing new and innovative features to support Gnosis as a standalone ecosystem\
+  \ as well as its role in the multichain future.\n\nBy renewing our partnership,\
+  \ you're not just getting a blockchain explorer – you're investing in the continued\
+  \ growth and success of the Gnosis ecosystem. Let's continue building the future\
+  \ of blockchain exploration together!"
+start: 1729610650
+end: 1730215450
+state: active
+author: '0xd145860c3cAD12AeEc9D8021d36B48d7fAd09454'
 choices:
   - For
   - Against
   - Abstain
-scores_state: null
-scores_total: null
+scores_state: pending
+scores_total: 74272.31079879338
 scores:
-  - 0
-  - 0
-  - 0
-votes: null
-quorum: null
+  - 74272.28542120669
+  - 0.000286091003001816
+  - 0.02509149568266771
+votes: 63
+quorum: 75000
 funding:
-  amount: 115,200
-  currency: $
+  amount: null
+  currency: null
   confidence: 'High '
   model_used: gemini-1.5-flash
