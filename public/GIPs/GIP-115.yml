@@ -1,0 +1,74 @@
+id: gip-115-safe-boost-on-gnosis-chain
+gip_number: 115
+title: Safe{Boost} on Gnosis Chain
+body: "# GIP-115: Safe{Boost} on Gnosis Chain\n\n  * In Favour\n  * Against\n\n\n\n\
+  0 voters\n\n# Executive Summary\n\nSafe{Boost} is a 6-month rewards program to expand\
+  \ Safe activity and users on Gnosis Chain where users earn points when performing\
+  \ certain activities. A total of 250k SAFE tokens will be distributed as part of\
+  \ the program, based on the points accrued.\n\n**As the Joint Treasury will fund\
+  \ the program, no additional funding is required for this initiative.**\n\nIf the\
+  \ proposal receives support from both Gnosis DAO and Safe DAO, karpatkey will operationalise\
+  \ the program described below on behalf of the JT.\n\n# Rationale\n\nAs the treasury\
+  \ manager for the Safe DAO <> Gnosis DAO joint treasury (JT), karpatkey is responsible\
+  \ for allocating funds to initiatives to expand the Safe and Gnosis ecosystems.\
+  \ Within that scope, we propose launching a rewards program on Gnosis Chain, mirroring\
+  \ the activity included in the current[ Safe{Pass}](https://safe.global/pass) program\
+  \ on Ethereum Mainnet. The goal is to boost Safe user onchain interactions on the\
+  \ Gnosis Chain and grow the number of SAFE token holders on the Gnosis Chain.\n\n\
+  This campaign will also serve as valuable experience in assessing the impact of\
+  \ incentives on the overall Safe activity in Gnosis Chain. Insights gained will\
+  \ help refine future initiatives, allowing for continuous improvement and increased\
+  \ efficiency based on real data.\n\nOut of the more than[ 280,000 Safe accounts\
+  \ created in Gnosis Chain](https://dune.com/karpatkey/safe-gno) since the beginning\
+  \ of 2024 to the end of Q3:\n\n  * Around 10,000 Safes have had at least one week\
+  \ with more than 1 USD in TVL\n  * Around 18,000 Safes have made at least one transaction\n\
+  \  * Around 6,000 Safes have transferred at least 1 USD in value\n\n\n\n# Specification\n\
+  \nSafe{Boost} is a 6-month rewards program to expand Safe activity and users on\
+  \ Gnosis Chain. Users who perform the activities listed under the behavior section\
+  \ in Gnosis Chain (subject to eligibility terms) will earn points. Points will be\
+  \ updated weekly and made public in a Dune Analytics dashboard.\n\nThe program will\
+  \ be administered by karpatkey, the manager of the JT, who will be responsible for\
+  \ tracking, determining, distributing the rewards, and reporting the results.\n\n\
+  ### Eligible Activities\n\nSafe users who conduct the following actions in Gnosis\
+  \ Chain will be rewarded with points:\n\n  * **Transaction count** : The number\
+  \ of transactions made with your Safe Account.\n  * **Transaction volume** : Volume\
+  \ of the transactions made with your Safe Account (accounts with at least 1 USD\
+  \ in volume are eligible for points).\n  * **Assets stored** : The total value of\
+  \ assets stored in your Safe Account (accounts with at least 1 USD in TVL are eligible\
+  \ for points).\n  * **Regular user** : Make at least one weekly transaction with\
+  \ your Safe Account.\n\n\n\nSpecific actions related to **program partners** will\
+  \ also earn additional points. Each activity related to a program partner will be\
+  \ specific, have separate rewards, and might also qualify for points. karpatkey\
+  \ will reach out to protocols on the Gnosis Chain that are relevant to the ecosystem\
+  \ and also present a synergistic opportunity to onboard them to the program.\n\n\
+  ### Duration\n\nThe program will last for six months. Pending DAO approval, it is\
+  \ expected to start on January 10th, 2025, and finish on July 9th, 2025.\n\n# Budget\n\
+  \nOnce the program ends, a total of 250k SAFE tokens will be distributed based on\
+  \ the points accrued throughout the duration. These SAFE rewards will be distributed\
+  \ by a stream funded from the JT on Gnosis Chain (or a specifically designated Safe\
+  \ with the JT wallet on Gnosis Chain as an owner) to all eligible Safes, with a\
+  \ stream duration of 3 months.\n\n**As the Joint Treasury will fund the program,\
+  \ no additional funding is required for this initiative.**\n\n# Terms of Participation\n\
+  \nTerms of Participation are drafted in [this document](https://drive.google.com/file/d/174HcN4b0mbSYVCIYGgVhiVxyo-a0J6mQ/view?usp=sharing).\n\
+  \n7 Likes\n"
+start: 1730123309
+end: null
+state: []
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 250,000
+  currency: SAFE
+  confidence: 'High '
+  model_used: gemini-1.5-flash
