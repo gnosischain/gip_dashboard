@@ -1,19 +1,11 @@
 id: gip-79-should-pluser-integrate-gnosis-chain-in-mvp
 gip_number: 79
+url: https://forum.gnosis.io/t/gip-79-should-pluser-integrate-gnosis-chain-in-mvp
 title: Should Pluser integrate Gnosis Chain in MVP?
-body: "#  GIP-79: Should Pluser integrate Gnosis Chain in MVP?\n\n  * Let’s do this!\n\
-  \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 79\n    title: Should\
-  \ Pluser integrate Gnosis Chain in MVP?\n    author: elshan.eth\n    status: phase-2\n\
-  \    type: Funding\n    created: 2023-02-16\n    \n\n#  Summary\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0_2_690x388.jpeg)\
-  \ Problems1600×900 101 KB ](https://forum.gnosis.io/uploads/default/original/2X/0/0f22f7bf14a0e409ba046bb84540f98f95eaf0d0.jpeg\
-  \ \"Problems\")\n\nAbout $2 billion were stolen from wallets in 2022 due to hacker\
-  \ attacks and the loss of access. Current wallets as accounts are complex and insecure.\n\
-  \n#  Problems\n\n[![Problems](https://forum.gnosis.io/uploads/default/optimized/2X/4/4ceceebb59511130eb022b419714757be957d8d0_2_690x388.png)\
-  \ Problems1600×900 19.8 KB ](https://forum.gnosis.io/uploads/default/original/2X/4/4ceceebb59511130eb022b419714757be957d8d0.png\
-  \ \"Problems\")\n\n##  Authorization via Seed\n\nTo manage your wallet, you need\
-  \ to store your seed phrase securely. The seed phrase is a complex way of authorization.\
-  \ If a user loses their seed, they lose their account and assets.\n\n##  One seed\
-  \ for all devices\n\nUsers can’t control access between devices. If a user has lost\
+body: "##  Authorization via Seed\n\nTo manage your wallet, you need to store your\
+  \ seed phrase securely. The seed phrase is a complex way of authorization. If a\
+  \ user loses their seed, they lose their account and assets.\n\n##  One seed for\
+  \ all devices\n\nUsers can’t control access between devices. If a user has lost\
   \ their device, they can not block it from the account. Whoever gains access to\
   \ the device can access the user’s account. Therefore, the only option is to create\
   \ a new wallet and withdraw all assets there as soon as possible.\n\n##  Weak Security\n\
@@ -62,7 +54,7 @@ body: "#  GIP-79: Should Pluser integrate Gnosis Chain in MVP?\n\n  * Let’s do
   \ 2 Proposals: Please ignore this section, and leave as is. It is used for Phase\
   \ 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot\
   \ poll you’ve created._\n\n2 Likes\n"
-start: 1676552440
+start: 1676548840
 end: null
 state:
   - phase-2

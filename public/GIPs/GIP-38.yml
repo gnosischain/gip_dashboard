@@ -1,5 +1,6 @@
 id: '0x573707c047a3a3581ed25b91088a3aa7b4813e79d04aa67b576f151eca7f05ef'
 gip_number: '38'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x573707c047a3a3581ed25b91088a3aa7b4813e79d04aa67b576f151eca7f05ef
 title: Should GnosisDAO fund a Gnosis Chain ecosystem growth initiative?
 body: 'The GnosisDAO should fund a concerted ecosystem development effort to support
   developers and projects building on the Gnosis Chain with investments, grants, technical
@@ -30,6 +31,6 @@ votes: 831
 quorum: 0
 funding:
   amount: 59.36M
-  currency: USD (Assuming "stablecoins" refer to US Dollar-pegged stablecoins)
+  currency: USD (assuming 'stablecoins' refers to US dollar-pegged stablecoins)
   confidence: High
   model_used: gemini-1.5-flash

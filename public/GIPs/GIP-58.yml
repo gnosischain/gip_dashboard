@@ -1,5 +1,6 @@
 id: '0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8'
 gip_number: '58'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8
 title: Karpatkey DAO Service Extension
 body: 'Should GnosisDAO implement GIP-58, as detailed in the following forum post?:
   https://forum.gnosis.io/t/gip-58-karpatkey-dao-service-extension/5417

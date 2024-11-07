@@ -1,5 +1,6 @@
 id: '0xe051f12c56d14985f6851e179feae8c8c40f7c7702df3f58affbb2a67641eebf'
 gip_number: '75'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xe051f12c56d14985f6851e179feae8c8c40f7c7702df3f58affbb2a67641eebf
 title: Should GnosisDAO retroactively fund POKT-powered Public RPC endpoints for Gnosis
   Chain pruned and Gnosis Chain archival?
 body: "https://forum.gnosis.io/t/gip-75-should-gnosisdao-retroactively-fund-pokt-powered-public-rpc-endpoints-for-gnosis-chain-pruned-and-gnosis-chain-archival/6363\n\

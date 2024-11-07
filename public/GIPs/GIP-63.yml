@@ -1,5 +1,6 @@
 id: bafkreiftomumwvja4bjhkl4oqdwn24v7weuqa3embasjb36wrpu4tf67zi
 gip_number: '63'
+url: https://snapshot.org/#/gnosis.eth/proposal/bafkreiftomumwvja4bjhkl4oqdwn24v7weuqa3embasjb36wrpu4tf67zi
 title: Should GnosisDAO award a Grant to Algovera to develop a DAO framework for Decentralized
   AI Teams?
 body: 'Simple Summary
@@ -166,6 +167,6 @@ votes: 406
 quorum: 0
 funding:
   amount: 50,000
-  currency: USD
+  currency: $ (USD)
   confidence: 'High '
   model_used: gemini-1.5-flash

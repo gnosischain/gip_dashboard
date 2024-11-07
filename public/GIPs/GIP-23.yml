@@ -1,5 +1,6 @@
 id: '0x700338be6de83b533516bfed95f51a96dd6680cfae9751366b69a592e2d8386a'
 gip_number: '23'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x700338be6de83b533516bfed95f51a96dd6680cfae9751366b69a592e2d8386a
 title: 2nd amendment to GIP-17. Add authority of Instadapp SCW to daughter Safe
 body: 'Should GnosisDAO add authority of the Instadapp DSA to the Daughter Safe as
   detailed in this forum post?

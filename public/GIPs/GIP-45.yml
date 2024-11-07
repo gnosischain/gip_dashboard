@@ -1,5 +1,6 @@
 id: '0x13f2908cc42a1d21872ff284b1f71bedd452781c3daf124221e67b13511e6bd1'
 gip_number: '45'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x13f2908cc42a1d21872ff284b1f71bedd452781c3daf124221e67b13511e6bd1
 title: Should Trustlines Network migrate to Gnosis Chain?
 body: 'We propose to migrate the Trustlines Network to the Gnosis Chain and, in the
   process, change our identity implementation to use Gnosis Safe.

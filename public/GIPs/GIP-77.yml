@@ -1,13 +1,11 @@
 id: gip-77-should-the-gnosisdao-add-delegation-spam-reduction
 gip_number: 77
+url: https://forum.gnosis.io/t/gip-77-should-the-gnosisdao-add-delegation-spam-reduction
 title: Should the GnosisDAO add delegation & spam reduction?
-body: "\n    GIP: 77\n    title: Should the GnosisDAO add delegation & spam reduction?\n\
-  \    author: Gnosis Guild\n    status: Draft\n    type: Meta\n    created: 2023-01-20\n\
-  \    \n\n  * Let’s do this!\n  * Make no change\n\n\n\n0 voters\n\n##  Simple Summary\n\
-  \nThis proposal aims to introduce a number of changes to GnosisDAO’s governance\
-  \ setup which will:\n\n  1. Reduce low-quality and spam proposals created in the\
-  \ GnosisDAO’s snapshot space.\n  2. Make GnosisDAO’s influence distribution less\
-  \ opaque.\n  3. Improve vote-weight utilization.\n\n\n\n##  Abstract\n\nBroadly,\
+body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes to\
+  \ GnosisDAO’s governance setup which will:\n\n  1. Reduce low-quality and spam proposals\
+  \ created in the GnosisDAO’s snapshot space.\n  2. Make GnosisDAO’s influence distribution\
+  \ less opaque.\n  3. Improve vote-weight utilization.\n\n\n\n##  Abstract\n\nBroadly,\
   \ this proposal aims to introduce two changes:\n\n  1. Modify the criteria for users\
   \ to post proposals to the GnosisDAO’s snapshot space. \n    1. Accounts holding\
   \ ≥ 1 GNO can create a proposal (current).\n    2. Add some trusted moderators that\
@@ -51,7 +49,7 @@ body: "\n    GIP: 77\n    title: Should the GnosisDAO add delegation & spam redu
   \n[GIP-101: Should karpatkey and StableLab Establish a Delegate Program v0 for the\
   \ GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
   \n[Karpatkey Delegate Platform](https://forum.gnosis.io/t/karpatkey-delegate-platform/7252)\n"
-start: 1674162370
+start: 1674158770
 end: null
 state:
   - phase-2

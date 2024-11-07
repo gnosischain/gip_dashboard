@@ -1,5 +1,6 @@
 id: '0x185609896381d3e5e77bcf025b1618e8d107e862c0de34a942408964cca56527'
 gip_number: '98'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x185609896381d3e5e77bcf025b1618e8d107e862c0de34a942408964cca56527
 title: Should GnosisDAO invest in HOPR to kickstart development of GnosisVPN?
 body: 'Abstract
 
@@ -49,5 +50,6 @@ quorum: 75000
 funding:
   amount: null
   currency: null
-  confidence: 'High '
-  model_used: gemini-1.5-flash
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

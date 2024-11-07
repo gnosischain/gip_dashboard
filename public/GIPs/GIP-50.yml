@@ -1,5 +1,6 @@
 id: '0x29999cc9fc63fcf386bcbb8bd86d676a6736b0786305d564a642808dacd84611'
 gip_number: '50'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x29999cc9fc63fcf386bcbb8bd86d676a6736b0786305d564a642808dacd84611
 title: Should TrustSwap deploy smart contract utilities on Gnosis Chain?
 body: "https://forum.gnosis.io/t/gip-50-should-trustswap-deploy-smart-contract-utilities-on-gnosis-chain/5282?u=trustswap\n\
   \n[TrustSwap](https://trustswap.com/) is requesting a grant of $50,000 from the\

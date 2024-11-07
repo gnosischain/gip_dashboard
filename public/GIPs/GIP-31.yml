@@ -1,5 +1,6 @@
 id: '0xa5245b0893ee9faeefd865439751c6a96a6c948ce578c4eab2a12313b39bf1aa'
 gip_number: '31'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xa5245b0893ee9faeefd865439751c6a96a6c948ce578c4eab2a12313b39bf1aa
 title: Should Gnosis Chain perform a Hardfork to upgrade the token contract vulnerable
   to the reentrancy attack?
 body: The hard fork assumes to update Gnosis Chain spec file (explicitly or through

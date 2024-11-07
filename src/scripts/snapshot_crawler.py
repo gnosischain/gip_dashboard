@@ -124,17 +124,86 @@ def parse_html_content(html_content):
     # Extract tags
     discourse_tags = [tag.text for tag in soup.find_all('a', class_='discourse-tag')]
     
-    # Clean up HTML content
-    clean_html_content(soup)
-    
     # Extract meta content and title
     meta_content = soup.find('meta', attrs={'name': 'description'})['content'] if soup.find('meta', attrs={'name': 'description'}) else ""
     title_content = soup.title.string.split(':')[-1].replace('- GIPs - Gnosis','').strip() if soup.title else ""
     
-    # Convert to Markdown
+    # Clean up HTML content
+    clean_html_content(soup)
+    
+    # Remove title from body content
+    # Find and remove the first h1 or h2 that contains the title
+    title_elements = soup.find_all(['h1', 'h2'])
+    for element in title_elements:
+        if element.get_text().strip().lower() == title_content.lower() or \
+           element.get_text().strip().startswith(f"GIP-") or \
+           "Should" in element.get_text():
+            element.decompose()
+            break
+    
+    # Convert remaining content to Markdown
     markdown_text = html_to_markdown(str(soup.body))
     
-    return markdown_text, meta_content, title_content, unix_timestamp, discourse_tags
+    # Remove any remaining title-like lines from the start of the markdown
+    markdown_lines = markdown_text.split('\n')
+    while markdown_lines and (
+        markdown_lines[0].strip().lower() == title_content.lower() or
+        markdown_lines[0].strip().startswith("# GIP-") or
+        "Should" in markdown_lines[0]
+    ):
+        markdown_lines.pop(0)
+    
+    # Rejoin the markdown text, skipping empty lines at the start
+    while markdown_lines and not markdown_lines[0].strip():
+        markdown_lines.pop(0)
+    
+    markdown_text = '\n'.join(markdown_lines)
+    cleaned_body = clean_body_content(markdown_text)
+    
+    return cleaned_body, meta_content, title_content, unix_timestamp, discourse_tags
+
+def clean_body_content(body_text):
+    # Split into lines for processing
+    lines = body_text.split('\n')
+    
+    # Find where the actual content starts
+    content_start = 0
+    in_header = False
+    
+    for i, line in enumerate(lines):
+        line = line.strip()
+        
+        # Skip empty lines
+        if not line:
+            continue
+            
+        # Check for header section markers
+        if line.startswith('GIP:') or line == '0 voters':
+            in_header = True
+            continue
+            
+        # Look for common content start markers
+        if (line.startswith('##') or 
+            line.startswith('Category') or
+            line.startswith('Executive Summary') or
+            line.startswith('Simple Summary') or
+            line.startswith('Abstract') or
+            line.startswith('Motivation')):
+            content_start = i
+            break
+            
+        # If we're not in a header section and find substantial content, start here
+        if not in_header and len(line) > 20 and not line.startswith('*'):
+            content_start = i
+            break
+    
+    # Join remaining lines
+    cleaned_content = '\n'.join(lines[content_start:])
+    
+    # Remove any leading empty lines
+    cleaned_content = cleaned_content.lstrip()
+    
+    return cleaned_content
 
 def convert_to_unix_timestamp(datetime_value):
     if datetime_value:
@@ -291,6 +360,7 @@ def create_yaml_content(proposal):
     return {
         'id': proposal['id'],
         'gip_number': proposal['gip_number'],
+        'url': f'https://forum.gnosis.io/t/{proposal["id"]}' if proposal["id"][:3]=='gip' else f'https://snapshot.org/#/gnosis.eth/proposal/{proposal["id"]}',
         'title': proposal['title'],
         'body': proposal['body'],
         'start': proposal['start'],

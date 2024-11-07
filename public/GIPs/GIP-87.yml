@@ -1,5 +1,6 @@
 id: '0xd15dc7f0fbc00d6c6c07e18f41c1a5dd54adad77b3dae6cb0d0111503f7fa0c7'
 gip_number: '87'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xd15dc7f0fbc00d6c6c07e18f41c1a5dd54adad77b3dae6cb0d0111503f7fa0c7
 title: '[Redo]Should GnosisDAO claim its vested GEL allocation and delegate it along
   with COW to governance Safe managed by...'
 body: "# Summary\nThis is a redo of the proposal for [GIP-87](https://snapshot.org/#/gnosis.eth/proposal/0xff4bc12a163ba195f74708aa0fedab200ba8f4f4be64d1d7685b1796cd40785f)\

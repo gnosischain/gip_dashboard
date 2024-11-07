@@ -1,5 +1,6 @@
 id: '0x00a840e823e75f4c722db046312fca39e02f3cc75ccf235ed436bec4328d39dc'
 gip_number: '109'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x00a840e823e75f4c722db046312fca39e02f3cc75ccf235ed436bec4328d39dc
 title: 'Should the GnosisDAO introduce Snapshot moderators to reduce spam? '
 body: "The Gnosis DevOps team is currently performing a review and overhaul of the\
   \ GnosisDAO’s Snapshot space. We would like to add trusted moderators that have\
@@ -33,5 +34,6 @@ quorum: 75000
 funding:
   amount: null
   currency: null
-  confidence: 'High '
-  model_used: gemini-1.5-flash
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

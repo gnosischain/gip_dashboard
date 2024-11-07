@@ -1,14 +1,13 @@
-// src/components/GIPStats.jsx
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import zoomPlugin from 'chartjs-plugin-zoom';
 import { Chart } from 'chart.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'; 
+import ENSAuthorDisplay from './ENSAuthorDisplay';
 
 Chart.register(zoomPlugin);
-
 
 const computeState = (scores, quorum, scores_state) => {
     if (scores_state !== 'final') return '';
@@ -36,26 +35,26 @@ const computeStatuses = (gips) => {
 };
 
 const GIPStats = ({ gips }) => {
-    const votesByGIP = useMemo(() => {
+    const [passed, failed, open] = React.useMemo(() => computeStatuses(gips), [gips]);
+
+    const votesByGIP = React.useMemo(() => {
         const votesData = gips.map(gip => ({
             x: parseInt(gip.gip_number, 10),
             y: gip.votes || 0
         }));
         return {
-            labels: gips.map(gip =>  parseInt(gip.gip_number, 10)),
-            datasets: [
-                {
-                    label: 'Votes',
-                    data: votesData,
-                    backgroundColor: 'rgba(75, 192, 192, 0.6)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                },
-            ],
+            labels: gips.map(gip => parseInt(gip.gip_number, 10)),
+            datasets: [{
+                label: 'Votes',
+                data: votesData,
+                backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 2,
+            }],
         };
     }, [gips]);
 
-    const scoresTotalByGIP = useMemo(() => {
+    const scoresTotalByGIP = React.useMemo(() => {
         const scoresData = gips.map(gip => ({
             x: parseInt(gip.gip_number, 10),
             y: gip.scores_total || 0
@@ -63,20 +62,44 @@ const GIPStats = ({ gips }) => {
 
         return {
             labels: gips.map(gip => parseInt(gip.gip_number, 10)),
-            datasets: [
-                {
-                    label: 'Amount',
-                    data: scoresData,
-                    backgroundColor: 'rgba(153, 102, 255, 0.6)',
-                    borderColor: 'rgba(153, 102, 255, 1)',
-                    borderWidth: 2,
-                },
-            ],
+            datasets: [{
+                label: 'Amount',
+                data: scoresData,
+                backgroundColor: 'rgba(153, 102, 255, 0.6)',
+                borderColor: 'rgba(153, 102, 255, 1)',
+                borderWidth: 2,
+            }],
         };
     }, [gips]);
 
+    const authorData = React.useMemo(() => {
+        const authorCounts = new Map();
+        
+        // Handle null authors by replacing with "Unknown"
+        gips.forEach(gip => {
+            const author = gip.author || "Unknown";
+            const count = authorCounts.get(author) || 0;
+            authorCounts.set(author, count + 1);
+        });
 
-    const [passed, failed, open] = useMemo(() => computeStatuses(gips), [gips]);
+        const sortedAuthors = Array.from(authorCounts.entries())
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10);
+
+        return {
+            data: {
+                labels: new Array(sortedAuthors.length).fill(''),
+                datasets: [{
+                    label: 'Number of GIPs',
+                    data: sortedAuthors.map(([_, count]) => count),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            authors: sortedAuthors.map(([author]) => author)
+        };
+    }, [gips]);
 
     const statusGIP = {
         labels: ['Passed', 'Failed', 'Open'],
@@ -97,6 +120,41 @@ const GIPStats = ({ gips }) => {
         }]
     };
 
+    const optionsAuthor = {
+        indexAxis: 'y',
+        scales: {
+            x: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Number of GIPs'
+                }
+            },
+            y: {
+                ticks: {
+                    display: false  // Hide default labels
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                display: false
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        return `GIPs: ${context.raw}`;
+                    },
+                    title: function(context) {
+                        const author = authorData.authors[context[0].dataIndex];
+                        return author;
+                    }
+                }
+            }
+        },
+        maintainAspectRatio: false
+    };
+
     const options = {
         plugins: {
             legend: {
@@ -106,33 +164,38 @@ const GIPStats = ({ gips }) => {
         }
     };
 
-    
-    
-    const chartOptions = {
+    const chartOptions1 = {
         scales: {
             x: {
-                type: 'linear', // Treat x-axis as a continuous numeric scale
+                type: 'linear',
                 position: 'bottom',
                 ticks: {
-                    stepSize: 1, // Ensure steps are in integers
-                    callback: function(value, index, values) {
-                        // Format ticks to be integers only
+                    stepSize: 1,
+                    callback: function(value) {
                         if (value % 1 === 0) {
                             return value;
                         }
                     }
                 },
-                min: 0, // Ensures the x-axis doesn't go below zero
+                min: 0,
+                title: {
+                    display: true,
+                    text: 'GIP Number'
+                }
             },
             y: {
-                beginAtZero: true
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'No. of Votes'
+                }
             }
         },
         maintainAspectRatio: false,
         plugins: {
             zoom: {
                 limits: {
-                    x: {min: 0, max: 'original', minRange: 1}, // Adjust 'max' as necessary
+                    x: {min: 0, max: 'original', minRange: 1},
                 },
                 zoom: {
                     wheel: {
@@ -143,7 +206,6 @@ const GIPStats = ({ gips }) => {
                     },
                     mode: 'x',
                     onZoomComplete: function({chart}) {
-                        // This function ensures that the x-axis does not go below zero after zoom
                         let minVal = chart.scales.x.min;
                         if (minVal < 0) {
                             chart.scales.x.min = 0;
@@ -155,7 +217,6 @@ const GIPStats = ({ gips }) => {
                     enabled: true,
                     mode: 'x',
                     onPanComplete: function({chart}) {
-                        // This function ensures that the x-axis does not go below zero during pan
                         let minVal = chart.scales.x.min;
                         if (minVal < 0) {
                             chart.scales.x.min = 0;
@@ -167,77 +228,74 @@ const GIPStats = ({ gips }) => {
         }
     };
 
-
-    const authorChartData = useMemo(() => {
-        const counts = {};
-
-        // Count each author's GIPs
-        gips.forEach(gip => {
-            counts[gip.author] = (counts[gip.author] || 0) + 1;
-        });
-
-        // Convert to array and sort by count
-        const sortedAuthors = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-
-        // Slice to get top 10
-        const topAuthors = sortedAuthors.slice(0, 10);
-
-        // Separate into labels (authors) and data (counts)
-        const labels = topAuthors.map(item => item[0]);
-        const data = topAuthors.map(item => item[1]);
-
-        return {
-            labels,
-            datasets: [{
-                label: 'Number of GIPs',
-                data,
-                backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1
-            }]
-        };
-    }, [gips]);
-
-    const optionsAuthor = {
-        indexAxis: 'y', // Set y-axis as the index axis to create a horizontal bar chart
+    const chartOptions2 = {
+        ...chartOptions1,
         scales: {
-            x: {
-                beginAtZero: true
-            }
-        },
-        plugins: {
-            legend: {
-                display: false // Set to true if you want to display the dataset label
+            ...chartOptions1.scales,
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'GNO Amount'
+                }
             }
         }
     };
-    
 
+   
     return (
         <div className="container">
             <h3>GIP Stats</h3>
-           
             <div className="flex-container">
-                <div className="chart-container flex-ite pie-chart-container ">
+                <div className="chart-container flex-item pie-chart-container">
                     <h3>GIPs Status</h3>
                     <Pie data={statusGIP} options={options} />
                 </div>
-                <div className="chart-container flex-item">
+                <div className="chart-container flex-item" style={{ position: 'relative' }}>
                     <h3>Top-10 GIPs Proposers</h3>
-                    <Bar data={authorChartData} options={optionsAuthor} />
+                    <div style={{ display: 'flex', position: 'relative', marginTop: '8px' }}>
+                        <div style={{ 
+                            position: 'absolute',
+                            left: 0,
+                            top: '0rem',
+                            bottom: 0,
+                            width: '200px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            paddingTop: '1px',
+                            paddingBottom: '47px'
+                        }}>
+                            {authorData.authors.map((author, index) => (
+                                <div key={author} style={{ 
+                                    flex: 1,
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'flex-end',
+                                    paddingRight: '10px'
+                                }}>
+                                    {author === "Unknown" ? (
+                                        <span>Unknown</span>
+                                    ) : (
+                                        <ENSAuthorDisplay author={author} />
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                        <div style={{ flex: 1, marginLeft: '200px', height: '360px' }}>
+                            <Bar data={authorData.data} options={optionsAuthor} />
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
 
             <div className="flex-container">
                 <div className="chart-container flex-item">
                     <h3>Votes by GIP</h3>
-                    <Bar data={votesByGIP} options={chartOptions} />
+                    <Bar data={votesByGIP} options={chartOptions1} />
                 </div>
                 <div className="chart-container flex-item">
                     <h3>Total Amount by GIP</h3>
-                    <Bar data={scoresTotalByGIP} options={chartOptions} />
+                    <Bar data={scoresTotalByGIP} options={chartOptions2} />
                 </div>
             </div>
         </div>

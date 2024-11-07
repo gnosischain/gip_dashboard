@@ -1,5 +1,6 @@
 id: '0x8f8d2118ef3a8fa9f8b1814ce2ae34ae8776548716a45ce69082f3e266465f48'
 gip_number: '16'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x8f8d2118ef3a8fa9f8b1814ce2ae34ae8776548716a45ce69082f3e266465f48
 title: GIP-16 Gnosis Chain
 body: 'Should GnosisDAO implement GIP-16, as detailed in this [forum post]() (also
   available on [IPFS](https://gateway.pinata.cloud/ipfs/Qmd83zavdSrUDNZEsSdixt7aRoBeEo6pVHSwZhMmyKygjX))?

@@ -1,5 +1,6 @@
 id: '0x70c0fa32438a38508fa4e011422e8955fad41fc246d569772faaedf9cfbfa876'
 gip_number: '61'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x70c0fa32438a38508fa4e011422e8955fad41fc246d569772faaedf9cfbfa876
 title: Shall GnosisDAO fund BootNode as a Core Contributor Team?
 body: "## Simple Summary\n\nBootNode proposes to contribute engineering and development\
   \ services to the Gnosis DAO ecosystem by building a hands-on autonomous team with\

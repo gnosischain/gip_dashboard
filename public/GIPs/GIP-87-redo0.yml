@@ -1,5 +1,6 @@
 id: '0xff4bc12a163ba195f74708aa0fedab200ba8f4f4be64d1d7685b1796cd40785f'
 gip_number: '87'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xff4bc12a163ba195f74708aa0fedab200ba8f4f4be64d1d7685b1796cd40785f
 title: Should GnosisDAO claim its vested GEL allocation and delegate it along with
   COW to governance Safe managed by karpatkey?
 body: "## Summary\nThis proposal triggers the Gnosis DAO Safe to claim the fully vested\

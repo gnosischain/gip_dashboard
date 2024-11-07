@@ -1,5 +1,6 @@
 id: '0x1a0a2187520c70a0c37ab1aedccdda97c12453a709dd217b5456d610cbaaaa10'
 gip_number: '42'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x1a0a2187520c70a0c37ab1aedccdda97c12453a709dd217b5456d610cbaaaa10
 title: Should $10M in GNO be used to foster the usage of Uniswap v3 on Gnosis Chain?
 body: 'A large directive for the Gnosis Chain is to increase the user base and on-chain
   activity by strategically allocating funds from the GnosisDAO treasury to promote

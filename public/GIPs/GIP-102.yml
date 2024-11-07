@@ -1,5 +1,6 @@
 id: '0x71dc9cfd5e83c7b1a58c8e11436029087e727087a7f5e59b6b93c48d4492e0bd'
 gip_number: '102'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x71dc9cfd5e83c7b1a58c8e11436029087e727087a7f5e59b6b93c48d4492e0bd
 title: Should GnosisDAO provide financing for the new GnosisVC ecosystem venture fund?
 body: 'GIP: 102
 
@@ -189,7 +190,8 @@ scores:
 votes: 96
 quorum: 75000
 funding:
-  amount: 20 million
-  currency: $ (USD)
-  confidence: 'High '
-  model_used: gemini-1.5-flash
+  amount: null
+  currency: null
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

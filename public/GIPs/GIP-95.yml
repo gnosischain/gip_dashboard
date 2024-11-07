@@ -1,5 +1,6 @@
 id: '0x9297cc7f6a1c8d973199bb215c071cc93c99003b6231b3953edeb1e1a2f2f408'
 gip_number: '95'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x9297cc7f6a1c8d973199bb215c071cc93c99003b6231b3953edeb1e1a2f2f408
 title: karpatkey DAO Service Extension
 body: 'After the approval of GIP-20 4 and GIP-58 5, at karpatkey DAO we have been
   working steadily on the management of GnosisDAO’s treasury. Similar to other treasuries

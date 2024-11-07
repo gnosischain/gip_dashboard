@@ -1,5 +1,6 @@
 id: '0x7caff999b7a631b850b31439fe00fc733d1319b37b0ffd3e0a64145030606683'
 gip_number: '111'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x7caff999b7a631b850b31439fe00fc733d1319b37b0ffd3e0a64145030606683
 title: Should the GnosisDAO fund the Ethereum Protocol Attackathon?
 body: 'Summary:
 
@@ -183,7 +184,8 @@ scores:
 votes: 77
 quorum: 75000
 funding:
-  amount: 2,000,000
-  currency: USD (assumed)
-  confidence: 'Medium '
-  model_used: gemini-1.5-flash
+  amount: null
+  currency: null
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

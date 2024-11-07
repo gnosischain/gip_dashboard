@@ -1,24 +1,21 @@
 id: gip-56-should-gnosisdao-fund-student-web3-education
 gip_number: 56
+url: https://forum.gnosis.io/t/gip-56-should-gnosisdao-fund-student-web3-education
 title: Should GnosisDAO fund student web3 education?
-body: "#  {Should GnosisDAO fund student web3 education?}\n\n  * Let’s do this!\n\
-  \  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 56\n    author: Louis,\
-  \ Talam, Shaïna\n    status: Phase-2\n    type: Funding\n    created: 2022-06-30\n\
-  \    \n\n##  Simple Summary\n\nKairos is a platform that provides an education for\
-  \ students to learn through certifications about the different aspects of the ecosystem\
-  \ FOR FREE.  \nThere is no free education for students in the ecosystem yet, which\
-  \ should be a priority to work towards innovation and adoption.\n\nEach blockchain\
-  \ or protocol provides education and ressources from three angles: the programming\
-  \ language of their company, a presentation of the ecosystem and how it works, and\
-  \ a training on the company’s marketing & entrepreneurship model.\n\nWe already\
-  \ have a student network gathered with over 3 000 students from universities such\
-  \ as Cambridge, Stanford, Dauphine and more.  \nWe are always growing our network\
-  \ so if you are a student interested to learn about the ecosystem please reach out\
-  \ to [contact@kairostudents.com](mailto:contact@kairostudents.com)\n\n##  Abstract\n\
-  \nIn the ecosystem, it is challenging for companies to find competent and committed\
-  \ individuals to build and contribute to projects.  \nThe Kairos team has spoken\
-  \ with several blockchain companies who have stated that they find suitable profiles\
-  \ for hire only months later, if ever.  \nThis comes from the lack of democratization\
+body: "##  Simple Summary\n\nKairos is a platform that provides an education for students\
+  \ to learn through certifications about the different aspects of the ecosystem FOR\
+  \ FREE.  \nThere is no free education for students in the ecosystem yet, which should\
+  \ be a priority to work towards innovation and adoption.\n\nEach blockchain or protocol\
+  \ provides education and ressources from three angles: the programming language\
+  \ of their company, a presentation of the ecosystem and how it works, and a training\
+  \ on the company’s marketing & entrepreneurship model.\n\nWe already have a student\
+  \ network gathered with over 3 000 students from universities such as Cambridge,\
+  \ Stanford, Dauphine and more.  \nWe are always growing our network so if you are\
+  \ a student interested to learn about the ecosystem please reach out to [contact@kairostudents.com](mailto:contact@kairostudents.com)\n\
+  \n##  Abstract\n\nIn the ecosystem, it is challenging for companies to find competent\
+  \ and committed individuals to build and contribute to projects.  \nThe Kairos team\
+  \ has spoken with several blockchain companies who have stated that they find suitable\
+  \ profiles for hire only months later, if ever.  \nThis comes from the lack of democratization\
   \ of blockchain and mainly the lack of education of the new generation on the topic,\
   \ only 2% of the top universities offer courses on blockchain and they are rarely\
   \ in-depth.\n\nIn parallel, the cheapest price on the market for a student to learn\
@@ -72,7 +69,7 @@ body: "#  {Should GnosisDAO fund student web3 education?}\n\n  * Let’s do this
   \ opportunity, let’s support student education and the next generation!\n\nFor more\
   \ information about Kairos : [DocSend](https://docsend.com/view/bfmi894wjunie675)\n\
   \n2 Likes\n"
-start: 1656529249
+start: 1656522049
 end: null
 state:
   - phase-2

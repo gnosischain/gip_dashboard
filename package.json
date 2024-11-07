@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "buffer": "^6.0.3",
-    "chart.js": "^4.4.3",
+    "chart.js": "^4.4.6",
     "chartjs-plugin-annotation": "^3.0.1",
     "chartjs-plugin-zoom": "^2.0.1",
     "react": "^18.3.1",
@@ -48,6 +48,9 @@
     ]
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1"
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "postcss": "^8.4.47",
+    "react-app-rewired": "^2.2.1",
+    "resolve-url-loader": "^5.0.0"
   }
 }

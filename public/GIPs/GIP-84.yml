@@ -1,12 +1,8 @@
 id: gip-84-introducing-gip-guards-on-chain-financial-controllers-for-gips
 gip_number: 84
+url: https://forum.gnosis.io/t/gip-84-introducing-gip-guards-on-chain-financial-controllers-for-gips
 title: On-chain financial controllers for GIPs
-body: "#  GIP-84: Introducing GIP-Guards: On-chain financial controllers for GIPs\n\
-  \n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 84\n    title:\
-  \ Introducing GIP-Guards: On-chain financial controllers for GIPs\n    author: Dayitva\
-  \ Goel (@Dayitva)\n    status: Draft\n    type: Funding\n    created: 2023-03-29\n\
-  \    funding: 30k USD\n    \n\n![](//forum.gnosis.io/uploads/default/original/2X/4/40c0a7fe0dd0d5ce9c6053353dabb84e406aca52.jpeg)\n\
-  \n#### [lukasschor.eth | Safe](https://twitter.com/SchorLukas/status/1599373578469666816)\n\
+body: "#### [lukasschor.eth | Safe](https://twitter.com/SchorLukas/status/1599373578469666816)\n\
   \n[@SchorLukas](https://twitter.com/SchorLukas/status/1599373578469666816)\n\nCongrats\
   \ to SafeGuard winning the main prize at [@ETHIndiaco](https://twitter.com/ETHIndiaco)\
   \ building a range of [@Safe](https://twitter.com/Safe) extensions such as deny\
@@ -78,7 +74,7 @@ body: "#  GIP-84: Introducing GIP-Guards: On-chain financial controllers for GIP
   \ is a grant orchestration tool being used by Compound, Polygon, Optimism and Aave\
   \ to disburse more than $3mn in grants. The team has also built Open Quest and Zero\
   \ Wallet.\n\n2 Likes\n"
-start: 1680093601
+start: 1680086401
 end: null
 state:
   - phase-1
@@ -102,7 +98,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 30k
-  currency: USD
+  amount: null
+  currency: null
   confidence: 'High '
   model_used: gemini-1.5-flash

@@ -1,5 +1,6 @@
 id: '0x34c8c299df663957c4ccde826cf56cc798c2590f62ec2e400d635ffae506d901'
 gip_number: '19'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x34c8c299df663957c4ccde826cf56cc798c2590f62ec2e400d635ffae506d901
 title: Should Gnosis DAO burn 715k GNO?
 body: 'Should GnosisDAO burn 715k GNO as detailed in this forum post?
 
@@ -22,7 +23,7 @@ scores:
 votes: 70
 quorum: 0
 funding:
-  amount: 715,000
-  currency: GNO
+  amount: null
+  currency: null
   confidence: 'High '
   model_used: gemini-1.5-flash

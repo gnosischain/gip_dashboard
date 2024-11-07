@@ -1,13 +1,10 @@
 id: gip-30-should-gnosisdao-reward-2300-gno-to-prysmatic-labs
 gip_number: 30
+url: https://forum.gnosis.io/t/gip-30-should-gnosisdao-reward-2300-gno-to-prysmatic-labs
 title: Should GnosisDAO reward 2300 GNO to Prysmatic Labs?
-body: "#  GIP-30: Should GnosisDAO reward 2300 GNO to Prysmatic Labs\n\n  * Letâ€™s\
-  \ do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n    GIP: 30\n    title:\
-  \ Should GnosisDAO reward 2300 GNO to Prysmatic Labs?\n    author: GnosisDAO, Stefan\
-  \ George\n    status: Draft\n    type: Funding\n    created: <date created on, in\
-  \ ISO 8601 (2022-03-10) format>\n    \n\n##  Summary\n\nShould GnosisDAO reward\
-  \ 2300 GNO to Prysmatic Labs?\n\nSince the launch of the [Gnosis Beacon Chain](https://beacon.gnosischain.com/)\
-  \ over 60000 validators were launched. Those validators almost exclusively run either\
+body: "##  Summary\n\nShould GnosisDAO reward 2300 GNO to Prysmatic Labs?\n\nSince\
+  \ the launch of the [Gnosis Beacon Chain](https://beacon.gnosischain.com/) over\
+  \ 60000 validators were launched. Those validators almost exclusively run either\
   \ Prysm or Lighthouse clients.\n\nGiven the importance of Prysm for Gnosis Chain,\
   \ we suggest rewarding the Prysmatic Labs team with 2300 GNO for their work aligning\
   \ incentives with their team.\n\nIn return the Prysmatic Labs team will support\
@@ -16,7 +13,7 @@ body: "#  GIP-30: Should GnosisDAO reward 2300 GNO to Prysmatic Labs\n\n  * Letâ
   \ codebase to support Gnosis Chain.\n  * Acknowledgment and timely review of any\
   \ performance, regression, or general reports from Gnosis regarding Prysm software.\n\
   \  * General feedback on gnosis chain and tooling.\n\n\n\n5 Likes\n"
-start: 1646939789
+start: 1646936189
 end: null
 state:
   - phase-2

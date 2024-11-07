@@ -1,17 +1,17 @@
 id: gip-59-should-gnosisdao-fund-circles-ubi-r-d-work
 gip_number: 59
+url: https://forum.gnosis.io/t/gip-59-should-gnosisdao-fund-circles-ubi-r-d-work
 title: Should GnosisDAO fund Circles UBI R&D work?
-body: "#  GIP-59 : Should GnosisDAO fund Circles UBI R&D work?\n\n  * Let’s do this!!\
-  \ Go Circles!\n  * Make no changes\n\n\n\n0 voters\n\n###  Simple Summary\n\nThis\
-  \ proposal would fund the [Circles Coop eG](http://circles.coop) and the[ Bitsposessed](https://join.bitspossessed.org/)\
-  \ developer collective to support the CirclesUBI team’s R&D costs for one and a\
-  \ half years and expand operations. The following Circles UBI proposal would foster\
-  \ the mass adoption of key Gnosis technologies like the Gnosis Safe via the establishment\
-  \ of UBI Open Pilots as well as fostering internal collaboration between GnosisChain\
-  \ dapps through the development of a Circles Web of Trust (WoT) GnosisSafe native\
-  \ app and other tools at a total of USD - $3.571 Million, paid 45% in GNO and 55%\
-  \ in DAI, administered by the Circles Coop eG.\n\n###  Abstract\n\nWith over 120,000\
-  \ accounts deployed so far via the circles.garden interface, [CirclesUBI](http://joincircles.net)\
+body: "###  Simple Summary\n\nThis proposal would fund the [Circles Coop eG](http://circles.coop)\
+  \ and the[ Bitsposessed](https://join.bitspossessed.org/) developer collective to\
+  \ support the CirclesUBI team’s R&D costs for one and a half years and expand operations.\
+  \ The following Circles UBI proposal would foster the mass adoption of key Gnosis\
+  \ technologies like the Gnosis Safe via the establishment of UBI Open Pilots as\
+  \ well as fostering internal collaboration between GnosisChain dapps through the\
+  \ development of a Circles Web of Trust (WoT) GnosisSafe native app and other tools\
+  \ at a total of USD - $3.571 Million, paid 45% in GNO and 55% in DAI, administered\
+  \ by the Circles Coop eG.\n\n###  Abstract\n\nWith over 120,000 accounts deployed\
+  \ so far via the circles.garden interface, [CirclesUBI](http://joincircles.net)\
   \ has established itself as a power dapp within GnosisChain, developing, maintaining\
   \ and promoting basic income public good infrastructures built within programmable\
   \ accounts via Gnosis Safe technology. The present proposal seeks funding for the\
@@ -155,8 +155,8 @@ body: "#  GIP-59 : Should GnosisDAO fund Circles UBI R&D work?\n\n  * Let’s do
   \ and improvement of Gnosis Chain. We also expect benefits coming from Web of Trust\
   \ R&D.\n\n\n\nAll funds not spent will be at Circles Coop e.G. discretion.\n\nUnconditionally,\n\
   \nJulio Linares,  \non behalf of the Circles UBI Coop & Bitspossessed Collective\n\
-  \n15 Likes\n\n**[next page →](/t/gip-59-should-gnosisdao-fund-circles-ubi-r-d-work/5475?page=2)**\n"
-start: 1657483876
+  \n14 Likes\n\n**[next page →](/t/gip-59-should-gnosisdao-fund-circles-ubi-r-d-work/5475?page=2)**\n"
+start: 1657476676
 end: null
 state:
   - phase-2

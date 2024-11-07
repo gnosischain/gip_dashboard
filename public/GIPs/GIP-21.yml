@@ -1,5 +1,6 @@
 id: '0xfae50f95e3ae8f7dbd70e062cba35b0dcbe8261b2aaa874822b7d046e97367b6'
 gip_number: '21'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xfae50f95e3ae8f7dbd70e062cba35b0dcbe8261b2aaa874822b7d046e97367b6
 title: Amendment to GIP-17. Send additional funds to daughter Safe
 body: 'Should GnosisDAO implement GIP-21 as detailed in this forum post?
 
@@ -29,5 +30,5 @@ quorum: 0
 funding:
   amount: null
   currency: null
-  confidence: 'High '
+  confidence: 'Low '
   model_used: gemini-1.5-flash

@@ -1,5 +1,6 @@
 id: '0x66cc99dde505a77ae6fb1371c075f4eb36abbba06189d108b2020947484fa49c'
 gip_number: '33'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x66cc99dde505a77ae6fb1371c075f4eb36abbba06189d108b2020947484fa49c
 title: 'Send vested COW tokens to daughter Safe for treasury management '
 body: 'Should Gnosis DAO send vested COW tokens to daughter Safe for treasury management?
 

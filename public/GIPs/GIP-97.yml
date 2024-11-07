@@ -1,5 +1,6 @@
 id: '0x242016595b38af98c3297271ab75c530ebc3dd1c1ec6264bf9b4483003be4bce'
 gip_number: '97'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x242016595b38af98c3297271ab75c530ebc3dd1c1ec6264bf9b4483003be4bce
 title: GIP-97 - karpatkey SafeDAO <> GnosisDAO Joint Treasury Delegation
 body: "## Abstract\n\nWith the SafeDAO having achieved all milestones laid out in\
   \ [SEP #3](https://snapshot.org/#/safe.eth/proposal/0xdcd7f8cb197c7132296d802e538df2a565fbe4f8af400f1afbed06b54a808060)\

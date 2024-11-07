@@ -1,5 +1,6 @@
 id: '0x86cb89a974a075451f8bfae1892d08136fae8c4321ada07025ff8b2b5edddadc'
 gip_number: '20'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x86cb89a974a075451f8bfae1892d08136fae8c4321ada07025ff8b2b5edddadc
 title: Karpatkey DAO Treasury Management
 body: "Should GnosisDAO implement GIP-20, as detailed in the following forum post?:\
   \ https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233\n\nTransactions\

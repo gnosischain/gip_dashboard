@@ -1,5 +1,6 @@
 id: '0x391d0d6f4b9315347605ecf053a14474faa461ea0a31e69b7e9e1895c31c3a2a'
 gip_number: '36'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x391d0d6f4b9315347605ecf053a14474faa461ea0a31e69b7e9e1895c31c3a2a
 title: Should GnosisDAO fund BuidlGuidl 3 ETH per quarter?
 body: 'The BuidlGuidl is a curated group of Ethereum builders creating prototypes
   and tutorials to enrich the ecosystem. They actively maintain scaffold-eth. Austin

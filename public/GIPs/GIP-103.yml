@@ -1,16 +1,15 @@
 id: gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
 gip_number: 103
+url: https://forum.gnosis.io/t/gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
 title: Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program? - Governance
   - Gnosis
-body: "# Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program?\n\n\
-  \  * In favour\n  * Against\n\n\n\n0 voters\n\n## Executive Summary\n\nThe USDC\
-  \ token on Gnosis Chain (currently available by bridging from Ethereum through the\
-  \ Gnosis Bridge) is not compliant with the Bridge Token Standard, established by\
-  \ Circle in November 2023. With the objective of growing the USDC bridged into Gnosis,\
-  \ and the ultimate goal of Circle taking over the token and converting it to native\
-  \ USDC on Gnosis Chain, we propose to create an incentives program of up to 8k GNO.\n\
-  \n## Specification\n\nIf this proposal is approved, Gnosis DAO will be incentivising\
-  \ the growth of [USDC.e](https://gnosisscan.io/token/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0),\
+body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently available\
+  \ by bridging from Ethereum through the Gnosis Bridge) is not compliant with the\
+  \ Bridge Token Standard, established by Circle in November 2023. With the objective\
+  \ of growing the USDC bridged into Gnosis, and the ultimate goal of Circle taking\
+  \ over the token and converting it to native USDC on Gnosis Chain, we propose to\
+  \ create an incentives program of up to 8k GNO.\n\n## Specification\n\nIf this proposal\
+  \ is approved, Gnosis DAO will be incentivising the growth of [USDC.e](https://gnosisscan.io/token/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0),\
   \ which is compliant with the standard and that can be acquired by calling Deposit()\
   \ on a [Transmuter](https://gnosisscan.io/address/0x0392a2f5ac47388945d8c84212469f545fae52b2).\
   \ The swap of the old USDC to the new one can also be done through the bridge UI.\
@@ -45,7 +44,7 @@ body: "# Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program?\n\
   \ which may result in the desired growth in a shorter time frame and/or with fewer\
   \ incentives paid out. In this case, the surplus budget will remain unallocated.\n\
   \n8 Likes\n"
-start: 1718118995
+start: 1718111795
 end: null
 state: []
 author: null

@@ -1,50 +1,46 @@
 id: gip-99-should-gnosis-guild-steward-gnosisdao-governance
 gip_number: 99
+url: https://forum.gnosis.io/t/gip-99-should-gnosis-guild-steward-gnosisdao-governance
 title: Should Gnosis Guild steward GnosisDAO Governance?
-body: "# GIP-99: Should Gnosis Guild steward GnosisDAO Governance?\n\n  * In Favour\n\
-  \  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 99\n    title: Should Gnosis\
-  \ Guild steward GnosisDAO Governance\n    author: Alex (alex@gnosisguild.org), Pandy\
-  \ (pandy@gnosisguild.org), and Auryn (auryn@gnosisguild.org)\n    status: Draft\n\
-  \    type: Funding\n    created: 2024-04-08\n    \n\n## Category\n\nService Agreements\n\
-  \n## Executive Summary\n\nGnosis Guild proposes to steward GnosisDAO governance,\
-  \ guiding a new phase of innovation, experimentation, and growth. As GnosisDAO continues\
-  \ allocating resources to Gnosis Chain, Gnosis Pay, and other mission-aligned ventures,\
-  \ our team will drive the DAO’s governance strategy and operations through dedicated\
-  \ R&D, technical implementation, and ongoing stewardship.\n\nWhile Gnosis Guild\
-  \ has been actively contributing to the maintenance and improvement of GnosisDAO\
-  \ governance since its inception, this proposal will formalize a long-term partnership\
-  \ that prioritizes the following objectives:\n\n  * Improve, maintain, and secure\
-  \ GnosisDAO governance infrastructure.\n  * Foster the growth and further decentralization\
-  \ of the Gnosis Ecosystem.\n  * Position GnosisDAO as leading innovators of DAO\
-  \ governance.\n\n\n\nThrough these guiding stars, Gnosis Guild will also address\
-  \ the challenges currently faced by GnosisDAO’s governance. Initiatives includes:\
-  \ (1) designing a new governance architecture and roadmap to tackle the operational\
-  \ inefficiency of its monolithic governance patterns, (2) introducing novel funding\
-  \ mechanisms to address its inefficient capital allocation and lackluster ecosystem\
-  \ development, and (3) progressively decentralizing DAO processes to increase governance\
-  \ activity, transparency, and participation.\n\nOur annual funding request is 0.3%\
-  \ of AUM, 50% in USDC and 50% in GNO (at the 200-day moving average at the time\
-  \ of allocation and locked for one year), paid monthly to Gnosis Guild coinciding\
-  \ with karpatkey’s monthly treasury report.\n\n**About Gnosis Guild:** _Gnosis Guild\
-  \ is a web3-native venture studio with the values of conviviality, co-ownership,\
-  \ and experimentation at its heart. For over three years, our team’s modular tooling\
-  \ and needs-driven development have secured and operationalized the GnosisDAO’s\
-  \ governance and treasury asset management. These include: Zodiac Reality Module\
-  \ for decentralized Snapshot governance; Zodiac Roles and bespoke tooling for karpatkey’s\
-  \ non-custodial asset management; custom strategies for delegation; token locking\
-  \ and distribution systems for CoW and Safe; and support and development for other\
-  \ GnosisDAO initiatives like Hashi and Gnosis Pay._\n\n## Service Description\n\n\
-  Gnosis Guild will guide GnosisDAO’s governance through strategic R&D, technical\
-  \ implementation, and ongoing stewardship. In response to community feedback and\
-  \ motivated by our commitment to needs-driven development for the GnosisDAO, we\
-  \ have outlined objectives that will inform our overarching governance strategy\
-  \ and initiatives that address key areas for improvement.\n\n### Objectives:\n\n\
-  \  1. **Improve, maintain, and secure GnosisDAO governance infrastructure.**  \n\
-  **Indicator:** Increased utility and adoption of GNO as a governance token through\
-  \ enhanced voting participation and token utilization.\n\n  2. **Foster the growth\
-  \ and further decentralization of the Gnosis Ecosystem.**  \n**Indicator:** A thriving\
-  \ ecosystem with multiple transparent funding mechanisms and active engagement from\
-  \ top-tier external contributors.\n\n  3. **Position GnosisDAO as leading innovators\
+body: "## Category\n\nService Agreements\n\n## Executive Summary\n\nGnosis Guild proposes\
+  \ to steward GnosisDAO governance, guiding a new phase of innovation, experimentation,\
+  \ and growth. As GnosisDAO continues allocating resources to Gnosis Chain, Gnosis\
+  \ Pay, and other mission-aligned ventures, our team will drive the DAO’s governance\
+  \ strategy and operations through dedicated R&D, technical implementation, and ongoing\
+  \ stewardship.\n\nWhile Gnosis Guild has been actively contributing to the maintenance\
+  \ and improvement of GnosisDAO governance since its inception, this proposal will\
+  \ formalize a long-term partnership that prioritizes the following objectives:\n\
+  \n  * Improve, maintain, and secure GnosisDAO governance infrastructure.\n  * Foster\
+  \ the growth and further decentralization of the Gnosis Ecosystem.\n  * Position\
+  \ GnosisDAO as leading innovators of DAO governance.\n\n\n\nThrough these guiding\
+  \ stars, Gnosis Guild will also address the challenges currently faced by GnosisDAO’s\
+  \ governance. Initiatives includes: (1) designing a new governance architecture\
+  \ and roadmap to tackle the operational inefficiency of its monolithic governance\
+  \ patterns, (2) introducing novel funding mechanisms to address its inefficient\
+  \ capital allocation and lackluster ecosystem development, and (3) progressively\
+  \ decentralizing DAO processes to increase governance activity, transparency, and\
+  \ participation.\n\nOur annual funding request is 0.3% of AUM, 50% in USDC and 50%\
+  \ in GNO (at the 200-day moving average at the time of allocation and locked for\
+  \ one year), paid monthly to Gnosis Guild coinciding with karpatkey’s monthly treasury\
+  \ report.\n\n**About Gnosis Guild:** _Gnosis Guild is a web3-native venture studio\
+  \ with the values of conviviality, co-ownership, and experimentation at its heart.\
+  \ For over three years, our team’s modular tooling and needs-driven development\
+  \ have secured and operationalized the GnosisDAO’s governance and treasury asset\
+  \ management. These include: Zodiac Reality Module for decentralized Snapshot governance;\
+  \ Zodiac Roles and bespoke tooling for karpatkey’s non-custodial asset management;\
+  \ custom strategies for delegation; token locking and distribution systems for CoW\
+  \ and Safe; and support and development for other GnosisDAO initiatives like Hashi\
+  \ and Gnosis Pay._\n\n## Service Description\n\nGnosis Guild will guide GnosisDAO’s\
+  \ governance through strategic R&D, technical implementation, and ongoing stewardship.\
+  \ In response to community feedback and motivated by our commitment to needs-driven\
+  \ development for the GnosisDAO, we have outlined objectives that will inform our\
+  \ overarching governance strategy and initiatives that address key areas for improvement.\n\
+  \n### Objectives:\n\n  1. **Improve, maintain, and secure GnosisDAO governance infrastructure.**\
+  \  \n**Indicator:** Increased utility and adoption of GNO as a governance token\
+  \ through enhanced voting participation and token utilization.\n\n  2. **Foster\
+  \ the growth and further decentralization of the Gnosis Ecosystem.**  \n**Indicator:**\
+  \ A thriving ecosystem with multiple transparent funding mechanisms and active engagement\
+  \ from top-tier external contributors.\n\n  3. **Position GnosisDAO as leading innovators\
   \ of DAO governance.**  \n**Indicator:** Novel governance infrastructure and ongoing\
   \ initiatives to integrate emerging tech.\n\n\n\n\n### Key Performance Indicators:\n\
   \n  1. Improvement in annual total vote weight utilized\n  2. Improvement in annual\
@@ -151,7 +147,7 @@ body: "# GIP-99: Should Gnosis Guild steward GnosisDAO Governance?\n\n  * In Fav
   \ Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
   \n[V2 - Should Gnosis DAO fund the continuation of the validator Monitoring Telegram\
   \ bot?](https://forum.gnosis.io/t/v2-should-gnosis-dao-fund-the-continuation-of-the-validator-monitoring-telegram-bot/8415/9)\n"
-start: 1712628182
+start: 1712620982
 end: null
 state:
   - phase-1

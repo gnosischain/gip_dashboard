@@ -1,5 +1,6 @@
 id: '0x06feee3d2c9bc68ae0fccc8f2ada05c8323f0a71d2bcdfbc5556e8336cf5d71f'
 gip_number: '17'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x06feee3d2c9bc68ae0fccc8f2ada05c8323f0a71d2bcdfbc5556e8336cf5d71f
 title: GIP-17 Gnosis DAO Safe update AND new treasury management Safe
 body: "Should Gnosis DAO upgrade the Gnosis DAO Safe AND create a separate Safe for\
   \ Active Treasury Management as detailed in [this forum post](https://forum.gnosis.io/t/gip-17-should-gnosis-dao-upgrade-the-gnosis-dao-safe-and-create-a-separate-safe-for-active-treasury-management/2237)?\

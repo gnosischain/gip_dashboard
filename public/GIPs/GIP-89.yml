@@ -1,5 +1,6 @@
 id: '0x68d88244f7f1f10d15441a4894ff77ba595dbbed645b2ce0718604b14b96526a'
 gip_number: '89'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x68d88244f7f1f10d15441a4894ff77ba595dbbed645b2ce0718604b14b96526a
 title: Should GnosisDAO support an annual renewal for Blockscout SLA and hosting services?
 body: 'Blockscout continues to serve the Gnosis ecosystem with an open-source explorer
   for both the Gnosis mainnet and Chiado testnet instances. Blockscout hosting was

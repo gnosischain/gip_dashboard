@@ -1,46 +1,40 @@
 id: gip-113-should-gnosis-dao-provide-grants-for-omen-2-0-initiative
 gip_number: 113
+url: https://forum.gnosis.io/t/gip-113-should-gnosis-dao-provide-grants-for-omen-2-0-initiative
 title: Should Gnosis DAO provide grants for Omen 2.0 initiative?
-body: "# GIP-113: Should Gnosis DAO fund Omen 2.0 initiative?\n\n  * In Favour\n \
-  \ * Against\n\n\n\n0 voters\n    \n    \n    GIP: 113\n    title: Grants for Presagio\
-  \ (Omen 2.0)\n    author: <Venky (@0xVenky) <venky@swaprhq.io>, Leonardo (@berteotti)\
-  \ <leo@swaprhq.io>, Diogo (@diogomf) <diogo@swaprhq.io>>\n    status: Draft\n  \
-  \  type: Funding\n    created: 2024-09-26\n    requires (*optional): <GIP number(s)>\n\
-  \    replaces (*optional): <GIP number(s)>\n    duration: 14 months (March 2024\
-  \ to May 2025)\n    funding: 400K USD + 600 GNO + transfer of Omen.eth\n    \n\n\
-  ## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Rewards and\
-  \ Reimbursement\n\n#### Executive Summary:\n\nThis proposal seeks a grant to develop\
-  \ a frontend for the Omen prediction market, that leverages AI agents to both create\
-  \ and predict market outcomes. The platform will offer users insights into real-world\
-  \ event predictions while enhancing the overall user experience. The requested grant\
-  \ of 400K WXDAI and 600 GNO will be used to fund the development and maintenance\
-  \ of the Omen frontend.\n\n#### Specification\n\nThe proposed reward and reimbursement\
-  \ program includes 400K WXDAI and 600 GNO for the development and maintenance of\
-  \ the Omen 2.0 frontend, along with the transfer of the Omen.eth ENS for branding\
-  \ and platform management. These funds will be allocated as follows: 70% for product\
-  \ development, testing, and maintenance; 15% for marketing; 3% for infrastructure;\
-  \ and 12% for project management. This program aims to drive user growth on Gnosis\
-  \ Chain, augment the Gnosis AI team and its prediction market agents, and support\
-  \ new initiatives and experiments across the broader Gnosis network.\n\n##### Technical\
-  \ Specifications\n\nThe Presagio frontend is being developed on React with Next.js,\
-  \ building upon the original OMEN conditional tokens contracts written by Gnosis.\n\
-  \nKey integrations include Gnosis AI APIs, The Graph and Dune. Gnosis AI API is\
-  \ used to fetch real-time market insights. We seek to use Gnosis AI API for new\
-  \ functionalities (e.g. market creation, agent insights). Future enhancements will\
-  \ involve building a back-end solution to improve data fetching efficiency, improving\
-  \ users experience and new functionalities (e.g. database to store data for user\
-  \ favorite markets for example).\n\nA comments section is also planned, with an\
-  \ integration of a partner-provided solution (preferably in web3 space), to allow\
-  \ user discussions within the platform.\n\n#### Rationale\n\nThe past couple of\
-  \ months, there has been a great amount of traction in prediction market area with\
-  \ Polymarket raising 70M in investment and there has been considerable user growth\
-  \ in Polymarket, limitless.exchange and manifold.markets. At Dappcon, there has\
-  \ been plenty of talks and discussions around AI, the kind of risks it poses, the\
-  \ challenges it has and how AI and blockchain could become an unstoppable force\
-  \ that needs to be kept a close watch. Gnosis has also been ahead of its time in\
-  \ terms of all the products they launch and this vision aligns well with the Gnosis\
-  \ AI and the investment they have made on AI agents.\n\nDuring Dappcon 2024, we\
-  \ showcased the new UI we had started building for prediction markets and asked\
+body: "## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Rewards\
+  \ and Reimbursement\n\n#### Executive Summary:\n\nThis proposal seeks a grant to\
+  \ develop a frontend for the Omen prediction market, that leverages AI agents to\
+  \ both create and predict market outcomes. The platform will offer users insights\
+  \ into real-world event predictions while enhancing the overall user experience.\
+  \ The requested grant of 400K WXDAI and 600 GNO will be used to fund the development\
+  \ and maintenance of the Omen frontend.\n\n#### Specification\n\nThe proposed reward\
+  \ and reimbursement program includes 400K WXDAI and 600 GNO for the development\
+  \ and maintenance of the Omen 2.0 frontend, along with the transfer of the Omen.eth\
+  \ ENS for branding and platform management. These funds will be allocated as follows:\
+  \ 70% for product development, testing, and maintenance; 15% for marketing; 3% for\
+  \ infrastructure; and 12% for project management. This program aims to drive user\
+  \ growth on Gnosis Chain, augment the Gnosis AI team and its prediction market agents,\
+  \ and support new initiatives and experiments across the broader Gnosis network.\n\
+  \n##### Technical Specifications\n\nThe Presagio frontend is being developed on\
+  \ React with Next.js, building upon the original OMEN conditional tokens contracts\
+  \ written by Gnosis.\n\nKey integrations include Gnosis AI APIs, The Graph and Dune.\
+  \ Gnosis AI API is used to fetch real-time market insights. We seek to use Gnosis\
+  \ AI API for new functionalities (e.g. market creation, agent insights). Future\
+  \ enhancements will involve building a back-end solution to improve data fetching\
+  \ efficiency, improving users experience and new functionalities (e.g. database\
+  \ to store data for user favorite markets for example).\n\nA comments section is\
+  \ also planned, with an integration of a partner-provided solution (preferably in\
+  \ web3 space), to allow user discussions within the platform.\n\n#### Rationale\n\
+  \nThe past couple of months, there has been a great amount of traction in prediction\
+  \ market area with Polymarket raising 70M in investment and there has been considerable\
+  \ user growth in Polymarket, limitless.exchange and manifold.markets. At Dappcon,\
+  \ there has been plenty of talks and discussions around AI, the kind of risks it\
+  \ poses, the challenges it has and how AI and blockchain could become an unstoppable\
+  \ force that needs to be kept a close watch. Gnosis has also been ahead of its time\
+  \ in terms of all the products they launch and this vision aligns well with the\
+  \ Gnosis AI and the investment they have made on AI agents.\n\nDuring Dappcon 2024,\
+  \ we showcased the new UI we had started building for prediction markets and asked\
   \ for feedback from Martin. We explored a few possibilities around how we could\
   \ build a frontend for Omen, where we see the predictions that AI makes and the\
   \ research that it does when making a prediction. We will also be able to see how\
@@ -111,7 +105,7 @@ body: "# GIP-113: Should Gnosis DAO fund Omen 2.0 initiative?\n\n  * In Favour\n
   \ funding will enable the development, maintenance and the growth of the platform\
   \ bringing Omen to a position of leading AI agent driven prediction market space.\n\
   \n6 Likes\n"
-start: 1727334351
+start: 1727327151
 end: null
 state:
   - phase-2
@@ -130,6 +124,6 @@ votes: null
 quorum: null
 funding:
   amount: 400,000
-  currency: USD
-  confidence: 'High '
+  currency: WXDAI
+  confidence: High
   model_used: gemini-1.5-flash

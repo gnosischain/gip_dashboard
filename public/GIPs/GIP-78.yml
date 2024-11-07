@@ -1,34 +1,32 @@
 id: gip-78-gnosis-guild-treasury-allocation-proposal-2
 gip_number: 78
+url: https://forum.gnosis.io/t/gip-78-gnosis-guild-treasury-allocation-proposal-2
 title: Gnosis Guild Treasury Allocation (Proposal#2)
-body: "\n    GIP: 78\n    title: Gnosis Guild Treasury Allocation (Proposal#2)\n \
-  \   author: Gnosis Guild\n    status: Draft\n    type: Funding\n    created: 2023-01-30\n\
-  \    \n\n  * Let’s do this!\n  * Make no change\n\n\n\n0 voters\n\n##  Simple Summary\n\
-  \nThe proposal will fund the Gnosis Guild’s operations for one year. The Gnosis\
-  \ Guild treasury allocation would continue to foster needs-driven development for\
-  \ the GnosisDAO and of the Zodiac ecosystem at a total of $3,823,575 paid in 56%\
-  \ DAI and 44% GNO for our contributor compensation plan, administered by Gnosis\
-  \ Guild following the vesting schedule laid out in the Gnosis token plan.\n\n##\
-  \  Abstract\n\nGnosis Guild is a society dedicated to interdependent software and\
-  \ the growth of the Zodiac Standard. In 2022, Gnosis Guild completed a year of needs-driven\
-  \ development for the GnosisDAO and continued to grow the Zodiac ecosystem. With\
-  \ this proposal, Gnosis Guild requests funding to continue its development of GnosisDAO’s\
-  \ infrastructure, expand the Zodiac collection of tools, and further establish Gnosis\
-  \ Chain as an ideal ecosystem for DAOs. The budget allocation includes funds for\
-  \ key personnel, operations, grants programs, and other areas as needed to sustain\
-  \ this commitment.\n\n##  Motivation\n\nWe are a small, but growing, team rooted\
-  \ in conviviality, mutualistic ownership, and experimentation. Since our last proposal,\
-  \ a year ago, we have completed many projects focused in 4 main areas: supporting\
-  \ GnosisDAO, developing novel treasury management tools, developing the Zodiac ecosystem,\
-  \ and convivial software experiments.\n\nAn effective and productive DAO implicitly\
-  \ spreads the technology on which it’s built; this is the core of our symbiotic\
-  \ relationship with GnosisDAO, and by extension, Gnosis Chain. In these early days\
-  \ of our organization, it is important to demonstrate the effectiveness of Zodiac\
-  \ by supporting Gnosis’s efforts to promote decentralized infrastructure. In the\
-  \ past year we have completed:\n\n  * [GnosisDAO SAFE Distribution Tooling](https://claim-safe.gnosis.io/)—a\
-  \ system to transparently calculate, distribute, and claim the portion of SAFE tokens\
-  \ vested to GNO holders.\n  * [GIP 28 & 44: Allow GNO holders to vote with invested/staked/locked\
-  \ positions in Mainnet/GC](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18)—We\
+body: "##  Simple Summary\n\nThe proposal will fund the Gnosis Guild’s operations\
+  \ for one year. The Gnosis Guild treasury allocation would continue to foster needs-driven\
+  \ development for the GnosisDAO and of the Zodiac ecosystem at a total of $3,823,575\
+  \ paid in 56% DAI and 44% GNO for our contributor compensation plan, administered\
+  \ by Gnosis Guild following the vesting schedule laid out in the Gnosis token plan.\n\
+  \n##  Abstract\n\nGnosis Guild is a society dedicated to interdependent software\
+  \ and the growth of the Zodiac Standard. In 2022, Gnosis Guild completed a year\
+  \ of needs-driven development for the GnosisDAO and continued to grow the Zodiac\
+  \ ecosystem. With this proposal, Gnosis Guild requests funding to continue its development\
+  \ of GnosisDAO’s infrastructure, expand the Zodiac collection of tools, and further\
+  \ establish Gnosis Chain as an ideal ecosystem for DAOs. The budget allocation includes\
+  \ funds for key personnel, operations, grants programs, and other areas as needed\
+  \ to sustain this commitment.\n\n##  Motivation\n\nWe are a small, but growing,\
+  \ team rooted in conviviality, mutualistic ownership, and experimentation. Since\
+  \ our last proposal, a year ago, we have completed many projects focused in 4 main\
+  \ areas: supporting GnosisDAO, developing novel treasury management tools, developing\
+  \ the Zodiac ecosystem, and convivial software experiments.\n\nAn effective and\
+  \ productive DAO implicitly spreads the technology on which it’s built; this is\
+  \ the core of our symbiotic relationship with GnosisDAO, and by extension, Gnosis\
+  \ Chain. In these early days of our organization, it is important to demonstrate\
+  \ the effectiveness of Zodiac by supporting Gnosis’s efforts to promote decentralized\
+  \ infrastructure. In the past year we have completed:\n\n  * [GnosisDAO SAFE Distribution\
+  \ Tooling](https://claim-safe.gnosis.io/)—a system to transparently calculate, distribute,\
+  \ and claim the portion of SAFE tokens vested to GNO holders.\n  * [GIP 28 & 44:\
+  \ Allow GNO holders to vote with invested/staked/locked positions in Mainnet/GC](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18)—We\
   \ deployed a significant upgrade to the GnosisDAO’s governance structure, allowing\
   \ GNO, LGNO, and MGNO on Mainnet and Gnosis Chain to participate in voting.\n  *\
   \ [Reality Module Improvements](https://github.com/gnosis/zodiac-module-reality)—We\
@@ -100,7 +98,7 @@ body: "\n    GIP: 78\n    title: Gnosis Guild Treasury Allocation (Proposal#2)\n
   \ as a marketing campaign. The cultural program is intended to further establish\
   \ Gnosis Guild’s reputation as a creative, editorial, and experimental team, while\
   \ seeking to meaningfully broaden discourse.\n\n16 Likes\n"
-start: 1675037477
+start: 1675033877
 end: null
 state:
   - phase-2
@@ -133,6 +131,6 @@ votes: null
 quorum: null
 funding:
   amount: 3,823,575
-  currency: 'USD '
+  currency: USD
   confidence: 'High '
   model_used: gemini-1.5-flash

@@ -1,5 +1,6 @@
 id: '0x481ff5ef01d75eb1798c651351c2a9e6c0d7d991a063399eb255e676c92b9bad'
 gip_number: '71'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x481ff5ef01d75eb1798c651351c2a9e6c0d7d991a063399eb255e676c92b9bad
 title: 'Should GnosisDAO support hosted Blockscout explorer for Chiado testnet? '
 body: 'Chiado testnet is an important new part of the Gnosis ecosystem as a developer
   testnet. A reliable explorer is required for developers to be productive on Gnosis.

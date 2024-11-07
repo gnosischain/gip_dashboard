@@ -1,5 +1,6 @@
 id: '0x9b12a093e17e92b56d070ed876883d8c2331678ca3945e44f66dd416cfd47a64'
 gip_number: '13'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x9b12a093e17e92b56d070ed876883d8c2331678ca3945e44f66dd416cfd47a64
 title: 'Should Gnosis DAO proceed and deploy CowDAO and vCOW token? '
 body: 'The proposal is available [here](https://forum.gnosis.io/t/gip-13-phase-2-cowdao-and-cow-token/2735/1).
   It is recommended to read it in the forum where proper formatting is available. 

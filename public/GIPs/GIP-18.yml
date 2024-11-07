@@ -1,5 +1,6 @@
 id: '0x23d8ac4c853b6b9d9e7972ae64fb94637f141a9e11bdafb0f24c528f43dea27b'
 gip_number: '18'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x23d8ac4c853b6b9d9e7972ae64fb94637f141a9e11bdafb0f24c528f43dea27b
 title: TickDAO Investment
 body: 'Should GnosisDAO implement GIP-18, investing 120.7085 WETH in exchange for
   12,500,000 TICK, as detailed in this forum post?

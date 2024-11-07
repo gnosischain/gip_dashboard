@@ -1,21 +1,16 @@
 id: gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
 gip_number: 68
+url: https://forum.gnosis.io/t/gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
 title: Should GnosisDAO fund RnDAO's Community Health analytics and benchmarking tool?
-body: "#  GIP-68: Should GnosisDAO fund RnDAO’s Community Health analytics and benchmarking\
-  \ tool?\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n    \n    \n\
-  \    GIP: 68\n    title: Community Health analytics and benchmarking\n    author:\
-  \ danielo (twitter @_daniel_ospina), thegadget (github @thegadget-eth), katerina\
-  \ (github @katerinabc)\n    \n    status: Draft\n    type: Funding\n    created:\
-  \ 2022-09-30\n    requires (*optional): <GIP number(s)>\n    replaces (*optional):\
-  \ <GIP number(s)>\n    \n\n##  Simple Summary\n\nIf Web3 is all about communities,\
-  \ how do we know if we’re heading in the right direction?\n\nWe’ve been advancing\
-  \ a research project to:\n\n  * develop a framework for Community Health with actionable\
-  \ metrics\n  * create an open source data collection tool\n  * implement the tool\
-  \ in GnosisDAO and others\n  * analyse the interactions and perceptions data to\
-  \ validate the framework and provide insights to advance the Gnosis community.\n\
-  \n\n\nWe’re seeking $30,000 or equivalent as grant match-funding to complete the\
-  \ project.\n\n##  About RnDAO\n\nWe’re an R&D DAO with a mission to empower humane\
-  \ collaboration. Having already delivered research projects on [sub-DAOs ](https://rndao.mirror.xyz/Qn0Y71EYRUB-6Kn0jH47baWulXoIe-dmTYIVuJeEOt8)and\
+body: "##  Simple Summary\n\nIf Web3 is all about communities, how do we know if we’re\
+  \ heading in the right direction?\n\nWe’ve been advancing a research project to:\n\
+  \n  * develop a framework for Community Health with actionable metrics\n  * create\
+  \ an open source data collection tool\n  * implement the tool in GnosisDAO and others\n\
+  \  * analyse the interactions and perceptions data to validate the framework and\
+  \ provide insights to advance the Gnosis community.\n\n\n\nWe’re seeking $30,000\
+  \ or equivalent as grant match-funding to complete the project.\n\n##  About RnDAO\n\
+  \nWe’re an R&D DAO with a mission to empower humane collaboration. Having already\
+  \ delivered research projects on [sub-DAOs ](https://rndao.mirror.xyz/Qn0Y71EYRUB-6Kn0jH47baWulXoIe-dmTYIVuJeEOt8)and\
   \ [DAO Conceptual Foundations ](https://rndao.mirror.xyz/1zGqbsh1YZNi3I9yvtk_2VMcpyg_dvHF1GlZ_LAO3p4),\
   \ [Decentralised Leadership,](https://rndao.mirror.xyz/7rI4iyJ4tchGdZr3WwEY9Kn_ynB4NvdEIH1UTm1UceU)\
   \ [DAO Compensation ](https://rndao.mirror.xyz/aKI_cniOIsTcxNz4xC0EqzlXDDykwLw6geEc0ipFvIs),\
@@ -127,7 +122,7 @@ body: "#  GIP-68: Should GnosisDAO fund RnDAO’s Community Health analytics and
   \n\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please ignore this section,\
   \ and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a\
   \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n2 Likes\n"
-start: 1664555971
+start: 1664548771
 end: null
 state:
   - phase-2
@@ -146,6 +141,6 @@ votes: null
 quorum: null
 funding:
   amount: 30,000
-  currency: $
+  currency: $ (USD)
   confidence: 'High '
   model_used: gemini-1.5-flash

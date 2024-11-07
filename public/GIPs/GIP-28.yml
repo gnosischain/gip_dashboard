@@ -1,5 +1,6 @@
 id: '0x521efc4aaa8e2d2e2405ae91207d07d872286257044dfca5aa7764c7f66dd3d8'
 gip_number: '28'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x521efc4aaa8e2d2e2405ae91207d07d872286257044dfca5aa7764c7f66dd3d8
 title: Allow locked and staked GNO to vote
 body: 'The proposal is [detail on the Gnosis forum](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357),
   with the specification detailed in [this reply](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18?u=auryn_macmillan).

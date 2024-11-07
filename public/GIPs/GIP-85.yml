@@ -1,5 +1,6 @@
 id: gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
 gip_number: 85
+url: https://forum.gnosis.io/t/gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
 title: GnosisDAO to support Covalent as initially mentioned in GIP 16
 body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * In\
   \ Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 85\n    title: GnosisDAO\
@@ -60,7 +61,7 @@ body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * 
   \ next-generation multi-chain applications.”\n\n– Derek Yoo, CEO at Moonbeam\n\n\
   Conclusion\n\nThe Covalent team hopes that the GnosisDAO can see the value of this\
   \ partnership and pledge their support. Thank you!\n"
-start: 1681929393
+start: 1681922193
 end: null
 state:
   - phase-1

@@ -44,6 +44,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 style={{ fontSize: '80px' }} >Gnosis Governance Dashboard</h1>
+      </header>
         <Tabs>
           <TabList>
             <Tab>Overview</Tab>
@@ -57,7 +58,6 @@ function App() {
             <GIPStats gips={gips} />
           </TabPanel>
         </Tabs>
-      </header>
     </div>
   );
 }

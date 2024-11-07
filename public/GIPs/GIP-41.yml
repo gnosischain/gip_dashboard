@@ -1,5 +1,6 @@
 id: '0x84380477f05620ec1e27be75833b90cdda44b1a1ecb905d4a42b68c25640961b'
 gip_number: '41'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x84380477f05620ec1e27be75833b90cdda44b1a1ecb905d4a42b68c25640961b
 title: GIP-41 Should GnosisDAO Partner with Giveth to Increased Sustainable Liquidity?
 body: Mutually beneficial token swap to create a 1M USD equivalent shared liquidity
   pool of $500k GIV <> $500k GNO on Honeyswap (Gnosis Chain).

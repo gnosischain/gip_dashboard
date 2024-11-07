@@ -1,10 +1,8 @@
 id: gip-6-deploy-gnosis-auction
 gip_number: 6
+url: https://forum.gnosis.io/t/gip-6-deploy-gnosis-auction
 title: Deploy Gnosis Auction
-body: "#  GIP-6: Deploy Gnosis Auction\n\n  * Let’s do this!\n  * Make no changes\n\
-  \n\n\n0 voters\n    \n    \n    GIP: 6\n    title: Deploy Gnosis Auction\n    author:\
-  \ auction_master\n    status: Phase 3\n    type: Meta\n    created: 2021-02-11\n\
-  \    \n\n##  Update (19/02/2021)\n\nAccording to [GnosisDAO’s governance process](https://forum.gnosis.io/t/readme-gnosisdao-governance-process/736)\
+body: "##  Update (19/02/2021)\n\nAccording to [GnosisDAO’s governance process](https://forum.gnosis.io/t/readme-gnosisdao-governance-process/736)\
   \ I promote this proposal to the consensus phase (Phase 3).  \nVoting is available\
   \ [here](https://snapshot.page/#/gnosis/proposal/QmUA5aYzD7nRdPQhqMTH3GWus4Bj62SGcSfjPEb6QcDdnM)\
   \  \nA link to the audit report for Gnosis Auction smart contracts was added to\
@@ -70,7 +68,7 @@ body: "#  GIP-6: Deploy Gnosis Auction\n\n  * Let’s do this!\n  * Make no chan
   \ in [this repository](https://github.com/gnosis/ido-contracts).  \nThe audit report\
   \ can be found [here](https://github.com/gnosis/ido-contracts/blob/main/audit-report.md)\n\
   \n4 Likes\n"
-start: 1613053983
+start: 1613050383
 end: null
 state:
   - closed

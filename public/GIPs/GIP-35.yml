@@ -1,5 +1,6 @@
 id: '0xdeadb69e1c18ea78e6592664d2be34f7705ebb040c0b1788514b39bd9a2e2096'
 gip_number: '35'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xdeadb69e1c18ea78e6592664d2be34f7705ebb040c0b1788514b39bd9a2e2096
 title: The target total supply should be 3M GNO?
 body: 'This GIP would improve economics and clarity of GNO rules by targeting 3M GNO
   total supply. It would also formally veto the GnosisDAO treasury for voting, giving

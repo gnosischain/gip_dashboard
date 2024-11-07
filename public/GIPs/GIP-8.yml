@@ -1,13 +1,13 @@
 id: gip-8-enable-lp-token-voting-on-snapshot
 gip_number: 8
+url: https://forum.gnosis.io/t/gip-8-enable-lp-token-voting-on-snapshot
 title: Enable LP token voting on Snapshot
-body: "#  **Should LP token voting strategies be added to Snapshot?**\n\n  * Add one\
-  \ LP token voting strategy\n  * Add two LP token voting strategies\n  * Add no LP\
-  \ token voting strategy\n\n\n\n0 voters\n\n#  **Which LP token voting strategy should\
-  \ be added to Snapshot?**\n\n  * Balancer\n  * Uniswap\n  * SushiSwap\n\n\n\n0 voters\n\
-  \    \n    \n    GIP: 8\n    title: Enable LP token voting on Snapshot \n    author:\
-  \ Anna George\n    status: Draft\n    type: Meta\n    created: 2021-03-10\n    \n\
-  \nThis is a continuation of the [original post](https://forum.gnosis.io/t/should-gnosisdao-allow-to-use-gno-locked-in-balancer-pools-for-voting-in-snapshot-proposals/902)\
+body: "* Add one LP token voting strategy\n  * Add two LP token voting strategies\n\
+  \  * Add no LP token voting strategy\n\n\n\n0 voters\n\n#  **Which LP token voting\
+  \ strategy should be added to Snapshot?**\n\n  * Balancer\n  * Uniswap\n  * SushiSwap\n\
+  \n\n\n0 voters\n    \n    \n    GIP: 8\n    title: Enable LP token voting on Snapshot\
+  \ \n    author: Anna George\n    status: Draft\n    type: Meta\n    created: 2021-03-10\n\
+  \    \n\nThis is a continuation of the [original post](https://forum.gnosis.io/t/should-gnosisdao-allow-to-use-gno-locked-in-balancer-pools-for-voting-in-snapshot-proposals/902)\
   \ by [@StefanGeorge](/u/stefangeorge), moving it to phase 2 as the proposal was\
   \ well perceived in the Forum discussion and the technical requirements for implementation\
   \ have been set up in the meantime.\n\n**Tl;dr:**\n\nCurrently, the GnosisDAO Snapshot\
@@ -49,7 +49,7 @@ body: "#  **Should LP token voting strategies be added to Snapshot?**\n\n  * Add
   \ in Smart Contracts in different protocols/networks](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/9)\n\
   \n[GIP-28: Allow GNO holders to vote even if their GNO are invested/staked/locked\
   \ in Smart Contracts in different protocols/networks](http://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/2)\n"
-start: 1615380566
+start: 1615376966
 end: null
 state:
   - phase-2

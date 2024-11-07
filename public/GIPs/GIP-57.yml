@@ -1,5 +1,6 @@
 id: '0x7575919c07e03bbe642b11938501bb6cbc542337f64763f94a00e04ed403cfba'
 gip_number: '57'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x7575919c07e03bbe642b11938501bb6cbc542337f64763f94a00e04ed403cfba
 title: Should Gnosis DAO support research of a zkSNARK-enabled light client and bridge?
 body: "## Simple Summary\n\nThe current Gnosis bridge is a based on a multi-sig design.\
   \ However, multi-sig bridges have known weaknesses, particularly their reliance\

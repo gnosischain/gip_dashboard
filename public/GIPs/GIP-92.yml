@@ -1,12 +1,9 @@
 id: gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token
 gip_number: 92
+url: https://forum.gnosis.io/t/gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token
 title: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token?
-body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token?\n\
-  \n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 92\n    title:\
-  \ karpatkey DAO spin-off and KPK token launch\n    author: <karpatkey>, info@karpatkey.com,\
-  \ https://github.com/karpatkey\n    created: 2024-02-15\n    \n\n## Abstract\n\n\
-  karpatkey has led the active DAO treasury management space after becoming GnosisDAO’s\
-  \ treasury manager in [GIP-20](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
+body: "## Abstract\n\nkarpatkey has led the active DAO treasury management space after\
+  \ becoming GnosisDAO’s treasury manager in [GIP-20](https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233)\
   \ and [GIP-58](https://forum.gnosis.io/t/gip-58-karpatkey-dao-service-extension/5417).\
   \ Following the tradition of the sister projects [CowDAO](https://forum.gnosis.io/t/gip-13-phase-2-cowdao-and-cow-token/2735)\
   \ and [SafeDAO](https://forum.gnosis.io/t/gip-29-spin-off-safedao-and-launch-safe-token/3476),\
@@ -138,7 +135,7 @@ body: "# GIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Tok
   \ a $200M valuation, with an additional 5% ownership through an airdrop, totalling\
   \ 7.5%. The total ownership of the Gnosisdao will amount to 10%.\n\n50 Likes\n\n\
   **[next page →](/t/gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token/8115?page=2)**\n"
-start: 1708027248
+start: 1708023648
 end: null
 state: []
 author: '&lt;karpatkey&gt;'
@@ -155,7 +152,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 2.5 million
-  currency: USD (assumed)
+  amount: 2,500,000
+  currency: USD
   confidence: 'High '
   model_used: gemini-1.5-flash

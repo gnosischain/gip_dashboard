@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css'; // Import the CSS file
 import annotationPlugin from 'chartjs-plugin-annotation';
 import DynamicChart from './DynamicChart';
+import ENSAuthorDisplay from './ENSAuthorDisplay';
 
 Chart.register(...registerables, annotationPlugin);
 
@@ -156,6 +157,10 @@ const GIPTable = ({ gips }) => {
     };
 
     const renderChart = (scores, scores_total, scores_state, quorum) => {
+        // Check if we have valid data for the chart
+        if (!scores || !scores.length || !scores_total) {
+            return null;
+        }
         return <DynamicChart scores={scores} scores_total={scores_total} scores_state={scores_state} quorum={quorum} />;
     };
     
@@ -224,22 +229,73 @@ const GIPTable = ({ gips }) => {
                             {details.includes(gip.id) && (
                                 <tr>
                                     <td colSpan={columns.length}>
-                                        <Card.Body>
-                                            <p className="text-muted">No.: {parseInt(gip.gip_number, 10) || 0}</p>
-                                            <p className="text-muted">Author: {gip.author}</p>
-                                            <h4  style={{ display: 'inline-block', whiteSpace: 'normal', width: '100%'  }}>{gip.title}</h4>
-                                            <p className="text-muted">Started: {formatDate(gip.start)}</p>
-                                            <p className="text-muted">{gip.scores_state !== 'final' ? 'Ending' : 'Ended'}: {formatDate(gip.end)}</p>
-                                            <p className="text-muted">Requested Funding: {renderFundingInfo(gip)}</p>
-                                            <p className="text-muted">
-                                                State: <span className={`badge bg-${getBadge_state(gip.state)}`}>{gip.state}</span>  
-                                                <span style={{ display: 'inline-block', width: '20px' }}></span>
-                                                Status: <span className={`badge bg-${getBadge_status(computeState(gip.scores, gip.quorum, gip.scores_state))}`}>{computeState(gip.scores, gip.quorum, gip.scores_state)}</span> 
-                                            </p>
-                                            <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                                            {gip.choices && gip.scores && renderChart(gip.scores, gip.scores_total, gip.scores_state, gip.quorum)}
-                                            </div>
-                                            <ReactMarkdown className="text-body left-align">{gip.body}</ReactMarkdown>
+                                        <Card.Body className="mx-auto" style={{ maxWidth: '1000px' }}>
+                                            {/* Title Section */}
+                                            <h2 className="text-center gip-title">
+                                                GIP-{parseInt(gip.gip_number, 10) || 0}: {gip.title}
+                                            </h2>
+                                            
+                                            {/* Metadata Card */}
+                                            <Card className="mb-4">
+                                                <Card.Body className="p-4">
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            <p className="mb-2">
+                                                                <strong>No.: </strong>
+                                                                {parseInt(gip.gip_number, 10) || 0}
+                                                            </p>
+                                                            <p className="mb-2">
+                                                                <strong>Author: </strong> <ENSAuthorDisplay author={gip.author} />
+                                                            </p>
+                                                            <p className="mb-2">
+                                                                <strong>Started: </strong>
+                                                                {formatDate(gip.start)}
+                                                            </p>
+                                                            <p className="mb-2">
+                                                                <strong>Proposal: </strong>
+                                                                {gip.url ? (
+                                                                    <a href={gip.url} target="_blank" rel="noopener noreferrer">
+                                                                        link
+                                                                    </a>
+                                                                ) : 'No link available'}
+                                                            </p>
+                                                        </div>
+                                                        <div className="col-md-6">
+                                                            <p className="mb-2">
+                                                                <strong>{gip.scores_state !== 'final' ? 'Ending' : 'Ended'}: </strong>
+                                                                {formatDate(gip.end)}
+                                                            </p>
+                                                            <p className="mb-2">
+                                                                <strong>Requested Funding: </strong>
+                                                                {renderFundingInfo(gip)}
+                                                            </p>
+                                                            <p className="mb-2">
+                                                                <strong>State: </strong>
+                                                                <span className={`badge bg-${getBadge_state(gip.state)}`}>{gip.state}</span>
+                                                                <span className="mx-2" />
+                                                                <strong>Status: </strong>
+                                                                <span className={`badge bg-${getBadge_status(computeState(gip.scores, gip.quorum, gip.scores_state))}`}>
+                                                                    {computeState(gip.scores, gip.quorum, gip.scores_state)}
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Card.Body>
+                                            </Card>
+
+                                            {/* Chart Section */}
+                                            {gip.choices && gip.scores && gip.scores.length > 0 && gip.scores_total && (
+                                                <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
+                                                    <div style={{ width: '100%', maxWidth: '800px' }}>
+                                                        {renderChart(gip.scores, gip.scores_total, gip.scores_state, gip.quorum)}
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Body Content */}
+                                            <ReactMarkdown className="text-body left-align">
+                                                {gip.body}
+                                            </ReactMarkdown>
                                         </Card.Body>
                                     </td>
                                 </tr>

@@ -1,36 +1,23 @@
 id: gip-2-safe-token-model
 gip_number: 2
+url: https://forum.gnosis.io/t/gip-2-safe-token-model
 title: SAFE Token Model
-body: "# Should Gnosis aim to establish a governance token for Gnosis Safe?\n    \n\
-  \    \n    GIP: 2\n    title: Implement SAFE Token Model\n    author: Anna George,\
-  \ Lukas Schor\n    status: Pending\n    type: Meta\n    created: 2020-11-16\n  \
-  \  \n\n  * Yes: Implement SAFE Token\n  * No: Make no change\n\n\n\n0 voters\n\n\
-  [![image](https://forum.gnosis.io/uploads/default/optimized/1X/327dbd6c392c65c069f16def0f6ac50799db47bc_2_690x382.jpeg)image1578×874\
-  \ 247 KB](https://forum.gnosis.io/uploads/default/original/1X/327dbd6c392c65c069f16def0f6ac50799db47bc.jpeg\
-  \ \"image\")\n\n> ## Abstract\n> \n> Gnosis Safe is a new account standard and open\
-  \ gateway to the Internet of Value. In order to establish the Safe as a community-owned\
-  \ public good, we plan to distribute the SAFE governance token. The SAFE Token will\
-  \ be used for voting, curation and rewards for ecosystem contributions.\n> \n> Even\
-  \ though governance over parts of the Safe ecosystem and product offering will be\
-  \ community-driven, Gnosis Safe will always remain a fully self-custodial asset\
-  \ management solution, in which the user is in full control.\n> \n> This proposal\
-  \ is about whether the Gnosis team should go ahead working out a Safe Token Model.\n\
-  \n## Motivation\n\nThough we are building Gnosis Safe as an open system that can\
-  \ be re-used and extended by anyone, we recognize that Gnosis still holds a dominant\
-  \ position in the Safe ecosystem. The main reason for this is that Gnosis currently\
-  \ holds the “trust monopoly” for the curation and promotion of all core components\
-  \ of Gnosis Safe. Here are a few examples:\n\n  * **Interfaces:** Gnosis hosts the\
-  \ interfaces most commonly used to interact with Gnosis Safes.\n  * **Smart contracts:**\
-  \ Gnosis is the main contributor and publisher of smart contract updates.\n  * **Safe\
-  \ Apps:** Gnosis curates the list of Safe Apps displayed to the users through our\
-  \ interfaces.\n\n\n\n## SAFE Token\n\nIn order to enshrine Gnosis Safe as an end-to-end\
-  \ community project, we are proposing to launch the SAFE governance token. We consider\
-  \ the SAFE Token as an essential tool to decentralize the trust monopoly held by\
-  \ Gnosis. We believe this will firmly establish Gnosis Safe as a public good and\
-  \ community-owned infrastructure. SAFE Tokens are not an investment product. Instead,\
-  \ SAFE Token will be distributed to stakeholders of the Gnosis Safe ecosystem that\
-  \ are interested in shaping the future of Gnosis Safe.\n\n[![Screenshot 2020-11-20\
-  \ at 10.25.36](https://forum.gnosis.io/uploads/default/optimized/1X/f0342808e1849f58ef03c13aca61fd8b008638eb_2_690x385.png)Screenshot\
+body: "## Motivation\n\nThough we are building Gnosis Safe as an open system that\
+  \ can be re-used and extended by anyone, we recognize that Gnosis still holds a\
+  \ dominant position in the Safe ecosystem. The main reason for this is that Gnosis\
+  \ currently holds the “trust monopoly” for the curation and promotion of all core\
+  \ components of Gnosis Safe. Here are a few examples:\n\n  * **Interfaces:** Gnosis\
+  \ hosts the interfaces most commonly used to interact with Gnosis Safes.\n  * **Smart\
+  \ contracts:** Gnosis is the main contributor and publisher of smart contract updates.\n\
+  \  * **Safe Apps:** Gnosis curates the list of Safe Apps displayed to the users\
+  \ through our interfaces.\n\n\n\n## SAFE Token\n\nIn order to enshrine Gnosis Safe\
+  \ as an end-to-end community project, we are proposing to launch the SAFE governance\
+  \ token. We consider the SAFE Token as an essential tool to decentralize the trust\
+  \ monopoly held by Gnosis. We believe this will firmly establish Gnosis Safe as\
+  \ a public good and community-owned infrastructure. SAFE Tokens are not an investment\
+  \ product. Instead, SAFE Token will be distributed to stakeholders of the Gnosis\
+  \ Safe ecosystem that are interested in shaping the future of Gnosis Safe.\n\n[![Screenshot\
+  \ 2020-11-20 at 10.25.36](https://forum.gnosis.io/uploads/default/optimized/1X/f0342808e1849f58ef03c13aca61fd8b008638eb_2_690x385.png)Screenshot\
   \ 2020-11-20 at 10.25.361118×624 409 KB](https://forum.gnosis.io/uploads/default/original/1X/f0342808e1849f58ef03c13aca61fd8b008638eb.png\
   \ \"Screenshot 2020-11-20 at 10.25.36\")\n\n## SAFE Governance\n\nWe envision the\
   \ SAFE Token will be used to govern and curate essential infrastructure components\
@@ -115,7 +102,7 @@ body: "# Should Gnosis aim to establish a governance token for Gnosis Safe?\n   
   \n[GnosisDAO Manifest](http://forum.gnosis.io/t/gnosisdao-manifest/866)\n\n[GIP-1:\
   \ One-time 5% GNO merkledrop to active GnosisDAO participants](https://forum.gnosis.io/t/gip-1-one-time-5-gno-merkledrop-to-active-gnosisdao-participants/690/8)\n\
   \n**[next page →](/t/gip-2-safe-token-model/691?page=2)**\n"
-start: 1604481878
+start: 1604478278
 end: null
 state:
   - pending

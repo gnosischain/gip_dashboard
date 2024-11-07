@@ -1,5 +1,6 @@
 id: '0xd9dbc0cebba7b9a27f6fa3f30987b89b4dd50140ee3e21624ebc9bdb16049654'
 gip_number: '64'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xd9dbc0cebba7b9a27f6fa3f30987b89b4dd50140ee3e21624ebc9bdb16049654
 title: Should GnosisDAO distribute SAFE tokens to incentivize decentralizing Gnosis
   Chain?
 body: 'As decided in GIP-29, GnosisDAO is receiving 15% of the total SAFE token supply

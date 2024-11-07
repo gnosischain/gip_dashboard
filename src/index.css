@@ -26,14 +26,15 @@
 
 /* Global styles */
 body, html {
-  margin: 3em 0;
-  padding: 0;
+  margin: 0;
+  padding: 3em 0; /* Use padding instead of margin */
   width: 100%;
-  height: 100%;
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: 'Unica77', sans-serif;
   background: #fff;
+  box-sizing: border-box; /* Ensure padding is included in height calculations */
 }
+
 
 #app {
   width: 100%;
@@ -68,7 +69,7 @@ h1 {
   border-spacing: 0;
   table-layout: fixed; /* Ensure fixed table layout */
   width: 100%;
-  font-size: .9em;
+  font-size: 1.3em;
 }
 
 .table th,
@@ -219,11 +220,12 @@ button.btn-outline-primary:hover {
 .flex-container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Align items in a line */
+  align-items: flex-start; /* Prevent items from stretching vertically */
   flex-wrap: nowrap;
-  width: 100%; /* Ensure flex container takes full width */
+  width: 100%;
   gap: 20px;
-  padding-top: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .flex-item {
@@ -233,11 +235,6 @@ button.btn-outline-primary:hover {
   box-sizing: border-box;
 }
 
-.chart-container {
-  width: 100%;
-  height: 400px; /* Fixed height */
-  position: relative;
-}
 
 @media (max-width: 768px) {
   .flex-container {
@@ -248,11 +245,16 @@ button.btn-outline-primary:hover {
   }
 }
 
-.pie-chart-container {
-  width: 400px;  /* Set the width as needed */
-  height: 400px; /* Set the height to maintain aspect ratio */
+.chart-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
 }
 
+.pie-chart-container {
+  width: 400px;
+  height: 400px;
+}
 
 .search-inputs {
   display: flex;
@@ -309,4 +311,28 @@ button.btn-outline-primary:hover {
   width: 10px;
   height: 10px;
   margin-right: 5px;
+}
+
+.gip-title {
+  font-size: 2rem;
+  line-height: 1.3;
+  word-wrap: break-word;
+  white-space: normal;
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+}
+
+.metadata-card {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-container {
+  position: relative;
+}
+
+.ens-names {
+  font-size: 14px;
+  line-height: 1.2;
 }

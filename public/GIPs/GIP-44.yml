@@ -1,5 +1,6 @@
 id: '0x2dabb9a7bdf9d4a964579dc3ad15af771261a42f4efc74a7f847e7860a651170'
 gip_number: '44'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x2dabb9a7bdf9d4a964579dc3ad15af771261a42f4efc74a7f847e7860a651170
 title: Allow GNO holders to vote with invested/staked/locked positions in mainnet/gc
 body: 'Following from GIP-28, this proposal enables those holding and using GNO in
   a greater number of places to retain their vote in the GnosisDAO.

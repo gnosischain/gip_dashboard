@@ -1,5 +1,6 @@
 id: QmbSBUenuoRYYoMQ4NxmkVz3nBwfMwo3pdrBzZXR123toh
 gip_number: '1'
+url: https://snapshot.org/#/gnosis.eth/proposal/QmbSBUenuoRYYoMQ4NxmkVz3nBwfMwo3pdrBzZXR123toh
 title: One-time 5% GNO merkledrop to active GnosisDAO participants
 body: 'See the [forum post](https://forum.gnosis.io/t/gip-1-one-time-5-gno-airdrop-to-active-gnosisdao-participants/690)
   for discussion and more details.
@@ -75,7 +76,7 @@ scores:
 votes: 99
 quorum: 0
 funding:
-  amount: '5'
+  amount: 5%
   currency: GNO
   confidence: 'High '
   model_used: gemini-1.5-flash

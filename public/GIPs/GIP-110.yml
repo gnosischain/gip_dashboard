@@ -1,5 +1,6 @@
 id: '0xd82b835664c4e15aaa704990a411628ee83edd95c017be190297b6f72df9e65a'
 gip_number: '110'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xd82b835664c4e15aaa704990a411628ee83edd95c017be190297b6f72df9e65a
 title: '[Redo]Should the Gnosis DAO create and fund a Gnosis Pay rewards program with
   10k GNO?'
 body: '# Summary
@@ -107,5 +108,6 @@ quorum: 75000
 funding:
   amount: null
   currency: null
-  confidence: 'High '
-  model_used: gemini-1.5-flash
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

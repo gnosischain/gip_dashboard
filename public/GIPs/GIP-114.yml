@@ -1,5 +1,6 @@
 id: '0x0e39baff8db3a93dccdbe404fd006d881dda318c4c2bf4772dbf61552d5d52b8'
 gip_number: '114'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x0e39baff8db3a93dccdbe404fd006d881dda318c4c2bf4772dbf61552d5d52b8
 title: Should GnosisDAO support an annual renewal for Blockscout SLA and hosting services
   - October 2024 - October 2025?
 body: "### Executive Summary\nBlockscout continues to be an integral part of the Gnosis\

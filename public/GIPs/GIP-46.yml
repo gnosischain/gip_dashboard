@@ -1,5 +1,6 @@
 id: '0x41af607ec45f147b6f0196353f29c5e25951097c64c3a0a703bc519bd1883578'
 gip_number: '46'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x41af607ec45f147b6f0196353f29c5e25951097c64c3a0a703bc519bd1883578
 title: Should GNO from the GnosisDAO Safe be transferred to the treasury management
   safe operated by Karpatkey?
 body: All GNO from the GnosisDAO Safe should be transferred to the treasury management

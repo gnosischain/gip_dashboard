@@ -1,5 +1,6 @@
 id: '0xc259665ade2a09959d0978d31708537d42ade4c1fc9b9c459cf08611188f76de'
 gip_number: '37'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xc259665ade2a09959d0978d31708537d42ade4c1fc9b9c459cf08611188f76de
 title: Should GnosisDAO pass a Grant Proposal to partner with Erigon?
 body: Gnosis has been a long-term supporter of Erigon’s development believing in the
   significance of improving L1 clients. Every improvement on L1 is an upside for everyone
