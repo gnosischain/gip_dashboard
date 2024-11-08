@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(4px + 2vmin);
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Container */
@@ -70,7 +70,7 @@
 .col-number {
   width: 5%;
   font-family: 'Unica77Mono', monospace;
-  font-size: .65em !important;
+  font-size: 0.65em !important;
 }
 
 .col-title {
@@ -106,14 +106,14 @@
   .table {
     font-size: 1em;
     min-width: 100%; /* Ensure table takes full width */
-    display: table; /* Force table display */
+    display: table !important; /* Ensure the table is displayed */
   }
 
   .table th,
   .table td {
     padding: 0.8rem 0.4rem;
     min-width: auto; /* Allow cells to shrink */
-    display: table-cell; /* Force cell display */
+    display: table-cell; /* Ensure table cells are displayed */
   }
 
   /* Adjusted mobile column widths */
@@ -126,17 +126,11 @@
   }
 
   .col-started {
-    display: none; /* Hide on mobile */
+    display: none; /* Hide this column on mobile if desired */
   }
 
-  .col-state {
-    width: 15%;
-  }
-
-  .col-status {
-    width: 15%;
-  }
-
+  .col-state,
+  .col-status,
   .col-details {
     width: 15%;
   }
@@ -226,7 +220,7 @@ button.btn-outline-primary:hover {
   border-color: #000 !important;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>* {
+.table-striped > tbody > tr:nth-of-type(odd) > * {
   --bs-table-bg-type: #fff !important;
 }
 

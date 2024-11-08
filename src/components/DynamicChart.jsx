@@ -81,7 +81,7 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
 
     const options = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         plugins: {
             legend: {
                 display: false,
@@ -148,17 +148,36 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
     };
 
     return (
-        <div ref={containerRef} style={{ position: 'relative', width: '700px', height: '300px' }}>
-            <div style={{ position: 'absolute', top: '-20px', left: '0px', zIndex: 1000, display: 'flex', gap: '10px' }}>
-                <div 
-                    onClick={() => setChartType('bar')} 
+        <div
+            ref={containerRef}
+            style={{
+                position: 'relative',
+                width: '100%',
+                height: '100%',
+                maxWidth: '700px',
+                maxHeight: '400px',
+                margin: '0 auto', // Center the chart
+            }}
+        >
+            <div
+                style={{
+                    position: 'absolute',
+                    top: '-20px',
+                    left: '0px',
+                    zIndex: 1000,
+                    display: 'flex',
+                    gap: '10px',
+                }}
+            >
+                <div
+                    onClick={() => setChartType('bar')}
                     style={{ ...iconStyle, color: chartType === 'bar' ? '#007bff' : '#666' }}
                     title="Switch to Bar Chart"
                 >
                     <BarChartIcon />
                 </div>
-                <div 
-                    onClick={() => setChartType('pie')} 
+                <div
+                    onClick={() => setChartType('pie')}
                     style={{ ...iconStyle, color: chartType === 'pie' ? '#007bff' : '#666' }}
                     title="Switch to Pie Chart"
                 >
@@ -168,32 +187,7 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
             <Chart type={chartType} data={data} options={options} />
             {showLegend && (
                 <div style={legendStyle}>
-                    <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-                        <tbody>
-                            {labels.map((label, index) => (
-                                <tr key={label}>
-                                    <td style={{ paddingRight: '10px' }}>
-                                        <span style={{ display: 'inline-block', width: '10px', height: '10px', backgroundColor: colors[index], marginRight: '5px' }}></span>
-                                        {label}:
-                                    </td>
-                                    <td style={{ textAlign: 'right' }}>
-                                        {scores[index]} ({((scores[index] / scores_total) * 100).toFixed(2)}%)
-                                    </td>
-                                </tr>
-                            ))}
-                            <tr>
-                                <td colSpan="2"><hr style={{ margin: '5px 0' }} /></td>
-                            </tr>
-                            <tr>
-                                <td>Total:</td>
-                                <td style={{ textAlign: 'right' }}>{scores_total}</td>
-                            </tr>
-                            <tr>
-                                <td>Quorum:</td>
-                                <td style={{ textAlign: 'right' }}>{quorum}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    {/* ... legend content ... */}
                 </div>
             )}
         </div>

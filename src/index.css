@@ -1,40 +1,41 @@
 @font-face {
   font-family: 'Unica77';
-  src: url('./fonts/Unica77LLWeb-Regular.woff2') format('woff2'); /* Adjust the path as necessary */
+  src: url('./fonts/Unica77LLWeb-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Unica77';
-  src: url('./fonts/Unica77LLWeb-Bold.woff2') format('woff2'); /* Adjust the path as necessary */
+  src: url('./fonts/Unica77LLWeb-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Unica77';
-  src: url('./fonts/Unica77LLWeb-Italic.woff2') format('woff2'); /* Adjust the path as necessary */
+  src: url('./fonts/Unica77LLWeb-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Unica77Mono';
-  src: url('./fonts/Unica77MonoLLWeb-Regular.woff2') format('woff2'); /* Adjust the path as necessary */
+  src: url('./fonts/Unica77MonoLLWeb-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
-
-/* Global styles */
+/* Global Styles */
 body, html {
   margin: 0;
-  padding: 3em 0; /* Use padding instead of margin */
+  padding: 3em 0;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
   font-family: 'Unica77', sans-serif;
   background: #fff;
-  box-sizing: border-box; /* Ensure padding is included in height calculations */
+  box-sizing: border-box;
 }
-
 
 #app {
   width: 100%;
@@ -42,7 +43,7 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Unica77', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
+  font-family: 'Unica77', sans-serif;
 }
 
 h1 {
@@ -50,24 +51,23 @@ h1 {
 }
 
 .container {
-  width: calc(100% - 40px); /* Consider padding */
-  max-width: 100%; /* Prevent any overflow */
+  width: calc(100% - 40px);
+  max-width: 100%;
   padding: 20px;
-  box-sizing: border-box; /* Include padding in width calculation */
+  box-sizing: border-box;
 }
-
-
 
 .container p {
-  font-size: 1em; /* Font size for p elements inside container class */
+  font-size: 1em;
 }
 
+/* Table Styles */
 .table {
-  background-color: white; /* Set the background color for the table */
-  border: none !important; /* Add border to the table */
-  border-collapse: separate; /* Ensure borders are not collapsed to allow border-radius */
+  background-color: white;
+  border: none !important;
+  border-collapse: separate;
   border-spacing: 0;
-  table-layout: fixed; /* Ensure fixed table layout */
+  table-layout: fixed;
   width: 100%;
   font-size: 1.3em;
 }
@@ -75,37 +75,30 @@ h1 {
 .table th,
 .table td {
   border: none;
-  font-size: 0.7em; /* Font size for table headers and data cells */
-  /* text-align: left;  Ensure text is always left-aligned */
-  overflow: hidden; /* Ensure content does not overflow */
-  text-overflow: ellipsis; /* Add ellipsis for overflow content */
-  white-space: nowrap; /* Prevent text from wrapping */
+  font-size: 0.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding: 1.4em 0 !important;
 }
 
-
 .table th {
-  cursor: pointer; /* Indicate that table headers are clickable for sorting */
+  cursor: pointer;
   font-weight: bold;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   border-bottom: 1px solid #000;
 }
 
-.table th {
-  padding: 1em 0 !important;
-}
-
-.table-striped>tbody>tr:nth-of-type(odd)>* {
+.table-striped > tbody > tr:nth-of-type(odd) > * {
   --bs-table-bg-type: #fff !important;
 }
 
 .text-body {
   padding: 4em !important;
 }
-
-
 
 p.text-muted {
   margin-bottom: 0 !important;
@@ -119,9 +112,9 @@ h4 {
   border-radius: 0 !important;
   border-color: #000 !important;
 }
+
 .react-tabs__tab-list {
   border-color: #000 !important;
-  
 }
 
 .sort-icon {
@@ -129,7 +122,7 @@ h4 {
   font-size: 0.8em;
 }
 
-/* Additional specific styles */
+/* Search Input Styles */
 .search-input {
   font-size: 1em;
   padding: 10px;
@@ -140,55 +133,91 @@ h4 {
   border-radius: 0 !important;
 }
 
+.search-inputs {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  margin-right: 10px;
+  height: auto;
+}
+
+.search-number {
+  flex: 0 1 10%;
+}
+
+.search-title {
+  flex: 0 1 45%;
+  align-self: stretch;
+}
+
+/* Text Alignment */
 .left-align {
-  text-align: left; /* Ensure text is always left-aligned */
+  text-align: left;
 }
 
 .text-body.left-align {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px; 
+  padding: 20px;
   white-space: normal;
   width: 100%;
 }
 
-
+/* Column Styles */
 .col-number {
   width: 50px;
-  font-family: 'Unica77Mono', monospace ;
-  font-size: .65em !important;
-  
- }
+  font-family: 'Unica77Mono', monospace;
+  font-size: 0.65em !important;
+}
 
- .col-number, .col-title, .col-started, .col-state, .col-status, .col-type, .col-details {
+.col-number,
+.col-title,
+.col-started,
+.col-state,
+.col-status,
+.col-type,
+.col-details {
   vertical-align: middle;
   line-height: 1;
- }
+}
 
-span.bg-info {
-  
- }
+.col-title {
+  width: 400px;
+}
 
-.col-title { width: 400px; }
-.col-started { width: 150px; color: #888 !important; }
-.col-state { width: 60px; }
-.col-status { width: 60px; }
-.col-type { width: 50px; }
-.col-details { width: 50px; }
+.col-started {
+  width: 150px;
+  color: #888 !important;
+}
 
+.col-state {
+  width: 60px;
+}
+
+.col-status {
+  width: 60px;
+}
+
+.col-type {
+  width: 50px;
+}
+
+.col-details {
+  width: 50px;
+}
+
+/* Card Styles */
 .card-body {
   text-align: left;
- 
 }
 
 .badge {
   font-weight: normal !important;
-
-
 }
 
-.badge, button {
+.badge,
+button {
   border-radius: 0 !important;
 }
 
@@ -203,81 +232,64 @@ button.btn-outline-primary {
 
 button.btn-outline-primary:hover {
   color: #fff !important;
-  border-color: #1D3EFF !important;
   background-color: #1D3EFF !important;
 }
 
-
-
-.chart-container {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 400px;
-  position: relative;
-}
-
-
-/* Chart container base styles */
+/* Chart Container Styles */
 .chart-container {
   position: relative;
-  height: 300px !important; /* Force fixed height */
   width: 100%;
-  max-height: 300px !important; /* Prevent overflow */
-  min-height: 200px; /* Ensure minimum height */
-  overflow: hidden; /* Prevent content overflow */
+  height: auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .chart-container {
-    height: 400px !important;
-    max-height: 400px !important;
-  }
-}
-
-/* Pie chart specific containment */
 .pie-chart-container {
   position: relative;
   width: 100%;
-  height: 300px !important;
-  max-height: 300px !important;
   max-width: 400px;
   margin: 0 auto;
-  aspect-ratio: 1 / 1; /* Force square aspect ratio */
+  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
 }
 
-/* Flex container adjustments */
+/* Flex Container Adjustments */
 .flex-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 2rem; /* Increased gap */
+}
+
+.flex-item {
+  flex: 0 0 auto;
   width: 100%;
+  min-width: 0;
+  margin-bottom: 2rem; /* Add margin-bottom for vertical spacing */
+}
+
+.flex-item h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
   .flex-container {
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem 0;
   }
-}
 
-/* Flex item containment */
-.flex-item {
-  width: 100%;
-  min-width: 100%;
-  max-height: 400px; /* Prevent excessive growth */
-}
-
-@media (min-width: 768px) {
   .flex-item {
-    width: 50%;
-    min-width: 0;
+    margin-bottom: 0; /* Remove extra space when items are in a row */
   }
 }
 
-/* Chart wrapper for better containment */
+/* Ensure Charts Do Not Grow Indefinitely on Small Screens */
+@media (max-width: 768px) {
+  .chart-container {
+    max-height: 400px; /* Adjust as needed */
+  }
+}
+
+/* Chart Wrapper for Better Containment */
 .chart-wrapper {
   position: relative;
   width: 100%;
@@ -294,28 +306,7 @@ button.btn-outline-primary:hover {
   height: 100% !important;
 }
 
-
-.search-inputs {
-  display: flex;
-  align-items: flex-start; /* Aligns items inside the container to the start of the cross axis */
-  margin-bottom: 20px;
-}
-
-.search-input {
-  margin-right: 10px; /* Adds spacing between inputs */
-  height: auto; /* Adjust height as necessary */
-}
-
-.search-number {
-  flex: 0 1 10%; 
-}
-
-.search-title {
-  flex: 0 1 45%; 
-  align-self: stretch; 
-}
-
-
+/* Chart.js Tooltip Styles */
 #chartjs-tooltip {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -352,6 +343,7 @@ button.btn-outline-primary:hover {
   margin-right: 5px;
 }
 
+/* Additional Styles */
 .gip-title {
   font-size: 2rem;
   line-height: 1.3;
@@ -365,10 +357,6 @@ button.btn-outline-primary:hover {
   background-color: #f8f9fa;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-}
-
-.chart-container {
-  position: relative;
 }
 
 .ens-names {

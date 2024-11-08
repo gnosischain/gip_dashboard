@@ -185,7 +185,6 @@ const GIPTable = ({ gips }) => {
                     className="search-input search-title"
                 />
             </div>
-            <div className="col-started d-none d-md-table-cell">
             <Table striped hover className="table">
                 <thead>
                     <tr>
@@ -305,7 +304,6 @@ const GIPTable = ({ gips }) => {
                     ))}
                 </tbody>
             </Table>
-            </div>
             <div className="d-flex justify-content-center">
                 {renderPagination()}
             </div>
