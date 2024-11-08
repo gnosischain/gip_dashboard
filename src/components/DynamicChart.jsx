@@ -187,7 +187,32 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
             <Chart type={chartType} data={data} options={options} />
             {showLegend && (
                 <div style={legendStyle}>
-                    {/* ... legend content ... */}
+                    <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+                        <tbody>
+                            {labels.map((label, index) => (
+                                <tr key={label}>
+                                    <td style={{ paddingRight: '10px' }}>
+                                        <span style={{ display: 'inline-block', width: '10px', height: '10px', backgroundColor: colors[index], marginRight: '5px' }}></span>
+                                        {label}:
+                                    </td>
+                                    <td style={{ textAlign: 'right' }}>
+                                        {scores[index]} ({((scores[index] / scores_total) * 100).toFixed(2)}%)
+                                    </td>
+                                </tr>
+                            ))}
+                            <tr>
+                                <td colSpan="2"><hr style={{ margin: '5px 0' }} /></td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td style={{ textAlign: 'right' }}>{scores_total}</td>
+                            </tr>
+                            <tr>
+                                <td>Quorum:</td>
+                                <td style={{ textAlign: 'right' }}>{quorum}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             )}
         </div>
