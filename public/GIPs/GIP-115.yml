@@ -110,12 +110,12 @@ choices:
   - Against
   - Abstain
 scores_state: pending
-scores_total: 145.37371638959237
+scores_total: 81205.29454144526
 scores:
-  - 145.37371638959235
+  - 80938.29454144459
   - 0
-  - 0
-votes: 33
+  - 267.0000000006686
+votes: 60
 quorum: 75000
 funding:
   amount: 250,000

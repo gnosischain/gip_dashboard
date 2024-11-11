@@ -49,7 +49,7 @@ body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes
   \n[GIP-101: Should karpatkey and StableLab Establish a Delegate Program v0 for the\
   \ GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
   \n[Karpatkey Delegate Platform](https://forum.gnosis.io/t/karpatkey-delegate-platform/7252)\n"
-start: 1674158770
+start: 1674162370
 end: null
 state:
   - phase-2

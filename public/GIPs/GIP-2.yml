@@ -102,7 +102,7 @@ body: "## Motivation\n\nThough we are building Gnosis Safe as an open system tha
   \n[GnosisDAO Manifest](http://forum.gnosis.io/t/gnosisdao-manifest/866)\n\n[GIP-1:\
   \ One-time 5% GNO merkledrop to active GnosisDAO participants](https://forum.gnosis.io/t/gip-1-one-time-5-gno-merkledrop-to-active-gnosisdao-participants/690/8)\n\
   \n**[next page →](/t/gip-2-safe-token-model/691?page=2)**\n"
-start: 1604478278
+start: 1604481878
 end: null
 state:
   - pending

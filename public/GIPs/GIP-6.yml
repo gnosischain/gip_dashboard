@@ -68,7 +68,7 @@ body: "##  Update (19/02/2021)\n\nAccording to [GnosisDAO’s governance process
   \ in [this repository](https://github.com/gnosis/ido-contracts).  \nThe audit report\
   \ can be found [here](https://github.com/gnosis/ido-contracts/blob/main/audit-report.md)\n\
   \n4 Likes\n"
-start: 1613050383
+start: 1613053983
 end: null
 state:
   - closed

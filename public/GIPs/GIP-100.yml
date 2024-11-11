@@ -98,7 +98,7 @@ body: "#### Category\n\nTreasury\n\n#### TL;DR\n\nI represent [Thanefield Capita
   \ or end the buyback strategy going forward.\n\n6 Likes\n\n[Curia Delegate Platform](https://forum.gnosis.io/t/curia-delegate-platform/8279/3)\n\
   \n[Staworth / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/2)\n\
   \n**[next page →](/t/gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program/8556?page=2)**\n"
-start: 1715943694
+start: 1715950894
 end: null
 state:
   - phase-1
@@ -116,7 +116,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 30,000,000
-  currency: USD
+  amount: 30 million
+  currency: $
   confidence: 'High '
   model_used: gemini-1.5-flash

@@ -22,7 +22,7 @@ body: "##  Simple Summary\n\nCreate periodic OTC trades GNO X BAL between Gnosis
   \n[Link to discussion on Balancer forum](https://forum.balancer.fi/t/rfc-treasury-swaps-program-gno-x-bal/2110)\n\
   \n[Link to phase1 post](https://forum.gnosis.io/t/treasury-swaps-program-gno-x-bal/1440)\n\
   \n2 Likes\n"
-start: 1630926634
+start: 1630933834
 end: null
 state:
   - phase-2
@@ -41,6 +41,6 @@ votes: null
 quorum: null
 funding:
   amount: '4000'
-  currency: 'ETH-equivalent '
+  currency: ETH-equivalent
   confidence: 'High '
   model_used: gemini-1.5-flash

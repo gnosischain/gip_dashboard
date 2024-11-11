@@ -13,7 +13,7 @@ body: "##  Summary\n\nShould GnosisDAO reward 2300 GNO to Prysmatic Labs?\n\nSin
   \ codebase to support Gnosis Chain.\n  * Acknowledgment and timely review of any\
   \ performance, regression, or general reports from Gnosis regarding Prysm software.\n\
   \  * General feedback on gnosis chain and tooling.\n\n\n\n5 Likes\n"
-start: 1646936189
+start: 1646939789
 end: null
 state:
   - phase-2
