@@ -33,5 +33,5 @@ quorum: null
 funding:
   amount: '2300'
   currency: GNO
-  confidence: 'High '
+  confidence: High
   model_used: gemini-1.5-flash

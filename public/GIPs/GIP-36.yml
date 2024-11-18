@@ -30,5 +30,5 @@ quorum: 0
 funding:
   amount: '3'
   currency: ETH
-  confidence: 'High '
+  confidence: High
   model_used: gemini-1.5-flash

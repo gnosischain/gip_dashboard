@@ -81,5 +81,5 @@ quorum: null
 funding:
   amount: 50,000
   currency: USD
-  confidence: 'High '
+  confidence: High
   model_used: gemini-1.5-flash

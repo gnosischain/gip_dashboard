@@ -46,5 +46,5 @@ quorum: 0
 funding:
   amount: '50000'
   currency: USD/DAI
-  confidence: 'High '
+  confidence: High
   model_used: gemini-1.5-flash

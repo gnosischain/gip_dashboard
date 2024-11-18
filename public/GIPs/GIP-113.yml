@@ -123,7 +123,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 400,000
-  currency: WXDAI
+  amount: 400000 and 600
+  currency: WXDAI and GNO
   confidence: High
   model_used: gemini-1.5-flash
