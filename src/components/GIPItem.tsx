@@ -26,25 +26,6 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     });
   };
 
-  const getBadge_state = (state: string) => {
-    const stateMap = {
-      closed: 'black',
-      open: 'info',
-      'phase-1': 'info',
-      'phase-2': 'info',
-    };
-    return stateMap[state] || 'primary';
-  };
-
-  const getBadge_status = (status) => {
-    const statusMap = {
-      passed: 'success',
-      failed: 'danger',
-      pending: 'warning',
-    };
-    return statusMap[status] || 'primary';
-  };
-
   const computeState = (
     scores: string | any[],
     quorum: number,
@@ -65,6 +46,8 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     }
     return 'No funding information available';
   };
+
+  const state = computeState(gip.scores, gip.quorum, gip.scores_state);
 
   const renderChart = (
     scores: string | any[],
@@ -95,8 +78,14 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       <p className='text-2xl'>{gip.title}</p>
       <p className='text-base'>{formatDate(gip.start)}</p>
       <div className='flex gap-x-2'>
-        <p>{gip.state}</p>
-        <p>{computeState(gip.scores, gip.quorum, gip.scores_state)}</p>
+        <p className='text-neutral-500'>{gip.state}</p>
+        <p
+          className={`${
+            state === 'passed' ? 'text-green-300' : 'text-red-500'
+          }`}
+        >
+          {state}
+        </p>
       </div>
       {open && (
         <tr>
@@ -153,20 +142,14 @@ const GIPItem = ({ gip }: GIPItemProps) => {
                       <p className='mb-2'>
                         <strong>State: </strong>
                         <span
-                          className={`badge bg-${getBadge_state(gip.state)}`}
+                          className={`badge`}
                         >
                           {gip.state}
                         </span>
                         <span className='mx-2' />
                         <strong>Status: </strong>
                         <span
-                          className={`badge bg-${getBadge_status(
-                            computeState(
-                              gip.scores,
-                              gip.quorum,
-                              gip.scores_state
-                            )
-                          )}`}
+                          className={`badge`}
                         >
                           {computeState(
                             gip.scores,

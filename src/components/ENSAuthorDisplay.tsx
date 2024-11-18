@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const isEthereumAddress = (address: string) => {
   return /^0x[a-fA-F0-9]{40}$/.test(address);
