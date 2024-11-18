@@ -74,31 +74,39 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       className='w-full flex flex-col items-center'
       onClick={() => setOpen(!open)}
     >
-      <p className='w-full'>{gip.gip_number}</p>
-      <div className='w-full flex flex-col pl-3'>
-        <p className='text-2xl'>{gip.title}</p>
-        <p className='text-base font-mono text-neutral-500 mt-3'>{formatDate(gip.start)}</p>
-        <div className='flex gap-x-6 font-mono capitalize mt-2'>
-          <p className='text-neutral-500'>{gip.state}</p>
-          <p
-            className={`${
-              state === 'passed' ? 'text-green-400' : 'text-red-500'
-            }`}
-          >
-            {state}
+      <div className='w-full flex flex-col'>
+        <p className={`w-full md:w-1/3 ${open ? 'bg-[#F0EBDE]' : ''}`}>
+          {gip.gip_number}
+        </p>
+        <div
+          className={`w-full flex flex-col md:grid md:grid-cols-6 md:min-h-20 md:items-top pl-3 md:pl-8 ${
+            open ? 'bg-[#F0EBDE]' : ''
+          }`}
+        >
+          <p className='text-2xl col-span-4'>{gip.title}</p>
+          <p className='text-base font-mono text-neutral-500 max-sm:mt-3'>
+            {formatDate(gip.start)}
           </p>
+          <div className='flex gap-x-6 font-mono capitalize max-sm:mt-2 md:justify-center'>
+            <p className='text-neutral-500'>{gip.state}</p>
+            <p
+              className={`${
+                state === 'passed' ? 'text-green-400' : 'text-red-500'
+              }`}
+            >
+              {state}
+            </p>
+          </div>
         </div>
       </div>
       {open && (
         <tr>
           <td colSpan={6}>
             <Card.Body className='mx-auto' style={{ maxWidth: '1000px' }}>
-              {/* Title Section */}
               <h2 className='text-center gip-title'>
                 GIP-{parseInt(gip.gip_number, 10) || 0}: {gip.title}
               </h2>
 
-              {/* Metadata Card */}
               <Card className='mb-4'>
                 <Card.Body className='p-4'>
                   <div className='row'>
@@ -159,7 +167,6 @@ const GIPItem = ({ gip }: GIPItemProps) => {
                 </Card.Body>
               </Card>
 
-              {/* Chart Section */}
               {gip.choices &&
                 gip.scores &&
                 gip.scores.length > 0 &&
@@ -182,7 +189,6 @@ const GIPItem = ({ gip }: GIPItemProps) => {
                   </div>
                 )}
 
-              {/* Body Content */}
               <ReactMarkdown className='text-body left-align'>
                 {gip.body}
               </ReactMarkdown>

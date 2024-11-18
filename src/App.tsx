@@ -6,25 +6,27 @@ import yaml from 'js-yaml';
 import GIPTable from './components/GIPTable';
 
 export interface GIP {
-  author: string,
-  body: string,
-  choices: "For" | "Against" | "Abstain",
-  end: number,
-  funding: {
-    amount: string,
-    currency: string,
-  } | undefined,
-  gip_number: string,
-  id: string,
-  quorum: number,
-  scores: number[],
-  scores_state: string,
-  scores_total: number,
-  start: number,
-  state: string,
+  author: string;
+  body: string;
+  choices: 'For' | 'Against' | 'Abstain';
+  end: number;
+  funding:
+    | {
+        amount: string;
+        currency: string;
+      }
+    | undefined;
+  gip_number: string;
+  id: string;
+  quorum: number;
+  scores: number[];
+  scores_state: string;
+  scores_total: number;
+  start: number;
+  state: string;
   title: string;
-  url: string,
-  votes: number
+  url: string;
+  votes: number;
 }
 
 function App() {
@@ -51,11 +53,14 @@ function App() {
           })
       );
       const fileContents = await Promise.all(fetchPromises);
-  
+
       const parsedGips = fileContents
         .filter((content): content is string => {
           if (!content || content.startsWith('<!doctype html>')) {
-            console.warn('Invalid file content, skipping:', content?.slice(0, 100));
+            console.warn(
+              'Invalid file content, skipping:',
+              content?.slice(0, 100)
+            );
             return false;
           }
           return true;
@@ -69,21 +74,20 @@ function App() {
           }
         })
         .filter((gip): gip is GIP => gip !== null);
-  
+
       setGips(parsedGips);
       console.log('Parsed GIPs:', parsedGips);
     } catch (error) {
       console.error('Error loading GIPs:', error);
     }
   };
-  
 
   useEffect(() => {
     loadGIPs();
   }, []);
   return (
     <div className='w-screen min-h-screen bg-white text-black flex flex-col'>
-      <p className='text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
+      <p className='flex text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
       <div className='p-4'>
         <Tabs>
           <div className='w-full flex justify-between'>
@@ -97,8 +101,10 @@ function App() {
             </TabList>
             <div>Search Component Here</div>
           </div>
-          <TabPanel>{<GIPTable gips={gips} />}</TabPanel>
-          <TabPanel>{/* <GIPStats gips={gips} /> */}</TabPanel>
+          <div className='w-full md:pl-8 mt-8'>
+            <TabPanel>{<GIPTable gips={gips} />}</TabPanel>
+            {/* <TabPanel>{<GIPStats gips={gips} /></TabPanel> */}
+          </div>
         </Tabs>
       </div>
     </div>

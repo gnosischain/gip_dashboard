@@ -20,7 +20,7 @@ const GIPTable = ({ gips }: GIPTableProps) => {
     column: 'gip_number',
     state: 'desc',
   });
-  const [visibleCount, setVisibleCount] = useState(50);
+  const [visibleCount, setVisibleCount] = useState(20);
 
   const filteredGips = useMemo(() => {
     return gips
@@ -49,12 +49,12 @@ const GIPTable = ({ gips }: GIPTableProps) => {
   }, [filteredGips, visibleCount]);
 
   const loadMore = () => {
-    setVisibleCount((prev) => prev + 50);
+    setVisibleCount((prev) => prev + 20);
   };
 
   return (
     <div>
-      <div className='search-inputs'>
+      {/* <div className='search-inputs'>
         <Form.Control
           type='text'
           value={searchTermNo}
@@ -67,24 +67,24 @@ const GIPTable = ({ gips }: GIPTableProps) => {
           placeholder='Search by Title...'
           onChange={(e) => setSearchTermTitle(e.target.value)}
         />
-      </div>
+      </div> */}
       <div>
-        <tr>
+        {/* <tr>
           <th>No.</th>
           <th>Title</th>
           <th>Started</th>
           <th>State</th>
           <th>Status</th>
           <th>Actions</th>
-        </tr>
-        <div className='flex flex-col gap-y-4'>
+        </tr> */}
+        <div className='flex flex-col gap-y-6'>
           {visibleGips.map((gip) => (
             <GIPItem key={gip.id} gip={gip} />
           ))}
         </div>
       </div>
       {visibleCount < filteredGips.length && (
-        <div className='text-center mt-3'>
+        <div className='flex text-center mt-3'>
           <Button onClick={loadMore}>Load More</Button>
         </div>
       )}
