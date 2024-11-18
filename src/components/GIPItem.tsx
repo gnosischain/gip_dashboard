@@ -75,17 +75,19 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       onClick={() => setOpen(!open)}
     >
       <p className='w-full'>{gip.gip_number}</p>
-      <p className='text-2xl'>{gip.title}</p>
-      <p className='text-base'>{formatDate(gip.start)}</p>
-      <div className='flex gap-x-2'>
-        <p className='text-neutral-500'>{gip.state}</p>
-        <p
-          className={`${
-            state === 'passed' ? 'text-green-300' : 'text-red-500'
-          }`}
-        >
-          {state}
-        </p>
+      <div className='w-full flex flex-col pl-3'>
+        <p className='text-2xl'>{gip.title}</p>
+        <p className='text-base font-mono text-neutral-500 mt-3'>{formatDate(gip.start)}</p>
+        <div className='flex gap-x-6 font-mono capitalize mt-2'>
+          <p className='text-neutral-500'>{gip.state}</p>
+          <p
+            className={`${
+              state === 'passed' ? 'text-green-400' : 'text-red-500'
+            }`}
+          >
+            {state}
+          </p>
+        </div>
       </div>
       {open && (
         <tr>
@@ -141,16 +143,10 @@ const GIPItem = ({ gip }: GIPItemProps) => {
                       </p>
                       <p className='mb-2'>
                         <strong>State: </strong>
-                        <span
-                          className={`badge`}
-                        >
-                          {gip.state}
-                        </span>
+                        <span className={`badge`}>{gip.state}</span>
                         <span className='mx-2' />
                         <strong>Status: </strong>
-                        <span
-                          className={`badge`}
-                        >
+                        <span className={`badge`}>
                           {computeState(
                             gip.scores,
                             gip.quorum,

@@ -1,8 +1,7 @@
 import { useState, useMemo } from 'react';
-import { Table, Button, Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { Chart, registerables } from 'chart.js';
 import 'chart.js/auto';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import GIPItem from './GIPItem';
@@ -78,9 +77,11 @@ const GIPTable = ({ gips }: GIPTableProps) => {
           <th>Status</th>
           <th>Actions</th>
         </tr>
-        {visibleGips.map((gip) => (
-          <GIPItem key={gip.id} gip={gip} />
-        ))}
+        <div className='flex flex-col gap-y-4'>
+          {visibleGips.map((gip) => (
+            <GIPItem key={gip.id} gip={gip} />
+          ))}
+        </div>
       </div>
       {visibleCount < filteredGips.length && (
         <div className='text-center mt-3'>
