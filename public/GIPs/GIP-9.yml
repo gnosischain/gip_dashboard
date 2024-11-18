@@ -1,0 +1,106 @@
+id: QmcQjdevt8Ue2P4XSKFY8PehLBRbPmambJRgeugYeC31zV
+gip_number: '9'
+url: https://snapshot.org/#/gnosis.eth/proposal/QmcQjdevt8Ue2P4XSKFY8PehLBRbPmambJRgeugYeC31zV
+title: Launch Liquidity Mining program for Prediction Markets using Gnosis Conditional
+  Tokens
+body: "\n# Summary\n\nGnosisDAO will launch a Liquidity Mining program for prediction\
+  \ markets using Gnosis Conditional Tokens that would reward liquidity providers\
+  \ with GNO to incentivize a curated set of markets and thus boost the use of Gnosis\
+  \ Conditional Tokens.\n\n# Abstract\n\nThe GnosisDAO will allocate 120,000 GNO from\
+  \ the treasury for the first 12 months of this liquidity incentivization initiative.\
+  \ It will dynamically manage the GNO rewards distribution by assigning “allocation\
+  \ points” to specific markets that the GnosisDAO votes on in order to stimulate\
+  \ the markets with a higher participation potential or that would generate quality\
+  \ predictive data for the GnosisDAO. Currently, it means incentivizing mainly liquidity\
+  \ providers for Omen markets on xDai but the program would be open to any solution\
+  \ using Conditional Tokens (for example, it could also incentivize ERC20 wrapped\
+  \ conditional tokens on exchanges such as Uniswap, Balancer, SushiSwap, and 1inch).\n\
+  \n  \n\n# Motivation\n\nIn the current environment full of yield farming opportunities,\
+  \ providing capital to any protocol incurs a high opportunity cost. Moreover, prediction\
+  \ markets are known to be more attractive to users and more potent at predicting\
+  \ events when the markets are liquid and efficient enough to allow for high-scale\
+  \ arbitrage (cf. Vitalik Buterin [Prediction Markets: Tales from the Election](https://vitalik.ca/general/2021/02/18/election.html)\
+  \ blog post).\n\nAnyone can add liquidity to prediction markets using Gnosis Conditional\
+  \ Tokens by minting them for existing markets or even creating their own markets.\
+  \ Liquidity attracts traders, trading generates prediction market fees, and ultimately\
+  \ this profitability attracts more liquidity. This is a flywheel effect that has\
+  \ to be incentivized within the Conditional Tokens ecosystem in order to position\
+  \ ourselves in the prediction market scene.\n\nRegardless of the venue, early liquidity\
+  \ providers take on more risk and opportunity costs: including contract risk, low\
+  \ initial profitability, etc. Moreover, conditional Tokens users should get to participate\
+  \ early on in deciding how the GnosisDAO evolves and plans to build new versions\
+  \ of the Conditional Tokens.\n\nToward this end, we propose implementing a Liquidity\
+  \ Mining program for prediction markets using Gnosis Conditional Tokens rewarding\
+  \ liquidity providers with GNO tokens. These types of initiatives are proven to\
+  \ attract significant amounts of capital into products and to kickstart a virtuous\
+  \ cycle of additional liquidity (see the examples of Balancer, Sushiswap, and 1inch)\
+  \ and thus improved user experience and efficiency which will, in turn, bring more\
+  \ usage to Conditional Tokens.\n\nThe indirect benefits of this program for the\
+  \ GnosisDAO are multiple:\n\n-   Fostering the use of one of Gnosis core products\
+  \ (CT framework).\n    \n-   Upgrading the distribution of GNO by rewarding it to\
+  \ valuable community members.\n    \n-   Improving the quality of data generated\
+  \ by prediction markets using CT.\n    \n\nThe potential direct benefits to the\
+  \ GnosisDAO are just waiting to be unlocked by the governance. In the future, it\
+  \ could take the form of the implementation of a redemption fee mechanism embedded\
+  \ into the Conditional Tokens framework, or of a trading fee in exchanges controlled\
+  \ by the GnosisDAO. Legacy prediction markets like PredictIt charge significant\
+  \ fees (10% of the profit on a market and 5% of withdrawals), blockchain prediction\
+  \ markets like Augur or Cover charge a smaller redemption fee (~1% for Augur and\
+  \ 0.1% for Cover). As long as the GnosisDAO provides continuous support and development\
+  \ for Conditional Token, a small fee will probably be accepted by the users.\n\n\
+  It would also be possible for the GnosisDAO to find novel revenue sources around\
+  \ Conditional Tokens. For example, frontends controlled by the GnosisDAO could also\
+  \ allow users to burn some GNO in order to have their markets displayed in more\
+  \ attractive positions of the UI.\n\n# Specification\n\nThe GnosisDAO liquidity\
+  \ mining program for prediction markets using Conditional Tokens will be inspired\
+  \ by Balancer and SushiSwap liquidity mining programs.\n\n  \n\nFor the first year\
+  \ 120,000 GNO tokens, or 10,000 per month, will be distributed to liquidity providers\
+  \ staking their conditional tokens liquidity into the GnosisDAO liquidity mining\
+  \ contracts. For networks other than Ethereum mainnet (in particular xDAI), those\
+  \ GNO tokens would be wrapped on the particular network.\n\n  \n\nThe amount of\
+  \ GNO distributed to a particular liquidity pool will be determined by an allocation\
+  \ point system. The GNO will be distributed between pools in proportion to their\
+  \ allocation points and within pools in proportion to participant liquidity.  \n\
+  \  \n\nFor example let’s assume there are 3 pools A, B, and C with 100, 400, and\
+  \ 500 allocation points, Alice has 200 ETH of liquidity in pool A which has a total\
+  \ of 500 ETH of liquidity. Alice would receive 10000*(200/500)*(100/1000)=400 GNO\
+  \ per month.\n\n  \n\nIn order to be able to rapidly incentivize new markets when\
+  \ opportunities come up, setting up allocation points will be done through a fast-track\
+  \ procedure on Snapshot which does not require going through the complete governance\
+  \ procedure.  \n  \n\nAny account with at least 1000 GNO (from a snapshot taken\
+  \ at the beginning of the month) will be able to make an allocation point proposal\
+  \ each month for each 1000 GNO it holds (so an address with 3000 GNO would be able\
+  \ to make 3 allocation proposals per month). Those would be put to vote instantly\
+  \ with a 1 week voting period and without quorum requirements.  \n  \n\nAn allocation\
+  \ proposal would contain:\n\n-   The conditional token liquidity pool to be incentivized.\n\
+  \    \n-   The number of allocation points for this pool.\n    \n-   The start and\
+  \ finish date of the incentivization.\n    \n\n  \n\nAllocation proposals can provide\
+  \ allocation points to new pools or change the allocation of a current pool (including\
+  \ setting it to 0).\n\n  \n\n# Implementation\n\n  \nMembers of the Gnosis team\
+  \ will design/fork a liquidity mining rewards distribution contract (and its interface)\
+  \ to allow for liquidity providers to stake their Conditional Tokens and claim their\
+  \ rewards and set up a dedicated Snapshot space (with the >=1000 GNO proposal requirement)\
+  \ to allow for allocation points proposal voting.\n\n  \n\nAn explanatory thread\
+  \ for the streamlined Liquidity Mining allocation points governance process will\
+  \ be posted in GnosisDAO forum.\n"
+start: 1619085600
+end: 1619690400
+state: closed
+author: '0x4a9A2F31E2009045950DF5aAb36950609DE93c78'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 35455.90099854775
+scores:
+  - 29132.271626810987
+  - 6323.629371736783
+  - 0
+votes: 56
+quorum: 0
+funding:
+  amount: 120,000
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -1,0 +1,70 @@
+id: '0xa8adcb035b23a8e3f301ecfc2e87571279691fc28b0661c186ac380e08182b5b'
+gip_number: '60'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xa8adcb035b23a8e3f301ecfc2e87571279691fc28b0661c186ac380e08182b5b
+title: Should Gnosis pilot a DAOcast?
+body: "# [Gnosis DAOcast](https://docs.google.com/presentation/d/e/2PACX-1vR2xKzpdKsLaua3ShSSERnAu3a9xqd19oAsl-mGUrn5vDUFah0LNx9kjpeAtaKOZTj0D60Bj-uI8Z2E/pub?start=false&loop=false&delayms=5000)\n\
+  ## Proposal Summary\nPilot a weekly live broadcast to communicate the latest developments\
+  \ in the Gnosis DAO ecosystem, and provide a new way to grow the community through\
+  \ education and fun.  \n\n## Background & Motivation\nAll public-facing DAO activities\
+  \ and decisions (community calls, AMA’s, forum discussions, snapshot votes, etc.)\
+  \ can be harnessed to generate content that amplifies the work of the community,\
+  \ and establish a unique narrative. Gnosis DAO is a dynamic project with respected\
+  \ status in the industry; a live broadcast designed to cover its activities would\
+  \ serve as a marketing resource, increase community engagement, and add a new layer\
+  \ of communications transparency.\n\n## Specification \n\nDAOcast Format\n\n* **Episode\
+  \ length**: ~1 hour\n\n* **Frequency**: Bi-weekly\n\n* **Pilot Duration:** 16 weeks\
+  \ (8 total episodes)\n\n* **Logistics**: Show hosted on Twitter Spaces + audio combined\
+  \ with visual overlays via OBS to be run live on YouTube. This format can enable\
+  \ Gnosis DAO to grow its audience on two of the most important social media platforms\
+  \ in the industry simultaneously. \n\n* **Content options:**  We have a variety\
+  \ of content ideas for the pilot; there is a lot of room for creativity and we are\
+  \ open to suggestions. After feedback from the Gnosis team, we will focus primarily\
+  \ on content that helps to highlight the Gnosis Chain ecosystem, while also helping\
+  \ to communicate wider developments in the DAO. \n\n* **Post-Show Highlights:**\
+  \ Following each program, we will cut at least two (2) highlights from the broadcast.\
+  \ At least one (1) of these cuts will be 2m 20s or under for use as twitter native\
+  \ video; both cuts will be posted independently on YouTube to create a consistent\
+  \ posting cadence required to gain traction with the algorithm.\n\n* **Aesthetic\
+  \ Design:** All visuals used on YouTube will be aligned with the branding expectations\
+  \ of Gnosis DAO.\n\n## How will we measure success?\nIn order to achieve success,\
+  \ alignment with existing Gnosis DAO marketing / communications goals is required.\
+  \ Should this initiative take flight, we hope to work closely with relevant teams\
+  \ to ensure we are rowing in the same direction. We propose three KPI categories\
+  \ for evaluating the pilot ([view table](https://docs.google.com/spreadsheets/d/1uqSBzjHZon8GMZdGUOpqIePNlrsGp8G4VWPHsFghrQA/edit?usp=sharing)),\
+  \ and will log data after each show. \n\n\n\n## Why our team?\n\nWe have excellent\
+  \ knowledge of the web3 space, context on Gnosis DAO, and the logistical and technical\
+  \ expertise required to research, plan, and execute consistent content creation.\
+  \ \n\nRelevant work samples with Gnosis Chain:\nPost-produced content\n* [Gnosis\
+  \ Chain Defi Ecosystem](https://www.youtube.com/watch?v=yPYYKz0u9K0)\n* [Gnosis\
+  \ Chain DAO Tooling + Infrastructure](https://www.youtube.com/watch?v=uAw1paJKcqc)\n\
+  \nInterview-style GC Show [live stream + highlights]\n* [GC Show - QiDAO](https://youtu.be/XsP9icavQ44)\
+  \ + Highlight [A](https://youtu.be/sMOg2AKGtgA) , [B](https://youtu.be/tXjOd_I6_g8)\n\
+  * [GC Show - Twitter Thread w/ XP Network](https://twitter.com/gnosischain/status/1537717038860443648?s=20&t=P0pgmjg5kgREZh3jOxWDDQ)\n\
+  \nTeam Members\n\n* @twells - project manager\n* @itsyaboi - video magic\n* @Sapote\
+  \ - audio magic\n\n## How much will it cost?\n**Tokens Requested:** 4,000 xDai/USDC\
+  \ + ~7.5 GNO (at current market price)\n**Recipient Address::** 0x9638530aA558c81253625d42f3018BC1544D9Dd3\n\
+  **Network:** Gnosis Chain\n**Requested Payment Date:** Monthly payment is preferred\
+  \ (4 month pilot).\n\n## Conclusion\nWe've had a great experience working with members\
+  \ of the Gnosis Chain team, and are enthusiastic about contributing to the larger\
+  \ DAO through this new media initiative. Your vote and feedback are greatly appreciated!\n"
+start: 1660065149
+end: 1660669949
+state: closed
+author: '0x9638530aA558c81253625d42f3018BC1544D9Dd3'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 77049.07591327732
+scores:
+  - 77038.55151502932
+  - 3.422032515669759
+  - 7.1023657323537295
+votes: 406
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

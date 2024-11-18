@@ -1,0 +1,170 @@
+id: '0x8d79d7db03736acf31af752efa45ef49106afbf7b7ecc174d839811fa5281b57'
+gip_number: '67'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x8d79d7db03736acf31af752efa45ef49106afbf7b7ecc174d839811fa5281b57
+title: Should GnosisDAO fund Gnosis (chain) Ecosystem Analysis and Dashboard?
+body: 'Simple Summary
+
+  To create an in-depth Ecosystem Report and Live Ecosystem Dashboard that helps attract
+  new resources to Gnosis and improve resource coordination among existing stakeholders.
+
+
+  Abstract
+
+  To improve resource coordination and allocation within the Gnosis ecosystem, GnosisDAO
+  should fund the creation of a curated overview and ecosystem dashboard. This will
+  improve navigation of the Gnosis ecosystem and fast-track decision-making (such
+  as investments, grants, partnerships, business development, and more). A curated
+  Gnosis overview based on an in-depth analysis of its key players will strongly improve
+  the UX and navigation of projects building on the Gnosis chain.
+
+
+  Motivation
+
+  The Gnosis ecosystem evaluation and dashboard aim to improve UX for new joiners
+  and longstanding contributors. It will speed up decision-making and coordination
+  by improving the navigation of the space through a curated ecosystem overview. This
+  will also enable new features, such as sorting all projects by a rating score. Thus
+  users can easily find projects that fulfill their needs and match their level of
+  interest or risk appetite.
+
+
+  Making it easier for Gnosis stakeholders to understand and navigate all projects
+  on Gnosis will save a lot of time and resources related to due diligence and decision-making.
+
+
+  The report and dashboard can also be used as a starting point for a potential GnosisDAO
+  Ecosystem Fund or any other Grants/Builder program. Moreover, it can be used as
+  a benchmark to follow the developments and improvements and uncover gaps.
+
+
+  Specification
+
+  The program will start with an ecosystem mapping and methodology improvement facilitated
+  by two top-raters of Prime Rating (rank Master 1 or higher). An updated version
+  of the current review framework will be made to match the Gnosis context, and a
+  list of all projects on Gnosis with research priorities will be created.
+
+
+  After the pre-research, the Prime Rating team will host two seasons (rating contests)
+  in collaboration with Gnosis community members to evaluate at least 40+ projects
+  on Gnosis. During these events, analysts can get rewarded with DAI, GNO, and D2D
+  for reviewing the Gnosis ecosystem.
+
+
+  From this research, two resources will be created, namely:
+
+
+  An Ecosystem Report - An easily digestible report that showcases the existing ecosystem
+  (from tech to projects built on the Gnosis chain and identifies potential areas
+  for improvement to expand the ecosystem). The report can be used by users, builders,
+  and funders alike to speed up their decision-making.
+
+
+  The Gnosis Dashboard - A web application that provides an overview of all projects
+  on Gnosis that can be reviewed using our methodologies with a letter score based
+  on a proven methodology, analyzing the quality of key attributes of each project
+  (including team, governance, tokenomics, value-proposition and more). The Dashboard
+  will be tailored to Gnosis and hosted on a Gnosis-native domain. An example of a
+  dashboard can be found here 3.
+
+
+  Review Methodology and Process
+
+  The project will be executed by Prime Rating, an analyst collective with over 50+
+  contributors that operates as an independent sub-DAO of PrimeDAO. Since early 2021,
+  Prime Rating has created multiple frameworks to evaluate projects and ecosystems
+  with over 200+ reports created by 60+ individuals and successful projects executed
+  with Celo, 1kx, Kyber, and Metaportal. It has a partnership with leading research
+  group DeFi Safety which provides the technical review, whereby Prime Rating focuses
+  primarily on the fundamental side.
+
+
+  Prime Rating operates as a DAO - where reports are created by analysts and reviewed
+  by experienced DAO members in a Web 3.0 native way - allowing for native ecosystem
+  members to learn, level up, and earn rewards. Analysts in Prime Rating earn a rank
+  by successfully submitting reports accepted via governance, which is manifested
+  as on-chain reputation, thus representing their experience.
+
+  The current review framework includes DeFi, Metaverse, and ReFi and provides deep
+  insights into the reviewed projects. This is then translated into a letter score,
+  representing the overall quality of a project.
+
+
+  Implementation
+
+  Timeline and Budget
+
+
+  Within 4 weeks of this proposal passing, the top raters of Prime Rating (rank Master
+  or higher) will create an ecosystem map to ensure a clear overview of the current
+  Gnosis ecosystem. Based on this preliminary research, an updated version of the
+  current review framework will be made to match the Gnosis context, and a list of
+  all projects on Gnosis with research priorities will be created.
+
+  Within 12 weeks of the completion of the pre-research, the Prime Rating team will
+  host two seasons (each 5-week long rating contests) with existing raters and Gnosis
+  community members to analyze at least 40+ projects building on Gnosis. During these
+  events, analysts can get rewarded with DAI, GNO, and D2D for reviewing the Gnosis
+  Ecosystem.
+
+  Within 4 weeks of the completion of the events, the Prime Rating team will create
+  a live dashboard similar to the current Rating Dashboard 3 to be hosted on a Gnosis
+  native domain such as ecosystem.gnosis.io 2
+
+  Within 6 weeks of the completion of the rate-athons, the top raters will create,
+  design, and publish an ecosystem report with key insights gained during reviewing
+  the projects.
+
+
+  GnosisDAO will provide 58,500 DAI + 400 GNO to Prime Rating to run the full program
+  within 18 weeks of this proposal passing. Received funds to be managed by the Prime
+  Rating multisig at primerating.eth. Rewards to be allocated on Gnosis Chain.
+
+
+  Fund Allocation Details
+
+  Below is a breakdown of the expected spending of the budget based on previous campaigns.
+
+
+  Preliminary research phase: 8,000 DAI + 40 GNO for three weeks of research by two
+  top raters.
+
+  Rating Season: 15,500 DAI + 200 GNO to be distributed to analysts and reviewers
+  (expected to be split between 15+ individuals)
+
+  Ecosystem Report: 10,000 DAI + 60 GNO for four weeks of research by two high-level
+  raters
+
+  Dashboard: 7,500 DAI + 25 GNO to design, develop and host the Ecosystem Dashboard
+  on a Gnosis native domain.
+
+  Program Management: 12,500 DAI + 75 GNO for 5 weeks of program management
+
+  Marketing: 5,000 DAI to support marketing and design efforts and purchase media
+  to support the rate-athon and report.
+
+  Total: 58,500 DAI + 400 GNO
+
+
+  All rewards will be allocated on Gnosis Chain to promote usage.'
+start: 1664965333
+end: 1665570133
+state: closed
+author: '0x5C89C420A9E82Ea9AEDBaAab03302e39982919b9'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 2186.7812637765533
+scores:
+  - 2175.353369147766
+  - 8.733973182893616
+  - 2.6939214458942824
+votes: 641
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

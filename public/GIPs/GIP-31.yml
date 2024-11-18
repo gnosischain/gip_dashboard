@@ -1,0 +1,29 @@
+id: '0xa5245b0893ee9faeefd865439751c6a96a6c948ce578c4eab2a12313b39bf1aa'
+gip_number: '31'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xa5245b0893ee9faeefd865439751c6a96a6c948ce578c4eab2a12313b39bf1aa
+title: Should Gnosis Chain perform a Hardfork to upgrade the token contract vulnerable
+  to the reentrancy attack?
+body: The hard fork assumes to update Gnosis Chain spec file (explicitly or through
+  node upgrading with the new internal spec) on all nodes and upgrade the nodes themselves
+  to the new version supporting dao-like hard forks.
+start: 1650216802
+end: 1650821602
+state: closed
+author: '0x74b926358f43a06665C9733Ff4f1A79d1dceC49E'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 63438.93959378386
+scores:
+  - 63276.354651802576
+  - 0.2178027672264804
+  - 162.3671392140603
+votes: 532
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

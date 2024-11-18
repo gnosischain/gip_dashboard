@@ -1,0 +1,29 @@
+id: '0x06feee3d2c9bc68ae0fccc8f2ada05c8323f0a71d2bcdfbc5556e8336cf5d71f'
+gip_number: '17'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x06feee3d2c9bc68ae0fccc8f2ada05c8323f0a71d2bcdfbc5556e8336cf5d71f
+title: GIP-17 Gnosis DAO Safe update AND new treasury management Safe
+body: "Should Gnosis DAO upgrade the Gnosis DAO Safe AND create a separate Safe for\
+  \ Active Treasury Management as detailed in [this forum post](https://forum.gnosis.io/t/gip-17-should-gnosis-dao-upgrade-the-gnosis-dao-safe-and-create-a-separate-safe-for-active-treasury-management/2237)?\
+  \ \n\nTransaction batch 1 upgrades the Gnosis DAO Safe and creates the new daughter\
+  \ Safe.\nTransaction batch 2 sends the tokens to the daughter Safe."
+start: 1639515600
+end: 1640124000
+state: closed
+author: '0xf19d3e30392359440597ffE1d783ab77aebb2b4D'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 119028.46543965576
+scores:
+  - 119028.46543965576
+  - 0
+  - 0
+votes: 140
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

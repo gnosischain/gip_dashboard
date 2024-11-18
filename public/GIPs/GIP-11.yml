@@ -1,0 +1,132 @@
+id: QmNMRBnipvRfos9ze1MrKpFAsHqxhNrmxjrXzxJnhFif9b
+gip_number: '11'
+url: https://snapshot.org/#/gnosis.eth/proposal/QmNMRBnipvRfos9ze1MrKpFAsHqxhNrmxjrXzxJnhFif9b
+title: Enable SafeSnap
+body: '## Simple Summary
+
+  This is a proposal to update the GnosisDAO''s governance structure in a way that
+  keeps the benefits of off-chain voting while allowing for trustless and permissionless
+  on-chain execution, using the recently released [DAO module and SafeSnap plugin](https://blog.gnosis.pm/introducing-safesnap-the-first-in-a-decentralized-governance-tool-suite-for-the-gnosis-safe-ea67eb95c34f).
+
+
+  ## Motivation
+
+  The current governance structure is designed to be maximally inclusive: gas-free
+  voting with delegation. This, however, comes at the cost of some additional trust
+  in the system. Primarily, GnosisDAO must trust that the GnosisDAO Safe multi-sig
+  will faithfully execute its will on-chain.
+
+
+  In order to make the GnosisDAO more autonomous, we should more meaningfully give
+  it control over its on-chain execution.
+
+
+  ## Specification
+
+  Gnosis Ltd recently developed the [DAO module](https://github.com/gnosis/dao-module)
+  and [SafeSnap Snapshot Plugin](https://github.com/snapshot-labs/snapshot.js/tree/master/src/plugins/daoModule).
+
+
+  In combination with the Gnosis Safe, this tool allows for:
+
+
+  * Trustless and permissionless on-chain execution of arbitrary function calls
+
+  * Continued use of our existing Snapshot strategies (ERC20 BalanceOf and Delegated
+  ERC20 BalanceOf)
+
+  * Cheap/free and low friction participation for Participants.
+
+
+  ## Rationale
+
+  As described in the [SafeSnap announcement post](https://blog.gnosis.pm/introducing-safesnap-the-first-in-a-decentralized-governance-tool-suite-for-the-gnosis-safe-ea67eb95c34f),
+  the path to progressive decentralization can be broken down into three steps.
+
+
+  1. **Multi-sig as a proxy:**  Gnosis Safe + Snapshot, in which the multi-sig promises
+  to act in accordance with the off-chain votes. This is the status quo.
+
+  2. **Multi-sig as a safeguard:**  Gnosis Safe + Snapshot + SafeSnap, in which on-chain
+  execution of off-chain votes is handled by the SafeSnap module, but there are still
+  multi-sig owners that can veto malicious actions or act quickly in the case of an
+  emergency.
+
+  3. **Look ma, no hands!:**  Gnosis Safe + Snapshot + SafeSnap, in which the multi-sig
+  owners have been removed, and the only way to execute transactions is via the SafeSnap
+  module.
+
+
+  This proposal is to move from (1) to (2) by deploying an instance of the DAO module,
+  enabling it in the GnosisDAO Gnosis Safe, and updating the GnosisDAO Snapshot space
+  to include the SafeSnap module.
+
+
+  ## Implementation
+
+  The DAO module should have the following parameters set:
+
+
+  * **Oracle:**  GNO denominated instance of Reality.eth `0x8f1CC53bf34932591177CDA24723486205CA7510`
+
+  * **Reality question timeout:**   `48 hours`
+
+  * **Proposal cooldown:**   `48 hours`
+
+  * **Proposal expiration:**   `7 days`
+
+  * **Minimum bond:**   `10 GNO`
+
+  * **Question Template:**  [see this document](http://gateway.pinata.cloud/ipfs/QmP5ptVAmAcBLJB5bpZntADLieaWRc2iN2V8UQBRoQDA56)
+
+  * **Arbitrator:** Reality.eth contract, so that it is not possible to call arbitration
+
+  `0x8f1CC53bf34932591177CDA24723486205CA7510`
+
+
+
+  **Transactions that need to be executed:**
+
+
+  On the [`gnosis.eth` ENS name](https://app.ens.domains/name/gnosis.eth):
+
+  * update  `snapshot`  text record to  `ipfs://QmPdrDbYVPCz6ASgYvvYWkdpDmZ7pph7TnT4K3zhq1dfP7`
+
+  * update  `daorequirements`  text record to  `ipfs://QmP5ptVAmAcBLJB5bpZntADLieaWRc2iN2V8UQBRoQDA56`
+
+  * set  `registrant`  and  `controller`  to  `0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe`
+
+
+  On the [deployed DaoModule](0x0eBaC21F7f6A6599B5fa5f57Baaa974ADFEC4613):
+
+  * update  `questionArbitrator`  to  `0x8f1CC53bf34932591177CDA24723486205CA7510`
+
+  * update  `minimumBond`  to  `10 GNO`
+
+  * update  `questionCooldown`  to  `48 hours`
+
+
+  On the [GnosisDAO''s safe](http://gnosis-safe.io/app/#/safes/0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe/transactions):
+
+  * call  `enableModule("0x0eBaC21F7f6A6599B5fa5f57Baaa974ADFEC4613")`'
+start: 1624033800
+end: 1624638600
+state: closed
+author: '0xd714Dd60e22BbB1cbAFD0e40dE5Cfa7bBDD3F3C8'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 91615.3018922983
+scores:
+  - 91615.3018922983
+  - 0
+  - 0
+votes: 112
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -1,0 +1,151 @@
+id: '0x7575919c07e03bbe642b11938501bb6cbc542337f64763f94a00e04ed403cfba'
+gip_number: '57'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x7575919c07e03bbe642b11938501bb6cbc542337f64763f94a00e04ed403cfba
+title: Should Gnosis DAO support research of a zkSNARK-enabled light client and bridge?
+body: "## Simple Summary\n\nThe current Gnosis bridge is a based on a multi-sig design.\
+  \ However, multi-sig bridges have known weaknesses, particularly their reliance\
+  \ on a relatively centralized set of operators--see the recent [Ronin bridge](https://cointelegraph.com/news/axie-infinity-s-ronin-bridge-hacked-for-over-600m)\
+  \ and [Harmony bridge](https://techcrunch.com/2022/06/24/harmony-blockchain-crypto-hack/)\
+  \ hacks, in which hundreds of millions of dollars of funds were stolen by attackers\
+  \ who gained access to multi-sig keys. SNARK-enabled bridges--sometimes called [\"\
+  trustless\" bridges](https://ethereum.org/en/bridges/)--potentially have better\
+  \ security properties. We propose to build prototypes of essential infrastructure\
+  \ for a potential SNARK-enabled bridge for Gnosis to Eth2 bridging.\n\n\n## Abstract\n\
+  \n- Build essential infrastructure that can be used in the future to create and\
+  \ productionize a SNARK-enabled bridge for Gnosis Chain / Eth2. Note that it is\
+  \ **not** in the scope of this specific grant to take the bridge all the way to\
+  \ production on mainnet—this work will allow us to assess the viability of a production\
+  \ bridge and build out the key infrastructure. Productionization, if it happens,\
+  \ would be a future project.\n- Create a foundation for Gnosis’ ZK roadmap and expertise.\n\
+  \n## Motivation\nTo build the components of a SNARK-enabled bridge for Gnosis Chain,\
+  \ an Eth2 compatible light client must be implemented on the EVM. Because the EVM\
+  \ does not have precompiles for the BLS12-381 curve used in Eth2, implementing this\
+  \ directly in Solidity would result in impractically high gas costs.  As a result,\
+  \ this approach to bridging was unexplored until it was made practical by recent\
+  \ advances in zero-knowledge proofs.\n\nThe 0xPARC community has developed extensive\
+  \ expertise in ZK-SNARKs broadly and has built several advanced ZK circuit primitives\
+  \ which can now enable these types of applications. We believe that we can design\
+  \ a circuit which  significantly reduces the gas cost of running a light client\
+  \ on EVM by moving the verification of the aggregated BLS signature and the Merkle\
+  \ tree inclusion proof off-chain.\n\n## Specification\n\nBuilding this SNARK-enabled\
+  \ bridge will require three important components:\n\n1) A Solidity smart contract\
+  \ which implements the [Eth2 light client spec](https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/sync-protocol.md).\
+  \ \n2) A zkSNARK circuit that verifies the aggregated BLS signature of the [sync\
+  \ committee](https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#sync-committee),\
+  \ verifies the Merkle tree inclusion proofs with SSZ for serializiation, and verifies\
+  \ the current sync committee from the previous block header.\n3) An operator node\
+  \ implementation which can keep the light client up to date.\n\n\n## Rationale\n\
+  \n### SNARK-enabled Bridge Pros & Cons\n\nPros:\n\n- Security: SNARK-enabled bridges\
+  \ can be safer than centrally-operated multisig bridges.  Funds cannot be unilaterally\
+  \ stolen by a small set of coordinated operators or hackers by obtaining a known\
+  \ set of private keys (see the $500mm [Ronin bridge hack](https://cointelegraph.com/news/axie-infinity-s-ronin-bridge-hacked-for-over-600m)\
+  \ and the $100mm [Harmony bridge hack](https://techcrunch.com/2022/06/24/harmony-blockchain-crypto-hack/)).\
+  \ Instead, the security of a SNARK-enabled bridge relies on the honesty of a larger\
+  \ and regularly-shuffled sync committee as defined in the eth2 light client spec.\n\
+  \nCons:\n\n- Operating expense: Our estimates suggest it will cost ~0.008 ETH per\
+  \ light client header update at 40 gwei gas price as well as ~0.008 ETH per withdraw\
+  \ operation on the bridge. The frequency of light client updates is up to the operator.\
+  \ In the most extreme case, updating the light client every 10 minutes for a year\
+  \ would cost ~420 ETH. Updating every two hours would cost ~35 ETH.\n\nAdditionally,\
+  \ regardless of what cryptographic mechanisms are used, bridges cannot provide security\
+  \ beyond the consensus mechanisms of the source and target chains.  Even with the\
+  \ efficiencies provided by zkSNARKs, such limitations will be governed by the size\
+  \ of potential PoS penalties on either chain.\n\n## Implementation\n\n### Work Breakdown\n\
+  \n**Timeline:** 10 weeks (July 4 - September 9) for Phase 1 and Phase 2\n\n**Phase\
+  \ 1:** \n\nThe goal of Phase 1 will be to deliver prototypes of the three important\
+  \ components above. In particular, we will deliver a smart contract that implements\
+  \ the Eth2 light client spec with as much computation as possible moved off-chain\
+  \ with a zkSNARK circuit to make gas costs feasible.\n\nThe SNARK circuit will do\
+  \ three things:\n\n- verify the BLS signatures of the sync committee\n- verify the\
+  \ Merkle tree inclusion proofs using SSZ for serialization used in several places\
+  \ in the light client\n- verify the current sync committee from the previous block\
+  \ header\n\nThe Solidity smart contract will generally implement the Eth2 light\
+  \ client spec substituting out the BLS signature verification and Merkle tree inclusion\
+  \ proofs with a snark verification, reducing gas costs.\n\nWe will also provide\
+  \ an operator node implementation which periodically updates the light client with\
+  \ the proof generated by the SNARK circuit.\n\n**Phase 2**\n\nIn Phase 2 of the\
+  \ of the grant, we aim to have public-facing polished artifacts and deliverables\
+  \ including the smart contracts and circuits from Phase 1. The artifacts include\
+  \ the following:\n\n- public open-source repo with smart contract light client and\
+  \ SNARK circuits with clear documentation\n- ZK light client deployed to testnets\
+  \ (Ethereum and Gnosis Chain) with a prototype operator that generates proofs and\
+  \ pings contracts with block headers every 10 minutes\n- public open-source repo\
+  \ with a prototype bridge contract that calls the light client smart contract and\
+  \ a prototype UI that allows for use generating inclusion proofs and bridging funds\n\
+  - prototype bridge contract deployed to test nets and example of SNARK-enabled bridging\
+  \ on testnets\n- public blog post explaining what we built: the technical architecture\
+  \ of a SNARK-enabled bridge, high-level technical explanation of circuits and how\
+  \ all the components fit together, and a precise breakdown of both security guarantees\
+  \ as well as risks/limitations/failure modes of a SNARK-enabled bridge.\n- stretch:\
+  \ blog post series diving deeper into technical details of each component\n\n##\
+  \ Deliverables\n\n### Grant Allocation\n\nThe core team that would recieve this\
+  \ grant is part of the 0xPARC organization. 0xPARC is trying out a unique, experimental\
+  \ public-goods collective grant sharing proposal for this project. In particular,\
+  \ the proceeds from this grant will be split **50/50** between the core team and\
+  \ donations to various dependencies the project relies on (i.e. open source circuits,\
+  \ public goods resources) as well as the 0xPARC community. \n\nThe reason for this\
+  \ split is this project is only made possible by extensive open-source work by co-dependencies\
+  \ in the 0xPARC and broader ZK communities (such as circom, made by iden3).\n\n\
+  This innovative model for grant-funding and support for public goods will also be\
+  \ mentioned in the blog post, as we want this project to push the narrative from\
+  \ both a technical standpoint as well as a community & grant-funding standpoint.\n\
+  \n**We are requesting a total of $600k (600k USDC) across two project phases: $300k\
+  \ will go to the team and $300k will go to the broader ZK community and public goods\
+  \ (distribution determined by core team).** We expect that the project will take\
+  \ around 30 engineering weeks for the core team, in addition to supporting work\
+  \ from various dependencies and public goods that make this project possible. As\
+  \ described above, half of the grant will be distributed by the core team to the\
+  \ broader ZK community and various co-dependencies (which may include prior work\
+  \ by team members, as well as future ZK projects that opt into 50/50). Note that\
+  \ the core team, not GnosisDAO, will be deciding on the distribution of the $300k\
+  \ set aside for broader ZK community and public good contributions.\n\n**Phase 1:\
+  \ $120K for Team + $180K Public Goods/0xPARC ZK Ecosystem**\n\nThe funding for this\
+  \ phase will be paid out in advance of work starting on Phase 1. The deliverables\
+  \ for this phase include the following:\n\n- [ ] ZK circuit template for BLS signature\
+  \ aggregation and verification\n- [ ] ZK circuit template for SSZ Merkle tree inclusion\
+  \ proofs\n- [ ] ZK circuit for verifying the sync committee form the previous block\
+  \ header\n- [ ] Solidity smart contract for running the light client according to\
+  \ the Eth2 spec on EVM\n- [ ] an operator node implementation which periodically\
+  \ submits new headers and proofs of the ZK circuit to the light client\n\n**Phase\
+  \ 2: $180K for Team + $120K Public Goods/0xPARC ZK Ecosystem**\n\nThe funding for\
+  \ this phase will be paid out after the completion of Phase 1 (as judged by Stefan\
+  \ and Martin of Gnosis) and before starting of Phase 2. The deliverables of this\
+  \ phase include the following: \n\n- [ ] extensive documentation of all circuits,\
+  \ contracts, and code\n- [ ] ZK light client deployed to test nets on Ethereum and\
+  \ Gnosis Chain with a prototype operator that generates proofs and pings contracts\
+  \ with block headers periodically\n- [ ] prototype bridge contract + UI that can\
+  \ bridge assets from Gnosis Chain to Ethereum\n- [ ] blog post explaining what we\
+  \ built ranging from the technical architecture of a SNARK-enabled bridge and how\
+  \ all the components fit together\n\nThe address of the SAFE to provide funds to\
+  \ is: 0xFeB39382FCBE6035e0bE2263Ba474390AB926eE4\nhttps://gnosis-safe.io/app/eth:0xFeB39382FCBE6035e0bE2263Ba474390AB926eE4/home\n\
+  \n## Team\n\n\n- Uma Roy\n    - Summer resident at 0xPARC. Co-author of ZK-identity\
+  \ apps [zkmessage.xyz](http://zkmessage.xyz) and [cabal.xyz](http://cabal.xyz).\
+  \ Co-author of circom-batch-ecdsa.\n- John Guibas\n    - Summer resident at 0xPARC.\
+  \ Co-author of circom-batch-ecdsa and has experience building smart contracts for\
+  \ DeFi and infrastructure for blockchain analytics.\n- Jonathan Wang\n    - 0xPARC\
+  \ grantee and co-author of circom-pairing. Number theory post-doc and elliptic curve\
+  \ math specialist.\n\nAdditional 0xPARC community members will be helping out with\
+  \ implementation. This includes individuals that helped implement many of the most\
+  \ advanced circuit primitives in groth16, including co-authoring of circom-bigint,\
+  \ circom-ecdsa, and circom-pairing.\n"
+start: 1657075047
+end: 1657679847
+state: closed
+author: '0xd60D3ff36e52cFD04B9f29e10D5A43f9FaB1F256'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 205784.74910019594
+scores:
+  - 205548.46288814992
+  - 0.003658774799350572
+  - 236.28255327122884
+votes: 550
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

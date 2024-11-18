@@ -1,0 +1,67 @@
+id: gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
+gip_number: 103
+url: https://forum.gnosis.io/t/gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
+title: Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program? - Governance
+  - Gnosis
+body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently available\
+  \ by bridging from Ethereum through the Gnosis Bridge) is not compliant with the\
+  \ Bridge Token Standard, established by Circle in November 2023. With the objective\
+  \ of growing the USDC bridged into Gnosis, and the ultimate goal of Circle taking\
+  \ over the token and converting it to native USDC on Gnosis Chain, we propose to\
+  \ create an incentives program of up to 8k GNO.\n\n## Specification\n\nIf this proposal\
+  \ is approved, Gnosis DAO will be incentivising the growth of [USDC.e](https://gnosisscan.io/token/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0),\
+  \ which is compliant with the standard and that can be acquired by calling Deposit()\
+  \ on a [Transmuter](https://gnosisscan.io/address/0x0392a2f5ac47388945d8c84212469f545fae52b2).\
+  \ The swap of the old USDC to the new one can also be done through the bridge UI.\
+  \ New USDC bridged to Gnosis will automatically be USDC.e thanks to changes in the\
+  \ bridge UI.\n\nkarpatkey will define the allocation of the incentives, based on\
+  \ what is deemed the most suitable action on Gnosis Chain. Under this same post,\
+  \ we will be reporting the updates of the program, detailing how much was spent,\
+  \ on which pools/protocols, and which results we have achieved.\n\nThe program will\
+  \ run until USDC is natively issued on Gnosis, and we have ensured that it is well\
+  \ integrated into DeFi.\n\nThe objective of the proposal, however, is not just bringing\
+  \ capital, but also users. Incentives will be directed to guide specific behaviours\
+  \ that will make users sticky. Gnosis is building a set of products that are already\
+  \ finding Product Market Fit - Gnosis Pay being an example of that. It is the right\
+  \ timing to launch an incentives program to bootstrap the ecosystem. In the end,\
+  \ the results of the program should be:\n\n  1. Have native USDC\n  2. Have more\
+  \ users in Gnosis Chain\n  3. Have more capital on Gnosis Chain, as a result of\
+  \ 1 and 2, and regardless of having some capital flying away.\n\n\n\nAs two examples\
+  \ of some strategies that could be utilised to incentivise wanted behaviours:\n\n\
+  \  * Reward (more) users that deposit USDC in Aave/Spark, borrow EURe and spend\
+  \ it with Gnosis Pay.\n  * Reward users that make a large TWAP of USDC for GNO,\
+  \ by giveing them a certain % on top of what they bought (depending on the size\
+  \ and time extension of the TWAP).\n\n\n\n## Rationale\n\nThe adoption of a compliant\
+  \ USDC token on Gnosis Chain is crucial for enhancing its DeFi ecosystem, as it\
+  \ is a requirement for native USDC and CCTP. Having native USDC will help bring\
+  \ Gnosis Chain closer to CeFi, and CCTP will lower the costs of bridging in and\
+  \ out. Additionally, native USDC will provide significant advantages for Gnosis\
+  \ Pay, allowing its worldwide expansion.\n\n## Budget\n\nThis program aims to direct\
+  \ up to 8k GNO in incentives. Assuming that we need to pay a ~10% APY for incentives\
+  \ and that we achieve significant size (eg., 50M) in 6 months, this translates to\
+  \ roughly ~$2.5M.\n\nThis proposal requests 8k GNO, which accounts for potential\
+  \ market volatility. We will continuously work on optimising incentive allocation\
+  \ which may result in the desired growth in a shorter time frame and/or with fewer\
+  \ incentives paid out. In this case, the surplus budget will remain unallocated.\n\
+  \n8 Likes\n"
+start: 1718118995
+end: null
+state: []
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 8k
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash

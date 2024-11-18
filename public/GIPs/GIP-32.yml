@@ -1,0 +1,53 @@
+id: '0x34b39da3317f217bf414feb781042a6f255982f4a0c2aad4f2945866e74bf95d'
+gip_number: '32'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x34b39da3317f217bf414feb781042a6f255982f4a0c2aad4f2945866e74bf95d
+title: Reimburse expenditures to the Gnosis Chain Core Development Unit (formerly
+  xDai Chain team)
+body: 'Summary
+
+  GIP-32 requests reimbursement of infrastructure and marketing-related expenditures
+  to the Gnosis Chain Core Development Unit (formerly xDai Chain team) for the period
+  spanning the token merge (GIP-16 implementation) through March 1st, 2022.
+
+
+  Motivation
+
+  The Gnosis Chain Core Development Unit is a critical component of the evolving Gnosis
+  ecosystem. Previous expenditures were provided up-front by the team to facilitate
+  client development and bootstrap the consensus-layer validator set. These were distributed
+  from an independent fund managed by the Core Dev Unit to expedite processes with
+  the expectation that they would be reimbursed at a future date. This GIP details
+  prior expenditures and requests they are reimbursed from the GnosisDAO treasury.
+
+
+  ![image](ipfs://QmNbgiSD9x1pt4nm9CzHKB8Tvk7Ka2NZFwmto1cy3Gjvn2)
+
+
+  Implementation
+
+  The Unit has a multi-signature wallet to administer the funds allocated to fulfilling
+  the mandate. The details of this multi-sig wallet are as follows:
+
+
+  Multisig address on ETH mainnet: 0x5E78C09984bd6608f8E913F0924062C043eD6ad7'
+start: 1649239154
+end: 1649843954
+state: closed
+author: '0x7D7DcEf3bB919347F5031127799ee2679A9111A0'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 155985.79006397788
+scores:
+  - 155985.5084921285
+  - 0.12627464414891498
+  - 0.15529720523870943
+votes: 566
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

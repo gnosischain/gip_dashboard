@@ -1,0 +1,50 @@
+id: '0x701e81c3876b0dec446af578ef588c3463d2eeb077ad0afa9c03babf2bc6f435'
+gip_number: '73'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x701e81c3876b0dec446af578ef588c3463d2eeb077ad0afa9c03babf2bc6f435
+title: Should GnosisDAO give a grant to Pluser?
+body: 'Website: https://www.pluser.io/
+
+
+  # Introduction
+
+  The collapse of FTX showed that we can’t trust a centralized exchange. But currently,
+  there is no simple and safe non-custodial alternative for keeping crypto, investing,
+  and using web3. We want to show you our solution to the problems of cryptocurrency
+  wallets.
+
+
+  # Summary
+
+  We would like to ask for a grant for the amount of 50000 USD/DAI from Gnosis DAO
+  to create Pluser wallet. Pluser is the safest and simplest cryptocurrency wallet
+  for the retail market on Gnosis Chain. Our wallet is built on top of Gnosis Safe
+  contracts, Chainlink oracles, and Torus network.
+
+
+  **Read more [here](https://forum.gnosis.io/t/gip-73-should-gnosisdao-give-a-grant-to-pluser/6210)**
+
+
+
+
+  '
+start: 1670341885
+end: 1670946685
+state: closed
+author: '0x000f4ae7700afDE47C3b14D22883b4e7808F0e58'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 4707.200158730945
+scores:
+  - 204.33282591990672
+  - 774.3120577979993
+  - 3728.5552750130432
+votes: 895
+quorum: 0
+funding:
+  amount: '50000'
+  currency: USD/DAI
+  confidence: 'High '
+  model_used: gemini-1.5-flash

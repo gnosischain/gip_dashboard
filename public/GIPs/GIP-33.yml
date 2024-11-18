@@ -1,0 +1,29 @@
+id: '0x66cc99dde505a77ae6fb1371c075f4eb36abbba06189d108b2020947484fa49c'
+gip_number: '33'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x66cc99dde505a77ae6fb1371c075f4eb36abbba06189d108b2020947484fa49c
+title: 'Send vested COW tokens to daughter Safe for treasury management '
+body: 'Should Gnosis DAO send vested COW tokens to daughter Safe for treasury management?
+
+
+  https://forum.gnosis.io/t/gip-33-should-gnosis-dao-send-vested-cow-tokens-to-daughter-safe-for-treasury-management/4453'
+start: 1649968938
+end: 1650573738
+state: closed
+author: '0xe965484BA4250c446779D4703f1598DC2EA00d12'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 148037.82368390795
+scores:
+  - 148025.58429791607
+  - 1.051077759903439
+  - 11.1883082320004
+votes: 465
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

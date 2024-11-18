@@ -1,0 +1,34 @@
+id: '0x9297cc7f6a1c8d973199bb215c071cc93c99003b6231b3953edeb1e1a2f2f408'
+gip_number: '95'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x9297cc7f6a1c8d973199bb215c071cc93c99003b6231b3953edeb1e1a2f2f408
+title: karpatkey DAO Service Extension
+body: 'After the approval of GIP-20 4 and GIP-58 5, at karpatkey DAO we have been
+  working steadily on the management of GnosisDAO’s treasury. Similar to other treasuries
+  we manage, we have seen the interest of DAOs to diversify their treasuries by adding
+  exposure to real world assets (“RWA”) as well as interacting with real world entities
+  for services in the interest of GnosisDAO.
+
+
+  We therefore propose that the scope of the treasury management services as carried
+  out presently, be expanded to cater for the possibility to invest in RWA.'
+start: 1712163822
+end: 1712768622
+state: closed
+author: '0x14D92832265eeAFDEF9e526356FEfc90105966c3'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 76197.07437188186
+scores:
+  - 76189.57583076625
+  - 4.30528992206668
+  - 3.193251193528392
+votes: 180
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

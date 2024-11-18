@@ -1,0 +1,72 @@
+id: gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes
+gip_number: 106
+url: https://forum.gnosis.io/t/gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes
+title: Should GnosisDAO Reinstate Full Rewards for Eligible GnosisVIP Validator Nodes?
+body: "#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis proposal\
+  \ aims to revisit and restore the original reward policy for the GnosisVIP event.\
+  \ The event’s initial rules allowed participants to set up validator nodes across\
+  \ 104 countries, with the first 10 nodes in each country being eligible for rewards.\
+  \ The original rules can be reviewed [here](https://web.archive.org/web/20230922135332/https://www.gnosis.builders/post/introducing-gnosisvip).\n\
+  \nGnosisVIP is getting concluded due to the retirement of Builders Team which launched\
+  \ this event. However, the team that took over the reward distribution decided to\
+  \ cut down the rewards for participants who run more than one validators, citing\
+  \ concerns about farming. The announcement can be found [here](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8).\n\
+  \nSince there is no restriction in the rules against multiple validator nodes with\
+  \ unique IP addresses, and all those eligible validators contribute equally to geo-diversity\
+  \ in this event, this proposal seeks to ensure participants receive the full rewards\
+  \ as originally promised. This will maintain fairness and trust within the Gnosis\
+  \ community.\n\n#### Specification\n\nThe proposed reward program aims to restore\
+  \ the original terms of the GnosisVIP event:\n\n  * Full Rewards for Eligible Nodes:\
+  \ All validator nodes that meet the criteria (first 10 in their respective countries)\
+  \ should receive their promised rewards according to their validating duration,\
+  \ irrespective of whether they are run by the same entity.\n\n\n\nThis approach\
+  \ will help the broader Gnosis ecosystem by maintaining predictability and trust\
+  \ within the Gnosis community.\n\n#### Rationale\n\nThe motivation behind this proposal\
+  \ is to uphold fairness and trust within the Gnosis community. The original rules\
+  \ did not prohibit running multiple nodes from different IP addresses, and participants\
+  \ should be rewarded based on those terms. Changing the reward policy retroactively\
+  \ undermines trust and can discourage future participation.\n\n#### Budget\n\nAccording\
+  \ to the [google sheet](https://docs.google.com/spreadsheets/d/1Ix4Cu2aiNr0XzwILqWSZqY3dcPiwQhMEMSF50QVvDrQ/edit?usp=sharing)\
+  \ in the [sunsetting announcement](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8),\
+  \ a total of 16 validators from 10 participants are affected by the reduced rewards.\n\
+  \nThe expected amount of rewards to make up is as follows:\n\nWithdrawal Address\
+  \ | Affected Validators | Duration | Affected Rewards | Notes  \n---|---|---|---|---\
+  \  \n…6b20 | 1 | 9 Mo | 5.25 GNO |   \n…4cd8 | 1 | 12 Mo | 10.5 GNO |   \n…bc0c\
+  \ | 1 | 12 Mo | 10.5 GNO |   \n…02fc | 1 | 12 Mo | 10.5 GNO |   \n…9bc1 | 2 | 6\
+  \ Mo | 4.8 GNO |   \n…20a0 | 3 | 12 Mo | 35.7 GNO |   \n…db02 | 1 | 9 Mo | 5.25\
+  \ GNO |   \n…ab14 | 2 | 12 Mo | 23.8 GNO |   \n…4765 | 1 | 6 Mo | 2.25 GNO |   \n\
+  …a88a | 3 | 6 Mo | 7.65 GNO | *Newly Added  \n**Total** | **16** |  | **116.2 GNO**\
+  \ |   \n  \nEdit: The google sheet seems updated after initially drafting this post,\
+  \ updated the numbers to match that.\n\n#### Conclusion\n\nRestoring the original\
+  \ GnosisVIP rewards policy is essential for maintaining fairness and trust within\
+  \ the community. By honoring the original rules, we can ensure that all participants\
+  \ are treated equitably and avoid reputational risk for the Gnosis ecosystem. This\
+  \ proposal seeks the support of the GnosisDAO community to uphold the integrity\
+  \ of our events and promote a decentralized and robust network.\n\n2 Likes\n\n[Staworth\
+  \ / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)\n"
+start: 1720191111
+end: null
+state:
+  - phase-1
+author: '@dao
+
+  status: Draft
+
+  typ&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

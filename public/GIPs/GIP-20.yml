@@ -1,0 +1,31 @@
+id: '0x86cb89a974a075451f8bfae1892d08136fae8c4321ada07025ff8b2b5edddadc'
+gip_number: '20'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x86cb89a974a075451f8bfae1892d08136fae8c4321ada07025ff8b2b5edddadc
+title: Karpatkey DAO Treasury Management
+body: "Should GnosisDAO implement GIP-20, as detailed in the following forum post?:\
+  \ https://forum.gnosis.io/t/gip-20-karpatkey-dao-treasury-management/2233\n\nTransactions\
+  \ included in this proposal:\n - Set the Active Treasury Managemet wallet (Daughter\
+  \ Safe) threshold to 3 signers. This Safe was created in GIP-17.\n- Add 2 Karpatkey's\
+  \ signers to Daughter Safe.\n- Add GnosisDAO's trusted signers to Daughter Safe.\n\
+  - Send 326797 RAI investment to Karpatkey DAO."
+start: 1641481200
+end: 1642086000
+state: closed
+author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 146970.63419005522
+scores:
+  - 146924.34160450587
+  - 46.29258554934886
+  - 0
+votes: 188
+quorum: 0
+funding:
+  amount: '326797'
+  currency: RAI
+  confidence: 'High '
+  model_used: gemini-1.5-flash

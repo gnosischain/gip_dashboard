@@ -1,0 +1,85 @@
+id: gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
+gip_number: 85
+url: https://forum.gnosis.io/t/gip-85-gnosisdao-to-support-covalent-as-initially-mentioned-in-gip-16
+title: GnosisDAO to support Covalent as initially mentioned in GIP 16
+body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * In\
+  \ Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 85\n    title: GnosisDAO\
+  \ to support Covalent as initially mentioned in GIP 16\n    author: Ryan Coree @coreeryan\
+  \ & David Tso @davidtsocy \n    status: Draft\n    type: Funding\n    created: 2023-04-19\n\
+  \    funding: 50,000 USD\n    \n\nDear GnosisDAO,\n\n[Covalent](https://www.covalenthq.com/docs/)\
+  \ is a hosted blockchain data solution providing access to full historical and current\
+  \ onchain data for 100+ supported chains, including Ethereum, Polygon, Arbitrum,\
+  \ Optimism, Base, Linea, Scroll, Avalanche, Fantom, and more.\n\nCovalent Offers\
+  \ 2 Products\n\n  1. Unified API: Covalent’s industry-leading Unified API is the\
+  \ most robust set of API services available on the market today. Our Unified API\
+  \ returns enriched blockchain data applicable to all blockchain networks, e.g. token\
+  \ balances, transactions, log events, etc., enabling developers to build wallet\
+  \ applications like Rainbow Wallet, NFT galleries like NFTX, investor dashboards\
+  \ like CoinGecko, and taxation tools like Rotki. Over 3,000 applications and 35,000\
+  \ active developers today rely on our Unified API, powering half a billion monthly\
+  \ API calls.\n  2. Increment: Increment is a Business Intelligence (BI) platform\
+  \ that empowers blockchain-based projects to understand their business metrics.\
+  \ Built on our Unified API, Increment has the full historical data set for over\
+  \ 100 chains. Increment is imbued with a standardized analytics framework – Reach\
+  \ (for growing a user base), Retention (for retaining a user base), and Revenue\
+  \ (for monetizing a user base). Increment also contains many more label tables for\
+  \ NFTs and DeFi.\n\n\n\nProposal\n\n  * As previously proposed in [GIP 16 - Gnosis\
+  \ Chain - xDAI/Gnosis merge](https://forum.gnosis.io/t/gip-16-gnosis-chain-xdai-gnosis-merge/1904)\
+  \ by Martin Köppelmann, the Co-Founder of Gnosis: “Gnosis Chain will look to attract\
+  \ core Ethereum infrastructure projects that are currently unavailable on the xDai\
+  \ chain. Gnosis Chain will cover the costs associated with such deployments. Examples\
+  \ include Etherscan, Beaconcha.in, Infura, Alchemy, Covalent…”\n  * Covalent will\
+  \ index Gnosis and integrate it with our Unified API and Increment for a compensation\
+  \ of 50,000 USD, this will benefit developers and analysts who want to access Gnosis’\
+  \ data.\n  * Covalent will also create custom documentation for Gnosis and run a\
+  \ technical webinar for the Gnosis community to onboard more developers and kickstart\
+  \ novel use cases.\n\n\n\nCovalent Deliverables\n\n  1. Index Gnosis’ public blockchain\
+  \ and support it through our Unified API and Increment\n  2. Dedicated documentation\
+  \ page for developers\n  3. Prominent Gnosis logo on Covalent’s website\n  4. Emails\
+  \ and relevant notifications to Covalent’s user base\n  5. Promotion of launch across\
+  \ social media handles, Discord groups, Telegram, etc.\n\n\n\nGnosis Deliverables\n\
+  \n  1. Vote for governance proposal\n  2. A joint social media announcement post-integration\n\
+  \  3. Inclusion of Covalent’s logo in Gnosis’ marketing materials, website, and\
+  \ documentation\n\n\n\nThe end date will be one year from the agreement’s effective\
+  \ date. The agreement may be extended based on mutual discussions between relevant\
+  \ parties.\n\nGrant and Disbursement\n\n  * The amount to be funded from the GnosisDAO\
+  \ treasury to Covalent is 50,000 USD of Gnosis’ xDai native token. Once the governance\
+  \ proposal is approved, the payment will be processed as one single transfer.\n\
+  \  * The xDai/USD exchange rate for the disbursements is to be determined at the\
+  \ time of the transfer.\n\n\n\nTestimonials\n\n“So far, Covalent has significantly\
+  \ enhanced the developer experience on Fantom via their Unified API. It will no\
+  \ doubt be a staple in how users access blockchain data.”\n\n– Michael Kong, CEO\
+  \ at Fantom\n\n“Decentralized applications and services need fast and reliable access\
+  \ to backend data to deliver seamless experiences competitive with Web 2.0. With\
+  \ its Unified API for data across multiple chains, Covalent is well-positioned to\
+  \ support the march toward mass adoption of Web3.”\n\n– John Nahas, SVP of Business\
+  \ Development at Avalanche\n\n“Broader Web3 adoption requires great application\
+  \ UX and performant access to backend data, but these have historically been constrained\
+  \ by what the direct node RPCs are able to offer. Covalent’s unique approach not\
+  \ only delivers performance but also access to an enriched multi-chain data set\
+  \ via their Unified API. It’s a great fit for Moonbeam developers looking to create\
+  \ next-generation multi-chain applications.”\n\n– Derek Yoo, CEO at Moonbeam\n\n\
+  Conclusion\n\nThe Covalent team hopes that the GnosisDAO can see the value of this\
+  \ partnership and pledge their support. Thank you!\n"
+start: 1681929393
+end: null
+state:
+  - phase-1
+author: "Ryan Coree @coreeryan &amp; David Tso @davidtsocy \nstatus: Draft\ntype&hellip;"
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 50,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

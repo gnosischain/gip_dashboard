@@ -1,0 +1,128 @@
+id: '0x33484aae7734d8e184841964636de96e1a7d4fd8b4666f2bd3dee38175be38f3'
+gip_number: '93'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x33484aae7734d8e184841964636de96e1a7d4fd8b4666f2bd3dee38175be38f3
+title: Should GnosisDAO support the integration of Hashi within Gnosis Chain’s Canonical
+  Bridges?
+body: "https://forum.gnosis.io/t/gip-93-should-gnosisdao-support-the-integration-of-hashi-within-gnosis-chains-canonical-bridges/8245\n\
+  \n### Category\nFunding\n\n### Executive Summary:\nThis proposal presents a detailed\
+  \ plan for allocating funds towards integrating the Hashi protocol into Gnosis Chain’s\
+  \ canonical bridges from Ethereum, namely the xDAI Bridge and the AMB (on which\
+  \ the OmniBridge is built). The initiative emphasizes significantly enhancing the\
+  \ security and decentralization of these bridges. The integration aims to introduce\
+  \ advanced security measures, mitigate systemic risks, and ensure the Gnosis Chain\
+  \ ecosystem remains resilient against the evolving landscape of security threats.\
+  \ By fortifying the infrastructure with Hashi, we seek to establish a new standard\
+  \ for security and reliability in cross-chain transactions.\nHashi is an additive\
+  \ security framework, currently supporting 15+ General Message Passing bridges and\
+  \ ZK light clients. With its integration on Gnosis bridges we remove any reliance\
+  \ on one specific bridging mechanism and add the ability to define threshold based\
+  \ bridging (only when 2 of 3 bridges agree a bridge transaction is accepted) along\
+  \ with zero vendor lock-in capabilities by allowing easy replacement of any bridging\
+  \ mechanisms in the future.\n\nThis integration will make Gnosis Chain the only\
+  \ L1 with such strong bridge security guarantees. We anticipate that this effort\
+  \ will foster greater user confidence and will have a big positive impact on the\
+  \ Gnosis ecosystem.\n\n### Specification\nThe proposal outlines a multi-faceted\
+  \ approach, focusing on:\n\n* Developing an Integration Plan and Reference implementation\n\
+  Tailoring Hashi’s protocol to enhance the security properties of the canonical bridges.\
+  \ This requires the writing of dedicated technical documents, specifications and\
+  \ the development of a reference implementation.\n\n* Conducting Extensive Security\
+  \ Audits\nPartnering with leading blockchain security firms to conduct end-to-end\
+  \ audits, identifying and addressing potential vulnerabilities within the proposed\
+  \ integration framework.\n\n* Executing the Migration\nUpgrading the existing canonical\
+  \ bridges with the new proposed integration framework. This will be done in strict\
+  \ cooperation with the existing team in charge of Gnosis Chain Bridges.\n\n* Governance\
+  \ configuration\nThe current Gnosis Bridges multisig (8 of 15) will be configured\
+  \ to set the thresholds and allowed oracles. In the future this governance can be\
+  \ also replaced and improved if needed.\n\n### Rationale\nIn an era where security\
+  \ breaches and exploits have become increasingly sophisticated, bolstering the security\
+  \ and decentralization of Gnosis Chain’s bridges is imperative. Currently, both\
+  \ bridges are secured by a decentralized but still permissioned and trusted set\
+  \ of validators. Although battle tested throughout the years, the Gnosis community\
+  \ and GnosisDAO have realized the need to move to a more trust minimized and future-proof\
+  \ setup.\n\nThis proposal is driven by the vision of creating a fortified, resilient\
+  \ infrastructure capable of withstanding current and future security challenges.\
+  \ The Gnosis Community has already shown in the past a strong commitment to these\
+  \ values by supporting similar efforts (i.e. __[GIP-57](https://forum.gnosis.io/t/gip-57-should-gnosis-dao-support-research-of-a-zksnark-enabled-light-client-and-bridge/5421)__\
+  \ and the __[addition of Succinct’s ZK Light Client as a Validator](https://blog.succinct.xyz/omnibridge/)__,\
+  \ among others) and by bringing to life the Hashi project itself.\nThis integration\
+  \ represents a strategic step forward in safeguarding assets and data, ensuring\
+  \ the Gnosis Chain remains a secure, trusted, and highly attractive platform for\
+  \ users and developers alike.\n\nLastly, Gnosis DAO has demonstrated in the past\
+  \ how important bridge security is to them. This proposal aims to implement previous\
+  \ research results and reap tangible benefits.\n\n### Budget\nThe budget is meticulously\
+  \ structured to cover all critical aspects of the integration process:\n\n* Hashi\
+  \ Integration Design and Development: $60,000 allocated towards developing and implementing\
+  \ the Hashi integration.\n\n* Security Audits and Migration Strategies: $90,000\
+  \ dedicated to coordinating rigorous security audits and the formulation of robust\
+  \ mitigation strategies. \n\n* Preparation and Execution of the Migration: $80,000\
+  \ allocated to an in-depth study of the recommended configuration options and execution\
+  \ of the migration plan with the assistance of GnosisDAO.\n\n* Monitoring the guarded\
+  \ launch and safeguards lifting: $20,000 dedicated to monitoring the initial launch\
+  \ with safeguards in place and securely lifting them after the initial guarded phase.\n\
+  \n#### Milestones:\n\n* Milestone 1: Hashi Integration Design and Implementation\
+  \ (Duration: 2 months)\n\n  * Deliverables:\n\n    * Development of a detailed security-centric\
+  \ design document and spec for Hashi’s integration with the 2 canonical bridges\
+  \ of \nGnosis Chain.\n    * Implementation of a reference code following the specifications.\n\
+  \  * Funding Allocation: $60,000\n\n* Milestone 2: Security Audits and Migration\
+  \ Plan (Duration: 2 months)\n\n  * Deliverables:\n\n    * Completion of external\
+  \ security audits with documented findings and implemented fixes.\n    * Development\
+  \ and launch of a Hashi explorer, a tool to oversee the validation progress of cross-chain\
+  \ transactions on Gnosis bridges.\n    * Coordination on a possible Migration Plan\
+  \ as needed by Milestone 3.\n  * Funding Allocation: $90,000\n\n* Milestone 3: Preparation\
+  \ and Execution of the Migration of the Existing Bridges to the New Solution (Duration:\
+  \ 2 months)\n\n  * Deliverables:\n\n    * Case Study to present the recommended\
+  \ configuration options for Hashi.\n    * Final coordination with the Gnosis Chain\
+  \ team on the Migration Plan execution.\n    * Integration and coordination with\
+  \ all available oracle teams (the ones available on the Ethereum > Gnosis chain\
+  \ route from the total 17) and setup ZK light clients.\n    * Execution of the migration\
+  \ on the Chiado testnet.\n    * Analysis of testnet outcomes.\n    * Execution of\
+  \ the migration for the Gnosis Chain’s canonical bridges.\n    * Comprehensive report\
+  \ detailing the integration’s impact on security and decentralization metrics, including\
+  \ community feedback and usage statistics.\n  * Funding Allocation: $80,000\n\n\
+  * Milestone 4: Monitoring the guarded launch and safeguards lifting.\n\n  * Deliverables:\n\
+  \n    * Hashi as a validator on both Gnosis chain canonical bridges.\n    * Monitoring\
+  \ of Hashi’s consistency with the current validator set.\n    * Hashi as a mandatory\
+  \ validator.\n  * Funding Allocation: $20,000\n\n* Continued maintenance: Close\
+  \ to the end of the implementation of this proposal, a new proposal will be drafted\
+  \ covering the ongoing maintenance costs (Engineering, DevOps, and ZK Provers),\
+  \ expected to total $100,000-$150,000 per year. ZK prover costs cover the infrastructure\
+  \ costs (not gas), which currently are expected to decrease over time with the optimization\
+  \ work currently in progress by most ZK teams. Currently running just one Prover\
+  \ costs $60,000 / year.\n\nThe above pricing incorporates a significant discount\
+  \ due to the long and supportive relationship between Hashi and GnosisDAO.\n\n###\
+  \ Evaluation\nSuccess will be evaluated based on the seamless integration of Hashi\
+  \ and the absence of significant downtimes during the coordinated migration process.\
+  \ Additionally, positive feedback from the Gnosis Chain community will serve as\
+  \ an indicator of the integration’s success and its impact on enhancing the ecosystem’s\
+  \ security posture.\n\n### Team\nThe Cross-chain Interoperability Alliance, the\
+  \ core development team of Hashi, comprises 3 people including 1 project manager\
+  \ and 2 blockchain engineers/security experts with a proven track record in developing\
+  \ cross-chain solutions and in pioneering stronger security guarantees in the space.\
+  \ The 3 team members have 4, 8 and 12 years of blockchain working experience respectively.\
+  \ This experience is critical in ensuring the successful execution of this proposal.\n\
+  \n### Conclusion\nThrough this proposal, we aim to significantly elevate the security\
+  \ and decentralization standards of the Gnosis Chain’s canonical bridges. The strategic\
+  \ integration of Hashi not only mitigates systemic risks but also positions Gnosis\
+  \ Chain as a leader in secure, decentralized cross-chain communications, all this\
+  \ while capitalizing on previous GnosisDAO’s investments."
+start: 1711447938
+end: 1712052738
+state: closed
+author: '0xA02060F08379A756C044608c0a2fcb9C1D2d21dD'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 84975.52303831984
+scores:
+  - 84970.59014122224
+  - 2.4964848240434914
+  - 2.4364122735576905
+votes: 280
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

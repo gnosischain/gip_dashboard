@@ -1,0 +1,30 @@
+id: '0x1bced50847e2983ae4ba9ae00fd08e92a26059449c30c1dfd49bc077ecc3ee22'
+gip_number: '25'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x1bced50847e2983ae4ba9ae00fd08e92a26059449c30c1dfd49bc077ecc3ee22
+title: Partner with Tornado Cash to increase GNO:TORN liquidity in Uniswap V3
+body: 'Should GnosisDAO partner with Tornado Cash to increase GNO:TORN liquidity as
+  detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-25-partner-with-tornado-cash-to-increase-gno-torn-liquidity-in-uniswap-v3/3418'
+start: 1644318000
+end: 1644922800
+state: closed
+author: '0x78602290159C7A4bDf9529fcfF1243534d3A6Cb9'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 79476.92150540843
+scores:
+  - 78488.99146802588
+  - 987.930037382559
+  - 0
+votes: 93
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -1,0 +1,41 @@
+id: '0xba3e2d4617954083a052dc08150315a152e835bbbd34c576a86976cf3dda6452'
+gip_number: '66'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xba3e2d4617954083a052dc08150315a152e835bbbd34c576a86976cf3dda6452
+title: Should GnosisDAO sponsor The DAOist Bogota?
+body: "The DAOist Bogota will be an event on Sunday, October 9th that will kickoff\
+  \ Devcon week. This time we will go for our biggest, most ambitious DAOist event\
+  \ yet aiming to have up to 1400 attendees.\n\n**If you're interested in supporting\
+  \ this proposal, please submit your vote ASAP so that the DAOist can include GnosisDAO\
+  \ as a sponsor in the deliverables in time** \n\nAs “The DAO chain”, Gnosis Chain\
+  \ is invited to participate as sponsors for this event contributing also through\
+  \ talks and/or workshops from contributors that will be joining us in Colombia this\
+  \ year.\n\nIn the past, different DAOs that live in the Gnosis Chain, as well as\
+  \ Gnosis itself, have participated in the Paris, Lisbon, Mexico City & Amsterdam\
+  \ editions of The DAOist. This is an opportunity to reaffirm why Gnosis Chain is\
+  \ a great home and neighborhood for current, new and future DAOs.\n\nBased on community\
+  \ signaling, for $11,000 USD GnosisDAO would be getting the following benefits from\
+  \ the Ride or DAO tier:\n* Talk Slot\n* Online & Print visibility\n* 8 tickets -\
+  \ All inclusive\n* 1 Summoner Swag Bags\n\nThe DAOist Bogota will happen on Sunday,\
+  \ October 9th, 2022. A talk has been suggested by @Jahed on “How DAOs can use the\
+  \ pattern library and what mistakes it can help them avoid”."
+start: 1664807865
+end: 1665412665
+state: closed
+author: '0xB22981bA3FE1De2325935c91a3B717168fB86714'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 1434.3586471709777
+scores:
+  - 386.84234485768167
+  - 1006.1413982012622
+  - 41.37490411203405
+votes: 574
+quorum: 0
+funding:
+  amount: 11,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -1,0 +1,87 @@
+id: gip-77-should-the-gnosisdao-add-delegation-spam-reduction
+gip_number: 77
+url: https://forum.gnosis.io/t/gip-77-should-the-gnosisdao-add-delegation-spam-reduction
+title: Should the GnosisDAO add delegation & spam reduction?
+body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes to\
+  \ GnosisDAO’s governance setup which will:\n\n  1. Reduce low-quality and spam proposals\
+  \ created in the GnosisDAO’s snapshot space.\n  2. Make GnosisDAO’s influence distribution\
+  \ less opaque.\n  3. Improve vote-weight utilization.\n\n\n\n##  Abstract\n\nBroadly,\
+  \ this proposal aims to introduce two changes:\n\n  1. Modify the criteria for users\
+  \ to post proposals to the GnosisDAO’s snapshot space. \n    1. Accounts holding\
+  \ ≥ 1 GNO can create a proposal (current).\n    2. Add some trusted moderators that\
+  \ have the ability to remove posts that they deem to be low-quality. (new)\n   \
+  \ 3. Proposals with less than < 1,000 GNO of vote-weight cast `for` or `abstain`\
+  \ are filtered from the main view. (new)\n  2. Improve delegation \n    1. Improve\
+  \ the delegation UI inside of snapshot to make delegation much simpler and to give\
+  \ an overview of the current delegated vote-weight distribution.\n    2. Add a two-year\
+  \ term limit to delegation, to avoid stagnation in the vote-weight distribution;\
+  \ GNO holders must periodically set their delegation, all delegations expire after\
+  \ two-years.\n    3. Allow delegates to decline being delegated to / resign from\
+  \ delegation, negating any vote weight delegated to them.\n    4. Allow GNO holders\
+  \ to delegate portions of their vote weight to multiple accounts.\n    5. Allow\
+  \ for transitive delegation; If A delegates to B and B delegates to C, C inherits\
+  \ A’s vote weight.\n    6. Allow delegates to optionally set a cap on the amount\
+  \ of vote weight delegated to them.\n\n\n\n##  Motivation\n\nPopularized by Compound\
+  \ Governor, delegation has proven to be an effective strategy for improving the\
+  \ vote-weight utilization in many DAOs; consolidating vote-weight in the hands of\
+  \ those who have the time and inclination to actively participate in governance\
+  \ by allowing users to delegate their vote weight to others.\n\nLargely due to the\
+  \ constraints of calculating vote-weight on-chain, Compound and OZ Governor’s delegation\
+  \ is somewhat limited. GnosisDAO’s existing delegation strategy on Snapshot already\
+  \ improves on one of these limitations by allowing users to delegate their vote\
+  \ weight and also directly participate in any vote. If a user does not cast a vote,\
+  \ their vote weight will be applied to the vote cast by their delegate. If a user\
+  \ does cast a vote, their vote weight will not count towards their delegates vote\
+  \ weight in that proposal.\n\nHowever, there is significant design-space to further\
+  \ improve on GnosisDAO’s delegation.\n\nSpecifically, we would like to introduce\
+  \ changes that:\n\n  1. Reduce low-quality and spam proposals created in the GnosisDAO’s\
+  \ snapshot space.\n  2. Make GnosisDAO’s influence distribution less opaque.\n \
+  \ 3. Improve vote-weight utilization.\n\n\n\n[Another recent forum](https://forum.gnosis.io/t/enhancing-transparency-and-efficiency-an-idea-for-the-implementation-of-a-governance-structure-based-on-delegates-in-the-gnosis-ecosystem/6334)\
+  \ post also argues for delegation, along with suggesting compensation for delegates.\
+  \ To constrain scope, this proposal does not include delegate compensation. However,\
+  \ if this proposal is successful, and after observing the delegation setup in production,\
+  \ we will likely write a followup proposal to implement some form of delegate compensation.\n\
+  \n##  Specification\n\nTODO\n\n##  Rationale\n\nTODO\n\n##  Implementation\n\nTODO\n\
+  \n8 Likes\n\n[GnosisDAO proposal spam on Snapshot](https://forum.gnosis.io/t/gnosisdao-proposal-spam-on-snapshot/8042/3)\n\
+  \n[GIP-109: Should the GnosisDAO introduce Snapshot moderators to reduce spam?](https://forum.gnosis.io/t/gip-109-should-the-gnosisdao-introduce-snapshot-moderators-to-reduce-spam/8812)\n\
+  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/8)\n\
+  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/9)\n\
+  \n[GIP-101: Should karpatkey and StableLab Establish a Delegate Program v0 for the\
+  \ GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
+  \n[Karpatkey Delegate Platform](https://forum.gnosis.io/t/karpatkey-delegate-platform/7252)\n"
+start: 1674162370
+end: null
+state:
+  - phase-2
+author: 'Gnosis Guild
+
+  status: Draft
+
+  type: Meta
+
+  created: 2023-01-20
+
+
+  poll
+
+
+  Simple Summary
+
+  This proposal aims to introduce a number of changes to GnosisDA&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

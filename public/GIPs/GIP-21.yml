@@ -1,0 +1,34 @@
+id: '0xfae50f95e3ae8f7dbd70e062cba35b0dcbe8261b2aaa874822b7d046e97367b6'
+gip_number: '21'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xfae50f95e3ae8f7dbd70e062cba35b0dcbe8261b2aaa874822b7d046e97367b6
+title: Amendment to GIP-17. Send additional funds to daughter Safe
+body: 'Should GnosisDAO implement GIP-21 as detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-21-amendment-to-gip-17-send-additional-funds-to-daughter-safe/2699
+
+
+  Transactions in this proposal:
+
+  - Send tokens to Daughter Safe'
+start: 1641553200
+end: 1642158000
+state: closed
+author: '0x2408F8a0475D3823A1F4A4bfD86B2a4B80E6eDB6'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 141170.3171749477
+scores:
+  - 141141.1531327937
+  - 29.164042153983424
+  - 0
+votes: 131
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'Low '
+  model_used: gemini-1.5-flash

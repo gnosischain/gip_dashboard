@@ -1,0 +1,104 @@
+id: gip-6-deploy-gnosis-auction
+gip_number: 6
+url: https://forum.gnosis.io/t/gip-6-deploy-gnosis-auction
+title: Deploy Gnosis Auction
+body: "##  Update (19/02/2021)\n\nAccording to [GnosisDAO’s governance process](https://forum.gnosis.io/t/readme-gnosisdao-governance-process/736)\
+  \ I promote this proposal to the consensus phase (Phase 3).  \nVoting is available\
+  \ [here](https://snapshot.page/#/gnosis/proposal/QmUA5aYzD7nRdPQhqMTH3GWus4Bj62SGcSfjPEb6QcDdnM)\
+  \  \nA link to the audit report for Gnosis Auction smart contracts was added to\
+  \ the Implementation section of this proposal.\n\n##  Simple Summary\n\nThis GIP\
+  \ intends to answer the question: Should GnosisDAO deploy GnosisAuction?\n\n## \
+  \ Abstract\n\nThis is the phase-II continuation to [Should GnosisDAO build an IDO\
+  \ specific Dapp?](https://forum.gnosis.io/t/should-gnosisdao-build-an-ido-specific-dapp/895)\n\
+  \nGnosisAuction would build on the proven success with token sales that Gnosis Protocol\
+  \ (GP) v1 (Mesa) had. It will provide a sturdy mechanism that supports fair price\
+  \ finding in token sales. It will also aim to be modular enough to work in other\
+  \ scenarios where auctions are needed.\n\n##  Motivation\n\nGnosis Protocol v1 was\
+  \ successful with multiple token sales, including some high profile ones such as\
+  \ mStable and API3. Nonetheless, the protocol was not developed with this specific\
+  \ use-case in mind. Additionally, after hitting the market, many users suggested\
+  \ multiple improvements.\n\nSome of the suggested improvements included:\n\n  *\
+  \ Making the UX more simple\n  * Reducing the number of transactions required to\
+  \ trade\n  * Improve gas efficiency\n  * Reduce attack vectors\n\n\n\nThough these\
+  \ improvements are being addressed in the development of Gnosis Protocol v2 (GPv2),\
+  \ it still plans to be a DEX that is not aimed at token sales and other kinds of\
+  \ auctions. Thus, it is important to address this segment of the market that has\
+  \ proven demand.\n\nGnosisAuction still takes some of the most important benefits\
+  \ from GPv1, out of which the following two stand out:\n\n  * Single closing price\
+  \ per auction, which is the fairest price-finding mechanism\n  * MEV resistance,\
+  \ which prevents miners and frontrunners from extracting value\n\n\n\nFinally, it\
+  \ is important to note that there is no general auction smart contract ready to\
+  \ use in the market. Some of the use-cases that the contract could also be used\
+  \ for include:\n\n  * Auctions to repay debt on shortfall events of lending protocols\
+  \ like AAVE\n  * Liquidations\n  * Token buy backs\n  * Price discovery for all\
+  \ sorts of assets\n\n\n\n##  Specification\n\nGnosisAuction may be used as a tool\
+  \ by anyone hoping to auction off a predefined amount of tokens. Anyone can bid\
+  \ to buy these tokens by placing a buy-order with a specified limit price during\
+  \ the whole bidding time, subject to any potential customisations/restrictions placed\
+  \ by the auctioneer. At the end of the predefined auction time, the final price\
+  \ is calculated by the following method: The buy volumes from the highest bids are\
+  \ getting added up until this sum reaches the initial sell volume. The limit price\
+  \ of the bid that increases the overall buy volume to the initial sell volume is\
+  \ setting the uniform clearing price. All bids with a higher price will be settled\
+  \ and traded against the initial sell volume with the clearing price. All bids with\
+  \ a lower price will not be considered for the settlement and users will be able\
+  \ to withdraw their committed funds.\n\nGnosis auction will initially have a simple\
+  \ UI so buyers can place their bids. A draft of the interface can be seen below,\
+  \ which will aim to use the gnosis-auction.eth domain.\n\n[![](//forum.gnosis.io/uploads/default/optimized/1X/01ff03ffac18dc194e0aa4a8cfc46f387fa30daa_2_438x325.png)\
+  \ 1596×1184 127 KB ](//forum.gnosis.io/uploads/default/original/1X/01ff03ffac18dc194e0aa4a8cfc46f387fa30daa.png)\n\
+  \nAt first, auctioneers (sellers) will have to interact directly with the code in\
+  \ order to run an auction. Nonetheless, simple, yet comprehensive documentation\
+  \ will be written to make this easy for sellers to set up. Subject to legal considerations,\
+  \ eventually an auctioneer interface may be built.\n\n##  Rationale\n\nAs stated\
+  \ above, GnosisAuction is a software tool to cater primarily to those hoping to\
+  \ conduct IDOs, which are currently an underserved market. GPv1 was not aimed at\
+  \ fulfilling this market, and GPv2 is geared towards being a DEX-aggregator/general\
+  \ purpose DEX.\n\nRegarding other models considered, batch auctions were preferred\
+  \ over Dutch Auctions mainly because:\n\n  * Dutch Auctions have high activity near\
+  \ the end, high gas prices or other infrastructure issues could be fatal on a critical\
+  \ event as a token sale or shortfall event\n  * DutchAuctions calculate their price\
+  \ based on blocktime, which makes it hard to predict\n  * Dutch Auctions cause a\
+  \ gas war near the end of the auction, causing competition based on gas bidding\
+  \ instead of the limit price set buy buyers of the auction\n  * On Dutch Auctions,\
+  \ bidders need to wait until the auction price reaches the maximum amount that they\
+  \ are willing to pay, or else they risk paying more than they wanted. With this\
+  \ implementation, users can set their limit price (maximum amount they are willing\
+  \ to pay) from the start, and never pay more than what they determine.\n\n\n\n##\
+  \  Implementation\n\nThe specific information on the contract can be followed up\
+  \ in [this repository](https://github.com/gnosis/ido-contracts).  \nThe audit report\
+  \ can be found [here](https://github.com/gnosis/ido-contracts/blob/main/audit-report.md)\n\
+  \n4 Likes\n"
+start: 1613053983
+end: null
+state:
+  - closed
+author: 'auction_master
+
+  status: Phase 3
+
+  type: Meta
+
+  created: 2021-02-11
+
+
+
+  Update (19/02/2021)
+
+  According to GnosisDAO’s governance process I promote thi&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

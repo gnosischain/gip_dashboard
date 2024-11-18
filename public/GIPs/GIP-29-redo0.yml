@@ -1,0 +1,26 @@
+id: Qmd1zkgLEhQwUkY5oAQxznb2U8ZDkcmRpVBCZHjafvoD69
+gip_number: '29'
+url: https://snapshot.org/#/gnosis.eth/proposal/Qmd1zkgLEhQwUkY5oAQxznb2U8ZDkcmRpVBCZHjafvoD69
+title: Extend GNO Token Lock by another 2 weeks for GIP29
+body: ''
+start: 1645113984
+end: 1645373184
+state: closed
+author: '0xc37506BF10d70eCDd8C6E2917bF4A07670c48aE3'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 118.41266695563579
+scores:
+  - 118.4126669556358
+  - 0
+  - 0
+votes: 41
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: Low
+  model_used: gemini-1.5-flash

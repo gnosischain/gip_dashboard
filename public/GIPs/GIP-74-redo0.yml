@@ -1,0 +1,29 @@
+id: '0xccbc22aa9a506bee8bed466d12424d5678f0bdb38f267980af281c7826680c0f'
+gip_number: '74'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xccbc22aa9a506bee8bed466d12424d5678f0bdb38f267980af281c7826680c0f
+title: Allow sGNO holders to vote and be included in the upcoming airdrops
+body: 'This proposal is for allowing stakewise (sGNO ) vote for all the future propossals
+  with the on going proposal for safe token
+
+  '
+start: 1671350096
+end: 1671954896
+state: closed
+author: '0xbcd69Ce8027b930c7712290F4f0c1e8864382123'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 8784.090348560854
+scores:
+  - 1146.838625390932
+  - 4080.695745181683
+  - 3556.555977988236
+votes: 564
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

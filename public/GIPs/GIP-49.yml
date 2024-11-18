@@ -1,0 +1,48 @@
+id: '0xf7d4422d6089c9499d7bb9c50100a32dfd4e9b62ce9e0a112a1cfcd4a4ca5512'
+gip_number: '49'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xf7d4422d6089c9499d7bb9c50100a32dfd4e9b62ce9e0a112a1cfcd4a4ca5512
+title: Should GnosisDAO do a BFF Partnership with MakerDAO?
+body: 'GnosisDAO and MakerDAO are naturally aligned with DAI as a common denominator.
+  Gnosis Chain uses bridged DAI as its gas token so DAI’s adoption is critical for
+  the success of the network.
+
+
+  Gnosis Ltd has already started buying MKR aggressively in the open market so it
+  makes sense to align efforts with the GnosisDAO. Therefore, we propose the following:
+
+
+  1. Propose a token swap GNO-MKR of around $70 million to the Maker community
+
+  2. Explore the use of an institutional MakerDAO vault with the GnosisDAO treasury
+  using GNO + stETH and mint 100 million DAI to be used for the development of the
+  Gnosis Chain
+
+  3. Explore a GNO grant with MakerDAO growth core unit to expand global adoption
+  and brand awareness of Gnosis Chain
+
+  4. Rebranding xDAI to DAI
+
+  5. Increase GNO incentives to DAI pairs on Gnosis Chain
+
+  6. Periodically buy MKR in the open market using GnosisDAO’s treasury farming rewards'
+start: 1655200800
+end: 1655805600
+state: closed
+author: '0x78602290159C7A4bDf9529fcfF1243534d3A6Cb9'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 87883.87969902478
+scores:
+  - 87878.54906003183
+  - 5.173239307366117
+  - 0.15739968560571488
+votes: 690
+quorum: 0
+funding:
+  amount: 70,000,000
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

@@ -1,0 +1,33 @@
+id: '0x64c44314dd99f084a3267bd6c82c1c29d7bdcd6c3a105bf1cfd3e6cd4717ce61'
+gip_number: '27'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x64c44314dd99f084a3267bd6c82c1c29d7bdcd6c3a105bf1cfd3e6cd4717ce61
+title: Gnosis Guild 🪐 Treasury Allocation to Gnosis Ltd
+body: 'The proposal would fund Gnosis Ltd. to support the Gnosis Guild team’s operations
+  and startup costs for one year. The Gnosis Guild Treasury Allocation would foster
+  needs-driven development of the Zodiac DAO tools at a total of USD ~$2.9 Million
+  equivalent, paid in 56% GNO for a contributor incentivization plan, administered
+  by Gnosis Guild with a two-year cliff followed by a one-year vesting period.
+
+
+  [Full proposal -->](https://forum.gnosis.io/t/gip-27-gnosis-guild-treasury-allocation-to-gnosis-ltd/3429)'
+start: 1648557747
+end: 1649162547
+state: closed
+author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 108308.30495903963
+scores:
+  - 108224.3850090502
+  - 5.217136755635344
+  - 78.70281323376906
+votes: 309
+quorum: 0
+funding:
+  amount: 2.9 Million
+  currency: USD
+  confidence: 'High '
+  model_used: gemini-1.5-flash

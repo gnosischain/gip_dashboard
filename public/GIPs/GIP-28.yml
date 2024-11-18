@@ -1,0 +1,38 @@
+id: '0x521efc4aaa8e2d2e2405ae91207d07d872286257044dfca5aa7764c7f66dd3d8'
+gip_number: '28'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x521efc4aaa8e2d2e2405ae91207d07d872286257044dfca5aa7764c7f66dd3d8
+title: Allow locked and staked GNO to vote
+body: 'The proposal is [detail on the Gnosis forum](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357),
+  with the specification detailed in [this reply](https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357/18?u=auryn_macmillan).
+
+
+  # Simple summary
+
+  The current Snapshot strategy only accounts for GNO on mainnet. The proposed update
+  accounts for GNO, LGNO, MGNO, and staked GNO on Gnosis Chain and Mainnet (where
+  applicable).
+
+
+  *Note: a future proposal will also account for GNO deposited in various AMMs and
+  lending protocols.*'
+start: 1647531387
+end: 1648137600
+state: closed
+author: '0x53bcFaEd43441C7bB6149563eC11f756739C9f6A'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 87082.69296496826
+scores:
+  - 87082.16293775123
+  - 0.1
+  - 0.4300272170417151
+votes: 114
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

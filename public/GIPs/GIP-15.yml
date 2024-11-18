@@ -1,0 +1,81 @@
+id: '0x38b7f446554911d6e0dc261b4ad4bca2ea41b83be47b1c97ce274df811ce14cd'
+gip_number: '15'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x38b7f446554911d6e0dc261b4ad4bca2ea41b83be47b1c97ce274df811ce14cd
+title: Governauts Rewards Systems Research Initiative
+body: "```\nGIP: 15\ntitle: Governauts Rewards Systems Research Initiative\nauthor:\
+  \ Angela Kreitenweis (angela@tokenengineering.net) (@akrtws (TE Academy)#4246)\n\
+  status: Phase 3\ntype: Funding\ncreated: 2021-9-26\n\n```\n\nSimple Summary\n--------------\n\
+  \nThe Reward Systems Token Engineering Initiative will run an #OpenScience program\
+  \ on the topic of DAO Rewards Systems. We'll offer education and collaborative research\
+  \ for Token Engineers specializing in Governance, the aim is to come up with Zodiac\
+  \ DAO Improvement proposals.\n\nAbstract\n--------\n\nIn November 2021, we'll kick-off\
+  \ a community research initiative on Rewards Systems and bring together 20-30 researchers\
+  \ from various backgrounds to work on Rewards Systems for DAOs. The work will be\
+  \ based on real DAO cases. We'll offer an extensive educational program and facilitate\
+  \ the research process to create maximum output.\\\nThis is an excellent opportunity\
+  \ for Gnosis Zodiac to create attention, and work collectively on Zodiac DAO Improvement\
+  \ Proposals.\n\nMotivation\n----------\n\nRewards Systems are a vital element for\
+  \ DAOs to compensate builders for contributions and grant decision-making power\
+  \ and co-ownership to those who are so critical for a DAO's value. Ecosystem Development\
+  \ via proposals and grants has become a popular method to distribute funds, and\
+  \ establish a shared perspective on value-add. All Rewards Systems need reliable\
+  \ value assignment, to ultimately lead to a healthy reward distribution.\n\nThe\
+  \ Governauts Rewards System Research initiative will explore:\n\n-   How to best\
+  \ track contributions and account for the richness of value adds that come in many\
+  \ forms: code, communication, care, creativity\n-   how to assign value, how to\
+  \ define value and associated roles, and permissions\n-   what do stakeholders expect\
+  \ from rewards, and does the system in place meet these requirements\n-   what are\
+  \ metrics to measure the reward system healthiness - in its respective lifecycle\n\
+  \nSpecification\n-------------\n\nWe'll provide education:\n\n-   case introductions:\n\
+  -   DAO cases with a Rewards System in production (TE Commons, Ocean DAO, NearDAO\
+  \ etc.)\n-   partner talks, incl. Zodiac\n-   Token Engineering fundamentals\n-\
+  \   DAO case studies and insights from Gitcoin, CommonsStack, BlockScience, TE Commons,\
+  \ and more\n-   multidisciplinary insights from game design, behavioral economics,\
+  \ currency design, and monetary theory\n\nand mentoring:\n\n-   define an own research\
+  \ question in the scope of Rewards Systems\n-   use methods from the Token Engineering\
+  \ toolkit\n-   form multidisciplinary teams\n-   produce actual outcome\n\nThis\
+  \ program is open to anyone, and free.\\\nWe'll have an application process to ensure\
+  \ that participants\n\n-   have the right background, e.g., Political Science, Behavioral\
+  \ Economics, Mechanism Design or Data Analytics\n-   commit the next three months\
+  \ to work on Rewards System Research questions\n-   attend an education program,\
+  \ learn and work on a self-defined research question\n\nRationale\n---------\n\n\
+  This program is organized by TE Academy. The mission of TE Academy is to develop\
+  \ the Token Engineering discipline and grow the number of skilled Token Engineers\
+  \ in crypto. TE Academy has run research initiatives like this several times already:\n\
+  \n-   [Gitcoin Grants Quadratic Funding 2](https://gitcoin.co/blog/token-engineering-open-science-program-a-multidisciplinary-study-of-gitcoin-grants/)\n\
+  -   [Balancer Simulations](https://youtu.be/q0dmFNPDBuw)\n-   [OMNIPool Engineering\
+  \ and Simulations](https://youtube.com/playlist?list=PL-GxJch-YeZfjcwjCwwNSRGjnSBdapOtA)\n\
+  -   About [TE Academy Research Groups 1](https://youtu.be/_qNnVgIAmro)\n\nIncubating\
+  \ Governauts is an initiative to establish a dedicated branch in Token Engineering\
+  \ focused on decentralization and governance.\\\nWe organize workshops and discussions,\
+  \ provide a platform for collaboration and bring research programs to life with\
+  \ TE Academy.\n\nImplementation\n--------------\n\nWe'll deliver in three steps:\n\
+  \n-   Zodiac workshop:\\\n    with researchers, partners and DAO stakeholders as\
+  \ a roundtable to create awareness and set the scope for Zodiac DAO Improvement\
+  \ Proposals\n-   Research documentation:\\\n    community researchers work on Rewards\
+  \ Systems and\n    -   document their results in public HackMDs/Github repos and\n\
+  \    -   discuss progress in weekly sessions (all sessions are recorded and shared\
+  \ publicly!)\n    -   share their results in a final presentations event (public)\n\
+  -   Handover to Zodiac bounty/grant program\\\n    to further develop most interesting\
+  \ results in DAO Improvement proposals\n"
+start: 1636650000
+end: 1637168400
+state: closed
+author: '0x3b067Af83F540cB827825a6Ee5480441a4237E77'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 65641.1028885959
+scores:
+  - 65640.89288859589
+  - 0.21
+  - 0
+votes: 186
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

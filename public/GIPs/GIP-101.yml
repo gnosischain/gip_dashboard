@@ -1,0 +1,142 @@
+id: '0xcdee441c9d501b9ec2127b62ca846d6ead68165163d537cc5c36d93002c17b11'
+gip_number: '101'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xcdee441c9d501b9ec2127b62ca846d6ead68165163d537cc5c36d93002c17b11
+title: Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?
+body: "## Executive Summary\nThis proposal aims to prevent the GnosisDAO from encountering\
+  \ challenges related to reaching a quorum on its proposals, preventing the hindrance\
+  \ of effective decision-making and governance processes. This program is designed\
+  \ to improve quorum participation, increase community engagement and strengthen\
+  \ the governance processes of the GnosisDAO, leading to more effective and inclusive\
+  \ decision-making.\n\nThis proposal suggests electing ten delegates through a transparent\
+  \ and democratic election process to increase the DAO's ability to reach a quorum\
+  \ and enhance the community's participation in decision-making. \n\nEach selected\
+  \ delegate will receive 5,000 GNO from the DAO Treasury, empowering them to represent\
+  \ the community's interests and contribute actively to the governance of the GnosisDAO.\
+  \ This delegation will last six months. This proposal distributes temporary voting\
+  \ power only.\n\n\n## Specification\nThis program will delegate 5,000 GNO from the\
+  \ GnosisDAO treasury to 10 candidates selected through a Snapshot voting process.\n\
+  \n### Eligibility Criteria\nEach applicant must meet the following criteria to be\
+  \ eligible to become a delegate in this program:\n- **Active Community Membership.**\
+  \ Nominees must be active members of the GnosisDAO Community. To meet this criteria,\
+  \ they will share a link to their forum account or Discord, demonstrating activity\
+  \ for at least six months.\n    - If they do not meet this criteria, an active member\
+  \ not already participating in this program may sponsor them. Active members may\
+  \ only sponsor one applicant.\n- **History of Governance Experience.** Nominees\
+  \ must have governance experience as demonstrated by a history of participation\
+  \ in the GnosisDAO governance process or another active DAO. To meet these criteria,\
+  \ they will share a link to their relevant Snapshot or Tally profile showing a history\
+  \ of governance involvement.\n- **Post a Delegate Initiative.** Nominees will post\
+  \ a delegate initiative on the GnosisDAO forum that outlines the details of their\
+  \ experience in DAO Governance and their approach to contributing to GnosisDAO Governance.\
+  \ \n\nThese criteria are designed to ensure that the selected delegates are experienced\
+  \ and committed members of the GnosisDAO community, capable of effectively representing\
+  \ the community's interests and contributing to the DAO's governance.\n\n### Delegate\
+  \ Selection Process\n#### Submission\nDelegates will nominate themselves by posting\
+  \ interest in the official *\"Nomination Thread\"*. The nomination thread will be\
+  \ posted upon passing this proposal. Please provide the instructions, date, and\
+  \ template for application submission.\n\nIn addition to meeting the Eligibility\
+  \ Criteria, delegates will be expected to explain (at a minimum) the following in\
+  \ their application:\n- **Introduction:** Introduce themselves or the organization.\
+  \ The goal is one brief paragraph.\n- **Proposed Delegate Initiative:** State their\
+  \ reason for wanting to be a GnosisDAO delegate or become further involved in the\
+  \ GnosisDAO. \n- **Areas of expertise:** Explain any expertise relevant to their\
+  \ involvement in the GnosisDAO.\n\n\n#### Voting and Selection\nAll *qualified and\
+  \ complete* submissions received during the submission phase will be placed on a\
+  \ ballot. The ballot will be moved to Snapshot, and voting will be conducted using\
+  \ the [weighted voting](https://docs.snapshot.org/user-guides/proposals/voting-types#weighted-voting)\
+  \ strategy. \n\nVoters are encouraged to select nominations that promote diversity\
+  \ and representation based on their expertise, commitment to the DAO's principles\
+  \ and dedication to advancing the GnosisDAO's mission. \n\nThe **top ten** nominations\
+  \ receiving the most votes will be selected to receive a 5,000 GNO delegation for\
+  \ this six-month trial program.\n\n### Timeline\nA nomination thread will be opened\
+  \ on the forum, and applications will be accepted for three weeks. At the end of\
+  \ three weeks, eligible applications will be assembled and move to a [weighted Snapshot\
+  \ vote](https://docs.snapshot.org/user-guides/proposals/voting-types#weighted-voting)\
+  \ to determine the selected delegates. \n\n| Phase       | Duration |\n| -----------\
+  \ | -------- |\n| Phase 1: Application | 3 weeks  |\n| Phase 2: Voting      | 1\
+  \ week   |\n| Phase 3: Active Delegation Program     | 6 Months   |\n\nAlthough\
+  \ the duration timeline is specified in this proposal, the official dates will be\
+  \ established once this proposal is passed and posted in the Nomination Thread with\
+  \ instructions for applying.\n### Program Duration\nThis delegate trial program\
+  \ will run for six months, after which the community will review it for renewal\
+  \ or deprecation.\n\n### Delegation Allocation\nEach of the ten delegates selected\
+  \ will receive 5k GNO independently. The distribution is designed to provide equal\
+  \ incentives for participation.\n\nThe total amount being allocated (50k GNO) was\
+  \ chosen because it represents a significant amount of quorum while not meaningfully\
+  \ diluting current stakeholders while still providing a boosting governance involvement.\n\
+  \nkarpatkey will assist the GnosisDAO in creating ten separate SAFEs, configuring\
+  \ them to the same policy as employed in the treasury management SAFEs. This set-up\
+  \ will ensure the DAO retains custody of the GNO and the signer for the delegation\
+  \ actions.\n\n\n### Accountability Mechanisms\nTo ensure accountability for this\
+  \ program and the delegates receiving active delegations, two sets of performance\
+  \ indicators will be established:\n\n#### 1. Delegate KPI's\nDelegates will be required\
+  \ to maintain minimum standards of participation. These standards are:\n- Maintaining\
+  \ a voting record of at least 70%.\n- Maintaining a voting reasoning communication\
+  \ record of 100%.\n\n#### 2. Program KPI's\nThis KPI ensures that program facilitators\
+  \ remain actively involved and promote the success of delegates:\n- Greater than\
+  \ 50% of the nominated and selected delegates meet their Delegate KPIs.\n\n**Note:**\
+  \ If a delegate is below these indicators at the conclusion of the trial period,\
+  \ this delegate will be ineligible to participate in the next Delegate Program cycle.\
+  \ Elected delegates are entering this program with the expectation of voting on\
+  \ all proposals and promptly communicating their rationale for voting on the forum.\n\
+  \n\n## Rationale\nAchieving a quorum on proposals is not just a procedural requirement\
+  \ but a crucial factor for the smooth functioning and effectiveness of the GnosisDAO.\
+  \ Quorum ensures that decisions reflect the community's consensus and that proposals\
+  \ receive adequate scrutiny and deliberation before implementation. However, the\
+  \ DAO needs help to reach quorum levels, leading to delays in decision-making and\
+  \ potentially impacting the progress of important initiatives vital for the DAO's\
+  \ growth and success.\n\nBy selecting up to 10 delegates through an election process,\
+  \ we aim to bolster quorum participation and increase community engagement in governance\
+  \ activities. Delegates entrusted with representing the community's interests will\
+  \ actively participate in discussions, vote on proposals, and advocate for initiatives\
+  \ that align with the DAO's objectives. Their involvement will enhance the diversity\
+  \ of perspectives considered in decision-making and foster a more inclusive governance\
+  \ process. \n\n\n## Budget\n**The total budget for this six-month trial period is\
+  \ $20,000, paid in xDAI.** The budget will pay StableLab to function as the \"Program\
+  \ Facilitator\". This budget pays for the work involved in assisting with this program\
+  \ design and providing oversight of delegates, including ensuring delegates remain\
+  \ active in meeting their participation KPIs. \n\nStablelabs will also provide a\
+  \ retrospective analysis of this program's efficacy to aid the DAO's decision to\
+  \ continue beyond an initial six-month trial period.\n\n#### Payment Schedule\n\n\
+  | Payment      | Amount                     |\n| ------------ | --------------------------\
+  \ |\n| Month 1 | One payment of 10,000 xDAI  |\n| Month 3 | One payment of 10,000\
+  \ xDAI |\n| **Total**    | **20,000 xDAI**            |\n\nThese two payments will\
+  \ be made during the months of the active delegation phase following a successful\
+  \ selection of delegates.\n\n## Evaluation\nThis program will be evaluated by successfully\
+  \ completing the KPIs established in this proposal. A DAO vote will be required\
+  \ to continue it beyond the initial six-month trial period.\n\n## Team/ Organization\n\
+  karpatkey and StableLab are jointly presenting this proposal. StableLab will serve\
+  \ the role of \"Program Facilitator\", providing oversight and upkeep, while karpatkey\
+  \ will provide support in setting up the SAFEs.\n\n- **karpatkey** will support\
+  \ the technical implementation of the Gnosis Delegate Program by initiating the\
+  \ required SAFEs to achieve multiple delegations. karpatkey will also assist in\
+  \ receiving the payment requests from StableLab. As an already established and compensated\
+  \ service provider, karpatkey will provide these services under existing agreements.\n\
+  \n- **StableLab** (*\"Program Facilitator\"*) will facilitate the governance frameworks\
+  \ and non-technical operations required to execute the Gnosis Delegate Program so\
+  \ that all elected delegates maintain their KPIs. This measure ensures that the\
+  \ Delegate Program operates effectively and in the community's best interests. StableLab\
+  \ has experience establishing, running, and actively participating in delegate programs\
+  \ across DAOs such as Aave, Uniswap, 1inch, Balancer, Safe, etc.\n\n### Points of\
+  \ Contact\n- karpatkey: @coltron.eth & @netrim\n- StableLab: @Kene_StableLab"
+start: 1717779600
+end: 1718384400
+state: closed
+author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 91739.67054162115
+scores:
+  - 77970.25409401013
+  - 13240.985315577514
+  - 528.431132033523
+votes: 123
+quorum: 75000
+funding:
+  amount: 5,000
+  currency: GNO
+  confidence: 'High '
+  model_used: gemini-1.5-flash

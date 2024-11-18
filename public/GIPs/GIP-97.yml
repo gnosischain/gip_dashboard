@@ -1,0 +1,69 @@
+id: '0x242016595b38af98c3297271ab75c530ebc3dd1c1ec6264bf9b4483003be4bce'
+gip_number: '97'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x242016595b38af98c3297271ab75c530ebc3dd1c1ec6264bf9b4483003be4bce
+title: GIP-97 - karpatkey SafeDAO <> GnosisDAO Joint Treasury Delegation
+body: "## Abstract\n\nWith the SafeDAO having achieved all milestones laid out in\
+  \ [SEP #3](https://snapshot.org/#/safe.eth/proposal/0xdcd7f8cb197c7132296d802e538df2a565fbe4f8af400f1afbed06b54a808060)\
+  \ and approaching its token transferability, we propose to delegate treasury management\
+  \ of the joint SafeDAO <> GnosisDAO treasury to karpatkey. \n\nThis proposal is\
+  \ being passed in duplicate through Safe governance: https://forum.safe.global/t/draft-karpatkey-safe-dao-treasury-management-core-unit/4893?u=karpatkey.\
+  \ With the passing of this proposal, GIP-97, GnosisDAO shall vote favourably on\
+  \ the corresponding SafeDAO proposal.\n\n\n\n## Motivation\n\nHaving accomplished\
+  \ the objectives outlined in [SEP #3](https://snapshot.org/#/safe.eth/proposal/0xdcd7f8cb197c7132296d802e538df2a565fbe4f8af400f1afbed06b54a808060),\
+  \ including the creation of a constitution, a governance framework, a system for\
+  \ resource distribution, and the definition of token utility, SafeDAO has completed\
+  \ all the necessary steps for its token transferability.\n\nWith the foundational\
+  \ elements of SafeDAO in place, the focus naturally shifts to the efficient and\
+  \ strategic management of the DAO's assets. Alongside the token transferability,\
+  \ the unlocking of the [joint treasury](https://etherscan.io/address/0xd28b432f06cb64692379758b88b5fcdfc4f56922)\
+  \ between GnosisDAO and SafeDAO will take place. We propose delegating the joint\
+  \ treasury management to karpatkey as part of the mandate.\n\n## Specificaiton\n\
+  \nAccording to [GIP-29](https://forum.gnosis.io/t/gip-29-spin-off-safedao-and-launch-safe-token/3476),\
+  \ 5% of the SAFE tokens are allocated to a shared treasury by SafeDAO and GnosisDAO\
+  \ intended to fund rewards beneficial to both the Safe and Gnosis communities.\n\
+  \nWe propose that GnosisDAO entrust the management of this collective treasury to\
+  \ karpatkey as an extension of [GIP-58](https://snapshot.org/#/gnosis.eth/proposal/0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8).\
+  \ With karpatkey's deep involvement in both projects it is positioned optimally\
+  \ to manage the joint treasury efficiently and align the interests of both communities.\n\
+  \nThe joint treasury will be used to create liquid Safe markets with up to 2.5M\
+  \ $SAFE used for incentivising $SAFE DEX liquidity on the Gnosis Chain.\n\nAdditionally,\
+  \ the joint treasury will be used to provide liquidity for Safe on Ethereum and\
+  \ Gnosis Chain as well as support the Safe price. Upon potential diversification\
+  \ of the treasury in the future, karpatkey shall also use these assets for staking\
+  \ (ETH / GNO), LPing or other means to gather yield on the assets. Given the initial\
+  \ 100% treasury composition of native tokens (SAFE), karpatkey will provide a more\
+  \ detailed strategy as these become feasible.\n\nThe joint treasury will be included\
+  \ on our [reports page](https://reports.karpatkey.com/), allowing the community\
+  \ to monitor positions and actions taken with the treasury holdings.\n\n### Implementation\n\
+  \nTo implement active treasury management and make the delegation effective the\
+  \ current signers, Safe Foundation and Gnosis DAO, will amend the existing joint\
+  \ treasury safe to a 3/6 MS with 2 karpatkey signers, 4 signers to be appointed\
+  \ by the current signers, and a Module Safe controlled by SafeDAO and GnosisDAO\
+  \ which itself will always have full control over the joint treasury. \n\nA corresponding\
+  \ Safe will also be deployed on Gnosis to expand the joint treasury's presence to\
+  \ the chain.\n\n### Fees\n\n2% annual fee on assets under management, paid in monthly\
+  \ instalments in either ETH, stablecoins or Safe token at the discretion of karpatkey\
+  \ and what is feasible based on the treasury composition.\n\nFees are calculated\
+  \ as `jointTreasury * 0.02 / 12` at 23:59 UTC on the last day of each month and\
+  \ will be paid from the joint treasury."
+start: 1712433300
+end: 1713038100
+state: closed
+author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 75988.38713778465
+scores:
+  - 75980.34006851442
+  - 5.036181883591896
+  - 3.010887386638278
+votes: 216
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

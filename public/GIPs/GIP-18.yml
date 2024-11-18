@@ -1,0 +1,38 @@
+id: '0x23d8ac4c853b6b9d9e7972ae64fb94637f141a9e11bdafb0f24c528f43dea27b'
+gip_number: '18'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x23d8ac4c853b6b9d9e7972ae64fb94637f141a9e11bdafb0f24c528f43dea27b
+title: TickDAO Investment
+body: 'Should GnosisDAO implement GIP-18, investing 120.7085 WETH in exchange for
+  12,500,000 TICK, as detailed in this forum post?
+
+
+  https://forum.gnosis.io/t/gip-18-should-gnosisdao-invest-at-tickdao/2262/6
+
+
+  There are one transaction attached to this proposal:
+
+
+  Transfer 120.7085 WETH to tickdao.eth
+
+  '
+start: 1640358000
+end: 1640962800
+state: closed
+author: '0xef364e390fF3f326e3153d0B9c4B944dB42155e5'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 85151.52459133675
+scores:
+  - 85134.96447914814
+  - 16.56011218860319
+  - 0
+votes: 180
+quorum: 0
+funding:
+  amount: '120.7085'
+  currency: WETH
+  confidence: 'High '
+  model_used: gemini-1.5-flash

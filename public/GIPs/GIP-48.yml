@@ -1,0 +1,30 @@
+id: '0x012d04c8351991da79e92f4088527c76b6139b9aa0b71772b704b587d2c9c0e3'
+gip_number: '48'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x012d04c8351991da79e92f4088527c76b6139b9aa0b71772b704b587d2c9c0e3
+title: Should GnosisDAO implement the Praise reward system around the Gnosis Chain
+  Validator program?
+body: 'The Praise system can benefit and grow the Gnosis Chain validator community.
+  Verified validators in the Gnosis Chain and GnosisDAO Discord can earn small amounts
+  of GNO for helping community members and for onboarding those interested in running
+  a validator. '
+start: 1654223456
+end: 1654828256
+state: closed
+author: '0xEf0391ccbebf15fc84334D9630255093754cDAAB'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 124531.90219035951
+scores:
+  - 124476.80327484835
+  - 52.647236401691735
+  - 2.451679109461167
+votes: 707
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

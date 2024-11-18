@@ -1,0 +1,146 @@
+id: gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
+gip_number: 68
+url: https://forum.gnosis.io/t/gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
+title: Should GnosisDAO fund RnDAO's Community Health analytics and benchmarking tool?
+body: "##  Simple Summary\n\nIf Web3 is all about communities, how do we know if we’re\
+  \ heading in the right direction?\n\nWe’ve been advancing a research project to:\n\
+  \n  * develop a framework for Community Health with actionable metrics\n  * create\
+  \ an open source data collection tool\n  * implement the tool in GnosisDAO and others\n\
+  \  * analyse the interactions and perceptions data to validate the framework and\
+  \ provide insights to advance the Gnosis community.\n\n\n\nWe’re seeking $30,000\
+  \ or equivalent as grant match-funding to complete the project.\n\n##  About RnDAO\n\
+  \nWe’re an R&D DAO with a mission to empower humane collaboration. Having already\
+  \ delivered research projects on [sub-DAOs ](https://rndao.mirror.xyz/Qn0Y71EYRUB-6Kn0jH47baWulXoIe-dmTYIVuJeEOt8)and\
+  \ [DAO Conceptual Foundations ](https://rndao.mirror.xyz/1zGqbsh1YZNi3I9yvtk_2VMcpyg_dvHF1GlZ_LAO3p4),\
+  \ [Decentralised Leadership,](https://rndao.mirror.xyz/7rI4iyJ4tchGdZr3WwEY9Kn_ynB4NvdEIH1UTm1UceU)\
+  \ [DAO Compensation ](https://rndao.mirror.xyz/aKI_cniOIsTcxNz4xC0EqzlXDDykwLw6geEc0ipFvIs),\
+  \ and [more ](http://rndao.mirror.xyz/).\n\n##  Abstract\n\nLike many others, Gnosis\
+  \ depends on the health of its community and its vibez—yet understanding and measuring\
+  \ these factors (what we call Community Health) is challenging.\n\nToday, Web3 communities\
+  \ are left to rely on infrequent transactions data (on-chain records), while data\
+  \ from the significantly more frequent social interactions is limited to basic indicators\
+  \ of Discord or Discourse, Web2-oriented bots like Statsbot that give simplistic\
+  \ measurements, or a patchwork of “homemade” surveys to fill in the gaps. These\
+  \ solutions are ill-suited for DAO communities, surveys are time-consuming for community\
+  \ managers and contributors to use, and the results of these approaches, hampered\
+  \ by poor indicators and/or poor sampling, are unreliable.\n\nPerhaps even direr,\
+  \ the lack of real-time analytics leaves DAO community leaders and members without\
+  \ established baselines to measure against to understand the impact of community-focused\
+  \ initiatives, identify best practices, monitor shocks to the system, or rapidly\
+  \ gauge the effects of system-wide changes (such as market crashes, protocol migrations,\
+  \ etc.).\n\n##  Motivation\n\nTo advance the Gnosis ecosystem by supporting a humane\
+  \ understanding of DAOs, enabling community managers, leaders and members to better\
+  \ understand and support the wellbeing of communities and know what’s helping and\
+  \ what’s hindering them. Ultimately leading to a more resilient and successful Gnosis\
+  \ ecosystem.\n\n##  Specification\n\nFor the conceptual framework, we have assembled\
+  \ a team including two PhDs in network science and an organisation designer with\
+  \ significant DAO and community building experience (myself) to bridge both theory\
+  \ and practice. We’ve reviewed over 50 papers on the topics of Community, Social\
+  \ Network Analysis, Resilience, Trust, Engagement, and more. And are synthesising\
+  \ all of these findings to define the key indicators that have high validity and\
+  \ high predictive capacity for community health, while also taking a holistic perspective\
+  \ that accounts for member’s wellbeing and planning to collect data across communities\
+  \ to offer an ecosystem health scrore too.\n\nFor the data collection tool, we’re\
+  \ going beyond traditional surveys.\n\nThis research proposal focuses on the use\
+  \ of two critical techniques as a starting point:\n\nOrganizational Network Analysis\
+  \ (ONA) is a structured way to visualize how communications, information, and value\
+  \ creation occur through an organization based on interaction graphs. ONA has been\
+  \ shown to provide a wide range of insights to improve contributor retention, avoid\
+  \ member burnout, predict team performance and community resilience, identify key\
+  \ contributors, enable decentralization, and improve coordination. Although relatively\
+  \ new, ONA is gaining in popularity over traditional survey tools.\n\nPulse Surveys\
+  \ are frequent and automated micro-surveys that provide qualitative and quantitative\
+  \ insights. In traditional organizations, they have been shown to increase employee\
+  \ response rate and employee engagement with related initiatives. They’re also used\
+  \ as a tool for culture design and implementing culture change. Lastly, Pulse Surveys\
+  \ significantly reduce admin work for community managers and related roles.\n\n\
+  The data is anonymised and collected in a central repository for this first phase\
+  \ (we’re exploring decentralised hosting) and managed by a team having received\
+  \ ethics training and at risk of losing their credentials should it be misused.\n\
+  \n##  Rationale\n\nThe techniques used (ONA based on communication and Pulse Surveys)\
+  \ provide maximum insights on Community Health compared with exclusively on-chain\
+  \ data analysis. And provide minimum disruption for community members and minimal\
+  \ admin compared to long-form surveys and user interviews. Crucially, the techniques\
+  \ selected and the usage of Discord messages increase participation by those less\
+  \ likely to respond to long survey e.g. those less engaged and thus likely with\
+  \ the most valuable feedback to give.\n\nAlthough our initial focus is Community\
+  \ Health metrics, the proposed approach sets the foundation for further applications.\
+  \ The combination of ONA and pulse surveys offers unprecedented actionable insights\
+  \ in real-time. Some of the potential applications and insights for Gnosis DAO and\
+  \ Gnosis-Chain-based DAOs are:\n\n  * Generate baseline metrics for Community Health\
+  \ / vibez to quantify and better understand the impact that a specific event is\
+  \ having on a community and/or sub-groups within the community\n  * Predict which\
+  \ contributors are likely to leave the DAO and take preventive action (without breaching\
+  \ privacy)\n  * Build funnels to track member onboarding and identify areas for\
+  \ improvement\n  * Identify measurements of decentralization to serve as KPIs or\
+  \ Insights metrics\n  * Monitor specific topics like contributor wellbeing, alignment,\
+  \ community experience, etc. in near real-time\n  * Attract talent and investment\
+  \ with objective Community Health metrics instead of proxy metrics like member count\
+  \ or proposal count, or financial metrics such as TVL\n  * Help new contributors\
+  \ find context-rich mentors outside of the existing pool of well-known but time-poor\
+  \ candidates\n\n\n\nIn addition to the initial research on Community Health, the\
+  \ potential applications mentioned above (and others to be found) can enable more\
+  \ effective and targeted efforts to build healthier DAO communities.\n\nThis research\
+  \ also helps reduce the tooling gap in DAOs compared to the employee and stakeholder\
+  \ experience at traditional corporations.\n\n##  Why our Team?\n\nWe combine deep\
+  \ expertise in Network Science and Organisational Network Mapping, Business Intelligence,\
+  \ DAOs and Community Building.\n\nTeam Leads\n\nKaterinabc  \nPh.D. in Team Dynamics\
+  \ using Social Network Analysis, Teaching Collaboration, and Organizational Performance\
+  \ at Northwestern University (since 2016).  \nCo-organized Learning in Networks\
+  \ sessions at the International Conference of Social Network Analysis (2018 - 2020),\
+  \ and previously advised a people analytics company on social network metrics. \
+  \ \nTwitter:[ twitter.com/katerinabohlec ](http://twitter.com/katerinabohlec)  \n\
+  Linkedin:[ linkedin.com/in/katerinab ](http://linkedin.com/in/katerinab)  \nGithub:[\
+  \ https://github.com/katerinabc/ ](https://github.com/katerinabc/)\n\nThegadget.eth\
+  \  \nSoftware Engineer. Previously, Product Manager at Neolyze (Business Intelligence\
+  \ Dashboard for Instagram).  \nGithub:[ https://github.com/thegadget-eth/](https://github.com/thegadget-eth/)\
+  \  \nTwitter:[ https://twitter.com/mr_gadget22 ](https://twitter.com/mr_gadget22)\n\
+  \nDanielo  \nPreviously, Head of Governance at Aragon, 8 years experience in Organization\
+  \ Design consulting (clients include Google, BCG, Daymler, The UN, and multiple\
+  \ startups), and visiting lecturer at Oxford University.  \nTwitter*:*[ https://twitter.com/_Daniel_Ospina\
+  \ ](https://twitter.com/_Daniel_Ospina)  \nLinkedIn:[ https://www.linkedin.com/in/conductal/](https://www.linkedin.com/in/conductal/)\
+  \  \nNote: Other RnDAO members will participate throughout the process in user research,\
+  \ literature review, tool development, and workshop facilitation.\n\nTeam Advisor\n\
+  \nSam  \nPreviously, Head of Technical Research at Aragon. Previously, Lead Developer\
+  \ of the official JavaScript API for the Ethereum blockchain.  \nGithub:[ https://github.com/nivida\
+  \ ](https://github.com/nivida)  \nTwitter:[ https://twitter.com/furter_samuel ](https://twitter.com/furter_samuel)\n\
+  \nSee additional team members here:\n\n[sobol.io/d/rndao/structure?view=circles](http://sobol.io/d/rndao/structure?view=circles)\n\
+  \n##  Implementation\n\n##  Budget & Timeline\n\nBudget\n\n$30,000 in USDC (or equivalent)*\n\
+  \nDAO Health Conceptual Framework and translation into actionable metrics: $8,000\n\
+  \nData Collection Tool Development (discord bot for interactions data collection,\
+  \ config front-end, and results dashboard): $17,000\n\nData Analysis, Insights Report,\
+  \ and Community Workshop: $5,000\n\n  * the requested budget forms part of a total\
+  \ $90,000 target. Total project costs will be split across multiple, participating\
+  \ DAOs (grants already received from Aragon and Aave).\n\n\n\nEstimated Timeline\
+  \  \n(the work has already begun and we’re currently in week 5 of this roadmap)\n\
+  \nWeek 1-8 (completed)\n\n  * Literature Review\n  * Data Collection Tool PoC\n\n\
+  \n\nWeek 9-12 (we’re already at week 9 of this roadmap)\n\n  * Finish Data Collection\
+  \ Tool Development\n  * Data Collection Tool Implementation on Discord\n  * Presentation\
+  \ of Dashboard Prototype and iteration\n\n\n\nweek 13-16\n\n  * Data Analysis and\
+  \ Community Health Dashboard go live (possible integration with other dashboards\
+  \ /properties)\n  * Workshop with community to discuss findings and recommendations\n\
+  \n\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please ignore this section,\
+  \ and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a\
+  \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n2 Likes\n"
+start: 1664555971
+end: null
+state:
+  - phase-2
+author: danielo (twitter @_daniel_ospina)
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 30,000
+  currency: $ (USD)
+  confidence: 'High '
+  model_used: gemini-1.5-flash

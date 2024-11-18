@@ -1,0 +1,46 @@
+id: gip-12-treasury-swaps-program-1-gno-x-bal
+gip_number: 12
+url: https://forum.gnosis.io/t/gip-12-treasury-swaps-program-1-gno-x-bal
+title: 'Treasury Swaps Program #1 GNO x BAL'
+body: "##  Simple Summary\n\nCreate periodic OTC trades GNO X BAL between GnosisDAO\
+  \ and Balancer’s treasuries. The program #1 will consist of 4000 ETH-equivalent\
+  \ GNO (BAL) distributed across 8 months.\n\n##  Motivation\n\nIn April 2021, [Gnosis\
+  \ and Balancer launched a partnership integration](https://blog.gnosis.pm/introducing-gnosis-protocol-v2-and-balancer-gnosis-protocol-f693b2938ae4),\
+  \ the Balancer-Gnosis-Protocol (BGP). This proposal looks forward to strengthening\
+  \ the partnership and aligning the DAOs financially.\n\nHow?  \n-Financial incentives\
+  \ alignment: It will promote the Balancer-Gnosis-Protocol outcome in the best interest\
+  \ of both Gnosis and Balancer\n\n  * Treasury diversification\n  * Improved token\
+  \ distribution within long term players\n  * Voting power for DAO proposals\n\n\n\
+  \n##  Specification\n\nStart a pilot program #1 of 4000 ETH-equivalent GNO (BAL)\
+  \ distributed across 8 months. After the program #1, make a lookback, evaluate the\
+  \ results and define next steps.\n\nEvery first Monday of the month Gnosis (Balancer)\
+  \ sends 500 ETH-equivalent GNO (BAL) to Balancer (Gnosis) treasury wallet.\n\nThe\
+  \ price will be defined by the last 30 days of open-price historical data average\
+  \ on Coingecko:  \nGNO: [https://www.coingecko.com/en/coins/gnosis/historical_data/eth\
+  \ ](https://www.coingecko.com/en/coins/gnosis/historical_data/eth)  \nBAL: [Balancer\
+  \ Price: BAL Live Price Chart & News | CoinGecko](https://www.coingecko.com/en/coins/balancer/historical_data/eth)\n\
+  \n[Link to discussion on Balancer forum](https://forum.balancer.fi/t/rfc-treasury-swaps-program-gno-x-bal/2110)\n\
+  \n[Link to phase1 post](https://forum.gnosis.io/t/treasury-swaps-program-gno-x-bal/1440)\n\
+  \n2 Likes\n"
+start: 1630933834
+end: null
+state:
+  - phase-2
+author: '@claberus'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: '4000'
+  currency: ETH-equivalent
+  confidence: 'High '
+  model_used: gemini-1.5-flash

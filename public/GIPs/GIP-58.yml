@@ -1,0 +1,46 @@
+id: '0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8'
+gip_number: '58'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x867149a44d4f2324520f9f0f8a0d91988b26e4ba4d8662635b29ca733a1354b8
+title: Karpatkey DAO Service Extension
+body: 'Should GnosisDAO implement GIP-58, as detailed in the following forum post?:
+  https://forum.gnosis.io/t/gip-58-karpatkey-dao-service-extension/5417
+
+
+
+  After the GIP-20 6 approval, the development and sustainable growth of the Gnosis
+  Chain became a top priority for GnosisDAO. Even though efficient treasury management
+  is still a must for GnosisDAO’s evolution, the scope of our work has to encompass
+  more in order to take the Gnosis Chain to the next level, co-creating a safe, trustworthy
+  ecosystem.
+
+
+  We increased our headcount and went beyond the scope of GIP-20 to be able to adequately
+  cater to Gnosis’ current needs.
+
+
+  This proposal focuses on the Gnosis Chain and treasury development, seeking to reduce
+  risk exposure, develop anti-liquidation bots to increase capital efficiency, update
+  our security protocol, run security audits, further improve our reporting, execute
+  and manage a sustainable rewards plan for new and existing protocols in the GC,
+  and scout attractive new ones to make them part of the GC.'
+start: 1657726231
+end: 1658331031
+state: closed
+author: '0x46f6B1D519a5bDaf10d49e135c9F611c9bd126e9'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 84311.0738698482
+scores:
+  - 79977.2606628623
+  - 4312.6163162912835
+  - 21.196890694632515
+votes: 718
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

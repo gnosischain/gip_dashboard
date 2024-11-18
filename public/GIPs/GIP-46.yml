@@ -1,0 +1,29 @@
+id: '0x41af607ec45f147b6f0196353f29c5e25951097c64c3a0a703bc519bd1883578'
+gip_number: '46'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x41af607ec45f147b6f0196353f29c5e25951097c64c3a0a703bc519bd1883578
+title: Should GNO from the GnosisDAO Safe be transferred to the treasury management
+  safe operated by Karpatkey?
+body: All GNO from the GnosisDAO Safe should be transferred to the treasury management
+  safe operated by Karpatkey. This will allow GnosisDAO to use GNO as collateral for
+  loans and payouts of GNO for grants.
+start: 1653058160
+end: 1653662960
+state: closed
+author: '0xB922a0a797026D5C45145503E1976989B05Cf307'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 129204.75485924087
+scores:
+  - 129159.39108746796
+  - 27.1487080656233
+  - 18.215063707291183
+votes: 774
+quorum: 0
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash

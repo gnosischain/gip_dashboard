@@ -1,0 +1,107 @@
+id: '0x509a53db27f35505fbae46855f39a5d2d274527ecf418a8fd7f0da03bc74aa49'
+gip_number: '112'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x509a53db27f35505fbae46855f39a5d2d274527ecf418a8fd7f0da03bc74aa49
+title: Should the Gnosis Infrastructure team make changes to the GnosisDAO’s Snapshot
+  configurations?
+body: "# Executive Summary\nThe Gnosis Infrastructure team is aiming to improve data\
+  \ availability for the GnosisDAO’s subgraphs being consumed by the Snapshot Space.\n\
+  \n- As part of the task there is a need for adopting the right indexing solution\
+  \ which must provide highly available data for the subgraphs running on Gnosis Chain\
+  \ and Ethereum Mainnet which, in turn, are consumed by the Snapshot space.\n- There\
+  \ is a need for improving the current Snapshot strategy called GNO voting power,\
+  \ which needs to reflect all the available options such as GNO deposits made through\
+  \ Safe sponsored calls that allows locked GNO to be used for voting.\n- GIP-101\
+  \ passed and requires weighted choice voting for the community to elect 10 delegate\
+  \ candidates. However, weighted choice voting is not compatible with the Reality.eth\
+  \ module used to power the GnosisDAO’s Snapshot space. The most viable solution\
+  \ is to open an official Snapshot sub-space with weighted choice voting enabled.\
+  \ In addition to updating the Snapshot subgraphs detailed above, the Gnosis Infrastructure\
+  \ team will open a Snapshot sub-space to enable weighted choice voting should this\
+  \ proposal pass quorum.\n\n# Introduction\nThe GnosisDAO's Snapshot space needs\
+  \ to be monitored and maintained by the Gnosis Infrastructure team. Issues that\
+  \ can arise are most often related to The Graph's subgraph indexer for Snapshot.\
+  \ The Snapshot Subgraph is a powerful tool that efficiently organizes and indexes\
+  \ on-chain governance events sourced from the Snapshot DAO client.\n\nThe recent\
+  \ issues with the latest GIPs were related to the subgraphs indexer, which had stopped\
+  \ working. The subgraphs are hosted by The Graph and will be deprecated To if they\
+  \ are not updated.\n\nCommunity members also surfaced issues related to voting with\
+  \ their staked GNO further indicating that there was a subgraph issue.\n\nhttps://forum.gnosis.io/t/bug-in-the-snapshot-voting-power-calculation/8395\n\
+  \nGnosis DevOps initiated a review of all Snapshot configurations and found that\
+  \ **the GnosisDAO's multisig owners would need to sign off on updating the settings\
+  \ for the DAO's Snapshot.**\n\n# Proposed Changes\nThe subgraphs for GNO voting\
+  \ power, which are currently running as best effort on Ethereum and Gnosis Chain,\
+  \ will necessarily need to be re-deployed on The Graph Decentralized network. As\
+  \ a result of the re-deploy process a new value for the SUBGRAPH_URL in the Snapshot\
+  \ space configuration will be generated.\n\nThis value must be filled in the Snapshot\
+  \ configuration. Any modifications to the GnosisDAO’s Snapshot settings must be\
+  \ voted on by the DAO and executed via the DAO’s multi-sig.\n\n# Impact and Benefits\n\
+  Updating the Snapshot configurations to install a new Graph API URL will improve\
+  \ data availability for the GnosisDAO’s subgraphs being consumed by the Snapshot\
+  \ Space. The Infrastructure team will also improve the current Snapshot strategy\
+  \ called GNO voting power so that locked GNO from GIP-28 can participate in GnosisDAO\
+  \ governance. \n\nhttps://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357\n\
+  \n# Implementation Plan\nPlease provide a detailed plan for implementing the proposed\
+  \ changes, including timelines, key milestones, and any necessary resources or support.\n\
+  \nThe Gnosis Infrastructure team will be working on fixing the most impacting issues\
+  \ with the subgraph, among which we have:\n\n1. Migration to the Decentralized Network\n\
+  Objective: Transition the existing subgraph from the hosted service to the Decentralized\
+  \ Network ahead of the service's deprecation to ensure continued functionality and\
+  \ support by migrating to a more sustainable and decentralized service. **This is\
+  \ a high priority and time sensitive task that needs to be carried out asap due\
+  \ to TheGraph hosted service being deprecated definitely by September 14th 2024.**\n\
+  \n2. Refresh of Voting Power Strategy\nObjective: Revise the voting power calculation\
+  \ to align with current blockchain usage and protocol engagement. Accurately reflect\
+  \ the active protocols and eliminate outdated or less utilized ones, enhancing the\
+  \ relevance and fairness of voting power metrics. \n\nAdditionally, voting power\
+  \ must account for:\n- Beacon chain withdrawals\n- Have the withdrawal address accruing\
+  \ the voting power as opposed to the deposit address\n- osGNO\n- osGNO-GNO Balancer/Aura\
+  \ pool\n\nThe Infrastructure team will remove support for:\n\n- 1Hive (Gnosis)\n\
+  - Swapper (Gnosis)\n- SushiSwap (Gnosis)\n- Elk (Gnosis)\n- Baoswap (Gnosis)\n-\
+  \ Symmetric (Gnosis)\n- Uni v3 (mainnet)\n- Balancer (mainnet)\n\n3. Fixes and Enhancements\
+  \ in Voting Power Calculation\nObjective: Correct and refine the calculation issues\
+  \ leading to inaccurate voting scores on some indexed protocols in order to keep\
+  \ fairness of the voting process. Please see previous DAO votes covering the topic\
+  \ of allowing locked GNO to vote on Snapshot for more info.\n\n- Withdrawal event\
+  \ of the Gnosis Beacon Chain Deposit smart contract was not handled correctly resulting\
+  \ in a wrong tracking of deposited GNO over the network. This issue is considered\
+  \ as critical as it could lead to vote power farming. Currently it’s not trivial\
+  \ to detect if a withdrawal is for claiming reward or for exit validator without\
+  \ tracking the Execution Layer (that is not possible in the subgraph). We decided\
+  \ to consider all withdrawals as an exit, even though this means we're not accounting\
+  \ for rewards generated over time. While this isn't ideal, it's the best solution\
+  \ we have at the moment to prevent abuse.\n\nOur technical team is actively working\
+  \ on a better and more accurate solution, and we plan to update the system in the\
+  \ coming weeks.\n\n- Fixing the issue with the Deposit event of the Gnosis Beacon\
+  \ Chain Deposit smart contract incorrectly handled, which was causing some issues\
+  \ with how voting power was being assigned. Specifically, the problem affected services\
+  \ like Gelato Network, where the voting power was incorrectly being assigned to\
+  \ the service itself rather than to the user.\n\nForum threads:\n- https://forum.gnosis.io/t/should-gnosisdao-allow-to-use-gno-locked-in-balancer-pools-for-voting-in-snapshot-proposals/902\n\
+  - https://forum.gnosis.io/t/gip-28-allow-gno-holders-to-vote-even-if-their-gno-are-invested-staked-locked-in-smart-contracts-in-different-protocols-networks/2357\n\
+  - https://forum.gnosis.io/t/bug-in-the-snapshot-voting-power-calculation/8395\n\n\
+  All the changes will be handled publicly on the following repository: https://github.com/gnosis/subgraph-voting-power\n\
+  \nThe subgraphs will be owned by a Safe on Arbitrum (arb1:0x67cE12b820ea02f045e2507648608442C6527c6C)\
+  \ having the Infrastructure team as owners. Subgraphs will be publicly available\
+  \ on this page: https://thegraph.com/explorer/profile/0x67cE12b820ea02f045e2507648608442C6527c6C?view=Subgraphs&chain=arbitrum-one\n\
+  \nAny updates regarding this GIP will be handled in a dedicated post in the Governance\
+  \ section of the Gnosis Forum."
+start: 1725276600
+end: 1725881400
+state: closed
+author: '0x2408F8a0475D3823A1F4A4bfD86B2a4B80E6eDB6'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 127201.97099401394
+scores:
+  - 127197.83411998449
+  - 0.000109650887329072
+  - 4.136764378573427
+votes: 107
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: 'High '
+  model_used: gemini-1.5-flash
