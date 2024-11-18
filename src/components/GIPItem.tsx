@@ -1,51 +1,18 @@
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import ENSAuthorDisplay from './ENSAuthorDisplay';
 import { GIP } from '../App';
 import DynamicChart from './DynamicChart';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
 interface GIPItemProps {
   gip: GIP;
 }
 
 const GIPItem = ({ gip }: GIPItemProps) => {
-  const [details, setDetails] = useState([]);
+  const [open, setOpen] = useState(false);
 
-  const columns = useMemo(
-    () => [
-      {
-        key: 'gip_number',
-        label: 'No.',
-        className: 'col-number',
-        sortable: true,
-      },
-      { key: 'title', label: 'Title', className: 'col-title', sortable: true },
-      {
-        key: 'start',
-        label: 'Started',
-        className: 'col-started',
-        sortable: true,
-      },
-      { key: 'state', label: 'State', className: 'col-state', sortable: true },
-      {
-        key: 'status',
-        label: 'Status',
-        className: 'col-status',
-        sortable: true,
-      },
-      {
-        key: 'show_details',
-        label: '',
-        className: 'col-details',
-        filter: false,
-        sorter: false,
-      },
-    ],
-    []
-  );
-
-  const formatDate = (timestamp) => {
+  const formatDate = (timestamp: number) => {
     if (!timestamp) {
       return '';
     }
@@ -59,19 +26,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     });
   };
 
-  const toggleDetails = (id) => {
-    setDetails((prevDetails) => {
-      console.log('Current details:', prevDetails);
-      console.log('Toggling ID:', id);
-      const newDetails = prevDetails.includes(id)
-        ? prevDetails.filter((detailId) => detailId !== id)
-        : [...prevDetails, id];
-      console.log('New details:', newDetails);
-      return newDetails;
-    });
-  };
-
-  const getBadge_state = (state) => {
+  const getBadge_state = (state: string) => {
     const stateMap = {
       closed: 'black',
       open: 'info',
@@ -90,7 +45,11 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     return statusMap[status] || 'primary';
   };
 
-  const computeState = (scores, quorum, scores_state) => {
+  const computeState = (
+    scores: string | any[],
+    quorum: number,
+    scores_state: string
+  ) => {
     if (scores_state !== 'final') return '';
     if (!scores || scores.length < 3) return 'invalid';
 
@@ -100,14 +59,19 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     return isHighest && meetsQuorum ? 'passed' : 'failed';
   };
 
-  const renderFundingInfo = (gip) => {
+  const renderFundingInfo = (gip: GIP) => {
     if (gip.funding && gip.funding.amount && gip.funding.currency) {
       return `${gip.funding.amount} ${gip.funding.currency}`;
     }
     return 'No funding information available';
   };
 
-  const renderChart = (scores, scores_total, scores_state, quorum) => {
+  const renderChart = (
+    scores: string | any[],
+    scores_total: number,
+    scores_state: string,
+    quorum: number
+  ) => {
     // Check if we have valid data for the chart
     if (!scores || !scores.length || !scores_total) {
       return null;
@@ -123,41 +87,20 @@ const GIPItem = ({ gip }: GIPItemProps) => {
   };
 
   return (
-    <div key={gip.id}>
-      <tr>
-        {columns.map((col) => (
-          <td key={col.key} className={`${col.className} left-align`}>
-            {col.key === 'show_details' ? (
-              <Button
-                variant='outline-primary'
-                size='sm'
-                onClick={() => toggleDetails(gip.id)}
-              >
-                {details.includes(gip.id) ? 'Hide' : 'Show'}
-              </Button>
-            ) : col.key === 'start' ? (
-              formatDate(gip.start)
-            ) : col.key === 'state' ? (
-              <span className={`badge bg-${getBadge_state(gip.state)}`}>
-                {gip.state}
-              </span>
-            ) : col.key === 'status' ? (
-              <span
-                className={`badge bg-${getBadge_status(
-                  computeState(gip.scores, gip.quorum, gip.scores_state)
-                )}`}
-              >
-                {computeState(gip.scores, gip.quorum, gip.scores_state)}
-              </span>
-            ) : (
-              gip[col.key]
-            )}
-          </td>
-        ))}
-      </tr>
-      {details.includes(gip.id) && (
+    <div
+      className='w-full flex flex-col items-center'
+      onClick={() => setOpen(!open)}
+    >
+      <p className='w-full'>{gip.gip_number}</p>
+      <p className='text-2xl'>{gip.title}</p>
+      <p className='text-base'>{formatDate(gip.start)}</p>
+      <div className='flex gap-x-2'>
+        <p>{gip.state}</p>
+        <p>{computeState(gip.scores, gip.quorum, gip.scores_state)}</p>
+      </div>
+      {open && (
         <tr>
-          <td colSpan={columns.length}>
+          <td colSpan={6}>
             <Card.Body className='mx-auto' style={{ maxWidth: '1000px' }}>
               {/* Title Section */}
               <h2 className='text-center gip-title'>
