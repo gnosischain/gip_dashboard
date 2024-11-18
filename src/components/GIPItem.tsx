@@ -79,7 +79,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
           {gip.gip_number}
         </p>
         <div
-          className={`w-full flex flex-col md:grid md:grid-cols-6 md:min-h-20 md:items-top pl-3 md:pl-8 ${
+          className={`w-full flex flex-col md:grid md:grid-cols-6 gap-x-3 md:min-h-20 md:items-top pl-3 md:pl-8 ${
             open ? 'bg-[#F0EBDE]' : ''
           }`}
         >
@@ -87,7 +87,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
           <p className='text-base font-mono text-neutral-500 max-sm:mt-3'>
             {formatDate(gip.start)}
           </p>
-          <div className='flex gap-x-6 font-mono capitalize max-sm:mt-2 md:justify-center'>
+          <div className='flex gap-x-6 font-mono capitalize max-sm:mt-2'>
             <p className='text-neutral-500'>{gip.state}</p>
             <p
               className={`${
@@ -100,101 +100,52 @@ const GIPItem = ({ gip }: GIPItemProps) => {
         </div>
       </div>
       {open && (
-        <tr>
-          <td colSpan={6}>
-            <Card.Body className='mx-auto' style={{ maxWidth: '1000px' }}>
-              <h2 className='text-center gip-title'>
-                GIP-{parseInt(gip.gip_number, 10) || 0}: {gip.title}
-              </h2>
+        <div className='w-full flex flex-col px-2 md:pl-14 font-mono mt-4 px-2 gap-y-3'>
+          <div className='flex flex-col md:flex-row'>
+            Author
+            <div className='ml-4'>
+              <ENSAuthorDisplay author={gip.author} />
+            </div>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            Started
+            <p className='ml-4'>{formatDate(gip.start)}</p>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            {gip.scores_state !== 'final' ? 'Ending' : 'Ended'}
+            <p className='ml-4'>{formatDate(gip.end)}</p>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            Requested Funding
+            <p className='ml-4'>{renderFundingInfo(gip)}</p>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            State
+            <p className='ml-4 capitalize'>{gip.state}</p>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            Status
+            <p className='ml-4 capitalize'>{state}</p>
+          </div>
 
-              <Card className='mb-4'>
-                <Card.Body className='p-4'>
-                  <div className='row'>
-                    <div className='col-md-6'>
-                      <p className='mb-2'>
-                        <strong>No.: </strong>
-                        {parseInt(gip.gip_number, 10) || 0}
-                      </p>
-                      <p className='mb-2'>
-                        <strong>Author: </strong>{' '}
-                        <ENSAuthorDisplay author={gip.author} />
-                      </p>
-                      <p className='mb-2'>
-                        <strong>Started: </strong>
-                        {formatDate(gip.start)}
-                      </p>
-                      <p className='mb-2'>
-                        <strong>Proposal: </strong>
-                        {gip.url ? (
-                          <a
-                            href={gip.url}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                          >
-                            link
-                          </a>
-                        ) : (
-                          'No link available'
-                        )}
-                      </p>
-                    </div>
-                    <div className='col-md-6'>
-                      <p className='mb-2'>
-                        <strong>
-                          {gip.scores_state !== 'final' ? 'Ending' : 'Ended'}:{' '}
-                        </strong>
-                        {formatDate(gip.end)}
-                      </p>
-                      <p className='mb-2'>
-                        <strong>Requested Funding: </strong>
-                        {renderFundingInfo(gip)}
-                      </p>
-                      <p className='mb-2'>
-                        <strong>State: </strong>
-                        <span className={`badge`}>{gip.state}</span>
-                        <span className='mx-2' />
-                        <strong>Status: </strong>
-                        <span className={`badge`}>
-                          {computeState(
-                            gip.scores,
-                            gip.quorum,
-                            gip.scores_state
-                          )}
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </Card.Body>
-              </Card>
-
-              {gip.choices &&
-                gip.scores &&
-                gip.scores.length > 0 &&
-                gip.scores_total && (
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      margin: '20px 0',
-                    }}
-                  >
-                    <div style={{ width: '100%', maxWidth: '800px' }}>
-                      {renderChart(
-                        gip.scores,
-                        gip.scores_total,
-                        gip.scores_state,
-                        gip.quorum
-                      )}
-                    </div>
-                  </div>
+          {gip.choices &&
+            gip.scores &&
+            gip.scores.length > 0 &&
+            gip.scores_total && (
+              <div className="w-full mt-8">
+                {renderChart(
+                  gip.scores,
+                  gip.scores_total,
+                  gip.scores_state,
+                  gip.quorum
                 )}
+              </div>
+            )}
 
-              <ReactMarkdown className='text-body left-align'>
-                {gip.body}
-              </ReactMarkdown>
-            </Card.Body>
-          </td>
-        </tr>
+          <ReactMarkdown className='text-body left-align'>
+            {gip.body}
+          </ReactMarkdown>
+        </div>
       )}
     </div>
   );

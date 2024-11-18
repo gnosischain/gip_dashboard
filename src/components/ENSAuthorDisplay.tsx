@@ -42,9 +42,9 @@ const ENSAuthorDisplay = ({ author }: ENSAuthorDisplayProps) => {
   // If it's an Ethereum address, show ENS or truncated address
   if (isEthereumAddress(author)) {
     return ensName ? (
-      <span className="text-blue-600">{ensName}</span>
+      <span>{ensName}</span>
     ) : (
-      <span className="text-gray-600">{`${author.substring(0, 6)}...${author.substring(38)}`}</span>
+      <span>{`${author.substring(0, 6)}...${author.substring(38)}`}</span>
     );
   }
 

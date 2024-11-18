@@ -156,7 +156,6 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
                 height: '100%',
                 maxWidth: '700px',
                 maxHeight: '400px',
-                margin: '0 auto', // Center the chart
             }}
         >
             <div
