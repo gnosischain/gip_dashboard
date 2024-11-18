@@ -102,29 +102,31 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       {open && (
         <div className='w-full flex flex-col px-2 md:pl-14 font-mono mt-4 px-2 gap-y-3'>
           <div className='flex flex-col md:flex-row'>
-            Author
+            <span className='md:w-52'>Author</span>
             <div className='ml-4'>
               <ENSAuthorDisplay author={gip.author} />
             </div>
           </div>
           <div className='flex flex-col md:flex-row'>
-            Started
+            <span className='md:w-52'>Started</span>
             <p className='ml-4'>{formatDate(gip.start)}</p>
           </div>
           <div className='flex flex-col md:flex-row'>
-            {gip.scores_state !== 'final' ? 'Ending' : 'Ended'}
+            <span className='md:w-52'>
+              {gip.scores_state !== 'final' ? 'Ending' : 'Ended'}
+            </span>
             <p className='ml-4'>{formatDate(gip.end)}</p>
           </div>
           <div className='flex flex-col md:flex-row'>
-            Requested Funding
+            <span className='md:w-52'>Requested Funding</span>
             <p className='ml-4'>{renderFundingInfo(gip)}</p>
           </div>
           <div className='flex flex-col md:flex-row'>
-            State
+            <span className='md:w-52'>State</span>
             <p className='ml-4 capitalize'>{gip.state}</p>
           </div>
           <div className='flex flex-col md:flex-row'>
-            Status
+            <span className='md:w-52'>Status</span>
             <p className='ml-4 capitalize'>{state}</p>
           </div>
 
@@ -132,7 +134,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
             gip.scores &&
             gip.scores.length > 0 &&
             gip.scores_total && (
-              <div className="w-full mt-8">
+              <div className='w-full mt-8'>
                 {renderChart(
                   gip.scores,
                   gip.scores_total,
@@ -142,9 +144,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
               </div>
             )}
 
-          <ReactMarkdown className='text-body left-align'>
-            {gip.body}
-          </ReactMarkdown>
+          <ReactMarkdown className='font-sans'>{gip.body}</ReactMarkdown>
         </div>
       )}
     </div>
