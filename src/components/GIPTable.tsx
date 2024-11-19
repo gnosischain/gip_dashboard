@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import { Button, Form } from 'react-bootstrap';
 import { Chart, registerables } from 'chart.js';
 import 'chart.js/auto';
 import '../index.css';
@@ -85,7 +84,7 @@ const GIPTable = ({ gips }: GIPTableProps) => {
       </div>
       {visibleCount < filteredGips.length && (
         <div className='flex text-center mt-3'>
-          <Button onClick={loadMore}>Load More</Button>
+          <button onClick={loadMore}>Load More</button>
         </div>
       )}
     </div>

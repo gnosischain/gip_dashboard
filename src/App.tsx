@@ -88,7 +88,7 @@ function App() {
   return (
     <div className='w-screen min-h-screen bg-white text-black flex flex-col'>
       <p className='flex text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
-      <div className='p-4'>
+      <div className='max-sm:p-4 md:pl-4'>
         <Tabs>
           <div className='w-full flex justify-between'>
             <TabList className='flex gap-x-2 text-black/60'>
