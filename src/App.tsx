@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 // import GIPTable from './components/GIPTable';
 import yaml from 'js-yaml';
 import GIPTable from './components/GIPTable';
+import GIPStats from './components/GIPStats';
 
 export interface GIP {
   author: string;
@@ -102,8 +103,12 @@ function App() {
             <div>Search Component Here</div>
           </div>
           <div className='w-full md:pl-8 mt-8'>
-            <TabPanel>{<GIPTable gips={gips} />}</TabPanel>
-            {/* <TabPanel>{<GIPStats gips={gips} /></TabPanel> */}
+            <TabPanel>
+              <GIPTable gips={gips} />
+            </TabPanel>
+            <TabPanel>
+              <GIPStats gips={gips} />
+            </TabPanel>
           </div>
         </Tabs>
       </div>
