@@ -4,6 +4,7 @@ import ENSAuthorDisplay from './ENSAuthorDisplay';
 import { GIP } from '../App';
 import DynamicChart from './DynamicChart';
 import { useState } from 'react';
+import { computeState } from '../utils/computeState';
 
 interface GIPItemProps {
   gip: GIP;
@@ -26,20 +27,6 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     });
   };
 
-  const computeState = (
-    scores: string | any[],
-    quorum: number,
-    scores_state: string
-  ) => {
-    if (scores_state !== 'final') return '';
-    if (!scores || scores.length < 3) return 'invalid';
-
-    const [firstScore, ...otherScores] = scores;
-    const isHighest = otherScores.every((score) => firstScore > score);
-    const meetsQuorum = firstScore > quorum;
-    return isHighest && meetsQuorum ? 'passed' : 'failed';
-  };
-
   const renderFundingInfo = (gip: GIP) => {
     if (gip.funding && gip.funding.amount && gip.funding.currency) {
       return `${gip.funding.amount} ${gip.funding.currency}`;
@@ -50,7 +37,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
   const state = computeState(gip.scores, gip.quorum, gip.scores_state);
 
   const renderChart = (
-    scores: string | any[],
+    scores: number[],
     scores_total: number,
     scores_state: string,
     quorum: number

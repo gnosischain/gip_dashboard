@@ -2,31 +2,8 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import ENSAuthorDisplay from './ENSAuthorDisplay';
 import { GIP } from '../App';
-
-const computeState = (scores, quorum, scores_state) => {
-  if (scores_state !== 'final') return '';
-  if (!scores || scores.length < 3) return 'invalid';
-
-  const [firstScore, ...otherScores] = scores;
-  const isHighest = otherScores.every((score) => firstScore > score);
-  const meetsQuorum = firstScore > quorum;
-  return isHighest && meetsQuorum ? 'passed' : 'failed';
-};
-
-const computeStatuses = (gips) => {
-  let passed = 0;
-  let failed = 0;
-  let open = 0;
-
-  gips.forEach((gip) => {
-    const state = computeState(gip.scores, gip.quorum, gip.scores_state);
-    if (state === 'passed') passed++;
-    else if (state === 'failed') failed++;
-    else open++;
-  });
-
-  return [passed, failed, open];
-};
+import StatusBars from './StatusBar';
+import { computeStatuses } from '../utils/computeState';
 
 interface GIPStatsProps {
   gips: GIP[];
@@ -98,7 +75,7 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
     };
   }, [gips]);
 
-  const chartOptions1 = {
+  const chartOptions = {
     scales: {
       x: {
         type: 'linear',
@@ -120,52 +97,21 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
     maintainAspectRatio: false,
   };
 
-  const chartOptions2 = {
-    ...chartOptions1,
-    scales: {
-      ...chartOptions1.scales,
-      y: {
-        beginAtZero: true,
-      },
-    },
-  };
-
   return (
     <div className='flex flex-col w-full'>
       <h3>GIPs Status</h3>
-      <div className='w-full flex font-mono font-normal text-xs md:text-base'>
-        <div
-          className='flex flex-col'
-          style={{ flexBasis: `${(passed / gips.length) * 100}%` }}
-        >
-          <div className='bg-[#42DAA3] w-1/2 h-8'></div>
-          <div className='bg-[#42DAA3] w-full h-8'></div>
-          <p className='text-[#42DAA3] mt-2'>Passed</p>
-        </div>
 
-        <div
-          className='flex flex-col'
-          style={{ flexBasis: `${(failed / gips.length) * 100}%` }}
-        >
-          <div className='bg-[#F21162] w-1/2 h-8'></div>
-          <div className='bg-[#F21162] w-full h-8'></div>
-          <p className='text-[#F21162] mt-2'>Failed</p>
-        </div>
-
-        <div
-          className='flex flex-col'
-          style={{ flexBasis: `${(open / gips.length) * 100}%` }}
-        >
-          <div className='bg-black w-1/2 h-8'></div>
-          <div className='bg-black w-full h-8'></div>
-          <p className='text-black mt-2 ml-4 md:ml-0'>Open</p>
-        </div>
-      </div>
+      <StatusBars
+        passed={passed}
+        failed={failed}
+        open={open}
+        total={gips.length}
+      />
 
       <h3>Top-10 GIPs Proposers</h3>
       <div className='w-full flex flex-col gap-y-4'>
         {authorData.authors.map((author, index) => (
-          <div className='w-full flex flex-col'>
+          <div className='w-full flex flex-col' key={index}>
             <div className='bg-[#F0EBDE] w-1/2 h-6 flex'>{index}</div>
             <div className='bg-[#F0EBDE] w-full h-6 flex justify-between'>
               <ENSAuthorDisplay author={author} />
@@ -178,11 +124,11 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
       <div className='flex-container'>
         <div className='chart-container flex-item h-96 mt-10'>
           <h3>Votes by GIP</h3>
-          <Bar data={votesByGIP} options={chartOptions1}/>
+          <Bar data={votesByGIP} options={chartOptions} />
         </div>
         <div className='chart-container flex-item h-96 mt-10'>
           <h3>Total Amount by GIP</h3>
-          <Bar data={scoresTotalByGIP} options={chartOptions2} />
+          <Bar data={scoresTotalByGIP} options={chartOptions} />
         </div>
       </div>
     </div>
