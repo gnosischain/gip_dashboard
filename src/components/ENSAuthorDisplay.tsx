@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const isEthereumAddress = (address) => {
+const isEthereumAddress = (address: string) => {
   return /^0x[a-fA-F0-9]{40}$/.test(address);
 };
 
-const ENSAuthorDisplay = ({ author }) => {
+interface ENSAuthorDisplayProps {
+    author: string
+}
+
+const ENSAuthorDisplay = ({ author }: ENSAuthorDisplayProps) => {
   const [ensName, setEnsName] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -38,9 +42,9 @@ const ENSAuthorDisplay = ({ author }) => {
   // If it's an Ethereum address, show ENS or truncated address
   if (isEthereumAddress(author)) {
     return ensName ? (
-      <span className="text-blue-600">{ensName}</span>
+      <span>{ensName}</span>
     ) : (
-      <span className="text-gray-600">{`${author.substring(0, 6)}...${author.substring(38)}`}</span>
+      <span>{`${author.substring(0, 6)}...${author.substring(38)}`}</span>
     );
   }
 
