@@ -4,6 +4,7 @@ import ENSAuthorDisplay from './ENSAuthorDisplay';
 import { GIP } from '../App';
 import StatusBars from './StatusBar';
 import { computeStatuses } from '../utils/computeState';
+import { ChartOptions } from 'chart.js';
 
 interface GIPStatsProps {
   gips: GIP[];
@@ -75,7 +76,7 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
     };
   }, [gips]);
 
-  const chartOptions = {
+  const chartOptions: ChartOptions<'bar'> = {
     plugins: {
       legend: {
         display: false,
@@ -87,10 +88,11 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
         position: 'bottom',
         ticks: {
           stepSize: 5,
-          callback: function (value: number) {
-            if (value % 1 === 0) {
-              return value;
+          callback: function (tickValue: string | number) {
+            if (typeof tickValue === 'number' && tickValue % 1 === 0) {
+              return tickValue.toString();
             }
+            return null;
           },
         },
         min: 0,
