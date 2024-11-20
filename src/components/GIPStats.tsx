@@ -76,13 +76,18 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
   }, [gips]);
 
   const chartOptions = {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
     scales: {
       x: {
         type: 'linear',
         position: 'bottom',
         ticks: {
-          stepSize: 1,
-          callback: function (value) {
+          stepSize: 5,
+          callback: function (value: number) {
             if (value % 1 === 0) {
               return value;
             }
