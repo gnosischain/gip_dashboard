@@ -85,15 +85,8 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
     scales: {
       x: {
         type: 'linear',
-        position: 'bottom',
         ticks: {
           stepSize: 5,
-          callback: function (tickValue: string | number) {
-            if (typeof tickValue === 'number' && tickValue % 1 === 0) {
-              return tickValue.toString();
-            }
-            return null;
-          },
         },
         min: 0,
       },
@@ -120,9 +113,9 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
         {authorData.authors.map((author, index) => (
           <div className='w-full flex flex-col' key={index}>
             <div className='bg-[#F0EBDE] w-1/2 h-6 flex'>{index}</div>
-            <div className='bg-[#F0EBDE] w-full h-6 flex justify-between'>
-              <ENSAuthorDisplay author={author} />
-              {/* {authorData.data.datasets[author].data} */}
+            <div className='bg-[#F0EBDE] w-full h-6 grid grid-cols-2'>
+              <div className='w-full flex justify-center'><ENSAuthorDisplay author={author} /></div>
+              <div className='w-full flex justify-center'>{authorData.data.datasets[0].data[index]}</div>
             </div>
           </div>
         ))}
