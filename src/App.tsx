@@ -1,7 +1,6 @@
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import './App.css';
 import { useEffect, useState } from 'react';
-// import GIPTable from './components/GIPTable';
 import yaml from 'js-yaml';
 import GIPTable from './components/GIPTable';
 import GIPStats from './components/GIPStats';
@@ -32,6 +31,7 @@ export interface GIP {
 
 function App() {
   const [gips, setGips] = useState<GIP[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const loadGIPs = async () => {
     try {
@@ -91,7 +91,7 @@ function App() {
       <p className='flex text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
       <div className='max-sm:p-4 md:pl-4'>
         <Tabs>
-          <div className='w-full flex justify-between'>
+          <div className='w-full bg-white flex justify-between sticky top-0 py-2'>
             <TabList className='flex gap-x-2 text-black/60'>
               <Tab className='p-0' selectedClassName='bg-black text-white'>
                 Overview
@@ -100,11 +100,19 @@ function App() {
                 Stats
               </Tab>
             </TabList>
-            <div>Search Component Here</div>
+            <div>
+              <input
+                type='text'
+                value={searchTerm}
+                placeholder='Search'
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className='underline focus:outline-none w-44'
+              />
+            </div>
           </div>
           <div className='w-full md:pl-8 mt-8'>
             <TabPanel>
-              <GIPTable gips={gips} />
+              <GIPTable gips={gips} searchTerm={searchTerm} />
             </TabPanel>
             <TabPanel>
               <GIPStats gips={gips} />

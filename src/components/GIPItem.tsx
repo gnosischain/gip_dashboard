@@ -1,4 +1,3 @@
-import { Card } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import ENSAuthorDisplay from './ENSAuthorDisplay';
 import { GIP } from '../App';

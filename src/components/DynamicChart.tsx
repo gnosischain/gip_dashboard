@@ -21,16 +21,23 @@ const BarChartIcon = () => (
     </svg>
   );
 
-const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
-    const [chartType, setChartType] = useState('bar');
+  interface DynamicChartProps {
+    scores: number[],
+    scores_total: number,
+    scores_state: string,
+    quorum: number
+  }
+
+const DynamicChart = ({ scores, scores_total, scores_state, quorum }: DynamicChartProps) => {
+    const [chartType, setChartType] = useState<'bar' | 'pie'>('bar');
     const [legendPosition, setLegendPosition] = useState({ x: 0, y: 0 });
     const [showLegend, setShowLegend] = useState(false);
-    const containerRef = useRef(null);
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         const container = containerRef.current;
 
-        const handleMouseMove = (event) => {
+        const handleMouseMove = (event: MouseEvent) => {
             if (container) {
                 const rect = container.getBoundingClientRect();
                 const x = event.clientX - rect.left;
@@ -200,7 +207,7 @@ const DynamicChart = ({ scores, scores_total, scores_state, quorum }) => {
                                 </tr>
                             ))}
                             <tr>
-                                <td colSpan="2"><hr style={{ margin: '5px 0' }} /></td>
+                                <td colSpan={2}><hr style={{ margin: '5px 0' }} /></td>
                             </tr>
                             <tr>
                                 <td>Total:</td>
