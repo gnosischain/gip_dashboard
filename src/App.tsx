@@ -22,7 +22,7 @@ export interface GIP {
   scores: number[];
   scores_state: string;
   scores_total: number;
-  start: string;
+  start: number;
   state: string;
   title: string;
   url: string;

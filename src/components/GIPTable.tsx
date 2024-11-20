@@ -31,14 +31,13 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
       const column = sortState.column;
       const order = sortState.state === 'asc' ? 1 : -1;
 
-      const valA = a[column];
-      const valB = b[column];
+      let valA = a[column];
+      let valB = b[column];
 
       if (column === 'gip_number') {
-        const valANum = parseInt(valA, 10);
-        const valBNum = parseInt(valB, 10);
+        valA = parseInt(valA as string, 10);
+        valB = parseInt(valB as string, 10);
 
-        return valANum < valBNum ? -order : valANum > valBNum ? order : 0;
       }
 
       return valA < valB ? -order : valA > valB ? order : 0;
