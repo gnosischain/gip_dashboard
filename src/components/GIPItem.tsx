@@ -57,17 +57,20 @@ const GIPItem = ({ gip }: GIPItemProps) => {
 
   return (
     <div
-      className='w-full flex flex-col items-center hover:cursor-pointer hover:bg-black/5'
+      className={`w-full flex flex-col items-center hover:cursor-pointer ${
+        open ? '' : 'hover:bg-black/5'
+      }`}
       onClick={() => setOpen(!open)}
     >
       <div className='w-full flex flex-col'>
-        <p
-          className={`w-full md:w-1/3 ${
+        <div
+          className={`w-full md:w-1/3 flex justify-between items-center md:justify-start md:gap-x-2 ${
             open ? 'bg-[#F0EBDE]' : ''
           } transition-colors duration-300 ease-in-out`}
         >
           {gip.gip_number}
-        </p>
+          <a href={gip.url} target='_blank'><img src='./src/assets/external-link.svg' alt='External Link' className='w-4' onClick={(e) => e.stopPropagation()}/></a>
+        </div>
         <div
           className={`w-full flex flex-col md:grid md:grid-cols-6 gap-x-3 md:min-h-20 md:items-top pl-3 md:pl-8 ${
             open ? 'bg-[#F0EBDE]' : ''
