@@ -190,7 +190,10 @@ const DynamicChart = ({
         }}
       >
         <div
-          onClick={() => setChartType('bar')}
+          onClick={(e) => {
+            e.stopPropagation();
+            setChartType('bar');
+          }}
           style={{
             ...iconStyle,
             color: chartType === 'bar' ? '#007bff' : '#666',
@@ -200,7 +203,10 @@ const DynamicChart = ({
           <BarChartIcon />
         </div>
         <div
-          onClick={() => setChartType('pie')}
+          onClick={(e) => {
+            e.stopPropagation();
+            setChartType('pie');
+          }}
           style={{
             ...iconStyle,
             color: chartType === 'pie' ? '#007bff' : '#666',

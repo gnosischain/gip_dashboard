@@ -87,7 +87,7 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='w-screen min-h-screen bg-white text-black flex flex-col'>
+    <div className='w-full min-h-screen bg-white text-black flex flex-col'>
       <p className='flex text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
       <div className='max-sm:p-4 md:pl-4'>
         <Tabs>

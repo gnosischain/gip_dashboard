@@ -57,7 +57,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
 
   return (
     <div
-      className='w-full flex flex-col items-center'
+      className='w-full flex flex-col items-center hover:cursor-pointer hover:bg-black/5'
       onClick={() => setOpen(!open)}
     >
       <div className='w-full flex flex-col'>
