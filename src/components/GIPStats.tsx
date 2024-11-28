@@ -68,7 +68,7 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
         labels: new Array(sortedAuthors.length).fill(''),
         datasets: [
           {
-            data: sortedAuthors.map(([_, count]) => count),
+            data: sortedAuthors.map(([, count]) => count),
           },
         ],
       },

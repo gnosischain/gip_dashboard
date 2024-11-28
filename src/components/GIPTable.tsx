@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import GIPItem from './GIPItem';
 import { GIP } from '../App';
+import SortBar from './SortBar';
 
 interface GIPTableProps {
   gips: GIP[];
@@ -37,7 +38,6 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
       if (column === 'gip_number') {
         valA = parseInt(valA as string, 10);
         valB = parseInt(valB as string, 10);
-
       }
 
       return valA < valB ? -order : valA > valB ? order : 0;
@@ -55,87 +55,8 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
   };
 
   return (
-    <div>
-      <div className='max-sm:hidden w-full flex font-mono bg-gray-100'>
-        <button
-          onClick={() =>
-            setSortState((prev) => ({
-              column: 'gip_number',
-              state:
-                prev.column === 'gip_number' && prev.state === 'asc'
-                  ? 'desc'
-                  : 'asc',
-            }))
-          }
-          className='text-sm mr-2'
-        >
-          GIP
-          {sortState.column === 'gip_number'
-            ? sortState.state === 'asc'
-              ? '🔼'
-              : '🔽'
-            : ''}
-        </button>
-        <div className='w-full grid grid-cols-6'>
-          <button
-            onClick={() =>
-              setSortState((prev) => ({
-                column: 'title',
-                state:
-                  prev.column === 'title' && prev.state === 'asc'
-                    ? 'desc'
-                    : 'asc',
-              }))
-            }
-            className='flex col-span-4 text-sm'
-          >
-            Title
-            {sortState.column === 'title'
-              ? sortState.state === 'asc'
-                ? '🔼'
-                : '🔽'
-              : ''}
-          </button>
-          <button
-            onClick={() =>
-              setSortState((prev) => ({
-                column: 'start',
-                state:
-                  prev.column === 'start' && prev.state === 'asc'
-                    ? 'desc'
-                    : 'asc',
-              }))
-            }
-            className='flex col-span-1 text-sm'
-          >
-            Date
-            {sortState.column === 'start'
-              ? sortState.state === 'asc'
-                ? '🔼'
-                : '🔽'
-              : ''}
-          </button>
-          <button
-            onClick={() =>
-              setSortState((prev) => ({
-                column: 'state',
-                state:
-                  prev.column === 'state' && prev.state === 'asc'
-                    ? 'desc'
-                    : 'asc',
-              }))
-            }
-            className='flex col-span-1 text-sm'
-          >
-            State
-            {sortState.column === 'state'
-              ? sortState.state === 'asc'
-                ? '🔼'
-                : '🔽'
-              : ''}
-          </button>
-        </div>
-      </div>
+    <>
+    <SortBar sortState={sortState} setSortState={setSortState} />
 
       <div className='flex flex-col gap-y-6 mt-4'>
         {visibleGips.map((gip) => (
@@ -150,7 +71,7 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
           </button>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
