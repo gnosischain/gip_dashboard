@@ -87,8 +87,14 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='w-full min-h-screen bg-white text-black flex flex-col'>
+    <div className='w-full min-h-screen bg-white text-black flex flex-col gap-y-4'>
       <p className='flex text-3xl md:text-6xl'>Gnosis Governance Dashboard</p>
+      <p className='p-2 font-mono'>
+        Gnosis Improvement Proposals (GIPs) describe network upgrades for Gnosis
+        Chain, funding requests and allocations from the GnosisDAO treasury to
+        support the Gnosis ecosystem and GnosisDAO meta governance
+        specifications.
+      </p>
       <div className='max-sm:p-4 md:pl-4'>
         <Tabs>
           <div className='w-full bg-white flex justify-between sticky top-0 py-2'>
