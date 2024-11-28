@@ -106,7 +106,7 @@ function App() {
                 value={searchTerm}
                 placeholder='Search'
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className='underline focus:outline-none w-44'
+                className='underline focus:outline-none w-44 bg-gray-100 px-1 md:mr-2'
               />
             </div>
           </div>
