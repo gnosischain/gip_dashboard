@@ -4,6 +4,7 @@ import { GIP } from '../App';
 import DynamicChart from './DynamicChart';
 import { useState } from 'react';
 import { computeState } from '../utils/computeState';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/16/solid';
 
 interface GIPItemProps {
   gip: GIP;
@@ -59,7 +60,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     <div
       className={`w-full flex flex-col items-center hover:cursor-pointer ${
         open ? '' : 'hover:bg-black/5'
-      }`}
+      } transition-color duration-300 ease-in-out`}
       onClick={() => setOpen(!open)}
     >
       <div className='w-full flex flex-col'>
@@ -69,7 +70,12 @@ const GIPItem = ({ gip }: GIPItemProps) => {
           } transition-colors duration-300 ease-in-out`}
         >
           {gip.gip_number}
-          <a href={gip.url} target='_blank'><img src='./src/assets/external-link.svg' alt='External Link' className='w-4' onClick={(e) => e.stopPropagation()}/></a>
+          <a href={gip.url} target='_blank'>
+            <ArrowTopRightOnSquareIcon
+              className='w-4'
+              onClick={(e) => e.stopPropagation()}
+            />
+          </a>
         </div>
         <div
           className={`w-full flex flex-col md:grid md:grid-cols-6 gap-x-3 md:min-h-20 md:items-top pl-3 md:pl-8 ${
