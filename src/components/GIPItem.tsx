@@ -65,14 +65,14 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     >
       <div className='w-full flex flex-col'>
         <div
-          className={`w-full md:w-1/3 ${
+          className={`w-full lg:w-1/3 ${
             open ? 'bg-[#F0EBDE]' : ''
           } transition-colors duration-300 ease-in-out`}
         >
           {gip.gip_number}
         </div>
         <div
-          className={`w-full flex flex-col md:grid md:grid-cols-6 gap-x-3 md:min-h-20 md:items-top pl-3 md:pl-8 ${
+          className={`w-full flex flex-col lg:grid lg:grid-cols-6 gap-x-3 lg:min-h-20 lg:items-top pl-3 lg:pl-8 ${
             open ? 'bg-[#F0EBDE]' : ''
           } transition-colors duration-300 ease-in-out`}
         >
@@ -85,10 +85,10 @@ const GIPItem = ({ gip }: GIPItemProps) => {
               />
             </a>
           </div>
-          <p className='text-base font-mono text-neutral-500 max-sm:mt-3'>
+          <p className='text-base font-mono text-neutral-500 max-lg:mt-3'>
             {formatDate(gip.start)}
           </p>
-          <div className='flex gap-x-6 font-mono capitalize max-sm:mt-2'>
+          <div className='flex gap-x-6 font-mono capitalize max-lg:mt-2'>
             <p className='text-neutral-500'>{gip.state}</p>
             <p
               className={`${
@@ -102,36 +102,36 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       </div>
 
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out w-full flex flex-col px-2 md:pl-14 font-mono mt-4 px-2 gap-y-3 ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out w-full flex flex-col px-2 lg:pl-14 font-mono mt-4 px-2 gap-y-3 ${
           open ? 'max-h-[5000px]' : 'max-h-0'
         }`}
       >
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>Author</span>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>Author</span>
           <div className='ml-4'>
             <ENSAuthorDisplay author={gip.author} />
           </div>
         </div>
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>Started</span>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>Started</span>
           <p className='ml-4'>{formatDate(gip.start)}</p>
         </div>
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>
             {gip.scores_state !== 'final' ? 'Ending' : 'Ended'}
           </span>
           <p className='ml-4'>{formatDate(gip.end)}</p>
         </div>
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>Requested Funding</span>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>Requested Funding</span>
           <p className='ml-4'>{renderFundingInfo(gip)}</p>
         </div>
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>State</span>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>State</span>
           <p className='ml-4 capitalize'>{gip.state}</p>
         </div>
-        <div className='flex flex-col md:flex-row'>
-          <span className='md:w-52'>Status</span>
+        <div className='flex flex-col lg:flex-row'>
+          <span className='lg:w-52'>Status</span>
           <p className='ml-4 capitalize'>{state}</p>
         </div>
 

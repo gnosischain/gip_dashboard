@@ -88,17 +88,17 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col md:pl-[60px] pt-[20px] md:pt-[40px]'>
-      <p className='flex text-3xl md:text-[56px] max-sm:pl-[16px]'>
+    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col lg:pl-[60px] pt-[20px] lg:pt-[40px] max-w-[1160px]'>
+      <p className='flex text-3xl lg:text-[56px] max-lg:pl-[16px]'>
         Gnosis Governance Dashboard
       </p>
-      <p className='pl-[40px] md:pl-[60px] mt-6 md:mt-8'>
+      <p className='pl-[40px] lg:pl-[60px] mt-6 lg:mt-8'>
         Gnosis Improvement Proposals (GIPs) describe network upgrades for Gnosis
         Chain, funding requests and allocations from the GnosisDAO treasury to
         support the Gnosis ecosystem and GnosisDAO meta governance
         specifications.
       </p>
-      <div className='max-sm:px-4 md:pl-[60px] mt-10 md:mt-20'>
+      <div className='max-lg:px-4 lg:pl-[60px] mt-10 lg:mt-20'>
         <Tabs>
           <div className='w-full bg-white flex sticky top-0 py-2 gap-x-4'>
             <TabList className='flex gap-x-4 text-black/60'>
@@ -109,7 +109,7 @@ function App() {
                 Stats
               </Tab>
             </TabList>
-            <div className='flex items-center gap-x-1 md:mr-2'>
+            <div className='flex items-center gap-x-1 lg:mr-2'>
               <input
                 type='text'
                 value={searchTerm}
@@ -128,7 +128,7 @@ function App() {
               />
             </div>
           </div>
-          <div className='w-full md:pl-8 mt-8'>
+          <div className='w-full lg:pl-8 mt-8'>
             <TabPanel>
               <GIPTable gips={gips} searchTerm={searchTerm} />
             </TabPanel>

@@ -9,7 +9,7 @@ const StatusBars = ({
   open: number;
   total: number;
 }) => (
-  <div className='w-full flex font-mono font-normal text-xs md:text-base'>
+  <div className='w-full flex font-mono font-normal text-xs lg:text-base'>
     {[
       { label: 'Passed', count: passed, color: '#42DAA3' },
       { label: 'Failed', count: failed, color: '#F21162' },
@@ -24,7 +24,7 @@ const StatusBars = ({
         <div style={{ backgroundColor: color }} className='w-full h-8'></div>
         <p
           style={{ color }}
-          className={`mt-2 ${color === 'black' ? 'max-sm:ml-2' : ''}`}
+          className={`mt-2 ${color === 'black' ? 'max-lg:ml-2' : ''}`}
         >
           {label}
         </p>
