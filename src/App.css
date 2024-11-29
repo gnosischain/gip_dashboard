@@ -1,3 +1,9 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+  
 p {
     display: inline;
     margin-block-start: 0;
