@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import yaml from 'js-yaml';
 import GIPTable from './components/GIPTable';
 import GIPStats from './components/GIPStats';
+import { XMarkIcon } from '@heroicons/react/16/solid';
 
 export interface GIP {
   author: string;
@@ -87,8 +88,10 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col md:pl-[60px] pt-[40px] md:pt-[60px]'>
-      <p className='flex text-3xl md:text-[56px] max-sm:pl-[16px]'>Gnosis Governance Dashboard</p>
+    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col md:pl-[60px] pt-[20px] md:pt-[40px]'>
+      <p className='flex text-3xl md:text-[56px] max-sm:pl-[16px]'>
+        Gnosis Governance Dashboard
+      </p>
       <p className='pl-[40px] md:pl-[60px] mt-6 md:mt-8'>
         Gnosis Improvement Proposals (GIPs) describe network upgrades for Gnosis
         Chain, funding requests and allocations from the GnosisDAO treasury to
@@ -106,13 +109,22 @@ function App() {
                 Stats
               </Tab>
             </TabList>
-            <div>
+            <div className='flex items-center gap-x-1 md:mr-2'>
               <input
                 type='text'
                 value={searchTerm}
                 placeholder='Search'
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className='underline focus:outline-none w-44 bg-gray-100 px-1 md:mr-2'
+                onKeyDown={(e) => {
+                  if (e.key === 'Escape') {
+                    setSearchTerm('');
+                  }
+                }}
+                className='underline focus:outline-none w-44 bg-gray-100 px-1'
+              />
+              <XMarkIcon
+                onClick={() => setSearchTerm('')}
+                className='w-5 hover:cursor-pointer text-gray-700'
               />
             </div>
           </div>
