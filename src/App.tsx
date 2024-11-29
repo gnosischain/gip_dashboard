@@ -94,7 +94,7 @@ function App() {
       </p>
       <p className='pl-[40px] lg:pl-[60px] mt-6 lg:mt-8'>
         Gnosis Improvement Proposals (GIPs) describe network upgrades for Gnosis
-        Chain, funding requests and allocations from the GnosisDAO treasury to
+        Chain, funding requests from the GnosisDAO treasury to
         support the Gnosis ecosystem and GnosisDAO meta governance
         specifications.
       </p>
