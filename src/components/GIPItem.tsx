@@ -65,24 +65,26 @@ const GIPItem = ({ gip }: GIPItemProps) => {
     >
       <div className='w-full flex flex-col'>
         <div
-          className={`w-full md:w-1/3 flex justify-between items-center md:justify-start md:gap-x-2 ${
+          className={`w-full md:w-1/3 ${
             open ? 'bg-[#F0EBDE]' : ''
           } transition-colors duration-300 ease-in-out`}
         >
           {gip.gip_number}
-          <a href={gip.url} target='_blank'>
-            <ArrowTopRightOnSquareIcon
-              className='w-4'
-              onClick={(e) => e.stopPropagation()}
-            />
-          </a>
         </div>
         <div
           className={`w-full flex flex-col md:grid md:grid-cols-6 gap-x-3 md:min-h-20 md:items-top pl-3 md:pl-8 ${
             open ? 'bg-[#F0EBDE]' : ''
           } transition-colors duration-300 ease-in-out`}
         >
-          <p className='text-2xl col-span-4'>{gip.title}</p>
+          <div className='flex gap-x-2 col-span-4'>
+            <p className='text-2xl'>{gip.title}</p>
+            <a href={gip.url} target='_blank'>
+              <ArrowTopRightOnSquareIcon
+                className='w-4'
+                onClick={(e) => e.stopPropagation()}
+              />
+            </a>
+          </div>
           <p className='text-base font-mono text-neutral-500 max-sm:mt-3'>
             {formatDate(gip.start)}
           </p>

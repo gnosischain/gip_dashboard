@@ -87,7 +87,7 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col md:pl-[60px] pt-[100px] md:pt-[120px]'>
+    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col md:pl-[60px] pt-[40px] md:pt-[60px]'>
       <p className='flex text-3xl md:text-[56px] max-sm:pl-[16px]'>Gnosis Governance Dashboard</p>
       <p className='pl-[40px] md:pl-[60px] mt-6 md:mt-8'>
         Gnosis Improvement Proposals (GIPs) describe network upgrades for Gnosis
