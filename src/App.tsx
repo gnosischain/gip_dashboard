@@ -100,12 +100,12 @@ function App() {
       </p>
       <div className='max-sm:px-4 md:pl-[60px] mt-10 md:mt-20'>
         <Tabs>
-          <div className='w-full bg-white flex justify-between sticky top-0 py-2'>
-            <TabList className='flex gap-x-2 text-black/60'>
-              <Tab className='p-0' selectedClassName='bg-black text-white'>
+          <div className='w-full bg-white flex sticky top-0 py-2 gap-x-4'>
+            <TabList className='flex gap-x-4 text-black/60'>
+              <Tab className='p-0 hover:cursor-pointer' selectedClassName='bg-black text-white'>
                 Overview
               </Tab>
-              <Tab className='p-0' selectedClassName='bg-black text-white'>
+              <Tab className='p-0 hover:cursor-pointer' selectedClassName='bg-black text-white'>
                 Stats
               </Tab>
             </TabList>
@@ -120,7 +120,7 @@ function App() {
                     setSearchTerm('');
                   }
                 }}
-                className='underline focus:outline-none w-44 bg-gray-100 px-1'
+                className='focus:outline-none w-44 px-1'
               />
               <XMarkIcon
                 onClick={() => setSearchTerm('')}
