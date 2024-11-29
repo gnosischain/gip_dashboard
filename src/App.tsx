@@ -88,8 +88,8 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col lg:pl-[60px] pt-[20px] lg:pt-[40px] max-w-[1160px]'>
-      <p className='flex text-3xl lg:text-[56px] max-lg:pl-[16px]'>
+    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col lg:pl-[40px] pt-[50px] max-w-[1160px]'>
+      <p className='flex text-[38px] lg:text-[56px] max-lg:pl-[16px]'>
         Gnosis Governance Dashboard
       </p>
       <p className='pl-[40px] lg:pl-[60px] mt-6 lg:mt-8'>

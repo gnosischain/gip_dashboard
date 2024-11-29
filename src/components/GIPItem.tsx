@@ -89,9 +89,9 @@ const GIPItem = ({ gip }: GIPItemProps) => {
             {formatDate(gip.start)}
           </p>
           <div className='flex gap-x-6 font-mono capitalize max-lg:mt-2'>
-            <p className='text-neutral-500'>{gip.state}</p>
+            <p className='text-neutral-500 text-base'>{gip.state}</p>
             <p
-              className={`${
+              className={`text-base ${
                 state === 'passed' ? 'text-green-400' : 'text-red-500'
               }`}
             >
