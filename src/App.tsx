@@ -88,7 +88,7 @@ function App() {
     loadGIPs();
   }, []);
   return (
-    <div className='z-50 w-full min-h-screen bg-white text-black flex flex-col lg:pl-[40px] pt-[50px] max-w-[1160px]'>
+    <div className='w-full min-h-screen bg-white text-black flex flex-col lg:pl-[40px] py-[50px] max-w-[1160px]'>
       <p className='flex text-[38px] lg:text-[56px] max-lg:pl-[16px]'>
         Gnosis Governance Dashboard
       </p>
@@ -102,10 +102,10 @@ function App() {
         <Tabs>
           <div className='w-full bg-white flex sticky top-0 py-2 gap-x-4'>
             <TabList className='flex gap-x-4 text-black/60'>
-              <Tab className='p-0 hover:cursor-pointer' selectedClassName='bg-black text-white'>
+              <Tab className='py-0 px-[5px] hover:cursor-pointer' selectedClassName='bg-black text-white'>
                 Overview
               </Tab>
-              <Tab className='p-0 hover:cursor-pointer' selectedClassName='bg-black text-white'>
+              <Tab className='py-0 px-[5px] hover:cursor-pointer' selectedClassName='bg-black text-white'>
                 Stats
               </Tab>
             </TabList>
@@ -124,7 +124,7 @@ function App() {
               />
               <XMarkIcon
                 onClick={() => setSearchTerm('')}
-                className='w-5 hover:cursor-pointer text-gray-700'
+                className={`w-5 hover:cursor-pointer ${searchTerm ? 'text-gray-700' : 'text-gray-300'}`}
               />
             </div>
           </div>

@@ -114,22 +114,24 @@ const GIPStats = ({ gips }: GIPStatsProps) => {
           <div className='w-full flex flex-col' key={index}>
             <div className='bg-[#F0EBDE] w-1/2 h-6 flex'>{index}</div>
             <div className='bg-[#F0EBDE] w-full h-6 grid grid-cols-2'>
-              <div className='w-full flex justify-center'><ENSAuthorDisplay author={author} /></div>
-              <div className='w-full flex justify-center'>{authorData.data.datasets[0].data[index]}</div>
+              <div className='w-full flex justify-center'>
+                <ENSAuthorDisplay author={author} />
+              </div>
+              <div className='w-full flex justify-center'>
+                {authorData.data.datasets[0].data[index]}
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className='flex-container'>
-        <div className='chart-container flex-item h-96 mt-10'>
-          <h3>Votes by GIP</h3>
-          <Bar data={votesByGIP} options={chartOptions} />
-        </div>
-        <div className='chart-container flex-item h-96 mt-10'>
-          <h3>Total Amount by GIP</h3>
-          <Bar data={scoresTotalByGIP} options={chartOptions} />
-        </div>
+      <h3 className='mt-10'>Votes by GIP</h3>
+      <div className='flex-item h-96'>
+        <Bar data={votesByGIP} options={chartOptions} />
+      </div>
+      <h3>Total Amount by GIP</h3>
+      <div className='flex-item h-96'>
+        <Bar data={scoresTotalByGIP} options={chartOptions} />
       </div>
     </div>
   );

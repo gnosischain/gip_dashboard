@@ -23,7 +23,7 @@ const SortBar = ({ sortState, setSortState }: SortBarProps) => {
   };
 
   return (
-    <div className='max-lg:hidden w-full flex font-mono bg-gray-100 shadow-sm hover:shadow-md transition duration-300 ease-in-out py-2'>
+    <div className='max-lg:hidden w-full flex font-mono my-2'>
       <button
         onClick={() => handleSort('gip_number')}
         className='flex items-center text-sm mr-2'

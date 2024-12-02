@@ -54,9 +54,11 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
     setVisibleCount((prev) => prev + 20);
   };
 
+  console.log(visibleCount, filteredAndSortedGips.length);
+
   return (
     <>
-    <SortBar sortState={sortState} setSortState={setSortState} />
+      <SortBar sortState={sortState} setSortState={setSortState} />
 
       <div className='flex flex-col gap-y-6 mt-4'>
         {visibleGips.map((gip) => (
@@ -65,11 +67,9 @@ const GIPTable = ({ gips, searchTerm }: GIPTableProps) => {
       </div>
 
       {visibleCount < filteredAndSortedGips.length && (
-        <div className='flex justify-center mt-3'>
-          <button onClick={loadMore} className='text-white px-4 py-2 rounded'>
+          <button onClick={loadMore} className='text-white bg-black text-xl'>
             Load More
           </button>
-        </div>
       )}
     </>
   );

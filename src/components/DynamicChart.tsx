@@ -95,7 +95,7 @@ const DynamicChart = ({
   if (scores_state !== 'final') return null;
 
   const labels = ['For', 'Against', 'Abstain'];
-  const colors = ['#4caf50', '#f44336', '#ff9800'];
+  const colors = ['#42DAA3', '#F21162', '#F0EBDE'];
 
   const data = {
     labels: labels,
