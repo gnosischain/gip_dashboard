@@ -452,22 +452,22 @@ body: '# Executive Summary
   }'
 start: 1732292497
 end: 1732897297
-state: active
+state: closed
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 495.82194802769993
+scores_state: final
+scores_total: 92381.87958121684
 scores:
-  - 495.7192901041392
+  - 92113.6569232926
   - 0.000109650887329072
-  - 0.10254827267340676
-votes: 37
+  - 268.222548273342
+votes: 62
 quorum: 75000
 funding:
-  amount: 2.97m
+  amount: 2.97 million
   currency: GNO
   confidence: High
   model_used: gemini-1.5-flash

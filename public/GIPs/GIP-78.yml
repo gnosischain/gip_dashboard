@@ -131,6 +131,6 @@ votes: null
 quorum: null
 funding:
   amount: '3823575'
-  currency: USD (implied, as the amount is given in dollars)
+  currency: USD (inferred from the use of the dollar sign)
   confidence: High
   model_used: gemini-1.5-flash
