@@ -102,7 +102,7 @@ const GIPItem = ({ gip }: GIPItemProps) => {
       </div>
 
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out w-full flex flex-col px-2 lg:pl-14 font-mono mt-4 px-2 gap-y-3 ${
+        className={`overflow-hidden transition-all duration-500 ease-in-out w-full flex flex-col px-2 lg:pl-[120px] font-mono mt-4 px-2 gap-y-3 ${
           open ? 'max-h-[10000px]' : 'max-h-0'
         }`}
       >
