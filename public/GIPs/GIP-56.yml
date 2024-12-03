@@ -11,7 +11,7 @@ body: "##  Simple Summary\n\nKairos is a platform that provides an education for
   \ on the company’s marketing & entrepreneurship model.\n\nWe already have a student\
   \ network gathered with over 3 000 students from universities such as Cambridge,\
   \ Stanford, Dauphine and more.  \nWe are always growing our network so if you are\
-  \ a student interested to learn about the ecosystem please reach out to [contact@kairostudents.com](mailto:contact@kairostudents.com)\n\
+  \ a student interested to learn about the ecosystem please reach out to contact@kairostudents.com\n\
   \n##  Abstract\n\nIn the ecosystem, it is challenging for companies to find competent\
   \ and committed individuals to build and contribute to projects.  \nThe Kairos team\
   \ has spoken with several blockchain companies who have stated that they find suitable\
@@ -67,9 +67,8 @@ body: "##  Simple Summary\n\nKairos is a platform that provides an education for
   \ a free education for students.  \nWorking with Gnosis will allow student education\
   \ about the ecosystem and certified students to build on Gnosis.  \nThis is a win-win\
   \ opportunity, let’s support student education and the next generation!\n\nFor more\
-  \ information about Kairos : [DocSend](https://docsend.com/view/bfmi894wjunie675)\n\
-  \n2 Likes\n"
-start: 1656529249
+  \ information about Kairos : DocSend\n\n2 Likes\n"
+start: 1656522049
 end: null
 state:
   - phase-2
@@ -89,5 +88,6 @@ quorum: null
 funding:
   amount: null
   currency: null
-  confidence: High
-  model_used: gemini-1.5-flash
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

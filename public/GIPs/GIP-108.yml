@@ -17,22 +17,22 @@ body: '## Category
   address, this proposal is different and **aims to honor the higher rewards as originally
   announced**. Due to challenges, the Builders Team delayed the distribution of rewards,
   to be after 6 months of validation. The Builders Team also reduced the rewards for
-  the initial months. The original rewards can be reviewed [here](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip).
-  The original rewards should be maintained because they were heavily promoted by
-  Gnosis social media and PR, and induced validators to join in reliance on this announcement.
-  This would maintain fairness and trust about the Gnosis brand.
+  the initial months. The original rewards can be reviewed here. The original rewards
+  should be maintained because they were heavily promoted by Gnosis social media and
+  PR, and induced validators to join in reliance on this announcement. This would
+  maintain fairness and trust about the Gnosis brand.
 
 
   ## Background
 
 
-  A co-founder of Flashbots [advocated for geographical decentralization](https://collective.flashbots.net/t/decentralized-crypto-needs-you-to-be-a-geographical-decentralization-maxi/1385)
-  (might not have motivated GnosisVIP but explains the importance of the program).
-  Shortly after, Gnosis Builders (whose funding was approved in GIP-38) allocated
-  5 million USD for GnosisVIP, a program aimed at increasing the number and diversity
-  of validators. There was no term reserving the right to modify the rewards at any
-  time. **The announcement, referring to 388 mGNO for 6 months, was promoted by Gnosis
-  social media and PR including on[Cointelegraph](https://cointelegraph.com/news/gnosis-chain-spends-5m-on-validator-incentive-program-for-decentralization).**
+  A co-founder of Flashbots advocated for geographical decentralization (might not
+  have motivated GnosisVIP but explains the importance of the program). Shortly after,
+  Gnosis Builders (whose funding was approved in GIP-38) allocated 5 million USD for
+  GnosisVIP, a program aimed at increasing the number and diversity of validators.
+  There was no term reserving the right to modify the rewards at any time. **The announcement,
+  referring to 388 mGNO for 6 months, was promoted by Gnosis social media and PR including
+  onCointelegraph.**
 
 
   In the original post, payments were expected within 90 days of each month of validation.
@@ -45,9 +45,8 @@ body: '## Category
 
 
   This proposal aims to restore the original rewards for GnosisVIP before the distribution
-  schedule was modified. [Originally](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip),
-  the monthly breakdown added up to 388 mGNO (38+48+58+68+78+98). The cumulative reward
-  for 6 months amounted to 12.125 GNO (388/32).
+  schedule was modified. Originally, the monthly breakdown added up to 388 mGNO (38+48+58+68+78+98).
+  The cumulative reward for 6 months amounted to 12.125 GNO (388/32).
 
 
   In June 2024, validators for 6 months received 3 GNO, and validators for 9 months
@@ -56,10 +55,9 @@ body: '## Category
   with the Gnosis brand.
 
 
-  According to the [Google Sheet](https://docs.google.com/spreadsheets/d/1Ix4Cu2aiNr0XzwILqWSZqY3dcPiwQhMEMSF50QVvDrQ/edit?usp=sharing)
-  in the [sunsetting announcement](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8),
-  around 29* validators are affected by the reduced rewards. As calculated in the
-  Budget, this would amount to 139.625 GNO to 29 validators.
+  According to the Google Sheet in the sunsetting announcement, around 29* validators
+  are affected by the reduced rewards. As calculated in the Budget, this would amount
+  to 139.625 GNO to 29 validators.
 
 
   *Nodes whose rewards were reduced due to having the same withdrawal address are
@@ -77,14 +75,13 @@ body: '## Category
   ### Honoring the contract:
 
 
-  As [LegalVision UK puts it](https://legalvision.co.uk/commercial-contracts/unilateral-contract/),
-  “In a unilateral contract, **legal relations between the offeror and offeree form
-  when the offeree begins to try to complete the specified act as part of the contract.**
-  As a result, if you are the offeror, you will have a binding contract and will not
-  be able to rescind your offer.” The offer of 388 mGNO was seen by over 4000 on Cointelegraph,
-  and the bulk of interactions was with Gnosis Builders’ first announcement. It would
-  be unfair to rescind this offer after operators began getting hardware / setting
-  up validators.
+  As LegalVision UK puts it, “In a unilateral contract, **legal relations between
+  the offeror and offeree form when the offeree begins to try to complete the specified
+  act as part of the contract.** As a result, if you are the offeror, you will have
+  a binding contract and will not be able to rescind your offer.” The offer of 388
+  mGNO was seen by over 4000 on Cointelegraph, and the bulk of interactions was with
+  Gnosis Builders’ first announcement. It would be unfair to rescind this offer after
+  operators began getting hardware / setting up validators.
 
 
   ### Not all validators were given the chance to validate for 12 months for full
@@ -92,20 +89,18 @@ body: '## Category
 
 
   The program was closed without equal opportunity to complete 12 months of validation.
-  April 19, 2024 [was set](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/7)
-  as the final deadline of Gnosis VIP. That means all validators would have needed
-  to join as soon as the announcement came out in 2023 to validate for 12 months.
-  This is contrary to the [blog post](https://web.archive.org/web/20230507042940/https://www.gnosis.builders/post/introducing-gnosisvip)
-  allowing nodes to be “starting **after** April 19, 2023” and the announced intention
-  “to further diversify the network to have validators in at least 100 countries **by
-  the end of the year** ”. It suggests that nodes had at least until the end of 2023
-  to start validating as long as they were within the first 10 in an eligible country.
-  It implies it would take until late 2024 to give operators a fair opportunity for
-  performance that the offer called for. **Since the modified reward schedule calling
-  for 12 months of validation was made practically impossible to perform on time for
-  nodes not joining quickly but still joining in 2023 as intended by Gnosis Builders,
-  at least the original 12.125 GNO that were announced for 6 months of validation
-  should be honored.**
+  April 19, 2024 was set as the final deadline of Gnosis VIP. That means all validators
+  would have needed to join as soon as the announcement came out in 2023 to validate
+  for 12 months. This is contrary to the blog post allowing nodes to be “starting
+  **after** April 19, 2023” and the announced intention “to further diversify the
+  network to have validators in at least 100 countries **by the end of the year**
+  ”. It suggests that nodes had at least until the end of 2023 to start validating
+  as long as they were within the first 10 in an eligible country. It implies it would
+  take until late 2024 to give operators a fair opportunity for performance that the
+  offer called for. **Since the modified reward schedule calling for 12 months of
+  validation was made practically impossible to perform on time for nodes not joining
+  quickly but still joining in 2023 as intended by Gnosis Builders, at least the original
+  12.125 GNO that were announced for 6 months of validation should be honored.**
 
 
   Personally, I’ve also been asking for clarity on the reward plans since November
@@ -119,7 +114,7 @@ body: '## Category
   participant funds:
 
 
-  **The Builders initiative was approved in GIP-38 and[Builders returned their funds](https://forum.gnosis.io/t/gnosis-builders-2023/7814);
+  **The Builders initiative was approved in GIP-38 andBuilders returned their funds;
   there is a portion of these funds that had been promised to GnosisVIP participants
   when announcing GnosisVIP.** Luckily, 139.625 GNO is small compared to the 5 million
   USD that Gnosis Builders had allocated to the program.
@@ -130,7 +125,7 @@ body: '## Category
 
   My methodology was forking the reward sheet as of July 9, 2024, adding an “Affected
   Reward” column calculating the difference between 12.125 GNO and the amount for
-  those nodes paid for 6 or 9 months. [The total sum of this column is 139.625 GNO](https://1drv.ms/x/c/0f6fd8b64fab0138/EfO34nlrw-pPplD3CodJTawByDiZTWzXD_PvVmpm5dK6KA?e=HB5Fg1).
+  those nodes paid for 6 or 9 months. The total sum of this column is 139.625 GNO.
 
 
   Nodes having already received 14 GNO are not impacted. Nodes whose rewards were
@@ -140,20 +135,19 @@ body: '## Category
   The following would need to be distributed:
 
 
-  ![GIP-108 Sheet](https://forum.gnosis.io/uploads/default/original/2X/d/d9157b016d02ea851864ae759274a16b958b224c.png)
+  !GIP-108 Sheet
 
 
   ## Personal Story
 
 
-  As I’ve [posted on Discord](https://discord.com/channels/502416149343109121/1124140637428666368/1178659200109387826)
-  in November 2023, I experienced a hardware failure after 6 months in the program
-  after joining on May 6, 2023. Although [I advocated](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/2)
-  to harmonize the initial announcement with the reward change to not make something
-  akin to a “rug” of the initial announcement, I have not received a response. I was
-  never told that the original program that I relied on would not be honored unless
-  I repaired my hardware and came back. Anyway, if this proposal passes, I will purchase
-  new hardware and add a LatAm node again.
+  As I’ve posted on Discord in November 2023, I experienced a hardware failure after
+  6 months in the program after joining on May 6, 2023. Although I advocated to harmonize
+  the initial announcement with the reward change to not make something akin to a
+  “rug” of the initial announcement, I have not received a response. I was never told
+  that the original program that I relied on would not be honored unless I repaired
+  my hardware and came back. Anyway, if this proposal passes, I will purchase new
+  hardware and add a LatAm node again.
 
 
   ## Conclusion
@@ -163,10 +157,10 @@ body: '## Category
   equitably and avoid reputational risk for the Gnosis ecosystem.
 
 
-  [Staworth / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)
+  Staworth / jackgale.eth - Delegate Platform
 
   '
-start: 1720590929
+start: 1720583729
 end: null
 state:
   - phase-2
@@ -184,7 +178,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: null
-  currency: null
+  amount: '5000000'
+  currency: USD
   confidence: High
   model_used: gemini-1.5-flash

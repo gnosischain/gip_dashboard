@@ -9,9 +9,8 @@ body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently availab
   \ of growing the USDC bridged into Gnosis, and the ultimate goal of Circle taking\
   \ over the token and converting it to native USDC on Gnosis Chain, we propose to\
   \ create an incentives program of up to 8k GNO.\n\n## Specification\n\nIf this proposal\
-  \ is approved, Gnosis DAO will be incentivising the growth of [USDC.e](https://gnosisscan.io/token/0x2a22f9c3b484c3629090feed35f17ff8f88f76f0),\
-  \ which is compliant with the standard and that can be acquired by calling Deposit()\
-  \ on a [Transmuter](https://gnosisscan.io/address/0x0392a2f5ac47388945d8c84212469f545fae52b2).\
+  \ is approved, Gnosis DAO will be incentivising the growth of USDC.e, which is compliant\
+  \ with the standard and that can be acquired by calling Deposit() on a Transmuter.\
   \ The swap of the old USDC to the new one can also be done through the bridge UI.\
   \ New USDC bridged to Gnosis will automatically be USDC.e thanks to changes in the\
   \ bridge UI.\n\nkarpatkey will define the allocation of the incentives, based on\
@@ -44,7 +43,7 @@ body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently availab
   \ which may result in the desired growth in a shorter time frame and/or with fewer\
   \ incentives paid out. In this case, the surplus budget will remain unallocated.\n\
   \n8 Likes\n"
-start: 1718118995
+start: 1718111795
 end: null
 state: []
 author: null
