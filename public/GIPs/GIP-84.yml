@@ -2,22 +2,19 @@ id: gip-84-introducing-gip-guards-on-chain-financial-controllers-for-gips
 gip_number: 84
 url: https://forum.gnosis.io/t/gip-84-introducing-gip-guards-on-chain-financial-controllers-for-gips
 title: On-chain financial controllers for GIPs
-body: "#### [lukasschor.eth | Safe](https://twitter.com/SchorLukas/status/1599373578469666816)\n\
-  \n[@SchorLukas](https://twitter.com/SchorLukas/status/1599373578469666816)\n\nCongrats\
-  \ to SafeGuard winning the main prize at [@ETHIndiaco](https://twitter.com/ETHIndiaco)\
-  \ building a range of [@Safe](https://twitter.com/Safe) extensions such as deny\
-  \ and allow list guards. \U0001F44F <https://t.co/oTIHWAFh8H>\n\n![](//forum.gnosis.io/uploads/default/optimized/2X/c/cbd8c7dbaeac897ec0444633d791c77790a133e0_2_690x393.jpeg)\n\
-  \n[12:02 PM - 4 Dec 2022](https://twitter.com/SchorLukas/status/1599373578469666816)\
-  \ 94  19 \n\n####  Category\n\nAdministrative\n\n####  Executive Summary\n\nSwitch\
-  \ to Recovery-enabled GuardedSafes for all GIPs funded by the DAO to increase project\
-  \ accountability and continued communication with the community.\n\n####  Terminology\
-  \ used\n\n  1. **GIP-Guard** : A Transaction Guard designed for specific GIPs.\n\
-  \n  2. **Milestone Payout Guard** : A GIP-Guard that only lets transactions be processed\
-  \ from a Safe if the defined milestones have been met.\n\n  3. **GuardedSafe** :\
-  \ A Safe with GIP-Guard added to it.\n\n  4. **Recovery-enabled GuardedSafe** :\
-  \ A GuardedSafe with a recovery module added to it allowing GnosisDAO to recover\
-  \ funds if they feel the team is underperforming.\n\n\n\n\n####  Introduction\n\n\
-  GIPs have been instrumental in Gnosis ecosystem growth. Most GIPs are funded upfront\
+body: "#### lukasschor.eth | Safe\n\n@SchorLukas\n\nCongrats to SafeGuard winning\
+  \ the main prize at @ETHIndiaco building a range of @Safe extensions such as deny\
+  \ and allow list guards. \U0001F44F <\n\n![](//forum.gnosis.io/uploads/default/optimized/2X/c/cbd8c7dbaeac897ec0444633d791c77790a133e0_2_690x393.jpeg)\n\
+  \n12:02 PM - 4 Dec 2022 94  19 \n\n####  Category\n\nAdministrative\n\n####  Executive\
+  \ Summary\n\nSwitch to Recovery-enabled GuardedSafes for all GIPs funded by the\
+  \ DAO to increase project accountability and continued communication with the community.\n\
+  \n####  Terminology used\n\n  1. **GIP-Guard** : A Transaction Guard designed for\
+  \ specific GIPs.\n\n  2. **Milestone Payout Guard** : A GIP-Guard that only lets\
+  \ transactions be processed from a Safe if the defined milestones have been met.\n\
+  \n  3. **GuardedSafe** : A Safe with GIP-Guard added to it.\n\n  4. **Recovery-enabled\
+  \ GuardedSafe** : A GuardedSafe with a recovery module added to it allowing GnosisDAO\
+  \ to recover funds if they feel the team is underperforming.\n\n\n\n\n####  Introduction\n\
+  \nGIPs have been instrumental in Gnosis ecosystem growth. Most GIPs are funded upfront\
   \ however, there is limited information available after funding. Milestones are\
   \ untracked, project updates are sparse and their status is unknown. There is no\
   \ easy way to analyse the impact of the project, learn from them, or know if the\
@@ -70,11 +67,10 @@ body: "#### [lukasschor.eth | Safe](https://twitter.com/SchorLukas/status/159937
   \ it is of utmost importance that the contracts are secure. Hence, all of the GIP-Guards\
   \ will be throughly audited and only used after multiple rounds of testing.\n\n\
   ####  Team/ Organization/References\n\nSafeGuard was one of the winners at ETH India\
-  \ and is incubated and developed by [Questbook](https://questbook.app/).\n\nQuestbook\
-  \ is a grant orchestration tool being used by Compound, Polygon, Optimism and Aave\
-  \ to disburse more than $3mn in grants. The team has also built Open Quest and Zero\
-  \ Wallet.\n\n2 Likes\n"
-start: 1680093601
+  \ and is incubated and developed by Questbook.\n\nQuestbook is a grant orchestration\
+  \ tool being used by Compound, Polygon, Optimism and Aave to disburse more than\
+  \ $3mn in grants. The team has also built Open Quest and Zero Wallet.\n\n2 Likes\n"
+start: 1680086401
 end: null
 state:
   - phase-1

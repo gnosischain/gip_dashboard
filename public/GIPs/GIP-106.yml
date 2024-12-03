@@ -6,29 +6,27 @@ body: "#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis pro
   \ aims to revisit and restore the original reward policy for the GnosisVIP event.\
   \ The event’s initial rules allowed participants to set up validator nodes across\
   \ 104 countries, with the first 10 nodes in each country being eligible for rewards.\
-  \ The original rules can be reviewed [here](https://web.archive.org/web/20230922135332/https://www.gnosis.builders/post/introducing-gnosisvip).\n\
-  \nGnosisVIP is getting concluded due to the retirement of Builders Team which launched\
-  \ this event. However, the team that took over the reward distribution decided to\
-  \ cut down the rewards for participants who run more than one validators, citing\
-  \ concerns about farming. The announcement can be found [here](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8).\n\
-  \nSince there is no restriction in the rules against multiple validator nodes with\
-  \ unique IP addresses, and all those eligible validators contribute equally to geo-diversity\
-  \ in this event, this proposal seeks to ensure participants receive the full rewards\
-  \ as originally promised. This will maintain fairness and trust within the Gnosis\
-  \ community.\n\n#### Specification\n\nThe proposed reward program aims to restore\
-  \ the original terms of the GnosisVIP event:\n\n  * Full Rewards for Eligible Nodes:\
-  \ All validator nodes that meet the criteria (first 10 in their respective countries)\
-  \ should receive their promised rewards according to their validating duration,\
-  \ irrespective of whether they are run by the same entity.\n\n\n\nThis approach\
-  \ will help the broader Gnosis ecosystem by maintaining predictability and trust\
-  \ within the Gnosis community.\n\n#### Rationale\n\nThe motivation behind this proposal\
-  \ is to uphold fairness and trust within the Gnosis community. The original rules\
-  \ did not prohibit running multiple nodes from different IP addresses, and participants\
-  \ should be rewarded based on those terms. Changing the reward policy retroactively\
-  \ undermines trust and can discourage future participation.\n\n#### Budget\n\nAccording\
-  \ to the [google sheet](https://docs.google.com/spreadsheets/d/1Ix4Cu2aiNr0XzwILqWSZqY3dcPiwQhMEMSF50QVvDrQ/edit?usp=sharing)\
-  \ in the [sunsetting announcement](https://forum.gnosis.io/t/sunsetting-gnosis-vip/8054/8),\
-  \ a total of 16 validators from 10 participants are affected by the reduced rewards.\n\
+  \ The original rules can be reviewed here.\n\nGnosisVIP is getting concluded due\
+  \ to the retirement of Builders Team which launched this event. However, the team\
+  \ that took over the reward distribution decided to cut down the rewards for participants\
+  \ who run more than one validators, citing concerns about farming. The announcement\
+  \ can be found here.\n\nSince there is no restriction in the rules against multiple\
+  \ validator nodes with unique IP addresses, and all those eligible validators contribute\
+  \ equally to geo-diversity in this event, this proposal seeks to ensure participants\
+  \ receive the full rewards as originally promised. This will maintain fairness and\
+  \ trust within the Gnosis community.\n\n#### Specification\n\nThe proposed reward\
+  \ program aims to restore the original terms of the GnosisVIP event:\n\n  * Full\
+  \ Rewards for Eligible Nodes: All validator nodes that meet the criteria (first\
+  \ 10 in their respective countries) should receive their promised rewards according\
+  \ to their validating duration, irrespective of whether they are run by the same\
+  \ entity.\n\n\n\nThis approach will help the broader Gnosis ecosystem by maintaining\
+  \ predictability and trust within the Gnosis community.\n\n#### Rationale\n\nThe\
+  \ motivation behind this proposal is to uphold fairness and trust within the Gnosis\
+  \ community. The original rules did not prohibit running multiple nodes from different\
+  \ IP addresses, and participants should be rewarded based on those terms. Changing\
+  \ the reward policy retroactively undermines trust and can discourage future participation.\n\
+  \n#### Budget\n\nAccording to the google sheet in the sunsetting announcement, a\
+  \ total of 16 validators from 10 participants are affected by the reduced rewards.\n\
   \nThe expected amount of rewards to make up is as follows:\n\nWithdrawal Address\
   \ | Affected Validators | Duration | Affected Rewards | Notes  \n---|---|---|---|---\
   \  \n…6b20 | 1 | 9 Mo | 5.25 GNO |   \n…4cd8 | 1 | 12 Mo | 10.5 GNO |   \n…bc0c\
@@ -42,9 +40,9 @@ body: "#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis pro
   \ the community. By honoring the original rules, we can ensure that all participants\
   \ are treated equitably and avoid reputational risk for the Gnosis ecosystem. This\
   \ proposal seeks the support of the GnosisDAO community to uphold the integrity\
-  \ of our events and promote a decentralized and robust network.\n\n2 Likes\n\n[Staworth\
-  \ / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/3)\n"
-start: 1720191111
+  \ of our events and promote a decentralized and robust network.\n\n2 Likes\n\nStaworth\
+  \ / jackgale.eth - Delegate Platform\n"
+start: 1720183911
 end: null
 state:
   - phase-1

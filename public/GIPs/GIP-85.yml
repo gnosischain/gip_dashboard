@@ -6,30 +6,29 @@ body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * 
   \ Favour\n  * Against\n\n\n\n0 voters\n    \n    \n    GIP: 85\n    title: GnosisDAO\
   \ to support Covalent as initially mentioned in GIP 16\n    author: Ryan Coree @coreeryan\
   \ & David Tso @davidtsocy \n    status: Draft\n    type: Funding\n    created: 2023-04-19\n\
-  \    funding: 50,000 USD\n    \n\nDear GnosisDAO,\n\n[Covalent](https://www.covalenthq.com/docs/)\
-  \ is a hosted blockchain data solution providing access to full historical and current\
-  \ onchain data for 100+ supported chains, including Ethereum, Polygon, Arbitrum,\
-  \ Optimism, Base, Linea, Scroll, Avalanche, Fantom, and more.\n\nCovalent Offers\
-  \ 2 Products\n\n  1. Unified API: Covalent’s industry-leading Unified API is the\
-  \ most robust set of API services available on the market today. Our Unified API\
-  \ returns enriched blockchain data applicable to all blockchain networks, e.g. token\
-  \ balances, transactions, log events, etc., enabling developers to build wallet\
-  \ applications like Rainbow Wallet, NFT galleries like NFTX, investor dashboards\
-  \ like CoinGecko, and taxation tools like Rotki. Over 3,000 applications and 35,000\
-  \ active developers today rely on our Unified API, powering half a billion monthly\
-  \ API calls.\n  2. Increment: Increment is a Business Intelligence (BI) platform\
-  \ that empowers blockchain-based projects to understand their business metrics.\
-  \ Built on our Unified API, Increment has the full historical data set for over\
-  \ 100 chains. Increment is imbued with a standardized analytics framework – Reach\
-  \ (for growing a user base), Retention (for retaining a user base), and Revenue\
-  \ (for monetizing a user base). Increment also contains many more label tables for\
-  \ NFTs and DeFi.\n\n\n\nProposal\n\n  * As previously proposed in [GIP 16 - Gnosis\
-  \ Chain - xDAI/Gnosis merge](https://forum.gnosis.io/t/gip-16-gnosis-chain-xdai-gnosis-merge/1904)\
-  \ by Martin Köppelmann, the Co-Founder of Gnosis: “Gnosis Chain will look to attract\
-  \ core Ethereum infrastructure projects that are currently unavailable on the xDai\
-  \ chain. Gnosis Chain will cover the costs associated with such deployments. Examples\
-  \ include Etherscan, Beaconcha.in, Infura, Alchemy, Covalent…”\n  * Covalent will\
-  \ index Gnosis and integrate it with our Unified API and Increment for a compensation\
+  \    funding: 50,000 USD\n    \n\nDear GnosisDAO,\n\nCovalent is a hosted blockchain\
+  \ data solution providing access to full historical and current onchain data for\
+  \ 100+ supported chains, including Ethereum, Polygon, Arbitrum, Optimism, Base,\
+  \ Linea, Scroll, Avalanche, Fantom, and more.\n\nCovalent Offers 2 Products\n\n\
+  \  1. Unified API: Covalent’s industry-leading Unified API is the most robust set\
+  \ of API services available on the market today. Our Unified API returns enriched\
+  \ blockchain data applicable to all blockchain networks, e.g. token balances, transactions,\
+  \ log events, etc., enabling developers to build wallet applications like Rainbow\
+  \ Wallet, NFT galleries like NFTX, investor dashboards like CoinGecko, and taxation\
+  \ tools like Rotki. Over 3,000 applications and 35,000 active developers today rely\
+  \ on our Unified API, powering half a billion monthly API calls.\n  2. Increment:\
+  \ Increment is a Business Intelligence (BI) platform that empowers blockchain-based\
+  \ projects to understand their business metrics. Built on our Unified API, Increment\
+  \ has the full historical data set for over 100 chains. Increment is imbued with\
+  \ a standardized analytics framework – Reach (for growing a user base), Retention\
+  \ (for retaining a user base), and Revenue (for monetizing a user base). Increment\
+  \ also contains many more label tables for NFTs and DeFi.\n\n\n\nProposal\n\n  *\
+  \ As previously proposed in GIP 16 - Gnosis Chain - xDAI/Gnosis merge by Martin\
+  \ Köppelmann, the Co-Founder of Gnosis: “Gnosis Chain will look to attract core\
+  \ Ethereum infrastructure projects that are currently unavailable on the xDai chain.\
+  \ Gnosis Chain will cover the costs associated with such deployments. Examples include\
+  \ Etherscan, Beaconcha.in, Infura, Alchemy, Covalent…”\n  * Covalent will index\
+  \ Gnosis and integrate it with our Unified API and Increment for a compensation\
   \ of 50,000 USD, this will benefit developers and analysts who want to access Gnosis’\
   \ data.\n  * Covalent will also create custom documentation for Gnosis and run a\
   \ technical webinar for the Gnosis community to onboard more developers and kickstart\
@@ -61,7 +60,7 @@ body: "#  GnosisDAO to support Covalent as initially mentioned in GIP-16\n\n  * 
   \ next-generation multi-chain applications.”\n\n– Derek Yoo, CEO at Moonbeam\n\n\
   Conclusion\n\nThe Covalent team hopes that the GnosisDAO can see the value of this\
   \ partnership and pledge their support. Thank you!\n"
-start: 1681929393
+start: 1681922193
 end: null
 state:
   - phase-1

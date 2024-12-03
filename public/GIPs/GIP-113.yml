@@ -97,15 +97,14 @@ body: "## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Re
   \ community, GnosisDAO\n  * New branding for Omen and reflect the new direction\
   \ and vision\n\n\n\n## Team/ Organization\n\nThe Presagio team comprises Leo, Diogo,\
   \ Rorry, Nicki, Akash, and Venky. As a cohesive unit, we have collaborated for over\
-  \ a year to deliver notable projects such as Swapr’s CLAMM (<https://v3.swapr.eth.limo>)\
-  \ on Gnosis chain and Stackly (<https://stackly.app>) deployed on Mainnet, Gnosis\
-  \ chain and Arbitrum, all built atop CoW protocol infrastructure.\n\n## Conclusion\n\
-  \nPresagio (Omen 2.0) represents a significant step in the evolution of prediction\
-  \ markets, blending the AI infrastructure within the Gnosis ecosystem. The requested\
-  \ funding will enable the development, maintenance and the growth of the platform\
-  \ bringing Omen to a position of leading AI agent driven prediction market space.\n\
-  \n6 Likes\n"
-start: 1727334351
+  \ a year to deliver notable projects such as Swapr’s CLAMM (< on Gnosis chain and\
+  \ Stackly (< deployed on Mainnet, Gnosis chain and Arbitrum, all built atop CoW\
+  \ protocol infrastructure.\n\n## Conclusion\n\nPresagio (Omen 2.0) represents a\
+  \ significant step in the evolution of prediction markets, blending the AI infrastructure\
+  \ within the Gnosis ecosystem. The requested funding will enable the development,\
+  \ maintenance and the growth of the platform bringing Omen to a position of leading\
+  \ AI agent driven prediction market space.\n\n6 Likes\n"
+start: 1727327151
 end: null
 state:
   - phase-2
@@ -123,7 +122,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 400000, 600
-  currency: WXDAI, GNO
+  amount: 400000 and 600
+  currency: WXDAI and GNO
   confidence: High
   model_used: gemini-1.5-flash

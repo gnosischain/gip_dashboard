@@ -14,6 +14,7 @@ import time
 from dotenv import load_dotenv
 import google.generativeai as genai
 from collections import deque
+import json
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -113,6 +114,7 @@ def fetch_html_content(url):
         return response.text
     return None
 
+
 def parse_html_content(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     
@@ -132,7 +134,6 @@ def parse_html_content(html_content):
     clean_html_content(soup)
     
     # Remove title from body content
-    # Find and remove the first h1 or h2 that contains the title
     title_elements = soup.find_all(['h1', 'h2'])
     for element in title_elements:
         if element.get_text().strip().lower() == title_content.lower() or \
@@ -160,7 +161,71 @@ def parse_html_content(html_content):
     markdown_text = '\n'.join(markdown_lines)
     cleaned_body = clean_body_content(markdown_text)
     
-    return cleaned_body, meta_content, title_content, unix_timestamp, discourse_tags
+    # Refine the cleaned_body for consistent formatting
+    final_body = refine_body_with_regex(cleaned_body)
+    
+    return final_body, meta_content, title_content, unix_timestamp, discourse_tags
+
+
+def refine_body_with_regex(text):
+
+    # Rule 2: Remove links but keep anchor text
+    # Remove markdown links [text](url) and keep 'text'
+    text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+    # Remove standalone URLs
+    text = re.sub(r'(?<!\w)(https?://[^\s]+)', '', text)
+
+    return text
+
+@rate_limiter
+def refine_body_with_gemini(cleaned_body):
+    try:
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        max_chunk_size = 10000  
+
+        # Split the cleaned_body into chunks of reasonable size
+        chunks = [cleaned_body[i:i+max_chunk_size] for i in range(0, len(cleaned_body), max_chunk_size)]
+        
+        refined_chunks = []
+        for chunk in chunks:
+            prompt = f"""
+Please format the following text according to these instructions:
+
+1. **Headers and Sections**: Format headers and sections appropriately using markdown headings (e.g., `#`, `##`, `###`).
+
+2. **Links**: Keep the anchor text of any hyperlinks but omit the URLs themselves.
+
+3. **Conclusion**: Include content up to and including the 'Conclusion' section. Do not include any text that follows.
+
+4. **Code Snippets**: Place any code snippets or JSON data (dictionary) into code blocks and format them properly (e.g., ```json```).
+
+
+**Text:**
+{chunk}
+
+**Please provide the formatted text below without adding any new content nor comments. 
+Revisit wyour answer twice and make sure all forating is correct**
+"""
+
+            response = model.generate_content(prompt)
+            
+            # Check if the response contains text
+            if hasattr(response, 'text') and response.text:
+                refined_chunk = response.text.strip()
+            else:
+                logger.warning("Received empty or blocked response from the model. Using original chunk.")
+                refined_chunk = chunk  # Use the original chunk if the model response is empty or blocked
+            
+            refined_chunks.append(refined_chunk)
+        
+        # Combine the refined chunks
+        refined_body = '\n'.join(refined_chunks)
+        return refined_body
+
+    except Exception as e:
+        logger.error(f"Error in refine_body_with_gemini: {str(e)}")
+        return cleaned_body
+
 
 def clean_body_content(body_text):
     # Split into lines for processing
@@ -210,6 +275,7 @@ def convert_to_unix_timestamp(datetime_value):
         dt_obj = datetime.strptime(datetime_value, "%Y-%m-%dT%H:%M:%SZ")
         return int(time.mktime(dt_obj.timetuple()))
     return ""
+
 
 def clean_html_content(soup):
     elements_to_remove = [
