@@ -36,20 +36,17 @@ body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes
   \ improve on GnosisDAO’s delegation.\n\nSpecifically, we would like to introduce\
   \ changes that:\n\n  1. Reduce low-quality and spam proposals created in the GnosisDAO’s\
   \ snapshot space.\n  2. Make GnosisDAO’s influence distribution less opaque.\n \
-  \ 3. Improve vote-weight utilization.\n\n\n\n[Another recent forum](https://forum.gnosis.io/t/enhancing-transparency-and-efficiency-an-idea-for-the-implementation-of-a-governance-structure-based-on-delegates-in-the-gnosis-ecosystem/6334)\
-  \ post also argues for delegation, along with suggesting compensation for delegates.\
-  \ To constrain scope, this proposal does not include delegate compensation. However,\
-  \ if this proposal is successful, and after observing the delegation setup in production,\
+  \ 3. Improve vote-weight utilization.\n\n\n\nAnother recent forum post also argues\
+  \ for delegation, along with suggesting compensation for delegates. To constrain\
+  \ scope, this proposal does not include delegate compensation. However, if this\
+  \ proposal is successful, and after observing the delegation setup in production,\
   \ we will likely write a followup proposal to implement some form of delegate compensation.\n\
   \n##  Specification\n\nTODO\n\n##  Rationale\n\nTODO\n\n##  Implementation\n\nTODO\n\
-  \n8 Likes\n\n[GnosisDAO proposal spam on Snapshot](https://forum.gnosis.io/t/gnosisdao-proposal-spam-on-snapshot/8042/3)\n\
-  \n[GIP-109: Should the GnosisDAO introduce Snapshot moderators to reduce spam?](https://forum.gnosis.io/t/gip-109-should-the-gnosisdao-introduce-snapshot-moderators-to-reduce-spam/8812)\n\
-  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/8)\n\
-  \n[Do we need this forum and what for?](https://forum.gnosis.io/t/do-we-need-this-forum-and-what-for/7977/9)\n\
-  \n[GIP-101: Should karpatkey and StableLab Establish a Delegate Program v0 for the\
-  \ GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
-  \n[Karpatkey Delegate Platform](https://forum.gnosis.io/t/karpatkey-delegate-platform/7252)\n"
-start: 1674162370
+  \n8 Likes\n\nGnosisDAO proposal spam on Snapshot\n\nGIP-109: Should the GnosisDAO\
+  \ introduce Snapshot moderators to reduce spam?\n\nDo we need this forum and what\
+  \ for?\n\nDo we need this forum and what for?\n\nGIP-101: Should karpatkey and StableLab\
+  \ Establish a Delegate Program v0 for the GnosisDAO?\n\nKarpatkey Delegate Platform\n"
+start: 1674158770
 end: null
 state:
   - phase-2

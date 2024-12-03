@@ -123,31 +123,29 @@ body: "## Category\n\nService Agreements\n\n## Executive Summary\n\nGnosis Guild
   \ * 0.003 * 0.5) / 12 | (AUM * 0.003 * 0.5) / 12  \n  \n(using the 200-day moving\
   \ average price for GNO at the date of allocation)|\n\nGnosis Guild initially anticipates\
   \ 3-6 individuals working on the identified scope at any given time, with the possibility\
-  \ to scale alongside treasury growth. The total cost to GnosisDAO will remain [competitive\
-  \ with other top protocol DAOs](https://tokenterminal.com/resources/crypto-research/how-much-does-it-really-cost-to-run-a-dao#4-smart-contract-cyber-security-expenditure).\n\
-  \n## Service Terms and Exit Strategy\n\nIf applicable the duration of the service\
-  \ agreement. Please outline the terms and conditions for exiting the service agreement,\
-  \ including the circumstances under which a party may terminate the agreement, and\
-  \ any other important details.\n\nThe agreement between service provider Gnosis\
-  \ Guild and organization GnosisDAO will take effect immediately upon this proposal\
-  \ passing. The terms within the agreement will be valid in perpetuity, unless terminated\
-  \ by either party or updated with mutual consent by both parties. GnosisDAO will\
-  \ assign specific permissions to Gnosis Guild within their treasury utilizing the\
-  \ Roles Modifier to enable Gnosis Guild to autonomously collect payment. Either\
-  \ party may terminate the agreement at any time without cause by giving 90 days\
-  \ of written notice to the other party. Upon termination, all outstanding payments\
-  \ shall be made by GnosisDAO to Gnosis Guild prior to agreement on termination date.\n\
-  \n## Team/ Organization\n\n[Gnosis Guild](https://www.gnosisguild.org/) will act\
-  \ as an Autonomous Core Contributor for GnosisDAO. Through mutualistic partnerships\
-  \ and activist R&D, our team of engineers, designers, and researchers will foster\
-  \ the long-term development and sustainable growth of GnosisDAO’s network. See our\
-  \ contributor list [here](https://www.notion.so/gnosisguild/ea611cd34400412cabb4121d90aaa94f?v=912defbb43d1452f9c8b66182183376f&pvs=4).\n\
-  \n## Conclusion\n\nHere you can summarize your project or include anything that\
-  \ wasn’t mentioned yet and is important to understand the GIP.\n\n6 Likes\n\n[GIP-101:\
-  \ Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?](https://forum.gnosis.io/t/gip-draft-establish-gnosisdao-delegate-program-v0/8578/2)\n\
-  \n[V2 - Should Gnosis DAO fund the continuation of the validator Monitoring Telegram\
-  \ bot?](https://forum.gnosis.io/t/v2-should-gnosis-dao-fund-the-continuation-of-the-validator-monitoring-telegram-bot/8415/9)\n"
-start: 1712628182
+  \ to scale alongside treasury growth. The total cost to GnosisDAO will remain competitive\
+  \ with other top protocol DAOs.\n\n## Service Terms and Exit Strategy\n\nIf applicable\
+  \ the duration of the service agreement. Please outline the terms and conditions\
+  \ for exiting the service agreement, including the circumstances under which a party\
+  \ may terminate the agreement, and any other important details.\n\nThe agreement\
+  \ between service provider Gnosis Guild and organization GnosisDAO will take effect\
+  \ immediately upon this proposal passing. The terms within the agreement will be\
+  \ valid in perpetuity, unless terminated by either party or updated with mutual\
+  \ consent by both parties. GnosisDAO will assign specific permissions to Gnosis\
+  \ Guild within their treasury utilizing the Roles Modifier to enable Gnosis Guild\
+  \ to autonomously collect payment. Either party may terminate the agreement at any\
+  \ time without cause by giving 90 days of written notice to the other party. Upon\
+  \ termination, all outstanding payments shall be made by GnosisDAO to Gnosis Guild\
+  \ prior to agreement on termination date.\n\n## Team/ Organization\n\nGnosis Guild\
+  \ will act as an Autonomous Core Contributor for GnosisDAO. Through mutualistic\
+  \ partnerships and activist R&D, our team of engineers, designers, and researchers\
+  \ will foster the long-term development and sustainable growth of GnosisDAO’s network.\
+  \ See our contributor list here.\n\n## Conclusion\n\nHere you can summarize your\
+  \ project or include anything that wasn’t mentioned yet and is important to understand\
+  \ the GIP.\n\n6 Likes\n\nGIP-101: Should karpatkey and StableLab Establish a Delegate\
+  \ Program v0 for the GnosisDAO?\n\nV2 - Should Gnosis DAO fund the continuation\
+  \ of the validator Monitoring Telegram bot?\n"
+start: 1712620982
 end: null
 state:
   - phase-1

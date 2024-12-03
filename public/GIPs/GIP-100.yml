@@ -2,7 +2,7 @@ id: gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program
 gip_number: 100
 url: https://forum.gnosis.io/t/gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program
 title: Should Gnosis DAO conduct a large-scale buyback program?
-body: "#### Category\n\nTreasury\n\n#### TL;DR\n\nI represent [Thanefield Capital](https://thanefield.capital/),\
+body: "#### Category\n\nTreasury\n\n#### TL;DR\n\nI represent Thanefield Capital,\
   \ a multi-strategy crypto fund; GNO is one of our thesis-driven investments.\n\n\
   Currently, GNO is significantly undervalued relative to its book value. To address\
   \ this, we propose initiating a large-scale buyback program. Our plan involves deploying\
@@ -25,50 +25,48 @@ body: "#### Category\n\nTreasury\n\n#### TL;DR\n\nI represent [Thanefield Capita
   \ well-positioned to address this undervaluation as one of the most capitalized\
   \ DAOs, holding over $630 million in assets and ranking second only to Mantle in\
   \ terms of non-native marketable tokens. We propose initiating a substantial buyback\
-  \ program to correct this disparity. If approved by a DAO vote, [@Karpatkey](/u/karpatkey)\
-  \ will manage the execution of this program.\n\nIt’s important to note that this\
-  \ proposal operates independently but complements the vision outlined in [Gnosis\
-  \ DAO v3](https://forum.gnosis.io/t/introducing-gnosis-3-0/8252), which aims to\
-  \ establish protocol-owned liquidity between GNO and portfolio projects. If approved\
-  \ by the DAO, these initiatives should progress concurrently.\n\n#### Objectives\
-  \ of the program\n\n  1. Transfer value from sellers to long-term holders by acquiring\
-  \ GNO below its intrinsic value. The acquired tokens could then be utilized for\
-  \ treasury swaps, incentives, growth initiatives, and further investments.\n  2.\
-  \ Signal to the market a commitment to establishing a valuation floor for GNO that\
-  \ consistently exceeds its book value.\n  3. Drive attention to the products of\
-  \ the DAO. Given the attention-driven nature of the crypto market, where price often\
-  \ influences fundamentals, large-scale buyback program can elevate both market perception\
-  \ and fundamental value.\n\n\n\n#### Gnosis DAO assets breakdown\n\nThis discussion\
-  \ is centered on the marketable tokens and illiquid venture deals & investments\
-  \ in venture capital funds, specifically excluding other significant assets like\
-  \ Gnosis Chain, Gnosis Pay, and Gnosis Wallet.\n\n  1. Marketable tokens\n\n\n\n\
-  As of today, Gnosis DAO holds $631 million in tradable tokens, not including GNO\
-  \ (this number corresponds to the assets that belong to Gnosis DAO that we could\
+  \ program to correct this disparity. If approved by a DAO vote, @Karpatkey will\
+  \ manage the execution of this program.\n\nIt’s important to note that this proposal\
+  \ operates independently but complements the vision outlined in Gnosis DAO v3, which\
+  \ aims to establish protocol-owned liquidity between GNO and portfolio projects.\
+  \ If approved by the DAO, these initiatives should progress concurrently.\n\n####\
+  \ Objectives of the program\n\n  1. Transfer value from sellers to long-term holders\
+  \ by acquiring GNO below its intrinsic value. The acquired tokens could then be\
+  \ utilized for treasury swaps, incentives, growth initiatives, and further investments.\n\
+  \  2. Signal to the market a commitment to establishing a valuation floor for GNO\
+  \ that consistently exceeds its book value.\n  3. Drive attention to the products\
+  \ of the DAO. Given the attention-driven nature of the crypto market, where price\
+  \ often influences fundamentals, large-scale buyback program can elevate both market\
+  \ perception and fundamental value.\n\n\n\n#### Gnosis DAO assets breakdown\n\n\
+  This discussion is centered on the marketable tokens and illiquid venture deals\
+  \ & investments in venture capital funds, specifically excluding other significant\
+  \ assets like Gnosis Chain, Gnosis Pay, and Gnosis Wallet.\n\n  1. Marketable tokens\n\
+  \n\n\nAs of today, Gnosis DAO holds $631 million in tradable tokens, not including\
+  \ GNO (this number corresponds to the assets that belong to Gnosis DAO that we could\
   \ locate onchain). This figure serves as a foundation for valuing Gnosis DAO’s assets.\
   \ It’s important to note that not all these assets are immediately liquid. For example,\
   \ approximately half of the SAFE token allocation is yet to vest. Furthermore, a\
   \ significant portion of both SAFE and OLAS tokens has been voluntarily placed into\
   \ lock-up contracts to demonstrate commitment. The primary assets in the treasury\
   \ include ETH and equivalents, SAFE, stablecoins, OLAS, and COW. In 2023, the treasury\
-  \ generated $10.2 million by engaging these assets in DeFi activities.\n\n![VPau_nVKOjhDRId2w8Tz2X8ttgofE5ZE6vNrVUcJeCMbr5ZWkB_6hWJWLSScpZi57gjA3aiCVSNo1cwUqXa7b-IfTzGCs8MrTu0CXtYLQqSOAAWidd2V_3-1VYPo](https://forum.gnosis.io/uploads/default/original/2X/7/73744391d6708b211cc8dc54e50788ac005a0829.png)\n\
+  \ generated $10.2 million by engaging these assets in DeFi activities.\n\n!VPau_nVKOjhDRId2w8Tz2X8ttgofE5ZE6vNrVUcJeCMbr5ZWkB_6hWJWLSScpZi57gjA3aiCVSNo1cwUqXa7b-IfTzGCs8MrTu0CXtYLQqSOAAWidd2V_3-1VYPo\n\
   \nAdditionally, Gnosis DAO has a 50% stake in the Safe <> Gnosis joint treasury,\
   \ which owns 5% of the SAFE token supply, valued at approximately $115 million currently.\
   \ These assets are not included in the above calculation.\n\n  2. Illiquid venture\
-  \ deals\n\n\n\nAccording to the [list](https://forum.gnosis.io/t/introducing-gnosis-3-0/8252/3)\
-  \ published by Ernst on this forum, Gnosis DAO has made about 50 venture investments\
-  \ over the years either directly or through in-house Factor VC.\n\nInvestments that\
-  \ remain illiquid/are not located include:\n\nFlashbots, Matter Labs (ZKsync), Aztec,\
-  \ RISC Zero, IDEX, Succinct, Orca, Anoma, Zerion, POAP, ImmuneFi, WalletConnect,\
-  \ [Kinetex.io](http://Kinetex.io), Fileverse, NFTfi, [Li.Fi](http://Li.Fi), Hedgey,\
-  \ Azuro, Harbor, Snapshot, Diva, Phaver, Rated Network, [Mimic.fI](http://Mimic.fI),\
-  \ Sablier, Coinshift, Vibe.xyz, Parcel, Mean.finance, Collab, AMMalgam, Topos, Bootnode,\
-  \ Stablelab, Backed, Least Authority, Cypherock, Gateway.fm, Den, Mystiko, Shutter,\
-  \ Altlayer, Karpatkey (spinoff).\n\nAdditionally, Gnosis DAO is an LP in the following\
-  \ VC funds:\n\n1kx, Lightshift, LongHash Ventures, Seed Club Ventures.\n\nWhile\
-  \ it is challenging to precisely value these illiquid venture deals due to many\
-  \ unknown variables, this portfolio includes high-profile deals and ensures growth\
-  \ in Gnosis DAO liquid treasury as these tokens launch and vest, widening the discount\
-  \ at which GNO is currently trading.\n\n#### Gnosis DAO’s GNO holdings\n\nAccording\
+  \ deals\n\n\n\nAccording to the list published by Ernst on this forum, Gnosis DAO\
+  \ has made about 50 venture investments over the years either directly or through\
+  \ in-house Factor VC.\n\nInvestments that remain illiquid/are not located include:\n\
+  \nFlashbots, Matter Labs (ZKsync), Aztec, RISC Zero, IDEX, Succinct, Orca, Anoma,\
+  \ Zerion, POAP, ImmuneFi, WalletConnect, Kinetex.io, Fileverse, NFTfi, Li.Fi, Hedgey,\
+  \ Azuro, Harbor, Snapshot, Diva, Phaver, Rated Network, Mimic.fI, Sablier, Coinshift,\
+  \ Vibe.xyz, Parcel, Mean.finance, Collab, AMMalgam, Topos, Bootnode, Stablelab,\
+  \ Backed, Least Authority, Cypherock, Gateway.fm, Den, Mystiko, Shutter, Altlayer,\
+  \ Karpatkey (spinoff).\n\nAdditionally, Gnosis DAO is an LP in the following VC\
+  \ funds:\n\n1kx, Lightshift, LongHash Ventures, Seed Club Ventures.\n\nWhile it\
+  \ is challenging to precisely value these illiquid venture deals due to many unknown\
+  \ variables, this portfolio includes high-profile deals and ensures growth in Gnosis\
+  \ DAO liquid treasury as these tokens launch and vest, widening the discount at\
+  \ which GNO is currently trading.\n\n#### Gnosis DAO’s GNO holdings\n\nAccording\
   \ to CoinGecko, the circulating supply of GNO tokens is listed as 2,589,589, which\
   \ is valued at approximately $703 million. However, this figure does not include\
   \ 1,050,884 GNO tokens owned by Gnosis DAO, many of which were acquired through\
@@ -95,10 +93,9 @@ body: "#### Category\n\nTreasury\n\n#### TL;DR\n\nI represent [Thanefield Capita
   \n\n  * Allocates $15 million;\n  * Provides Karpatkey with full discretion to capitalize\
   \ on the best opportunities.\n\n\n\n#### Assessment\n\nAfter the conclusion of the\
   \ program, we should assess its results and consider whether to continue, modify,\
-  \ or end the buyback strategy going forward.\n\n6 Likes\n\n[Curia Delegate Platform](https://forum.gnosis.io/t/curia-delegate-platform/8279/3)\n\
-  \n[Staworth / jackgale.eth - Delegate Platform](https://forum.gnosis.io/t/staworth-jackgale-eth-delegate-platform/8770/2)\n\
-  \n**[next page →](/t/gip-100-should-gnosis-dao-conduct-a-large-scale-buyback-program/8556?page=2)**\n"
-start: 1715950894
+  \ or end the buyback strategy going forward.\n\n6 Likes\n\nCuria Delegate Platform\n\
+  \nStaworth / jackgale.eth - Delegate Platform\n\n**next page →**\n"
+start: 1715943694
 end: null
 state:
   - phase-1
@@ -116,8 +113,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: null
-  currency: null
-  confidence: null
-  error: 429 Resource has been exhausted (e.g. check quota).
-  model_used: none
+  amount: '30000000'
+  currency: USD
+  confidence: High
+  model_used: gemini-1.5-flash

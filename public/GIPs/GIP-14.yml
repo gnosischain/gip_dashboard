@@ -59,31 +59,30 @@ body: "##  Simple Summary\n\nFollowing the previous forum post, a proposal is to
   \ our solution and others. The beauty of Hats being a fully permissionless protocol\
   \ is that DAOs, treasuries, and individuals can deposit or withdraw funds from the\
   \ vault at any point. Utilize Idle funds for active protection with full depositor\
-  \ control for treasuries and users alike.\n\nThe Hats contracts are [public](https://github.com/hats-finance/hats-contracts)\
-  \ verified on Etherscan and can be found by clicking the “View Contracts Covered”\
-  \ under Hats vault in app.hats.finance and we are ready to onboard Gnosis GNO.\n\
-  \nAudit and safety measures:\n\n[Audit reports](https://github.com/hats-finance/hats-contracts/tree/develop/audit)\n\
-  \nHats is live with Hats vault containing $100K USDC worth of token to incentivize\
-  \ responsible disclosure.\n\nVault funding: **Not part of this GIP**\n\nThe amount\
-  \ of Funding the Gnosis vault on hats, by $GNO holders and Gnosis DAO is 100% controlled\
-  \ by you. As a community, you can choose together how important it is for you to\
-  \ incentivize others to make Gnosis a much safer environment. Bear in mind that\
-  \ funds will be released from the vault only due to vulnerability disclosure. The\
-  \ upside from fixing issues is drastically more valuable than the financial face\
-  \ value of the GNO tokens that are going to be deposited.\n\n##  Implementation\n\
-  \n  * The hats team will create the committee set up JSON file with all the open-source\
-  \ details we collected online.\n  * Gnosis team for confirmation.\n  * When this\
-  \ stage is completed, the vault will be displayed in hats dApp.\n\n\n\n##  Gnosis\
-  \ Impact\n\n_Phase 2 Proposals: Please ignore this section, and leave as is. It\
-  \ is used for Phase 3 proposals.  \nPhase 3 Proposals: Replace the `question` in\
-  \ the below iframe with the relevant `questionID` for this GIP, then delete this\
-  \ paragraph. If Omen Prediction Markets have not been created for this GIP yet,\
-  \ or if you have any questions about retrieving the questionID, please get in touch\
-  \ with a forum moderator._\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please\
-  \ ignore this section, and leave as is. It is used for Phase 3 proposals.  \nPhase\
-  \ 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\
-  \n6 Likes\n"
-start: 1632445026
+  \ control for treasuries and users alike.\n\nThe Hats contracts are public verified\
+  \ on Etherscan and can be found by clicking the “View Contracts Covered” under Hats\
+  \ vault in app.hats.finance and we are ready to onboard Gnosis GNO.\n\nAudit and\
+  \ safety measures:\n\nAudit reports\n\nHats is live with Hats vault containing $100K\
+  \ USDC worth of token to incentivize responsible disclosure.\n\nVault funding: **Not\
+  \ part of this GIP**\n\nThe amount of Funding the Gnosis vault on hats, by $GNO\
+  \ holders and Gnosis DAO is 100% controlled by you. As a community, you can choose\
+  \ together how important it is for you to incentivize others to make Gnosis a much\
+  \ safer environment. Bear in mind that funds will be released from the vault only\
+  \ due to vulnerability disclosure. The upside from fixing issues is drastically\
+  \ more valuable than the financial face value of the GNO tokens that are going to\
+  \ be deposited.\n\n##  Implementation\n\n  * The hats team will create the committee\
+  \ set up JSON file with all the open-source details we collected online.\n  * Gnosis\
+  \ team for confirmation.\n  * When this stage is completed, the vault will be displayed\
+  \ in hats dApp.\n\n\n\n##  Gnosis Impact\n\n_Phase 2 Proposals: Please ignore this\
+  \ section, and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals:\
+  \ Replace the `question` in the below iframe with the relevant `questionID` for\
+  \ this GIP, then delete this paragraph. If Omen Prediction Markets have not been\
+  \ created for this GIP yet, or if you have any questions about retrieving the questionID,\
+  \ please get in touch with a forum moderator._\n\n##  GnosisDAO Snapshot\n\n_Phase\
+  \ 2 Proposals: Please ignore this section, and leave as is. It is used for Phase\
+  \ 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding GnosisDAO Snapshot\
+  \ poll you’ve created._\n\n6 Likes\n"
+start: 1632437826
 end: null
 state:
   - phase-2
