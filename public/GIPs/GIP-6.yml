@@ -63,7 +63,7 @@ body: "##  Update (19/02/2021)\n\nAccording to GnosisDAO’s governance process 
   \ to pay) from the start, and never pay more than what they determine.\n\n\n\n##\
   \  Implementation\n\nThe specific information on the contract can be followed up\
   \ in this repository.  \nThe audit report can be found here\n\n4 Likes\n"
-start: 1613050383
+start: 1613053983
 end: null
 state:
   - closed

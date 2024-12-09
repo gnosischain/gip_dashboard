@@ -53,5 +53,5 @@ quorum: 0
 funding:
   amount: 130,000,000
   currency: USD
-  confidence: High
+  confidence: Medium
   model_used: gemini-1.5-flash

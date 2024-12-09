@@ -18,7 +18,7 @@ body: "##  Simple Summary\n\nCreate periodic OTC trades GNO X BAL between Gnosis
   \ last 30 days of open-price historical data average on Coingecko:  \nGNO:    \n\
   BAL: Balancer Price: BAL Live Price Chart & News | CoinGecko\n\nLink to discussion\
   \ on Balancer forum\n\nLink to phase1 post\n\n2 Likes\n"
-start: 1630926634
+start: 1630933834
 end: null
 state:
   - phase-2

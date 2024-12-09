@@ -113,8 +113,8 @@ body: "##  Simple Summary\n\nIf Web3 is all about communities, how do we know if
   \ /properties)\n  * Workshop with community to discuss findings and recommendations\n\
   \n\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please ignore this section,\
   \ and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a\
-  \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n2 Likes\n"
-start: 1664548771
+  \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n1 Like\n"
+start: 1664555971
 end: null
 state:
   - phase-2

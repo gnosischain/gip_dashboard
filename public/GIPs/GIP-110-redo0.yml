@@ -76,7 +76,7 @@ scores:
 votes: 93
 quorum: 75000
 funding:
-  amount: 20000, 22000, 18000
-  currency: EUR, USD, GBP
+  amount: '22000'
+  currency: USD
   confidence: High
   model_used: gemini-1.5-flash

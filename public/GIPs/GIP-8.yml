@@ -45,7 +45,7 @@ body: "* Add one LP token voting strategy\n  * Add two LP token voting strategie
   \ to vote even if their GNO are invested/staked/locked in Smart Contracts in different\
   \ protocols/networks\n\nGIP-28: Allow GNO holders to vote even if their GNO are\
   \ invested/staked/locked in Smart Contracts in different protocols/networks\n"
-start: 1615376966
+start: 1615380566
 end: null
 state:
   - phase-2
