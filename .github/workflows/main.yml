@@ -34,6 +34,9 @@ jobs:
         pwd
         ls -la
 
+    - name: Debug .venv contents
+      run: ls -la /home/runner/work/gip_dashboard/gip_dashboard/.venv
+
     - name: Create virtual environment
       run: |
         python -m venv /home/runner/work/gip_dashboard/gip_dashboard/.venv
