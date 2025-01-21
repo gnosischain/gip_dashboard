@@ -1,0 +1,45 @@
+id: '0x83e80bfada4ea5df32870ddbc102d1debf613e21510d00d76d99eb2bde1bc592'
+gip_number: '120'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x83e80bfada4ea5df32870ddbc102d1debf613e21510d00d76d99eb2bde1bc592
+title: 'GIP-120(revised): Should GnosisDAO acquire Headquarters (HQ.xyz) to Accelerate
+  Gnosis 3.0'
+body: "This is a revised proposal for [GIP-120](https://forum.gnosis.io/t/gip-120-should-gnosisdao-acquire-headquarters-hq-xyz-to-accelerate-gnosis-3-0/9505).\
+  \ The revision is about the purchase price and asks from GnosisDAO. \n\n# TLDR:\
+  \ \nInvestors, founders, the team, and advisors get above 30% less in GNO. Investors\
+  \ get the option to cash out at 40% discount. Founders get 1/3 upfront, 2/3 vested\
+  \ over 4 years. The total amount paid by GnosisDAO for the acquisition is between\
+  \ $7M and $8.95M depending on the options investors pick.\n\n# Reason for full acquisition\
+  \ of Headquarters\nGnosis can promote Gnosis HQ as a Safe interface for Business.\n\
+  Gnosis can establish a presence in Asia (relevant for Regulator- & Investor relations).\n\
+  Gnosis Pay can leverage Gnosis HQ for the Corporate Card offering.\nHaving a Business\
+  \ Account use case and presence in Asia is vital for the fruition of Gnosis 3.0.\
+  \ Acquiring Headquarters will accelerate Gnosis’ progress in the payments field\
+  \ and allow it to have a strong global footprint.\n\nThe decision to fully acquire\
+  \ instead of partial acquisition or investment is intentional - because it is through\
+  \ a full acquisition of Headquarters and conversion of equity to tokens, that we\
+  \ ensure full alignment to accruing value to the GNO token. This avoids the risk\
+  \ of diluting interest across parties.\n\nEdit on 2025-01-10: Investor vesting for\
+  \ GNO and SAFE was increased to 3 years total and cash discount was increased to\
+  \ 40%.\n\nPlease refer to GIP-20 on the Gnosis Forum for complete details of the\
+  \ proposal."
+start: 1737052744
+end: 1737657544
+state: active
+author: '0xbE96cBFF504BA1C9aBa35a0F6377e8F109f7795B'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 90466.68558783605
+scores:
+  - 90418.68980531208
+  - 47.99578252397973
+  - 0
+votes: 78
+quorum: 75000
+funding:
+  amount: 7000000-8950000
+  currency: USD
+  confidence: High
+  model_used: gemini-1.5-flash

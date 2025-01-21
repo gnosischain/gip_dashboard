@@ -1,0 +1,87 @@
+id: '0x80b370075f6c988b26e828702c5a057dd8c452e561aad0431fb9a7dad27c84f0'
+gip_number: '119'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x80b370075f6c988b26e828702c5a057dd8c452e561aad0431fb9a7dad27c84f0
+title: Should Gnosis fund DeSciWorld on Gnosis?
+body: "# Category\nFunding - Rewards/Reimbursement [Grants Programme, DeSci Infrastructure]\n\
+  \n## Executive Summary:\nThe creation of a quarter-long grants programme to incentivise\
+  \ early stage DeSci projects to deploy on Gnosis Chain. DeSci is a vertical that\
+  \ Gnosis has long supported, yet did not yet have the traction or product to justify\
+  \ efforts from the Gnosis Foundation. DeSci can facilitate novel use of the blockchain,\
+  \ bringing highly professional teams and researchers to the space, whilst improving\
+  \ outcomes for science and scientists. Gnosis has a keen interest in supporting\
+  \ this narrative. To begin with, the grants programme will be facilitated by the\
+  \ DeSciWorld team.\n\n## Specification\nThe technical specification is divided into\
+  \ two sections: prerequisite and desired.\n\n#### Prerequisite\nThe employed technology\
+  \ will be simple DAO tooling such as Safe and Snapshot, to help organise each project\
+  \ and distribute funding in a secure and decentralized manner. We will utilise tools\
+  \ such as Charmverse for the submission of grant applications.\n\n#### Desired\n\
+  The scope of the grants programme will be to facilitate the creation of novel protocols\
+  \ for DeSci projects to utilise as foundational tools. We will put a call to action\
+  \ for tools such as funding mechanisms, publishing protocols and collective research\
+  \ tools. The exact specifications for this are not possible to record, except the\
+  \ intention with calls for projects being to facilitate the above tooling creation.\n\
+  \n## Rationale\nIt is important to utilise robust and well tested tools for the\
+  \ facilitation of the grants programme. This saves on risk factors, time and money.\n\
+  \nFor DeSci as a vertical to succeed on Gnosis Chain, we should seek to create foundational\
+  \ tools for onchain researchers to utilise. Tools that facilitate the recording\
+  \ of verifiable data, permissionless “multiplayer” access to the research tasks,\
+  \ collective funding with milestone unlocks and more should be developed to correctly\
+  \ onboard more science to Gnosis.\n\n# Budget\nTotal: $150,000\nReserved for grantees:\
+  \ $135,000\nReserved for DeSciWorld grants committee: $15,000 ($5000/m)\n\n### Milestones:\n\
+  \nProposed timeline: 3 months\nFinal deliverable: Reaching the March 31st date with\
+  \ full allocation of grant fund to DeSci projects deployed on Gnosis.\n\n#### Timeline,\
+  \ Implementations and Deliverable\nMilestone 1 - Deployment of the grants application\
+  \ process\nDeliverables - An extensive and transparent grants application\nTime\
+  \ and Price Estimate - By January 31st, $5000 unlock from the team budget\n\nMilestone\
+  \ 2 - Funding of 1 project\nDeliverables - The first project to be accepted and\
+  \ funded\nTime and Price Estimate - <$40,000 to be unlocked for the first project,\
+  \ as required\n\nMilestone 3 - Funding of 2 further projects\nDeliverables - The\
+  \ second and third projects to be accepted and funded\nTime and Price Estimate -\
+  \ <$60,000 to be unlocked for these projects, as required\n\nMilestone 4 - Funding\
+  \ of any further projects\nDeliverables - Any further projects to be accepted and\
+  \ funded\nTime and Price Estimate - >$35,000 to be unlocked for all remaining qualified\
+  \ projects\n\n## Evaluation\n#### Number of Projects onboarded: **\n(deployed code\
+  \ or funds on Gnosis Chain with a specific function of DeSci)\n#### Number of “scientists”\
+  \ with a Gnosis Chain wallet:** \n(“scientists” either publicly verified or anonymous\
+  \ but with a form of zK verification)\n#### Users of the grant programme dApps and\
+  \ tools:\n#### Funds allocated to DeSci projects through the grant programme projects:\n\
+  #### Average score of temperature check across the Q1 programme: \n(as determined\
+  \ by the Gnosis Community vote)\n\n## Team/ Organization\nDeSciWorld is proposing\
+  \ to lead the “DeSci on Gnosis” programme for the first iteration, in Q1, with the\
+  \ support of the Gnosis community. After the conclusion of this programme, a repeat\
+  \ GIP will be posted. If this first effort is successful, we anticipate support\
+  \ from the DevRel team at Gnosis and resources to be offered from Gnosis.\n\nDeSciWorld\
+  \ has seeded a number of global DeSci communities, onboarded hundreds of people\
+  \ and built a trusted brand since October 2021.\n\n### Team from DeSciWorld:\nJoshua\
+  \ Bate - Founder\nCarolina Menchaca - Scientist Relations\nDr Jelani Clarke - CBDO\n\
+  Marcus Khoo - Scholarship programme creator\n(many others in the team involved in\
+  \ development and marketing, but not listed here)\n\n# Conclusion\nDeSci is a growing\
+  \ and important vertical for the Ethereum ecosystem. It can bring transactions,\
+  \ funding, attention and prestige to this community and Gnosis has a strong alignment\
+  \ both intellectually and ethically with this movement - the name Gnosis alone is\
+  \ rather poetic. It is our strong conviction that funding DeSci on Gnosis would\
+  \ benefit token holders, the Gnosis ecosystem and the GnosisDAO strategically over\
+  \ the long term due to the increased usage of Gnosis Chain, coupled with the liquidity\
+  \ seeking scientific usecases, and finally the strong network effects of being directly\
+  \ invovled with academics and institutional users."
+start: 1734299608
+end: 1734904408
+state: closed
+author: '0xBAC78374F87D02d3b0d6FAf82d8794201D40b35B'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 43843.784657742784
+scores:
+  - 556.0333839057151
+  - 43188.00816507305
+  - 99.74310876400136
+votes: 102
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash

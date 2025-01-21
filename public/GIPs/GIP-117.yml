@@ -1,53 +1,53 @@
-id: gip-117-strategic-partnership-with-backed-through-liquidity-incentives-on-gnosis-chain
-gip_number: 117
-url: https://forum.gnosis.io/t/gip-117-strategic-partnership-with-backed-through-liquidity-incentives-on-gnosis-chain
+id: '0xfc7151970441fc9057948f07721c515a6d8a3151563c084ee4f67032796178d9'
+gip_number: '117'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xfc7151970441fc9057948f07721c515a6d8a3151563c084ee4f67032796178d9
 title: Strategic Partnership with Backed through Liquidity Incentives on Gnosis Chain
-body: "## Executive Summary\n\nThis proposal suggests offering $1M worth of GNO tokens\
-  \ as liquidity incentives for Backed’s bTokens on Gnosis Chain, creating a unique\
-  \ value proposition for the ecosystem. Gnosis is currently the leading ecosystem\
-  \ after mainnet for tokenized equities according to RWA.xyz, and we want to strengthen\
-  \ these markets.\n\nWe propose to support the rollout of equity assets on Gnosis\
-  \ Chain through Backed, supported by GNO token incentives. This initiative aims\
-  \ to differentiate Gnosis Chain in the DeFi landscape and provide users with an\
-  \ opportunity to diversify from crypto to equities while earning additional yields.\n\
-  \nBacked brings real-world assets on-chain. Backed issues permissionless tokens\
-  \ that track the value of real-world assets and are fully collateralized by them,\
-  \ such as stocks or ETFs. Tokens are issued under an approved EU prospectus. Gnosis\
-  \ VC has led both of Backed’s investment rounds.\n\n## Specification\n\n### Liquidity\
-  \ Incentives\n\n  * GnosisDAO will allocate $1M worth of GNO tokens for liquidity\
-  \ incentives.\n  * These incentives will be distributed over a 6-month period.\n\
-  \n\n\n### Asset Selection and Incentive Distribution\n\n  * 5 equity assets will\
-  \ be selected for this initiative via a staged rollout.\n\n    * Initially, the\
-  \ bCSPX pool will be targeted for the launch of this initiative.\n    * Then pools\
-  \ of bNVDA and bCOIN will be deployed and incentives applied.\n    * Then pools\
-  \ of bMSTR and bTSLA will be deployed and incentives applied.\n  * Each asset will\
-  \ have its own pool, paired against sDAI deposits.\n\n  * $200k worth of GNO will\
-  \ be allocated to each pool.\n\n  * Incentives will be distributed proportionally\
-  \ over 6 months.\n\n\n\n\n## Rationale\n\nThis proposal offers several benefits:\n\
-  \n  1. Unique Value Proposition: By offering equity assets, Gnosis Chain differentiates\
+body: "# **GIP-117: Strategic Partnership with Backed through Liquidity Incentives\
+  \ on Gnosis Chain**\n\n## **Executive Summary**\n\nThis proposal suggests offering\
+  \ $1M worth of GNO tokens as liquidity incentives for Backed’s bTokens on Gnosis\
+  \ Chain, creating a unique value proposition for the ecosystem. Gnosis is currently\
+  \ the leading ecosystem after mainnet for tokenized equities according to [RWA.xyz](https://app.rwa.xyz/stocks),\
+  \ and we want to strengthen these markets.\n\nWe propose to support the rollout\
+  \ of equity assets on Gnosis Chain through Backed, supported by GNO token incentives.\
+  \ This initiative aims to differentiate Gnosis Chain in the DeFi landscape and provide\
+  \ users with an opportunity to diversify from crypto to equities while earning additional\
+  \ yields. \n\nBacked brings real-world assets on-chain. Backed issues permissionless\
+  \ tokens that track the value of real-world assets and are fully collateralized\
+  \ by them, such as stocks or ETFs. Tokens are issued under an approved EU prospectus.\
+  \ Gnosis VC has led both of Backed’s investment rounds.\n\n## **Specification**\n\
+  \n### **Liquidity Incentives**\n\n* GnosisDAO will allocate $1M worth of GNO tokens\
+  \ for liquidity incentives.  \n* These incentives will be distributed over a 6-month\
+  \ period.\n\n### **Asset Selection and Incentive Distribution**\n\n* 4 equity assets\
+  \ will be selected for this initiative via a staged rollout.   \n  * Initially,\
+  \ the bCSPX pool will be targeted for the launch of this initiative.  \n  * Then\
+  \ pools of bNVDA, bCOIN and bTSLA will be deployed and incentives applied.  \n*\
+  \ Each asset will have its own pool, paired against sDAI deposits.  \n* $250k worth\
+  \ of GNO will be allocated to each pool.  \n* Incentives will be distributed proportionally\
+  \ over 6 months.\n\n## **Rationale**\n\nThis proposal offers several benefits:\n\
+  \n1. **Unique Value Proposition**: By offering equity assets, Gnosis Chain differentiates\
   \ itself from other blockchain platforms. Gnosis already leads in this market currently,\
-  \ and with targeted incentives, Gnosis can become the home of tokenized equity trading.\n\
-  \  2. User Incentives: The additional 10% yield incentivizes users to choose Gnosis\
-  \ Chain for diversifying into equities.\n  3. Simplified Investment: Users can easily\
-  \ diversify from crypto to equities within the Gnosis ecosystem.\n  4. Strategic\
-  \ Partnership: The $1M GNO will strengthen our continued partnership with Backed.\n\
-  \n\n\n3 Likes\n"
-start: 1733219311
-end: null
-state: []
-author: null
+  \ and with targeted incentives, Gnosis can become the home of tokenized equity trading.\
+  \  \n2. **User Incentives**: The additional 10% yield incentivizes users to choose\
+  \ Gnosis Chain for diversifying into equities.  \n3. **Simplified Investment**:\
+  \ Users can easily diversify from crypto to equities within the Gnosis ecosystem.\
+  \  \n4. **Strategic Partnership**: The $1M GNO will strengthen our continued partnership\
+  \ with Backed."
+start: 1734355577
+end: 1734960377
+state: closed
+author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
 choices:
   - For
   - Against
   - Abstain
-scores_state: null
-scores_total: null
+scores_state: final
+scores_total: 131757.79195482266
 scores:
-  - 0
-  - 0
-  - 0
-votes: null
-quorum: null
+  - 131208.66330018474
+  - 282.0272504588574
+  - 267.10140417906143
+votes: 102
+quorum: 75000
 funding:
   amount: '1000000'
   currency: USD

@@ -1,12 +1,12 @@
-id: '0x7589d6160094f3e0b96921e1fda476cbe2afeb6f8a9c4ba6d591509047df17c7'
+id: '0x82c6f103d5fa8f12d8f60e377dd17f77fa5172ff6874f6cb7cae3dec833b7bf2'
 gip_number: '116'
-url: https://snapshot.org/#/gnosis.eth/proposal/0x7589d6160094f3e0b96921e1fda476cbe2afeb6f8a9c4ba6d591509047df17c7
-title: Should the DAO perform the following treasury operations?
+url: https://snapshot.org/#/gnosis.eth/proposal/0x82c6f103d5fa8f12d8f60e377dd17f77fa5172ff6874f6cb7cae3dec833b7bf2
+title: Re-do of:Should the DAO perform the following treasury operations?
 body: '# Executive Summary
 
   This proposal aims to execute some treasury operations, some aligned with governance
   (such as claiming and burning the vested GNO and the creation of the delegates.gnosis.eth
-  subdomain) and others are regular operations of the [GnosisDAO Safe](https://app.safe.global/balances?safe=eth:0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe).
+  subdomain) and others are regular operations of the GnosisDAO Safe.
 
   # Proposed Actions
 
@@ -16,458 +16,40 @@ body: '# Executive Summary
 
   Approve and withdraw WETH from Aave as ETH
 
-  Claim and burn 2.97m GNO from vesting contract
+  Claim and burn 3.15m GNO from vesting contract (changed from 2.97m due to time passed)
 
-  Transfer FRAX, COW, WBTC and stETH to the [treasury](https://app.safe.global/balances?safe=eth:0x849D52316331967b6fF1198e5E32A0eB168D039d)
+  Transfer FRAX, COW, WBTC and stETH to the treasury
 
-  Creation of subdomain delegates.gnosis.eth and subsequently transfer it to the [treasury](https://app.safe.global/balances?safe=eth:0x849D52316331967b6fF1198e5E32A0eB168D039d)
+  Creation of subdomain delegates.gnosis.eth and subsequently transfer it to the treasury
 
-  These actions will mainly occur from the [GnosisDAO Safe](https://app.safe.global/balances?safe=eth:0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe).
-  After the treasury gets the subdomain, karpatkey will move forward with the creation
-  of the delegates.gnosis.eth Snapshot subspace, as agreed by the DAO in [GIP 112](https://snapshot.org/#/gnosis.eth/proposal/0x509a53db27f35505fbae46855f39a5d2d274527ecf418a8fd7f0da03bc74aa49).
+  These actions will mainly occur from the GnosisDAO Safe. After the treasury gets
+  the subdomain, karpatkey will move forward with the creation of the delegates.gnosis.eth
+  Snapshot subspace, as agreed by the DAO in GIP 112.
 
   # Summary
 
-  Simulation [here](https://dashboard.tenderly.co/public/safe/safe-apps/simulator/74a0b906-2802-4d06-8091-b9cc702fd091)
-  (note: GNO and VCOW will vary due to claimable tokens increasing over time)
-
-  Subdomain: delegates.gnosis.eth
-
-  Payload summary
-
-  {
-
-  “version”: “1.1”,
-
-  “chainId”: “1”,
-
-  “createdAt”: 1731416945785,
-
-  “meta”: {
-
-  “name”: “November 12th, 2024 payload”,
-
-  “description”: “November 12th, 2024 payload. This withdraws all the tokens from
-  the Operations 0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe Safe and sends them to
-  the DAO 0x849D52316331967b6fF1198e5E32A0eB168D039d.”,
-
-  “txBuilderVersion”: “1.17.0”,
-
-  “createdFromSafeAddress”: “0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe”,
-
-  “createdFromOwnerAddress”: “0x0000000000000000000000000000000000000000”,
-
-  “checksum”: “0x”
-
-  },
-
-  “transactions”: [
-
-  {
-
-  “to”: “0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e”,
-
-  “data”: “0x5ef2c7f077651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e537bf8e9f402c7682dd94a95c2fa0d9df8e2fe38dacf6422ba96dd7eb49e9f00000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d000000000000000000000000231b0ee14048e9dccd1d247744d114a4eb5e8e6300000000000000000000000000000000000000000000000000000000000000b4”,
-
-  “value”: “0”,
-
-  “contractMethod”: {
-
-  “name”: “setSubnodeRecord”,
-
-  “inputs”: [
-
-  {
-
-  “type”: “bytes32”,
-
-  “name”: “node”,
-
-  “internalType”: “bytes32”
-
-  },
-
-  {
-
-  “type”: “bytes32”,
-
-  “name”: “label”,
-
-  “internalType”: “bytes32”
-
-  },
-
-  {
-
-  “type”: “address”,
-
-  “name”: “owner”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “address”,
-
-  “name”: “resolver”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint64”,
-
-  “name”: “ttl”,
-
-  “internalType”: “uint64”
-
-  }
-
-  ],
-
-  “payable”: false
-
-  },
-
-  “contractInputsValues”: {
-
-  “node”: “0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e”,
-
-  “label”: “0x537bf8e9f402c7682dd94a95c2fa0d9df8e2fe38dacf6422ba96dd7eb49e9f00”,
-
-  “owner”: “0x849D52316331967b6fF1198e5E32A0eB168D039d”,
-
-  “resolver”: “0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63”,
-
-  “ttl”: “180”
-
-  }
-
-  },
-
-  {
-
-  “to”: “0x4A7c7652aBd5E5e3467C458E42493630AAA7DDD6”,
-
-  “value”: “0”,
-
-  “data”: “0xc2e69ffd0000000000000000000000000da0c3e52c977ed3cbc641ff02dd271c3ed55afe000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d”
-
-  },
-
-  {
-
-  “to”: “0x030bA81f1c18d280636F32af80b9AAd02Cf0854e”,
-
-  “value”: “0”,
-
-  “data”: “0x095ea7b3000000000000000000000000a0d9c1e9e48ca30c8d8c3b5d69ff5dc1f6dffc24ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff”
-
-  },
-
-  {
-
-  “to”: “0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24”,
-
-  “value”: “0”,
-
-  “data”: “0x80500d20000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000da0c3e52c977ed3cbc641ff02dd271c3ed55afe”
-
-  },
-
-  {
-
-  “to”: “0xD057B63f5E69CF1B929b356b579Cba08D7688048”,
-
-  “value”: “0”,
-
-  “data”: “0x3e9ffbea”
-
-  },
-
-  {
-
-  “to”: “0xec83f750adfe0e52a8b0dba6eeb6be5ba0bee535”,
-
-  “value”: “0”,
-
-  “data”: “0xf3fef3a300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000274d017c76c6703c3279d”,
-
-  “contractInputsValues”: {
-
-  “_to”: “0x0000000000000000000000000000000000000000”,
-
-  “_value”: “2969484787466841719252893”
-
-  },
-
-  “contractMethod”: {
-
-  “constant”: false,
-
-  “inputs”: [
-
-  {
-
-  “type”: “address”,
-
-  “name”: “_to”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint256”,
-
-  “name”: “_value”,
-
-  “internalType”: “uint256”
-
-  }
-
-  ],
-
-  “name”: “withdraw”,
-
-  “outputs”: ,
-
-  “payable”: false,
-
-  “stateMutability”: “nonpayable”,
-
-  “type”: “function”
-
-  }
-
-  },
-
-  {
-
-  “to”: “0x853d955acef822db058eb8505911ed77f175b99e”,
-
-  “value”: “0”,
-
-  “data”: “0xa9059cbb000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d00000000000000000000000000000000000000000000005bc5b4fca1a2ca0000”,
-
-  “contractInputsValues”: {
-
-  “recipient”: “0x849D52316331967b6fF1198e5E32A0eB168D039d”,
-
-  “amount”: “1692900000000000000000”
-
-  },
-
-  “contractMethod”: {
-
-  “name”: “transfer”,
-
-  “inputs”: [
-
-  {
-
-  “type”: “address”,
-
-  “name”: “recipient”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint256”,
-
-  “name”: “amount”,
-
-  “internalType”: “uint256”
-
-  }
-
-  ],
-
-  “payable”: false
-
-  }
-
-  },
-
-  {
-
-  “to”: “0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab”,
-
-  “value”: “0”,
-
-  “data”: “0xa9059cbb000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d0000000000000000000000000000000000000000001b3388138bf5fcc1f994b2”,
-
-  “contractInputsValues”: {
-
-  “recipient”: “0x849D52316331967b6fF1198e5E32A0eB168D039d”,
-
-  “amount”: “32884347985905138540319922”
-
-  },
-
-  “contractMethod”: {
-
-  “name”: “transfer”,
-
-  “inputs”: [
-
-  {
-
-  “type”: “address”,
-
-  “name”: “recipient”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint256”,
-
-  “name”: “amount”,
-
-  “internalType”: “uint256”
-
-  }
-
-  ],
-
-  “payable”: false
-
-  }
-
-  },
-
-  {
-
-  “to”: “0x2260fac5e5542a773aa44fbcfedf7c193bc2c599”,
-
-  “value”: “0”,
-
-  “data”: “0xa9059cbb000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d0000000000000000000000000000000000000000000000000000000000190e10”,
-
-  “contractInputsValues”: {
-
-  “recipient”: “0x849D52316331967b6fF1198e5E32A0eB168D039d”,
-
-  “amount”: “1642000”
-
-  },
-
-  “contractMethod”: {
-
-  “name”: “transfer”,
-
-  “inputs”: [
-
-  {
-
-  “type”: “address”,
-
-  “name”: “recipient”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint256”,
-
-  “name”: “amount”,
-
-  “internalType”: “uint256”
-
-  }
-
-  ],
-
-  “payable”: false
-
-  }
-
-  },
-
-  {
-
-  “to”: “0xae7ab96520de3a18e5e111b5eaab095312d7fe84”,
-
-  “value”: “0”,
-
-  “data”: “0xa9059cbb000000000000000000000000849d52316331967b6ff1198e5e32a0eb168d039d0000000000000000000000000000000000000000000000000795e473e4d07c7e”,
-
-  “contractInputsValues”: {
-
-  “recipient”: “0x849D52316331967b6fF1198e5E32A0eB168D039d”,
-
-  “amount”: “546594116206623870”
-
-  },
-
-  “contractMethod”: {
-
-  “name”: “transfer”,
-
-  “inputs”: [
-
-  {
-
-  “type”: “address”,
-
-  “name”: “recipient”,
-
-  “internalType”: “address”
-
-  },
-
-  {
-
-  “type”: “uint256”,
-
-  “name”: “amount”,
-
-  “internalType”: “uint256”
-
-  }
-
-  ],
-
-  “payable”: false
-
-  }
-
-  }
-
-  ]
-
-  }'
-start: 1732292497
-end: 1732897297
-state: closed
+  Simulation here (note: GNO and VCOW will vary due to claimable tokens increasing
+  over time)
+
+  Subdomain: delegates.gnosis.eth'
+start: 1737106642
+end: 1737711442
+state: active
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
 choices:
   - For
   - Against
   - Abstain
-scores_state: final
-scores_total: 92381.87958121684
+scores_state: pending
+scores_total: 30817.000069070957
 scores:
-  - 92113.6569232926
-  - 0.000109650887329072
-  - 268.222548273342
-votes: 62
+  - 30812.166475298087
+  - 4.833593772871124
+  - 0
+votes: 70
 quorum: 75000
 funding:
-  amount: 2.97m
+  amount: 3,150,000
   currency: GNO
   confidence: High
   model_used: gemini-1.5-flash

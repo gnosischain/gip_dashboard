@@ -296,7 +296,8 @@ scores:
 votes: 100
 quorum: 75000
 funding:
-  amount: '40000'
-  currency: xDAI
-  confidence: High
-  model_used: gemini-1.5-flash
+  amount: null
+  currency: null
+  confidence: null
+  error: 429 Resource has been exhausted (e.g. check quota).
+  model_used: none

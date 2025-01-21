@@ -1,0 +1,77 @@
+id: gip-118-should-sdai-be-replaced-by-susds-in-the-bridge
+gip_number: 118
+url: https://forum.gnosis.io/t/gip-118-should-sdai-be-replaced-by-susds-in-the-bridge
+title: Should sDAI be replaced by sUSDS in the bridge?
+body: "#### Executive Summary\n\nSince MakerDAO became Sky and started issuing their\
+  \ USDS stablecoin, they have also introduced the Sky Savings Rate (SSR), which is\
+  \ now typically 1% higher than the DAI Savings Rate (DSR). This proposal aims to\
+  \ replace the current sDAI in the bridge on Ethereum’s side with sUSDS in order\
+  \ to increase the yield for the Gnosis sDAI. The native Gnosis Chain token would\
+  \ remain xDAI.\n\n#### Introduction\n\nGnosis Chain has used xDAI, which is DAI\
+  \ bridged from mainnet, as its native token since inception. However, with the recent\
+  \ changes by MakerDAO / Sky, and their push for USDS instead of DAI, it has become\
+  \ clear that we need to stay current with the broader ecosystem in order to remain\
+  \ relevant and get access to the best yield.\n\n#### Proposed Changes\n\nThe bridge\
+  \ would require an upgrade, that would include:\n\n  * Swapping all the sDAI currently\
+  \ held by the bridge to sUSDS \n    * Similarly to an upgrade made last year (Deposit\
+  \ DAI of the xDAI bridge in sDAI vault from Spark)\n  * Adding support for depositing\
+  \ USDS instead in addition to DAI \n    * DAI would get swapped 1:1 for USDS and\
+  \ then sUSDS in the bridge\n  * Replacing the currency for withdrawal from DAI to\
+  \ USDS on Ethereum\n\n\n\nAs an alternative, we could also introduce an option to\
+  \ automatically swap back to DAI instead of USDS, although this might incur a fee\
+  \ later down the line.\n\n#### Impact and Benefits\n\nThe main benefit is that we\
+  \ would get higher yield (typically 1% more) on the stablecoins in our bridge. Currently,\
+  \ the SSR is at 12.5%, while the DSR is at 11.5%.\n\nThe main impacts are:\n\n \
+  \ * We would be trusting USDS, which has a blacklist function, instead of DAI, which\
+  \ is more neutral. However, one could argue that the trust assumptions are similar,\
+  \ as the same company ultimately manages the underlying assets. It would also be\
+  \ an extremely bad precedent for them to blacklist a bridge.\n  * Users that bridged\
+  \ DAI into Gnosis would now be forced to withdraw USDS. This could also potentially\
+  \ impact smart contracts, that could rely on the bridge to provide them with DAI\
+  \ instead of USDS, which could result in them breaking. A thorough analysis will\
+  \ be conducted beforehand to make sure that no smart contract currently relies on\
+  \ this.\n\n\n\n#### Implementation Plan\n\n  1. Make sure that no smart contract\
+  \ relies on getting DAI from the bridge rather than a different token (in this case\
+  \ USDS)\n  2. Implement and test a bridge upgrade that covers the proposed changes\n\
+  \  3. Submit the upgrade to the bridge signers\n\n\n\n#### Risks and Challenges\n\
+  \nThe main challenge is to make sure that the community agrees on this change, which\
+  \ is why we’re gauging interest with this GIP.\n\nObviously, there’s always a risk\
+  \ in deploying and upgrading smart contracts, but our team is experienced and has\
+  \ successfully implemented many such upgrades. All changes will of course be audited\
+  \ and tested thoroughly on Chiado.\n\n#### Team / Organization\n\nThis would mostly\
+  \ be taken care of by the bridge team.\n\n#### Conclusion\n\nWe believe that it\
+  \ is time to leave DAI behind in favor of USDS, which is now being pushed by Sky,\
+  \ in order to benefit from the higher yield on sUSDS in comparison to sDAI.\n\n\
+  ## Gnosis Snapshot\n\n_Phase 2 Proposals: Please ignore this section, and leave\
+  \ as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a link to the\
+  \ corresponding Gnosis Snapshot poll you’ve created._\n\n5 Likes\n"
+start: 1733757849
+end: null
+state:
+  - phase-2
+author: 'Philippe Schommers &lt;philippe@gnosis.io&gt;
+
+  status: Draft
+
+  type: Meta
+
+  created: 2024-12-09
+
+  d&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: Low
+  model_used: gemini-1.5-flash
