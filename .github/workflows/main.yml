@@ -39,8 +39,9 @@ jobs:
 
     - name: Create virtual environment
       run: |
+        rm -rf /home/runner/work/gip_dashboard/gip_dashboard/.venv
         python -m venv /home/runner/work/gip_dashboard/gip_dashboard/.venv
-        ls -la /home/runner/work/gip_dashboard/gip_dashboard
+        ls -la /home/runner/work/gip_dashboard/gip_dashboard/.venv
 
     - name: Install dependencies
       run: |
