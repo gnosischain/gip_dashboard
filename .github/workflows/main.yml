@@ -22,21 +22,24 @@ jobs:
       with:
         python-version: '3.11' 
 
+    - name: Install python3-venv
+      run: apt-get install -y python3-venv
+
     - name: Install dependencies
       run: |
         python -m venv .venv
-        # source .venv/bin/activate
-        .venv/bin/python -m pip install --upgrade pip
-        .venv/bin/python -m pip install -r src/scripts/requirements.txt
-        # pip install -r src/scripts/requirements.txt  # Assumes you have a requirements.txt file
+        source .venv/bin/activate
+        #.venv/bin/python -m pip install --upgrade pip
+        #.venv/bin/python -m pip install -r src/scripts/requirements.txt
+        pip install -r src/scripts/requirements.txt  # Assumes you have a requirements.txt file
 
     - name: Run scraping script
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
       run: |
-        .venv/bin/python src/scripts/snapshot_crawler.py
-        # source .venv/bin/activate
-        # python src/scripts/snapshot_crawler.py
+        #.venv/bin/python src/scripts/snapshot_crawler.py
+        source .venv/bin/activate
+        python src/scripts/snapshot_crawler.py
 
     - name: Pull latest changes
       run: |
