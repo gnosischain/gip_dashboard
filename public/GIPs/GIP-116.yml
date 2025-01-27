@@ -34,19 +34,19 @@ body: '# Executive Summary
   Subdomain: delegates.gnosis.eth'
 start: 1737106642
 end: 1737711442
-state: active
+state: closed
 author: '0x8787FC2De4De95c53e5E3a4e5459247D9773ea52'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 30817.000069070957
+scores_state: final
+scores_total: 126785.67884281011
 scores:
-  - 30812.166475298087
+  - 126778.58090829644
   - 4.833593772871124
-  - 0
-votes: 70
+  - 2.264340740828577
+votes: 93
 quorum: 75000
 funding:
   amount: 3,150,000
