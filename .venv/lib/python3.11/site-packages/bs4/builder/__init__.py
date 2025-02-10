@@ -192,17 +192,11 @@ class TreeBuilder(object):
      doesn't keep track of this information, then store_line_numbers
      is irrelevant.
 
-    :param attribute_dict_class: A Tag's attribute values (available
-      as tag.attrs) willl be stored in an instance of this class.
-      The default is Beautiful Soup's built-in `AttributeDict` class and
-      you will probably never need to change it.
-
     :param attribute_dict_class: The value of a multi-valued attribute
       (such as HTML's 'class') willl be stored in an instance of this
       class.  The default is Beautiful Soup's built-in
       `AttributeValueList`, which is a normal Python list, and you
       will probably never need to change it.
-
     """
 
     USE_DEFAULT: Any = object()  #: :meta private:
