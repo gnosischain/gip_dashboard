@@ -1,0 +1,223 @@
+id: gip-122-should-gnosisdao-support-the-continued-development-of-gnosis-vpn-to-bring-it-to-market
+gip_number: 122
+url: https://forum.gnosis.io/t/gip-122-should-gnosisdao-support-the-continued-development-of-gnosis-vpn-to-bring-it-to-market
+title: Should GnosisDAO support the continued development of Gnosis VPN to bring it
+  to market?
+body: "## A) Turn the developer-oriented PoC into an MVP usable by end users.\n\n\
+  The current PoC requires users to install, set up and maintain their own HOPR node.\
+  \ They must also configure Wireguard manually as well as use a command-line interface\
+  \ to start a Gnosis VPN connection. Although this is well-documented and tested,\
+  \ this is still a high barrier to entry and requires time, knowledge and a willingness\
+  \ to commit significant capital in the form of staked wxHOPR.\n\nThe Gnosis VPN\
+  \ MVP will be usable by end users without that strong technical knowledge. To achieve\
+  \ this, we have outlined the following deliverables:\n\n  1. Remove dedicated HOPR\
+  \ node requirement\n\n\n  * HOPR edge node support: Running a HOPR node on end-user\
+  \ devices (e.g., laptops) is hard because these provide limited uptime, resources\
+  \ and connectivity compared to servers in datacenters or dappnodes at home. However,\
+  \ supporting that deployment scenario is critical to making applications like Gnosis\
+  \ VPN viable and scale to large amounts of users.\n  * Automated on-boarding: The\
+  \ current multi-step process to set up the node and configure it correctly will\
+  \ be shortened and require as little user input as possible. While this automation\
+  \ will be complex, it will reduce the points where users could fail in their journey.\n\
+  \n\n  2. Provide VPN app which handles all configuration and logic\n\n\n  * Support\
+  \ macOS and Linux (selected distributions): These platforms have been chosen to\
+  \ support a large potential end-user group while keeping desktop application development\
+  \ in a manageable scope since each platform adds complexity. More platforms will\
+  \ be added in follow-up work.\n  * “Single-click” installation: A smooth and fast\
+  \ installation process must be supported for all supported platforms. This will\
+  \ be a big improvement over the PoC which requires downloading pre-built binaries\
+  \ manually and setting them up locally using a shell. However, this work comes with\
+  \ lots of platform-specific requirements and testing effort.\n\n\n\n## B) Turn the\
+  \ MVP into a market-ready product (version 1.0).\n\nRemoving the need for a dedicated\
+  \ full HOPR node is a major milestone in building a viable Gnosis VPN. However,\
+  \ in keeping with the Gnosis 3.0 vision, it will be necessary to move beyond highly\
+  \ embedded crypto users and attract a broader range of user types. Looking at standard\
+  \ VPN usage behaviours, it’s clear that we will need to support a wide variety of\
+  \ devices and operating systems, particularly mobile, bringing a native web3 product\
+  \ to mobile platforms.\n\nThe MVP UX will be optimized to enable end users to get\
+  \ their VPN up and running as quickly as possible. Global content restrictions,\
+  \ which were mainly in place due to bandwidth requirements will be lifted.\n\nWe\
+  \ envision the following deliverables:\n\n  1. Mobile platform support\n\n\n  *\
+  \ iOS / iPadOS: Only selected versions, likely the most recent major version, will\
+  \ be supported. More versions will be added in follow-up work. The VPN should integrate\
+  \ as a VPN service in the OS VPN subsystem. This requires extensive work on new\
+  \ test and release automation as is usual for mobile applications.\n  * Android:\
+  \ Only selected versions and devices, likely the most recent major version, will\
+  \ be supported. More versions and devices will be added in follow-up work. This\
+  \ requires extensive work on new test and release automation as is usual for mobile\
+  \ applications.\n\n\n  2. Support desktop platforms\n\n\n  * macOS: Better integration\
+  \ as a network VPN service and support for older OS releases. Ideally the app should\
+  \ be published through the App Store; however, that is dependent on approval by\
+  \ Apple.\n  * Linux: More supported distributions and package managers.\n\n\n  3.\
+  \ Short time-to-first-use\n\n\n  * Under 2min to set up and open a VPN connection:\
+  \ Even privacy-valuing users are unwilling to wait long periods simply because a\
+  \ product is decentralized. Hitting this target depends on the HOPR edge node support\
+  \ and being able to connect to the HOPR network and use it within a very short time.\n\
+  \n\n  4. Integrated onboarding and discovery via Circles v2\n\n\n  * Use Circles\
+  \ v2 as the identification method: This and the following items will begin with\
+  \ research into their feasibility, but we believe Circles v2 is the best way to\
+  \ streamline onboarding, discovery, and UX within the Gnosis ecosystem without creating\
+  \ additional tokens.\n  * Integrate with existing Circles v2 ecosystem\n  * Reduce\
+  \ UX friction by not requiring additional registration\n\n\n\n## C) Scale the underlying\
+  \ HOPR network to ensure scalability of the Gnosis VPN product.\n\nGnosis VPN works\
+  \ by channeling requests to dedicated exit nodes over the HOPR mixnet, via up to\
+  \ three HOPR relay nodes. However, this naturally means that as user numbers grow,\
+  \ the number of relay and exit nodes must scale to support this. As the network\
+  \ grows, discoverability and pathfinding become more crucial.\n\nWork will be done\
+  \ to optimize the HOPR protocol to ensure a feasible ratio between users and node\
+  \ runners, but ultimately for a decentralized network a higher ratio here is a feature,\
+  \ not a bug. Growing and supporting a network of potentially tens of thousands of\
+  \ nodes will require significant work and optimization.\n\nWe envision the following\
+  \ deliverables here. These are intentionally broad because the nature of this work\
+  \ is to experiment, test, and improve, and problems cannot easily be predicted in\
+  \ advance. However, the HOPR team has met with excellent success at meeting its\
+  \ scaling goals thus far.\n\n  1. HOPR network supports thousands of mix nodes:\
+  \ The current size of the network is around 500 nodes. Most p2p sub-systems and\
+  \ protocols have to be improved to reliably scale beyond 1000 nodes and support\
+  \ 1000s of users. Having more mix nodes is a prerequisite for higher global bandwidth\
+  \ support.\n  2. HOPR network provides enough bandwidth to handle Gnosis VPN requirements:\
+  \ The performance of individual mix nodes must be optimized to handle traffic more\
+  \ efficiently without sacrificing privacy guarantees. Moreover, network topology\
+  \ and pathfinding must be improved to provide sustained bandwidth for individual\
+  \ edge nodes.\n  3. Grow the number of HOPR node runners and Gnosis VPN exit node\
+  \ runners to support the MVP: From version 1.0, the economics of Gnosis VPN should\
+  \ be such that sufficient revenue exists to support the necessary node runners.\
+  \ However, until that time, it will be necessary to incentivize users to join to\
+  \ ensure we have a network of sufficient size to support the user base and test\
+  \ improvements on the road to version 1. The proposal requests an additional 500\
+  \ GNO to use as incentives for these initiatives.\n\n\n\n## D) Harden the privacy\
+  \ and censorship-resistance of all Gnosis VPN product components.\n\nA common shortcoming\
+  \ with VPNs is that their entire IP ranges are deny-listed by internet services\
+  \ or internet access providers, rendering the VPNs useless to their users. Gnosis\
+  \ VPN is well-placed to mitigate this thanks to its decentralized network which\
+  \ leverages the internet access of all network participants, whose IPs are likely\
+  \ to fall in the residential range, which is harder to block.\n\nHowever, ensuring\
+  \ that Gnosis VPN becomes uncensorable at scale will require significant research\
+  \ and development specifically in the second half of the proposal. This work is\
+  \ split into four main contributions:\n\n  1. Local VPN entry: Each user will have\
+  \ their own access into the VPN platform through a user-owned HOPR node. In the\
+  \ PoC this is a full HOPR node, while the final product relies on the HOPR edge\
+  \ node functionality (as described in A.1.i). Either way, access to the VPN does\
+  \ not rely on third-party systems and is therefore fully decentralized.\n  2. Decentralized\
+  \ VPN exit: Gnosis VPN uses many different servers run by different network participants.\
+  \ This ensures that even if individual entities are shut-down, the Gnosis VPN product\
+  \ as whole will continue to function. While the PoC will work mainly through servers\
+  \ which are run by Gnosis itself, further decentralization will be achieved in the\
+  \ MVP and final product.\n  3. Permissionless server registry and discovery: Server\
+  \ operators must be able to show their availability to users. Therefore, they must\
+  \ be able to register themselves in a service registry and users must be able to\
+  \ discover available servers. We plan to leverage Circles v2 in order to create\
+  \ decentralized trust groups which enables small and tiny Gnosis VPN server operators\
+  \ to exist in a permissionless manner.\n  4. Protection against abuse: Gnosis VPN\
+  \ server operators must be able to discover and prevent abuse of the service they\
+  \ provide. The definition of abuse must be configurable, with specific settings\
+  \ decided by each exit node operator. Operators must be able to deny service to\
+  \ users if abuse is detected, and must be able to reflect that in the trust graph\
+  \ using Circles v2. For the service to be usable, operators’ abuse configurations\
+  \ must be easily discoverable by users, allowing them to understand the capabilities\
+  \ provided by a given server and to choose their exit server accordingly.\n\n\n\n\
+  As with anything involving complex network topologies, these last two deliverables\
+  \ will potentially prove to be challenging problems. The final goal is an uncensorable\
+  \ version of Gnosis VPN which gives any users striving for maximum anonymity the\
+  \ ability to create their own closed group within the wider VPN service, accessible\
+  \ only to those they trust. This is very different from standard P2P and DHT-based\
+  \ approaches to discovery and broadcast. While we believe Circles v2 will help unlock\
+  \ these challenges, we still expect these parts of the project to be very research\
+  \ heavy with long timelines.\n\n# Rationale\n\nThe need for this follow-up proposal\
+  \ was already outlined in GIP-98. However, almost a year later it is worth revisiting\
+  \ and sanity checking this.\n\nThe need for a decentralized, trustless, uncensorable\
+  \ VPN service is stronger than ever. Digital privacy has never been more under threat,\
+  \ and access to web services is increasingly gated by those services, ISPs and states.\n\
+  \nThe PoC delivered through GIP-98 shows that an anonymous, unblockable VPN is feasible.\
+  \ In addition, the challenges to provide high performance, while real, are less\
+  \ pronounced than we feared. PoC performance in ideal conditions was 100x higher\
+  \ than predicted.\n\nA VPN service is also a natural fit for the Gnosis 3.0 vision\
+  \ of onboarding more users to the Gnosis ecosystem. The value of the global VPN\
+  \ market is estimated at over $70b annually in 2024, growing to half a trillion\
+  \ dollars by 2034. The pandemic and rise in remote working has triggered a boom\
+  \ in the already fast-growing industry, with VPN usage estimated to have jumped\
+  \ by over 10% in the US in the past year.\n\nAlthough Gnosis VPN will be a Gnosis\
+  \ product, the HOPR team is best placed to continue development through this second\
+  \ stage. We have the expertise and momentum from working on Phase 1, and Phase 2\
+  \ includes challenging architecture, cryptography, research, and mechanism design\
+  \ problems which no other team is better equipped to tackle successfully.\n\nThe\
+  \ HOPR team is small, focused, and consistently produces results. GIP-98 was completed\
+  \ on time and within budget. We hit all our reporting and milestone deadlines, and\
+  \ the results exceeded the stipulated deliverables by orders of magnitude. We have\
+  \ already successfully worked with the Gnosis team to establish the Gnosis-hosted\
+  \ infrastructure for the PoC and are well-placed to continue working with Gnosis\
+  \ on the much broader range of challenges presented by Phase 2, which include business\
+  \ development and legal considerations.\n\n# Project Timeline, Milestones and KPIs\n\
+  \nThe proposed start of this project is from the moment the proposal is voted upon\
+  \ and executed. The project will run for 24 months. Development will be fully Free\
+  \ and Open Source, and progress reports will be provided to GnosisDAO on a quarterly\
+  \ basis, as we did for GIP-98.\n\n## Reporting and Updates\n\nIn addition to providing\
+  \ quarterly reports, we plan to publish three major product updates over the course\
+  \ of this project:\n\n  1. MVP (Month 9) – Focusing on aspect A\n  2. Version 1\
+  \ (Month 18) – Focusing on aspects B and C\n  3. Version 2 (Month 24) – Focusing\
+  \ on aspect D\n\n\n\nAlthough each update focuses on particular aspects of the deliverables\
+  \ outlined above, the interconnected nature of the development and research means\
+  \ that each update will include full and partial deliverables from across the whole\
+  \ project scope. The diagram below shows the full list of deliverables associated\
+  \ with each update.  \n\n\n![GIP-122-roadmapGIP-122-roadmap1313×1313 82.1 KB]( \"\
+  GIP-122-roadmap\")\n\nIn addition, by month 6 the current PoC will be updated to\
+  \ an unrestricted version, with a significantly streamlined onboarding process.\n\
+  \nMinor product updates might be published within each of these timeframes in varying\
+  \ frequencies depending on the amount of bug-fixes and new features.\n\n## KPIs\n\
+  \nTo ensure the project is on track, six-monthly user KPIs will be used to assess\
+  \ progress. By month 6, the unrestricted version of the PoC will be able to support\
+  \ all HOPR node runners as users.\n\nFrom month 12, monthly active users will be\
+  \ defined based on Wireguard server registrations and activity contributing to HOPR\
+  \ protocol revenue.\n\nMonth | Version | User KPI  \n---|---|---  \n6 | Unrestricted\
+  \ PoC | Support for all HOPR node runners  \n12 | MVP | 100 MAU  \n18 | Version\
+  \ 1 | 150 MAU  \n24 | Version 2 | 500 MAU  \n  \n## Timeline\n\nThe table below\
+  \ collates the timelines for this project, along with the various versions, deliverables\
+  \ and KPIs\n\nMonth | Version Update | Full Deliverables | Partial Deliverables\
+  \ | KPI  \n---|---|---|---|---  \n6 | PoC (unrestricted) |  |  | Usable by all HOPR\
+  \ node runners  \n9 | MVP | A1,A2,D1 | B1,B2,B3,C1,D2 |   \n12 |  |  |  | 100 MAU\
+  \  \n18 | Version 1 | B2,B3,B4,C1,D2 | B1,C2,D3,D4 | 150 MAU  \n24 | Version 2 |\
+  \ B1,D2,D3,D4 |  | 500 MAU  \n  \n# About HOPR\n\nHOPR is a Swiss-based project\
+  \ building privacy infrastructure for web3. The HOPR network is a mixnet which uses\
+  \ proof-of-relay to incentivize relay nodes using the HOPR token.\n\nHOPR has been\
+  \ active since 2020 and launched its HOPR token in February 2021. HOPR’s mixnet\
+  \ is fully functional, and currently has over 300 active relaying nodes. Of these,\
+  \ fewer than 10% are run by the HOPR team.\n\nHOPR has a longstanding relationship\
+  \ with Gnosis. The HOPR network is incentivized using the HOPR token on Gnosis Chain.\
+  \ HOPR’s staking and node management tools are built on top of Safe. In 2022, HOPR\
+  \ conducted research in collaboration with Gnosis to highlight potential privacy\
+  \ issues related to validator sniping on Gnosis Beacon Chain.\n\nSince 2024, HOPR\
+  \ has been working on Gnosis VPN, the first fully decentralized, trustless, uncensorable\
+  \ VPN network.\n\n# Funding and Team\n\nHOPR is requesting $4.8m to fund this proposal,\
+  \ paid in four equal installments of $1.2m. The first will be paid when the proposal\
+  \ passes, with subsequent installments paid every six months, contingent on hitting\
+  \ the user milestones outlined above. In exchange, GnosisDAO will receive HOPR tokens\
+  \ at a 90-day TWAP ending on the day of each installment.\n\nIn addition, similar\
+  \ to GIP-98, 500 GNO would be provided to incentivize the onboarding of new node\
+  \ runners to bootstrap the service.\n\nHOPR has a streamlined, purely tech-focused\
+  \ team consisting of 9 full time engineers who work exclusively on HOPR. As part\
+  \ of this proposal, we would employ a 10th engineer to focus full-time on testing\
+  \ and QA and later on an 11th engineer to strengthen our R&D team.\n\nAll team members\
+  \ and their work can be found in the respective repositories of the following GitHub\
+  \ organization: HOPR · GitHub\n\n8 Likes\n"
+start: 1739478163
+end: null
+state:
+  - phase-2
+author: Sebast&hellip;
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash

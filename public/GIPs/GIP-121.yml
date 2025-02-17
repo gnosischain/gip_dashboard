@@ -1,0 +1,80 @@
+id: gip-121-should-gnosisdao-accept-a-combined-total-of-7-5-ownership-for-incubating-karpatkey-dao
+gip_number: 121
+url: https://forum.gnosis.io/t/gip-121-should-gnosisdao-accept-a-combined-total-of-7-5-ownership-for-incubating-karpatkey-dao
+title: Should GnosisDAO accept a combined total of 7.5% ownership for incubating karpatkey
+  DAO?
+body: "## About the KPK Token\n\nThe goal of the KPK token is to align the parties\
+  \ actively contributing to the delivery of karpatkey’s success. Tokenholders can\
+  \ vote on key decisions, such as treasury management, budget allocations, and strategic\
+  \ initiatives like buybacks or M&A activities, to align with karpatkey’s long-term\
+  \ sustainability. The token’s utility is focused on facilitating community-driven\
+  \ decision-making and fostering an active, engaged ecosystem.\n\nKPK will be deployed\
+  \ initially on Ethereum Mainnet, with a fixed supply of 1 billion tokens. It will\
+  \ be non-transferrable at launch, with karpatkey DAO reserving its right to decide\
+  \ if and when to activate transferability.\n\n## How does GnosisDAO benefit from\
+  \ this proposal?\n\nAs described in the introduction, GnosisDAO has been an essential\
+  \ and fundamental partner to karpatkey since beginning its services to GnosisDAO\
+  \ in 2021. In appreciation of its support, this proposal seeks to allocate a further\
+  \ 5% of the KPK token supply to GnosisDAO immediately upon launch, combined with\
+  \ the 2.5% specified in GIP-20, increasing GnosisDAO’s share of ownership up to\
+  \ 7.5%.\n\nBy positioning GnosisDAO as a key tokenholder in karpatkey DAO, this\
+  \ proposal seeks to maintain strong and strategic alignment between the two DAOs,\
+  \ ensuring an ongoing place for GnosisDAO at the centre of karpatkey’s network and\
+  \ at the forefront of its technological innovation and progress.\n\n# Specification\n\
+  \nThis proposal directs karpatkey to deploy the KPK token and allocate 5% of its\
+  \ airdrop to GnosisDAO, bringing GnosisDAO’s total stake in KPK to 7.5% of the fully\
+  \ diluted supply.\n\nUpon approval:\n\n  * KPK will be deployed by the karpatkey\
+  \ team, formalizing vesting for the 2.5% KPK allocation from GIP-20 (2-year vesting,\
+  \ already vested) and establishing a 2-year vesting plan for the 5% allocation to\
+  \ GnosisDAO. The vesting terms for the airdrop align with karpatkey’s 2024 investment\
+  \ round and will begin on TTE or 1 year after this proposal passes, whichever comes\
+  \ first.\n  * This proposal does not disqualify GnosisDAO from future additional\
+  \ airdrops.\n  * All remaining KPK beside the GnosisDAO allocation will be sent\
+  \ to the karpatkey treasury.\n  * Governance processes for karpatkey DAO will be\
+  \ introduced gradually in the coming weeks.\n  * The launch of the KPK token and\
+  \ karpatkey DAO will not affect karpatkey’s ongoing service arrangements under GIP-20,\
+  \ GIP-58, and GIP-95.\n\n\n\nIf this proposal is not approved by GnosisDAO, karpatkey\
+  \ will proceed with launching its token and DAO independently while continuing its\
+  \ plans. GnosisDAO will remain a close partner and receive the 2.5% allocation from\
+  \ GIP-20 alongside other investors. Any future allocations or investments involving\
+  \ GnosisDAO will remain open for discussion and subject to mutual agreement between\
+  \ both DAOs.\n\n# Disclaimer\n\nThe plans outlined in this proposal are for discussion\
+  \ purposes only and can be subject to further changes. They may also need to be\
+  \ (re)structured to account for legal, regulatory, or technical developments and\
+  \ governance considerations. This document should not be construed as an offering\
+  \ of securities, taken as the basis for making investment decisions, nor be construed\
+  \ as a recommendation to engage in any transactions.\n\n14 Likes\n\nStaworth Limited\
+  \ - Delegate Platform\n\nGIP-92: Should Gnosis DAO spin-off karpatkey DAO and deploy\
+  \ the KPK Token?\n"
+start: 1739469417
+end: null
+state: []
+author: '@karpatkey
+
+  status: Draft
+
+  type: Meta
+
+  created: 2025-02-13
+
+
+  Simple Summary
+
+  This proposal signals GnosisDA&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash
