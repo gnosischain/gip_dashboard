@@ -49,19 +49,19 @@ body: "**Executive Summary**\nSince MakerDAO became Sky and started issuing thei
   \ by Sky, in order to benefit from the higher yield on sUSDS in comparison to sDAI."
 start: 1739546679
 end: 1740151479
-state: active
+state: closed
 author: '0xF23fd62E9566262a009851D0C0E70B3280e2EAd7'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 24411.733684893363
+scores_state: final
+scores_total: 129608.30664976023
 scores:
-  - 24207.345941264382
-  - 204.38774362897777
+  - 129369.35106871072
+  - 238.95558104948037
   - 0
-votes: 62
+votes: 95
 quorum: 75000
 funding:
   amount: null
