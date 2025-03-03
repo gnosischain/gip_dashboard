@@ -103,7 +103,7 @@ body: "## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Re
   \ significant step in the evolution of prediction markets, blending the AI infrastructure\
   \ within the Gnosis ecosystem. The requested funding will enable the development,\
   \ maintenance and the growth of the platform bringing Omen to a position of leading\
-  \ AI agent driven prediction market space.\n\n7 Likes\n"
+  \ AI agent driven prediction market space.\n\n8 Likes\n"
 start: 1727334351
 end: null
 state:
@@ -122,7 +122,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: 400000, 600
-  currency: WXDAI, GNO
+  amount: 400000 + 600
+  currency: WXDAI + GNO
   confidence: High
   model_used: gemini-1.5-flash

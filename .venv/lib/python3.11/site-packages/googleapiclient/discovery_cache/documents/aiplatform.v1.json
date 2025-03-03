@@ -983,6 +983,34 @@
 "https://www.googleapis.com/auth/cloud-platform"
 ]
 },
+"evaluateDataset": {
+"description": "Evaluates a dataset based on a set of given metrics.",
+"flatPath": "v1/projects/{projectsId}/locations/{locationsId}:evaluateDataset",
+"httpMethod": "POST",
+"id": "aiplatform.projects.locations.evaluateDataset",
+"parameterOrder": [
+"location"
+],
+"parameters": {
+"location": {
+"description": "Required. The resource name of the Location to evaluate the dataset. Format: `projects/{project}/locations/{location}`",
+"location": "path",
+"pattern": "^projects/[^/]+/locations/[^/]+$",
+"required": true,
+"type": "string"
+}
+},
+"path": "v1/{+location}:evaluateDataset",
+"request": {
+"$ref": "GoogleCloudAiplatformV1EvaluateDatasetRequest"
+},
+"response": {
+"$ref": "GoogleLongrunningOperation"
+},
+"scopes": [
+"https://www.googleapis.com/auth/cloud-platform"
+]
+},
 "evaluateInstances": {
 "description": "Evaluates instances based on a given metric.",
 "flatPath": "v1/projects/{projectsId}/locations/{locationsId}:evaluateInstances",
@@ -4900,7 +4928,7 @@
 "type": "string"
 },
 "updateMask": {
-"description": "Field mask is used to specify the fields to be overwritten in the FeatureGroup resource by the update. The fields specified in the update_mask are relative to the resource, not the full request. A field will be overwritten if it is in the mask. If the user does not provide a mask then only the non-empty fields present in the request will be overwritten. Set the update_mask to `*` to override all fields. Updatable fields: * `labels` * `description` * `big_query` * `big_query.entity_id_columns`",
+"description": "Field mask is used to specify the fields to be overwritten in the FeatureGroup resource by the update. The fields specified in the update_mask are relative to the resource, not the full request. A field will be overwritten if it is in the mask. If the user does not provide a mask then only the non-empty fields present in the request will be overwritten. Set the update_mask to `*` to override all fields. Updatable fields: * `labels` * `description` * `big_query` * `big_query.entity_id_columns` * `service_agent_type`",
 "format": "google-fieldmask",
 "location": "query",
 "type": "string"
@@ -19421,7 +19449,7 @@
 }
 }
 },
-"revision": "20250131",
+"revision": "20250212",
 "rootUrl": "https://aiplatform.googleapis.com/",
 "schemas": {
 "CloudAiLargeModelsVisionGenerateVideoResponse": {
@@ -20261,12 +20289,32 @@
 "id": "GoogleCloudAiplatformV1AutomaticResources",
 "properties": {
 "maxReplicaCount": {
-"description": "Immutable. The maximum number of replicas this DeployedModel may be deployed on when the traffic against it increases. If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale the model to that many replicas is guaranteed (barring service outages). If traffic against the DeployedModel increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, a no upper bound for scaling under heavy traffic will be assume, though Vertex AI may be unable to scale beyond certain replica number.",
+"description": "Immutable. The maximum number of replicas that may be deployed on when the traffic against it increases. If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale to that many replicas is guaranteed (barring service outages). If traffic increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, a no upper bound for scaling under heavy traffic will be assume, though Vertex AI may be unable to scale beyond certain replica number.",
 "format": "int32",
 "type": "integer"
 },
 "minReplicaCount": {
-"description": "Immutable. The minimum number of replicas this DeployedModel will be always deployed on. If traffic against it increases, it may dynamically be deployed onto more replicas up to max_replica_count, and as traffic decreases, some of these extra replicas may be freed. If the requested value is too large, the deployment will error.",
+"description": "Immutable. The minimum number of replicas that will be always deployed on. If traffic against it increases, it may dynamically be deployed onto more replicas up to max_replica_count, and as traffic decreases, some of these extra replicas may be freed. If the requested value is too large, the deployment will error.",
+"format": "int32",
+"type": "integer"
+}
+},
+"type": "object"
+},
+"GoogleCloudAiplatformV1AutoraterConfig": {
+"description": "The configs for autorater. This is applicable to both EvaluateInstances and EvaluateDataset.",
+"id": "GoogleCloudAiplatformV1AutoraterConfig",
+"properties": {
+"autoraterModel": {
+"description": "Optional. The fully qualified name of the publisher model or tuned autorater endpoint to use. Publisher model format: `projects/{project}/locations/{location}/publishers/*/models/*` Tuned model endpoint format: `projects/{project}/locations/{location}/endpoints/{endpoint}`",
+"type": "string"
+},
+"flipEnabled": {
+"description": "Optional. Whether to flip the candidate and baseline responses. This is only applicable to the pairwise metric. If enabled, also provide PairwiseMetricSpec.candidate_response_field_name and PairwiseMetricSpec.baseline_response_field_name. When rendering PairwiseMetricSpec.metric_prompt_template, the candidate and baseline fields will be flipped for half of the samples to reduce bias.",
+"type": "boolean"
+},
+"samplingCount": {
+"description": "Optional. Number of samples for each instance in the dataset. If not specified, the default is 4. Minimum value is 1, maximum value is 32.",
 "format": "int32",
 "type": "integer"
 }
@@ -21117,7 +21165,7 @@
 "type": "string"
 },
 "model": {
-"description": "Immutable. The name of the publisher model to use for cached content. Format: projects/{project}/locations/{location}/publishers/{publisher}/models/{model}",
+"description": "Immutable. The name of the `Model` to use for cached content. Currently, only the published Gemini base models are supported, in form of projects/{PROJECT}/locations/{LOCATION}/publishers/google/models/{MODEL}",
 "type": "string"
 },
 "name": {
@@ -22909,7 +22957,7 @@
 "type": "object"
 },
 "GoogleCloudAiplatformV1DedicatedResources": {
-"description": "A description of resources that are dedicated to a DeployedModel, and that need a higher degree of manual configuration.",
+"description": "A description of resources that are dedicated to a DeployedModel or DeployedIndex, and that need a higher degree of manual configuration.",
 "id": "GoogleCloudAiplatformV1DedicatedResources",
 "properties": {
 "autoscalingMetricSpecs": {
@@ -22921,20 +22969,20 @@
 },
 "machineSpec": {
 "$ref": "GoogleCloudAiplatformV1MachineSpec",
-"description": "Required. Immutable. The specification of a single machine used by the prediction."
+"description": "Required. Immutable. The specification of a single machine being used."
 },
 "maxReplicaCount": {
-"description": "Immutable. The maximum number of replicas this DeployedModel may be deployed on when the traffic against it increases. If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale the model to that many replicas is guaranteed (barring service outages). If traffic against the DeployedModel increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, will use min_replica_count as the default value. The value of this field impacts the charge against Vertex CPU and GPU quotas. Specifically, you will be charged for (max_replica_count * number of cores in the selected machine type) and (max_replica_count * number of GPUs per replica in the selected machine type).",
+"description": "Immutable. The maximum number of replicas that may be deployed on when the traffic against it increases. If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale to that many replicas is guaranteed (barring service outages). If traffic increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, will use min_replica_count as the default value. The value of this field impacts the charge against Vertex CPU and GPU quotas. Specifically, you will be charged for (max_replica_count * number of cores in the selected machine type) and (max_replica_count * number of GPUs per replica in the selected machine type).",
 "format": "int32",
 "type": "integer"
 },
 "minReplicaCount": {
-"description": "Required. Immutable. The minimum number of machine replicas this DeployedModel will be always deployed on. This value must be greater than or equal to 1. If traffic against the DeployedModel increases, it may dynamically be deployed onto more replicas, and as traffic decreases, some of these extra replicas may be freed.",
+"description": "Required. Immutable. The minimum number of machine replicas that will be always deployed on. This value must be greater than or equal to 1. If traffic increases, it may dynamically be deployed onto more replicas, and as traffic decreases, some of these extra replicas may be freed.",
 "format": "int32",
 "type": "integer"
 },
 "requiredReplicaCount": {
-"description": "Optional. Number of required available replicas for the deployment to succeed. This field is only needed when partial model deployment/mutation is desired. If set, the model deploy/mutate operation will succeed once available_replica_count reaches required_replica_count, and the rest of the replicas will be retried. If not set, the default required_replica_count will be min_replica_count.",
+"description": "Optional. Number of required available replicas for the deployment to succeed. This field is only needed when partial deployment/mutation is desired. If set, the deploy/mutate operation will succeed once available_replica_count reaches required_replica_count, and the rest of the replicas will be retried. If not set, the default required_replica_count will be min_replica_count.",
 "format": "int32",
 "type": "integer"
 },
@@ -23851,10 +23899,40 @@
 },
 "type": "object"
 },
+"GoogleCloudAiplatformV1EvaluateDatasetRequest": {
+"description": "Request message for EvaluationService.EvaluateDataset.",
+"id": "GoogleCloudAiplatformV1EvaluateDatasetRequest",
+"properties": {
+"autoraterConfig": {
+"$ref": "GoogleCloudAiplatformV1AutoraterConfig",
+"description": "Optional. Autorater config used for evaluation."
+},
+"dataset": {
+"$ref": "GoogleCloudAiplatformV1EvaluationDataset",
+"description": "Required. The dataset used for evaluation."
+},
+"metrics": {
+"description": "Required. The metrics used for evaluation.",
+"items": {
+"$ref": "GoogleCloudAiplatformV1Metric"
+},
+"type": "array"
+},
+"outputConfig": {
+"$ref": "GoogleCloudAiplatformV1OutputConfig",
+"description": "Required. Config for evaluation output."
+}
+},
+"type": "object"
+},
 "GoogleCloudAiplatformV1EvaluateInstancesRequest": {
 "description": "Request message for EvaluationService.EvaluateInstances.",
 "id": "GoogleCloudAiplatformV1EvaluateInstancesRequest",
 "properties": {
+"autoraterConfig": {
+"$ref": "GoogleCloudAiplatformV1AutoraterConfig",
+"description": "Optional. Autorater config used for evaluation."
+},
 "bleuInput": {
 "$ref": "GoogleCloudAiplatformV1BleuInput",
 "description": "Instances and metric spec for bleu metric."
@@ -24188,6 +24266,21 @@
 "explanationType": {
 "description": "Explanation type. For AutoML Image Classification models, possible values are: * `image-integrated-gradients` * `image-xrai`",
 "type": "string"
+}
+},
+"type": "object"
+},
+"GoogleCloudAiplatformV1EvaluationDataset": {
+"description": "The dataset used for evaluation.",
+"id": "GoogleCloudAiplatformV1EvaluationDataset",
+"properties": {
+"bigquerySource": {
+"$ref": "GoogleCloudAiplatformV1BigQuerySource",
+"description": "BigQuery source holds the dataset."
+},
+"gcsSource": {
+"$ref": "GoogleCloudAiplatformV1GcsSource",
+"description": "Cloud storage source holds the dataset."
 }
 },
 "type": "object"
@@ -29594,6 +29687,11 @@ false
 "description": "Immutable. The type of the machine. See the [list of machine types supported for prediction](https://cloud.google.com/vertex-ai/docs/predictions/configure-compute#machine-types) See the [list of machine types supported for custom training](https://cloud.google.com/vertex-ai/docs/training/configure-compute#machine-types). For DeployedModel this field is optional, and the default value is `n1-standard-2`. For BatchPredictionJob or as part of WorkerPoolSpec this field is required.",
 "type": "string"
 },
+"multihostGpuNodeCount": {
+"description": "Optional. Immutable. The number of nodes per replica for multihost GPU deployments.",
+"format": "int32",
+"type": "integer"
+},
 "reservationAffinity": {
 "$ref": "GoogleCloudAiplatformV1ReservationAffinity",
 "description": "Optional. Immutable. Configuration controlling how this resource pool consumes reservation."
@@ -29782,6 +29880,66 @@ false
 "description": "The disk utilization of the MetadataStore in bytes.",
 "format": "int64",
 "type": "string"
+}
+},
+"type": "object"
+},
+"GoogleCloudAiplatformV1Metric": {
+"description": "The metric used for dataset level evaluation.",
+"id": "GoogleCloudAiplatformV1Metric",
+"properties": {
+"aggregationMetrics": {
+"description": "Optional. The aggregation metrics to use.",
+"items": {
+"enum": [
+"AGGREGATION_METRIC_UNSPECIFIED",
+"AVERAGE",
+"MODE",
+"STANDARD_DEVIATION",
+"VARIANCE",
+"MINIMUM",
+"MAXIMUM",
+"MEDIAN",
+"PERCENTILE_P90",
+"PERCENTILE_P95",
+"PERCENTILE_P99"
+],
+"enumDescriptions": [
+"Unspecified aggregation metric.",
+"Average aggregation metric.",
+"Mode aggregation metric.",
+"Standard deviation aggregation metric.",
+"Variance aggregation metric.",
+"Minimum aggregation metric.",
+"Maximum aggregation metric.",
+"Median aggregation metric.",
+"90th percentile aggregation metric.",
+"95th percentile aggregation metric.",
+"99th percentile aggregation metric."
+],
+"type": "string"
+},
+"type": "array"
+},
+"bleuSpec": {
+"$ref": "GoogleCloudAiplatformV1BleuSpec",
+"description": "Spec for bleu metric."
+},
+"exactMatchSpec": {
+"$ref": "GoogleCloudAiplatformV1ExactMatchSpec",
+"description": "Spec for exact match metric."
+},
+"pairwiseMetricSpec": {
+"$ref": "GoogleCloudAiplatformV1PairwiseMetricSpec",
+"description": "Spec for pairwise metric."
+},
+"pointwiseMetricSpec": {
+"$ref": "GoogleCloudAiplatformV1PointwiseMetricSpec",
+"description": "Spec for pointwise metric."
+},
+"rougeSpec": {
+"$ref": "GoogleCloudAiplatformV1RougeSpec",
+"description": "Spec for rouge metric."
 }
 },
 "type": "object"
@@ -30966,7 +31124,7 @@ false
 "type": "array"
 },
 "id": {
-"description": "Output only. The ID of the export format. The possible format IDs are: * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A tensorflow model in SavedModel format. * `tf-js` A [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in the browser and in Node.js using JavaScript. * `core-ml` Used for iOS mobile devices. * `custom-trained` A Model that was uploaded or trained by custom code.",
+"description": "Output only. The ID of the export format. The possible format IDs are: * `tflite` Used for Android mobile devices. * `edgetpu-tflite` Used for [Edge TPU](https://cloud.google.com/edge-tpu/) devices. * `tf-saved-model` A tensorflow model in SavedModel format. * `tf-js` A [TensorFlow.js](https://www.tensorflow.org/js) model that can be used in the browser and in Node.js using JavaScript. * `core-ml` Used for iOS mobile devices. * `custom-trained` A Model that was uploaded or trained by custom code. * `genie` A tuned Model Garden model.",
 "readOnly": true,
 "type": "string"
 }
@@ -31291,7 +31449,7 @@ false
 "type": "object"
 },
 "GoogleCloudAiplatformV1ModelVersionCheckpoint": {
-"description": "A proto representation of a Spanner-stored ModelVersionCheckpoint. The meaning of the fields is equivalent to their in-Spanner counterparts.",
+"description": "Describes the machine learning model version checkpoint.",
 "id": "GoogleCloudAiplatformV1ModelVersionCheckpoint",
 "properties": {
 "checkpointId": {
@@ -31301,6 +31459,10 @@ false
 "epoch": {
 "description": "The epoch of the checkpoint.",
 "format": "int64",
+"type": "string"
+},
+"name": {
+"description": "Identifier. The resource name of the ModelVersionCheckpoint. Format: `projects/{project}/locations/{location}/models/{model}/versions/{version}/checkpoints/{checkpoint}`",
 "type": "string"
 },
 "step": {
@@ -32627,6 +32789,17 @@ false
 },
 "type": "object"
 },
+"GoogleCloudAiplatformV1OutputConfig": {
+"description": "Config for evaluation output.",
+"id": "GoogleCloudAiplatformV1OutputConfig",
+"properties": {
+"gcsDestination": {
+"$ref": "GoogleCloudAiplatformV1GcsDestination",
+"description": "Cloud storage destination for evaluation output."
+}
+},
+"type": "object"
+},
 "GoogleCloudAiplatformV1PSCAutomationConfig": {
 "description": "PSC config that is used to automatically create forwarding rule via ServiceConnectionMap.",
 "id": "GoogleCloudAiplatformV1PSCAutomationConfig",
@@ -32701,8 +32874,20 @@ false
 "description": "Spec for pairwise metric.",
 "id": "GoogleCloudAiplatformV1PairwiseMetricSpec",
 "properties": {
+"baselineResponseFieldName": {
+"description": "Optional. The field name of the baseline response.",
+"type": "string"
+},
+"candidateResponseFieldName": {
+"description": "Optional. The field name of the candidate response.",
+"type": "string"
+},
 "metricPromptTemplate": {
 "description": "Required. Metric prompt template for pairwise metric.",
+"type": "string"
+},
+"systemInstruction": {
+"description": "Optional. System instructions for pairwise metric.",
 "type": "string"
 }
 },
@@ -33590,6 +33775,10 @@ false
 "metricPromptTemplate": {
 "description": "Required. Metric prompt template for pointwise metric.",
 "type": "string"
+},
+"systemInstruction": {
+"description": "Optional. System instructions for pointwise metric.",
+"type": "string"
 }
 },
 "type": "object"
@@ -33865,6 +34054,11 @@ false
 "$ref": "GoogleCloudAiplatformV1ProbeExecAction",
 "description": "ExecAction probes the health of a container by executing a command."
 },
+"failureThreshold": {
+"description": "Number of consecutive failures before the probe is considered failed. Defaults to 3. Minimum value is 1. Maps to Kubernetes probe argument 'failureThreshold'.",
+"format": "int32",
+"type": "integer"
+},
 "grpc": {
 "$ref": "GoogleCloudAiplatformV1ProbeGrpcAction",
 "description": "GrpcAction probes the health of a container by sending a gRPC request."
@@ -33873,8 +34067,18 @@ false
 "$ref": "GoogleCloudAiplatformV1ProbeHttpGetAction",
 "description": "HttpGetAction probes the health of a container by sending an HTTP GET request."
 },
+"initialDelaySeconds": {
+"description": "Number of seconds to wait before starting the probe. Defaults to 0. Minimum value is 0. Maps to Kubernetes probe argument 'initialDelaySeconds'.",
+"format": "int32",
+"type": "integer"
+},
 "periodSeconds": {
 "description": "How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Must be less than timeout_seconds. Maps to Kubernetes probe argument 'periodSeconds'.",
+"format": "int32",
+"type": "integer"
+},
+"successThreshold": {
+"description": "Number of consecutive successes before the probe is considered successful. Defaults to 1. Minimum value is 1. Maps to Kubernetes probe argument 'successThreshold'.",
 "format": "int32",
 "type": "integer"
 },
@@ -38846,7 +39050,7 @@ false
 "id": "GoogleCloudAiplatformV1SchemaTextDataItem",
 "properties": {
 "gcsUri": {
-"description": "Output only. Google Cloud Storage URI points to the original text in user's bucket. The text file is up to 10MB in size.",
+"description": "Output only. Google Cloud Storage URI points to a copy of the original text in the Vertex-managed bucket in the user's project. The text file is up to 10MB in size.",
 "readOnly": true,
 "type": "string"
 }

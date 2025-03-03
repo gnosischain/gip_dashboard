@@ -146,19 +146,19 @@ body: 'Simple Summary
   in any transactions.'
 start: 1740155384
 end: 1740760184
-state: active
+state: closed
 author: '0xbE96cBFF504BA1C9aBa35a0F6377e8F109f7795B'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 60363.55774436818
+scores_state: final
+scores_total: 92502.33203406047
 scores:
-  - 60160.17071700136
+  - 92264.8215659033
   - 8.23863787738404
-  - 195.1483894894375
-votes: 48
+  - 229.27183027978276
+votes: 83
 quorum: 75000
 funding:
   amount: null
