@@ -92,7 +92,7 @@ body: "##  Simple Summary\n\nThe proposal will fund the Gnosis Guild’s operati
   \nCultural Program: This budget category refers to what would traditionally be construed\
   \ as a marketing campaign. The cultural program is intended to further establish\
   \ Gnosis Guild’s reputation as a creative, editorial, and experimental team, while\
-  \ seeking to meaningfully broaden discourse.\n\n15 Likes\n"
+  \ seeking to meaningfully broaden discourse.\n\n14 Likes\n"
 start: 1675037477
 end: null
 state:
@@ -126,6 +126,6 @@ votes: null
 quorum: null
 funding:
   amount: '3823575'
-  currency: USD (implied, as $ is used)
+  currency: USD (implied, based on $)
   confidence: High
   model_used: gemini-1.5-flash
