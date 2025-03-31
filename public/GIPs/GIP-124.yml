@@ -1,0 +1,100 @@
+id: gip-124-should-gnosisdao-fund-the-gnosisgov-navigator-a-governance-and-delegate-dashboard
+gip_number: 124
+url: https://forum.gnosis.io/t/gip-124-should-gnosisdao-fund-the-gnosisgov-navigator-a-governance-and-delegate-dashboard
+title: Should GnosisDAO fund the GnosisGov Navigator, a governance and delegate dashboard?
+body: "## Executive Summary\n\n### Problem:\n\nGnosis DAO governance faces fragmented\
+  \ delegate information and low participation due to:\n\n  * Token holders manually\
+  \ compiling delegate data from multiple sources\n  * Lack of timely governance updates\
+  \ for delegates\n  * Absence of standardized metrics for evaluating delegate performance\n\
+  \n\n\n### Solution:\n\nFund the development of Gov Navigator, a two-pronged system\
+  \ to:\n\n  1. Delegate Dashboard: Centralize delegate analytics (activity, alignment,\
+  \ influence)\n  2. Privacy-First Telegram Bot: Automate governance notifications\
+  \ without personal data\n\n\n\n### Ecosystem Benefits:\n\n  * Projected increase\
+  \ in delegate participation\n  * Reduction in token holder research time\n  * Improved\
+  \ transparency for informed delegation decisions\n\n\n\n## About PYOR\n\nPYOR specializes\
+  \ in crypto research and analytics. The team has over 10 years of experience building\
+  \ in the crypto space. We are backed by leading investors like Castle Island Ventures\
+  \ and Coinbase Ventures and work with teams like Arbitrum, Cosmos, Ribbit Capital,\
+  \ Compound, etc.\n\nPYOR is an official delegate for Wormhole and zkSync, committed\
+  \ to contributing to the success of both DAOs.\n\n## Motivation\n\nEffective governance\
+  \ is the foundation of any successful DAO. At Gnosis, we’ve observed growing challenges\
+  \ that hinder the collective decision-making processes. Delegate information is\
+  \ scattered across multiple platforms in threads, making it difficult for token\
+  \ holders to evaluate whom to trust with their voting power. Meanwhile, delegates\
+  \ struggle to stay informed about new proposals and voting deadlines.\n\nGov Navigator\
+  \ aims to address these practical challenges by providing a comprehensive solution\
+  \ that serves both delegates and token holders. By centralizing delegate information,\
+  \ standardizing performance metrics, and implementing a privacy-focused notification\
+  \ system, we can significantly improve governance participation and transparency.\n\
+  \n## Specification\n\nThe Gov Navigator will deliver two integrated components to\
+  \ enhance governance transparency and participation:\n\n### 1\\. Delegate Dashboard\n\
+  \nComponent | Functionality  \n---|---  \nMacro Metrics | Proposal trends (success\
+  \ rates, categories), voting power distribution (Gini coefficient), delegate onboarding\
+  \ rates  \nDelegate Profiles | Activity (votes made/missed), alignment (vs. outcomes),\
+  \ influence (voting power share), proposal-level insights  \nProposal Views | Compare\
+  \ delegate voting patterns, visualize voting timelines, track lifecycle stages \
+  \ \n  \n### 2\\. Telegram Bot\n\nFeature | Functionality  \n---|---  \nAutomated\
+  \ Alerts | New proposals (with summaries), voting deadlines (48h/24h/1h reminders),\
+  \ execution updates  \nPrivacy Design | Closed group access, no personal data required\
+  \  \n  \n#### Please go through the following document to see all the deliverables\
+  \ in detail: Here\n\n## Rationale\n\n### Community Consensus:\n\n  * Feedback received\
+  \ by delegates (@lefterisjp, @Viszla) for addressing engagement gaps\n  * Aligns\
+  \ with GnosisDAO’s strategic focus on governance health\n\n\n\n### Alternatives\
+  \ Considered:\n\n  * We rejected a native app approach due to reliance on third-party\
+  \ infrastructure\n  * Tally/Curia: Limited to passive dashboards without proactive\
+  \ engagement tools\n\n\n\n## Why Our Team?\n\nPYOR has established itself as a trusted\
+  \ analytics provider in the blockchain ecosystem, with a proven track record in\
+  \ developing governance analytics solutions for leading protocols such as:\n\n \
+  \ * Arbitrum: Developed LTIPP Incentive Program Analytics dashboard\n  * Compound\
+  \ Finance: Created a comprehensive lending and yield tracker dashboard with borrower/supplier\
+  \ metrics\n  * EigenLayer: Built a complete dashboard tracking assets delegated,\
+  \ delegators, operators, and AVSs\n  * ICP: Developed a governance and DAO rewards\
+  \ visualization system\n  * Cosmos: Delivered consumer chain and validators analytics\n\
+  \n\n\nOur experience directly aligns with the requirements of the Gnosis Gov Navigator\
+  \ project, demonstrating proficiency in:\n\n  * Governance analytics and dashboard\
+  \ development\n  * Delegate performance metrics\n  * Notification systems for timely\
+  \ updates\n  * Custom metrics development for protocol-specific needs\n\n\n\nPYOR’s\
+  \ service quality is characterized by regular data updates, multiple communication\
+  \ channels, and flexible output formats. Our existing technical infrastructure is\
+  \ already configured to deliver the proposed features of Gov Navigator, including\
+  \ on-chain analytics integration, advanced visualization capabilities, and custom\
+  \ formula development for governance-specific metrics.\n\n## Budget\n\nTotal Request:\
+  \ $29,400 ( Approx. 224 GNO)\n\nExpense | Cost  \n---|---  \nDashboard Development\
+  \ | $22,000.00  \nTelegram Bot Integration | $5,000.00  \nTesting & Maintenance\
+  \ (12 months) | $2,400.00  \n**Total** | **$29,400.00**  \n  \n## Milestones\n\n\
+  ### Phase 1: Core Development (2 months)\n\n  * Success Metrics: \n    * Macro metrics\
+  \ framework operational\n    * Basic delegate profiles integrated with Snapshot\
+  \ API\n  * Cost: $22,000\n\n\n\n### Phase 2: Notification System (1 month)\n\n \
+  \ * Success Metrics: \n    * Telegram bot sends alerts with 99% reliability\n  \
+  \  * 50% of delegates join closed group\n  * Cost: $5,000\n\n\n\n### Phase 3: Maintenance\
+  \ (12 months)\n\n  * Success Metrics: \n    * <5% downtime for dashboard\n    *\
+  \ 25% participation rate increase\n  * Cost: $2,400\n\n\n\n## Conclusion\n\nGov\
+  \ Navigator addresses critical gaps in GnosisDAO’s governance infrastructure through\
+  \ data-driven insights and automated engagement. This proposal follows a phased\
+  \ funding approach with clear success metrics, ensuring accountability. Community\
+  \ feedback is welcome during the 7-day temperature check period.\n\n## Gnosis Snapshot\n\
+  \n_Phase 2 Proposals: Please ignore this section, and leave as is. It is used for\
+  \ Phase 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding Gnosis\
+  \ Snapshot poll you’ve created._\n"
+start: 1742926269
+end: null
+state:
+  - phase-2
+author: '&lt; Aakash Athawas&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash

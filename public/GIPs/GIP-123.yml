@@ -1,0 +1,270 @@
+id: gip-123-should-gnosisdao-adopt-and-support-curia-labs-governance-monitoring-service-in-2025
+gip_number: 123
+url: https://forum.gnosis.io/t/gip-123-should-gnosisdao-adopt-and-support-curia-labs-governance-monitoring-service-in-2025
+title: Should GnosisDAO adopt and support Curia Lab's Governance Monitoring Service
+  in 2025? - Governance - Gnosis
+body: "## Executive Summary\n\nIn recent years, DAOs like Gnosis have grown significantly,\
+  \ launching impactful initiatives and expanding their communities. However, as these\
+  \ decentralized organizations scale, maintaining secure, transparent, and accessible\
+  \ governance becomes increasingly crucial. GnosisDAO currently faces governance\
+  \ challenges, including declining voter participation, delegate accountability,\
+  \ transparency gaps, and a high concentration of voting power. Addressing these\
+  \ effectively requires comprehensive governance research supported by specialized\
+  \ analytics.\n\nCuria Lab proposes a comprehensive **Governance Monitoring & Analytics\
+  \ Service** tailored specifically for GnosisDAO. The initiative begins with thorough\
+  \ research into existing governance dynamics, delegate behaviors, voter participation\
+  \ trends, and centralization risks. Insights from this research will inform the\
+  \ development of targeted analytics tools and reports to empower the GnosisDAO community,\
+  \ enhance governance transparency, and facilitate effective decision-making. Our\
+  \ goal is to ensure GnosisDAO’s governance remains transparent, measurable, accountable,\
+  \ and resilient, aligning with the DAO’s mission of sustainable, decentralized excellence.\n\
+  \n## Motivation\n\nGnosisDAO currently faces critical governance challenges, including\
+  \ declining voter engagement and frequent difficulties achieving quorum on key proposals.\
+  \ In the past year, four proposals failed to meet quorum requirements, and eight\
+  \ others narrowly succeeded, surpassing quorum thresholds by only 1-3%. In response\
+  \ to these challenges, GnosisDAO introduced the Delegate Program (GIP-101) to enhance\
+  \ participation. Despite this initiative, ongoing difficulties remain in effectively\
+  \ monitoring delegate accountability and accurately measuring the program’s impact\
+  \ on governance participation.\n\nTransparency is another significant concern, as\
+  \ DAO members often struggle to track governance dynamics effectively. Existing\
+  \ tools such as Snapshot and the GIP dashboard offer basic functionality but lack\
+  \ comprehensive analytics, critical governance metrics, and historical data insights\
+  \ needed for proactive and informed governance management especially in tracking\
+  \ the impact of future governance-related initiatives.\n\n## Proposed Solution\n\
+  \nWe propose a robust **Governance Monitoring & Analytics Service** that continuously\
+  \ tracks, analyzes, and reports on key governance activities. This integrated solution\
+  \ comprises:\n\n  * **Governance Analytics hub**\n  * **Governance Research & Data\
+  \ Reports**\n  * **Data & API Provider**\n\n\n\nTailored specifically to GnosisDAO’s\
+  \ governance needs, this service provides comprehensive, actionable insights into\
+  \ delegate behaviors, voter participation trends, voting power distribution, and\
+  \ governance risks. By leveraging near real-time data feeds, GnosisDAO will benefit\
+  \ from improved delegate accountability, informed strategic decisions, and proactive\
+  \ risk monitoring.\n\nOur overarching vision is to serve as an open **end-to-end\
+  \ governance data & insight provider**, ensuring DAO governance is transparent,\
+  \ measurable, and secure—fully aligned with GnosisDAO’s objectives for increased\
+  \ participation and sustainable governance excellence.\n\n### Governance Analytics\
+  \ Hub\n\nA comprehensive analytics tool that visualizes key governance metrics using\
+  \ both **onchain and offchain data** (e.g., forum interactions, forum thread analysis,\
+  \ voting activity, token distribution).\n\nKey Metrics Tracking Include:\n\nHolder\
+  \ Metrics: It helps us understand the distribution and dynamics of GNO token holders\
+  \ and assess overall involvement to determine whether more token holders should\
+  \ be encouraged to participate.\n\n  * **Holder Wallets:** Represents the total\
+  \ count of unique wallet addresses holding or vested with the GNO token.\n  * **Token\
+  \ Supply:** Displays the total amount of GNO tokens available, including both circulating\
+  \ and vested tokens.\n  * **Votable Supply:** Indicates the number of tokens that\
+  \ can be used to vote, including those that are vested.\n  * **Share of Votable\
+  \ Supply:** The percentage of the total circulating supply that is currently delegated\
+  \ and available to participate in governance votes.\n\nDelegate Metrics: It provides\
+  \ insights into the role of delegates within the governance process, highlighting\
+  \ their influence and activity over time. This would empowers token holders to make\
+  \ informed decisions when selecting delegates and ensures that these representatives\
+  \ actively serve the community.\n\n  * **Delegated Table:** Displays ranking, delegate\
+  \ name, delegated tokens (% voting power), delegating address, voting turnout, and\
+  \ the most recent five votes.\n  * **Voter Turnout:** Tracks individual participation\
+  \ by monitoring recent proposal activity.\n  * **Delegate Profile:** A dedicated\
+  \ page for each delegate, displaying all proposals they have voted on or abstained\
+  \ from.\n  * **Rationale Vote:** Tracks whether a delegate only votes or also provides\
+  \ a rationale and discussion for their vote, both on-chain and in forums.\n  * **Non-Conformity\
+  \ Ratio:** Displays the ratio of times a delegate votes against the majority.\n\
+  \  * **Delegation Tracking:** Monitors changes in the amount of delegation each\
+  \ delegate receives.\n\nVoting Power Metrics: It provides insights into the distribution\
+  \ of governance power by highlighting metrics such as the distinction between small\
+  \ and large holders, overall voting power distribution, and levels of decentralization.\
+  \ . These metrics help identify centralization risks and drive initiatives toward\
+  \ a more decentralized voting landscape.\n\n  * **Delegate Nakamoto Coefficient:**\
+  \ The number of top delegates required to control 50% of the votable supply.\n \
+  \ * **Delegate Quorum:** The number of top delegates needed to reach the proposal\
+  \ quorum.\n  * **Distribution of Voting Power:** Compares voting power between small\
+  \ and large holders, including data on tokens delegated by each group, the percentage\
+  \ of wallets that have delegated their voting power, and a detailed comparison of\
+  \ voting power between the two groups.\n\nProposal Metrics: This section offer comprehensive\
+  \ insights into governance proposals, helping GnosisDAO understand proposal dynamics,\
+  \ community engagement levels, and voting outcomes.\n\n  * **Proposals Table:**\
+  \ Displays all proposals with details such as name, status, outcome, and category\n\
+  \nParticipation Metrics: It provides insights by identifying areas of low engagement,\
+  \ highlighting opportunities to boost overall participation. These metrics also\
+  \ enable detailed tracking of delegate and voter involvement, allowing the DAO to\
+  \ develop targeted strategies that effectively increase governance activity.\n\n\
+  \  * **Proposal Engagement Overview:** Includes unique voter counts, total voting\
+  \ power used, and participation rate relative to the votable supply.\n  * **Tracking\
+  \ Participation:** Monitors participation among the top 1000 delegates.\n  * **Delegated\
+  \ Voting Power Analysis:** Compares voting power delegated from small versus large\
+  \ holders across various delegate categories (active, inactive, ghost) and provides\
+  \ a breakdown of delegators by size for each category.\n\nVoter Behavior: Voter\
+  \ behavior analytics assist GnosisDAO in optimizing governance effectiveness by\
+  \ pinpointing the optimal timing for voting periods to maximize participation. This\
+  \ ensures critical proposals receive adequate attention at the right times, enhancing\
+  \ the overall responsiveness and efficiency of governance processes.\n\n  * **Voting\
+  \ Density:** A heat map showing voting density over different time periods.\n  *\
+  \ **Voting Momentum:** Tracks voting momentum during various stages of the voting\
+  \ cycle (early, normal, late, and ending).\n\n\n\n**Forum Contributor Analytics:**\
+  \ This section provides comprehensive analytics and detailed insights into individual\
+  \ contributors based on their activities and interactions within GnosisDAO forums.\
+  \ These insights enhance governance decision-making by clearly highlighting user\
+  \ engagement, sentiment, relationships, popularity, and key discussion themes.\n\
+  \nForum Metrics (more metrics will be added overtime) \n\n  * **Activity Over Time:**\
+  \ Displays user engagement levels by tracking the frequency of new topics created,\
+  \ comments posted, and likes given over time, offering clear visibility into user\
+  \ activity trends.\n  * **Sentiment Analysis:** Measures the overall tone and subjectivity\
+  \ of a user’s contributions. This is calculated by averaging the sentiment scores\
+  \ (polarity and subjectivity) from all texts authored by the user\n  * **Readability\
+  \ Score:** Evaluates the clarity and ease of understanding of a user’s forum contributions\
+  \ using the Flesch Reading Ease Score. Calculated similarly to sentiment analysis\
+  \ by averaging readability scores from all texts written by the user:\n  * **BFFs\
+  \ (Best Friends Forever):** Highlights key relationships and interactions among\
+  \ users through four distinct metrics: \n    * **Most Likes Received From:** Identifies\
+  \ which user gave the most likes to the target user, along with the total number\
+  \ of likes.\n    * **Most Likes Given To:** Identifies which user received the most\
+  \ likes from the target user, along with the total number of likes.\n    * **Most\
+  \ Posts Received From:** Indicates which user most frequently commented on posts\
+  \ made by the target user, including the number of comments.\n    * **Most Posts\
+  \ Given To:** Indicates which user received the most comments from the target user,\
+  \ including the number of comments.\n  * **Popularity:** Evaluates the user’s overall\
+  \ influence within forum discussions through four metrics \n    * **Average Replies\
+  \ per Topic:** Average number of replies generated by each topic created by the\
+  \ user.\n    * **Average Likes Received per Topic:** Average number of likes received\
+  \ on topics created by the user.\n    * **Average Likes Received per Post:** Average\
+  \ number of likes received on posts/comments made by the user.\n    * **Total Likes\
+  \ Received:** Total cumulative number of likes received across all topics and posts\
+  \ by the user.\n  * **Word Cloud:** Visually summarizes the main discussion topics\
+  \ and most frequent words used by the user. Created by combining all user-generated\
+  \ text (posts and topics), preprocessing it (removing spaces, tabs, capitalization,\
+  \ lemmatizing, and removing stop words), and then generating a visualization based\
+  \ on the top 100 most frequently used words.\n\n\n\n**Technical Implementation Overview:**\n\
+  \nWe will be developing tools that integrate data from multiple sources including\
+  \ Google BigQuery, Snapshot, and various databases. Our solution features an open-source\
+  \ frontend built in Next JS, which will be hosted on Vercel for optimal performance\
+  \ and reliability. The backend infrastructure will be implemented using Google Cloud\
+  \ services, managed through Curia’s infrastructure. We’ll develop internal tools\
+  \ to support and categorize new proposals, ensuring efficient data management and\
+  \ classification. The system will aggregate governance data in T-1 days, process\
+  \ it through our middleware layer, and present it through an intuitive analytics\
+  \ interface. This architecture ensures scalability, maintainability, and robust\
+  \ data handling capabilities while maintaining the open-source nature of the project.\n\
+  \n### Governance Research & Data Reports\n\nDelivers customized and regular deep-dive\
+  \ governance analyses, converting complex data into actionable insights:\n\n  *\
+  \ **Deep Governance Research:** Identifying governance gaps and opportunities, innovating\
+  \ targeted metrics.\n  * **Tailored Insights:** Customized analytics frameworks\
+  \ and actionable recommendations specifically aligned with measurable KPIs such\
+  \ as increased voter turnout, improved delegate engagement, and reduced voting concentration\
+  \ risks for GnosisDAO.\n  * **Monthly Reporting:** Comprehensive analysis including\
+  \ data interpretation, key metrics tracking, actionable recommendations, and visual\
+  \ clarity with intuitive charts and graphs. The report will prioritize near-term\
+  \ insight relevant to upcoming governance decisions and minimizing reliance on historical\
+  \ data unless directly impacting future governance actions\n\n\n\n### Data & API\
+  \ Provider\n\nTo empower GnosisDAO’s community, we provide an open and robust infrastructure\
+  \ for easy access and integration of governance data across the ecosystem. This\
+  \ service is specifically designed to enhance transparency and facilitate data-driven\
+  \ governance initiatives, directly supporting community-led programs such as Gnosis\
+  \ Delegate Program (GIP-101).\n\n  * **Public API Access:** Offers real-time access\
+  \ to governance analytics, enabling external researchers, delegates, and community\
+  \ stakeholders to transparently track delegate performance, voting patterns, and\
+  \ the effectiveness of governance initiatives such as Gnosis Delegate Program (GIP-101).\n\
+  \  * **Integration toolkit:** Provides a flexible, plug-and-play toolkit, allowing\
+  \ easy embedding of governance analytics into GnosisDAO’s existing platforms, dashboards,\
+  \ or community applications without extensive technical resources or overhead.\n\
+  \n\n\n### **Our Contribution in Other DAOs**\n\n  * **Governance Analytics & Monitoring\
+  \ Services:** We have built comprehensive tools for projects such as **ArbitrumDAO**,\
+  \ **SafeDAO**, and the **Optimism Collective**—delivering actionable insights and\
+  \ fostering community engagement.\n  * **In-Depth Metrics Analysis:** Our previous\
+  \ work funded by SafeDAO which include the analytics hub and monthly governance\
+  \ report, contributes into change within the community, (eg. SafeDAO implementation\
+  \ of OBRA’s **Steering Committees and Council Structures**.)\n  * **Community-Led\
+  \ Governance Research:** We have actively collaborated with DAO communities to refine\
+  \ methodologies and ensure our tools meet evolving governance needs. (eg. Measuring\
+  \ the Concentration of Power in the Collective, Voting Influence and Concentration\
+  \ Analysis (VICA) for the Optimism Collective )\n\n\n\n# Timeline\n\nThe initiative\
+  \ will span approximately **13.5 months** , including an initial **1.5-month period\
+  \ dedicated to research, development, and deployment** , followed by **12 months\
+  \ of continuous maintenance and monthly governance reports**. Throughout this duration,\
+  \ the platform will ongoing analytics updates, integrating community feedback to\
+  \ ensure constant improvement and alignment with GnosisDAO’s evolving governance\
+  \ needs.\n\n# Milestones\n\n**Milestone 1: Initial Design Mockups & Metrics**\n\n\
+  **Research & Ideation:**  \nWe started by identifying key governance metrics and\
+  \ gathering community feedback. We also defined the initial scope for Governance\
+  \ Research & Data Reports and the Public API requirements.\n\n**Design & Mockups:**\
+  \  \nBased on our research, we created initial mockups focused on user experience\
+  \ and key metrics visualization. These included preliminary designs for the Governance\
+  \ Analytics hub, Research Reports structure, and Public API accessibility. Designs\
+  \ were shared for community feedback.\n\n**Milestone 2: Develop monitoring tool,\
+  \ Research Reports, & Public API**\n\n**Phase 1 - MVP Development:**\n\n  * Build\
+  \ an initial MVP of the Governance Analytics Hub focusing on critical governance\
+  \ metrics (holder metrics, voting power distribution, delegate behaviors).\n  *\
+  \ Begin developing the Governance Reports template aligned with GnosisDAO’s governance\
+  \ cycle.\n  * Implement basic Public API endpoints for real-time access to essential\
+  \ governance data.\n  * Provide a mid-development preview to the community to gather\
+  \ early feedback.\n\n\n\n**Phase 2 - Expanded Development & Testing:**\n\n  * Expand\
+  \ Analytics Hub with additional metrics, including comprehensive proposal analytics,\
+  \ detailed participation insights, and voter behavior tracking.\n  * Finalize the\
+  \ Governance Reports structure and refine monthly templates based on community feedback.\n\
+  \  * Enhance the Public API with additional endpoints covering delegate performance\
+  \ data, voter turnout, and governance trends.\n  * Conduct rigorous internal testing\
+  \ for accuracy, performance, and reliability across all components (Analytics Hub,\
+  \ Governance Reports, and Public API).\n\n\n\n**Official Launch:**\n\n  * Publicly\
+  \ launch the comprehensive Governance Analytics Hub, fully functional Public API,\
+  \ and standardized Governance Reports format.\n  * Actively collect immediate post-launch\
+  \ feedback from GnosisDAO community and governance participants.\n\n\n\n**Milestone\
+  \ 3-14: Monthly Governance Report, Maintenance & Updates**\n\n  * **Monthly Governance\
+  \ Reports:** Deliver detailed, actionable monthly governance reports highlighting\
+  \ delegate activity, voting trends, governance risks, and insights tailored to GnosisDAO’s\
+  \ evolving priorities.\n\n  * **Daily Maintenance & Updates:** Provide daily updates\
+  \ to ensure continuous availability of accurate and reliable governance analytics,\
+  \ data integrity, and smooth platform performance.\n\n  * **Community-Driven Iteration:**\
+  \ Continuously enhance and expand platform features based on ongoing community feedback,\
+  \ governance developments, and emerging user needs, ensuring lasting relevance and\
+  \ sustained value to GnosisDAO.\n\n\n\n\n## **KPIs**\n\nWe will track specific KPIs,\
+  \ including:\n\n  * Number of Monthly Visitors\n  * Link Clicks to Voting Portal\n\
+  \  * Mentions & References from Delegates and forums\n  * Number of API requests\
+  \ call\n\n\n\n## Pricing and payment\n\nWe are requesting $70,000 to cover essential\
+  \ development & operational costs for our research initiatives, report generation,\
+  \ and analytics platform management over a 13.5-month period. Payments will be disbursed\
+  \ quarterly, corresponding to $17,500 per quarter. Following this initial phase,\
+  \ continuation of the service, if desired by the DAO, will be proposed at an annual\
+  \ renewal rate of $30,000, similarly payable quarterly.\n\n**This funding allocation\
+  \ includes:**\n\n  * **Infrastructure:** Core services and technology required to\
+  \ support and maintain the analytics hub.\n  * **Maintenance & Operations:** Continuous\
+  \ updates, system monitoring, and improvements to ensure optimal platform performance.\n\
+  \  * **Data Management:** Costs associated with data collection, storage, processing,\
+  \ and security.\n  * **Third-Party Services:** Expenses for external tools and services\
+  \ that enhance platform functionality.\n  * **Overhead:** Administrative and operational\
+  \ costs necessary for smooth daily operations.\n\n\n\n### Service Terms and Exit\
+  \ Strategy\n\nGnosisDAO may terminate the service at any time, subject to a formal\
+  \ DAO governance vote. Curia Lab may similarly terminate by giving a 30-day notice\
+  \ to GnosisDAO. Upon termination, Curia Lab will ensure full data access and facilitate\
+  \ a smooth data transition to GnosisDAO or a designated provider.\n\n**To ensure\
+  \ that GnosisDAO retains the tool longevity, we commit to:**\n\n  * Open-sourcing\
+  \ the UI and formula calculations.\n  * Any integration into future Gnosis’s main\
+  \ governance UI, making governance analytics a permanent feature.\n\n\n\n## **Team**\n\
+  \nCuria Lab brings extensive experience in data analysis, and decentralized governance.\
+  \ Our team has actively participated as delegates in multiple DAOs including GnosisDAO\
+  \ and has developed governance tools for projects such as the Optimism Collective,\
+  \ Arbitrum, and SafeDAO. We are committed to creating tailor-made, data-driven tools\
+  \ that address the unique challenges and needs of GnosisDAO.\n\n## **Contact Information**\n\
+  \nX/Twitter: Curia\n\nTelegram: @v3dao\n\nEmail: varit@curialab.xyz\n\nWebsite:\
+  \ Curia Hub\n\n1 Like\n"
+start: 1742938862
+end: null
+state:
+  - phase-1
+author: '@curia
+
+  status: Draft
+
+  typ&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash
