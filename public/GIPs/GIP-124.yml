@@ -75,7 +75,8 @@ body: "## Executive Summary\n\n### Problem:\n\nGnosis DAO governance faces fragm
   \ feedback is welcome during the 7-day temperature check period.\n\n## Gnosis Snapshot\n\
   \n_Phase 2 Proposals: Please ignore this section, and leave as is. It is used for\
   \ Phase 3 proposals.  \nPhase 3 Proposals: Add a link to the corresponding Gnosis\
-  \ Snapshot poll you’ve created._\n"
+  \ Snapshot poll you’ve created._\n\n1 Like\n\nGIP-123: Should GnosisDAO adopt and\
+  \ support Curia Lab's Governance Monitoring Service in 2025?\n"
 start: 1742926269
 end: null
 state:
