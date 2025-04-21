@@ -7,20 +7,20 @@ body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes
   \ created in the GnosisDAO’s snapshot space.\n  2. Make GnosisDAO’s influence distribution\
   \ less opaque.\n  3. Improve vote-weight utilization.\n\n\n\n##  Abstract\n\nBroadly,\
   \ this proposal aims to introduce two changes:\n\n  1. Modify the criteria for users\
-  \ to post proposals to the GnosisDAO’s snapshot space. \n    1. Accounts holding\
-  \ ≥ 1 GNO can create a proposal (current).\n    2. Add some trusted moderators that\
-  \ have the ability to remove posts that they deem to be low-quality. (new)\n   \
-  \ 3. Proposals with less than < 1,000 GNO of vote-weight cast `for` or `abstain`\
-  \ are filtered from the main view. (new)\n  2. Improve delegation \n    1. Improve\
+  \ to post proposals to the GnosisDAO’s snapshot space. \n     1. Accounts holding\
+  \ ≥ 1 GNO can create a proposal (current).\n     2. Add some trusted moderators\
+  \ that have the ability to remove posts that they deem to be low-quality. (new)\n\
+  \     3. Proposals with less than < 1,000 GNO of vote-weight cast `for` or `abstain`\
+  \ are filtered from the main view. (new)\n  2. Improve delegation \n     1. Improve\
   \ the delegation UI inside of snapshot to make delegation much simpler and to give\
-  \ an overview of the current delegated vote-weight distribution.\n    2. Add a two-year\
-  \ term limit to delegation, to avoid stagnation in the vote-weight distribution;\
+  \ an overview of the current delegated vote-weight distribution.\n     2. Add a\
+  \ two-year term limit to delegation, to avoid stagnation in the vote-weight distribution;\
   \ GNO holders must periodically set their delegation, all delegations expire after\
-  \ two-years.\n    3. Allow delegates to decline being delegated to / resign from\
-  \ delegation, negating any vote weight delegated to them.\n    4. Allow GNO holders\
-  \ to delegate portions of their vote weight to multiple accounts.\n    5. Allow\
+  \ two-years.\n     3. Allow delegates to decline being delegated to / resign from\
+  \ delegation, negating any vote weight delegated to them.\n     4. Allow GNO holders\
+  \ to delegate portions of their vote weight to multiple accounts.\n     5. Allow\
   \ for transitive delegation; If A delegates to B and B delegates to C, C inherits\
-  \ A’s vote weight.\n    6. Allow delegates to optionally set a cap on the amount\
+  \ A’s vote weight.\n     6. Allow delegates to optionally set a cap on the amount\
   \ of vote weight delegated to them.\n\n\n\n##  Motivation\n\nPopularized by Compound\
   \ Governor, delegation has proven to be an effective strategy for improving the\
   \ vote-weight utilization in many DAOs; consolidating vote-weight in the hands of\
@@ -42,10 +42,10 @@ body: "##  Simple Summary\n\nThis proposal aims to introduce a number of changes
   \ proposal is successful, and after observing the delegation setup in production,\
   \ we will likely write a followup proposal to implement some form of delegate compensation.\n\
   \n##  Specification\n\nTODO\n\n##  Rationale\n\nTODO\n\n##  Implementation\n\nTODO\n\
-  \n7 Likes\n\nGnosisDAO proposal spam on Snapshot\n\nGIP-109: Should the GnosisDAO\
-  \ introduce Snapshot moderators to reduce spam?\n\nDo we need this forum and what\
-  \ for?\n\nDo we need this forum and what for?\n\nGIP-101: Should karpatkey and StableLab\
-  \ Establish a Delegate Program v0 for the GnosisDAO?\n\nKarpatkey Delegate Platform\n"
+  \n7 Likes\n\nGIP-109: Should the GnosisDAO introduce Snapshot moderators to reduce\
+  \ spam?\n\nGnosisDAO proposal spam on Snapshot\n\nDo we need this forum and what\
+  \ for?\n\nGIP-101: Should karpatkey and StableLab Establish a Delegate Program v0\
+  \ for the GnosisDAO?\n\nDo we need this forum and what for?\n\nKpk Delegate Platform\n"
 start: 1674162370
 end: null
 state:
