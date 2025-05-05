@@ -1,0 +1,86 @@
+id: gip-125-gnosis-pay-loyalty-cashback-program-v2
+gip_number: 125
+url: https://forum.gnosis.io/t/gip-125-gnosis-pay-loyalty-cashback-program-v2
+title: Gnosis Pay Loyalty & Cashback Program v2
+body: "## Sustainability, Long-Term Holding, and NFTs as Access Passes\n\n* * *\n\n\
+  ## Abstract\n\nWe propose a structural revision of the Gnosis Pay cashback program\
+  \ based on three key principles: economic sustainability, long-term user loyalty,\
+  \ and transparent user onboarding.  \nThis proposal introduces USD-anchored entry\
+  \ levels (converted to GNO at the time of access), NFT-based access passes, weekly\
+  \ snapshots to enforce GNO holding, and cashback distribution via expiring tokens.\
+  \  \nAll mechanisms are designed to be fully implementable on **Gnosis Chain** ,\
+  \ supporting DAO governance and sustainable growth.\n\n* * *\n\n## Motivation\n\n\
+  Crypto card cashback programs often suffer the same fate: they attract short-term\
+  \ “farm-and-dump” users, quickly deplete funding, and offer little lasting value\
+  \ to the DAO.  \nGnosis Pay has a unique opportunity to stand out with a rewards\
+  \ structure that prioritizes loyalty, protects the treasury, and promotes meaningful\
+  \ GNO holding over time.\n\n* * *\n\n## Specification\n\n### 1\\. USD-Based Cashback\
+  \ Access via NFT\n\n  * Entry to the cashback program is based on **USD amounts**\
+  \ , not fixed GNO quantities.\n  * Users select a tier (e.g. $500, $1000, $2500),\
+  \ and the required GNO amount is calculated at the **current exchange rate**.\n\
+  \  * Upon entry, users receive a **soulbound NFT** that: \n    * Grants the assigned\
+  \ cashback percentage (e.g. 1%, 2%, 3%)\n    * Locks in the required GNO amount,\
+  \ which must be held continuously in the same wallet.\n  * !:warning: If the wallet’s\
+  \ GNO balance drops below the required level: \n    * The **NFT is automatically\
+  \ burned**.\n    * Cashback rights are **immediately revoked**.\n    * Users must\
+  \ **restart the process from scratch** using the current GNO/USD rate.\n\n\n\n*\
+  \ * *\n\n### 2\\. Cashback as Expiring Token\n\n  * Cashback is distributed in the\
+  \ form of a **non-transferable expiring token** , pegged to the value of GNO at\
+  \ the time of issuance.\n  * The expiration period depends on the **portion of cashback\
+  \ earned** : \n    * First $10 per week → **12-week expiry**\n    * Next $5 → **6-week\
+  \ expiry**\n    * Additional $5 chunks → **3-week expiry**\n  * !:firecracker: **Early\
+  \ redemption penalty** : \n    * Redeeming before expiry incurs a **value loss**\
+  \ , e.g. 30% if withdrawn halfway.\n    * Burned value (unlocked early) is **redirected\
+  \ back into the DAO’s cashback pool**.\n\n\n\n* * *\n\n### 3\\. Dynamic Cashback\
+  \ Cap Based on Card Usage\n\n  * Users begin with a monthly cashback cap of **$20**.\n\
+  \  * If the user makes **20+ transactions** in a month: \n    * Their monthly cap\
+  \ increases by **$5** for the next month.\n    * The cap can grow up to **$50**.\n\
+  \  * If the user makes **fewer than 20 transactions** , their cap decreases by **$5**.\n\
+  \n\n\n* * *\n\n### 4\\. Weekly GNO Holding Snapshots\n\n  * Weekly **on-chain snapshots**\
+  \ check if users still hold the required amount of GNO for their NFT level.\n  *\
+  \ Consecutive weeks of holding build up a **loyalty bonus** : \n    * 4 weeks →\
+  \ +0.1%\n    * 16 weeks → +0.2%\n    * 32 weeks → +0.4%\n    * 64 weeks → +0.6%\n\
+  \  * If the holding requirement is broken, the bonus is lost and resets to zero.\n\
+  \n\n\n* * *\n\n### 5\\. Existing NFT Rewards\n\n  * Legacy NFTs that grant a **+1%\
+  \ cashback bonus** remain valid and **stackable** with the new structure.\n\n\n\n\
+  * * *\n\n## Tables\n\n### Cashback Entry Levels\n\nUSD Value | % Cashback | GNO\
+  \ Required (example GNO = $200)  \n---|---|---  \n$500 | 1% | 2.5 GNO  \n$1000 |\
+  \ 2% | 5 GNO  \n$2500 | 3% | 12.5 GNO  \n  \n### Monthly Cashback Cap\n\nMonthly\
+  \ Card Usage | Max Cashback Next Month  \n---|---  \n< 20 tx | -$5  \n≥ 20 tx |\
+  \ +$5  \nAbsolute Max | $50  \n  \n* * *\n\n## Benefits\n\n  * **Sustainable** :\
+  \ Cashback distribution is gradual, conditional, and aligned with actual card usage.\n\
+  \  * **Stable onboarding** : GNO entry requirements are anchored in USD and consistent\
+  \ across users.\n  * **Loyalty-focused** : Long-term GNO holders receive increasing\
+  \ benefits.\n  * **Flexible yet secure** : Early redemption is allowed, but not\
+  \ optimal.\n  * **Fully on-chain** : All components (NFTs, tokens, snapshots) can\
+  \ be implemented on Gnosis Chain.\n\n\n\n* * *\n\n## Conclusion\n\nThis proposal\
+  \ outlines a robust, transparent, and forward-thinking cashback system for Gnosis\
+  \ Pay.  \nIt rewards loyal users, aligns incentives with GNO holding, and protects\
+  \ the DAO treasury through conditional mechanics.  \nWe invite the Gnosis DAO to\
+  \ support and refine this sustainable model for long-term adoption.\n\n* * *\n\n\
+  ## Gnosis Snapshot\n\n_Phase 2 Proposals: Please ignore this section, and leave\
+  \ as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a link to the\
+  \ corresponding Gnosis Snapshot poll you’ve created._\n\n2 Likes\n"
+start: 1746017577
+end: null
+state:
+  - phase-2
+author: "MaCos\nstatus: Draft\ntype: Meta\ncreated: 2025-04-30\nduration: \nfunding:\
+  \ \n\nGnosis Pay Loya&hellip;"
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash
