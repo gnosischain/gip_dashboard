@@ -19,10 +19,11 @@ body: "## Category\n\nService Agreements\n\n## Executive Summary\n\nGnosis Guild
   \ patterns, (2) introducing novel funding mechanisms to address its inefficient\
   \ capital allocation and lackluster ecosystem development, and (3) progressively\
   \ decentralizing DAO processes to increase governance activity, transparency, and\
-  \ participation.\n\nOur annual funding request is 0.3% of AUM, 50% in USDC and 50%\
-  \ in GNO (at the 200-day moving average at the time of allocation and locked for\
-  \ one year), paid monthly to Gnosis Guild coinciding with karpatkey’s monthly treasury\
-  \ report.\n\n**About Gnosis Guild:** _Gnosis Guild is a web3-native venture studio\
+  \ participation.\n\nThe proposal will begin with an Initial Trial Period (ITP) that,\
+  \ upon successful completion of its deliverables, will transition into a two year\
+  \ workstream outlined below.\n\nOur funding request is $38k USDC + $38k GNO (priced\
+  \ at the time the proposal passes and locked for one year), paid monthly to Gnosis\
+  \ Guild.\n\n**About Gnosis Guild:** _Gnosis Guild is a web3-native venture studio\
   \ with the values of conviviality, co-ownership, and experimentation at its heart.\
   \ For over three years, our team’s modular tooling and needs-driven development\
   \ have secured and operationalized the GnosisDAO’s governance and treasury asset\
@@ -66,71 +67,77 @@ body: "## Category\n\nService Agreements\n\n## Executive Summary\n\nGnosis Guild
   \ processes.\n\n\n\nNovel funding mechanisms to foster the Gnosis Ecosystem\n\n\
   \  * Problem: Opaque ecosystem funding mechanisms hinder capital allocation and\
   \ ecosystem development.\n  * Solution: Implement novel funding mechanisms to scale\
-  \ and grow the Gnosis Ecosystem, fostering transparency and capital efficiency.\n\
-  \n\n\nProgressive decentralization of DAO processes\n\n  * Problem: Low governance\
-  \ participation reflects a perceived lack of value in committing resources.\n  *\
-  \ Solution: Facilitate progressive decentralization of DAO processes for greater\
-  \ resilience and trustlessness, creating a more automated, efficient, and permissionless\
-  \ functioning for the DAO.\n\n\n\n### 1\\. Key aspects\n\n**A new architecture and\
-  \ roadmap for governance**\n\nThe current governance process only allows one path\
-  \ for DAO action, namely GIPs. This monolithic structure can be very time consuming\
-  \ and involve significant risk on both the contributor and DAO sides, along with\
-  \ implying high voter bandwidth. Creating multiple types of roles, organizational\
-  \ units, and parallel governance processes within the DAO will serve to decentralize\
-  \ decision-making, reduce bottlenecks, improve bandwidth, and diversify the DAO’s\
-  \ ability to adapt and respond. Safe Guardians, OP Badge Holders, and ENS working\
-  \ groups are a few examples. By effectively delegating clearly scoped responsibilities\
-  \ to autonomous groups, GnosisDAO can improve its organizational efficiency while\
-  \ reducing the governance overhead of its top layer governance. We will develop\
-  \ an evolving architecture, with ongoing innovation and experimentation, to remain\
-  \ agile to dynamic needs.\n\n**Novel funding mechanisms to foster the Gnosis Ecosystem**\n\
-  \nTo scale and grow the Gnosis Ecosystem, we will design and implement novel funding\
-  \ mechanisms for maximum capital efficiency. Multiple paths to ecosystem funding\
-  \ would enable more autonomous contributions, with clear directives and expectations.\
-  \ Optimism and Arbitrum have set an excellent example here, and their ecosystem\
-  \ growth is a clear reflection. Frameworks like RetroPGF, ARB’s STIP + multiple\
-  \ grants programs, and Safe’s OBRA are all promising directions. Based on their\
-  \ successes and pitfalls, we will develop our own mechanism suited to the Gnosis\
-  \ Ecosystem.\n\n**Progressive decentralization of DAO processes**\n\nBy developing\
-  \ modular, composable DAO governance processes, we will increase decentralization\
-  \ and transparency. In reducing any single point of failure, the DAO will have greater\
-  \ resilience and trustlessness. With the development of new onchain mechanisms,\
-  \ we will create a more automated, efficient, and permissionless functioning for\
-  \ the DAO.\n\n### 2\\. Service Scope\n\nThis proposal is solely for our work stewarding\
-  \ governance of GnosisDAO. Any additional work, such as our contributions to Gnosis\
-  \ Pay, Hashi, and DAO treasury management, would be out of scope.\n\n### 3\\. Service\
-  \ delivery\n\n**Immediate Improvements**\n\n  * Modernize the GnosisDAO’s Snapshot\
-  \ strategy to correctly account for a greater diversity of GNO holders.\n  * Enable\
-  \ key delegation features for the DAO: split delegation, transitive delegation,\
-  \ and delegation term limits.\n  * Implement spam proposal filtration\n\n\n\n**Research,\
-  \ Architecture, Design**\n\n  * Extensive research of successful DAO governance\
-  \ architectures\n  * Continuous gathering of GNO stakeholder feedback\n  * Iterative\
-  \ design of novel mechanisms for the DAO’s operations\n  * Experimentation with\
-  \ parallel, tightly-scoped governance mechanisms\n  * Development of a collaborative\
-  \ roadmap for the DAO’s evolution\n\n\n\n**Technical Implementation**\n\n  * Full-stack\
-  \ and smart contract development of governance tooling\n  * Implement novel governance\
-  \ technologies\n\n\n\n**Continuous Stewardship and Operations**\n\n  * Management\
-  \ of DAO governance processes\n  * Coordination of calls, feedback, and calendar\n\
-  \  * Active engagement in forum to foster transparent, efficient dialogue\n  * Rapid\
-  \ response to emergent issues and risks\n\n\n\n### 4\\. Support\n\nGnosis Guild\
-  \ will provide community technical support and ensure we have a rapid response process\
-  \ to any high-risk issues related to GnosisDAO governance.\n\n## Pricing and payment\n\
-  \nGnosis Guild requests an annual compensation of 0.3% AUM, paid pro rata on a monthly\
-  \ cadence, coinciding with, and calculated according to, the AUM reported in karpatkey’s\
-  \ treasury report for the month. The compensation should be 50% USDC and 50% GNO,\
-  \ with the GNO subject to 1 year locking from the time it is distributed.\n\nPayment\
-  \ Frequency | USDC Allocation | GNO Allocation  \n---|---|---  \nMonthly | (AUM\
-  \ * 0.003 * 0.5) / 12 | (AUM * 0.003 * 0.5) / 12  \n  \n(using the 200-day moving\
-  \ average price for GNO at the date of allocation)|\n\nGnosis Guild initially anticipates\
-  \ 3-6 individuals working on the identified scope at any given time, with the possibility\
-  \ to scale alongside treasury growth. The total cost to GnosisDAO will remain competitive\
-  \ with other top protocol DAOs.\n\n## Service Terms and Exit Strategy\n\nIf applicable\
+  \ and grow the Gnosis Ecosystem, fostering transparency and capital efficiency.\
+  \ Experiment with, and implement, mechanisms like futarchy or conviction voting\
+  \ as parallel allocation methods.\n\n\n\nProgressive decentralization of DAO processes\n\
+  \n  * Problem: Low governance participation reflects a perceived lack of value in\
+  \ committing resources.\n  * Solution: Facilitate progressive decentralization of\
+  \ DAO processes for greater resilience and trustlessness, creating a more automated,\
+  \ efficient, and permissionless functioning for the DAO.\n\n\n\n### 1\\. Key aspects\n\
+  \n**A new architecture and roadmap for governance**\n\nThe current governance process\
+  \ only allows one path for DAO action, namely GIPs. This monolithic structure can\
+  \ be very time consuming and involve significant risk on both the contributor and\
+  \ DAO sides, along with implying high voter bandwidth. Creating multiple types of\
+  \ roles, organizational units, and parallel governance processes within the DAO\
+  \ will serve to decentralize decision-making, reduce bottlenecks, improve bandwidth,\
+  \ and diversify the DAO’s ability to adapt and respond. Safe Guardians, OP Badge\
+  \ Holders, and ENS working groups are a few examples. By effectively delegating\
+  \ clearly scoped responsibilities to autonomous groups, GnosisDAO can improve its\
+  \ organizational efficiency while reducing the governance overhead of its top layer\
+  \ governance. We will develop an evolving architecture, with ongoing innovation\
+  \ and experimentation, to remain agile to dynamic needs.\n\n**Novel funding mechanisms\
+  \ to foster the Gnosis Ecosystem**\n\nTo scale and grow the Gnosis Ecosystem, we\
+  \ will design and implement novel funding mechanisms for maximum capital efficiency.\
+  \ Multiple paths to ecosystem funding would enable more autonomous contributions,\
+  \ with clear directives and expectations. Optimism and Arbitrum have set an excellent\
+  \ example here, and their ecosystem growth is a clear reflection. Frameworks like\
+  \ RetroPGF, ARB’s STIP + multiple grants programs, and Safe’s OBRA are all promising\
+  \ directions. Similarly, innovation in futarchy and conviction voting has shown\
+  \ potential as emerging allocation mechanisms. Based on their successes and pitfalls,\
+  \ we will develop our own mechanism suited to the Gnosis Ecosystem.\n\n**Progressive\
+  \ decentralization of DAO processes**\n\nBy developing modular, composable DAO governance\
+  \ processes, we will increase decentralization and transparency. In reducing any\
+  \ single point of failure, the DAO will have greater resilience and trustlessness.\
+  \ With the development of new onchain mechanisms, we will create a more automated,\
+  \ efficient, and permissionless functioning for the DAO.\n\n### 2\\. Service Scope\n\
+  \nThis proposal is solely for our work stewarding governance of GnosisDAO. Any additional\
+  \ work, such as our contributions to Gnosis Pay, Hashi, and DAO treasury management,\
+  \ would be out of scope.\n\n### 3\\. Service delivery\n\n**Immediate Improvements**\n\
+  \n  * Modernize the GnosisDAO’s Snapshot strategy to correctly account for a greater\
+  \ diversity of GNO holders.\n  * Enable key delegation features for the DAO: split\
+  \ delegation, transitive delegation, and delegation term limits.\n  * Implement\
+  \ spam proposal filtration\n\n\n\n**Research, Architecture, Design**\n\n  * Extensive\
+  \ research of successful DAO governance architectures\n  * Continuous gathering\
+  \ of GNO stakeholder feedback\n  * Iterative design of novel mechanisms for the\
+  \ DAO’s operations\n  * Experimentation with parallel, tightly-scoped governance\
+  \ mechanisms\n  * Development of a collaborative roadmap for the DAO’s evolution\n\
+  \n\n\n**Technical Implementation**\n\n  * Full-stack and smart contract development\
+  \ of governance tooling\n  * Implement novel governance technologies\n\n\n\n**Continuous\
+  \ Stewardship and Operations**\n\n  * Management of DAO governance processes\n \
+  \ * Coordination of calls, feedback, and calendar\n  * Active engagement in forum\
+  \ to foster transparent, efficient dialogue\n  * Rapid response to emergent issues\
+  \ and risks\n\n\n\n### 4\\. Support\n\nGnosis Guild will provide community technical\
+  \ support and ensure we have a rapid response process to any high-risk issues related\
+  \ to GnosisDAO governance.\n\n## Pricing and payment\n\nOur funding request is $38k\
+  \ USDC + $38k GNO (priced at the time the proposal passes and locked for one year)\
+  \ paid monthly to Gnosis Guild.\n\nThis would ensure we have a stable fiat payment\
+  \ to sustain the pod through any downturns, while still providing Gnosis Guild with\
+  \ a long-term incentive alignment for our work. The GNO portion would also have\
+  \ a 1-year lockup from receipt.\n\nThe duration would be for 24 months, able to\
+  \ be terminated at any time.\n\nThe team would be comprised of 3.5 guild members\
+  \ including senior full-stack engineers, solidity engineers, mechanism designers,\
+  \ governance leads, PM, researchers, comms, and ops as-needed. The typical team\
+  \ will include 2 senior engineers, one PM/governance lead, and part-time comms/ops,\
+  \ adjusting based on current projects. The total cost to GnosisDAO will remain competitive\
+  \ with other top protocol DAOs.\n\nPayment Frequency | USDC Allocation | GNO Allocation\
+  \  \n---|---|---  \nMonthly | $38k | $38k  \n  \n(using the price of GNO on the\
+  \ date of proposal approval)|\n\n## Service Terms and Exit Strategy\n\nIf applicable\
   \ the duration of the service agreement. Please outline the terms and conditions\
   \ for exiting the service agreement, including the circumstances under which a party\
   \ may terminate the agreement, and any other important details.\n\nThe agreement\
   \ between service provider Gnosis Guild and organization GnosisDAO will take effect\
   \ immediately upon this proposal passing. The terms within the agreement will be\
-  \ valid in perpetuity, unless terminated by either party or updated with mutual\
+  \ valid for two years, unless terminated by either party or updated with mutual\
   \ consent by both parties. GnosisDAO will assign specific permissions to Gnosis\
   \ Guild within their treasury utilizing the Roles Modifier to enable Gnosis Guild\
   \ to autonomously collect payment. Either party may terminate the agreement at any\
@@ -140,11 +147,34 @@ body: "## Category\n\nService Agreements\n\n## Executive Summary\n\nGnosis Guild
   \ will act as an Autonomous Core Contributor for GnosisDAO. Through mutualistic\
   \ partnerships and activist R&D, our team of engineers, designers, and researchers\
   \ will foster the long-term development and sustainable growth of GnosisDAO’s network.\
-  \ See our contributor list here.\n\n## Conclusion\n\nHere you can summarize your\
-  \ project or include anything that wasn’t mentioned yet and is important to understand\
-  \ the GIP.\n\n7 Likes\n\nGIP-101: Should karpatkey and StableLab Establish a Delegate\
-  \ Program v0 for the GnosisDAO?\n\nV2 - Should Gnosis DAO fund the continuation\
-  \ of the validator Monitoring Telegram bot?\n"
+  \ See our contributor list here.\n\n## Initial Trial Period\n\nThe proposal will\
+  \ begin with an Initial Trial Period (ITP) that, upon successful completion of its\
+  \ deliverables, will transition into the ongoing workstream outlined above. This\
+  \ modification aims to offer more concrete test projects, addressing the feedback\
+  \ from Martin and Thomas. The ITP will last 3 months and will carry out the following\
+  \ projects:\n\n  1. Split and Transitive Delegation\n\n\n\nIntegration, support,\
+  \ and maintenance of our improved Snapshot delegation dashboard and strategy, enabling\
+  \ split delegation, transitive delegation, and delegation term limits.\n\n  * Split\
+  \ Delegation: Accounts can delegate their vote weight to any number of other accounts,\
+  \ along with assigning a specific percentage of their voting power to each. For\
+  \ example, Alice could delegate 80% of their vote weight to Bob and 20% to Charlie.\
+  \ Voters could also partially delegate to new mechanisms, like futarchy or agents,\
+  \ as a test-site for new forms.\n  * Transitive Delegation: Accounts can delegate\
+  \ not only their own vote weight, but also any vote weight delegated to them. For\
+  \ example, if Alice delegates to Bob, and Bob delegates to Charlie, Charlie’s total\
+  \ vote weight is the sum of the vote weights of Alice, Bob, and Charlie.\n  * Delegation\
+  \ Term Limits: Accounts and Snapshot spaces can optionally set time limits on how\
+  \ long any given delegation remains valid. Spaces can also choose which, if any,\
+  \ term limit to respect when calculating vote weights.\n\n\n  2. GnosisDAO Treasury\
+  \ Dashboard\n\n\n\nThere is currently no live view of the DAO treasury and its wide\
+  \ range of investments. In order to increase transparency and better communicate\
+  \ the value behind GNO, we will develop a dashboard that aggregates and tracks the\
+  \ DAO treasury and its actively managed positions. This will include analytics,\
+  \ charting functionality, open TWAP order tracking, metrics on yield, growth, spending,\
+  \ revenue, and private investments that belong to the DAO.\n\n7 Likes\n\nGIP-101:\
+  \ Should karpatkey and StableLab Establish a Delegate Program v0 for the GnosisDAO?\n\
+  \nV2 - Should Gnosis DAO fund the continuation of the validator Monitoring Telegram\
+  \ bot?\n\n**next page →**\n"
 start: 1712628182
 end: null
 state:
