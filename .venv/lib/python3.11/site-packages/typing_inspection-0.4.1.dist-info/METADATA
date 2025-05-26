@@ -1,16 +1,16 @@
 Metadata-Version: 2.4
 Name: typing-inspection
-Version: 0.4.0
+Version: 0.4.1
 Summary: Runtime typing introspection tools
 Project-URL: Homepage, https://github.com/pydantic/typing-inspection
 Project-URL: Documentation, https://pydantic.github.io/typing-inspection/dev/
 Project-URL: Source, https://github.com/pydantic/typing-inspection
 Project-URL: Changelog, https://github.com/pydantic/typing-inspection/blob/main/HISTORY.md
 Author-email: Victorien Plot <contact@vctrn.dev>
+License-Expression: MIT
 License-File: LICENSE
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3 :: Only
