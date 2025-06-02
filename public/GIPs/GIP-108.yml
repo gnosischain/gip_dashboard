@@ -146,19 +146,19 @@ body: '**Executive Summary**
   equitably and avoid reputational risk for the Gnosis ecosystem.'
 start: 1748019293
 end: 1748624093
-state: active
+state: closed
 author: '0x577E6bcfE36Aff7543d8a37D623Ed2f075EE5B35'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 10162.275800714584
+scores_state: final
+scores_total: 35154.11408962962
 scores:
-  - 5006.009853628999
-  - 5156.265947085583
+  - 13000.056621800382
+  - 22154.057467829258
   - 0
-votes: 49
+votes: 79
 quorum: 75000
 funding:
   amount: null

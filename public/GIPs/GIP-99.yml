@@ -174,19 +174,19 @@ body: "# GIP-99: Should Gnosis Guild steward GnosisDAO Governance?\n\n## Executi
   \ DAO."
 start: 1747757629
 end: 1748362429
-state: active
+state: closed
 author: '0xd714Dd60e22BbB1cbAFD0e40dE5Cfa7bBDD3F3C8'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 77346.67824454568
+scores_state: final
+scores_total: 118557.59349123134
 scores:
-  - 28267.507534337554
-  - 49075.64908225311
-  - 3.5216279550840768
-votes: 111
+  - 52473.59681339695
+  - 66079.40514987933
+  - 4.591527955084077
+votes: 122
 quorum: 75000
 funding:
   amount: null
