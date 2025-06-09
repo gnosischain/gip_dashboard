@@ -1,29 +1,23 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: uritemplate
-Version: 4.1.1
+Version: 4.2.0
 Summary: Implementation of RFC 6570 URI Templates
 Home-page: https://uritemplate.readthedocs.org
 Author: Ian Stapleton Cordasco
 Author-email: graffatcolmingov@gmail.com
-License: BSD 3-Clause License or Apache License, Version 2.0
+License: BSD 3-Clause OR Apache-2.0
+Project-URL: Source, https://github.com/python-hyper/uritemplate
 Keywords: rfc 6570 uri template
-Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved
-Classifier: License :: OSI Approved :: Apache Software License
-Classifier: License :: OSI Approved :: BSD License
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
 Classifier: Programming Language :: Python :: Implementation :: CPython
-Requires-Python: >=3.6
+Requires-Python: >=3.9
 Description-Content-Type: text/x-rst
 License-File: LICENSE
+Dynamic: license-file
 
 uritemplate
 ===========
@@ -88,5 +82,3 @@ Modified BSD license_
 .. _Travis-CI: https://travis-ci.org/python-hyper/uritemplate
 .. _URI Templates: https://tools.ietf.org/html/rfc6570
 .. _license: https://github.com/python-hyper/uritemplate/blob/master/LICENSE
-
-

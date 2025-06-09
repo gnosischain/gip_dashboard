@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: google-api-python-client
-Version: 2.170.0
+Version: 2.171.0
 Summary: Google API Client Library for Python
 Home-page: https://github.com/googleapis/google-api-python-client/
 Author: Google LLC
@@ -28,6 +28,18 @@ Requires-Dist: google-auth!=2.24.0,!=2.25.0,<3.0.0,>=1.32.0
 Requires-Dist: google-auth-httplib2<1.0.0,>=0.2.0
 Requires-Dist: google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0,>=1.31.5
 Requires-Dist: uritemplate<5,>=3.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 # Google API Client
 
