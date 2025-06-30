@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: python-dotenv
-Version: 1.1.0
+Version: 1.1.1
 Summary: Read key-value pairs from a .env file and set them as environment variables
 Home-page: https://github.com/theskumar/python-dotenv
 Author: Saurabh Kumar
@@ -296,17 +296,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2025-06-24
 
-## [Unrelased]
+## Fixed
+
+* CLI: Ensure `find_dotenv` work reliably on python 3.13 by [@theskumar] in [#563](https://github.com/theskumar/python-dotenv/pull/563)
+* CLI: revert the use of execvpe on Windows by [@wrongontheinternet] in [#566](https://github.com/theskumar/python-dotenv/pull/566)
+
+
+## [1.1.0] - 2025-03-25
 
 **Feature**
+
 - Add support for python 3.13
 - Enhance `dotenv run`, switch to `execvpe` for better resource management and signal handling ([#523]) by [@eekstunt]
 
 **Fixed**
+
 - `find_dotenv` and `load_dotenv` now correctly looks up at the current directory when running in debugger or pdb ([#553] by [@randomseed42])
 
 **Misc**
+
 - Drop support for Python 3.8
 
 ## [1.0.1] - 2024-01-23
@@ -697,8 +707,11 @@ project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 [@yannham]: https://github.com/yannham
 [@zueve]: https://github.com/zueve
 [@randomseed42]: https://github.com/zueve
+[@wrongontheinternet]: https://github.com/wrongontheinternet
 
-[Unreleased]: https://github.com/theskumar/python-dotenv/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/theskumar/python-dotenv/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/theskumar/python-dotenv/compare/v1.1.0...1.1.1
+[1.1.0]: https://github.com/theskumar/python-dotenv/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/theskumar/python-dotenv/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/theskumar/python-dotenv/compare/v0.21.0...v1.0.0
 [0.21.1]: https://github.com/theskumar/python-dotenv/compare/v0.21.0...v0.21.1

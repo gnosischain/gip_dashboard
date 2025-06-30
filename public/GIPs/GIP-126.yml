@@ -1,128 +1,135 @@
-id: gip-126-should-the-gnosisdao-renew-its-long-term-partnership-with-nethermind-for-gnosis-chain-maintenance
-gip_number: 126
-url: https://forum.gnosis.io/t/gip-126-should-the-gnosisdao-renew-its-long-term-partnership-with-nethermind-for-gnosis-chain-maintenance
+id: '0x7fbbe7acfb37e2985c6cceb86dc69b90e21b9db37e2830c29638d68d23366582'
+gip_number: '126'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x7fbbe7acfb37e2985c6cceb86dc69b90e21b9db37e2830c29638d68d23366582
 title: Should the GnosisDAO Renew its Long-Term Partnership With Nethermind for Gnosis
   Chain Maintenance?
-body: "## Summary\n\nNethermind has established a partnership with Gnosis through\
-  \ GIP-47. This proposal renews the long-term strategic collaboration with Nethermind\
-  \ for the continued maintenance and development of the Gnosis Chain. Nethermind\
-  \ has consistently demonstrated responsibility for the chain’s security, stability,\
+body: "```\nGIP: <126>\ntitle: Should the GnosisDAO Renew its Long-Term Partnership\
+  \ With Nethermind for Gnosis Chain Maintenance?\nauthor: Marek Moraczyński, Alvin\
+  \ Su\ntype: Funding\ncreated: 2025-06-06\nduration: ongoing\nfunding: 750,000 DAI\
+  \ in the first year, starting in June 2025, with annual increases of 4%\n```\n##\
+  \ Simple Summary\nNethermind has established a partnership with Gnosis through[\
+  \ GIP-47](https://forum.gnosis.io/t/gip-47-should-gnosisdao-pass-a-grant-proposal-to-form-a-long-term-partnership-with-nethermind-gnosis-chains-primary-node/5074).\
+  \ This proposal renews the long-term strategic collaboration with Nethermind for\
+  \ the continued maintenance and development of the Gnosis Chain. Nethermind has\
+  \ consistently demonstrated responsibility for the chain’s security, stability,\
   \ and alignment with the Ethereum roadmap, extending far beyond the scope of a single\
-  \ client implementation.\n\nIf approved, GnosisDAO will allocate 750,000 DAI in\
-  \ the first year, starting in June 2025, with annual increases of 4% to fund Nethermind’s\
-  \ ongoing contributions.\n\n## Motivation\n\nNethermind is a high-performance, .NET\
+  \ client implementation.\nIf approved, GnosisDAO will allocate 750,000 DAI in the\
+  \ first year, starting in June 2025, with annual increases of 4% to fund Nethermind’s\
+  \ ongoing contributions.\n##  Motivation\nNethermind is a high-performance, .NET\
   \ based Ethereum Execution Client that has played a foundational role in the development\
   \ of the Gnosis Chain. Known for its reliable synchronization, efficient block processing,\
   \ and robust plugin architecture, the Nethermind client consistently delivers utility\
-  \ and stability.  \nOver the past few years, Nethermind has evolved from being solely\
+  \ and stability.\nOver the past few years, Nethermind has evolved from being solely\
   \ a client provider to becoming a core contributor across many aspects of the Gnosis\
   \ Chain infrastructure. This includes serving as the supermajority client and supporting\
   \ DevOps, testing, and research. As the Gnosis Chain continues to be a critical\
   \ piece of infrastructure, Nethermind remains crucial for its ongoing development\
-  \ and long-term success.\n\n## Past Contributions\n\nNethermind has played a crucial\
+  \ and long-term success.\n## Past Contributions\nNethermind has played a crucial\
   \ role in ensuring the reliable and stable operation of the Gnosis Chain. Nethermind\
-  \ has delivered on the promises from GIP-47, some of them were reprioritized and\
-  \ changed with other ones. Moreover, the Nethermind team has contributed to more\
-  \ areas than originally outlined in GIP-47. Nethermind has contributed to the following\
-  \ areas:\n\n  * **Hardforks** : The Nethermind team, in collaboration with Gnosis,\
-  \ has successfully navigated multiple hardforks. Nethermind has never been limited\
-  \ to client development alone, but has also taken full ownership of all testing\
-  \ related to hardforks. The team was responsible for testing and ensuring that all\
-  \ upgrades ran smoothly. With The Merge, Gnosis Chain was migrated from AuRa consensus\
-  \ to PoS, with Nethermind being the sole client that went through the transition.\
-  \ During Shapella, Gnosis Chain introduced withdrawals. The Dencun and Pectra hardforks\
-  \ on Gnosis Chain were delivered before their activation on the Ethereum mainnet.\
-  \ All of these hardforks were delivered with such quality that the chain, users,\
-  \ and node runners did not experience a single major issue.\n  * **Client Improvements:**\
-  \ Over the past three years, Nethermind has made significant advancements. The Nethermind\
-  \ client is fully ready to scale Gnosis Chain without sacrificing decentralization.\
-  \ This progress is visible in its adoption on the Ethereum Mainnet. Nethermind was\
-  \ initially used by only 1–3% of nodes on Ethereum, but now plays an important role\
-  \ in Ethereum client diversity, running on at least 29.3% of Ethereum validators.\
-  \ During these years, Nethermind team has made countless improvements across many\
-  \ areas such as the general performance, stability of the client, JSON-RPC, health\
-  \ checks, plugin architecture, state DB layout, and pruning. Gnosis Chain can also\
-  \ benefit from super-fast snap-sync.\n  * **Chain Health & Client Stability:** As\
-  \ the supermajority client on Gnosis Chain, Nethermind has played a key role in\
-  \ maintaining the network’s safety and stability over the years. Gnosis Chain has\
-  \ experienced no downtime, and all significant issues have been promptly addressed\
-  \ in close collaboration with the Gnosis team. Furthermore, Nethermind has actively\
-  \ supported efforts to onboard additional execution clients to the Gnosis Chain.\n\
-  \  * **DevOps & Infrastructure:** Nethermind has initiated and managed all networks\
-  \ used for testing, including devnets and shadow forks. Additionally, the Nethermind\
-  \ team set up the Chiado network and previously maintained the majority of its validators.\
-  \ Currently, Nethermind maintains 30% of the Chiado validators.\n  * **Encrypted\
-  \ Mempools:** Nethermind delivered the first encrypted mempool implementation in\
-  \ its client using the Shutter protocol, bringing censorship resistance and frontrunning\
-  \ protection to Gnosis Chain. The team has contributed to the specification, implementation,\
-  \ and ongoing research efforts that help shape its roadmap.\n  * **Testing & Tooling:**\
-  \ The team has been working on adopting a variety of testing tools and repositories\
-  \ for use on Gnosis Chain. This includes tools and repositories such as Hive, t8n,\
-  \ EEST, consensus-specs. The goal of these efforts is to ensure that network-specific\
-  \ features (for example base fee collector, and withdrawals) are tested with Ethereum\
-  \ Mainnet-level quality. This also facilitates the onboarding of other clients.\
-  \ Additionally, the team has implemented monitoring for Hive tests and maintains\
-  \ a page displaying hive tests results.\n\n\n\n## Scope of Work & Team\n\nNethermind\
-  \ proposes to continue supporting and improving the Gnosis Chain and the broader\
-  \ ecosystem. The main goal of this proposal is to ensure the continued maintenance\
-  \ of the Gnosis Chain. The scope of work includes:\n\n  * Maintaining the Nethermind\
-  \ Client as a performant and reliable execution client on the Gnosis Chain.\n  *\
-  \ Delivering changes from the Ethereum roadmap in a timely manner. This includes\
-  \ adopting Ethereum mainnet upgrades to the Gnosis Chain when necessary. As an ongoing\
-  \ agreement this includes all future hardforks. In the near term, the current focus\
-  \ will be: \n    * Fusaka – the upcoming hard fork for both Ethereum and Gnosis\
-  \ Chain\n    * Glamsterdam – the subsequent hard fork\n    * History expiry – which\
-  \ aims to reduce disk requirements for node operators\n    * Statelessness – an\
-  \ ongoing effort; the direction has recently shifted from Verkle tries to binary\
-  \ tries, with binary tries currently being prototyped\n  * Continuously improve\
-  \ the client’s ability to handle higher throughput, optimize disk usage, and enhance\
-  \ synchronization performance.\n  * Maintain the encrypted mempool solution.\n \
-  \ * Develop, adopt and maintain custom EIPs required by the Gnosis Chain.\n  * Optimize\
-  \ the design of the Nethermind archive node to reduce storage requirements.\n  *\
-  \ Assist with adopting Ethereum testing infrastructure for Gnosis (e.g., hive, t8n,\
-  \ EEST) and extend it to support Gnosis Chain–specific features.\n  * Support hardfork\
-  \ testing, including devnets, Kurtosis setups, and shadow forks.\n  * Continue maintaining\
-  \ Chiado and other critical infrastructure.\n\n\n\nThe broader Nethermind core team\
-  \ comprises over 20 engineers contributing to both the Gnosis Chain and Ethereum\
-  \ Mainnet. For Gnosis Chain, Nethermind allocates a dedicated subset of engineers\
-  \ based on shifting priorities and workload demands. The number of team members,\
-  \ including engineers, testers, DevOps specialists, and support staff, varies over\
-  \ time and can scale up during major upgrades or critical initiatives. This dynamic\
-  \ approach ensures efficient resource allocation while reinforcing Nethermind’s\
-  \ strong commitment to the stability, seamless upgrades, and continuous development\
-  \ of the Gnosis Chain.\n\n## Funding Request:\n\nThis proposal seeks to renew the\
-  \ previous grant to enable Nethermind to continue its commitment to and maintenance\
-  \ of the Gnosis Chain.\n\nAn ongoing grant of 750,000 DAI is requested for the first\
-  \ year, starting in June 2025, with a 4% increase each subsequent year.\n\nPayments\
-  \ to be made at the beginning of each quarter, first payment in June 2025.\n\nThis\
-  \ funding will enable the Nethermind team to maintain its current structure and\
-  \ provide the necessary expertise for the Gnosis Chain. Continued investment in\
-  \ Nethermind’s work ensures that Gnosis Chain remains aligned with Ethereum’s technical\
-  \ roadmap, maintains a highly performant execution layer, and benefits from leading\
-  \ client and testing infrastructure. This partnership enables Gnosis to prioritize\
-  \ resilience, innovation, and seamless network upgrades without compromising stability\
-  \ or decentralization.\n\n## Conclusion\n\nNethermind has proven itself as a key\
-  \ infrastructure partner of Gnosis. This proposal aims to continue the partnership\
-  \ to maintain Gnosis Chain and ensure it remains robust and aligned with the Ethereum\
-  \ roadmap.\n\nProposal submitted by:\n\nMarek Moraczyński (Head of Blockchain Engineering)\
-  \ @marekm25, Alvin Su (Chief Commercial Officer) @alvinsu\n\nOn behalf of the Nethermind\
-  \ team\n\n7 Likes\n"
-start: 1749571179
-end: null
-state: []
-author: null
+  \ has delivered on the promises from[ GIP-47](https://forum.gnosis.io/t/gip-47-should-gnosisdao-pass-a-grant-proposal-to-form-a-long-term-partnership-with-nethermind-gnosis-chains-primary-node/5074),\
+  \ some of them were reprioritized and changed with other ones. Moreover, the Nethermind\
+  \ team has contributed to more areas than originally outlined in GIP-47. Nethermind\
+  \ has contributed to the following areas:\n* **Hardforks**: The Nethermind team,\
+  \ in collaboration with Gnosis, has successfully navigated multiple hardforks. Nethermind\
+  \ has never been limited to client development alone, but has also taken full ownership\
+  \ of all testing related to hardforks. The team was responsible for testing and\
+  \ ensuring that all upgrades ran smoothly. With The Merge, Gnosis Chain was migrated\
+  \ from AuRa consensus to PoS, with Nethermind being the sole client that went through\
+  \ the transition. During Shapella, Gnosis Chain introduced withdrawals. The Dencun\
+  \ and Pectra hardforks on Gnosis Chain were delivered before their activation on\
+  \ the Ethereum mainnet. All of these hardforks were delivered with such quality\
+  \ that the chain, users, and node runners did not experience a single major issue.\n\
+  * **Client Improvements:** Over the past three years, Nethermind has made significant\
+  \ advancements. The Nethermind client is fully ready to scale Gnosis Chain without\
+  \ sacrificing decentralization. This progress is visible in its adoption on the\
+  \ Ethereum Mainnet. Nethermind was initially used by only 1–3% of nodes on Ethereum,\
+  \ but now plays an important role in Ethereum client diversity, running on[ at least\
+  \ 29.3% of Ethereum validators](https://supermajority.info/). During these years,\
+  \ Nethermind team has made countless improvements across many areas such as the\
+  \ general performance, stability of the client, JSON-RPC, health checks, plugin\
+  \ architecture, state DB layout, and pruning. Gnosis Chain can also benefit from\
+  \ super-fast snap-sync.\n* **Chain Health & Client Stability:** As the supermajority\
+  \ client on Gnosis Chain, Nethermind has played a key role in maintaining the network’s\
+  \ safety and stability over the years. Gnosis Chain has experienced no downtime,\
+  \ and all significant issues have been promptly addressed in close collaboration\
+  \ with the Gnosis team. Furthermore, Nethermind has actively supported efforts to\
+  \ onboard additional execution clients to the Gnosis Chain.\n* **DevOps & Infrastructure:**\
+  \ Nethermind has initiated and managed all networks used for testing, including\
+  \ devnets and shadow forks. Additionally, the Nethermind team set up the Chiado\
+  \ network and previously maintained the majority of its validators. Currently, Nethermind\
+  \ maintains 30% of the Chiado validators.\n* **Encrypted Mempools:** Nethermind\
+  \ delivered the first encrypted mempool implementation in its client using the Shutter\
+  \ protocol, bringing censorship resistance and frontrunning protection to Gnosis\
+  \ Chain. The team has contributed to the specification, implementation, and ongoing\
+  \ research efforts that help shape its roadmap.\n* **Testing & Tooling:** The team\
+  \ has been working on adopting a variety of testing tools and repositories for use\
+  \ on Gnosis Chain. This includes tools and repositories such as[ Hive](https://github.com/gnosischain/hive),[\
+  \ t8n](https://github.com/NethermindEth/nethermind/tree/master/tools/Evm),[ EEST](https://github.com/dmitriy-b/execution-spec-tests-gnosis),[\
+  \ consensus-specs](https://github.com/dmitriy-b/consensus-specs). The goal of these\
+  \ efforts is to ensure that network-specific features (for example base fee collector,\
+  \ and withdrawals) are tested with Ethereum Mainnet-level quality. This also facilitates\
+  \ the onboarding of other clients. Additionally, the team has implemented monitoring\
+  \ for Hive tests and maintains a page displaying[ hive tests results](https://hive-gno.nethermind.io/#summary-sort=name).\n\
+  ## Scope of Work & Team\nNethermind proposes to continue supporting and improving\
+  \ the Gnosis Chain and the broader ecosystem. The main goal of this proposal is\
+  \ to ensure the continued maintenance of the Gnosis Chain. The scope of work includes:\n\
+  * Maintaining the Nethermind Client as a performant and reliable execution client\
+  \ on the Gnosis Chain.\n* Delivering changes from the Ethereum roadmap in a timely\
+  \ manner. This includes adopting Ethereum mainnet upgrades to the Gnosis Chain when\
+  \ necessary. As an ongoing agreement this includes all future hardforks. In the\
+  \ near term, the current focus will be:\n  * Fusaka – the upcoming hard fork for\
+  \ both Ethereum and Gnosis Chain\n  * Glamsterdam – the subsequent hard fork\n \
+  \ * History expiry – which aims to reduce disk requirements for node operators\n\
+  \  * Statelessness – an ongoing effort; the direction has recently shifted from\
+  \ Verkle tries to binary tries, with binary tries currently being prototyped\n*\
+  \ Continuously improve the client’s ability to handle higher throughput, optimize\
+  \ disk usage, and enhance synchronization performance.\n* Maintain the encrypted\
+  \ mempool solution.\n* Develop, adopt and maintain custom EIPs required by the Gnosis\
+  \ Chain.\n* Optimize the design of the Nethermind archive node to reduce storage\
+  \ requirements.\n* Assist with adopting Ethereum testing infrastructure for Gnosis\
+  \ (e.g., hive, t8n, EEST) and extend it to support Gnosis Chain–specific features.\n\
+  * Support hardfork testing, including devnets, Kurtosis setups, and shadow forks.\n\
+  * Continue maintaining Chiado and other critical infrastructure.\nThe broader Nethermind\
+  \ core team comprises over 20 engineers contributing to both the Gnosis Chain and\
+  \ Ethereum Mainnet. For Gnosis Chain, Nethermind allocates a dedicated subset of\
+  \ engineers based on shifting priorities and workload demands. The number of team\
+  \ members, including engineers, testers, DevOps specialists, and support staff,\
+  \ varies over time and can scale up during major upgrades or critical initiatives.\
+  \ This dynamic approach ensures efficient resource allocation while reinforcing\
+  \ Nethermind’s strong commitment to the stability, seamless upgrades, and continuous\
+  \ development of the Gnosis Chain.\n## Funding Request:\nThis proposal seeks to\
+  \ renew the previous grant to enable Nethermind to continue its commitment to and\
+  \ maintenance of the Gnosis Chain.\nAn ongoing grant of 750,000 DAI is requested\
+  \ for the first year, starting in June 2025, with a 4% increase each subsequent\
+  \ year.\nPayments to be made at the beginning of each quarter, first payment in\
+  \ June 2025.\nThis funding will enable the Nethermind team to maintain its current\
+  \ structure and provide the necessary expertise for the Gnosis Chain. Continued\
+  \ investment in Nethermind’s work ensures that Gnosis Chain remains aligned with\
+  \ Ethereum’s technical roadmap, maintains a highly performant execution layer, and\
+  \ benefits from leading client and testing infrastructure. This partnership enables\
+  \ Gnosis to prioritize resilience, innovation, and seamless network upgrades without\
+  \ compromising stability or decentralization.\n## Conclusion\nNethermind has proven\
+  \ itself as a key infrastructure partner of Gnosis. This proposal aims to continue\
+  \ the partnership to maintain Gnosis Chain and ensure it remains robust and aligned\
+  \ with the Ethereum roadmap.\n\nProposal submitted by:\nMarek Moraczyński (Head\
+  \ of Blockchain Engineering) @marekm25, Alvin Su (Chief Commercial Officer) @alvinsu\n\
+  \nOn behalf of the Nethermind team"
+start: 1750862895
+end: 1751467695
+state: active
+author: '0x663ec2BfB273447DC236A646d6dAAA333aAB08f7'
 choices:
   - For
   - Against
   - Abstain
-scores_state: null
-scores_total: null
+scores_state: pending
+scores_total: 32709.849144608776
 scores:
+  - 32698.70637446113
+  - 11.142770147649488
   - 0
-  - 0
-  - 0
-votes: null
-quorum: null
+votes: 58
+quorum: 75000
 funding:
   amount: 750,000
   currency: DAI
