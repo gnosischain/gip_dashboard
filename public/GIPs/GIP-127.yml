@@ -1,0 +1,83 @@
+id: gip-127-should-gnosisdao-reimburse-liquidity-providers-in-the-balancer-eure-sdai-pool-for-lost-opportunity-caused-by-the-issue-reported-by-nolanv
+gip_number: 127
+url: https://forum.gnosis.io/t/gip-127-should-gnosisdao-reimburse-liquidity-providers-in-the-balancer-eure-sdai-pool-for-lost-opportunity-caused-by-the-issue-reported-by-nolanv
+title: Should GnosisDAO reimburse liquidity providers in the Balancer EURe/sDAI pool
+  for lost opportunity caused by the issue reported by NolanV?
+body: "### Introduction\n\nThe pool has played a meaningful role in supporting Gnosis\
+  \ Pay’s growth over the past 18 months, and we are treating recent reports with\
+  \ the seriousness they deserve.\n\nThe pool was created on October 3, 2023, using\
+  \ Balancer’s permissionless infrastructure. The pool design utilized Balancer’s\
+  \ StablePool technology with a rate provider intended to concentrate liquidity around\
+  \ the EUR/USD spot price. However, at the time of creation, the rate provider cache\
+  \ duration was configured to 3 hours. This configuration introduced windows where\
+  \ stale pricing could occur, allowing arbitrageurs to capture value. As a result,\
+  \ we estimate that LPs may have incurred aggregate losses of up to 330,000 USD.\
+  \ The higher volume activity observed during these windows did not translate into\
+  \ sustained fee generation for liquidity providers.\n\n#### Timeline\n\n  * October\
+  \ 3, 2023: Pool was created on Gnosis Chain.\n  * February 20, 2025: An internal\
+  \ review of Gnosis DAO liquidity positions revealed a loss in the EURe / sDAI pool.\
+  \ This led to a broader analysis of the pool’s configuration. It was determined\
+  \ that the Rate Cache Duration needed to be updated.\n  * March 4: A BIP was initiated\
+  \ by Balancer governance to grant the necessary permissions.\n  * March 5–10: Governance\
+  \ voting period.\n  * April 7: Execution completed. The Authorizer role updated\
+  \ the rate cache duration to 1 second. Community member NolanV surfaced the issue\
+  \ in the DeFi Francophone community.\n  * April 9th: NolanV submitted a full independent\
+  \ report: Balancer sDAI/EURe incident report - NolanV\n\n\n\n### Estimate of Loss\n\
+  \nWith support from the Balancer data analytics team, we assessed the issue by simulating\
+  \ a counterfactual scenario where the rate cache duration had been set to 1 second\
+  \ from the start, to determine the hypothetical losses. This is equivalent to the\
+  \ liquidity providers’ opportunity cost (rather than realised losses to their principal).\
+  \ The delta between that and actual pool behavior formed the basis for our loss\
+  \ estimate.\n\nThis required a detailed archive and simulation of all transactions\
+  \ in the relevant period, which has taken us time to perform. We are now finally\
+  \ in a position to share the full analysis, which is available in this repository:\
+  \ GitHub - mendesfabio/eure-sdai-indexer: \n\nThis differs from NolanV’s approach,\
+  \ which used Binance EUR/USDT prices as a proxy, explaining the variation in estimates.\
+  \ Nonetheless, we are grateful to NolanV for their efforts and transparency, and\
+  \ acknowledge and apologise for the long delays noted in their incident report (which\
+  \ were needed to complete our comprehensive estimate of loss).\n\nIn summary, we\
+  \ find that – absent the misconfiguration – liquidity providers in the pool would\
+  \ have received in aggregate up to 330,000 USD more from their positions. Though\
+  \ this is not a loss of principal, the liquidity providers did receive less than\
+  \ they should have, and as such we agree with nesk that a reimbursement is appropriate\
+  \ here (including a bounty for NolanV).\n\n### Implementation Plan\n\nWe propose\
+  \ this GIP to support LPs affected by this issue by offering a targeted boost, and\
+  \ the Balancer team is working to ensure smooth implementation of the distribution\
+  \ mechanism from a technical standpoint.\n\nAdditionally, we are also proposing\
+  \ a 10% bounty (33,000 USD), to be paid in full to NolanV, in recognition of his\
+  \ contribution to the discussion and data analytics provided.\n\n#### Boost Design\n\
+  \n  * Eligibility: LPs who were in the pool until April 7, 2025\n  * Budget: 330,000\
+  \ USD\n  * Distribution Period: 3 months\n  * Conditions: Weekly distributions based\
+  \ on continued participation in the EURe / sDAI pool\n\n\n\nDetails regarding eligibility,\
+  \ including participation via secondary sources (e.g. Aura BPT and Beefy Vault),\
+  \ will be shared before distribution is enacted.\n"
+start: 1751388855
+end: null
+state:
+  - phase-2
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: null
+  error: "429 You exceeded your current quota, please check your plan and billing\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
+    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
+    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
+    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
+    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
+    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 5\n}\n]"
+  model_used: none

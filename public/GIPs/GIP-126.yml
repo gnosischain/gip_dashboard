@@ -116,19 +116,19 @@ body: "```\nGIP: <126>\ntitle: Should the GnosisDAO Renew its Long-Term Partners
   \nOn behalf of the Nethermind team"
 start: 1750862895
 end: 1751467695
-state: active
+state: closed
 author: '0x663ec2BfB273447DC236A646d6dAAA333aAB08f7'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 32709.849144608776
+scores_state: final
+scores_total: 117331.01521406687
 scores:
-  - 32698.70637446113
+  - 117319.87244391922
   - 11.142770147649488
   - 0
-votes: 58
+votes: 79
 quorum: 75000
 funding:
   amount: 750,000
