@@ -1,0 +1,116 @@
+id: gip-128-should-gnosisdao-fund-gnosis-ltd-with-30m-year
+gip_number: 128
+url: https://forum.gnosis.io/t/gip-128-should-gnosisdao-fund-gnosis-ltd-with-30m-year
+title: GIP-128 Should GnosisDAO fund Gnosis Ltd with $30m/ year? - Governance - Gnosis
+body: "## Summary\n\nThis proposal requests a grant with an annual budget of **$30\
+  \ million in stablecoins** , disbursed **quarterly** , to fund the operations of\
+  \ Gnosis Ltd — now formally a quasi-foundation — as the primary builder of Gnosis\
+  \ infrastructure and ecosystem products.\n\nGnosis Ltd played a foundational role\
+  \ in the Gnosis ecosystem: it conducted the original **GNO token sale** in 2017,\
+  \ and in 2021, divested **150k ETH, 8 million GNO** , and several third-party token\
+  \ positions into the newly formed **GnosisDAO**. Since then, it has operated without\
+  \ requesting funding, relying on its retained assets.\n\nAs of early 2025, Gnosis\
+  \ Ltd has successfully completed its legal transformation into a quasi **foundation**\
+  \ (a Company Ltd by guarantee without share capital), eliminating the dual equity-token\
+  \ structure and converting the entity into a purely purpose driven organization,\
+  \ with the objective to further the Gnosis ecosystem and decentralised technologies\
+  \ more generally. With the transition complete and reserves running low, this proposal\
+  \ marks its **first funding request to the DAO**.\n\nWhile many entities contribute,\
+  \ Gnosis Ltd is still the primary development and operations entity in the Gnosis\
+  \ ecosystem. It builds and maintains the core infrastructure that powers Gnosis\
+  \ Chain, and develops and supports major products, onboarding, BD, and governance\
+  \ tooling for the community.\n\nThis proposal ensures continuity and momentum for\
+  \ critical initiatives, while maintaining full alignment with the DAO’s long-term\
+  \ interests.\n\n## Motivation\n\nWe’re proposing an important change in how we position\
+  \ Gnosis. Going forward, Gnosis would become a core consumer-facing brand, rooted\
+  \ in integrity, trusted execution, and user agency. The story we want to tell is\
+  \ no longer just about open infrastructure, but about **building fair, user-owned\
+  \ financial systems**.\n\nWe believe we can gain stronger traction by fully committing\
+  \ to our most compelling narrative, rather than trying to be everything at once.\
+  \ We now have all the key components in place, and bringing them together under\
+  \ one cohesive brand will not only clarify our message but also strengthen the platforms\
+  \ that power it.\n\nWe propose renaming the Metri app to Gnosis. It would become\
+  \ the central retail interface to everything we build. All core offerings — Gnosis\
+  \ [i.e., the wallet], HQ, Gnosis Chain, and Gnosis Pay — would live under the Gnosis\
+  \ domain and share a unified brand identity. Only Circles retains its own branding\
+  \ and domain, while continuing to operate on Gnosis Chain as a core ecosystem project.\n\
+  \nThis structure is loosely reflected in the placeholder landing mockup we created\
+  \ to illustrate its potential appearance. In that concept:\n\nPersonal → Wallet\
+  \ (fka Metri)  \nBusiness → Gnosis HQ  \nPlatform → A foldout menu linking to Gnosis\
+  \ Chain, Gnosis Pay, Circles  \nCollective → A foldout menu to Gnosis Labs, Gnosis\
+  \ VC, Treasury, Forum, Blog, Newsletter\n\n![imageimage2560×1560 542 KB]( \"image\"\
+  )\n\nGnosis Chain remains the foundational platform: resilient, credibly neutral,\
+  \ and deeply integrated with local stablecoins and payment rails. Gnosis Pay enables\
+  \ on-chain assets in self-custody to be used in everyday payments. It operates B2B\
+  \ and powers apps like Gnosis, Zeal, and Picnic. **GNO is the unifying asset across\
+  \ all these efforts** — value creation accrues to GNO. **There will be no further\
+  \ spinoffs.**\n\n## Scope of Work & Budget Breakdown\n\nThe requested grant will\
+  \ cover Gnosis Ltd’s forecasted expenditure for a 12-month period, starting July\
+  \ 1, 2025. Disbursements will occur quarterly, with each installment totaling **$7.5M\
+  \ in stablecoins**. Funds will be sent to Gnosis Ltd’s Gnosis Safe.\n\nBelow is\
+  \ a high-level breakdown of Gnosis Ltd’s budget for the next 12 months. There are\
+  \ currently 127 team members and we’re expecting to onboard 25 more in the coming\
+  \ year.\n\n**Product Development** | **$15.5m**  \n---|---  \nGnosis Pay | $8.0m\
+  \  \nCircles | $1.5m  \nGnosis (fka metri) | $3.1m  \nGnosis Business (fka HQ) |\
+  \ $2.9m  \n  \n**Gnosis Chain and Core Infrastructure** | **$3.6m**  \n---|--- \
+  \ \nPersonnel (chain, bridges, devops, audits, analytics) | $1.95m  \nHosting and\
+  \ cloud providers | $0.65m  \nSecurity audits and bug bounties | $0.3m  \nGnosisscan\
+  \ | $0.4m  \nSafe network support | $0.18m  \ntenderly network support | $0.1m \
+  \ \ndune network support | $0.02m  \n  \n**BD and DevRel** | **$3.85m**  \n---|---\
+  \  \nPersonnel | $0.85m  \nIntegrations (CEX, stablecoins, onramps) | $2.5m  \n\
+  Event sponsorships | $0.4m  \nOpen internet clubs | $0.1m  \n  \n**Marketing and\
+  \ design** | **$2.035m**  \n---|---  \nPersonnel | $1.05m  \nMarketing spent | $0.835m\
+  \  \nPR agency | $0.15m  \n  \n**Gnosis Labs** | **$0.4m**  \n---|---  \nPersonnel\
+  \ | $0.4m  \n  \n**HR & ops** | **$0.45m**  \n---|---  \nPersonnel | $0.45m  \n\
+  \  \n**Legal** | **$1.625m**  \n---|---  \nPersonnel | $1.025m  \nExternal advisory\
+  \ | $0.6m  \n  \n**Finance** | **$0.59m**  \n---|---  \nPersonnel | $0.41m  \nExternal\
+  \ advisory | $0.11m  \nSoftware | $0.07m  \n  \n**Personnel overhead** | **$1.5m**\
+  \  \n---|---  \nTravel, equipment, software, offices |   \n  \n**Management** |\
+  \ **$0.45m**  \n---|---  \nM/S/F | $0.15m each  \n  \n## Reporting and Accountability\n\
+  \n  * Gnosis Ltd will publish **quarterly reports** detailing spend and progress\
+  \ across all budget categories.\n\n  * No additional oversight structures are proposed;\
+  \ DAO token holders retain ultimate accountability through governance.\n\n  * Future\
+  \ funding will depend on DAO review of outcomes and updated proposals.\n\n\n\n\n\
+  ## Closing Note\n\nGnosis Ltd seeded the DAO. This proposal ensures the DAO can\
+  \ continue to rely on it. Onwards and upwards! !:rocket:\n\n11 Likes\n"
+start: 1752318878
+end: null
+state:
+  - phase-2
+author: 'Friederike Ernst (@ernst)
+
+  status: Phase-2
+
+  type: Funding
+
+  created: 2025-07-12
+
+
+  Summary
+
+  This proposal requests a grant with an annual budget of&hellip;'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: null
+  error: "429 You exceeded your current quota, please check your plan and billing\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
+    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
+    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
+    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
+    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
+    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 53\n}\n]"
+  model_used: none

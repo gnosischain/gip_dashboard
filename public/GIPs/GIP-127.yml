@@ -50,7 +50,8 @@ body: "### Introduction\n\nThe pool has played a meaningful role in supporting G
   \ USD\n  * Distribution Period: 3 months\n  * Conditions: Weekly distributions based\
   \ on continued participation in the EURe / sDAI pool\n\n\n\nDetails regarding eligibility,\
   \ including participation via secondary sources (e.g. Aura BPT and Beefy Vault),\
-  \ will be shared before distribution is enacted.\n"
+  \ will be shared before distribution is enacted.\n\nGnosisDAO Governance Summary\
+  \ ~ June 2025\n"
 start: 1751388855
 end: null
 state:
@@ -79,5 +80,5 @@ funding:
     \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
     \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
     , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 5\n}\n]"
+    \n}\n, retry_delay {\n  seconds: 52\n}\n]"
   model_used: none
