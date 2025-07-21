@@ -40,5 +40,5 @@ funding:
     \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
     \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
     , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 56\n}\n]"
+    \n}\n, retry_delay {\n  seconds: 52\n}\n]"
   model_used: none
