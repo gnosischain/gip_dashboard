@@ -241,8 +241,8 @@ body: "## Executive Summary\n\nIn recent years, DAOs like Gnosis have grown sign
   \ Arbitrum, and SafeDAO. We are committed to creating tailor-made, data-driven tools\
   \ that address the unique challenges and needs of GnosisDAO.\n\n## **Contact Information**\n\
   \nX/Twitter: Curia\n\nTelegram: @v3dao\n\nEmail: varit@curialab.xyz\n\nWebsite:\
-  \ Curia Hub\n\n3 Likes\n\n[[Temp Check] Should GnosisDAO procure governance analytics\
-  \ solutions?](\n\nKpk May 2025 Report for GnosisDAO\n"
+  \ Curia Hub\n\n3 Likes\n\nKpk May 2025 Report for GnosisDAO\n\n[[Temp Check] Should\
+  \ GnosisDAO procure governance analytics solutions?](\n"
 start: 1742938862
 end: null
 state:
@@ -275,5 +275,5 @@ funding:
     \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
     \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
     , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 48\n}\n]"
+    \n}\n, retry_delay {\n  seconds: 50\n}\n]"
   model_used: none

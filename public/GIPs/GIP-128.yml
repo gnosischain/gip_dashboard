@@ -47,19 +47,19 @@ body: "This proposal requests a grant with an annual budget of $30 million in st
   \ it. Onwards and upwards! :rocket:"
 start: 1753111875
 end: 1753716675
-state: active
+state: closed
 author: '0xbE96cBFF504BA1C9aBa35a0F6377e8F109f7795B'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 76614.83601674068
+scores_state: final
+scores_total: 76810.25412077714
 scores:
-  - 76604.73601674069
+  - 76800.15412077714
   - 10
   - 0.1
-votes: 90
+votes: 94
 quorum: 75000
 funding:
   amount: '30000000'
