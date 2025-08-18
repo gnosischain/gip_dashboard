@@ -1,0 +1,279 @@
+id: gip-131-should-gnosis-dao-continue-and-update-the-gnosis-pay-cashback-programme
+gip_number: 131
+url: https://forum.gnosis.io/t/gip-131-should-gnosis-dao-continue-and-update-the-gnosis-pay-cashback-programme
+title: Should Gnosis DAO continue and update the Gnosis Pay Cashback Programme? -
+  Governance - Gnosis
+body: "## Summary\n\nThis proposal continues and updates the cashback programme approved\
+  \ under GIP-110, introducing higher reward rates, progressive weekly spend caps\
+  \ tied to GNO holdings, and stronger anti-gaming measures. The goal is to drive\
+  \ Gnosis Pay card usage, incentivize GNO holding, and ensure long-term sustainability.\n\
+  \n## Key updates:\n\n  * Higher maximum cashback: increased from 4% up to 8%, plus\
+  \ +1% for OG NFT holders (9% max)\n  * Maximum GNO holding eligible for rewards\
+  \ increased from 100 GNO to 1,000 GNO\n  * Weekly eligible spend now scales with\
+  \ GNO holdings, capped at USD 2500 equivalent for the largest holders\n  * Budget:\
+  \ 5,000 GNO\n  * Estimated budget duration: Based on current transaction volumes\
+  \ and the updated cashback model, the budget is expected to last 5–8 months.\n \
+  \ * Updated terms to close loopholes and block bad actors\n\n\n\nAverage GNO holding\
+  \ for 7 days | Cashback rate | Max Eligible Weekly Spend  \n---|---|---  \n0.10\
+  \ | 1.00% | $200  \n0.50 | 1.70% | $235  \n1.00 | 2.00% | $250  \n5.00 | 2.70% |\
+  \ $337  \n10.00 | 3.00% | $375  \n20.00 | 3.30% | $488  \n50.00 | 3.70% | $637 \
+  \ \n100.00 | 4.00% | $750  \n200.00 | 5.20% | $1,277  \n500.00 | 6.80% | $1,973\
+  \  \n1,000.00 | 8.00% | $2,500  \n  \n## Rationale\n\nThe cashback programme launched\
+  \ under GIP-110 successfully boosted Gnosis Pay adoption, but analysis showed:\n\
+  \n  * A small number of users made disproportionately high spending to maximise\
+  \ cashback (“gaming” behaviour)\n  * A large share of rewards went to these outliers,\
+  \ reducing fairness and ROI.\n\n\n\nGIP-131 addresses these issues by:\n\n  * Linking\
+  \ weekly eligible spend to GNO holdings via a logarithmic scaling formula\n  * Increasing\
+  \ reward rates for sustained, higher GNO holdings\n  * Replacing the flat weekly\
+  \ cap with progressive caps\n  * Tightening anti-manipulation rules to block manufactured\
+  \ spend and self-funding\n\n\n\nExpected results:\n\n  * Fairer reward distribution\
+  \ across more genuine users\n  * Longer budget lifespan, benefiting more participants\n\
+  \  * Stronger GNO demand through higher holding incentives\n\n\n\n## Continuation\
+  \ of GIP-110\n\nThis is a direct continuation of the programme established under\
+  \ GIP-110 , with changes based on performance analysis, and community feedback and\
+  \ inspiration taken by another proposal to adjust the cashback programme GIP-125.\
+  \ All unchanged terms from GIP-110 remain in effect unless updated here.\n\nBased\
+  \ on current transaction volumes and the updated cashback model, we estimate the\
+  \ programme budget will last approximately 5–8 months. During this period, we will\
+  \ continue to design a long-term, more sustainable loyalty rewards mechanism, planned\
+  \ to align with the launch of the Gnosis Wallet as outlined in GIP-128.\n\n## Implementation\n\
+  \n  * Cashback rate: Scales continuously with the lowest GNO holding in the 7-day\
+  \ snapshot period, up to 8% base or 9% with OG NFT bonus\n  * Weekly spend cap:\
+  \ Varies with GNO holdings, up to USD 2500 equivalent\n  * The eligible spend cap\
+  \ is applied on a weekly basis, aligned with the weekly reward distribution schedule.\
+  \ Unused eligible spend does not roll over to future weeks.\n  * Distribution: Weekly\
+  \ (5–12 days after payment) in GNO on Gnosis Chain using Chainlink/Chronicle FX\
+  \ rates\n  * Administration: Operated by kpk on behalf of the Gnosis DAO Operational\
+  \ Foundation\n\n\n\n## Budget\n\n  * Total: 5,000 GNO\n  * Runs until budget depletion\
+  \ or DAO decision to terminate or replace with a new reward model\n\n\n\n## Anti-Gaming\
+  \ Measures\n\nIneligible Transactions & Behaviours\n\n  * ATM withdrawals – cash\
+  \ withdrawals do not earn cashback.\n  * Bank account top-ups – loading bank accounts\
+  \ via the card is excluded.\n  * Refund cycling – making purchases and refunding\
+  \ them to generate rewards.\n  * Merchant self-payments – paying yourself or an\
+  \ associated merchant.\n  * Self-funding & merchant collusion – coordinated spending\
+  \ to inflate rewards.\n  * Rapid repeat transactions – multiple payments to the\
+  \ same merchant in a short period.\n  * Automated or scripted transactions – using\
+  \ bots or scripts to trigger payments.\n  * Suspicious or abnormal activity – spending\
+  \ patterns inconsistent with genuine use.\n  * GNO top-ups immediately before spending\
+  \ without sustained holding.\n\n\n\nPenalties\n\n  * Disqualification from the current\
+  \ cashback programme.\n  * Blacklisting from all future GnosisDAO-funded incentive\
+  \ programmes.\n\n\n\n# GNO Cashback Offer Rules (“Official Rules”)\n\nSponsored,\
+  \ Administered, and Operated by:  \nThe GNO Cashback Program (“Offer”) is sponsored\
+  \ by GnosisDAO (“Sponsor”), offered and administered by the Gnosis DAO Operational\
+  \ Foundation (“Administrator”), and operated by kpk(“Operator”) in accordance with\
+  \ its mandate from the Sponsor.\n\n## 1\\. Eligibility\n\nThe Offer is only open\
+  \ to Gnosis Pay account holders who have:\n\n  * an Operational Account; and\n \
+  \ * are in compliance with the Gnosis Pay terms and conditions available here: Gnosis\
+  \ Pay WebApp Terms of Service | Gnosis Pay Legal 14, which includes compliance with\
+  \ the applicable cardholder terms, which are here 15 for the UK+Switzerland and\
+  \ here 16 for the EEA (“User”).\n\n\n\nFor the purposes of these terms, an “Operational\
+  \ Account” means a Gnosis Pay account (including the card) which has not been frozen,\
+  \ suspended, closed, deactivated or terminated. Users must meet the eligibility\
+  \ criteria up to and including the date of distribution of any GNO Reward (as defined\
+  \ below). Failure to meet the eligibility requirements prior to the distribution\
+  \ of any GNO Reward will mean the User is not eligible and will not receive any\
+  \ GNO Reward.\n\n## 2\\. Acceptance of Rules\n\nBy Opting In (as defined below)\
+  \ or otherwise participating in the Offer, each User:\n\n  * (a) agrees to be bound\
+  \ by these Official Rules and by the interpretation of these Official Rules by the\
+  \ Administrator and by the decisions of the Administrator, which are final and binding\
+  \ in all respects;\n  * (b) acknowledges compliance with these Official Rules; and\n\
+  \  * (c) agrees to comply with any and all applicable federal, state and local laws,\
+  \ rules and regulations.\n\n\n\nReceiving any Cashback (as defined below) is contingent\
+  \ upon fulfilling all requirements set forth in these Official Rules.\n\n  3. Offer\
+  \ Term; Snapshot Period\n\n\n\nThe Offer begins and ends at the times and dates\
+  \ specified by the GIP-131 proposal or, if earlier, shall end as soon as there are\
+  \ no more funds in the Cashback Reward Pool (as defined below), or as may be further\
+  \ specified by the Operator, in its absolute and final discretion (“Offer Period”).\n\
+  \nThe “Snapshot Period” is the seven (7) days preceding a Card Payment (as defined\
+  \ below).\n\n  4. Method of Participation\n\n\n\nTo participate in the Offer, a\
+  \ User must satisfy the eligibility criteria set out above, and meet the below requirements:\n\
+  \n  * Opt in via Gnosis Pay Web App as directed on the UI;\n  * Have or hold at\
+  \ least 0.1 GNO tokens in their Gnosis Pay Safe throughout the Snapshot Period (“GNO\
+  \ Holding”); and\n  * Make a payment (excepting any ATM withdrawals or Payment Manipulation)\
+  \ from the User’s Gnosis Pay card (“Card Payment”), up to a maximum eligible weekly\
+  \ spend amount that scales with GNO holdings using the GIP-131 logarithmic model,\
+  \ with a maximum cap of USD 10,000 equivalent (as applicable to the User).\n\n\n\
+  \nUsers can decide to opt out of the Offer at any point by transferring out their\
+  \ GNO tokens from their Gnosis Pay Safe or reducing their GNO Holding to less than\
+  \ 0.1 GNO.\n\nAny GNO obtained through bad trading practices, including but not\
+  \ limited to wash trades, false trading, self-dealing, or trades that display any\
+  \ attributes of manipulation (“GNO Top-Up Manipulation”) will not be counted towards\
+  \ the GNO Holding of the User.\n\nAny card payments, or activities in relation to\
+  \ the Offer, that constitute manufactured spending, refund cycling, account churning,\
+  \ misleading purchases, cooperation with merchants, self-funding, multiple or rapid\
+  \ repeated transactions with the same merchant in a short time frame, automated\
+  \ or scripted transactions, patterns indicative of fraud or abuse, or any other\
+  \ conduct that displays attributes of an attempt to game or manipulate the Offer\
+  \ (“Payment Manipulation”) will not be counted towards the Card Payment amounts\
+  \ of the User.\n\nAny person engaging in GNO Top-Up Manipulation, Payment Manipulation,\
+  \ or otherwise trying to game, exploit, maliciously manipulate the Offer (“Offer\
+  \ Manipulation”) to increase their rewards or reduce anyone else’s will not receive\
+  \ the GNO Rewards and will be blacklisted from any future participation in this\
+  \ Offer and any future reward program sponsored by GnosisDAO, in Operator’s sole\
+  \ and absolute discretion.\n\n  5. Cashback\n\n\n\nThe total Cashback reward pool\
+  \ is 5,000 GNO (“Cashback Reward Pool”).\n\nUsers will only receive Cashback:  \n\
+  (i) provided that the User is still satisfying the eligibility criteria set out\
+  \ in section 1 above at the time of the distribution;  \n(ii) so long as and to\
+  \ the extent that there are still funds available in the Cashback Reward Pool will\
+  \ Users receive any Cashback; and  \n(iii) calculated against their Card Payments\
+  \ up to the Maximum Eligible Payments for their GNO holding level, beyond which\
+  \ there would be no further Cashback for Card Payments in that month.\n\nCashback\
+  \ will be distributed in accordance with the below:\n\nAverage GNO holding for 7\
+  \ days | Cashback rate | Max Eligible Weekly Spend  \n---|---|---  \n0.10 | 1.00%\
+  \ | $200  \n0.50 | 1.70% | $235  \n1.00 | 2.00% | $250  \n5.00 | 2.70% | $337  \n\
+  10.00 | 3.00% | $375  \n20.00 | 3.30% | $488  \n50.00 | 3.70% | $637  \n100.00 |\
+  \ 4.00% | $750  \n200.00 | 5.20% | $1,277  \n500.00 | 6.80% | $1,973  \n1,000.00\
+  \ | 8.00% | $2,500  \n  \nThe cashback percentage scales continuously within the\
+  \ model, meaning, for example, that if a User’s lowest GNO Holding through the Snapshot\
+  \ Period was 5.5 GNO, then their relevant Base Cashback would be determined according\
+  \ to the scaling formula.\n\nUsers holding a Gnosis Pay OG NFT in their Gnosis Pay\
+  \ SAFE (“OG Holders”) will receive an additional 1% on the Base Cashback (“OG Bonus”,\
+  \ which together with the Base Cashback is referred to as “Cashback”), hence their\
+  \ total Cashback would be Base Cashback +1%, up to a 9% cap.\n\n## 6\\. Distribution\
+  \ of Cashback\n\nThe Cashback rewards will be automatically distributed in GNO tokens\
+  \ on Gnosis Chain to the User’s Gnosis Pay Safe (“GNO Reward”), on a weekly basis,\
+  \ 5–12 days after the relevant Card Payment.\n\nGNO Rewards will be calculated in\
+  \ the currency of the Card Payment using the Chainlink (or Chronicle for GBP) price\
+  \ feed for GNO/USD, EUR/USD or GBP/USD at the time of distribution of the Cashback\
+  \ to the User.\n\nAny User who is reasonably found to be either failing to meet\
+  \ the Offer eligibility criteria or who is engaging in or attempting to engage in\
+  \ Offer Manipulation will not be sent any GNO Reward, and may suffer the consequences\
+  \ further set out in section 4 above. ANY VIOLATION OF THESE OFFICIAL RULES BY USER\
+  \ WILL RESULT IN SUCH USER’S DISQUALIFICATION FROM RECEIVING ANY GNO REWARD AND\
+  \ ALL PRIVILEGES AS A USER UNDER THIS OFFER WILL BE IMMEDIATELY TERMINATED. ANY\
+  \ ATTEMPT BY ANY PERSON TO DELIBERATELY DAMAGE OR UNDERMINE THE LEGITIMATE OPERATION\
+  \ OF THE OFFER MAY BE IN VIOLATION OF CRIMINAL AND CIVIL LAW AND SHOULD SUCH AN\
+  \ ATTEMPT BE MADE, THE SPONSOR, THE ADMINISTRATOR, AND THE OPERATOR RESERVE THE\
+  \ RIGHT TO SEEK REMEDIES AND DAMAGES (INCLUDING ATTORNEYS’ FEES) FROM ANY SUCH PERSON\
+  \ TO THE FULLEST EXTENT PERMITTED BY LAW.\n\n  7. Refunds\n\n\n\nIf a User receives\
+  \ a refund on a Card Payment, any GNO Rewards will be suspended until the total\
+  \ amount of Cashback corresponding to the refunded amount has been offset. This\
+  \ means that the User will not receive any new GNO Rewards until the value of the\
+  \ Cashback from the refunded amount has been fully accounted for by new Cashback\
+  \ calculations on eligible Card Payments. This is without limitation to any measures\
+  \ the Operator may take against the User if the User is found to be engaging in\
+  \ Offer Manipulation.\n\n## 8\\. Limitation of Liability\n\nTHE CASHBACK IS OFFERED\
+  \ AND PROVIDED “AS IS” WITH NO WARRANTY OR GUARANTEE BY THE SPONSOR OR ANY OF ITS\
+  \ RELATED ENTITIES, OR THE ADMINISTRATOR, EITHER EXPRESS OR IMPLIED. IN NO EVENT\
+  \ WILL THE SPONSOR OR ANY OF ITS RELATED ENTITIES, THE ADMINISTRATOR OR OPERATOR\
+  \ BE LIABLE TO ANY USER FOR ANY DIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, PUNITIVE\
+  \ OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF USE, DATA, BUSINESS OR PROFITS) ARISING\
+  \ OUT OF OR IN CONNECTION WITH A USER’S PARTICIPATION IN THE OFFER, WHETHER SUCH\
+  \ LIABILITY ARISES FROM ANY CLAIM BASED UPON CONTRACT, WARRANTY, TORT (INCLUDING\
+  \ NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, AND WHETHER OR NOT THE SPONSOR OR\
+  \ ANY OF ITS RELATED ENTITIES, THE ADMINISTRATOR, OR THE OPERATOR HAVE BEEN ADVISED\
+  \ OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE.\n\nSOME JURISDICTIONS DO NOT ALLOW\
+  \ THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES,\
+  \ SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO USERS IN SUCH JURISDICTIONS.\n\
+  \n## 9\\. Indemnification\n\nBy participating in the Offer, each User agrees to\
+  \ indemnify, defend, and hold harmless, the Sponsor and any of its related entities,\
+  \ the Administrator, and the Operator from any and all liability, for any claims,\
+  \ damages, injuries or losses of any kind, and to release all rights to bring any\
+  \ claim, action or proceeding arising out of, in connection with, or relating to\
+  \ participation in the Offer or receipt of any GNO Reward. Each User assumes all\
+  \ liability for any injury or damage caused, or claimed to be caused, by participation\
+  \ in the Offer, or the acceptance, receipt, or use of the GNO Reward or any Cashback\
+  \ component. Each User further agrees that in any cause of action, the Sponsor or\
+  \ any of its related entities, the Administrator, and the Operator’s liability will\
+  \ be limited to the value of the GNO Rewards distributed to the User during this\
+  \ particular Offer, and in no event shall the Sponsor or any of its related entities,\
+  \ the Administrator, or the Operator be liable for attorney’s fees.\n\n## 10\\.\
+  \ No Assumption of Responsibility; Force Majeure\n\nThe Sponsor and any of its related\
+  \ entities, the Administrator, and the Operator are not responsible if the Offer\
+  \ cannot take place or is delayed, or if the GNO Reward cannot be distributed or\
+  \ is delayed, interrupted or fails due to acts of God, war, natural disasters, weather,\
+  \ acts or threats of terrorism, strikes, lockouts, labor disputes, work stoppages,\
+  \ fire, acts of government, or other events outside of the reasonable control of\
+  \ the Sponsor and any of its related entities and of the Administrator and Operator.\n\
+  \n## 11\\. Notices, Amendments and Clarifications\n\nAdministrator reserves the\
+  \ right, in its sole discretion, to cancel, terminate, modify, or suspend the Offer\
+  \ or any part of the Offer and to change, amend or modify these Official Rules or\
+  \ any part of these Official Rules, provided that any such modifications or amendments\
+  \ remain consistent with and uphold the fundamental philosophy and principles of\
+  \ the original Offer and that any such change or other notice shall be either posted\
+  \ by Administrator or Operator to the GIP forum relating to this Offer or published\
+  \ as a new GIP and take effect two weeks after such post or at such other time as\
+  \ specified by Administrator in the post. Administrator reserves the right, in its\
+  \ sole and absolute discretion, to modify and amend these Official Rules from time\
+  \ to time without notice during the Entry Period for clarification purposes or if\
+  \ the amendment or modification is otherwise non-material or non-significant.\n\n\
+  ## 12\\. Feedback\n\nIf you have any feedback, questions or complaints regarding\
+  \ the Offer or these Official Rules, please email gnosisdao@karpatkey.com.\n\n##\
+  \ 13\\. Dispute Resolution\n\nIn the event of any dispute in connection with the\
+  \ Offer or these Official Rules, Administrator reserves the right to make all final\
+  \ decisions regarding the Offer, in its sole and absolute discretion.\n\nAny dispute\
+  \ arising out of or in connection with this contract, including any question regarding\
+  \ its existence, validity or termination, shall be referred to and finally resolved\
+  \ by arbitration under the LCIA Rules, which Rules are deemed to be incorporated\
+  \ by reference into this clause. Any arbitration commenced pursuant to this Clause\
+  \ shall take place in the English language through an independent and impartial\
+  \ board comprising one arbitrator to be appointed by agreement between the parties\
+  \ to the proceedings.\n\nBy Opting In and otherwise participating in the Offer,\
+  \ you acknowledge that you waive any right to participate in a class action, collective\
+  \ action, or group litigation. Any disputes or claims arising out of or relating\
+  \ to these Official Rules shall be resolved on an individual basis. You agree that\
+  \ you may bring claims against the Administrator, Operator, Sponsor, and any affiliated\
+  \ or related parties only in your individual capacity, and not as a claimant or\
+  \ class member in any purported class or representative proceeding.\n\n## 14\\.\
+  \ Accessibility of Official Rules and Reward Calculation Code\n\nThe GIP-131 Proposal\
+  \ for this Offer is available at the following link: [GIP-131 Forum Post Link] and\
+  \ these Official Rules are linked in the GIP Proposal for this Offer. The GNO Reward\
+  \ calculation code will be open source and available at: GitHub - karpatkey/gnosis-pay-rewards-monorepo.\n\
+  \n## 15\\. Taxes\n\nCashback received and GNO Rewards may be taxable, depending\
+  \ on the country, state, and/or local tax laws applicable to the User. Users are\
+  \ solely responsible for reporting such items in their tax returns and paying any\
+  \ associated tax(es), duties, levies and liabilities.\n\n## 16\\. No Financial Advice\n\
+  \nNothing contained herein or in relation to the Offer shall be construed to be\
+  \ financial advice. Holding and transferring crypto assets involves a high degree\
+  \ of risk and there is always the possibility of loss, including the loss of all\
+  \ digital assets in the event of a mistaken transfer (whether to an incorrect address\
+  \ or an incorrect chain). Please seek professional advice before making any financial,\
+  \ investment, or trading decisions.\n\n## 17\\. Entire Agreement\n\nThese Official\
+  \ Rules constitute the entire agreement between Administrator and the User. The\
+  \ invalidity or unenforceability of any provision of these Official Rules will not\
+  \ affect the validity or enforceability of any other provision. In the event that\
+  \ any provision of the Official Rules is determined to be invalid or otherwise unenforceable\
+  \ or illegal, the other provisions will remain in effect and will be construed in\
+  \ accordance with their terms as if the invalid or illegal provision were not contained\
+  \ herein. The Administrator, the Operator, and the Sponsor and its entities’ failure\
+  \ to enforce any term of these Official Rules will not constitute a waiver of that\
+  \ term or any other provision of these Official Rules. Each User agrees to waive\
+  \ any rights to claim ambiguity of these Official Rules. Headings are solely for\
+  \ convenience of reference and will not be deemed to affect in any manner the meaning\
+  \ or intent of these Official Rules or any provision hereof. In the event there\
+  \ is a discrepancy or inconsistency between disclosures or other statements contained\
+  \ in the Offer–related materials, including any referenced privacy policy or terms\
+  \ of use on a website and/or the terms and conditions of these Official Rules, the\
+  \ Official Rules shall prevail, govern and control and the discrepancy will be resolved\
+  \ in the Administrator’s sole and absolute discretion.\n\n4 Likes\n\nGnosis Pay\
+  \ Rewards Pool is Nearing Exhaustion\n\n**next page →**\n"
+start: 1755103861
+end: null
+state:
+  - phase-1
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: null
+  error: "429 You exceeded your current quota, please check your plan and billing\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
+    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
+    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
+    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
+    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
+    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 45\n}\n]"
+  model_used: none
