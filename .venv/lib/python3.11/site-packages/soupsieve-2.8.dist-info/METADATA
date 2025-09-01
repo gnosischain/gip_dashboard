@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: soupsieve
-Version: 2.7
+Version: 2.8
 Summary: A modern CSS selector implementation for Beautiful Soup.
 Project-URL: Homepage, https://github.com/facelessuser/soupsieve
 Author-email: Isaac Muse <Isaac.Muse@gmail.com>
@@ -13,16 +13,16 @@ Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
 Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
 Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Typing :: Typed
-Requires-Python: >=3.8
+Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 
 [![Donate via PayPal][donate-image]][donate-link]
