@@ -1,13 +1,12 @@
 name: Weekly Scrape
 
-# Run the workflow weekly
 on:
-  # workflow_dispatch:
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 * * 1" # Runs every Monday at midnight UTC
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   scrape_data:
@@ -15,37 +14,35 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4 # Use a more recent version
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11' 
+        python-version: '3.11'
 
     - name: Install dependencies
       run: |
-        rm -rf /home/runner/work/gip_dashboard/gip_dashboard/.venv
         python -m venv .venv
-        source .venv/bin/activate
-        pip install -r src/scripts/requirements.txt  # Assumes you have a requirements.txt file
+        .venv/bin/pip install -r src/scripts/requirements.txt
 
     - name: Run scraping script
       env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: |
-        source .venv/bin/activate
-        python src/scripts/snapshot_crawler.py
-
-    - name: Pull latest changes
-      run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git pull origin main
+        # Run the script using the python from the venv directly
+        .venv/bin/python src/scripts/snapshot_crawler.py
 
     - name: Commit and push changes
       run: |
-        git add .
-        git commit -m "Add generated YAML files"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Check if there are any changes to commit
+        if [[ -z $(git status -s) ]]; then
+          echo "No changes to commit."
+        else
+          git add .
+          git commit -m "Weekly data scrape"
+          git push
+        fi
