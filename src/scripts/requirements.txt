@@ -4,3 +4,4 @@ beautifulsoup4
 html2text
 google-generativeai
 python-dotenv
+urllib3

@@ -3,6 +3,8 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import yaml
 import re
 import os
@@ -59,6 +61,23 @@ class RateLimiter:
 # Create a rate limiter for 15 calls per 60 seconds
 rate_limiter = RateLimiter(max_calls=15, period=60)
 
+def create_session_with_retries():
+    """Create a requests session with retry logic"""
+    session = requests.Session()
+    
+    retry_strategy = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["HEAD", "GET", "OPTIONS"]
+    )
+    
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    
+    return session
+
 @rate_limiter
 def extract_funding_info(text):
     try:
@@ -111,9 +130,12 @@ def fetch_html_content(url):
     header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
-    response = requests.get(url, headers=header)
-    if response.status_code == 200:
-        return response.text
+    try:
+        response = requests.get(url, headers=header, timeout=30)
+        if response.status_code == 200:
+            return response.text
+    except Exception as e:
+        logger.error(f"Error fetching HTML content from {url}: {str(e)}")
     return None
 
 
@@ -170,7 +192,6 @@ def parse_html_content(html_content):
 
 
 def refine_body_with_regex(text):
-
     # Rule 2: Remove links but keep anchor text
     # Remove markdown links [text](url) and keep 'text'
     text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
@@ -206,7 +227,7 @@ Please format the following text according to these instructions:
 {chunk}
 
 **Please provide the formatted text below without adding any new content nor comments. 
-Revisit wyour answer twice and make sure all forating is correct**
+Revisit your answer twice and make sure all formatting is correct**
 """
 
             response = model.generate_content(prompt)
@@ -309,26 +330,51 @@ def extract_info_from_meta(content):
     return {key: re.search(pattern, content, re.IGNORECASE).group(1).strip() if re.search(pattern, content, re.IGNORECASE) else None 
             for key, pattern in patterns.items()}
 
-def fetch_forum_gips(base_url):
-    base_url = os.getenv("GIP_FORUM_URL", "https://forum.gnosis.io/c/dao/gips/l/latest.json")
+def fetch_forum_gips(base_url=None):
+    # Use parameter if provided, otherwise use env var or default
+    if base_url is None:
+        base_url = os.getenv("GIP_FORUM_URL", "https://forum.gnosis.io/c/dao/gips/20.json")
+    
     max_gip = 0
     topics = []
-    url = base_url  # start at /c/dao/gips/l/latest.json
+    url = base_url
 
     headers = {
         "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.9"
     }
+
+    session = create_session_with_retries()
 
     try:
         while url:
-            resp = requests.get(url, headers=headers, timeout=30)
-            # Fallback: if someone accidentally passes /20.json with ?page=..., retry w/o ?page
-            if resp.status_code == 405 and url.endswith(".json") and "?page=" in url:
-                url = url.split("?page=")[0]  # try without page
-                resp = requests.get(url, headers=headers, timeout=30)
+            logger.info(f"Fetching from: {url}")
+            
+            # Add a small delay to be respectful to the server
+            time.sleep(0.5)
+            
+            try:
+                resp = session.get(url, headers=headers, timeout=30)
+                resp.raise_for_status()
+            except requests.exceptions.HTTPError as e:
+                if e.response.status_code == 405:
+                    # Try alternative endpoint format
+                    logger.warning(f"405 error, trying alternative format")
+                    if "/l/latest.json" in url:
+                        url = url.replace("/l/latest.json", "/20.json")
+                    elif "?page=" in url:
+                        url = url.split("?page=")[0]
+                    else:
+                        raise
+                    
+                    logger.info(f"Retrying with: {url}")
+                    time.sleep(1)
+                    resp = session.get(url, headers=headers, timeout=30)
+                    resp.raise_for_status()
+                else:
+                    raise
 
-            resp.raise_for_status()
             data = resp.json()
 
             topic_list = data.get("topic_list", {})
@@ -343,7 +389,6 @@ def fetch_forum_gips(base_url):
             # Discourse provides the next page path when there are more
             next_path = topic_list.get("more_topics_url")
             if next_path:
-                # next_path is like "/c/dao/gips/l/latest?page=2"; keep it absolute
                 url = f"https://forum.gnosis.io{next_path}"
             else:
                 url = None
@@ -353,7 +398,13 @@ def fetch_forum_gips(base_url):
 
     except Exception as e:
         logger.error(f"Error fetching forum GIPs: {str(e)}")
+        if hasattr(e, 'response'):
+            logger.error(f"Response status: {e.response.status_code}")
+            logger.error(f"Response headers: {e.response.headers}")
+            logger.error(f"Response text: {e.response.text[:500]}")
         return 0, []
+    finally:
+        session.close()
 
 def fetch_snapshot_proposals(max_gip):
     logger.info(f"Fetching snapshot proposals for max GIP: {max_gip}")
@@ -388,7 +439,7 @@ def fetch_snapshot_proposals(max_gip):
         }"""
     }
     try:
-        response = requests.post(url, json=payload)
+        response = requests.post(url, json=payload, timeout=30)
         response.raise_for_status()
         proposals = response.json()['data']['proposals']
         logger.info(f"Fetched {len(proposals)} proposals from Snapshot")
