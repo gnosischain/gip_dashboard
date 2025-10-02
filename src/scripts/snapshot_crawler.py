@@ -109,7 +109,7 @@ def extract_funding_info(text):
 
 def fetch_html_content(url):
     header = {
-        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)"
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
     response = requests.get(url, headers=header)
     if response.status_code == 200:
@@ -313,29 +313,44 @@ def fetch_forum_gips(base_url):
     logger.info(f"Fetching GIPs from {base_url}")
     max_gip = 0
     topics = []
-    page = 0
+    url = base_url  # start at /c/dao/gips/l/latest.json
+
+    headers = {
+        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
+        "Accept": "application/json"
+    }
+
     try:
-        while True:
-            url = f"{base_url}?page={page}"
-            header = {
-                "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)"
-            }
-            response = requests.get(url, headers=header)
-            response.raise_for_status()
-            topic_list = response.json()['topic_list']
-            new_topics = topic_list['topics']
+        while url:
+            resp = requests.get(url, headers=headers, timeout=30)
+            # Fallback: if someone accidentally passes /20.json with ?page=..., retry w/o ?page
+            if resp.status_code == 405 and url.endswith(".json") and "?page=" in url:
+                url = url.split("?page=")[0]  # try without page
+                resp = requests.get(url, headers=headers, timeout=30)
+
+            resp.raise_for_status()
+            data = resp.json()
+
+            topic_list = data.get("topic_list", {})
+            new_topics = topic_list.get("topics", [])
             topics.extend(new_topics)
-            
-            for topic in new_topics:
-                match = re.search(r'GIP-?(\d+)', topic['slug'], re.IGNORECASE)
-                if match:
-                    max_gip = max(max_gip, int(match.group(1)))
-            
-            if 'more_topics_url' not in topic_list:
-                break
-            page += 1
+
+            for t in new_topics:
+                m = re.search(r'GIP-?(\d+)', t.get('slug', ''), re.IGNORECASE)
+                if m:
+                    max_gip = max(max_gip, int(m.group(1)))
+
+            # Discourse provides the next page path when there are more
+            next_path = topic_list.get("more_topics_url")
+            if next_path:
+                # next_path is like "/c/dao/gips/l/latest?page=2"; keep it absolute
+                url = f"https://forum.gnosis.io{next_path}"
+            else:
+                url = None
+
         logger.info(f"Fetched {len(topics)} topics, max GIP number: {max_gip}")
         return max_gip, topics
+
     except Exception as e:
         logger.error(f"Error fetching forum GIPs: {str(e)}")
         return 0, []
