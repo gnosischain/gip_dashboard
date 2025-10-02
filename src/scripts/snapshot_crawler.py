@@ -310,7 +310,7 @@ def extract_info_from_meta(content):
             for key, pattern in patterns.items()}
 
 def fetch_forum_gips(base_url):
-    logger.info(f"Fetching GIPs from {base_url}")
+    base_url = os.getenv("GIP_FORUM_URL", "https://forum.gnosis.io/c/dao/gips/l/latest.json")
     max_gip = 0
     topics = []
     url = base_url  # start at /c/dao/gips/l/latest.json
