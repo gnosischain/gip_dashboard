@@ -330,81 +330,140 @@ def extract_info_from_meta(content):
     return {key: re.search(pattern, content, re.IGNORECASE).group(1).strip() if re.search(pattern, content, re.IGNORECASE) else None 
             for key, pattern in patterns.items()}
 
-def fetch_forum_gips(base_url=None):
-    # Use parameter if provided, otherwise use env var or default
-    if base_url is None:
-        base_url = os.getenv("GIP_FORUM_URL", "https://forum.gnosis.io/c/dao/gips/20.json")
-    
+def fetch_forum_gips_via_api():
+    """
+    Fetch GIPs using Discourse's public API endpoints.
+    This method is more reliable and less likely to be blocked.
+    """
     max_gip = 0
     topics = []
-    url = base_url
-
+    page = 0
+    
     headers = {
         "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
         "Accept": "application/json",
-        "Accept-Language": "en-US,en;q=0.9"
     }
-
+    
     session = create_session_with_retries()
-
+    
     try:
-        while url:
+        # Discourse API: fetch topics from the category
+        # Category ID 20 is for GIPs
+        while True:
+            # Use the topics API endpoint
+            url = f"https://forum.gnosis.io/c/dao/gips/20/l/latest.json?page={page}"
             logger.info(f"Fetching from: {url}")
             
-            # Add a small delay to be respectful to the server
-            time.sleep(0.5)
+            time.sleep(0.5)  # Be respectful
             
             try:
                 resp = session.get(url, headers=headers, timeout=30)
+                
+                # If we get a 405 or captcha, try the alternative endpoint
+                if resp.status_code == 405 or 'captcha' in resp.text.lower():
+                    logger.warning(f"Got blocked response, trying RSS feed fallback")
+                    return fetch_forum_gips_via_rss()
+                
                 resp.raise_for_status()
-            except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 405:
-                    # Try alternative endpoint format
-                    logger.warning(f"405 error, trying alternative format")
-                    if "/l/latest.json" in url:
-                        url = url.replace("/l/latest.json", "/20.json")
-                    elif "?page=" in url:
-                        url = url.split("?page=")[0]
-                    else:
-                        raise
-                    
-                    logger.info(f"Retrying with: {url}")
-                    time.sleep(1)
-                    resp = session.get(url, headers=headers, timeout=30)
-                    resp.raise_for_status()
-                else:
-                    raise
-
-            data = resp.json()
-
+                data = resp.json()
+                
+            except requests.exceptions.RequestException as e:
+                logger.error(f"Error fetching page {page}: {str(e)}")
+                # Try RSS fallback
+                if page == 0:  # Only try fallback on first page failure
+                    logger.info("Trying RSS feed fallback")
+                    return fetch_forum_gips_via_rss()
+                break
+            
             topic_list = data.get("topic_list", {})
             new_topics = topic_list.get("topics", [])
+            
+            if not new_topics:
+                break
+                
             topics.extend(new_topics)
-
+            
             for t in new_topics:
                 m = re.search(r'GIP-?(\d+)', t.get('slug', ''), re.IGNORECASE)
                 if m:
                     max_gip = max(max_gip, int(m.group(1)))
-
-            # Discourse provides the next page path when there are more
-            next_path = topic_list.get("more_topics_url")
-            if next_path:
-                url = f"https://forum.gnosis.io{next_path}"
-            else:
-                url = None
-
+            
+            # Check if there are more pages
+            if not topic_list.get("more_topics_url"):
+                break
+                
+            page += 1
+            
+            # Safety limit
+            if page > 20:
+                logger.warning("Reached page limit, stopping")
+                break
+        
         logger.info(f"Fetched {len(topics)} topics, max GIP number: {max_gip}")
         return max_gip, topics
-
+        
     except Exception as e:
-        logger.error(f"Error fetching forum GIPs: {str(e)}")
-        if hasattr(e, 'response'):
-            logger.error(f"Response status: {e.response.status_code}")
-            logger.error(f"Response headers: {e.response.headers}")
-            logger.error(f"Response text: {e.response.text[:500]}")
-        return 0, []
+        logger.error(f"Error in fetch_forum_gips_via_api: {str(e)}")
+        # Try RSS as last resort
+        logger.info("Trying RSS feed fallback")
+        return fetch_forum_gips_via_rss()
     finally:
         session.close()
+
+def fetch_forum_gips_via_rss():
+    """
+    Fallback method using RSS feed which is less likely to be blocked.
+    RSS feeds are typically more permissive for automated access.
+    """
+    logger.info("Using RSS feed fallback method")
+    max_gip = 0
+    topics = []
+    
+    headers = {
+        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
+    }
+    
+    try:
+        # Discourse RSS feeds don't require authentication and are rarely blocked
+        url = "https://forum.gnosis.io/c/dao/gips/20.rss"
+        logger.info(f"Fetching RSS from: {url}")
+        
+        response = requests.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        
+        from xml.etree import ElementTree as ET
+        root = ET.fromstring(response.content)
+        
+        # Parse RSS feed
+        for item in root.findall('.//item'):
+            title_elem = item.find('title')
+            link_elem = item.find('link')
+            
+            if title_elem is not None and link_elem is not None:
+                title = title_elem.text
+                link = link_elem.text
+                
+                # Extract slug from link
+                slug = link.rstrip('/').split('/')[-1] if link else ''
+                
+                # Create topic dict similar to JSON API response
+                topic = {
+                    'slug': slug,
+                    'title': title,
+                }
+                topics.append(topic)
+                
+                # Extract GIP number
+                m = re.search(r'GIP-?(\d+)', slug, re.IGNORECASE)
+                if m:
+                    max_gip = max(max_gip, int(m.group(1)))
+        
+        logger.info(f"Fetched {len(topics)} topics from RSS, max GIP number: {max_gip}")
+        return max_gip, topics
+        
+    except Exception as e:
+        logger.error(f"Error fetching RSS feed: {str(e)}")
+        return 0, []
 
 def fetch_snapshot_proposals(max_gip):
     logger.info(f"Fetching snapshot proposals for max GIP: {max_gip}")
@@ -545,9 +604,10 @@ def save_proposal_as_yaml(proposal, gip_tracker):
 def main():
     try:
         logger.info("Starting GIP scraping process")
-        base_url = 'https://forum.gnosis.io/c/dao/gips/20.json'
         
-        max_gip, forum_topics = fetch_forum_gips(base_url)
+        # Use the new API-based method
+        max_gip, forum_topics = fetch_forum_gips_via_api()
+        
         if max_gip == 0:
             logger.error("Failed to fetch GIPs from forum. Exiting.")
             return
