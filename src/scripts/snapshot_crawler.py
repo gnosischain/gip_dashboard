@@ -109,7 +109,7 @@ def extract_funding_info(text):
 
 def fetch_html_content(url):
     header = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)"
     }
     response = requests.get(url, headers=header)
     if response.status_code == 200:
@@ -318,7 +318,7 @@ def fetch_forum_gips(base_url):
         while True:
             url = f"{base_url}?page={page}"
             header = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+                "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)"
             }
             response = requests.get(url, headers=header)
             response.raise_for_status()
