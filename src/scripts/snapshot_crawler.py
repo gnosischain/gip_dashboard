@@ -317,7 +317,10 @@ def fetch_forum_gips(base_url):
     try:
         while True:
             url = f"{base_url}?page={page}"
-            response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+            header = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            response = requests.get(url, headers=header)
             response.raise_for_status()
             topic_list = response.json()['topic_list']
             new_topics = topic_list['topics']
