@@ -3,7 +3,7 @@ name: Weekly Scrape
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 0 * * 1"  # Mondays 00:00 UTC
 
 permissions:
   contents: write
@@ -13,36 +13,56 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # safer for commits/pushes
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          # Optionally speed up installs:
+          cache: 'pip'
+          cache-dependency-path: |
+            src/scripts/requirements.txt
+            requirements.txt
 
-    - name: Install dependencies
-      run: |
-        python -m venv .venv
-        .venv/bin/pip install -r src/scripts/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Prefer the path that actually exists; fall back gracefully
+          if [ -f "src/scripts/requirements.txt" ]; then
+            pip install -r src/scripts/requirements.txt
+          elif [ -f "requirements.txt" ]; then
+            pip install -r requirements.txt
+          else
+            echo "No requirements file found"; exit 1
+          fi
 
-    - name: Run scraping script
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      run: |
-        .venv/bin/python src/scripts/snapshot_crawler.py
+      - name: Run scraping script
+        env:
+          # Use the variable your code expects:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          python src/scripts/snapshot_crawler.py
 
-    - name: Commit and push changes
-      run: |
-        # Configure git user
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Commit and push changes (if any)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
-        # Check if there are any changes to commit
-        if [[ -z $(git status --porcelain) ]]; then
-          echo "No changes to commit."
-        else
-          git add .
+          # Avoid committing noise
+          echo ".venv/" >> .git/info/exclude || true
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git commit -m "Automated data scrape"
           git push
-        fi
