@@ -28,9 +28,9 @@ from typing import (
     Iterator,
     List,
     Mapping,
+    MutableSequence,
     Optional,
     Pattern,
-    Sequence,
     Set,
     TYPE_CHECKING,
     Tuple,
@@ -1301,7 +1301,7 @@ class PageElement(object):
         else:
             matcher = SoupStrainer(name, attrs, string, **kwargs)
 
-        result: Iterable[_OneElement]
+        result: MutableSequence[_OneElement]
         if string is None and not limit and not attrs and not kwargs:
             if name is True or name is None:
                 # Optimization to find all tags.
@@ -3184,40 +3184,25 @@ class Tag(PageElement):
 
 _PageElementT = TypeVar("_PageElementT", bound=PageElement)
 
-
-class ResultSet(Sequence[_PageElementT], Generic[_PageElementT]):
-    """A ResultSet is a sequence of `PageElement` objects, gathered as the result
+class ResultSet(List[_PageElementT], Generic[_PageElementT]):
+    """A ResultSet is a list of `PageElement` objects, gathered as the result
     of matching an :py:class:`ElementFilter` against a parse tree. Basically, a list of
     search results.
     """
 
     source: Optional[ElementFilter]
-    result: Sequence[_PageElementT]
 
     def __init__(
-        self, source: Optional[ElementFilter], result: Sequence[_PageElementT] = ()
+        self, source: Optional[ElementFilter], result: Iterable[_PageElementT] = ()
     ) -> None:
-        self.result = result
+        super(ResultSet, self).__init__(result)
         self.source = source
-
-    def __len__(self) -> int:
-        return len(self.result)
-
-    def __getitem__(self, index):
-        return self.result[index]
 
     def __getattr__(self, key: str) -> None:
         """Raise a helpful exception to explain a common code fix."""
         raise AttributeError(
-            f"""ResultSet object has no attribute "{key}". You're probably treating a sequence of elements like a single element. Did you call find_all() when you meant to call find()?"""
+            f"""ResultSet object has no attribute "{key}". You're probably treating a list of elements like a single element. Did you call find_all() when you meant to call find()?"""
         )
-
-    def __eq__(self, other: Any) -> bool:
-        """A ResultSet is equal to a list if its results are equal to that list.
-        A ResultSet is equal to another ResultSet if their results are equal,
-        even if the results come from different sources.
-        """
-        return bool(self.result == other)
 
 # Now that all the classes used by SoupStrainer have been defined,
 # import SoupStrainer itself into this module to preserve the

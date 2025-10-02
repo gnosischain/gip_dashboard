@@ -20,7 +20,7 @@ from typing import (
     cast,
     Iterable,
     Iterator,
-    Sequence,
+    MutableSequence,
     Optional,
     TYPE_CHECKING,
 )
@@ -89,7 +89,7 @@ class CSS(object):
             ns = self.tag._namespaces
         return ns
 
-    def _rs(self, results: Sequence[Tag]) -> ResultSet[Tag]:
+    def _rs(self, results: MutableSequence[Tag]) -> ResultSet[Tag]:
         """Normalize a list of results to a py:class:`ResultSet`.
 
         A py:class:`ResultSet` is more consistent with the rest of

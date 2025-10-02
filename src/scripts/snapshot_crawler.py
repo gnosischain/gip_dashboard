@@ -62,7 +62,7 @@ rate_limiter = RateLimiter(max_calls=15, period=60)
 @rate_limiter
 def extract_funding_info(text):
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-flash-latest')
         prompt = f"""
         Extract funding information from the following text. If funding is mentioned, provide the amount and currency. If no funding is mentioned, say 'No funding mentioned'.
 

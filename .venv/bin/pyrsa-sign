@@ -1,4 +1,4 @@
-#!/home/runner/work/gip_dashboard/gip_dashboard/.venv/bin/python
+#!/Users/hugser/Documents/Gnosis/repos/gip_dashboard/.venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys
