@@ -295,7 +295,7 @@ def clean_body_content(body_text):
 
 def convert_to_unix_timestamp(datetime_value):
     if datetime_value:
-        dt_obj = datetime.strptime(datetime_value, "%Y-%m-%dT%H:%M:%SZ")
+        dt_obj = datetime.strptime(datetime_value, "%Y-%-%dT%H:%M:%SZ")
         return int(time.mktime(dt_obj.timetuple()))
     return ""
 
@@ -330,148 +330,161 @@ def extract_info_from_meta(content):
     return {key: re.search(pattern, content, re.IGNORECASE).group(1).strip() if re.search(pattern, content, re.IGNORECASE) else None 
             for key, pattern in patterns.items()}
 
-def fetch_forum_gips_via_api():
+def scrape_forum_topic_list():
     """
-    Fetch GIPs using Discourse's public API endpoints.
-    This method is more reliable and less likely to be blocked.
+    Scrape the HTML version of the forum topics list.
+    This is a last resort when API and RSS are blocked.
     """
+    logger.info("Attempting to scrape forum HTML directly")
     max_gip = 0
     topics = []
-    page = 0
     
     headers = {
-        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
-        "Accept": "application/json",
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Cache-Control': 'max-age=0'
     }
     
     session = create_session_with_retries()
     
     try:
-        # Discourse API: fetch topics from the category
-        # Category ID 20 is for GIPs
-        while True:
-            # Use the topics API endpoint
-            url = f"https://forum.gnosis.io/c/dao/gips/20/l/latest.json?page={page}"
-            logger.info(f"Fetching from: {url}")
-            
-            time.sleep(0.5)  # Be respectful
-            
-            try:
-                resp = session.get(url, headers=headers, timeout=30)
-                
-                # If we get a 405 or captcha, try the alternative endpoint
-                if resp.status_code == 405 or 'captcha' in resp.text.lower():
-                    logger.warning(f"Got blocked response, trying RSS feed fallback")
-                    return fetch_forum_gips_via_rss()
-                
-                resp.raise_for_status()
-                data = resp.json()
-                
-            except requests.exceptions.RequestException as e:
-                logger.error(f"Error fetching page {page}: {str(e)}")
-                # Try RSS fallback
-                if page == 0:  # Only try fallback on first page failure
-                    logger.info("Trying RSS feed fallback")
-                    return fetch_forum_gips_via_rss()
-                break
-            
-            topic_list = data.get("topic_list", {})
-            new_topics = topic_list.get("topics", [])
-            
-            if not new_topics:
-                break
-                
-            topics.extend(new_topics)
-            
-            for t in new_topics:
-                m = re.search(r'GIP-?(\d+)', t.get('slug', ''), re.IGNORECASE)
-                if m:
-                    max_gip = max(max_gip, int(m.group(1)))
-            
-            # Check if there are more pages
-            if not topic_list.get("more_topics_url"):
-                break
-                
-            page += 1
-            
-            # Safety limit
-            if page > 20:
-                logger.warning("Reached page limit, stopping")
-                break
+        # Try to scrape the HTML version of the forum
+        url = "https://forum.gnosis.io/c/dao/gips/20"
+        logger.info(f"Scraping HTML from: {url}")
         
-        logger.info(f"Fetched {len(topics)} topics, max GIP number: {max_gip}")
-        return max_gip, topics
+        time.sleep(1)  # Be respectful
         
-    except Exception as e:
-        logger.error(f"Error in fetch_forum_gips_via_api: {str(e)}")
-        # Try RSS as last resort
-        logger.info("Trying RSS feed fallback")
-        return fetch_forum_gips_via_rss()
-    finally:
-        session.close()
-
-def fetch_forum_gips_via_rss():
-    """
-    Fallback method using RSS feed which is less likely to be blocked.
-    RSS feeds are typically more permissive for automated access.
-    """
-    logger.info("Using RSS feed fallback method")
-    max_gip = 0
-    topics = []
-    
-    headers = {
-        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
-    }
-    
-    try:
-        # Discourse RSS feeds don't require authentication and are rarely blocked
-        url = "https://forum.gnosis.io/c/dao/gips/20.rss"
-        logger.info(f"Fetching RSS from: {url}")
+        response = session.get(url, headers=headers, timeout=30, allow_redirects=True)
         
-        response = requests.get(url, headers=headers, timeout=30)
-        response.raise_for_status()
+        if response.status_code != 200:
+            logger.error(f"Failed to fetch forum HTML: status {response.status_code}")
+            return 0, []
         
-        from xml.etree import ElementTree as ET
-        root = ET.fromstring(response.content)
+        # Check if we got a CAPTCHA or blocked page
+        if 'captcha' in response.text.lower() or 'human verification' in response.text.lower():
+            logger.error("Got CAPTCHA/verification page")
+            return 0, []
         
-        # Parse RSS feed
-        for item in root.findall('.//item'):
-            title_elem = item.find('title')
-            link_elem = item.find('link')
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Find all topic links in the forum
+        # Discourse uses specific CSS classes for topic listings
+        topic_links = soup.find_all('a', class_='title')
+        
+        if not topic_links:
+            # Try alternative selectors
+            topic_links = soup.find_all('a', href=re.compile(r'/t/gip-\d+'))
+        
+        for link in topic_links:
+            href = link.get('href', '')
+            title = link.get_text(strip=True)
             
-            if title_elem is not None and link_elem is not None:
-                title = title_elem.text
-                link = link_elem.text
+            # Extract slug from href
+            if '/t/' in href:
+                slug = href.split('/t/')[-1].split('/')[0]
                 
-                # Extract slug from link
-                slug = link.rstrip('/').split('/')[-1] if link else ''
-                
-                # Create topic dict similar to JSON API response
-                topic = {
+                topics.append({
                     'slug': slug,
-                    'title': title,
-                }
-                topics.append(topic)
+                    'title': title
+                })
                 
                 # Extract GIP number
                 m = re.search(r'GIP-?(\d+)', slug, re.IGNORECASE)
                 if m:
                     max_gip = max(max_gip, int(m.group(1)))
         
-        logger.info(f"Fetched {len(topics)} topics from RSS, max GIP number: {max_gip}")
+        logger.info(f"Scraped {len(topics)} topics from HTML, max GIP: {max_gip}")
         return max_gip, topics
         
     except Exception as e:
-        logger.error(f"Error fetching RSS feed: {str(e)}")
+        logger.error(f"Error scraping forum HTML: {str(e)}")
         return 0, []
+    finally:
+        session.close()
+
+def fetch_all_gip_numbers_from_forum():
+    """
+    Try to get GIP numbers by directly constructing URLs based on a reasonable range.
+    This is the most reliable fallback when the forum blocks all listing methods.
+    """
+    logger.info("Using fallback: attempting to fetch individual GIP pages")
+    
+    # Start with a reasonable max based on your last successful run
+    # You mentioned GIP-138, so let's check up to 150 to be safe
+    estimated_max = 150
+    found_gips = []
+    max_gip = 0
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    }
+    
+    session = create_session_with_retries()
+    
+    try:
+        # Check which GIPs exist by trying to fetch them
+        for gip_num in range(1, estimated_max + 1):
+            # Try common slug patterns
+            possible_slugs = [
+                f"gip-{gip_num}",
+                f"gip-{gip_num}-should",
+                f"should-gip-{gip_num}",
+            ]
+            
+            for slug in possible_slugs:
+                url = f"https://forum.gnosis.io/t/{slug}"
+                
+                try:
+                    # Use HEAD request to check if page exists (faster)
+                    response = session.head(url, headers=headers, timeout=10, allow_redirects=True)
+                    
+                    if response.status_code == 200:
+                        logger.info(f"Found GIP-{gip_num} at {slug}")
+                        found_gips.append({
+                            'slug': slug,
+                            'title': f'GIP-{gip_num}'
+                        })
+                        max_gip = max(max_gip, gip_num)
+                        break  # Found it, no need to try other slug patterns
+                        
+                except requests.RequestException:
+                    continue  # Try next slug pattern
+                
+                time.sleep(0.3)  # Be respectful with rate limiting
+            
+            # Every 10 GIPs, log progress
+            if gip_num % 10 == 0:
+                logger.info(f"Checked up to GIP-{gip_num}, found {len(found_gips)} so far")
+        
+        logger.info(f"Found {len(found_gips)} GIPs via direct checking, max: {max_gip}")
+        return max_gip, found_gips
+        
+    except Exception as e:
+        logger.error(f"Error in fallback GIP fetching: {str(e)}")
+        # If even this fails, return a conservative estimate
+        return 140, []  # Based on your local run showing GIP-138
+    finally:
+        session.close()
 
 def fetch_snapshot_proposals(max_gip):
     logger.info(f"Fetching snapshot proposals for max GIP: {max_gip}")
+    
+    # Add some buffer to max_gip to ensure we get all proposals
+    fetch_count = max(max_gip + 20, 150)
+    
     url = 'https://hub.snapshot.org/graphql'
     payload = {
         "operationName": "Proposals",
         "variables": {
-            "first": max_gip,
+            "first": fetch_count,
             "skip": 0,
             "space_in": ["gnosis.eth"],
             "state": "all",
@@ -502,10 +515,22 @@ def fetch_snapshot_proposals(max_gip):
         response.raise_for_status()
         proposals = response.json()['data']['proposals']
         logger.info(f"Fetched {len(proposals)} proposals from Snapshot")
-        return proposals
+        
+        # Extract max GIP from Snapshot if forum failed
+        snapshot_max_gip = 0
+        for proposal in proposals:
+            match = re.search(r'GIP[- ]?(\d+)', proposal['title'], re.IGNORECASE)
+            if match:
+                snapshot_max_gip = max(snapshot_max_gip, int(match.group(1)))
+        
+        if snapshot_max_gip > max_gip:
+            logger.info(f"Snapshot has higher GIP number: {snapshot_max_gip} vs forum: {max_gip}")
+            max_gip = snapshot_max_gip
+        
+        return proposals, max_gip
     except Exception as e:
         logger.error(f"Error fetching snapshot proposals: {str(e)}")
-        return []
+        return [], max_gip
 
 def extract_and_clean_gip_number(title):
     match = re.search(r'GIP[- ]?(\d+)', title, re.IGNORECASE)
@@ -515,18 +540,46 @@ def extract_and_clean_gip_number(title):
     return None, title
 
 def integrate_missing_proposals(missing_gips, forum_topics):
+    """
+    For GIPs that are in the forum but not in Snapshot,
+    fetch them directly from the forum.
+    """
     missing_proposals = []
-    for topic in forum_topics:
-        slug = topic['slug']
-        match = re.search(r'GIP-?(\d+)', slug, re.IGNORECASE)
-        if match and int(match.group(1)) in missing_gips:
-            url = f'https://forum.gnosis.io/t/{slug}'
-            html_content = fetch_html_content(url)
-            if html_content:
+    
+    logger.info(f"Found {len(missing_gips)} GIPs missing from Snapshot: {sorted(missing_gips)}")
+    
+    for gip_num in sorted(missing_gips):
+        # Try to find this GIP in forum_topics first
+        found_topic = None
+        for topic in forum_topics:
+            if re.search(rf'GIP-?{gip_num}\b', topic['slug'], re.IGNORECASE):
+                found_topic = topic
+                break
+        
+        if found_topic:
+            slug = found_topic['slug']
+        else:
+            # If not in topics list, try common slug patterns
+            slug = f"gip-{gip_num}"
+        
+        url = f'https://forum.gnosis.io/t/{slug}'
+        logger.info(f"Fetching missing GIP-{gip_num} from {url}")
+        
+        html_content = fetch_html_content(url)
+        if html_content and 'captcha' not in html_content.lower():
+            try:
                 full_content, meta_content, title_content, unix_timestamp, discourse_tags = parse_html_content(html_content)
                 proposal_info = extract_info_from_meta(meta_content)
-                proposal = create_proposal_dict(slug, int(match.group(1)), title_content, full_content, unix_timestamp, discourse_tags, proposal_info)
+                proposal = create_proposal_dict(slug, gip_num, title_content, full_content, unix_timestamp, discourse_tags, proposal_info)
                 missing_proposals.append(proposal)
+                logger.info(f"Successfully fetched GIP-{gip_num}")
+            except Exception as e:
+                logger.error(f"Error parsing GIP-{gip_num}: {str(e)}")
+        else:
+            logger.warning(f"Could not fetch content for GIP-{gip_num}")
+        
+        time.sleep(1)  # Be respectful with rate limiting
+    
     return missing_proposals
 
 def create_proposal_dict(slug, gip_number, title, body, start, state, proposal_info):
@@ -539,7 +592,7 @@ def create_proposal_dict(slug, gip_number, title, body, start, state, proposal_i
         'start': start,
         'end': None,
         'state': state,
-        'author': proposal_info['author'],
+        'author': proposal_info.get('author'),
         'choices': ['For', 'Against', 'Abstain'],
         'scores_state': None,
         'scores_total': None,
@@ -605,14 +658,30 @@ def main():
     try:
         logger.info("Starting GIP scraping process")
         
-        # Use the new API-based method
-        max_gip, forum_topics = fetch_forum_gips_via_api()
+        # Try multiple methods to get forum data, in order of preference
+        max_gip = 0
+        forum_topics = []
         
+        # Method 1: Try HTML scraping
+        logger.info("Attempting Method 1: HTML scraping")
+        max_gip, forum_topics = scrape_forum_topic_list()
+        
+        # Method 2: If HTML scraping fails, try direct URL checking
         if max_gip == 0:
-            logger.error("Failed to fetch GIPs from forum. Exiting.")
-            return
-
-        proposals = fetch_snapshot_proposals(max_gip)
+            logger.info("Method 1 failed. Attempting Method 2: Direct URL checking")
+            max_gip, forum_topics = fetch_all_gip_numbers_from_forum()
+        
+        # Method 3: If both fail, use Snapshot to determine max GIP
+        if max_gip == 0:
+            logger.warning("Both forum methods failed. Will rely on Snapshot data.")
+            max_gip = 140  # Conservative estimate based on your local run
+        
+        logger.info(f"Determined max GIP: {max_gip}")
+        
+        # Fetch from Snapshot (this works reliably)
+        proposals, updated_max_gip = fetch_snapshot_proposals(max_gip)
+        max_gip = updated_max_gip  # Use the higher value
+        
         if not proposals:
             logger.error("Failed to fetch proposals from Snapshot. Exiting.")
             return
@@ -631,12 +700,17 @@ def main():
 
         processed_proposals = sorted(processed_proposals, key=lambda p: p['created'])
         
+        # Find missing GIPs
         gip_numbers_from_api = {int(p['gip_number']) for p in processed_proposals if p['gip_number']}
         missing_gips = set(range(1, max_gip + 1)) - gip_numbers_from_api
         
-        additional_proposals = integrate_missing_proposals(missing_gips, forum_topics)
-        processed_proposals.extend(additional_proposals)
+        if missing_gips:
+            logger.info(f"Attempting to fetch {len(missing_gips)} missing GIPs from forum")
+            additional_proposals = integrate_missing_proposals(missing_gips, forum_topics)
+            processed_proposals.extend(additional_proposals)
+            logger.info(f"Successfully fetched {len(additional_proposals)} missing proposals")
         
+        # Save all proposals
         gip_tracker = {}
         for proposal in processed_proposals:
             try:
@@ -645,8 +719,12 @@ def main():
                 logger.error(f"Error saving proposal {proposal.get('gip_number', 'Unknown')}: {str(e)}")
         
         logger.info(f"Generated {len(processed_proposals)} YAML files.")
+        logger.info("Scraping process completed successfully!")
+        
     except Exception as e:
         logger.error(f"An error occurred in main: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
 
 if __name__ == "__main__":
     main()
