@@ -1,0 +1,121 @@
+id: '0xff2ea0fb10996165e0d31f25522d24e345146682058f894a42b3ba158905360a'
+gip_number: '134'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xff2ea0fb10996165e0d31f25522d24e345146682058f894a42b3ba158905360a
+title: ​Pilot a Gnosis Growth Fund for small scale, community-led ecosystem funding
+body: '## Proposal Overview
+
+  This proposal requests $40k in funding to be added directly to a GNO community-owned
+  conviction voting pool on Gardens. The purpose of this pool is to help resource
+  growth initiatives that foster a healthier, more diverse Gnosis Ecosystem.
+
+
+  This experiment allows the Gnosis community to try out a mechanism aimed at giving
+  GNO holders more agency in the DAO, and plants the seeds for a more resilient ecosystem
+  by expanding the diversity of projects and initiatives being resourced.
+
+
+  This community would be guided by Gnosis’s mission of Building the Open Internet,
+  enforced through an onchain Covenant.
+
+
+  The Gardens Core team is offering to set up this pilot free of charge with 100%
+  of funds added to the Growth Fund directed by GNO holders.
+
+
+  ## Proposal Details
+
+  As a starting point, we suggest Gnosis DAO replicate an active pilot recently launched
+  in the Safe Ecosystem:
+
+  * https://x.com/twitter/status/1953165888829702353
+
+  * https://app.gardens.fund/gardens/100/0x4d18815d14fe5c3304e87b3fa18318baa5c23820/0x99a454785c9859e5b61647d77a05be1fa53f4d04
+
+
+  In short, this setup includes:
+
+
+  * A Gnosis Community on Gardens - an open community members can join by signing
+  an onchain Covenant and staking GNO.
+
+  * Governance Pool #1 - Council Safe Election - a signaling pool in the Gnosis Garden
+  to elect the signers of the admin Safe for the community
+
+  * Governance Pool #2 - Priority Signaling - a signaling pool in the Gnosis Garden
+  where the community can curate the ecosystem’s pain points and prioritize areas
+  of funding
+
+  * Governance Pool #3 - Gnosis Growth Fund - a funding pool, seeded with $10k and
+  an additional $30k streamed into the pool over 3 months, to fund community growth
+  initiatives.
+
+  * Descriptions, eligibility requirements, visual assets, and secure pool governance
+  parameters for each.
+
+
+  Governance parameters for each of these pools can be separately customized, including:
+
+
+  * voting weight system (fixed, quadratic, or 1 token = 1 vote)
+
+  * voting allowLists (the Safe ecosystem uses its Guardian addresses and Top 50 voters
+  on Snapshot for sybil protection)
+
+  * conviction growth rate (time delay on proposal support)
+
+  * Tribunal Safe (account that rules on proposal disputes)
+
+  * GNO stake required to join
+
+
+  **Work to be completed by the Gardens team**
+
+  Unless there are substantial changes to the setup above requested by the Gnosis
+  DAO community, Gardens will resource this work with its own funding:
+
+  * Draft a community Covenant with feedback from Gnosis DAO delegates.
+
+  * Creation of the Gardens community governed by GNO.
+
+  * Setup and activation of governance pools to be run.
+
+  * Marketing and communications to onboard members and proposals into the community.
+
+  * A report following the pilot with results on the projects funded and participation
+  metrics from the community.
+
+
+  **Requests of Gnosis DAO to help with this pilot**
+
+  * $40k in funding, sent to the elected Council Safe that will moderate the community
+
+  * Amplification of announcements to help recruit members, proposals, and voters
+
+  * Feedback on the proposed setup and suggestions for improvement to better address
+  Gnosis DAO’s needs
+
+
+  Gardens Core is motivated to resource this work based on the demand in Gnosis DAO
+  for more participatory governance solutions, and the likelihood of the program’s
+  success leading to additional funding.'
+start: 1758047860
+end: 1758652660
+state: closed
+author: '0x809C9f8dd8CA93A41c3adca4972Fa234C28F7714'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 73500.97793606509
+scores:
+  - 73490.97793606509
+  - 10
+  - 0
+votes: 102
+quorum: 75000
+funding:
+  amount: 40k
+  currency: $
+  confidence: High
+  model_used: gemini-1.5-flash

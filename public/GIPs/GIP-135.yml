@@ -1,0 +1,84 @@
+id: '0x2e08952c22ca96dbee9fb6e8ba2ee4d3df0d3994e18d38f819cfb8e228d39384'
+gip_number: '135'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x2e08952c22ca96dbee9fb6e8ba2ee4d3df0d3994e18d38f819cfb8e228d39384
+title: Should Gnosis DAO grant RaidGuild a 50k stipend to fund the audit of an Euro
+  pegged CDP stablecoin on Gnosis using Liquity V2 + liquidity agreement in exchange
+  for 15% of governance token
+body: "# Simple Summary\nWe propose to co-fund and launch **gEURO**, a €1.00-pegged\
+  \ CDP stablecoin on Gnosis Chain. gEURO is a Liquity V2 fork operated by RaidGuild,\
+  \ backed by ETH, BTC, and Gnosis-native assets, natively yield-bearing, and designed\
+  \ to integrate with **Gnosis Pay, RWAs, and Circles.**\n\n# Abstract\n**- gEURO:**\
+  \ Euro-stablecoin using Liquity V2 mechanics; collateralized initially by **sDAI,\
+  \ wstETH, GNO, osGNO, WBTC** (expandable post risk review).\n\n**- Yield-bearing:**\
+  \ 75% of borrowing fees accrue to gEURO holders; 100% of liquidation fees to stability\
+  \ pool depositors.\n\n**- Peg:** Always redeemable for €1.00 of collateral; redemptions\
+  \ prioritize lowest-rate vaults.\n\n**- Gnosis alignment:** GNO can remain delegated\
+  \ while used as collateral; governance receives a protocol revenue share and a future\
+  \ token allocation.\n\n**- Ask:** $50k grant for audit + legal; and a non-binding\
+  \ liquidity intent (e.g., ~$5M at launch, scalable with growth).\n\n# Motivation\n\
+  **1. Ecosystem need:** With USD volatility and Gnosis Pay’s growth, euro-centric\
+  \ DeFi is a priority.\n\n**2. Differentiation:** Decentralized, on-chain collateral\
+  \ and natively yield-bearing stablecoin—distinct from custodial euro tokens.\n\n\
+  **3. Strategic fit:** \n- Native euro settlement layer for **Gnosis Pay.**\n\n-\
+  \ Deepens **GNO utility** (borrow against GNO while keeping governance delegation).\n\
+  \n- Enables **RWA** issuance/use on Gnosis Chain.\n\n**4. Growth:** Target **$25M\
+  \ TVL** within 18 months via ecosystem integrations.\n\n# Specification\n**Core\
+  \ Protocol Design**\n\n- Liquity V2 fork (license secured).\n\n**- Collateral:**\
+  \ sDAI, wstETH, GNO, osGNO, WBTC at launch; others via subsequent risk assessments.\n\
+  \n**- Vaults:** Each position is an NFT (Non-Fungible Vault), enabling transferability\
+  \ and integration with other DeFi protocols.\n\n**- Borrowing:** Users choose their\
+  \ own interest rate (flexible, fixed-rate style).\n\n**- Fees:** 75% to gEURO holders;\
+  \ 25% governed (e.g., LP incentives).\n\n**- Peg:** Redemptions at €1.00; lowest-rate\
+  \ vaults are redeemed first; variable redemption fee.\n\n# Unique Gnosis Features\n\
+  \n**- GNO delegation:** Collateralized GNO remains delegatable.\n\n**- DAO upside:**\
+  \ Portion of protocol revenue + 15% of any future governance tokens to GnosisDAO\
+  \ (proposed with vesting/lockup; details to be finalized with the DAO).\n\n# Implementation\
+  \ Plan (≈3 months)\n\n1. Finalize features + Solidity work.\n\n2. Smart-contract\
+  \ audit & testnet deployment.\n\n3. Frontend, documentation, ecosystem integrations.\n\
+  \n4. Mainnet launch & marketing rollout.\n\n# Milestones\n- Month 1: Feature freeze;\
+  \ contracts on testnet.\n\n- Month 2: Audit complete; frontend + docs ready.\n\n\
+  - Month 3: Mainnet launch; liquidity bootstrapping.\n\n# Budget & Ask\n**- Grant:\
+  \ $50,000** (security audit + legal).\n\n**- Team funding:** RaidGuild covers all\
+  \ other design, development, and operational costs.\n\n**- Liquidity: Non-binding\
+  \ liquidity intent** by GnosisDAO/partners (e.g., ~$5M at launch; scale with adoption).\n\
+  \n# Risks & Mitigation\n**- Contract risk** → Third-party audit, Liquity-based code,\
+  \ comprehensive tests.\n\n**- Peg risk** → Redemption mechanism, arbitrage incentives,\
+  \ stability pool.\n\n**- Regulatory risk** → Early legal review; governance control\
+  \ over new collateral/debt limits.\n\n**- Adoption risk** → Liquidity intent + integrations\
+  \ with Gnosis Pay, RWAs, Circles, native DeFi.\n\n# Critical Success Factors\n-\
+  \ Robust €1.00 peg; attractive native yield.\n\n- Smooth UX and onboarding; strong\
+  \ integrations.\n\n- Transparent DAO alignment (revenue share, token allocation).\n\
+  \n- Security-first delivery and audit assurance.\n\n# Benefits to GnosisDAO\n**-\
+  \ Treasury upside:** 15% of any future governance token (with vesting/lockup) to\
+  \ GnosisDAO.\n\n**- Product fit:** gEURO as a default euro savings complement to\
+  \ EURe on Gnosis Chain.\n\n**- Ecosystem synergies:** Gnosis Pay, RWAs, Circles.\n\
+  \n**- Operator commitment:** RaidGuild will run and grow the protocol long-term.\n\
+  \n**About RaidGuild**\nWe are **RaidGuild** — a Web3-native design and development\
+  \ collective active since 2019. Forged in the MetaCartel community, we’ve delivered\
+  \ smart contracts, protocol interfaces, and DAO tooling across Ethereum and beyond.\
+  \ Notably, we built the original OmniBridge for xDAI (now Gnosis Chain).\n\nThis\
+  \ stablecoin initiative is part of our strategy to build and operate community-owned\
+  \ financial primitives on Gnosis Chain, and to steward the infrastructure we create\
+  \ over the long term.\n\nUseful links: [gEURO Litepaper](https://hackmd.io/1_iBuGwZQ_iDjIVOEMrJ7w)\
+  \ • [RaidGuild Deck](https://drive.google.com/file/d/1fbjBSpVrZw2u8WljmgKH_qxwU0Q1r8aW/view?usp=sharing)"
+start: 1757944636
+end: 1758549436
+state: closed
+author: '0xcf26985B53256dF9cF1ACb11575936De77B68BEe'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 111551.45273856855
+scores:
+  - 96535.795153336
+  - 5012.40623990828
+  - 10003.251345324285
+votes: 105
+quorum: 75000
+funding:
+  amount: '50000'
+  currency: $
+  confidence: High
+  model_used: gemini-1.5-flash

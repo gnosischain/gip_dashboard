@@ -1,0 +1,156 @@
+id: gip-137-should-gnosis-dao-renew-the-delegate-program
+gip_number: 137
+url: https://forum.gnosis.io/t/gip-137-should-gnosis-dao-renew-the-delegate-program
+title: Should Gnosis DAO renew the Delegate Program? - Governance - Gnosis
+body: "!Gnosis\n\nLoading\n\n![GnosisDelegateRenewalPropGnosisDelegateRenewalProp3000×1500\
+  \ 939 KB]( \"GnosisDelegateRenewalProp\")\n\n**Author** : @Kene_StableLab  \nGIP:\
+  \ 137  \nstatus: phase 1  \ntype: Funding\n\n## **Simple Summary**\n\nThis proposal\
+  \ makes the case for renewing the Gnosis DAO Delegate Program for 6 months with\
+  \ the option of adding performance-based compensation. The program lays out the\
+  \ possibility of supporting 10 delegates, each earning $2,000 base compensation\
+  \ with up to $500 in performance bonuses (capped at $2,500/month/delegate).\n\n\
+  Performance bonuses are determined by four equally weighted metrics: voting rate,\
+  \ rationale communication rate, forum participation rate, and governance call attendance.\
+  \ StableLab will administer the program for $20,000 for the entire program duration.\
+  \ StableLab would also require forum administrator access to track participation\
+  \ metrics.\n\nTotal program cost: **$170,000** for 6 months.\n\n## **Motivation**\n\
+  \n**Six-Month Trial Period Overview**\n\nAfter the delegations to the 10 selected\
+  \ delegates were made, the Gnosis DAO’s issue of failing to reach quorum on proposals\
+  \ became a non-issue. In contrast, delegate participation has gradually increased\
+  \ over time. GnosisDAO also saw several delegate-led proposals and biweekly governance\
+  \ calls, which have become an opportunity for clarity on the direction of the Gnosis\
+  \ DAO.\n\nDue to issues with the Gnosis DAO Snapshot Subspace, the delegate program\
+  \ could not start on the date it was voted into governance; it started on April\
+  \ 17th instead, after delegations were made to 10 selected delegates.\n\n**Total\
+  \ Delegates**\n\n10\n\n**Total GIPs Tracked**\n\n9 (GIP-99, GIP-108, GIP-126, GIP-128,\
+  \ GIP-133, GIP-130, GIP-135, GIP-134 and GIP-132)\n\n**Overall Voting Rate**\n\n\
+  **82%**\n\n**Overall Communication Rate**\n\n**76%**\n\n## **Performance Summary**\n\
+  \n### **High Performers (100% Voting Rate)**\n\n  * ACI, Areta, mrtdlgc, Viszla,\
+  \ Staworth\n\n\n\n### **Perfect Communication (100% Comm Rate)**\n\n  * Areta, mrtdlgc,\
+  \ Viszla, Staworth, Gardens (paul2)\n\n\n\n### **Needs Improvement ( <80% Voting\
+  \ Rate)**\n\n  * Gnosis Guild (44%)\n\n  * Stake Capital (60%)\n\n  * Breadchain\
+  \ Cooperative (55%)\n\n\n\n\nYou can look at this sheet for a detailed breakdown\
+  \ of each delegate.\n\nThe current trial run expires October 17, 2025. Key achievements\
+  \ include:\n\n  * 80% proposal quorum success rate\n\n  * Increased governance activity\
+  \ and higher quality discussions\n\n\n\n\nFeedback from existing DAO stakeholders\
+  \ is as follows:\n\n  * Delegates need compensation to justify time allocation\n\
+  \n  * Need for objective, measurable performance metrics\n\n  * Desire for comprehensive\
+  \ tracking of all participation types\n\n\n\n\n## **Specification**\n\n### **GNO\
+  \ Delegation**\n\nSimilar to the initial trial program, the DAO will be allocating\
+  \ a total delegation of **50,000 GNO** to all eligible nominees, who will be subjected\
+  \ to a Snapshot selection process, after which the top-selected delegates will each\
+  \ receive a **5,000 GNO** delegation that plays a key role in ensuring that the\
+  \ Gnosis DAO continues to reach quorum on its proposals.\n\n### **Program Structure**\n\
+  \n**Delegate Track (10 positions)**\n\n  * **Compensation** : $2,000-$2,500 USD\
+  \ equivalent/month (paid in GNO, vesting at the end of every quarter)\n\n  * **Requirements**\
+  \ :\n\n    * Minimum 200 GNO voting power (delegated or owned)\n\n    * 80% minimum\
+  \ threshold for voting and rationale communication\n\n\n\n\n### **Selection Criteria**\n\
+  \nDelegates: Top 10 delegates selected by Gnosis DAO Governance who meet requirements.\n\
+  \n### **Evaluation Criteria**\n\nAll participants are evaluated monthly on four\
+  \ equally weighted metrics that determine their performance bonus:\n\n  1. **Voting\
+  \ Rate** : Percentage of proposals voted on\n\n  2. **Rationale Communication Rate**\
+  \ : Percentage of votes with written rationales\n\n  3. **Forum Participation Rate**\
+  \ : Frequency and quality of forum contributions\n\n  4. **Governance Call Attendance**\
+  \ : Attendance at biweekly DAO calls\n\n\n\n\n**Note:** While we understand that\
+  \ there is contention around the idea of compensating delegates, it is important\
+  \ to flesh out the specifics of how this would occur if the DAO voted in support\
+  \ of compensating delegates.\n\nTo ensure representation of diverse opinions, this\
+  \ proposal will offer various voting options.\n\n### **Compensation Formula**\n\n\
+  **Monthly Compensation = Base Amount + Performance Bonus (capped at $2,500 total)**\n\
+  \n**Components** :\n\n  * **Base Amount** : $2,000/month (guaranteed for meeting\
+  \ all minimum thresholds)\n\n  * **Performance Bonus** : Up to $500/month based\
+  \ on the four metrics\n\n  * **Maximum Cap** : $2,500/month regardless of performance\n\
+  \n\n\n\n**Performance Bonus Calculation** :\n\n## 1\\. **Voting Rate (30% = up to\
+  \ $150)**\n\n  * 80-84%: $0\n\n  * 85-89%: $75\n\n  * 90-94%: $120\n\n  * 95-100%:\
+  \ $150\n\n\n\n\n## 2\\. **Rationale Communication Rate (30% = up to $150**)\n\n\
+  \  * 80-84%: $0\n\n  * 85-89%: $75\n\n  * 90-94%: $120\n\n  * 95-100%: $150\n\n\n\
+  \n\n**Note** : Rationales now have a deadline of being posted three days after the\
+  \ vote closes, to ensure timely communication of rationales.\n\n## 3**. Forum Participation\
+  \ Rate in relation to GIP’s (30% = up to $150)**\n\n  * 2 posts/month: $0\n\n  *\
+  \ 3 posts/month: $75\n\n  * 4-5 posts/month: $120\n\n  * 6+ posts/month: $150\n\n\
+  \n\n\n## 4\\. **Governance Call Attendance (10% = up to $50)**\n\n  * 0 calls/month:\
+  \ $0\n\n  * 1 call/month (50%): $25\n\n  * 2 calls/month (100%): $50\n\n\n\n\n**Total\
+  \ Performance Bonus = Sum of all four metric scores (max $500)**\n\n### **Data Collection\
+  \ and Transparency**\n\n**Forum Administrator Access** : Execution of this proposal\
+  \ requires granting StableLab forum administrator access to enable tracking of forum\
+  \ participation rates and quality assessment of forum contributions\n\n**Monthly\
+  \ Reporting** : StableLab will publish comprehensive reports, including:\n\n  *\
+  \ Individual participant scores for each metric\n\n  * Bonus calculations with full\
+  \ transparency\n\n  * Aggregate performance statistics\n\n\n\n\n### **Program Administration**\n\
+  \n**StableLab’s Responsibilities** :\n\n  * Monitor all four performance metrics\
+  \ via the forum admin tools\n\n  * Calculate and process monthly payments with support\
+  \ by kpk\n\n  * Publish detailed monthly performance reports\n\n  * Manage delegate\
+  \ communications\n\n\n\n\n**StableLab Compensation** : $20,000 worth of GNO for\
+  \ 6 months, vesting at the end of two quarters.\n\n### **Accountability Framework**\n\
+  \n**Monthly Performance Reviews** :\n\n  * Individual scorecards for all four metrics\
+  \ are published\n\n  * Clear documentation of bonus calculations\n\n  * Comparison\
+  \ to the previous month’s performance\n\n\n\n\n### **Budget Breakdown**\n\n**Monthly\
+  \ Costs (at different performance levels)** :\n\n_Minimum (all participants at base)_\
+  \ :\n\n  * Participants: 10 × $2,000 = $20,000\n\n  * Administration: $3,333\n\n\
+  \  * **Total Monthly Minimum** : $23,333\n\n\n\n\n_Expected (average 50% bonus achievement)_\
+  \ :\n\n  * Participants: 10 × $2,250 = $22,500\n\n  * Administration: $3,333\n\n\
+  \  * **Expected Monthly** : $25,833\n\n\n\n\n_Maximum (all participants excel)_\
+  \ :\n\n  * Participants: 10 × $2,500 = $25,000\n\n  * Administration: $3,333\n\n\
+  \  * **Total Monthly Maximum** : $28,333\n\n\n\n\n**6-Month Program Total** :\n\n\
+  \  * Minimum: $140,000\n\n  * Expected: $155,000\n\n  * Maximum: $170,000\n\n\n\n\
+  \n### **Next Steps**\n\n  * Open forum nominations with clear requirements\n\n \
+  \ * Review and host a snapshot-weighted choice selection process based on eligibility\n\
+  \n  * Delegate 5,000 GNO each to selected delegates\n\n  * New program begins with\
+  \ full metric tracking\n\n  * Reports are published on the 5th of each month\n\n\
+  \n\n\n## **Success Metrics**\n\n  * **Quorum Maintenance** : 100% of proposals meet\
+  \ quorum\n\n  * **Participation Improvement** : Average scores increase month-over-month\n\
+  \n  * **Transparency** : All metrics are publicly verifiable\n\n\n\n\n## **Snapshot\
+  \ Modalties**\n\nDue to the original Gnosis DAO Snapshot being limited to just Yes\
+  \ and No votes, we can run this proposal in a manner that allows the diversity of\
+  \ opinions to be reflected.\n\nAs an alternative, we will be using the Gnosis DAO\
+  \ Delegate Snapshot. This backup snapshot space was set up to run the delegate selection\
+  \ process for the initial trial run of the Gnosis DAO delegate program.\n\nThis\
+  \ backup snapshot space can be used to implement this proposal in a ranked-choice\
+  \ voting format with multiple selection options, as it is a social proposal with\
+  \ its outcomes being executed manually.\n\n**Note** : Delegates will not have their\
+  \ voting power reflected in this backup Snapshot subspace because their delegations\
+  \ are limited to the original Gnosis DAO Snapshot space. Only token holders who\
+  \ hold GNO or have had GNO delegated to them in the backup Snapshot space will be\
+  \ able to vote.\n\nThe voting options for this proposal are as follows.\n\n**Option\
+  \ 1** : Launch the delegate program with no compensation\n\n**Option 2** : Launch\
+  \ the delegate program with compensation in GNO, vesting at the end of every quarter\
+  \ for 6 months.\n\n**Option 3** : Discontinue the delegate program entirely.\n\n\
+  **Option 4** : Abstain\n\n## **Conclusion**\n\nThis renewal creates a data-driven\
+  \ governance framework with transparent, measurable performance metrics. The evaluation\
+  \ system (voting rate, rationale communication rate, forum participation rate, and\
+  \ governance call attendance) ensures comprehensive participation, while the forum\
+  \ administrator access enables accurate tracking and reporting.\n\nThe program directly\
+  \ addresses stakeholder feedback for ensuring a consistent quorum for Gnosis DAO\
+  \ during this critical strategic period.\n\n4 Likes\n\n**next page →**\n\n## Cookie\
+  \ Settings\n\nThe Forum only sets cookies that are necessary for its basic functionality.\
+  \ By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1758777043
+end: null
+state:
+  - phase-1
+author: "@Kene_StableLab \nGIP: 137 \nstatus: phase 1 \ntype: Funding \nSimple Summary\n\
+  This proposal makes the case for renewing the Gnosis DAO Delegate Program for 6\
+  \ &hellip;"
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: null
+  error: "429 You exceeded your current quota, please check your plan and billing\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 28.000483757s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 28\n}\n]"
+  model_used: none

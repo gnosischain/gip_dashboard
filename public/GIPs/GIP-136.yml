@@ -1,0 +1,79 @@
+id: '0x5a9b8c4cd03168df8a7d85066f4fc78f854ea60361cb6c0ca835c53163adce75'
+gip_number: '136'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x5a9b8c4cd03168df8a7d85066f4fc78f854ea60361cb6c0ca835c53163adce75
+title: Should GnosisDAO support maintenance of the Gnosis Explorer (v1 + v2)?
+body: "## Summary\n\nWe request a two‑year maintenance grant to fund ongoing operations\
+  \ of the Gnosis explorer, including the v2 validator dashboard and the v1 explorer,\
+  \ from July 2025 through June 2026. **The prior maintenance period concluded June\
+  \ 2025;  since then, we have kept the explorer fully available at our own expense\
+  \ to avoid any service interruption for the Gnosis community.**\n\nWebsite: [Gnosischa.in](https://gnosis.beaconcha.in/)\
+  \ (\"v1\") and [gnosischa.in/dashboard](https://gnosis.beaconcha.in/dashboard) (\"\
+  v2\")\n\nThe grant will cover:\n\n* Continuous maintenance of v2 dashboard and v1\
+  \ explorer through 06/2026; or\n* The same functionality delivered on a newly migrated\
+  \ website that consolidates services and ships an improved UX while preserving feature\
+  \ parity.\n\nTo effectively integrate gnosis into our products and ensure a long-term\
+  \ partnership, we propose a two-year commitment. The first payment will be made\
+  \ immediately, with the second payment due at the end of the initial period.\n\n\
+  1. Requested amount: 300,000€ (350,000 USD) for 06/2025 - 06/2026\n  - 60% USDC\n\
+  \  - 40% GNO with a 1 year lockup period, ending on 06/2026\n\n2. Requested amount:\
+  \ 300,000€ (350,000 USD) for 06/2026 - 06/2027 (to be paid in 05/**2026**)\n- 60%\
+  \ USDC\n- 40% GNO with a 1 year lockup period, ending on 06/2027\n\nPayment can\
+  \ be made to `0x9d4E94dB689Bc471E45b0a18B7BdA36FcCeC9c3b`\n\n* https://beaconcha.in/address/0x9d4E94dB689Bc471E45b0a18B7BdA36FcCeC9c3b\n\
+  * https://etherscan.io/address/0x9d4E94dB689Bc471E45b0a18B7BdA36FcCeC9c3b\n\n---\n\
+  \n## Background & Prior Funding (What worked, what we learned)\n\n### GIP‑74 (2023):\
+  \ Initial support for Gnosis explorer\n\n* Scope: Fund hosting + operations of gnosis\
+  \ explorer as a public good; CL+EL in one explorer; open‑source mobile app for validator\
+  \ monitoring.\n* Disbursement precedent:\n  * Annual funding of $250k\n  * 60% USDC/USDT\
+  \ and 40% GNO (GNO with 2‑year lockup).\n\n### GIP‑105 (2024): Support for v2 dashboard\n\
+  \n* Scope: Endorsement to operate and advance the v2 explorer/dashboard, focused\
+  \ on scale and UX for validator operations.\n* Outcome: Launched v2 validator dashboard\
+  \ with high‑scale monitoring (up to 100k validators per dashboard), new efficiency\
+  \ metric, grouping/sharing, and real‑time slot visualization. Maintained v1 for\
+  \ continuity while onboarding users to v2.\n\n---\n\n## Current Status (as of September\
+  \ 2025)\n\n* The 2024/25 maintenance period ended 06/2025. Since July 2025 we have\
+  \ been covering infra, storage, and on‑call costs out‑of‑pocket to keep gnosis explorer\
+  \ online without disruption.\n* v2 is available for Gnosis Chain; v1 explorer remains\
+  \ available\n\n---\n\n## Scope of Work (07/2025–06/2026)\n\nWe will:\n\n1. Operate\
+  \ and maintain the gnosis explorer stack (EL+CL indexers, databases, APIs, web front\
+  \ ends, background workers) with 24/7 monitoring and on‑call.\n2. Support for: (a)\
+  \ current v2 dashboard + v1 explorer, or (b) an equivalent set of features migrated\
+  \ to a new consolidated site with improved navigation, accessibility, and performance.\n\
+  \  Biggest pain point for Gnosis users was the low dashboard limits. The v2 dashboard\
+  \ will include increased limits:\n    - 200 GNO for free tier\n    - 200 GNO on\
+  \ guppy tier\n    - 300 GNO on dolphin tier\n    - 1000 GNO on Orca\nWe want to\
+  \ emphasize that we're working on a new dashboard, which may use a different validator\
+  \ structure and may not have a 1:1 copy of the limits from the current dashboard.\n\
+  \n3. Protocol upgrade readiness: Ensure explorer compatibility and dashboards for\
+  \ upcoming client releases and hard forks; deliver network‑upgrade day dashboards\
+  \ and comms.\n\nGithub repositories:\n\n* https://github.com/gobitfly/beaconchain\n\
+  * https://github.com/gobitfly/eth2-beaconchain-explorer\n\n---\n\n## Budget & Disbursement\n\
+  \nBaseline ask: 300,000€ (350,000 USD) for the 12‑month period (06/2025–06/2026).\n\
+  Suggested structure (matching the original grant precedent):\n\n* 60% in stablecoins\
+  \ (USDC/USDT) — $210,000\n* 40% in GNO — $140,000 with 1‑year lockup\n\n**To keep\
+  \ the Gnosis Explorer and Gnosis API running, we rely on the support outlined in\
+  \ this GIP. If the proposal does not pass and funding isn’t secured, we will begin\
+  \ a responsible wind-down of these services. In that case, we’ll offer a 30-day\
+  \ transition period after the vote to help existing infrastructure providers adjust.\
+  \ We’re sharing this for clarity and planning purposes, and we’re grateful for the\
+  \ Gnosis community’s ongoing support.**"
+start: 1759140775
+end: 1759745575
+state: active
+author: '0xD67952D9a8F27003De7C94D4A76191831165C01C'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 15418.839431058219
+scores:
+  - 5002.216619442413
+  - 10416.603886760116
+  - 0.01892485569110364
+votes: 24
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-1.5-flash

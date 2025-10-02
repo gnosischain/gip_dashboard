@@ -2,71 +2,77 @@ id: gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmark
 gip_number: 68
 url: https://forum.gnosis.io/t/gip-68-should-gnosisdao-fund-rndaos-community-health-analytics-and-benchmarking-tool
 title: Should GnosisDAO fund RnDAO's Community Health analytics and benchmarking tool?
-body: "##  Simple Summary\n\nIf Web3 is all about communities, how do we know if we’re\
-  \ heading in the right direction?\n\nWe’ve been advancing a research project to:\n\
-  \n  * develop a framework for Community Health with actionable metrics\n  * create\
-  \ an open source data collection tool\n  * implement the tool in GnosisDAO and others\n\
-  \  * analyse the interactions and perceptions data to validate the framework and\
-  \ provide insights to advance the Gnosis community.\n\n\n\nWe’re seeking $30,000\
-  \ or equivalent as grant match-funding to complete the project.\n\n##  About RnDAO\n\
-  \nWe’re an R&D DAO with a mission to empower humane collaboration. Having already\
-  \ delivered research projects on sub-DAOs and DAO Conceptual Foundations , Decentralised\
-  \ Leadership, DAO Compensation , and more .\n\n##  Abstract\n\nLike many others,\
-  \ Gnosis depends on the health of its community and its vibez—yet understanding\
-  \ and measuring these factors (what we call Community Health) is challenging.\n\n\
-  Today, Web3 communities are left to rely on infrequent transactions data (on-chain\
-  \ records), while data from the significantly more frequent social interactions\
-  \ is limited to basic indicators of Discord or Discourse, Web2-oriented bots like\
-  \ Statsbot that give simplistic measurements, or a patchwork of “homemade” surveys\
-  \ to fill in the gaps. These solutions are ill-suited for DAO communities, surveys\
-  \ are time-consuming for community managers and contributors to use, and the results\
-  \ of these approaches, hampered by poor indicators and/or poor sampling, are unreliable.\n\
-  \nPerhaps even direr, the lack of real-time analytics leaves DAO community leaders\
-  \ and members without established baselines to measure against to understand the\
-  \ impact of community-focused initiatives, identify best practices, monitor shocks\
-  \ to the system, or rapidly gauge the effects of system-wide changes (such as market\
-  \ crashes, protocol migrations, etc.).\n\n##  Motivation\n\nTo advance the Gnosis\
-  \ ecosystem by supporting a humane understanding of DAOs, enabling community managers,\
-  \ leaders and members to better understand and support the wellbeing of communities\
-  \ and know what’s helping and what’s hindering them. Ultimately leading to a more\
-  \ resilient and successful Gnosis ecosystem.\n\n##  Specification\n\nFor the conceptual\
-  \ framework, we have assembled a team including two PhDs in network science and\
-  \ an organisation designer with significant DAO and community building experience\
-  \ (myself) to bridge both theory and practice. We’ve reviewed over 50 papers on\
-  \ the topics of Community, Social Network Analysis, Resilience, Trust, Engagement,\
-  \ and more. And are synthesising all of these findings to define the key indicators\
-  \ that have high validity and high predictive capacity for community health, while\
-  \ also taking a holistic perspective that accounts for member’s wellbeing and planning\
-  \ to collect data across communities to offer an ecosystem health scrore too.\n\n\
-  For the data collection tool, we’re going beyond traditional surveys.\n\nThis research\
-  \ proposal focuses on the use of two critical techniques as a starting point:\n\n\
-  Organizational Network Analysis (ONA) is a structured way to visualize how communications,\
-  \ information, and value creation occur through an organization based on interaction\
-  \ graphs. ONA has been shown to provide a wide range of insights to improve contributor\
-  \ retention, avoid member burnout, predict team performance and community resilience,\
-  \ identify key contributors, enable decentralization, and improve coordination.\
-  \ Although relatively new, ONA is gaining in popularity over traditional survey\
-  \ tools.\n\nPulse Surveys are frequent and automated micro-surveys that provide\
-  \ qualitative and quantitative insights. In traditional organizations, they have\
-  \ been shown to increase employee response rate and employee engagement with related\
-  \ initiatives. They’re also used as a tool for culture design and implementing culture\
-  \ change. Lastly, Pulse Surveys significantly reduce admin work for community managers\
-  \ and related roles.\n\nThe data is anonymised and collected in a central repository\
-  \ for this first phase (we’re exploring decentralised hosting) and managed by a\
-  \ team having received ethics training and at risk of losing their credentials should\
-  \ it be misused.\n\n##  Rationale\n\nThe techniques used (ONA based on communication\
-  \ and Pulse Surveys) provide maximum insights on Community Health compared with\
-  \ exclusively on-chain data analysis. And provide minimum disruption for community\
-  \ members and minimal admin compared to long-form surveys and user interviews. Crucially,\
-  \ the techniques selected and the usage of Discord messages increase participation\
-  \ by those less likely to respond to long survey e.g. those less engaged and thus\
-  \ likely with the most valuable feedback to give.\n\nAlthough our initial focus\
-  \ is Community Health metrics, the proposed approach sets the foundation for further\
-  \ applications. The combination of ONA and pulse surveys offers unprecedented actionable\
-  \ insights in real-time. Some of the potential applications and insights for Gnosis\
-  \ DAO and Gnosis-Chain-based DAOs are:\n\n  * Generate baseline metrics for Community\
-  \ Health / vibez to quantify and better understand the impact that a specific event\
-  \ is having on a community and/or sub-groups within the community\n  * Predict which\
+body: "!Gnosis\n\nLoading\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n\
+  \    \n    \n    GIP: 68\n    title: Community Health analytics and benchmarking\n\
+  \    author: danielo (twitter @_daniel_ospina), thegadget (github @thegadget-eth),\
+  \ katerina (github @katerinabc)\n    \n    status: Draft\n    type: Funding\n  \
+  \  created: 2022-09-30\n    requires (*optional): <GIP number(s)>\n    replaces\
+  \ (*optional): <GIP number(s)>\n    \n\n##  Simple Summary\n\nIf Web3 is all about\
+  \ communities, how do we know if we’re heading in the right direction?\n\nWe’ve\
+  \ been advancing a research project to:\n\n  * develop a framework for Community\
+  \ Health with actionable metrics\n  * create an open source data collection tool\n\
+  \  * implement the tool in GnosisDAO and others\n  * analyse the interactions and\
+  \ perceptions data to validate the framework and provide insights to advance the\
+  \ Gnosis community.\n\n\n\nWe’re seeking $30,000 or equivalent as grant match-funding\
+  \ to complete the project.\n\n##  About RnDAO\n\nWe’re an R&D DAO with a mission\
+  \ to empower humane collaboration. Having already delivered research projects on\
+  \ sub-DAOs and DAO Conceptual Foundations , Decentralised Leadership, DAO Compensation\
+  \ , and more .\n\n##  Abstract\n\nLike many others, Gnosis depends on the health\
+  \ of its community and its vibez—yet understanding and measuring these factors (what\
+  \ we call Community Health) is challenging.\n\nToday, Web3 communities are left\
+  \ to rely on infrequent transactions data (on-chain records), while data from the\
+  \ significantly more frequent social interactions is limited to basic indicators\
+  \ of Discord or Discourse, Web2-oriented bots like Statsbot that give simplistic\
+  \ measurements, or a patchwork of “homemade” surveys to fill in the gaps. These\
+  \ solutions are ill-suited for DAO communities, surveys are time-consuming for community\
+  \ managers and contributors to use, and the results of these approaches, hampered\
+  \ by poor indicators and/or poor sampling, are unreliable.\n\nPerhaps even direr,\
+  \ the lack of real-time analytics leaves DAO community leaders and members without\
+  \ established baselines to measure against to understand the impact of community-focused\
+  \ initiatives, identify best practices, monitor shocks to the system, or rapidly\
+  \ gauge the effects of system-wide changes (such as market crashes, protocol migrations,\
+  \ etc.).\n\n##  Motivation\n\nTo advance the Gnosis ecosystem by supporting a humane\
+  \ understanding of DAOs, enabling community managers, leaders and members to better\
+  \ understand and support the wellbeing of communities and know what’s helping and\
+  \ what’s hindering them. Ultimately leading to a more resilient and successful Gnosis\
+  \ ecosystem.\n\n##  Specification\n\nFor the conceptual framework, we have assembled\
+  \ a team including two PhDs in network science and an organisation designer with\
+  \ significant DAO and community building experience (myself) to bridge both theory\
+  \ and practice. We’ve reviewed over 50 papers on the topics of Community, Social\
+  \ Network Analysis, Resilience, Trust, Engagement, and more. And are synthesising\
+  \ all of these findings to define the key indicators that have high validity and\
+  \ high predictive capacity for community health, while also taking a holistic perspective\
+  \ that accounts for member’s wellbeing and planning to collect data across communities\
+  \ to offer an ecosystem health scrore too.\n\nFor the data collection tool, we’re\
+  \ going beyond traditional surveys.\n\nThis research proposal focuses on the use\
+  \ of two critical techniques as a starting point:\n\nOrganizational Network Analysis\
+  \ (ONA) is a structured way to visualize how communications, information, and value\
+  \ creation occur through an organization based on interaction graphs. ONA has been\
+  \ shown to provide a wide range of insights to improve contributor retention, avoid\
+  \ member burnout, predict team performance and community resilience, identify key\
+  \ contributors, enable decentralization, and improve coordination. Although relatively\
+  \ new, ONA is gaining in popularity over traditional survey tools.\n\nPulse Surveys\
+  \ are frequent and automated micro-surveys that provide qualitative and quantitative\
+  \ insights. In traditional organizations, they have been shown to increase employee\
+  \ response rate and employee engagement with related initiatives. They’re also used\
+  \ as a tool for culture design and implementing culture change. Lastly, Pulse Surveys\
+  \ significantly reduce admin work for community managers and related roles.\n\n\
+  The data is anonymised and collected in a central repository for this first phase\
+  \ (we’re exploring decentralised hosting) and managed by a team having received\
+  \ ethics training and at risk of losing their credentials should it be misused.\n\
+  \n##  Rationale\n\nThe techniques used (ONA based on communication and Pulse Surveys)\
+  \ provide maximum insights on Community Health compared with exclusively on-chain\
+  \ data analysis. And provide minimum disruption for community members and minimal\
+  \ admin compared to long-form surveys and user interviews. Crucially, the techniques\
+  \ selected and the usage of Discord messages increase participation by those less\
+  \ likely to respond to long survey e.g. those less engaged and thus likely with\
+  \ the most valuable feedback to give.\n\nAlthough our initial focus is Community\
+  \ Health metrics, the proposed approach sets the foundation for further applications.\
+  \ The combination of ONA and pulse surveys offers unprecedented actionable insights\
+  \ in real-time. Some of the potential applications and insights for Gnosis DAO and\
+  \ Gnosis-Chain-based DAOs are:\n\n  * Generate baseline metrics for Community Health\
+  \ / vibez to quantify and better understand the impact that a specific event is\
+  \ having on a community and/or sub-groups within the community\n  * Predict which\
   \ contributors are likely to leave the DAO and take preventive action (without breaching\
   \ privacy)\n  * Build funnels to track member onboarding and identify areas for\
   \ improvement\n  * Identify measurements of decentralization to serve as KPIs or\
@@ -113,8 +119,10 @@ body: "##  Simple Summary\n\nIf Web3 is all about communities, how do we know if
   \ /properties)\n  * Workshop with community to discuss findings and recommendations\n\
   \n\n\n##  GnosisDAO Snapshot\n\n_Phase 2 Proposals: Please ignore this section,\
   \ and leave as is. It is used for Phase 3 proposals.  \nPhase 3 Proposals: Add a\
-  \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n1 Like\n"
-start: 1664555971
+  \ link to the corresponding GnosisDAO Snapshot poll you’ve created._\n\n1 Like\n\
+  \n## Cookie Settings\n\nThe Forum only sets cookies that are necessary for its basic\
+  \ functionality. By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1664548771
 end: null
 state:
   - phase-2
@@ -136,11 +144,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 51\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 27.20176532s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 27\n}\n]"
   model_used: none

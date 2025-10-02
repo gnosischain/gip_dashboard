@@ -1,0 +1,52 @@
+id: '0xa3bc9590fd3af9f59fbad1296886da60c90853e25f1fc53110d9ebc8bd0618b6'
+gip_number: '138'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xa3bc9590fd3af9f59fbad1296886da60c90853e25f1fc53110d9ebc8bd0618b6
+title: Should Gnosis DAO fund the maintenance of NodeSentinel?
+body: "# Summary\nNodeSentinel is a validator monitoring tool for Gnosis beacon validators,\
+  \ built with an indexer + UI (Telegram bot + web).\n\n## Main features\n- Dashboard\
+  \ with performance stats, CL+EL APY across timeframes  \n- Alerting system  \n-\
+  \ Subsidized claimable rewards  \n\nThe tool has been live for 2 years at NodeSentinel’s\
+  \ cost and is already used for free across the validator set.  \n\n## Proposal contingent\
+  \ on\n- Keeping the service running and improving infrastructure  \n- Monthly status\
+  \ reports  \n- Shipping the proposed roadmap and open-sourcing the code  \n- Year-1\
+  \ renewal gate tied to delivery  \n\n## Funds requested\n- **35,000 DAI (retroactive)**\
+  \  \n- **3,000 GNO staked:** rewards fund operations while DAO keeps the principal\
+  \  \n\n## Budget model\n- 35,000 DAI retroactive payment  \n- Forward maintenance\
+  \ via staking 3,000 GNO in a StakeWise vault with 100% fee on rewards (principal\
+  \ remains DAO-owned)  \n- Est. ~8% APY → ~240 GNO/year (~$36.6k at $140 avg, variable)\
+  \  \n- Auto-renews yearly, cancellable at any time  \n- Biannual check-ins with\
+  \ the team  \n\n## Adoption signal\n- 94 active operators  \n- Monitoring ~60,249\
+  \ validators (>19% of the total network)  \n- 650 subsidized claims  \n\n## Why\
+  \ FOR\n- Improves infrastructure to onboard more users  \n- Develops the proposed\
+  \ roadmap with new features and UX improvements  (details in forum discussion)\n\
+  - Rewards-funded model aligns incentives, limits stablecoin outflows, and keeps\
+  \ GNO with the DAO  \n- Provides an alternative to other monitoring tools, reducing\
+  \ single-vendor risk  \n\n## Conditions before renewal\n1. **Monthly public metrics:**\
+  \ active operators, validators monitored, alerts sent, alert accuracy, service uptime/SLA,\
+  \ subsidized claims. Starts first full month after approval.  \n2. **Open-source\
+  \ milestones (Year-1):** publish beacon indexer + API with docs, then bot and web\
+  \ dashboard components. Repositories under [github.com/NodeSentinel](https://github.com/NodeSentinel),\
+  \ updates posted on the forum.  \n3. **Year-1 renewal gate:** rewards-funded model\
+  \ continues only if (1) and (2) are met. Otherwise, DAO may cancel or revise the\
+  \ stake at renewal.\n\nNodeSentinel address\n safe=gno:0xDA74B77BA4BE36619b248088214D807A581292C4"
+start: 1759272763
+end: 1759877563
+state: active
+author: '0x9136fD91Eb5D06f4e9aAE73e55835C6d3599dEFE'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 13813.794360123791
+scores:
+  - 13803.79419000735
+  - 10.00017011644074
+  - 0
+votes: 27
+quorum: 75000
+funding:
+  amount: 35,000
+  currency: DAI
+  confidence: High
+  model_used: gemini-1.5-flash

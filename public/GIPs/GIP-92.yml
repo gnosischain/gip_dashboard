@@ -2,91 +2,121 @@ id: gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token
 gip_number: 92
 url: https://forum.gnosis.io/t/gip-92-should-gnosis-dao-spin-off-karpatkey-dao-and-deploy-the-kpk-token
 title: Should Gnosis DAO spin-off karpatkey DAO and deploy the KPK Token?
-body: "## karpatkey’s Mission\n\nAs traditional finance embraces digital assets and\
-  \ onboards assets on-chain, it is imperative that DeFi protocols manage financial\
-  \ resources to maximise token holder value and ensure the capital necessary to maintain\
-  \ a sound, resilient, and innovative ecosystem. Everybody in our industry talks\
-  \ about banking the unbanked. However, nobody talks about banking DeFi protocols.\n\
-  \nBanking DeFi is what karpatkey does. They provide financial services to the leaders\
-  \ in each DeFi category, creating network effects and robustness for their users,\
-  \ and the DeFi ecosystem as a whole.\n\n## karpatkey’s Values\n\nkarpatkey has inherited\
-  \ Gnosis’ commitment to core values like decentralisation, open-source collaboration,\
-  \ and ethically sound contributions to the Ethereum ecosystem.\n\nThe following\
-  \ are the principles that guide the way karpatkey behaves as a community member\
-  \ and shape karpatkey’s decision-making process:\n\n>   * Simplicity: We operate\
-  \ in highly complex and unpredictable environments, so we think first principles\
-  \ and execute at the right abstraction level to reach the shortest path to the solution.\n\
-  >   * Focus: We live by the Pareto Principle, so we pragmatically prioritise tasks\
-  \ for maximum short-term output. This means we mindfully choose continuous improvement\
-  \ over delayed perfection.\n>   * Altruism: We cultivate long-lasting, value-based\
-  \ relationships. This requires us to put in the effort without expecting any short-term\
-  \ ROI. It involves shifting the focus from diminished self to collective compounded\
-  \ returns.\n>   * Ownership: We trust each other to do and be more, encouraging\
-  \ and valuing personal initiative. We decentralise decision-making, equipping team\
-  \ members with the information, agency, and confidence to make good decisions for\
-  \ the organisation on their own.\n>   * Collaboration: We care for each other and\
-  \ explore new ways to continually grow our business through teamwork. We learn from\
-  \ and challenge one another, sharpening existing skills and learning new ones. We\
-  \ believe cognitive diversity generates better decisions.\n>   * Curiosity: Status\
-  \ quo is not an acceptable argument—we question concepts and processes to improve.\
-  \ We understand that exploring the possibilities is the only path leading to progress.\n\
-  >   * Adaptability: We thrive in uncertain environments by avoiding overfitting\
-  \ and adjusting to short, iterative execution cycles. We assess and experiment rapidly,\
-  \ frequently, and economically, embracing every failure as a learning opportunity.\n\
-  >   * Selflessness: The community is above the individual, so when debating internally,\
-  \ we leave our egos outside and let the best idea win.\n>   * Rigour: We acknowledge\
-  \ that our job has greater consequences, so we perform at the highest level of quality,\
-  \ care, and professionalism.\n> \n\n\n## KPK Token\n\n### Utility and Supply\n\n\
-  The goal of the KPK token is to align the parties actively contributing to the delivery\
-  \ of karpatkey’s mission. Tokenholders can vote on key decisions, such as treasury\
-  \ management, budget allocations, and strategic initiatives like buybacks or M&A\
-  \ activities, to ensure alignment with thier mission and long-term sustainability.\
-  \ The token’s utility is focused on facilitating community-driven decision-making\
-  \ and fostering an active, engaged ecosystem.\n\n## How does GnosisDAO benefit from\
-  \ this proposal?\n\nGNO token holders benefit from substantial ownership in karpatkey\
-  \ thanks to GnosisDAO’s investment, a future airdrop proportional to the GIP-20\
-  \ and GIP-58 expenditures, and by being a leader in the ecosystem within which they’re\
-  \ building their DeFi treasury network.\n\n# Disclaimer\n\nThe plans outlined in\
-  \ this proposal are for discussion purposes only and can be subject to further changes.\
-  \ They may also need to be (re)structured to account for legal, regulatory, or technical\
-  \ developments and governance considerations. This document should not be construed\
-  \ as an offering of securities, taken as the basis for making investment decisions,\
-  \ nor be construed as a recommendation to engage in any transactions. You are solely\
-  \ responsible for your own investment decisions and transactions.\n\nThe decision\
-  \ to spin out karpatkey and to launch a KPK token lies solely with the GnosisDAO.\
-  \ Consequently, this document only describes the token launch process and its technical\
-  \ implementation as currently envisaged.\n\nThe term “banking DeFi”, as used within\
-  \ karpatkey’s organisation’s proposals and materials, refers to decentralised finance\
-  \ (“DeFi”) protocols and platforms that offer services akin to traditional banking\
-  \ functions in a decentralised manner. However, it is crucial to note that in the\
-  \ context of Decentralised Finance, the term “banking” does not carry the same connotations,\
-  \ regulatory oversight, or institutional framework as it does in Traditional Finance.\n\
-  \nUsers and stakeholders need to understand that “banking DeFi” platforms operate\
-  \ within the decentralised, permissionless, and often experimental nature of blockchain\
-  \ technology, which presents risks such as smart contract vulnerabilities, regulatory\
-  \ uncertainties, and market volatility.\n\nThey encourage users to seek independent\
-  \ financial advice and to assess their risk tolerance before participating in any\
-  \ decentralised finance activities.\n\n# Specification\n\nThis proposal directs\
-  \ karpatkey to deploy the KPK token and allocate 5% of its airdrop to GnosisDAO,\
-  \ bringing GnosisDAO’s total stake in KPK to 7.5% of the fully diluted supply.\n\
-  \nFollowing the passing of this proposal:\n\n  * The KPK token will be deployed\
-  \ by the karpatkey team, thereby establishing vesting plans for the 2.5% KPK allocation\
-  \ from GIP-20 (2y, already vested) and creating additional vesting plans for the\
-  \ 5% KPK allocation to Gnosis DAO (1y cliff + 2y vesting), equal to the terms applicable\
-  \ to the participants in karpatkey’s 2024 investment round.\n\n\n\nAdditionally,\
-  \ and to address funding requirements, this proposal recommends that:\n\n  * GnosisDAO\
-  \ defers investment in karpatkey’s last funding round in exchange for prioritising\
-  \ the funding of Gnosis Chain and Gnosis Pay. The GnosisDAO should continue to participate\
-  \ in future rounds, and karpatkey’s GNO purchases should resume after future funding\
-  \ rounds.\n\n\n\n* * *\n\n# Proposal Update History\n\n## Update September 2024\
-  \ - Modifications to GIP-92 phase-2\n\nThe initial proposal called for GnosisDAO\
-  \ to invest $5M in karpatkey through a $2.5M stablecoin investment and a $2.5M GNO-KPK\
-  \ token swap.\n\nHowever, given the current market conditions and the undervaluation\
-  \ of GNO, we propose replacing the token swap with a $2.5M USDC investment. To reinforce\
-  \ our commitment to GNO, karpatkey will allocate 10% of its total revenue over the\
-  \ next 12 months to purchasing GNO in the open market, which we estimate will add\
-  \ +$2M GNO to our treasury. Purchases will be made at our discretion and included\
-  \ in monthly reports to maintain transparency.\n\nThe final GIP-92 structure consists\
+body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n  \
+  \  \n    GIP: 92\n    title: karpatkey DAO spin-off and KPK token launch\n    author:\
+  \ <karpatkey>, info@karpatkey.com, \n    created: 2024-02-15\n    \n\n# Abstract\n\
+  \nkarpatkey has led the active DAO treasury management space after becoming GnosisDAO’s\
+  \ treasury manager in GIP-20 and GIP-58. Following the tradition of the sister projects\
+  \ CowDAO and SafeDAO, karpatkey will launch a DAO spin-off and a governance token\
+  \ (KPK), from the GnosisDAO.\n\nThis proposal directs karpatkey to deploy the KPK\
+  \ token and allocate 5% of its airdrop to GnosisDAO, bringing GnosisDAO’s total\
+  \ stake in KPK to 7.5% of the fully diluted supply.\n\n# Introduction\n\nkarpatkey’s\
+  \ 2022, 2023, and 2024 contributions to the GnosisDAO have been essential in developing\
+  \ the Gnosis Chain and GnosisDAO’s treasury, improving GNO’s long-term value.\n\n\
+  karpatkey has become the leader in active DAO treasury management and on-chain,\
+  \ non-custodial asset management. karpatkey has established a strong network of\
+  \ DAO treasuries with dedicated finance working groups for GnosisDAO, Balancer,\
+  \ dYdX, ENS, CoW, Lido, and Aave. They’ve also contributed to Uniswap, Spark/MakerDAO,\
+  \ Safe, and Arbitrum by establishing delegate platforms and conducting paid research.\n\
+  \nkarpatkey has been working in the most adversarial blockchain environment—where\
+  \ any vulnerability is bound to be exploited—and has been exposed to multiple market\
+  \ volatility cycles. They’ve persisted mostly because of a prudent, rigorous risk\
+  \ management approach and long-term sustainable strategies.\n\nkarpatkey has executed\
+  \ +7000 DeFi interactions with zero funds lost or hacked and actively protected\
+  \ their treasuries for +$900m. They’ve improved the risk management infrastructure\
+  \ and tooling for their asset managers, building the foundation for their alpha.\n\
+  \nkarpatkey’s past activity has ultimately generated objective knowledge across\
+  \ the Ethereum ecosystem and DeFi protocols, which they’ve used to contribute to\
+  \ the development of roadmaps and build and maintain structural tooling for non-custodial\
+  \ on-chain treasury, management, and risk management infrastructure to secure institutional\
+  \ investment-grade funds.\n\nHaving validated their market-fit, it’s time to take\
+  \ karpatkey to the next level.\n\nLike COW DAO and Safe DAO, they intend to launch\
+  \ their DAO spinoff from the GnosisDAO and issue a governance token.\n\n## karpatkey’s\
+  \ Mission\n\nAs traditional finance embraces digital assets and onboards assets\
+  \ on-chain, it is imperative that DeFi protocols manage financial resources to maximise\
+  \ token holder value and ensure the capital necessary to maintain a sound, resilient,\
+  \ and innovative ecosystem. Everybody in our industry talks about banking the unbanked.\
+  \ However, nobody talks about banking DeFi protocols.\n\nBanking DeFi is what karpatkey\
+  \ does. They provide financial services to the leaders in each DeFi category, creating\
+  \ network effects and robustness for their users, and the DeFi ecosystem as a whole.\n\
+  \n## karpatkey’s Values\n\nkarpatkey has inherited Gnosis’ commitment to core values\
+  \ like decentralisation, open-source collaboration, and ethically sound contributions\
+  \ to the Ethereum ecosystem.\n\nThe following are the principles that guide the\
+  \ way karpatkey behaves as a community member and shape karpatkey’s decision-making\
+  \ process:\n\n>   * Simplicity: We operate in highly complex and unpredictable environments,\
+  \ so we think first principles and execute at the right abstraction level to reach\
+  \ the shortest path to the solution.\n>   * Focus: We live by the Pareto Principle,\
+  \ so we pragmatically prioritise tasks for maximum short-term output. This means\
+  \ we mindfully choose continuous improvement over delayed perfection.\n>   * Altruism:\
+  \ We cultivate long-lasting, value-based relationships. This requires us to put\
+  \ in the effort without expecting any short-term ROI. It involves shifting the focus\
+  \ from diminished self to collective compounded returns.\n>   * Ownership: We trust\
+  \ each other to do and be more, encouraging and valuing personal initiative. We\
+  \ decentralise decision-making, equipping team members with the information, agency,\
+  \ and confidence to make good decisions for the organisation on their own.\n>  \
+  \ * Collaboration: We care for each other and explore new ways to continually grow\
+  \ our business through teamwork. We learn from and challenge one another, sharpening\
+  \ existing skills and learning new ones. We believe cognitive diversity generates\
+  \ better decisions.\n>   * Curiosity: Status quo is not an acceptable argument—we\
+  \ question concepts and processes to improve. We understand that exploring the possibilities\
+  \ is the only path leading to progress.\n>   * Adaptability: We thrive in uncertain\
+  \ environments by avoiding overfitting and adjusting to short, iterative execution\
+  \ cycles. We assess and experiment rapidly, frequently, and economically, embracing\
+  \ every failure as a learning opportunity.\n>   * Selflessness: The community is\
+  \ above the individual, so when debating internally, we leave our egos outside and\
+  \ let the best idea win.\n>   * Rigour: We acknowledge that our job has greater\
+  \ consequences, so we perform at the highest level of quality, care, and professionalism.\n\
+  > \n\n\n## KPK Token\n\n### Utility and Supply\n\nThe goal of the KPK token is to\
+  \ align the parties actively contributing to the delivery of karpatkey’s mission.\
+  \ Tokenholders can vote on key decisions, such as treasury management, budget allocations,\
+  \ and strategic initiatives like buybacks or M&A activities, to ensure alignment\
+  \ with thier mission and long-term sustainability. The token’s utility is focused\
+  \ on facilitating community-driven decision-making and fostering an active, engaged\
+  \ ecosystem.\n\n## How does GnosisDAO benefit from this proposal?\n\nGNO token holders\
+  \ benefit from substantial ownership in karpatkey thanks to GnosisDAO’s investment,\
+  \ a future airdrop proportional to the GIP-20 and GIP-58 expenditures, and by being\
+  \ a leader in the ecosystem within which they’re building their DeFi treasury network.\n\
+  \n# Disclaimer\n\nThe plans outlined in this proposal are for discussion purposes\
+  \ only and can be subject to further changes. They may also need to be (re)structured\
+  \ to account for legal, regulatory, or technical developments and governance considerations.\
+  \ This document should not be construed as an offering of securities, taken as the\
+  \ basis for making investment decisions, nor be construed as a recommendation to\
+  \ engage in any transactions. You are solely responsible for your own investment\
+  \ decisions and transactions.\n\nThe decision to spin out karpatkey and to launch\
+  \ a KPK token lies solely with the GnosisDAO. Consequently, this document only describes\
+  \ the token launch process and its technical implementation as currently envisaged.\n\
+  \nThe term “banking DeFi”, as used within karpatkey’s organisation’s proposals and\
+  \ materials, refers to decentralised finance (“DeFi”) protocols and platforms that\
+  \ offer services akin to traditional banking functions in a decentralised manner.\
+  \ However, it is crucial to note that in the context of Decentralised Finance, the\
+  \ term “banking” does not carry the same connotations, regulatory oversight, or\
+  \ institutional framework as it does in Traditional Finance.\n\nUsers and stakeholders\
+  \ need to understand that “banking DeFi” platforms operate within the decentralised,\
+  \ permissionless, and often experimental nature of blockchain technology, which\
+  \ presents risks such as smart contract vulnerabilities, regulatory uncertainties,\
+  \ and market volatility.\n\nThey encourage users to seek independent financial advice\
+  \ and to assess their risk tolerance before participating in any decentralised finance\
+  \ activities.\n\n# Specification\n\nThis proposal directs karpatkey to deploy the\
+  \ KPK token and allocate 5% of its airdrop to GnosisDAO, bringing GnosisDAO’s total\
+  \ stake in KPK to 7.5% of the fully diluted supply.\n\nFollowing the passing of\
+  \ this proposal:\n\n  * The KPK token will be deployed by the karpatkey team, thereby\
+  \ establishing vesting plans for the 2.5% KPK allocation from GIP-20 (2y, already\
+  \ vested) and creating additional vesting plans for the 5% KPK allocation to Gnosis\
+  \ DAO (1y cliff + 2y vesting), equal to the terms applicable to the participants\
+  \ in karpatkey’s 2024 investment round.\n\n\n\nAdditionally, and to address funding\
+  \ requirements, this proposal recommends that:\n\n  * GnosisDAO defers investment\
+  \ in karpatkey’s last funding round in exchange for prioritising the funding of\
+  \ Gnosis Chain and Gnosis Pay. The GnosisDAO should continue to participate in future\
+  \ rounds, and karpatkey’s GNO purchases should resume after future funding rounds.\n\
+  \n\n\n* * *\n\n# Proposal Update History\n\n## Update September 2024 - Modifications\
+  \ to GIP-92 phase-2\n\nThe initial proposal called for GnosisDAO to invest $5M in\
+  \ karpatkey through a $2.5M stablecoin investment and a $2.5M GNO-KPK token swap.\n\
+  \nHowever, given the current market conditions and the undervaluation of GNO, we\
+  \ propose replacing the token swap with a $2.5M USDC investment. To reinforce our\
+  \ commitment to GNO, karpatkey will allocate 10% of its total revenue over the next\
+  \ 12 months to purchasing GNO in the open market, which we estimate will add +$2M\
+  \ GNO to our treasury. Purchases will be made at our discretion and included in\
+  \ monthly reports to maintain transparency.\n\nThe final GIP-92 structure consists\
   \ of a $5M investment for 2.5% ownership at a $200M valuation, with an additional\
   \ 5% ownership through an airdrop, totalling 7.5%. The total ownership of the Gnosisdao\
   \ will amount to 10%.\n\n## Update December 2024 - Modifications to GIP-92 phase-2\n\
@@ -102,8 +132,9 @@ body: "## karpatkey’s Mission\n\nAs traditional finance embraces digital asset
   \ Should GnosisDAO accept a combined total of 7.5% ownership for incubating karpatkey\
   \ DAO?\n\nStaworth Limited - Delegate Platform\n\nGIP-121: Should GnosisDAO accept\
   \ a combined total of 7.5% ownership for incubating karpatkey DAO?\n\n**next page\
-  \ →**\n"
-start: 1708027248
+  \ →**\n\n## Cookie Settings\n\nThe Forum only sets cookies that are necessary for\
+  \ its basic functionality. By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1708023648
 end: null
 state: []
 author: '&lt;karpatkey&gt;'
@@ -124,11 +155,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 47\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 31.945078308s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 31\n}\n]"
   model_used: none

@@ -1,0 +1,66 @@
+id: '0x6221f8a49eaa124ef6ee4b1aa8d152603a42805dc74d8fdeff24afd817147592'
+gip_number: '132'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x6221f8a49eaa124ef6ee4b1aa8d152603a42805dc74d8fdeff24afd817147592
+title: Should the DAO pay out a bounty for a disclosure regarding a consensus discrepancy
+  on Gnosis Chain?
+body: "## Summary\n\nOn Feb 25, 2025, [cergyk](https://x.com/cergyk1337) reported\
+  \ a vulnerability in Gnosis Chain that could have caused a chain split if exploited.\
+  \ An ill-intentioned validator could have triggered this issue by setting the coinbase\
+  \ of their block to a contract that was created and self-destructed in said block.\n\
+  \nThe issue was solved in Nethermind on Mar 17, 2025 in pull request [#8376](https://github.com/NethermindEth/nethermind/pull/8376).\n\
+  \nWhile Gnosis Chain does not have a bug bounty in place, it acknowledges and values\
+  \ the contributions of ethical security researchers (“white hats”) who help protect\
+  \ network integrity. In recognition of the responsible disclosure of this vulnerability,\
+  \ the core team proposes, on a voluntary and one‑time basis, to award the reporting\
+  \ researcher $10k.\n\n## The vulnerability\n\nIf a block proposer crafted a transaction\
+  \ in which a contract was created and immediately self-destructed, and then set\
+  \ the address of that contract as their coinbase, they would have triggered a chain\
+  \ split. This would have happened because Nethermind and Erigon did not agree exactly\
+  \ on how to process this type of transaction.\n\nMore specifically, the base fee\
+  \ would not have been collected by the Nethermind client, whereas it would have\
+  \ been in Erigon. The offending code can be found [here](https://github.com/NethermindEth/nethermind/pull/8376/files#diff-b8ea3d5dd4a8bedda3ec0900ae86bf6c3352c28fcec738e3064511be8c9c52e7).\n\
+  \nThis would have resulted in two different chains continuing along on their own\
+  \ forks. As there were mainly two active clients, we would have seen:\n\n- The buggy\
+  \ Nethermind chain with ~80% of the stake that would have kept finalizing (as they\
+  \ would have had more than ⅔ of the stake)  \n- The legitimate Erigon chain with\
+  \ <20% of the stake that would not have finalized for a long time\n\n## The resolution\n\
+  \nThe right way of calculating the gas collected by the fee collector was implemented\
+  \ by Erigon, and Nethermind had a consensus discrepancy. We thus decided to fix\
+  \ this issue on Nethermind’s side to stay in sync with Erigon. This did not cause\
+  \ any problems as the consensus issue had never been triggered.\n\nIf it had, we\
+  \ would have had to make the discrepancy in Nethermind canonical, as the vast majority\
+  \ (80%+) of the network was and is still running Nethermind. This would have unfairly\
+  \ penalized validators running Erigon, as they would effectively have been written\
+  \ out of the chain’s history between the block in which the issue would have been\
+  \ triggered and the moment a new release would have been made available for Erigon.\
+  \ This would have caused attestation penalties and missed block proposals for Erigon\
+  \ validators.\n\nWhile this is unfair, the alternative would have been way worse,\
+  \ as Nethermind validators could never have re-joined Erigon’s chain without getting\
+  \ slashed. The whole network would thus have needed to reduce the staked balance\
+  \ by applying an inactivity leak to all Nethermind validators, and then kicked them\
+  \ out of the network because of low balance. This would effectively have burned\
+  \ ~40% of all the GNO staked on Gnosis Chain.\n\nThe core dev team takes this opportunity\
+  \ to remind everyone that client diversity is extremely important, and that anyone\
+  \ running Nethermind validators should move to a minority client, like [Erigon](https://github.com/erigontech/erigon),\
+  \ [Reth](https://github.com/gnosischain/reth_gnosis) or [Geth](https://github.com/gnosischain/go-ethereum)."
+start: 1758103144
+end: 1758707944
+state: closed
+author: '0xF23fd62E9566262a009851D0C0E70B3280e2EAd7'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 73494.88845844839
+scores:
+  - 73484.88845844839
+  - 10
+  - 0
+votes: 103
+quorum: 75000
+funding:
+  amount: '10000'
+  currency: $
+  confidence: High
+  model_used: gemini-1.5-flash

@@ -1,161 +1,135 @@
-id: gip-130-changes-to-gnosis-eth
-gip_number: 130
-url: https://forum.gnosis.io/t/gip-130-changes-to-gnosis-eth
+id: '0x374155a2faa61efa30d2c63bbd79bf38a807d00f795628345205e9cc4053303c'
+gip_number: '130'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x374155a2faa61efa30d2c63bbd79bf38a807d00f795628345205e9cc4053303c
 title: Changes to gnosis.eth
-body: "## Summary\n\nOn Jun 9, 2025, we stopped resolving Genome names on `gnosis.eth`,\
-  \ while keeping the `gno.eth` domain intact. In short, `[name].gno.eth` will still\
-  \ resolve to `[name].gno`, but `[name].gnosis.eth` will not.\n\n## Rationale\n\n\
-  Since GIP-90, the `gnosis.eth` domain was configured to resolve Genome domains.\
-  \ Concretely speaking, anyone could buy a domain name on Genome, say `[name].gno`,\
-  \ and the configured fields (address, website, avatar, etc) would also resolve on\
-  \ `[name].gnosis.eth`. This is quite problematic, as `gnosis.eth` should only be\
-  \ used for official purposes, and these Genome domains could be used for phishing\
-  \ attacks and other nefarious purposes.\n\nFor example, `dao.gno` (and thus `dao.gnosis.eth`)\
-  \ could be controlled by ill-intentioned parties. Some other examples include `delegates.gnosis.eth`\
-  \ (actually registered on the ENS resolver), `forum.gnosis.eth`, `pay.gnosis.eth`\
-  \ and any other official looking names. The phishing aspect is why this was pushed\
-  \ through without a GIP, as we did not want to give ideas to bad actors.\n\nIn addition\
-  \ to `gnosis.eth`, the `gno.eth` domain was also set up to resolve Genome names.\
-  \ It’s the natural name to use in any case, as one simply has to add `.eth` at the\
-  \ end of their `.gno` name to make it work universally. If you own `[name].gno`\
-  \ on Genome, it’s natural and makes more sense to use `[name].gno.eth` rather than\
-  \ `[name].gnosis.eth`. This functionality was already available and stays unchanged.\n\
-  \n## Execution\n\nGiven the potential for abuse, especially targeting official-looking\
-  \ domains, the core team decided to act swiftly and temporarily suspend such resolutions.\
-  \ On Jun 9, 2025, we asked Gateway to run a modified version of the Genome CCIP\
-  \ Resolver that the `gnosis.eth` ENS uses to resolve names. The latter was initially\
-  \ configured after GIP-90 was approved. The new version simply doesn’t resolve anything\
-  \ for `gnosis.eth`, except for `vpn.gnosis.eth`, which is currently being used to\
-  \ host the Gnosis VPN website.\n\n## Next steps\n\nCurrently, Gateway effectively\
-  \ controls `gnosis.eth`. For example, our Snapshot space can be configured by changing\
-  \ one text field on `gnosis.eth`. While we trust Gateway, this is too much of a\
-  \ risk for the DAO in our opinion, and opens it up for a variety of attacks.\n\n\
-  To fully address this issue, we plan to transition `gnosis.eth` back to the standard\
-  \ ENS Resolver. This will effectively restore all the power exclusively to the DAO,\
-  \ ensuring that no external process can alter the domain.\n\n## This proposal\n\n\
-  Concretely speaking, this is the list of transactions that we are planning to execute\
-  \ in this proposal in order to move `gnosis.eth` back to the ENS resolver. We are\
-  \ taking this opportunity to also upgrade to the latest version of the Public Resolver,\
+body: "# Summary\nOn Jun 9, 2025, we stopped resolving Genome names on gnosis.eth,\
+  \ while keeping the gno.eth domain intact. In short, [name].gno.eth will still resolve\
+  \ to [name].gno, but [name].gnosis.eth will not.\n\n# Rationale\nSince [GIP-90](https://forum.gnosis.io/t/gip-90-should-gnosis-eth-update-its-ens-resolver-to-resolve-gno-domains-on-gnosis-chain/7465),\
+  \ the gnosis.eth domain was configured to resolve Genome 2 domains. Concretely speaking,\
+  \ anyone could buy a domain name on Genome, say [name].gno, and the configured fields\
+  \ (address, website, avatar, etc) would also resolve on [name].gnosis.eth. This\
+  \ is quite problematic, as gnosis.eth should only be used for official purposes,\
+  \ and these Genome domains could be used for phishing attacks and other nefarious\
+  \ purposes.\n\nFor example, dao.gno (and thus dao.gnosis.eth) could be controlled\
+  \ by ill-intentioned parties. Some other examples include delegates.gnosis.eth (actually\
+  \ registered on the ENS resolver), forum.gnosis.eth, pay.gnosis.eth and any other\
+  \ official looking names. The phishing aspect is why this was pushed through without\
+  \ a GIP, as we did not want to give ideas to bad actors.\n\nIn addition to gnosis.eth,\
+  \ the gno.eth domain was also set up to resolve Genome names. It’s the natural name\
+  \ to use in any case, as one simply has to add .eth at the end of their .gno name\
+  \ to make it work universally. If you own [name].gno on Genome, it’s natural and\
+  \ makes more sense to use [name].gno.eth rather than [name].gnosis.eth. This functionality\
+  \ was already available and stays unchanged.\n\n# Execution\nGiven the potential\
+  \ for abuse, especially targeting official-looking domains, the core team decided\
+  \ to act swiftly and temporarily suspend such resolutions. On Jun 9, 2025, we asked\
+  \ Gateway to run a modified version of the Genome CCIP Resolver that the gnosis.eth\
+  \ ENS uses to resolve names. The latter was initially configured after GIP-90 1\
+  \ was approved. The new version simply doesn’t resolve anything for gnosis.eth,\
+  \ except for vpn.gnosis.eth, which is currently being used to host the Gnosis VPN\
+  \ website.\n\n# Next steps\nCurrently, Gateway effectively controls gnosis.eth.\
+  \ For example, our Snapshot space can be configured by changing one text field on\
+  \ gnosis.eth. While we trust Gateway, this is too much of a risk for the DAO in\
+  \ our opinion, and opens it up for a variety of attacks.\n\nTo fully address this\
+  \ issue, we plan to transition gnosis.eth back to the standard ENS Resolver. This\
+  \ will effectively restore all the power exclusively to the DAO, ensuring that no\
+  \ external process can alter the domain.\n\n# This proposal\nConcretely speaking,\
+  \ this is the list of transactions that we are planning to execute in this proposal\
+  \ in order to move gnosis.eth back to the ENS resolver. We are taking this opportunity\
+  \ to also upgrade to [the latest version of the Public Resolver](https://docs.ens.domains/learn/deployments/#mainnet),\
   \ hence why all previously existing records are being recreated. The Twitter handle\
-  \ was also updated to `@GnosisDAO`, as `@gnosisPM` has been deprecated.\n\nThe `snapshot`\
-  \ field has been set to `ipfs://QmQcMqCNepYVvUZiHzSL5FL43f646cgCY46sgoHmHdM551`.\
-  \ This is different from the previous version (`ipfs://QmWUemB5QDr6Zkp2tqQRcEW1ZC7n4MiLaE6CFneVJUeYyD`),\
-  \ because the Snapshot space had actually been updated in  to use the following\
-  \ configuration: <\n\nProposed transactions:\n    \n    \n    [\n        {\n   \
-  \         \"to\": \"0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e\",\n            \"\
-  operation\": \"0\",\n            \"value\": \"0\",\n            \"method\": \"setResolver(bytes32\
-  \ node,address resolver)\",\n            \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\n            ]\n\
-  \        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setAddr(bytes32 node, address a)\",\n            \"params\": [\n\
-  \                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\n            ]\n\
-  \        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setAddr(bytes32 node, uint256 coinType, bytes a)\",\n         \
-  \   \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                60,\n                \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\
-  \n            ]\n        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setAddr(bytes32 node, uint256 coinType, bytes a)\",\n         \
-  \   \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"2147483748\",\n                \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\
-  \n            ]\n        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"com.twitter\",\n                \"GnosisDAO\"\n           \
-  \ ]\n        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"com.github\",\n                \"gnosis\"\n            ]\n\
-  \        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"com.discord\",\n                \"\n            ]\n       \
-  \ },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"avatar\",\n                \"ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42\"\
-  \n            ]\n        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"url\",\n                \"\n            ]\n        },\n   \
-  \     {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n \
-  \           \"operation\": \"0\",\n            \"value\": \"0\",\n            \"\
-  method\": \"setText(bytes32 node, string key, string value)\",\n            \"params\"\
-  : [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"quorum\",\n                \"75000\"\n            ]\n     \
-  \   },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"daorequirements\",\n                \"ipfs://QmZXAbYyDt7WUq2HqcvQrnxw7zXGPCGJvQXSrNsjik49Uy\"\
-  \n            ]\n        },\n        {\n            \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n            \"operation\": \"0\",\n            \"value\": \"0\",\n          \
-  \  \"method\": \"setText(bytes32 node, string key, string value)\",\n          \
-  \  \"params\": [\n                \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n                \"snapshot\",\n                \"ipfs://QmQcMqCNepYVvUZiHzSL5FL43f646cgCY46sgoHmHdM551\"\
-  \n            ]\n        }\n    ]\n    \n\n## Governance Considerations\n\nMaintaining\
-  \ the integrity and security of critical infrastructure may, in rare instances,\
-  \ require prompt and discretionary action by the core team or core developers—particularly\
-  \ in cases where there is a potential risk to the DAO or the broader ecosystem.\
-  \ While decisions affecting governance should ideally be made through open proposals\
-  \ and community deliberation, extraordinary circumstances—such as critical security\
-  \ threats—may necessitate temporary unilateral intervention under a defined mandate.\n\
-  \nTo support responsible action in such situations, we intend to introduce a separate\
-  \ GIP outlining a clear policy framework that would authorize limited unilateral\
-  \ measures by the core team. This framework will include strict conditions on when\
-  \ emergency action can be taken, obligations to notify the community through a post-action\
-  \ report and provide for retrospective DAO review and oversight.\n\nWe remain committed\
+  \ was also updated to @GnosisDAO, as @gnosisPM has been deprecated.\n\nThe snapshot\
+  \ field has been set to ipfs://QmQcMqCNepYVvUZiHzSL5FL43f646cgCY46sgoHmHdM551. This\
+  \ is different from the previous version (ipfs://QmWUemB5QDr6Zkp2tqQRcEW1ZC7n4MiLaE6CFneVJUeYyD),\
+  \ because the Snapshot space had actually been updated in https://app.safe.global/transactions/tx?safe=eth:0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe&id=multisig_0x0DA0C3e52C977Ed3cBc641fF02DD271c3ED55aFe_0x526d28f2c749e2319851dfa2440a04e01ad80ecaa2ec5bf8ac84cf6529e3da9a\
+  \ to use the following configuration: https://bafkreicusfemxee7rwp42f3owjnclh2nsz5avcesrcme5oaol3qcxviwna.ipfs.4everland.io/\n\
+  \nProposed transactions:\n\n```\n[\n    {\n        \"to\": \"0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setResolver(bytes32 node,address resolver)\",\n        \"params\": [\n     \
+  \       \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\",\n\
+  \            \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\n        ]\n    },\n\
+  \    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n      \
+  \  \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\": \"setAddr(bytes32\
+  \ node, address a)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\n        ]\n    },\n\
+  \    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n      \
+  \  \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\": \"setAddr(bytes32\
+  \ node, uint256 coinType, bytes a)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            60,\n            \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\n\
+  \        ]\n    },\n    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setAddr(bytes32 node, uint256 coinType, bytes a)\",\n        \"params\": [\n\
+  \            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"2147483748\",\n            \"0x0da0c3e52c977ed3cbc641ff02dd271c3ed55afe\"\
+  \n        ]\n    },\n    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setText(bytes32 node, string key, string value)\",\n        \"params\": [\n\
+  \            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"com.twitter\",\n            \"GnosisDAO\"\n        ]\n    },\n\
+  \    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n      \
+  \  \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\": \"setText(bytes32\
+  \ node, string key, string value)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"com.github\",\n            \"gnosis\"\n        ]\n    },\n    {\n\
+  \        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n        \"operation\"\
+  : \"0\",\n        \"value\": \"0\",\n        \"method\": \"setText(bytes32 node,\
+  \ string key, string value)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"com.discord\",\n            \"https://chat.gnosis.io\"\n      \
+  \  ]\n    },\n    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setText(bytes32 node, string key, string value)\",\n        \"params\": [\n\
+  \            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"avatar\",\n            \"ipfs://QmVD5UHMZfvsuXJRdVcbnmrPgsUFjDjpSXAmfdv3W7MN42\"\
+  \n        ]\n    },\n    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setText(bytes32 node, string key, string value)\",\n        \"params\": [\n\
+  \            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"url\",\n            \"https://gnosis.io\"\n        ]\n    },\n\
+  \    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n      \
+  \  \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\": \"setText(bytes32\
+  \ node, string key, string value)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"quorum\",\n            \"75000\"\n        ]\n    },\n    {\n  \
+  \      \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n        \"operation\"\
+  : \"0\",\n        \"value\": \"0\",\n        \"method\": \"setText(bytes32 node,\
+  \ string key, string value)\",\n        \"params\": [\n            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"daorequirements\",\n            \"ipfs://QmZXAbYyDt7WUq2HqcvQrnxw7zXGPCGJvQXSrNsjik49Uy\"\
+  \n        ]\n    },\n    {\n        \"to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
+  ,\n        \"operation\": \"0\",\n        \"value\": \"0\",\n        \"method\"\
+  : \"setText(bytes32 node, string key, string value)\",\n        \"params\": [\n\
+  \            \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
+  ,\n            \"snapshot\",\n            \"ipfs://QmQcMqCNepYVvUZiHzSL5FL43f646cgCY46sgoHmHdM551\"\
+  \n        ]\n    }\n]\n```\n\n# Governance Considerations\nMaintaining the integrity\
+  \ and security of critical infrastructure may, in rare instances, require prompt\
+  \ and discretionary action by the core team or core developers—particularly in cases\
+  \ where there is a potential risk to the DAO or the broader ecosystem. While decisions\
+  \ affecting governance should ideally be made through open proposals and community\
+  \ deliberation, extraordinary circumstances—such as critical security threats—may\
+  \ necessitate temporary unilateral intervention under a defined mandate.\n\nTo support\
+  \ responsible action in such situations, we intend to introduce a separate GIP outlining\
+  \ a clear policy framework that would authorize limited unilateral measures by the\
+  \ core team. This framework will include strict conditions on when emergency action\
+  \ can be taken, obligations to notify the community through a post-action report\
+  \ and provide for retrospective DAO review and oversight.\n\nWe remain committed\
   \ to transparency, accountability, and decentralization. Any such actions will be\
   \ taken with careful judgment, clear communication, and a commitment to respect\
   \ the DAO’s governance mechanisms . We welcome community feedback to help strike\
-  \ the right balance between rapid response capability and decentralized governance.\n\
-  \n4 Likes\n"
-start: 1755033285
-end: null
-state:
-  - phase-2
-author: 'Philippe Schommers &lt;philippe@gnosis.io&gt;
-
-  status: Draft
-
-  type: Meta
-
-  created: 2025-08-12
-
-
-  Summary
-
-  On Jun 9'
+  \ the right balance between rapid response capability and decentralized governance."
+start: 1757316846
+end: 1757921646
+state: closed
+author: '0xdaf3323dcECe13126590708eAb07DF0CC31CDD44'
 choices:
   - For
   - Against
   - Abstain
-scores_state: null
-scores_total: null
+scores_state: final
+scores_total: 85467.47124155832
 scores:
+  - 85467.47124155832
   - 0
   - 0
-  - 0
-votes: null
-quorum: null
+votes: 61
+quorum: 75000
 funding:
   amount: null
   currency: null
-  confidence: null
-  error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 43\n}\n]"
-  model_used: none
+  confidence: High
+  model_used: gemini-1.5-flash

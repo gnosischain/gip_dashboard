@@ -2,23 +2,28 @@ id: gip-12-treasury-swaps-program-1-gno-x-bal
 gip_number: 12
 url: https://forum.gnosis.io/t/gip-12-treasury-swaps-program-1-gno-x-bal
 title: 'Treasury Swaps Program #1 GNO x BAL'
-body: "##  Simple Summary\n\nCreate periodic OTC trades GNO X BAL between GnosisDAO\
-  \ and Balancer’s treasuries. The program #1 will consist of 4000 ETH-equivalent\
-  \ GNO (BAL) distributed across 8 months.\n\n##  Motivation\n\nIn April 2021, Gnosis\
-  \ and Balancer launched a partnership integration, the Balancer-Gnosis-Protocol\
-  \ (BGP). This proposal looks forward to strengthening the partnership and aligning\
-  \ the DAOs financially.\n\nHow?  \n-Financial incentives alignment: It will promote\
-  \ the Balancer-Gnosis-Protocol outcome in the best interest of both Gnosis and Balancer\n\
-  \n  * Treasury diversification\n  * Improved token distribution within long term\
-  \ players\n  * Voting power for DAO proposals\n\n\n\n##  Specification\n\nStart\
-  \ a pilot program #1 of 4000 ETH-equivalent GNO (BAL) distributed across 8 months.\
-  \ After the program #1, make a lookback, evaluate the results and define next steps.\n\
-  \nEvery first Monday of the month Gnosis (Balancer) sends 500 ETH-equivalent GNO\
-  \ (BAL) to Balancer (Gnosis) treasury wallet.\n\nThe price will be defined by the\
-  \ last 30 days of open-price historical data average on Coingecko:  \nGNO:    \n\
-  BAL: Balancer Price: BAL Live Price Chart & News | CoinGecko\n\nLink to discussion\
-  \ on Balancer forum\n\nLink to phase1 post\n\n2 Likes\n"
-start: 1630933834
+body: "!Gnosis\n\nLoading\n\n  * Do Treasury Swaps Program #1 GNO x BAL\n  * Make\
+  \ no changes\n\n\n\n0 voters\n    \n    \n    GIP: 12\n    title: Treasury Swaps\
+  \ Pilot Program #1 GNO x BAL\n    author: @claberus, Marcelo Ruiz de Olano\n   \
+  \ status: Phase 2\n    type: Meta\n    created: 2021-08-05\n    \n    \n\n##  Simple\
+  \ Summary\n\nCreate periodic OTC trades GNO X BAL between GnosisDAO and Balancer’s\
+  \ treasuries. The program #1 will consist of 4000 ETH-equivalent GNO (BAL) distributed\
+  \ across 8 months.\n\n##  Motivation\n\nIn April 2021, Gnosis and Balancer launched\
+  \ a partnership integration, the Balancer-Gnosis-Protocol (BGP). This proposal looks\
+  \ forward to strengthening the partnership and aligning the DAOs financially.\n\n\
+  How?  \n-Financial incentives alignment: It will promote the Balancer-Gnosis-Protocol\
+  \ outcome in the best interest of both Gnosis and Balancer\n\n  * Treasury diversification\n\
+  \  * Improved token distribution within long term players\n  * Voting power for\
+  \ DAO proposals\n\n\n\n##  Specification\n\nStart a pilot program #1 of 4000 ETH-equivalent\
+  \ GNO (BAL) distributed across 8 months. After the program #1, make a lookback,\
+  \ evaluate the results and define next steps.\n\nEvery first Monday of the month\
+  \ Gnosis (Balancer) sends 500 ETH-equivalent GNO (BAL) to Balancer (Gnosis) treasury\
+  \ wallet.\n\nThe price will be defined by the last 30 days of open-price historical\
+  \ data average on Coingecko:  \nGNO:    \nBAL: Balancer Price: BAL Live Price Chart\
+  \ & News | CoinGecko\n\nLink to discussion on Balancer forum\n\nLink to phase1 post\n\
+  \n2 Likes\n\n## Cookie Settings\n\nThe Forum only sets cookies that are necessary\
+  \ for its basic functionality. By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1630926634
 end: null
 state:
   - phase-2
@@ -40,11 +45,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 44\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 31.833641678s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 31\n}\n]"
   model_used: none

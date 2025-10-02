@@ -1,0 +1,77 @@
+id: '0x0dfcbdfaf4388fad71029b474c6b3e5fd2051354c7c768c1b099949205f254c4'
+gip_number: '133'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x0dfcbdfaf4388fad71029b474c6b3e5fd2051354c7c768c1b099949205f254c4
+title: Should Gnosis DAO extend the Gnosis Pay Cashback budget (GIP-110) by 2,000
+  GNO?
+body: '**Summary**
+
+  This proposal seeks to allocate 2,000 GNO to extend the existing Gnosis Pay Cashback
+  Program as defined in [GIP-110](https://forum.gnosis.io/t/gip-110-should-the-gnosis-dao-create-and-fund-a-gnosis-pay-rewards-program-with-10k-gno/8837).
+  No changes suggested in [GIP-131](https://forum.gnosis.io/t/gip-131-should-gnosis-dao-continue-and-update-the-gnosis-pay-cashback-programme/10377)
+  or any other updates will be applied at this stage. All rules, tiers, limits, and
+  conditions remain exactly as in GIP-110.
+
+
+  **Rationale**
+
+  The cashback program launched under GIP-110 has proven to be an effective user acquisition
+  and engagement mechanism for Gnosis Pay. However, the allocated reward pool has
+  been depleted.
+
+
+  While GIP-131 is under active discussion, reaching consensus on a new model will
+  take more time. To ensure continuity for users and avoid interruption of the program,
+  we propose a bridge allocation of 2,000 GNO. This temporary extension gives the
+  DAO and community the time needed to refine and agree on a more sustainable long-term
+  model.
+
+
+  **Implementation**
+
+
+  The additional 2,000 GNO will be added to the existing cashback pool.
+
+  All conditions (tiers, cashback percentages, spending caps, exclusions, distribution
+  rules, etc.) will remain exactly the same as in GIP-110.
+
+  The program will continue until the new funds are exhausted or until a new GIP replaces
+  it.
+
+
+  **Next Steps**
+
+
+  If passed, funds will be allocated immediately to avoid program disruption.
+
+  A separate proposal (building on GIP-131) will be brought forward once consensus
+  on a revised model is reached.
+
+
+  **Vote**
+
+
+  YES: Allocate 2,000 GNO to extend Gnosis Pay Cashback Program under the rules of
+  GIP-110.
+
+  NO: Do not extend the program; cashback ends when the current pool is depleted.'
+start: 1756477800
+end: 1757082600
+state: closed
+author: '0x0af18b1cC7244661F118a84C9406b79565Bc3585'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: final
+scores_total: 106680.37415783902
+scores:
+  - 96360.0775221802
+  - 5136.324309179997
+  - 5183.972326478813
+votes: 113
+quorum: 75000
+funding:
+  amount: '2000'
+  currency: GNO
+  confidence: High
+  model_used: gemini-1.5-flash

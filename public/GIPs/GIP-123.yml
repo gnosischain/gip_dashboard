@@ -3,43 +3,46 @@ gip_number: 123
 url: https://forum.gnosis.io/t/gip-123-should-gnosisdao-adopt-and-support-curia-labs-governance-monitoring-service-in-2025
 title: Should GnosisDAO adopt and support Curia Lab's Governance Monitoring Service
   in 2025? - Governance - Gnosis
-body: "## Executive Summary\n\nIn recent years, DAOs like Gnosis have grown significantly,\
-  \ launching impactful initiatives and expanding their communities. However, as these\
-  \ decentralized organizations scale, maintaining secure, transparent, and accessible\
-  \ governance becomes increasingly crucial. GnosisDAO currently faces governance\
-  \ challenges, including declining voter participation, delegate accountability,\
-  \ transparency gaps, and a high concentration of voting power. Addressing these\
-  \ effectively requires comprehensive governance research supported by specialized\
-  \ analytics.\n\nCuria Lab proposes a comprehensive **Governance Monitoring & Analytics\
-  \ Service** tailored specifically for GnosisDAO. The initiative begins with thorough\
-  \ research into existing governance dynamics, delegate behaviors, voter participation\
-  \ trends, and centralization risks. Insights from this research will inform the\
-  \ development of targeted analytics tools and reports to empower the GnosisDAO community,\
-  \ enhance governance transparency, and facilitate effective decision-making. Our\
-  \ goal is to ensure GnosisDAO’s governance remains transparent, measurable, accountable,\
-  \ and resilient, aligning with the DAO’s mission of sustainable, decentralized excellence.\n\
-  \n## Motivation\n\nGnosisDAO currently faces critical governance challenges, including\
-  \ declining voter engagement and frequent difficulties achieving quorum on key proposals.\
-  \ In the past year, four proposals failed to meet quorum requirements, and eight\
-  \ others narrowly succeeded, surpassing quorum thresholds by only 1-3%. In response\
-  \ to these challenges, GnosisDAO introduced the Delegate Program (GIP-101) to enhance\
-  \ participation. Despite this initiative, ongoing difficulties remain in effectively\
-  \ monitoring delegate accountability and accurately measuring the program’s impact\
-  \ on governance participation.\n\nTransparency is another significant concern, as\
-  \ DAO members often struggle to track governance dynamics effectively. Existing\
-  \ tools such as Snapshot and the GIP dashboard offer basic functionality but lack\
-  \ comprehensive analytics, critical governance metrics, and historical data insights\
-  \ needed for proactive and informed governance management especially in tracking\
-  \ the impact of future governance-related initiatives.\n\n## Proposed Solution\n\
-  \nWe propose a robust **Governance Monitoring & Analytics Service** that continuously\
-  \ tracks, analyzes, and reports on key governance activities. This integrated solution\
-  \ comprises:\n\n  * **Governance Analytics hub**\n  * **Governance Research & Data\
-  \ Reports**\n  * **Data & API Provider**\n\n\n\nTailored specifically to GnosisDAO’s\
-  \ governance needs, this service provides comprehensive, actionable insights into\
-  \ delegate behaviors, voter participation trends, voting power distribution, and\
-  \ governance risks. By leveraging near real-time data feeds, GnosisDAO will benefit\
-  \ from improved delegate accountability, informed strategic decisions, and proactive\
-  \ risk monitoring.\n\nOur overarching vision is to serve as an open **end-to-end\
+body: "!Gnosis\n\nLoading\n    \n    \n    GIP: 123\n    title: Should GnosisDAO adopt\
+  \ and support Curia Lab's Governance Monitoring Service in 2025?\n    author: @curia\n\
+  \    status: Draft\n    type: Funding - Service Agreements\n    created: 2025-03-26\n\
+  \    duration: 1 year\n    funding: $70,000\n    \n\n## Executive Summary\n\nIn\
+  \ recent years, DAOs like Gnosis have grown significantly, launching impactful initiatives\
+  \ and expanding their communities. However, as these decentralized organizations\
+  \ scale, maintaining secure, transparent, and accessible governance becomes increasingly\
+  \ crucial. GnosisDAO currently faces governance challenges, including declining\
+  \ voter participation, delegate accountability, transparency gaps, and a high concentration\
+  \ of voting power. Addressing these effectively requires comprehensive governance\
+  \ research supported by specialized analytics.\n\nCuria Lab proposes a comprehensive\
+  \ **Governance Monitoring & Analytics Service** tailored specifically for GnosisDAO.\
+  \ The initiative begins with thorough research into existing governance dynamics,\
+  \ delegate behaviors, voter participation trends, and centralization risks. Insights\
+  \ from this research will inform the development of targeted analytics tools and\
+  \ reports to empower the GnosisDAO community, enhance governance transparency, and\
+  \ facilitate effective decision-making. Our goal is to ensure GnosisDAO’s governance\
+  \ remains transparent, measurable, accountable, and resilient, aligning with the\
+  \ DAO’s mission of sustainable, decentralized excellence.\n\n## Motivation\n\nGnosisDAO\
+  \ currently faces critical governance challenges, including declining voter engagement\
+  \ and frequent difficulties achieving quorum on key proposals. In the past year,\
+  \ four proposals failed to meet quorum requirements, and eight others narrowly succeeded,\
+  \ surpassing quorum thresholds by only 1-3%. In response to these challenges, GnosisDAO\
+  \ introduced the Delegate Program (GIP-101) to enhance participation. Despite this\
+  \ initiative, ongoing difficulties remain in effectively monitoring delegate accountability\
+  \ and accurately measuring the program’s impact on governance participation.\n\n\
+  Transparency is another significant concern, as DAO members often struggle to track\
+  \ governance dynamics effectively. Existing tools such as Snapshot and the GIP dashboard\
+  \ offer basic functionality but lack comprehensive analytics, critical governance\
+  \ metrics, and historical data insights needed for proactive and informed governance\
+  \ management especially in tracking the impact of future governance-related initiatives.\n\
+  \n## Proposed Solution\n\nWe propose a robust **Governance Monitoring & Analytics\
+  \ Service** that continuously tracks, analyzes, and reports on key governance activities.\
+  \ This integrated solution comprises:\n\n  * **Governance Analytics hub**\n  * **Governance\
+  \ Research & Data Reports**\n  * **Data & API Provider**\n\n\n\nTailored specifically\
+  \ to GnosisDAO’s governance needs, this service provides comprehensive, actionable\
+  \ insights into delegate behaviors, voter participation trends, voting power distribution,\
+  \ and governance risks. By leveraging near real-time data feeds, GnosisDAO will\
+  \ benefit from improved delegate accountability, informed strategic decisions, and\
+  \ proactive risk monitoring.\n\nOur overarching vision is to serve as an open **end-to-end\
   \ governance data & insight provider**, ensuring DAO governance is transparent,\
   \ measurable, and secure—fully aligned with GnosisDAO’s objectives for increased\
   \ participation and sustainable governance excellence.\n\n### Governance Analytics\
@@ -242,8 +245,10 @@ body: "## Executive Summary\n\nIn recent years, DAOs like Gnosis have grown sign
   \ that address the unique challenges and needs of GnosisDAO.\n\n## **Contact Information**\n\
   \nX/Twitter: Curia\n\nTelegram: @v3dao\n\nEmail: varit@curialab.xyz\n\nWebsite:\
   \ Curia Hub\n\n3 Likes\n\nKpk May 2025 Report for GnosisDAO\n\n[[Temp Check] Should\
-  \ GnosisDAO procure governance analytics solutions?](\n"
-start: 1742938862
+  \ GnosisDAO procure governance analytics solutions?](\n\n## Cookie Settings\n\n\
+  The Forum only sets cookies that are necessary for its basic functionality. By clicking\
+  \ on Accept you consent to this. \n\nAccept\n"
+start: 1742935262
 end: null
 state:
   - phase-1
@@ -269,11 +274,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 50\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 40.544353978s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 40\n}\n]"
   model_used: none

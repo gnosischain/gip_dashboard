@@ -2,7 +2,11 @@ id: gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-valid
 gip_number: 106
 url: https://forum.gnosis.io/t/gip-106-should-gnosisdao-reinstate-full-rewards-for-eligible-gnosisvip-validator-nodes
 title: Should GnosisDAO Reinstate Full Rewards for Eligible GnosisVIP Validator Nodes?
-body: "#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis proposal\
+body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n  \
+  \  \n    GIP: 106\n    title: Should GnosisDAO Reinstate Full Rewards for eligible\
+  \ GnosisVIP Validator Nodes?\n    author: @dao\n    status: Draft\n    type: Funding\n\
+  \    created: 2024-07-05\n    duration: Once\n    funding: up to 116.2 GNO (*updated)\n\
+  \    \n\n#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis proposal\
   \ aims to revisit and restore the original reward policy for the GnosisVIP event.\
   \ The event’s initial rules allowed participants to set up validator nodes across\
   \ 104 countries, with the first 10 nodes in each country being eligible for rewards.\
@@ -41,8 +45,10 @@ body: "#### Category\n\nFunding - Rewards\n\n#### Executive Summary:\n\nThis pro
   \ are treated equitably and avoid reputational risk for the Gnosis ecosystem. This\
   \ proposal seeks the support of the GnosisDAO community to uphold the integrity\
   \ of our events and promote a decentralized and robust network.\n\n2 Likes\n\nStaworth\
-  \ Limited - Delegate Platform\n"
-start: 1720191111
+  \ Limited - Delegate Platform\n\n## Cookie Settings\n\nThe Forum only sets cookies\
+  \ that are necessary for its basic functionality. By clicking on Accept you consent\
+  \ to this. \n\nAccept\n"
+start: 1720183911
 end: null
 state:
   - phase-1
@@ -68,11 +74,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 46\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 27.985300117s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 27\n}\n]"
   model_used: none

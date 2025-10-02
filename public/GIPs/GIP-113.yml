@@ -2,30 +2,36 @@ id: gip-113-should-gnosis-dao-provide-grants-for-omen-2-0-initiative
 gip_number: 113
 url: https://forum.gnosis.io/t/gip-113-should-gnosis-dao-provide-grants-for-omen-2-0-initiative
 title: Should Gnosis DAO provide grants for Omen 2.0 initiative?
-body: "## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Rewards\
-  \ and Reimbursement\n\n#### Executive Summary:\n\nThis proposal seeks a grant to\
-  \ develop a frontend for the Omen prediction market, that leverages AI agents to\
-  \ both create and predict market outcomes. The platform will offer users insights\
-  \ into real-world event predictions while enhancing the overall user experience.\
-  \ The requested grant of 400K WXDAI and 600 GNO will be used to fund the development\
-  \ and maintenance of the Omen frontend.\n\n#### Specification\n\nThe proposed reward\
-  \ and reimbursement program includes 400K WXDAI and 600 GNO for the development\
-  \ and maintenance of the Omen 2.0 frontend, along with the transfer of the Omen.eth\
-  \ ENS for branding and platform management. These funds will be allocated as follows:\
-  \ 70% for product development, testing, and maintenance; 15% for marketing; 3% for\
-  \ infrastructure; and 12% for project management. This program aims to drive user\
-  \ growth on Gnosis Chain, augment the Gnosis AI team and its prediction market agents,\
-  \ and support new initiatives and experiments across the broader Gnosis network.\n\
-  \n##### Technical Specifications\n\nThe Presagio frontend is being developed on\
-  \ React with Next.js, building upon the original OMEN conditional tokens contracts\
-  \ written by Gnosis.\n\nKey integrations include Gnosis AI APIs, The Graph and Dune.\
-  \ Gnosis AI API is used to fetch real-time market insights. We seek to use Gnosis\
-  \ AI API for new functionalities (e.g. market creation, agent insights). Future\
-  \ enhancements will involve building a back-end solution to improve data fetching\
-  \ efficiency, improving users experience and new functionalities (e.g. database\
-  \ to store data for user favorite markets for example).\n\nA comments section is\
-  \ also planned, with an integration of a partner-provided solution (preferably in\
-  \ web3 space), to allow user discussions within the platform.\n\n#### Rationale\n\
+body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n  \
+  \  \n    GIP: 113\n    title: Grants for Presagio (Omen 2.0)\n    author: <Venky\
+  \ (@0xVenky) <venky@swaprhq.io>, Leonardo (@berteotti) <leo@swaprhq.io>, Diogo (@diogomf)\
+  \ <diogo@swaprhq.io>>\n    status: Draft\n    type: Funding\n    created: 2024-09-26\n\
+  \    requires (*optional): <GIP number(s)>\n    replaces (*optional): <GIP number(s)>\n\
+  \    duration: 14 months (March 2024 to May 2025)\n    funding: 400K USD + 600 GNO\
+  \ + transfer of Omen.eth\n    \n\n## 2\\. Funding - Rewards/Reimbursements\n\n####\
+  \ Category\n\nFunding - Rewards and Reimbursement\n\n#### Executive Summary:\n\n\
+  This proposal seeks a grant to develop a frontend for the Omen prediction market,\
+  \ that leverages AI agents to both create and predict market outcomes. The platform\
+  \ will offer users insights into real-world event predictions while enhancing the\
+  \ overall user experience. The requested grant of 400K WXDAI and 600 GNO will be\
+  \ used to fund the development and maintenance of the Omen frontend.\n\n#### Specification\n\
+  \nThe proposed reward and reimbursement program includes 400K WXDAI and 600 GNO\
+  \ for the development and maintenance of the Omen 2.0 frontend, along with the transfer\
+  \ of the Omen.eth ENS for branding and platform management. These funds will be\
+  \ allocated as follows: 70% for product development, testing, and maintenance; 15%\
+  \ for marketing; 3% for infrastructure; and 12% for project management. This program\
+  \ aims to drive user growth on Gnosis Chain, augment the Gnosis AI team and its\
+  \ prediction market agents, and support new initiatives and experiments across the\
+  \ broader Gnosis network.\n\n##### Technical Specifications\n\nThe Presagio frontend\
+  \ is being developed on React with Next.js, building upon the original OMEN conditional\
+  \ tokens contracts written by Gnosis.\n\nKey integrations include Gnosis AI APIs,\
+  \ The Graph and Dune. Gnosis AI API is used to fetch real-time market insights.\
+  \ We seek to use Gnosis AI API for new functionalities (e.g. market creation, agent\
+  \ insights). Future enhancements will involve building a back-end solution to improve\
+  \ data fetching efficiency, improving users experience and new functionalities (e.g.\
+  \ database to store data for user favorite markets for example).\n\nA comments section\
+  \ is also planned, with an integration of a partner-provided solution (preferably\
+  \ in web3 space), to allow user discussions within the platform.\n\n#### Rationale\n\
   \nThe past couple of months, there has been a great amount of traction in prediction\
   \ market area with Polymarket raising 70M in investment and there has been considerable\
   \ user growth in Polymarket, limitless.exchange and manifold.markets. At Dappcon,\
@@ -103,8 +109,10 @@ body: "## 2\\. Funding - Rewards/Reimbursements\n\n#### Category\n\nFunding - Re
   \ significant step in the evolution of prediction markets, blending the AI infrastructure\
   \ within the Gnosis ecosystem. The requested funding will enable the development,\
   \ maintenance and the growth of the platform bringing Omen to a position of leading\
-  \ AI agent driven prediction market space.\n\n8 Likes\n"
-start: 1727334351
+  \ AI agent driven prediction market space.\n\n8 Likes\n\n## Cookie Settings\n\n\
+  The Forum only sets cookies that are necessary for its basic functionality. By clicking\
+  \ on Accept you consent to this. \n\nAccept\n"
+start: 1727327151
 end: null
 state:
   - phase-2
@@ -126,11 +134,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 48\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 34.834755281s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 34\n}\n]"
   model_used: none

@@ -2,39 +2,44 @@ id: gip-76-set-up-a-legal-entity-controlled-and-owned-by-the-dao
 gip_number: 76
 url: https://forum.gnosis.io/t/gip-76-set-up-a-legal-entity-controlled-and-owned-by-the-dao
 title: Set up a legal entity controlled and owned by the DAO?
-body: "##  **Simple Summary**\n\nThis is a proposal to set up a legal entity (in the\
-  \ form of an LLC) owned by a Gnosis DAO wallet that enables the GnosisDAO to interact\
-  \ with business partners with an incorporated entity.\n\n##  **Abstract**\n\nThis\
-  \ new legal entity:  \n● Can enter into contractual arrangements on behalf of the\
-  \ GnosisDAO  \n● Can make payments to different service providers that are undertaking\
-  \  \nservices on behalf of the GnosisDAO  \n● Can hold assets/digital property such\
-  \ as patents, copyrights or trademarks  \n● Is not owned by a physical person nor\
-  \ an official representing the company,  \ninstead the legal entity is owned by\
-  \ a smart contract address that is  \ncontrolled by the GnosisDAO\n\n##  **Motivation**\n\
-  \nThe GnosisDAO is the decentralized collective steward of the Gnosis ecosystem.\
-  \ It is participant managed, and does not have any director or manager. No single\
-  \ party is in control. As the GnosisDAO exists entirely on-chain, it is not always\
-  \ recognised as an entity with legal personality or limited liability. Some maintain\
-  \ that an unincorporated DAO cannot enter into contracts with outside entities,\
-  \ hold bank accounts or assets, or make cash payments. In order to be able to function\
-  \ in the web2 world, we can create an associated legal entity owned by a smart contract\
-  \ address that is controlled by the GnosisDAO.\n\n##  **Specification**\n\nTogether\
-  \ with OtoCo (see OtoCo - Automated Company Assembly on Blockchain) it is possible\
-  \ to create an LLC in Wyoming with a member that is neither a physical person nor\
-  \ an official representing a company. Instead, the member can be a smart contract\
-  \ address.  \nThis is achieved through a so-called Series LLC. A Series has a Master\
-  \ and individual Series. Each Series is considered an LLC in its own right, with\
-  \ its own name and its own Member(s) independent from the Members of the Master\
-  \ LLC and other Series’ Members. Individual Series need a first Member. The first\
-  \ Member of a Series LLC can be a smart contract address, using the OtoCo company\
-  \ assembly smart contract.  \nEach Series LLC is represented by an NFT minted by\
-  \ the OtoCo Master contract. Company information, such as the name, is contained\
+body: "!Gnosis\n\nLoading\n\n  * Let’s do this!\n  * Make no changes\n\n\n\n0 voters\n\
+  \    \n    \n    GIP: 76\n    Set up a legal entity controlled and owned by the\
+  \ DAO?\n    author: Monika \n    status: Draft\n    type: Meta\n    created: 2023-01-20\n\
+  \    \n\n##  **Simple Summary**\n\nThis is a proposal to set up a legal entity (in\
+  \ the form of an LLC) owned by a Gnosis DAO wallet that enables the GnosisDAO to\
+  \ interact with business partners with an incorporated entity.\n\n##  **Abstract**\n\
+  \nThis new legal entity:  \n● Can enter into contractual arrangements on behalf\
+  \ of the GnosisDAO  \n● Can make payments to different service providers that are\
+  \ undertaking  \nservices on behalf of the GnosisDAO  \n● Can hold assets/digital\
+  \ property such as patents, copyrights or trademarks  \n● Is not owned by a physical\
+  \ person nor an official representing the company,  \ninstead the legal entity is\
+  \ owned by a smart contract address that is  \ncontrolled by the GnosisDAO\n\n##\
+  \  **Motivation**\n\nThe GnosisDAO is the decentralized collective steward of the\
+  \ Gnosis ecosystem. It is participant managed, and does not have any director or\
+  \ manager. No single party is in control. As the GnosisDAO exists entirely on-chain,\
+  \ it is not always recognised as an entity with legal personality or limited liability.\
+  \ Some maintain that an unincorporated DAO cannot enter into contracts with outside\
+  \ entities, hold bank accounts or assets, or make cash payments. In order to be\
+  \ able to function in the web2 world, we can create an associated legal entity owned\
+  \ by a smart contract address that is controlled by the GnosisDAO.\n\n##  **Specification**\n\
+  \nTogether with OtoCo (see OtoCo - Automated Company Assembly on Blockchain) it\
+  \ is possible to create an LLC in Wyoming with a member that is neither a physical\
+  \ person nor an official representing a company. Instead, the member can be a smart\
+  \ contract address.  \nThis is achieved through a so-called Series LLC. A Series\
+  \ has a Master and individual Series. Each Series is considered an LLC in its own\
+  \ right, with its own name and its own Member(s) independent from the Members of\
+  \ the Master LLC and other Series’ Members. Individual Series need a first Member.\
+  \ The first Member of a Series LLC can be a smart contract address, using the OtoCo\
+  \ company assembly smart contract.  \nEach Series LLC is represented by an NFT minted\
+  \ by the OtoCo Master contract. Company information, such as the name, is contained\
   \ within the metadata of the NFT, which can be looked up on Etherscan.\n\nTransactions\
   \ can be encoded via payload for a snapshot vote, therefore, transactions do not\
   \ have to be approved manually.\n\nFor further details on the specification, see:\
   \ Part II. The OtoCo Ethereum smart contracts - OtoCo Documentation (gitbook.io).\n\
-  \n2 Likes\n\n**next page →**\n"
-start: 1674210716
+  \n2 Likes\n\n**next page →**\n\n## Cookie Settings\n\nThe Forum only sets cookies\
+  \ that are necessary for its basic functionality. By clicking on Accept you consent\
+  \ to this. \n\nAccept\n"
+start: 1674207116
 end: null
 state:
   - phase-2
@@ -57,11 +62,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
-    \n}\n, retry_delay {\n  seconds: 43\n}\n]"
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 49.748627934s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, retry_delay {\n  seconds: 49\n}\n]"
   model_used: none

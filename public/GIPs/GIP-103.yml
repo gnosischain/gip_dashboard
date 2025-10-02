@@ -3,24 +3,25 @@ gip_number: 103
 url: https://forum.gnosis.io/t/gip-103-should-gnosis-dao-allocate-8k-gno-to-fund-a-usdc-incentives-program
 title: Should Gnosis DAO allocate 8k GNO to fund a USDC incentives program? - Governance
   - Gnosis
-body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently available\
-  \ by bridging from Ethereum through the Gnosis Bridge) is not compliant with the\
-  \ Bridge Token Standard, established by Circle in November 2023. With the objective\
-  \ of growing the USDC bridged into Gnosis, and the ultimate goal of Circle taking\
-  \ over the token and converting it to native USDC on Gnosis Chain, we propose to\
-  \ create an incentives program of up to 8k GNO.\n\n## Specification\n\nIf this proposal\
-  \ is approved, Gnosis DAO will be incentivising the growth of USDC.e, which is compliant\
-  \ with the standard and that can be acquired by calling Deposit() on a Transmuter.\
-  \ The swap of the old USDC to the new one can also be done through the bridge UI.\
-  \ New USDC bridged to Gnosis will automatically be USDC.e thanks to changes in the\
-  \ bridge UI.\n\nkarpatkey will define the allocation of the incentives, based on\
-  \ what is deemed the most suitable action on Gnosis Chain. Under this same post,\
-  \ we will be reporting the updates of the program, detailing how much was spent,\
-  \ on which pools/protocols, and which results we have achieved.\n\nThe program will\
-  \ run until USDC is natively issued on Gnosis, and we have ensured that it is well\
-  \ integrated into DeFi.\n\nThe objective of the proposal, however, is not just bringing\
-  \ capital, but also users. Incentives will be directed to guide specific behaviours\
-  \ that will make users sticky. Gnosis is building a set of products that are already\
+body: "!Gnosis\n\nLoading\n\n  * In favour\n  * Against\n\n\n\n0 voters\n\n## Executive\
+  \ Summary\n\nThe USDC token on Gnosis Chain (currently available by bridging from\
+  \ Ethereum through the Gnosis Bridge) is not compliant with the Bridge Token Standard,\
+  \ established by Circle in November 2023. With the objective of growing the USDC\
+  \ bridged into Gnosis, and the ultimate goal of Circle taking over the token and\
+  \ converting it to native USDC on Gnosis Chain, we propose to create an incentives\
+  \ program of up to 8k GNO.\n\n## Specification\n\nIf this proposal is approved,\
+  \ Gnosis DAO will be incentivising the growth of USDC.e, which is compliant with\
+  \ the standard and that can be acquired by calling Deposit() on a Transmuter. The\
+  \ swap of the old USDC to the new one can also be done through the bridge UI. New\
+  \ USDC bridged to Gnosis will automatically be USDC.e thanks to changes in the bridge\
+  \ UI.\n\nkarpatkey will define the allocation of the incentives, based on what is\
+  \ deemed the most suitable action on Gnosis Chain. Under this same post, we will\
+  \ be reporting the updates of the program, detailing how much was spent, on which\
+  \ pools/protocols, and which results we have achieved.\n\nThe program will run until\
+  \ USDC is natively issued on Gnosis, and we have ensured that it is well integrated\
+  \ into DeFi.\n\nThe objective of the proposal, however, is not just bringing capital,\
+  \ but also users. Incentives will be directed to guide specific behaviours that\
+  \ will make users sticky. Gnosis is building a set of products that are already\
   \ finding Product Market Fit - Gnosis Pay being an example of that. It is the right\
   \ timing to launch an incentives program to bootstrap the ecosystem. In the end,\
   \ the results of the program should be:\n\n  1. Have native USDC\n  2. Have more\
@@ -42,8 +43,9 @@ body: "## Executive Summary\n\nThe USDC token on Gnosis Chain (currently availab
   \ market volatility. We will continuously work on optimising incentive allocation\
   \ which may result in the desired growth in a shorter time frame and/or with fewer\
   \ incentives paid out. In this case, the surplus budget will remain unallocated.\n\
-  \n8 Likes\n"
-start: 1718118995
+  \n8 Likes\n\n## Cookie Settings\n\nThe Forum only sets cookies that are necessary\
+  \ for its basic functionality. By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1718111795
 end: null
 state: []
 author: null
@@ -64,11 +66,9 @@ funding:
   currency: null
   confidence: null
   error: "429 You exceeded your current quota, please check your plan and billing\
-    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
-    \ [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
-    \n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions\
-    \ {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions\
-    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n\
-    , links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\n\
+    * Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 250\nPlease retry in 43.80006272s. [violations {\n}\n, links {\n  description:\
+    \ \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
     \n}\n, retry_delay {\n  seconds: 43\n}\n]"
   model_used: none
