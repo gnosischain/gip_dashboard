@@ -59,4 +59,4 @@ funding:
   amount: 500,000
   currency: €
   confidence: High
-  model_used: gemini-1.5-flash
+  model_used: gemini-flash-latest

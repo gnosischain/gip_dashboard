@@ -113,7 +113,7 @@ def extract_funding_info(text):
             'amount': amount,
             'currency': currency,
             'confidence': confidence,
-            'model_used': 'gemini-1.5-flash'
+            'model_used': 'gemini-flash-latest'
         }
 
     except Exception as e:

@@ -38,15 +38,15 @@ choices:
   - Against
   - Abstain
 scores_state: pending
-scores_total: 13813.794360123791
+scores_total: 53296.33932639516
 scores:
-  - 13803.79419000735
-  - 10.00017011644074
+  - 53286.301469247075
+  - 10.037857148078867
   - 0
-votes: 27
+votes: 78
 quorum: 75000
 funding:
-  amount: 35,000
+  amount: '35000'
   currency: DAI
   confidence: High
-  model_used: gemini-1.5-flash
+  model_used: gemini-flash-latest
