@@ -1,0 +1,142 @@
+id: '0x40dbf611da3cb0dc1a5fd48140330e03f90214a9410ab2a25b782c1f3160eb0b'
+gip_number: '139'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x40dbf611da3cb0dc1a5fd48140330e03f90214a9410ab2a25b782c1f3160eb0b
+title: Should GnosisDAO support ProbeLab to produce network performance and security
+  metrics for the Gnosis Chain P2P network?
+body: "PLEASE READ THE ENTIRE PROPOSAL, INCLUDING A DETAILED LIST OF THE MILESTONES\
+  \ AT: https://forum.gnosis.io/t/gip-139-should-gnosisdao-support-probelab-to-produce-network-performance-and-security-for-gnosis-chain-p2p-network/11677.\n\
+  \n# Executive Summary\nThis project focuses on enhancing the stability, resilience\
+  \ and performance of the Gnosis Chain P2P layer network through an enhanced set\
+  \ of metrics and the corresponding dashboards that will be public at: https://probelab.io.\
+  \ In particular, the project focuses on four primary areas of improvement, each\
+  \ of which is later composed into a milestone with its own objective and timeline.\
+  \ In summary, these four areas are:\n\n**1. Metrics for the Execution Layer P2P\
+  \ Network.** We will develop a detailed set of metrics for the Execution Layer DHT\
+  \ network (discv4), similar to the ones produced for discv5, see: https://probelab.io/gnosis/dht/2025-34/\
+  \ 1 1 for Week 34, 2025.\n**2. Protocols that Consensus clients are using.** We\
+  \ will extend the [Nebula](https://probelab.io/tools/nebula/) crawler to capture\
+  \ “Status and Metadata Exchange” and provide more visibility into the protocols\
+  \ that Consensus Client nodes are running.\n**3. Actual size of the Gnosis network.**\
+  \ We will adapt our [Ants](https://probelab.io/tools/ants/) architecture to support\
+  \ the discv5 DHT and thus Gnosis peers. This will allow us to detect nodes that\
+  \ are not part of the core of the network but instead, e.g., reside behind NATs.\n\
+  **4. Detect Eclipse Attacks.** We will adapt our tooling for the Gnosis Chain discv5\
+  \ DHT, deploy the tool to monitor the network 24/7 and alert the Gnosis engineering\
+  \ teams when density goes above a certain level.\n\nAfter more than 3 years in operation\
+  \ with no downtime for our 24/7 monitoring infrastructure, ProbeLab is trusted by\
+  \ top firms to secure their networks and guarantee top performance at all times.\
+  \ The majority of the results we produce for the several networks we are monitoring\
+  \ can be found at: https://probelab.io.\n\n# Rationale\nWe provide the rationale\
+  \ for the work proposed here in terms of impact that will be created for each of\
+  \ the four areas that we outlined in the Executive Summary.\n\n- **Produce Metrics\
+  \ for the Execution Layer P2P Network.** Develop a detailed set of metrics for the\
+  \ Execution Layer DHT network (discv4), similar to the ones produced for discv5.\n\
+  \  - **Why this is important:** There is currently no information regarding the\
+  \ size, structure, or geo-distribution of the Gnosis Chain Execution Layer network.\
+  \ With this work we will extend and enhance the Nebula functionality to track EL\
+  \ (discv4) DHT nodes and produce metrics similar to those presented at probelab\
+  \ . io for the Consensus Layer.\n---\n- **Identify all protocols that Consensus\
+  \ clients are using.** Extend Nebula crawler to capture “Status and Metadata Exchange”\
+  \ and provide more visibility into the protocols that Consensus Client nodes are\
+  \ running.\n  - **Why this is important:** Through the “Status and Metadata Exchange”,\
+  \ we will be able to find out details regarding the following performance- and security-critical\
+  \ items:\n    - Distribution of nodes up to date with the canonical chain and the\
+  \ nodes that are still syncing it\n    - Attestation Subnets overlap\n    - Sync\
+  \ Committee Subnets overlap\n    - Monitoring how many tools (or attackers) are\
+  \ there not able to help syncing\n    - Identify nodes with open publicly Beacon-API\
+  \ ports\n---\n- **Identify the actual size of the Gnosis network.** Adapt our [Ants\
+  \ architecture](https://probelab.io/tools/ants/) to support the discv5 DHT and thus\
+  \ Gnosis peers. This will allow us to detect nodes that are not part of the core\
+  \ of the network but instead, e.g., reside behind NATs.\n  - **Why this is important:**\
+  \ Today, we do not have an accurate view of the size of the Gnosis discv5 DHT network.\
+  \ it is not clear how many DHT client nodes interact with the discv5 DHT, how many\
+  \ peers are behind a NAT, or the geo-distribution of those nodes. Among other things,\
+  \ this makes it difficult to have a view of the structure and geo-distribution of\
+  \ the network, as well as get accurate numbers on the energy footprint of the Gnosis\
+  \ network. Together with the existing discv5 reports/data, this will give a comprehensive\
+  \ view of the network.\n---\n- **Build tooling to detect Eclipse Attacks.** ProbeLab\
+  \ has built a sophisticated tool to monitor how many peers reside at particular\
+  \ spots around the DHT key space. Higher than normal density of peers can reveal\
+  \ that there is a potential eclipse attack going on in the DHT network, affecting\
+  \ the performance of the overall system. We will adapt our tooling for the Gnosis\
+  \ Chain discv5 DHT, deploy the tool to monitor the network 24/7 and alert the Gnosis\
+  \ engineering teams when density goes above a certain level. The corresponding results\
+  \ for the Ethereum network can be found here: https://probelab.io/ethereum/keydensity/\n\
+  \  - **Why this is important:** Eclipsing peers in the DHT network can be catastrophic\
+  \ for individual validators. Although this tool does not mitigate the attack, it\
+  \ is very effective in identifying it.\n--- \n**Who benefits and how:** Having an\
+  \ accurate view of the structure and performance of the P2P network benefits the\
+  \ community at large, given that detailed metrics and relevant alerts increase confidence\
+  \ in correct operation of the network. At the same time, and perhaps more importantly,\
+  \ validators, client teams, infrastructure providers and core protocol developer\
+  \ teams will benefit the most from the outcome of this project. Network, infrastructure\
+  \ and protocol upgrades won’t fly blind, but instead will have an accurate view\
+  \ of the behaviour of the network and will be able to act accordingly.\n\n# Budget\n\
+  The breakdown of the costs per milestone are given below. A more detailed breakdown\
+  \ of expenses is as follows: 60% of the budget will go towards development, 20%\
+  \ towards software and infrastructure maintenance and 20% towards infrastructure\
+  \ cost.\n\n- Milestone 1: $35k\n- Milestone 2: $20k\n- Milestone 3: $30k\n- Milestone\
+  \ 4: $20k\n\n**Total Cost: $105k**\n\n## Payment Schedule\nPayment is expected upon\
+  \ successful completion of each of the Milestones, given that all of them have a\
+  \ clear, concrete and tangible outcomes/deliverables.\n\n## Future Maintenance\n\
+  The maintenance and infrastructure costs amount to approximately 40% of the grant.\
+  \ We plan to submit a separate proposal for ~$35k for maintenance and infra costs\
+  \ (for all metrics and dashboards) 1 year after the completion of this project.\n\
+  \nAs an example, if work on this project started on Oct 1st 2025 and finished on\
+  \ Dec 31st 2025, then the current grant covers maintenance and infra costs for 1\
+  \ year, i.e, up to Dec 31st 2026. We would submit a separate proposal then to cover\
+  \ costs for 2027.\n\nThe subsequent grant will cover all metrics and dashboards,\
+  \ the tooling running 24/7 and tooling adjustments for all network upgrades that\
+  \ will happen during this period.\n\nFor a detailed description of the four (4)\
+  \ Milestones please read the full proposal at: https://forum.gnosis.io/t/gip-139-should-gnosisdao-support-probelab-to-produce-network-performance-and-security-for-gnosis-chain-p2p-network/11677.\n\
+  \n# Evaluation\nSuccess for ProbeLab’s work comes when networks face no surprises.\
+  \ We strive to build resilient software that runs 24/7 and produces metrics and\
+  \ alerts for engineering teams. After more than 3 years in operation, we have never\
+  \ experienced outages longer than a few minutes, which makes us confident that any\
+  \ incident will be captured by our specialised tooling.\n\nOn the technical front,\
+  \ some evaluation metrics are as follows:\n\n- **Eclipse detection time target:**\
+  \ Equal to the crawling frequency, currently set to 2hrs.\n- **Node coverage accuracy:**\
+  \ Less than 3% discrepancy to actual network size. Discrepancy is due to node churn\
+  \ and routing table update timings.\n- **Node geolocation accuracy:** N/A. Depends\
+  \ on the accuracy of our database provider. We haven’t received any complaints from\
+  \ our monitored networks so far.\n\n# Team/ Organization\nProbeLab is developing\
+  \ measurement and monitoring tooling for the P2P layer of blockchain networks. ProbeLab\
+  \ is the leading team in P2P network metrics and analytics with extensive experience\
+  \ working on libp2p- and devp2p-based stacks. Running specialised infra 24/7, the\
+  \ team is producing both executive and tailor-made dashboards on metrics that are\
+  \ most valuable to engineering teams. Tailor-made dashboards, metrics and studies\
+  \ are normally published in forums, such as ethresear.ch. In some cases ProbeLab\
+  \ supports internal engineering teams with data that is not made publicly available.\
+  \ The majority of the results we produce for the several networks we are monitoring\
+  \ can be found at: https://probelab.io.\n\nGitHub repositories maintained by the\
+  \ ProbeLab team:\n- ProbeLab GH Org: https://github.com/orgs/probe-lab/\n\nGitHub\
+  \ profiles of ProbeLab team members:\n- Dennis Trautwein (DevOps and Protocol Engineer):\
+  \ GH: @dennis-tra\n- Mikel Cortes (Protocol Engineer): GH: @cortze\n- Steph Samson\
+  \ (DevOps and Infrastructure Engineer)\n- Yiannis Psaras (Team Lead): GH: @yiannisbot\n\
+  \n# Conclusion\nThe P2P layer of any blockchain network is the basis of everything\
+  \ that is built on top. It is imperative to keep the P2P network healthy and avoid\
+  \ collapse at this layer, because in that case, everything on top collapses as well.\
+  \ We argue that this is possible through detailed insights and metrics on core protocol\
+  \ functionality.\n\nThis GIP proposes critical metrics for the Gnosis Chain P2P\
+  \ layer that will keep the network resilient, secure and performant."
+start: 1760432400
+end: 1761037200
+state: active
+author: '0x288d76DA3168c12B465addF582BfcEED1E0D3E76'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 10394.098299011024
+scores:
+  - 10383.77308534558
+  - 10.325213665441677
+  - 0
+votes: 40
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-flash-latest

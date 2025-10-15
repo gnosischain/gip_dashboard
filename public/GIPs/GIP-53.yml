@@ -63,7 +63,7 @@ scores:
 votes: 337
 quorum: 0
 funding:
-  amount: 15,000.00
+  amount: '15000.00'
   currency: xDAI
   confidence: High
   model_used: gemini-flash-latest

@@ -58,19 +58,19 @@ body: "## Summary\n\nWe request a two‑year maintenance grant to fund ongoing o
   \ Gnosis community’s ongoing support.**"
 start: 1759140775
 end: 1759745575
-state: active
+state: closed
 author: '0xD67952D9a8F27003De7C94D4A76191831165C01C'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 32052.47521515641
+scores_state: final
+scores_total: 63236.07105599475
 scores:
   - 5012.391674561275
-  - 10929.792069862087
-  - 16110.291470733044
-votes: 66
+  - 42098.744960700984
+  - 16124.93442073248
+votes: 67
 quorum: 75000
 funding:
   amount: null

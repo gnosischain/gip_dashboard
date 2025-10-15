@@ -1,286 +1,92 @@
-id: gip-129-should-gnosisdao-establish-seldon-inc-and-appoint-a-gnosis-vpn-committee-to-support-the-gnosis-vpn-project
-gip_number: 129
-url: https://forum.gnosis.io/t/gip-129-should-gnosisdao-establish-seldon-inc-and-appoint-a-gnosis-vpn-committee-to-support-the-gnosis-vpn-project
+id: '0x266331df16f95da742434689b452918660bb415537423666412a73061895740a'
+gip_number: '129'
+url: https://snapshot.org/#/gnosis.eth/proposal/0x266331df16f95da742434689b452918660bb415537423666412a73061895740a
 title: Should GnosisDAO establish Seldon Inc and appoint a Gnosis VPN Committee to
   support the Gnosis VPN project?
-body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n  \
-  \  \n    GIP: #129\n    title: Should GnosisDAO establish Seldon Inc and appoint\
-  \ a Gnosis VPN Committee to support the Gnosis VPN project?\n    author: Sebastian\
-  \ Bürgel on behalf of HOPR Association\n    status: phase-2\n    type: funding\n\
-  \    created: 2025-07-23\n    \n\n## Summary\n\nIn GIP-98, Gnosis DAO approved initial\
-  \ research and development for an anonymous VPN running on top of the HOPR mixnet,\
-  \ called Gnosis VPN. After a successful proof of concept, in GIP-122, GnosisDAO\
-  \ approved further development to bring the project to market over two years.\n\n\
-  HOPR is responsible for developing the software for the first version of Gnosis\
-  \ VPN, including the Gnosis VPN client itself and improvements to the HOPR mixnet\
-  \ and HOPR Session Protocol needed to make Gnosis VPN work. However, the goal is\
-  \ for Gnosis VPN to be a standalone project entirely separate from the underlying\
-  \ infrastructure and the HOPR team.\n\nTo achieve this, Gnosis VPN already requires\
-  \ a legal entity to interact with various vendors and service providers. It also\
-  \ needs a simple governance structure to make decisions and instruct this entity.\
-  \  \nThis proposal seeks approval to incorporate a new legal entity and establish\
-  \ a delegated **Gnosis VPN** Committee to instruct it. The proposed name will be\
-  \ Seldon Inc, subject to it being accepted by the local authorities. Otherwise,\
-  \ alternative names given for the entity are Mallow Inc and Maelcum Inc.\n\nThis\
-  \ proposal will explain the rationale for Seldon Inc, its structure and initial\
-  \ operational budget, as well as the committee’s structure and mandate.\n\n## Motivation\n\
-  \nWhy does Gnosis VPN need a dedicated entity? We expect Gnosis VPN to play a fundamental\
-  \ role in achieving Gnosis’ goal of creating the open internet. Anonymous, unblockable,\
-  \ and uncensorable internet access is essential for sovereign digital identity.\
-  \ VPN services are also big business, with an estimated annual market size of $130bn\
-  \ by 2030. Estimates for 2024 (made in 2020) were all exceeded, so there’s a strong\
-  \ chance that this 2030 estimate will prove conservative (sources: [[1]]( [[2]](\
-  \ [[3]]( [[4]](\n\nIt was always envisioned that Gnosis VPN would grow to be its\
-  \ own project, separate from HOPR and Gnosis Ltd. Once Gnosis VPN is market ready,\
-  \ it will need to scale, and the primary focus will shift from software development\
-  \ to business development. HOPR is not necessarily best placed to provide this,\
-  \ and in the spirit of web3 it is wise to separate the infrastructure layer from\
-  \ the services running on top of it.\n\nThere are, broadly speaking, three legal\
-  \ options for stewarding a project like Gnosis VPN:\n\n  * Use no incorporated entity\
-  \ at all\n  * Run Gnosis VPN using an existing Gnosis entity\n  * Establish a new\
-  \ entity for Gnosis VPN\n\n\n\nThe first may seem appealing for an anonymous web3\
-  \ VPN powered by a mixnet, but this is infeasible. The goal is to make Gnosis VPN\
-  \ accessible to everyone, which requires a streamlined UX and ready availability\
-  \ of the Gnosis VPN software. On mobile this means being listed in app stores, which\
-  \ will require an incorporated entity to apply for and maintain the listing.\n\n\
-  It is also not desirable to subsume Gnosis VPN under an existing Gnosis entity,\
-  \ as Gnosis has a longstanding tradition of decentralization on this front. Like\
-  \ all VPNs, Gnosis VPN is likely to face some level of regulatory scrutiny, which\
-  \ also makes it unwise to lump it together with other Gnosis entities.\n\n### Why\
-  \ now?\n\nSo Gnosis VPN needs an entity. But why is an entity required now?\n\n\
-  Although the first market-ready version of Gnosis VPN is not expected until the\
-  \ end of GIP-122 in 2026, Gnosis VPN is already usable as a proof of concept and\
-  \ will see several increasingly accessible versions throughout 2025 and 2026.  \n\
-  Gnosis VPN exit nodes and other infrastructure are currently operated by Gnosis\
-  \ Ltd, but this is only a temporary solution, made feasible by the small number\
-  \ of users.\n\nThe PoC gives users access to the wider internet via a bespoke type\
-  \ of HOPR node called an “exit node”. Users select an exit node located in a country\
-  \ of their choice, and it is these nodes which actually access the internet on the\
-  \ user’s behalf. These initial exit nodes are currently hosted alongside other important\
-  \ Gnosis infrastructure. It would be prudent for these nodes to be run by a different\
-  \ entity.\n\n### How Gnosis VPN will provide IPs to users\n\nVPNs are essential\
-  \ but controversial services, and often subject to takedown notices. To mitigate\
-  \ this risk, the plan is that the entity controlling Gnosis VPN will lease IP subnet\
-  \ ranges as needed for its exit nodes to be used. In the unlikely event that these\
-  \ IPs are blocked and more IPs are needed, new ranges can be leased and the old\
-  \ ones abandoned. This is a relatively inexpensive approach ($120 per month), and\
-  \ easy to register.\n\nWhile we think takedown requests are unlikely, there is a\
-  \ chance that if cloud providers take exception to Gnosis VPN it could have serious\
-  \ consequences for other services managed by Gnosis Ltd. To avoid this risk, it\
-  \ makes sense for Gnosis VPN virtual machines to be run under a different contract.\n\
-  \nAt the same time, the entity in charge of Gnosis VPN already needs to interact\
-  \ with various vendors and service providers. In addition to leasing the IP addresses\
-  \ and setting up a GCP contract, Gnosis VPN should begin the process of getting\
-  \ its software listed in the Google and Apple app stores. All of this requires a\
-  \ legal entity able to sign contracts and make payments.\n\nAlthough we expect this\
-  \ entity to be minimally active during GIP-122, establishing it already will lay\
-  \ the groundwork for future scaling. To this end, we also propose setting up a lightweight\
-  \ governance structure, the Gnosis VPN Committee, to take current decisions and\
-  \ begin the work of transitioning Gnosis VPN to an independent project.\n\nThis\
-  \ would take the form of a three-person committee able to give instructions to the\
-  \ board of Seldon Inc, with one member chosen by each of Gnosis Ltd, Gnosis DAO\
-  \ and HOPR (“**Gnosis VPN Committee** ”). This structure ensures accountability\
-  \ while preserving GnosisDAO governance at a strategic level.\n\n### Incorporation\
-  \ and Role of Seldon Inc\n\nIn consultation with the Gnosis Ltd legal team, an extensive\
-  \ jurisdictional analysis was conducted and Panama has been selected as the most\
-  \ appropriate jurisdiction for incorporating Seldon Inc for the following reasons:\n\
-  \n  * We are committed to user privacy and data protection. Panama offers a regulatory\
-  \ environment that aligns with these principles—specifically, there are no mandatory\
-  \ data retention laws applicable to VPN services. This enables us to operate under\
-  \ a strict no-logs policy while remaining compliant with local laws.\n  * Panama’s\
-  \ legal framework is not subject to intrusive international data-sharing agreements\
-  \ or oversight from foreign jurisdictions. This independence allows Gnosis VPN to\
-  \ offer a service where user confidentiality is central, and where we are not legally\
-  \ obligated to collect, monitor, store, or share user information or activity. Additionally,\
-  \ Panama’s non-intrusive regulatory approach ensures that our infrastructure can\
-  \ operate with minimal risk of undue pressure or surveillance demands, helping us\
-  \ deliver a secure, privacy-first VPN experience for all users.\n  * Incorporation\
-  \ and operational costs are low.\n  * Panama is the jurisdiction of choice for other\
-  \ VPNs, such as industry-leading NordVPN.\n\n\n\n### Purpose\n\n  * Execute the\
-  \ day-to-day operations of Gnosis VPN.\n  * Interface with vendors, contributors,\
-  \ and external partners.  \nThis may seem vague, but we’ve been advised that it\
-  \ is sound legal strategy for the purpose and bylaws to provide a wide and flexible\
-  \ mandate that allows Seldon Inc to engage in a broad range of commercial and operational\
-  \ activities. In practice, this would include the ability to develop, distribute\
-  \ and commercialise technology products and services, manage financial and banking\
-  \ operations, enter into contracts of all types, and hold or transact in various\
-  \ forms of property, including fiat and crypto. We believe this aligns with this\
-  \ GIP’s general goal of enabling effective execution and risk management.\n\n\n\n\
-  ### Ownership Structure\n\nSeldon Inc will be 100% owned by Gnosis DAO Operational\
-  \ Foundation (Cayman). This structure ensures continued ownership by the Gnosis\
-  \ DAO.\n\n### Operational Legal Costs\n\nEstablishing this entity in Panama will\
-  \ incur the following legal costs:\n\n  * Incorporation: up to USD 5,110\n  * Annual:\
-  \ up to USD 4,300  \nPayment can be made in crypto, subject to a 3% fee.\n\n\n\n\
-  ### Governance\n\nThe entity would be required to have a board of three directors\
-  \ appointed by a local agent in Panama. However, no control need be ceded to this\
-  \ board: the bylaws of the entity would dictate that all decisions must be approved\
-  \ by the Gnosis VPN Committee and the board must follow the instruction of the Gnosis\
-  \ VPN committee.  \nMore formally, the following terms of reference (“**Terms of\
-  \ Reference** ”) would govern the Gnosis VPN Committee:\n\n  * **Mandate** :\n \
-  \ * Act as a liaison between Gnosis DAO, Gnosis Ltd, HOPR, and Seldon Inc.\n  *\
-  \ Instruct Seldon Inc on all matters in relation to the Gnosis VPN project, including\
-  \ but not limited to:\n  * i. execution of any contracts, partnership agreements,\
-  \ letters, transactions, or any other form of agreement that Seldon Inc is required\
-  \ to enter into; \n    * ii. approval of any financial related matters including\
-  \ accounts, budgets, audit statements, or otherwise;\n    * iii. appointment and\
-  \ removal of directors to the board of Seldon Inc; and\n    * iv. approval of any\
-  \ other operational matters in relation to Seldon Inc\n\n\n\nInstruct Gnosis DAO\
-  \ Operational Foundation (Cayman) in relation to its capacity as shareholder of\
-  \ Seldon Inc on all matters of corporate and shareholder governance in respect of\
-  \ Seldon Inc.  \nUpdate the Gnosis DAO on the activities of Seldon Inc and the Committee,\
-  \ as appropriate and at least once a quarter.\n\n  * **Appointment and removal of\
-  \ Committee Members** :\n\n    * Subject always to the overriding appointment and\
-  \ removal rights of the GnosisDAO (as further outlined below), the committee shall\
-  \ consist of [3] members, namely:\n    * one person appointed and removed by the\
-  \ HOPR Association (the “**HOPR Appointee** ”). The first HOPR Appointee shall be\
-  \ Tino Breddin.\n    * one person as appointed and removed by Gnosis Limited, who\
-  \ shall be infrastructure / product focused (the “**Ltd Appointee** ”). The first\
-  \ Ltd Appointee shall be Philippe Schommers\n    * one person as appointed and removed\
-  \ by the Gnosis DAO (the “**DAO Appointee** ”). During Phase 1, the DAO Appointee\
-  \ was selected as Staworth Ltd  \n(together the HOPR Appointee, Ltd Appointee, and\
-  \ the DAO Appointee are the “**Committee Members** ”, and each a “**Committee Member**\
-  \ ”).  \nNone of the Committee Members shall be entitled to remuneration in respect\
-  \ of their appointment as a Committee Member.\n  * **Term**\n\n  * The Committee\
-  \ Members shall be elected for a term of one (1) year.\n\n    * With regards to\
-  \ the HOPR Appointee, HOPR Association may reappoint the currently appointed HOPR\
-  \ Appointee for a further term of one (1) year, or it may appoint a new HOPR Appointee.\n\
-  \    * With regards to the Ltd Appointee, Gnosis Ltd may reappoint the currently\
-  \ appointed Ltd Appointee for a further term of one (1) year, or it may appoint\
-  \ a new Ltd Appointee.\n    * With regards to the DAO Appointee, thirty (30) days\
-  \ prior to the conclusion of each term, a re-election window will be opened. During\
-  \ this period any member of the Gnosis DAO may nominate alternative candidates for\
-  \ the position of the DAO Appointee by proposing an alternative candidate to the\
-  \ community (via GIP or otherwise). \n      * If a new DAO Appointee is proposed,\
-  \ the nomination shall be put to a poll vote of the GnosisDAO.\n      * The candidate\
-  \ receiving the majority of votes in the GnosisDAO poll shall be appointed as the\
-  \ DAO Appointee.\n      * If no alternative nominations are made for the position\
-  \ of DAO Appointee, the current DAO Appointee shall automatically remain in position\
-  \ for the subsequent one-year term.\n    * There is no limit to the number of consecutive\
-  \ terms a Committee Member may serve.\n  * **Quorum**\n\n    * A quorum shall consist\
-  \ of a majority of Committee Members (i.e., two out of three).\n    * No meeting\
-  \ of the Gnosis VPN Committee shall proceed to business unless a quorum is present.\n\
-  \    * Decisions shall be made by a simple majority vote of those present.\n   \
-  \ * In the event of a tie, no Committee Member shall have a casting vote.\n  * **Variation\
-  \ of the Terms of Reference**\n\n  * Notwithstanding any other term of the Terms\
-  \ of Reference, Gnosis DAO can at any time by means of a Gnosis Improvement Proposal\
-  \ (GIP):\n\n  * appoint and remove any Committee Member;\n\n    * amend or remove\
-  \ the appointment rights of the HOPR Association, or Gnosis Ltd in respect of any\
-  \ Committee Member;\n    * amend the maximum or minimum number of Committee Members;\n\
-  \    * otherwise amend, remove, or replace the structure of the Gnosis VPN Committee,\
-  \ or make any other amendment to the mandate conferred under these Terms of Reference.\n\
-  \  * Unless explicitly provided herein, GnosisDAO does not have the authority to\
-  \ retroactively cancel, reverse, or override specific operational decisions made\
-  \ by the Gnosis VPN Committee or Seldon Inc.\n\n\n\n\n### Expected Committee Actions\n\
-  \nIt’s impossible to fully explicate all actions which the Gnosis VPN Committee\
-  \ might need to take, but at least for the duration of GIP-122 the Gnosis VPN Committee\
-  \ is expected to primarily operate in a communication and approval role, by taking\
-  \ the following actions:\n\n  * Instruct the Board of Seldon Inc as needed to establish\
-  \ the necessary contracts for Gnosis VPN to operate (cloud computing platforms,\
-  \ leasing IP subnet, app store listings, etc.).\n  * Respond in a timely fashion\
-  \ to any developments related to these contracts.\n  * Assess and report on the\
-  \ development milestones laid out in GIP-122.\n  * Interface with the Gnosis DAO\
-  \ community to provide transparency.\n  * Post updates to the Gnosis DAO forum on\
-  \ at least a quarterly basis.\n  * Ensure separation of concerns with HOPR while\
-  \ maintaining compatibility where relevant.\n  * Management of the vpn.gnosis.eth\
-  \ subdomain via a 2-of-3 Safe multsig at 0x52DBEE728cA95D0cbd8D211aa7a93377eCaa47d2\n\
-  \n\n\nThe quorum rules explained above mean that two out of three Committee Members\
-  \ are able to call a meeting of the Gnosis VPN Committee, but if they disagree on\
-  \ a decision, the only way to break the tie is to reconvene with the third member\
-  \ present. This feels like the correct balance between remaining dynamic while maintaining\
-  \ checks and balances.\n\nAs we move out of GIP-122, we expect this governance structure\
-  \ to evolve to see Seldon Inc taking a more executive role in the further development\
-  \ of Gnosis VPN. Although this may end up looking very different to the current\
-  \ structure, we think it’s wise to lay the foundations of this now, with a plan\
-  \ to further develop this with the coordination of Gnosis DAO and the Gnosis VPN\
-  \ Committee in 2026.\n\n### Budget and Funding\n\nIn addition to the legal costs\
-  \ outlined above, Seldon Inc requires a modest operational budget, mostly earmarked\
-  \ for devops and infrastructure costs. Current estimates are for 14 virtual machines,\
-  \ with a range of specifications, to handle gnosisvpn-js and exit nodes in staging\
-  \ and production. A 20% buffer is included in case specifications change, with any\
-  \ further increase requiring a request to the DAO from the Gnosis VPN Committee.\
-  \ The budget below includes all projected costs, including the monthly directors’\
-  \ fee but not the one-off incorporation fee (to be confirmed, up to $5,110)\n\n\
-  Item | Description | USD / month  \n---|---|---  \nCloud Computing | 14 virtual\
-  \ machines | 1,950  \nNetworking | ~10% of infra costs | 195  \nSupport | ~20% of\
-  \ infra costs | 390  \nSeldon Admin | Panamanian Director Fees | 360  \nIP Leasing\
-  \ | /24 IP range subnet | 120  \nGoogle Workspace | Business Starter (5 users @\
-  \ $8/mo) | 40  \n**Buffer** | 20% costs buffer | **611**  \n**Monthly Total (Pre-Tax)**\
-  \ |  | **3,666**  \nTax | VAT @ 21% | 770  \n**Monthly Total (Post-Tax)** |  | **4,436**\
-  \  \n**Annual Total (Post-Tax) |  | $53,232**  \n  \nPayment for the indicated services\
-  \ will occur via a dedicated crypto corporate payment service. Dakota has been provisionally\
-  \ chosen, but an alternative may need to be selected in the unlikely event that\
-  \ onboarding cannot be completed. If the GIP passes, payment of funds should be\
-  \ made to the service address provided by the Committee once onboarding is complete.\n\
-  \nNote that Seldon Inc is also expected to earn revenue via its exit nodes, although\
-  \ the amounts will depend on user numbers and traffic. If the exit nodes are also\
-  \ used as relay nodes in the HOPR mixnet, they will earn HOPR tokens for relaying,\
-  \ as well as the cover traffic which is distributed to all eligible HOPR nodes.\n\
-  \n### Support from other services within the Gnosis Ecosystem\n\nAlthough Gnosis\
-  \ VPN is conceived as an independent project, it will naturally receive support\
-  \ from elsewhere in the Gnosis ecosystem. HOPR will provide the largest input here,\
-  \ particularly during the two years of GIP-122, being responsible for technical\
-  \ product development of the Gnosis VPN exit application and client apps as well\
-  \ as the underlying HOPR protocol and client apps.\n\nHowever, Gnosis VPN will require\
-  \ other support and assets, legal, community and frontend support, as well as tokens\
-  \ (HOPR tokens and xDAI) to run its nodes. These token amounts are modest, but do\
-  \ need to be sourced from somewhere.\n\nThe nature and source of this support will\
-  \ ultimately be up to the committee to decide, but the following is a speculative\
-  \ list of what Gnosis VPN might require and where it might get it from:\n\nOther\
-  \ services / assets | Provided by  \n---|---  \nSoftware development | HOPR Association\
-  \  \nSoftware deployment | Gnosis Ltd  \nRPC provision | Gnosis Ltd  \nHOPR token\
-  \ | DAO  \nxDAI token | DAO  \nLegal support | Gnosis Ltd  \nCommunity support |\
-  \ Gnosis Ltd  \nDesign, frontend, website deployment | Gnosis Ltd  \nGnosis VPN\
-  \ level 2 support | HOPR Association  \n  \nNone of these are currently expected\
-  \ to incur any costs, although in future this might change.\n\n## DAO Actions\n\n\
-  If this proposal passes, the DAO will need to take the following actions:\n\n  1.\
-  \ To transfer control of the vpn.gnosis.eth subdomain to the committee, the Gnosis\
-  \ DAO account which manages gnosis.eth needs to execute the following transaction:\n\
-  \n\n    \n    \n    [{\n    \"to\": \"0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e\"\
-  ,\n    \"operation\": \"0\",\n    \"value\": \"0\",\n    \"method\": \"setSubnodeRecord(bytes32\
-  \ node, bytes32 label, address owner, address resolver, uint64 ttl)\",\n    \"params\"\
-  : [\n    \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\"\
-  ,\n    \"0x2ce97c9211fa84e87d7ac228d6cecb896154ebcbb63414e2f3fbe4cb2d71b7d6\",\n\
-  \    \"0x52DBEE728cA95D0cbd8D211aa7a93377eCaa47d2\",\n    \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\"\
-  ,\n    \"0\"\n    ]\n    }]\n    \n\nfor verification, the parameters are:\n\n \
-  \ * The namehash of gnosis.eth (can be checked at Name Processing | ENS Docs)\n\
-  \  * The labelhash of vpn.gnosis.eth (can be checked at Name Processing | ENS Docs)\n\
-  \  * The new owner (the Gnosis VPN Committee Safe)\n  * The resolver used for the\
-  \ subname (the same one set in GIP-130)\n  * The TTL, kept as the default\n\n\n\n\
-  This is being called on the ENS Registry: < (also check here: Deployments | ENS\
-  \ Docs)\n\n  2. Once onboarding with the chosen crypto corporate payment service\
-  \ is complete, the requested 50,000 USDC should be transferred to the address provided\
-  \ by the Committee.\n\n\n\n## Conclusion\n\nApproving this proposal will enable\
+body: "PLEASE READ THE ENTIRE PROPOSAL: https://forum.gnosis.io/t/gip-129-should-gnosisdao-establish-seldon-inc-and-appoint-a-gnosis-vpn-committee-to-support-the-gnosis-vpn-project/10316\n\
+  \nSummary:\n\nIn GIP-98 , Gnosis DAO approved initial research and development for\
+  \ an anonymous VPN running on top of the HOPR mixnet 1, called Gnosis VPN. After\
+  \ a successful proof of concept, in GIP-122 , GnosisDAO approved further development\
+  \ to bring the project to market over two years.\n\nHOPR is responsible for developing\
+  \ the software for the first version of Gnosis VPN, including the Gnosis VPN client\
+  \ itself and improvements to the HOPR mixnet and HOPR Session Protocol needed to\
+  \ make Gnosis VPN work. However, the goal is for Gnosis VPN to be a standalone project\
+  \ entirely separate from the underlying infrastructure and the HOPR team.\n\nTo\
+  \ achieve this, Gnosis VPN already requires a legal entity to interact with various\
+  \ vendors and service providers. It also needs a simple governance structure to\
+  \ make decisions and instruct this entity.\n\nThis proposal seeks approval to incorporate\
+  \ a new legal entity and establish a delegated Gnosis VPN Committee to instruct\
+  \ it. The proposed name will be Seldon Inc, subject to it being accepted by the\
+  \ local authorities. Otherwise, alternative names given for the entity are Mallow\
+  \ Inc and Maelcum Inc.\n\nThis proposal will explain the rationale for Seldon Inc,\
+  \ its structure and initial operational budget, as well as the committee’s structure\
+  \ and mandate.\n\nMotivation\nWhy does Gnosis VPN need a dedicated entity? We expect\
+  \ Gnosis VPN to play a fundamental role in achieving Gnosis’ goal of creating the\
+  \ open internet. Anonymous, unblockable, and uncensorable internet access is essential\
+  \ for sovereign digital identity. VPN services are also big business, with an estimated\
+  \ annual market size of $130bn by 2030. Estimates for 2024 (made in 2020) were all\
+  \ exceeded, so there’s a strong chance that this 2030 estimate will prove conservative.\n\
+  \nIt was always envisioned that Gnosis VPN would grow to be its own project, separate\
+  \ from HOPR and Gnosis Ltd. Once Gnosis VPN is market ready, it will need to scale,\
+  \ and the primary focus will shift from software development to business development.\
+  \ HOPR is not necessarily best placed to provide this, and in the spirit of web3\
+  \ it is wise to separate the infrastructure layer from the services running on top\
+  \ of it.\n\nThere are, broadly speaking, three legal options for stewarding a project\
+  \ like Gnosis VPN:\n\nUse no incorporated entity at all\nRun Gnosis VPN using an\
+  \ existing Gnosis entity\nEstablish a new entity for Gnosis VPN\n\nThe first may\
+  \ seem appealing for an anonymous web3 VPN powered by a mixnet, but this is infeasible.\
+  \ The goal is to make Gnosis VPN accessible to everyone, which requires a streamlined\
+  \ UX and ready availability of the Gnosis VPN software. On mobile this means being\
+  \ listed in app stores, which will require an incorporated entity to apply for and\
+  \ maintain the listing.\n\nIt is also not desirable to subsume Gnosis VPN under\
+  \ an existing Gnosis entity, as Gnosis has a longstanding tradition of decentralization\
+  \ on this front. Like all VPNs, Gnosis VPN is likely to face some level of regulatory\
+  \ scrutiny, which also makes it unwise to lump it together with other Gnosis entities.\n\
+  \nOwnership Structure\nSeldon Inc will be 100% owned by Gnosis DAO Operational Foundation\
+  \ (Cayman). This structure ensures continued ownership by the Gnosis DAO.\n\nBudget\
+  \ and Funding\nIn addition to the legal costs outlined above, Seldon Inc requires\
+  \ a modest operational budget, mostly earmarked for devops and infrastructure costs.\
+  \ Current estimates are for 14 virtual machines, with a range of specifications,\
+  \ to handle gnosisvpn-js and exit nodes in staging and production. A 20% buffer\
+  \ is included in case specifications change, with any further increase requiring\
+  \ a request to the DAO from the Gnosis VPN Committee. The budget below includes\
+  \ all projected costs, including the monthly directors’ fee but not the one-off\
+  \ incorporation fee (to be confirmed, up to $5,110)\n\nCloud Computing 14 virtual\
+  \ machines\t1,950\nNetworking\t~10% of infra costs\t195\nSupport\t~20% of infra\
+  \ costs\t390\nSeldon Admin\tPanamanian Director Fees\t360\nIP Leasing\t/24 IP range\
+  \ subnet\t120\nGoogle Workspace\tBusiness Starter (5 users @ $8/mo)\t40\nBuffer\t\
+  20% costs buffer\t611\nMonthly Total (Pre-Tax)\t\t3,666\nTax\tVAT @ 21%\t770\nMonthly\
+  \ Total (Post-Tax)\t\t4,436\n**Annual Total (Post-Tax)\t\t$53,232**\n\nPayment for\
+  \ the indicated services will occur via a dedicated crypto corporate payment service.\
+  \ Dakota has been provisionally chosen, but an alternative may need to be selected\
+  \ in the unlikely event that onboarding cannot be completed. If the GIP passes,\
+  \ payment of funds should be made to the service address provided by the Committee\
+  \ once onboarding is complete.\n\nNote that Seldon Inc is also expected to earn\
+  \ revenue via its exit nodes, although the amounts will depend on user numbers and\
+  \ traffic. If the exit nodes are also used as relay nodes in the HOPR mixnet, they\
+  \ will earn HOPR tokens for relaying, as well as the cover traffic which is distributed\
+  \ to all eligible HOPR nodes.\n\nConclusion\nApproving this proposal will enable\
   \ GnosisDAO to efficiently scale Gnosis VPN with appropriate legal and operational\
   \ infrastructure, while maintaining GnosisDAO oversight and alignment with the broader\
   \ Gnosis ecosystem. While we don’t expect the entity or committee to take many actions\
   \ in the first 12 months, we think it’s important to lay the groundwork well in\
-  \ advance to give Gnosis VPN the best chance to thrive.\n\n7 Likes\n\nGnosisDAO\
-  \ Governance Summary ~ September 2025\n\n## Cookie Settings\n\nThe Forum only sets\
-  \ cookies that are necessary for its basic functionality. By clicking on Accept\
-  \ you consent to this. \n\nAccept\n"
-start: 1753289513
-end: null
-state:
-  - phase-2
-author: 'Sebastian Bürgel on behalf of HOPR Association
-
-  status: phase-2
-
-  type: funding
-
-  creat&hellip;'
+  \ advance to give Gnosis VPN the best chance to thrive."
+start: 1760031281
+end: 1760636081
+state: active
+author: '0xbE96cBFF504BA1C9aBa35a0F6377e8F109f7795B'
 choices:
   - For
   - Against
   - Abstain
-scores_state: null
-scores_total: null
+scores_state: pending
+scores_total: 96948.97427194976
 scores:
+  - 96938.64905828433
+  - 10.325213665441677
   - 0
-  - 0
-  - 0
-votes: null
-quorum: null
+votes: 70
+quorum: 75000
 funding:
   amount: null
   currency: null

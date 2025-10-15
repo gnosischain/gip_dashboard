@@ -1,0 +1,68 @@
+id: gip-140-revamp-snapshot-voting-strategies
+gip_number: 140
+url: https://forum.gnosis.io/t/gip-140-revamp-snapshot-voting-strategies
+title: Revamp Snapshot voting strategies
+body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n    \n  \
+  \  \n    GIP: 140\n    title: Revamp Snapshot voting strategies\n    author: Lukas\
+  \ Balandraux <lukas.balandraux@gnosis.io>, Giacomo Licari <giacomo@gnosis.io>, Philippe\
+  \ Schommers <philippe@gnosis.io>\n    status: Draft\n    type: Meta\n    created:\
+  \ 2025-10-07\n    \n\n## Summary\n\nThis proposal replaces the current subgraph\
+  \ based GNO strategy with a set of strategies that read state directly on-chain\
+  \ and from the beacon chain. There are 3 main objectives to this proposal:\n\n \
+  \ * Add support for StakeWise tokens (`sGNO` and `osGNO`)\n  * Improve accuracy\
+  \ for validator balances\n  * Remove the external dependency on The Graph (everything\
+  \ is now handled by Snapshot)\n\n\n\n## Introduction\n\nThe GnosisDAO Snapshot space\
+  \ is currently impacted by the GNO strategy, which depends on Subgraph indexers.\
+  \ This has led to availability issues and inaccurate voting powers because beacon\
+  \ chain state cannot be inferred from the execution layer. We propose moving to\
+  \ on-chain data with a set of new strategies to reduce inaccuracy in the voting\
+  \ power calculation.\n\nIn addition to delegations, voting power will come from:\n\
+  \n  * GNO balance (Gnosis Chain and Ethereum)\n  * Locked GNO (Gnosis Chain, Ethereum)\n\
+  \  * Validator balance (Gnosis Chain)\n  * StakeWise’s `sGNO` and `osGNO` (Gnosis\
+  \ Chain)\n\n\n\n## Specification\n\n  1. Deprecate the subgraph-dependent GNO strategy.\n\
+  \n  2. Execution layer sources (Gnosis Chain / Ethereum)\n\n     * Use the `contract-call`\
+  \ strategy, pointing to an aggregator contract on Gnosis Chain that returns each\
+  \ account’s total `GNO` voting power across `GNO`, `lGNO`, `sGNO`, and `osGNO`.\
+  \ The contract was deployed and verified at `0xE6C45c06e4C73e2aD58Aedf9bf83bCe1534b524a`.\n\
+  \n     * Use the `contract-call` strategy, pointing to an aggregator contract on\
+  \ Ethereum that returns each account’s total `GNO` voting power across `GNO` and\
+  \ `lGNO`. The contract was deployed and verified at `0x1B2Eef4dd90cF1aF05967e0F246d4C0a19387B2A`.\n\
+  \n  3. Consensus layer\n\n     * Created a new `beacon-chain` strategy to attribute\
+  \ staked `GNO` from the beacon chain by withdrawal address.\n  4. Delegation\n\n\
+  \     * Update the delegation strategy to support the 3 previously mentioned strategies.\n\
+  \n\n\n## Implementation plan\n\nNow that `GIP-130` passed, we can simply update\
+  \ the `snapshot` text field on `gnosis.eth` to update the configuration of the Snapshot\
+  \ space. The plan is to set it to `ipfs://QmP6TVsWAcbxBNM229mgHXpxW7C9bTujk9LzDsiAWqDf7h`\
+  \ with the following transaction:\n    \n    \n    [\n        {\n            \"\
+  to\": \"0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41\",\n            \"operation\"\
+  : \"0\",\n            \"value\": \"0\",\n            \"method\": \"setText(bytes32\
+  \ node, string key, string value)\",\n            \"params\": [\n              \
+  \  \"0x77651e2c25d2b7b073d1068420770f96a43563e74df60e234b2433b2be66e29e\",\n   \
+  \             \"snapshot\",\n                \"ipfs://QmP6TVsWAcbxBNM229mgHXpxW7C9bTujk9LzDsiAWqDf7h\"\
+  \n            ]\n        }\n    ]\n    \n\n## Testing\n\nThe following test space\
+  \ was put in place so that everyone can check their voting power: < Any feedback\
+  \ is welcome!\n\n7 Likes\n\n## Cookie Settings\n\nThe Forum only sets cookies that\
+  \ are necessary for its basic functionality. By clicking on Accept you consent to\
+  \ this. \n\nAccept\n"
+start: 1759845481
+end: null
+state:
+  - phase-2
+author: Lukas Balandraux &lt;lukas.balandraux@gnosis.io&gt;
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-flash-latest
