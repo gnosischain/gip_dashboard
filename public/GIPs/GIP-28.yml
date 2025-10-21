@@ -34,5 +34,5 @@ quorum: 0
 funding:
   amount: null
   currency: null
-  confidence: N/A
+  confidence: High
   model_used: gemini-flash-latest

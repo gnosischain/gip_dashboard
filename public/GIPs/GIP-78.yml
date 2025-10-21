@@ -130,7 +130,7 @@ scores:
 votes: null
 quorum: null
 funding:
-  amount: '3823575'
+  amount: 3,823,575
   currency: $
   confidence: High
   model_used: gemini-flash-latest

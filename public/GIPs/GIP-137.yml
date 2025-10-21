@@ -87,15 +87,15 @@ choices:
   - Against
   - Abstain
 scores_state: pending
-scores_total: 41880.18068745563
+scores_total: 67273.3331217875
 scores:
-  - 0.8400310172667024
-  - 41879.34065643836
-  - 0
-votes: 9
+  - 15165.0661257079
+  - 47071.13311072464
+  - 5037.133885354949
+votes: 86
 quorum: 75000
 funding:
-  amount: 20,000
+  amount: '20000'
   currency: $
   confidence: High
   model_used: gemini-flash-latest

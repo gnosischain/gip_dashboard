@@ -296,7 +296,7 @@ scores:
 votes: 100
 quorum: 75000
 funding:
-  amount: 40,000 xDAI + 100 GNO
-  currency: xDAI, GNO
+  amount: 40,000 xDAI + 100
+  currency: xDAI and GNO
   confidence: High
   model_used: gemini-flash-latest
