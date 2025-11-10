@@ -136,7 +136,7 @@ scores:
 votes: 123
 quorum: 75000
 funding:
-  amount: '5000'
+  amount: '50000'
   currency: GNO
   confidence: High
   model_used: gemini-flash-latest

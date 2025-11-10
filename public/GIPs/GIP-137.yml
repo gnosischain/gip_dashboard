@@ -80,22 +80,22 @@ body: "**Author**: @Kene_StableLab\nGIP: 137\nstatus: phase 2\ntype: Funding\n##
   \ during this critical strategic period."
 start: 1760542678
 end: 1761147478
-state: active
+state: closed
 author: '0x809C9f8dd8CA93A41c3adca4972Fa234C28F7714'
 choices:
   - For
   - Against
   - Abstain
-scores_state: pending
-scores_total: 67273.3331217875
+scores_state: final
+scores_total: 79197.01781909922
 scores:
-  - 15165.0661257079
-  - 47071.13311072464
+  - 27087.831207764913
+  - 47072.052725979345
   - 5037.133885354949
-votes: 86
+votes: 92
 quorum: 75000
 funding:
-  amount: '20000'
-  currency: $
+  amount: 20,000
+  currency: USD
   confidence: High
   model_used: gemini-flash-latest

@@ -1,0 +1,146 @@
+id: gip-142-should-the-gnosisdao-fund-the-finality-slo-pack-upstream-first-alerts-tiny-dapp-finality-adapter-and-chiado-chaos-drills
+gip_number: 142
+url: https://forum.gnosis.io/t/gip-142-should-the-gnosisdao-fund-the-finality-slo-pack-upstream-first-alerts-tiny-dapp-finality-adapter-and-chiado-chaos-drills
+title: Should the GnosisDAO fund the Finality SLO Pack — Upstream-first Alerts, Tiny
+  dApp Finality Adapter, and Chiado Chaos Drills?
+body: "!Gnosis\n\nLoading\n\n  * In Favour\n  * Against\n\n\n\n0 voters\n\nGIP: 142\
+  \  \ntitle: Finality SLO Pack — Upstream‑first Alerts, Tiny dApp Finality Adapter,\
+  \ and Chiado Chaos Drills  \nauthor: [Dappsoverapps]  \n, Dapps over Apps  \nstatus:\
+  \ Draft  \ntype: Funding  \ncreated: 2025-10-28  \nduration: 12–14 weeks delivery\
+  \ + 60–90 days maintenance  \nfunding: **$47,000 **\n\n* * *\n\nFunding – Service\
+  \ Agreements\n\n### Category\n\nService Agreements — Network Reliability / Developer\
+  \ Tooling (upstream‑first)\n\n### Executive Summary\n\nGnosis Chain lacks DAO‑standardized\
+  \ **finality/fork SLOs** (alert rules + dashboards), a shared **pause/resume SOP**\
+  \ for incident response, and a small **finalized‑read helper** for dApps. Existing\
+  \ monitors (e.g., forkmon, ethstats, beacon explorers) provide visibility but no\
+  \ chain‑wide alert semantics or unified response guidance. We will **upstream**\
+  \ : (1) Alertmanager/Grafana SLO rules and dashboards **tuned to Gnosis** ; (2)\
+  \ a tiny **`@gnosis/finality-adapter`** (`getFinalizedBlockTag()`, `isSafeToSettle()`)\
+  \ so apps prefer finalized/safe reads during incidents; and (3) **Chiado chaos‑drill\
+  \ scripts** plus a **Bridge/dApp Pause & Resume SOP**. **No new long‑running service\
+  \ is introduced**. Artifacts land where operators already work (docs, existing monitoring\
+  \ stacks) and ship with a **drop‑in bundle** for day‑1 use. Thresholds are **derived\
+  \ at runtime** from consensus/execution APIs.\n\n### Service Description\n\n####\
+  \ Key aspects (benefits)\n\n  * **Finality/Fork SLO Pack (upstream‑first):**  \n\
+  • **Alertmanager rules** for **stalled finality** (time‑since‑finalization beyond\
+  \ a beacon‑derived threshold) and **fork suspicion** (cross‑endpoint block‑hash\
+  \ checks).  \n• **Grafana dashboard** : finalized‑epoch delta, time‑since‑finality,\
+  \ cross‑endpoint views.  \n• Rules use **grace windows** and **CL/EL inputs** ;\
+  \ they **auto‑tune** to current chain timing.\n  * **Tiny dApp helper (`@gnosis/finality-adapter`):**\
+  \  \n• Exposes `getFinalizedBlockTag()` and `isSafeToSettle(txHash)`.  \n• Uses\
+  \ finalized/safe tags where available and **falls back to beacon‑derived checks**\
+  \ to avoid stale/unsafe reads.  \n• Keeps dApps consistent during finality delays\
+  \ without custom app logic.\n  * **Chiado chaos drills + Pause/Resume SOP:**  \n\
+  • One‑command scripts to simulate **missed epochs** and **shallow reorgs** on Chiado.\
+  \  \n• A concise **SOP** that defines what to pause and when to resume for bridges/dApps—aligned\
+  \ to Gnosis timing and xDAI gas usage.\n  * **Upstream‑first, dual‑track delivery:**\
+  \  \n• PRs to **docs .gnosischain. com** (Monitoring/Tools), plus small PRs with\
+  \ **ready‑made snippets** for popular operator stacks (e.g., importable rules/dashboards).\
+  \  \n• If any PR lags, the **drop‑in “SLO Bundle”** (JSON/YAML/TS) is immediately\
+  \ usable.  \n• We do **not** replace validator monitoring or operate new services.\n\
+  \n\n\n#### Service scope\n\n  * **In scope:** alert rules & dashboards, dApp adapter,\
+  \ Chiado drills, pause/resume SOP, upstream docs/snippets, recorded workshop, short\
+  \ maintenance.\n  * **Out of scope:** running a new monitoring service; per‑validator\
+  \ performance tooling; bridge/Safe simulators; mempool encryption.\n\n\n\n#### Service\
+  \ delivery\n\n  * `alertmanager/gnosis-finality.rules.yml` (finality delay; fork‑suspicion\
+  \ rules)\n  * `grafana/GnosisFinality.json` (panels for finalized‑epoch delta, time‑since‑finality,\
+  \ cross‑endpoint hashes)\n  * `packages/finality-adapter` (npm: `@gnosis/finality-adapter`)\n\
+  \  * `drills/chiado-finality-{missed-epochs,reorg}.sh` \\+ **Bridge/dApp Pause &\
+  \ Resume SOP** (Markdown)\n  * `helm/values-snippets.yaml` and operator **snippets**\
+  \ for common stacks (e.g., Sedge/DappNode) to enable one‑line rollout (optional\
+  \ PRs)\n\n\n\n### Pricing and payment (full scope only)\n\n**Total: $47,000** —\
+  \ staged by milestone (below).  \n**Budget notes:** No new infra/hosting. We build\
+  \ on existing stacks (Alertmanager/Grafana, docs site, operator tooling). Budget\
+  \ covers engineering, tests, docs, drills/SOP, a small review, and a short maintenance\
+  \ window.\n\n### Service Terms and Exit Strategy\n\n  * **Duration:** 12–14 weeks\
+  \ delivery + 60–90 days maintenance.\n  * **Exit:** All artifacts under MIT/Apache‑2.0.\
+  \ PRs are upstreamed where accepted; the **drop‑in bundle** remains public. Ownership/maintenance\
+  \ transitions to host repos or a GnosisDAO org.\n\n\n\n* * *\n\n## Implementation\
+  \ Plan — Full Scope ($47,000)\n\n> **Design principle:** thresholds and timings\
+  \ are **derived from CL/EL endpoints at runtime** ; no hard‑coded epoch/slot numbers.\
+  \ **No new long‑running service** is introduced.\n\n### Milestone 1 — Spec & Auto‑Tune\
+  \ Design (1 week) — **$4,000**\n\n**Deliverables:** final SLO definitions (stalled\
+  \ finality; fork‑suspicion), rule shapes (grace windows, severities), dashboard\
+  \ layout, adapter API.  \n**Acceptance:** design doc posted; two community reviewers\
+  \ sign off; shows beacon/EL‑derived thresholds.\n\n### Milestone 2 — SLO Pack &\
+  \ Docs PR (weeks 2–4) — **$16,000**\n\n**Deliverables:** `gnosis-finality.rules.yml`,\
+  \ `GnosisFinality.json`, docs PR (install/tuning), CI checks.  \n**Acceptance:**\
+  \ in a controlled test, a simulated finality delay triggers **one de‑noised alert**\
+  \ in ≤60s; dashboard panels render as documented; docs PR opened.\n\n### Milestone\
+  \ 3 — `@gnosis/finality-adapter` (weeks 5–6) — **$6,000**\n\n**Deliverables:** npm\
+  \ package exposing `getFinalizedBlockTag()` and `isSafeToSettle(txHash)`; example\
+  \ snippets (ethers/web3); unit tests.  \n**Acceptance:** package published; example\
+  \ app confirms finalized‑tag reads during a simulated incident; tests ≥90% coverage\
+  \ for adapter logic.\n\n### Milestone 4 — Chiado Drills & Pause/Resume SOP (weeks\
+  \ 7–9) — **$10,000**\n\n**Deliverables:** scripts to simulate missed epochs/shallow\
+  \ reorgs; a concise SOP (thresholds, pause/resume criteria, comms template).  \n\
+  **Acceptance:** one public drill completed on Chiado; alerts fire; at least two\
+  \ teams report using the SOP; post‑mortem published.\n\n### Milestone 5 — Operator\
+  \ Snippets (weeks 9–10) — **$4,000**\n\n**Deliverables:** small PRs (or ready gists)\
+  \ that add one‑line imports/snippets for common stacks (e.g., Sedge/DappNode); instructions\
+  \ to import bundle identically if merges lag.  \n**Acceptance:** PRs opened; bundle\
+  \ provides identical functionality without merges.\n\n### Milestone 6 — Cross‑Client\
+  \ Sampling & SLO Calculator (weeks 11–12) — **$4,000**\n\n**Deliverables:** optional\
+  \ heuristics to compare two endpoints (classify node‑fault vs network‑event); an\
+  \ SLO calculator that outputs red/amber/green presets based on observed cadence.\
+  \  \n**Acceptance:** classification reduces false positives in local tests; generated\
+  \ presets integrate cleanly as optional rules.\n\n### Milestone 7 — Workshop, Mini‑Audit\
+  \ & 30‑Day Soak (weeks 13–14) — **$3,000**\n\n**Deliverables:** recorded workshop;\
+  \ focused review of rules/adapter; 30‑day observation of alerts in drills.  \n**Acceptance:**\
+  \ workshop published; review notes resolved; soak report shows **≤1 false positive/month**\
+  \ and **< 60s** mean‑time‑to‑alert in drills.\n\n* * *\n\n## Evaluation (success\
+  \ metrics, 90 days)\n\n  * **Adoption:** ≥10 operators import rules/snippets; ≥3\
+  \ dApps use `finality-adapter`.\n  * **Signal quality:** ≤1 false positive/month;\
+  \ **< 60s** alert time in drills.\n  * **Readiness:** one completed Chiado drill\
+  \ with post‑mortem; ≥2 teams confirm SOP usefulness.\n\n\n\n* * *\n\n## Team / Org\n\
+  \n### Team & Relevant Experience\n\n**Dapps over Apps** is a collective that ships\
+  \ open-source developer tooling and documentation. Our work typically focuses on\
+  \ scoped utilities (CLIs, adapters, config/rule packs) and clear guides that developers\
+  \ can use on day one.\n\n**Selected prior work :**\n\n  * **Hardhat/Foundry (Anvil)\
+  \ local testing patch** — added Arbitrum precompile addresses (ArbSys at `0x64`,\
+  \ ArbGasInfo at `0x6c`) and support for tx type `0x7e` (deposits) for local workflows.\
+  \  \nNotes: Ox-rollup project · <\n\n  * **Retrieval Utility for Filecoin** — a\
+  \ measurement tool that tests CID retrieval across public gateways (experience with\
+  \ automated checks, reporting, and CLI UX).\n\n  * **VoxEdit → Unity/Roblox Asset\
+  \ Converter** (open source) — a practical asset pipeline tool with docs and examples.\n\
+  \n  * **Arbitrum Stylus VS Code extension** — IDE support for an emerging EVM/WASM\
+  \ stack (packaging, release process, and developer-helping ergonomics).\n\n  * **Avatar-Everywhere\
+  \ CLI** — a portable identity toolkit that converts Sandbox avatars to VRM for use\
+  \ in other platforms, including simple on-chain ownership checks.\n\n\n\n\n**Project\
+  \ team**\n\n  * **Abdulkareem Oyeneye — Project Lead**  \nWorks on developer tooling\
+  \ and project coordination; has led multiple open-source utility efforts from scoping\
+  \ to docs and release.\n\n  * **Gospel Ifeadi — Smart Contract Engineer**  \nExperience\
+  \ across Rust/TypeScript/JS/Python and dApp/tooling projects; contributes backend\
+  \ automation and integration scripts.\n\n  * **Emmanuel Charles — Blockchain Developer\
+  \ & QA**  \nFocus on Solidity/Rust/TypeScript and test/QA practices; helps define\
+  \ acceptance criteria and automated checks.\n\n  * **Musa Abdulkareem — Engineer**\
+  \  \nContributes core engineering support and protocol-level integrations as needed.\n\
+  \n\n\n\n**Why this team fits this project**\n\n  * We regularly ship **small, composable\
+  \ tools** (CLIs, IDE extensions, adapters) and **configuration-driven assets** (patches,\
+  \ presets) with clear **usage docs**.\n  * We’ve built **measurement and verification\
+  \ utilities** (Retrieval Utility) and **local dev/test integrations** (Hardhat/Anvil\
+  \ patch), which are directly analogous to producing **Alertmanager/Grafana rule\
+  \ packs** , a **finality adapter** , and **drill scripts** with acceptance tests.\n\
+  \n\n\n## Cookie Settings\n\nThe Forum only sets cookies that are necessary for its\
+  \ basic functionality. By clicking on Accept you consent to this. \n\nAccept\n"
+start: 1761696414
+end: null
+state: []
+author: null
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: null
+scores_total: null
+scores:
+  - 0
+  - 0
+  - 0
+votes: null
+quorum: null
+funding:
+  amount: 47,000
+  currency: $
+  confidence: High
+  model_used: gemini-flash-latest
