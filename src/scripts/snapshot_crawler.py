@@ -340,7 +340,7 @@ def fetch_forum_gips_via_api():
     page = 0
     
     headers = {
-        "User-Agent": "gip-dashboard-scraper/1.0 (+https://github.com/gnosischain/gip_dashboard)",
+        "User-Agent": "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
         "Accept": "application/json",
     }
     
