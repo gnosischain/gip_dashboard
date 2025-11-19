@@ -35,7 +35,7 @@ scores:
 votes: 574
 quorum: 0
 funding:
-  amount: '11000'
+  amount: 11,000
   currency: USD
   confidence: High
   model_used: gemini-flash-latest

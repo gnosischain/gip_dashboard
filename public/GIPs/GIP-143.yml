@@ -1,0 +1,93 @@
+id: '0xfca8ac754b03f918218d11f405073c690814701b551536956f47a4080360ad9b'
+gip_number: '143'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xfca8ac754b03f918218d11f405073c690814701b551536956f47a4080360ad9b
+title: Should the GnosisDAO Terminate karpatkey Treasury Management Services?
+body: 'Executive Summary
+
+  This proposal seeks to terminate karpatkey’s treasury management services for GnosisDAO,
+  effective immediately from the passing of this proposal, with a 14 day transition
+  period. No further payments are to be made to, nor retained by, karpatkey.
+
+
+  Motivation
+
+  Following extensive community discussions over the past weeks regarding treasury
+  management performance, cost, risk exposure, and alignment with DAO objectives,
+  this proposal formalises the decision to conclude karpatkey’s engagement as GnosisDAO’s
+  treasury manager.
+
+
+  Specification
+
+  Action: Terminate the treasury management agreement with karpatkey effective immediately
+
+  Timeline: 14-day transition period from proposal passing
+
+  Transition: karpatkey to provide complete handover; documentation of all positions,
+  strategies, and access controls within 14 days
+
+  Assets: All GnosisDAO assets under karpatkey management to be returned to direct
+  DAO control and withdrawn from any karpatkey affiliated product (i.e. kpk Morpho
+  vaults, kpk vaults). Where there is difficulty in handing over positions due to
+  edge cases in allocation, ETH denominated positions may be converted to wstETH and
+  USD denominated positions may be converted to sUSDS/sxDAI in order to hand them
+  over.
+
+  Upon receipt of the assets, GnosisDAO representatives will begin the process of
+  converting all treasury assets to sUSDS, wstETH, and Gnosis Ecosystem tokens before
+  engaging in next steps regarding the treasury strategy.
+
+  Implementation
+
+  Revoke all Safe signer permissions held by karpatkey team
+
+  Transfer all assets to GnosisDAO-controlled addresses
+
+  Document all active DeFi positions for orderly unwinding
+
+  Cease all new treasury operations immediately upon proposal passing
+
+
+  Milestones
+
+  N/A
+
+
+  Note: Given the clear community interest expressed in recent forum discussions,
+  this proposal moves directly to Phase 2 temperature check.
+
+
+  EDIT [ON TIMELINES]:
+
+  Mainnet funds are handed over in full, and the Gnosis Chain portion of the treasury
+  enters an ongoing ‘handover state’ that requires all non-liquidity funds (including
+  out of range liquidity) to be handed over, and the remainder to be managed by karpatkey
+  purely for liquidity provision purposes until a new liquidity management agreement
+  is put in place with an alternative provider.
+
+
+  In the event that karpatkey would prefer to disengage immediately following a successful
+  vote rather than engage in this handover state, then all active liquidity on Gnosis
+  Chain should be moved to full range Uni v3 positions while selecting a new liquidity
+  manager via an RFP process.'
+start: 1763337600
+end: 1763942400
+state: active
+author: '0x7cd9233Da66766F1659FD49AeFFEEcf1Fc485Ac0'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 25879.90089923671
+scores:
+  - 25654.77974405177
+  - 0
+  - 225.12115518493948
+votes: 22
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-flash-latest

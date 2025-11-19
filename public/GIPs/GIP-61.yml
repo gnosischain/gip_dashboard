@@ -197,5 +197,5 @@ quorum: 0
 funding:
   amount: null
   currency: null
-  confidence: High
+  confidence: Low
   model_used: gemini-flash-latest
