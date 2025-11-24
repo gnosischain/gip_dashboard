@@ -63,6 +63,6 @@ votes: 94
 quorum: 75000
 funding:
   amount: 30 million
-  currency: USD
+  currency: $
   confidence: High
   model_used: gemini-flash-latest

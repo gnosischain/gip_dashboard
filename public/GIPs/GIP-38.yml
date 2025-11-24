@@ -30,7 +30,7 @@ scores:
 votes: 831
 quorum: 0
 funding:
-  amount: 79.36M (and 50k)
-  currency: USD (and GNO)
+  amount: '79.36M (This is the total stablecoin commitment: $59.36M + $20M)'
+  currency: USD (or stablecoins)
   confidence: High
   model_used: gemini-flash-latest

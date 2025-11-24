@@ -46,7 +46,7 @@ scores:
 votes: 95
 quorum: 75000
 funding:
-  amount: 35,000
+  amount: '35000'
   currency: DAI
   confidence: High
   model_used: gemini-flash-latest

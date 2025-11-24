@@ -23,7 +23,7 @@ scores:
 votes: 571
 quorum: 0
 funding:
-  amount: '3000000'
-  currency: DAI
+  amount: 3m (and 20k)
+  currency: DAI (and GNO)
   confidence: High
   model_used: gemini-flash-latest

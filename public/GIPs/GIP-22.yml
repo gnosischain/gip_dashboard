@@ -26,7 +26,7 @@ scores:
 votes: 131
 quorum: 0
 funding:
-  amount: '200000'
-  currency: BAL
+  amount: null
+  currency: null
   confidence: High
   model_used: gemini-flash-latest
