@@ -25,7 +25,7 @@ scores:
 votes: 647
 quorum: 0
 funding:
-  amount: 2m
-  currency: DAI
+  amount: 2m DAI upfront and 24k GNO vested over 3 years
+  currency: DAI, GNO
   confidence: High
   model_used: gemini-flash-latest
