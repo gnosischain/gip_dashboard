@@ -1,0 +1,119 @@
+id: '0xb2ad9e805a8f7b8933f503873967dd2167938ef000c4237d4635d95ff1078f66'
+gip_number: '144'
+url: https://snapshot.org/#/gnosis.eth/proposal/0xb2ad9e805a8f7b8933f503873967dd2167938ef000c4237d4635d95ff1078f66
+title: 'Should GnosisDAO support an annual renewal for Blockscout SLA and hosting:
+  January 2026 - December 2026'
+body: "# Executive Summary\nBlockscout proposes a one-year renewal of its SLA and\
+  \ hosting services for Gnosis to provide the ecosystem’s open-source block explorer\
+  \ and developer infrastructure. Over the past year explorer usage has continued\
+  \ to grow, with Gnosis Monthly Active Users averages increasing 94% year-over-year\
+  \ (from 28.9K in 2024 to 56.2K in 2025) and Gnosis Daily active users nearly doubling\
+  \ from 1,059 to 1,992. Page views averaged 110K monthly since May 2025 (excluding\
+  \ July which had a large spike) demonstrating the explorer’s critical role in the\
+  \ Gnosis ecosystem.\n\nWe’ve also seen several short term spikes in usage, denoting\
+  \ times when either other ecosystem explorers were unavailable or application launches\
+  \ on Gnosis including Metri and Circles saw a large influx of users. The ability\
+  \ to handle these usage spikes is crucial for ecosystem viability.\n\nGnosis requires\
+  \ reliable blockchain infrastructure that supports developers, validators, and users\
+  \ on the chain. A dedicated open-source and customizable explorer provides needed\
+  \ redundancy, transaction transparency, contract verification tools (with much more\
+  \ traction than Gnosisscan), and user onboarding features.\n\n# Ecosystem Benefits\
+  \ and Traction: \n\nBlockscout’s continued support enables:\n\n- Accessibility for\
+  \ all network participants\n- 13,500+ verified MyAccount users on the explorer\n\
+  - Superior contract verification rates (185,601 verified contracts vs. Gnosisscan’s\
+  \ 15,044) due to our multichain ETH bytecode DB\n- Advanced tooling availability\
+  \ for developers, including TheGraph integration and essential DApps inclusion in\
+  \ the Dapp marketplace\n- Improved user onboarding through name services, DEX tracking,\
+  \ and our upcoming bridge indexing initiative\n- Infrastructure that supports the\
+  \ Gnosis vision for decentralized, low-risk and user-friendly blockchain applications\n\
+  - Joint work with Circles team to onboard users and promote Circles to our large,\
+  \ multi-chain audience\n\n# Universal Bridge Indexer\n\nWe are continuing to work\
+  \ on our Universal Bridge Indexer and plan to deliver this feature to the Gnosis\
+  \ explorer in 2026. We will investigate the current and future updates coming to\
+  \ the Gnosis bridge to maintain compatibility. The service will support the Gnosis\
+  \ bridge, focusing on cross-chain token transfers and messages. The indexer will\
+  \ be developed as a standalone service which is tightly integrated into the Blockscout\
+  \ UI and associated API endpoints.\n\n# Service Description\nBlockscout provides\
+  \ comprehensive block explorer and infrastructure services for Gnosis mainnet and\
+  \ Chiado testnet, serving as the ecosystem’s primary interface for blockchain data,\
+  \ contract interaction, and network analytics.\n\n**Key Aspects**\n- Enterprise-Grade\
+  \ Infrastructure: 99.9% uptime with redundant hosting architecture\n- Advanced Contract\
+  \ Verification: Industry-leading verification tooling supporting Solidity, Vyper,\
+  \ and multi-part verification\n- Integrated DApp Ecosystem: Essential tools including\
+  \ Multisend, Dapp Marketplace, and DEX tracker\n- Developer-Focused Features: Comprehensive\
+  \ API access, and real-time data feeds\n- User Experience Innovations: Name service\
+  \ integration (.GNO and .ETH names), Blockscout DeFi, Gas.zip integration, and intuitive\
+  \ UI/UX\n\n**Service Scope**\n- Mainnet explorer hosting and maintenance (gnosis.blockscout.com\
+  \ 1)\n- Real-time and historical indexing for transactions, blocks, tokens, and\
+  \ smart contracts\n- Chiado testnet explorer hosting and maintenance\n- 24/7 monitoring\
+  \ and incident response\n- Regular feature updates and security patches\n- API infrastructure\
+  \ with rate-limited public access\n- Contract verification and interaction\n- Integration\
+  \ support for ecosystem projects\n\n**Service Delivery**\nBlockscout delivers services\
+  \ through a multi-layered architecture:\n- Infrastructure Layer: Hosting services\
+  \ with load balancing and automatic failover\n- Indexing Layer: Real-time blockchain\
+  \ data processing with sub-second latency\n- Application Layer: User-facing explorer\
+  \ with responsive design and mobile optimization\n- API Layer: JSON RPC & RESTful\
+  \ endpoints with comprehensive documentation\n- Support Layer: Technical support\
+  \ via dedicated channels and community forums\n\n**Support**\n- Technical Support:\
+  \ Direct communication channel for ecosystem partners and core developers\n- Incident\
+  \ Response: 24/7 monitoring with fast response time for critical issues\n- Community\
+  \ Support: Public documentation, FAQ resources, and community forum monitoring\n\
+  - Integration Assistance: Technical consultation for projects integrating with Blockscout\
+  \ on Gnosis\n- Reporting: Monthly analytics reports and quarterly business reviews\
+  \ with GnosisDAO stakeholders\n\n# Pricing and Payment\nWe propose a renewal of\
+  \ our 12-month engagement to begin on January 1, 2026 and continuing through December\
+  \ 31, 2026. This results in 2 free months of service from the previous engagement\
+  \ and extends our agreement to start at the beginning of the calendar year.\n\n\
+  Although our DB storage has increased significantly on the Gnosis instance we are\
+  \ able to maintain the same pricing model from last year due to storage and infra\
+  \ optimizations.\n\nPricing Structure:\n\n- Gnosis Mainnet explorer and archive\
+  \ node: $6,400 for hosting, services and maintenance for a total 12 month cost of\
+  \ $76,800\n- Chiado Testnet explorer and archive node: $3,200/month for hosting,\
+  \ services and maintenance for a total 12 month cost of $38,400\n**- All-in annual\
+  \ cost: $115,200**\n\nAmount is requested up front for the year. Payment can be\
+  \ made to Blockscout’s SAFE 0xAddress on Ethereum mainnet (0x242ba6d68FfEb4a098B591B32d370F973FF882B7)\
+  \ with USDC or USDT and is requested by December 31, 2025. (if the proposal is not\
+  \ resolved by Dec 31 we can be flexible regarding payment timing).\n\n# Service\
+  \ Terms\nContract Duration: January 1, 2026 - December 31, 2026 (12 months). If\
+  \ the DAO process takes longer than this to resolve we will maintain the service\
+  \ until there is a clear outcome.\n\nRenewal Terms: This agreement may be renewed\
+  \ for subsequent annual periods via the governance procews, with pricing subject\
+  \ to review based on usage growth and market conditions.\n\n# Termination Conditions:\n\
+  \nGnosisDAO may terminate this agreement under the following circumstances:\n\n\
+  - Non-Performance or Cause: If Blockscout fails to maintain 99.9% uptime over any\
+  \ 90-day period (excluding scheduled maintenance)\n- Convenience: Termination with\
+  \ 90 days’ written notice\nIf service is terminated, the pro-rated amount will be\
+  \ returned to the GnosisDAO within 1 month of termination completion.\n\n# Team/Organization\n\
+  Blockscout recently welcomed Eva Zhang, the former Alipay UK CEO, as our new CEO\
+  \ 1. Our founder Igor Barinov is currently working with the EF leading their privacy\
+  \ initiative and continues to serve Blockscout in a consulting capacity. Many of\
+  \ the Blockscout team members are former xDai developers who remain committed to\
+  \ the long term growth and success of Gnosis.\n\n# Conclusion\nBlockscout’s partnership\
+  \ with GnosisDAO has demonstrated substantial value, evidenced by our consistent\
+  \ adoption and ecosystem engagement. We are committed to continuous innovation and\
+  \ support services for Gnosis.The renewal of this SLA ensures a full-featured Gnosis\
+  \ explorer continues to provide needed open-source tooling and onchain transparency.\n\
+  \nWe look forward to continuing our partnership with GnosisDAO and supporting the\
+  \ Gnosis mandate to provide accessible, decentralized blockchain infrastructure\
+  \ to everyone."
+start: 1764707751
+end: 1765312551
+state: active
+author: '0xd145860c3cAD12AeEc9D8021d36B48d7fAd09454'
+choices:
+  - For
+  - Against
+  - Abstain
+scores_state: pending
+scores_total: 61822.648510762185
+scores:
+  - 61822.648510762185
+  - 0
+  - 0
+votes: 85
+quorum: 75000
+funding:
+  amount: null
+  currency: null
+  confidence: High
+  model_used: gemini-flash-latest

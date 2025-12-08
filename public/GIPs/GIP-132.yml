@@ -61,6 +61,6 @@ votes: 103
 quorum: 75000
 funding:
   amount: '10000'
-  currency: USD
+  currency: $
   confidence: High
   model_used: gemini-flash-latest

@@ -116,7 +116,18 @@ scores:
 votes: 64
 quorum: 75000
 funding:
-  amount: '40000'
-  currency: $
-  confidence: High
-  model_used: gemini-flash-latest
+  amount: null
+  currency: null
+  confidence: null
+  error: "429 You exceeded your current quota, please check your plan and billing\
+    \ details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.\
+    \ To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\
+    \ \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests,\
+    \ limit: 5, model: gemini-2.5-flash\nPlease retry in 57.723786794s. [links {\n\
+    \  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\
+    \n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\
+    \n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions\
+    \ {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions\
+    \ {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 5\n}\n\
+    , retry_delay {\n  seconds: 57\n}\n]"
+  model_used: none
