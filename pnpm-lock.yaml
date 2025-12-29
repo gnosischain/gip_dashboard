@@ -17,6 +17,9 @@ importers:
       bootstrap:
         specifier: 5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
+      chart.js:
+        specifier: ^4.5.1
+        version: 4.5.1
       chartjs-plugin-annotation:
         specifier: 3.1.0
         version: 3.1.0(chart.js@4.5.1)
